@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bmbtqllw2ypjc"]
+[gd_scene load_steps=12 format=3 uid="uid://bmbtqllw2ypjc"]
 
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="1_bdhe6"]
 [ext_resource type="Script" path="res://Database/EnemyDatabase.gd" id="1_oki1l"]
@@ -9,31 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bvo7dlcc42sjo" path="res://Database/SizeFiltering.tscn" id="7_r2utg"]
 [ext_resource type="PackedScene" uid="uid://vxjcml8k865s" path="res://Database/TraitFiltering.tscn" id="8_003v4"]
 [ext_resource type="PackedScene" uid="uid://bxm3l24gj3syg" path="res://Database/NumbersFiltering.tscn" id="9_bo4n0"]
-[ext_resource type="Script" path="res://Database/EnemyCreator.gd" id="10_v2lcj"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt2bf"]
-content_margin_left = 12.0
-content_margin_top = 12.0
-content_margin_right = 12.0
-content_margin_bottom = 12.0
-bg_color = Color(0.525963, 0.605664, 0.728771, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.118581, 0.118581, 0.118581, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3nts"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.141176, 0.368627, 0.6, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.695503, 0.695503, 0.695503, 1)
+[ext_resource type="PackedScene" uid="uid://c4mule60b5ehu" path="res://Custom/EnemyCreator.tscn" id="10_fkyqp"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="10_p35gr"]
 
 [node name="EnemyDatabase" type="Control"]
 layout_mode = 3
@@ -43,6 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_oki1l")
+metadata/_edit_lock_ = true
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -201,58 +179,28 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 
-[node name="EnemyCreator" type="PanelContainer" parent="CenterContainer"]
+[node name="EnemyCreatorWindow" type="Window" parent="CenterContainer"]
 unique_name_in_owner = true
+title = "Enemy Creator"
+initial_position = 1
+size = Vector2i(800, 600)
 visible = false
-custom_minimum_size = Vector2(800, 600)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_kt2bf")
-script = ExtResource("10_v2lcj")
+wrap_controls = true
+transient = true
+exclusive = true
+force_native = true
+keep_title_visible = true
+theme = ExtResource("10_p35gr")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/EnemyCreator"]
-layout_mode = 2
-
-[node name="PanelContainer" type="PanelContainer" parent="CenterContainer/EnemyCreator/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_a3nts")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer"]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "Name"
-
-[node name="NameLine" type="LineEdit" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="EnemyCreator" parent="CenterContainer/EnemyCreatorWindow" instance=ExtResource("10_fkyqp")]
 unique_name_in_owner = true
-layout_mode = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
-text = "Max Thaumiel"
-expand_to_text_length = true
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-text = "Level"
-
-[node name="LevelSpinbox" type="SpinBox" parent="CenterContainer/EnemyCreator/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2"]
-unique_name_in_owner = true
-layout_mode = 2
-min_value = -99.0
-max_value = 99.0
-value = 8.0
-rounded = true
-alignment = 2
-
-[node name="SaveSheetButton" type="Button" parent="CenterContainer/EnemyCreator/VBoxContainer"]
-layout_mode = 2
-text = "Save Sheet"
+size_flags_vertical = 3
 
 [connection signal="text_changed" from="Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
 [connection signal="pressed" from="Database/MarginContainer/SortingFiltering/Button" to="." method="_on_button_pressed"]
@@ -268,5 +216,4 @@ text = "Save Sheet"
 [connection signal="apply_filter" from="CenterContainer/RarityFilterMenu" to="." method="_on_rarity_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="CenterContainer/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="CenterContainer/NumbersFiltering" to="." method="_on_numbers_filtering_apply_filter"]
-[connection signal="sheet_created" from="CenterContainer/EnemyCreator" to="." method="_on_enemy_creator_sheet_created"]
-[connection signal="pressed" from="CenterContainer/EnemyCreator/VBoxContainer/SaveSheetButton" to="CenterContainer/EnemyCreator" method="_on_save_sheet_button_pressed"]
+[connection signal="close_requested" from="CenterContainer/EnemyCreatorWindow" to="." method="enemy_creator_closed"]

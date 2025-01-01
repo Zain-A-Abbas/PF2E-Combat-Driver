@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://y0np3uaapuld"]
+
+[ext_resource type="Script" path="res://Custom/LabelDataField.gd" id="1_487xr"]
+[ext_resource type="Script" path="res://Custom/LabelDataLineEdit.gd" id="2_kovh7"]
+
+[node name="LabelDataField" type="HBoxContainer"]
+offset_right = 113.0
+offset_bottom = 31.0
+script = ExtResource("1_487xr")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Label"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/minimum_character_width = 4
+caret_blink = true
+script = ExtResource("2_kovh7")

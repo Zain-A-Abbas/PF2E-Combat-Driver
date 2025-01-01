@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c68vs2pdrt1dk"]
+
+[ext_resource type="Script" path="res://Custom/EnemyCreatorSkill.gd" id="1_4b7tu"]
+[ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="2_ljeso"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ae2ky"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.75, 0.75, 0.75, 0)
+border_color = Color(0, 0, 0, 1)
+
+[node name="SkillPanel" type="PanelContainer"]
+theme_override_styles/panel = SubResource("StyleBoxFlat_ae2ky")
+script = ExtResource("1_4b7tu")
+
+[node name="LabelDataField" parent="." instance=ExtResource("2_ljeso")]
+layout_mode = 2
+label_text = "Skill"
+numbers_only = true
+
+[node name="Label" parent="LabelDataField" index="0"]
+text = "Skill"
+
+[node name="LineEdit" parent="LabelDataField" index="1"]
+size_flags_horizontal = 10
+
+[editable path="LabelDataField"]

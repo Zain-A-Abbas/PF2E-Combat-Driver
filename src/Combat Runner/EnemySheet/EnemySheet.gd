@@ -88,7 +88,7 @@ func setup_traits():
 	var i: int = 0
 	for child in trait_container.get_children():
 		if i > 0:
-			trait_container.remove_child(child)
+			child.queue_free()
 		i += 1
 	
 	# Rarity
@@ -102,7 +102,7 @@ func setup_traits():
 		insert_trait("UNIQUE")
 	
 	# Alignment
-	if enemy_system["details"].has("alignment"):	
+	if enemy_system["details"].has("alignment"):
 		if enemy_system["details"]["alignment"].has("value"):
 			if enemy_system["details"]["alignment"]["value"] != "":
 				insert_trait(enemy_system["details"]["alignment"]["value"])
@@ -323,7 +323,7 @@ func setup_other_defensive_abilities():
 	var text_interpreter: TextInterpreter = TextInterpreter.new()
 	defensive_abilities.visible = false
 	for child in defensive_abilities.get_children():
-		defensive_abilities.remove_child(child)
+		child.queue_free()
 	
 	for ability in enemy_abilities:
 		var valid_ability: bool = false
@@ -379,7 +379,7 @@ func setup_other_defensive_abilities():
 
 func setup_speed():
 	for child in attacks.get_children():
-		attacks.remove_child(child)
+		child.queue_free()
 	var speed_entry = create_sheet_content()
 	var speed_text: String = "[b]Speed[/b] "
 	var speed = enemy_attributes["speed"]

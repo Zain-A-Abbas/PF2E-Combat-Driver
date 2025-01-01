@@ -40,7 +40,7 @@ func reset_filters():
 func set_traits(val):
 	traits = val
 	for child in filter_buttons_container.get_children():
-		remove_child(child)
+		#remove_child(child)
 		child.queue_free()
 	for trait_filter in traits:
 		var new_filter_button = TRAIT_FILTER_BUTTON.instantiate()

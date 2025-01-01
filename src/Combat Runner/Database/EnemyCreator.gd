@@ -4,8 +4,36 @@ signal sheet_created
 
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
 const CUSTOM_ENEMIES_LOCATION: String = "res://Data/Enemies/custom-enemies/"
-@onready var name_line = %NameLine
-@onready var level_spinbox = %LevelSpinbox
+
+const ENEMY_CREATOR_SKILL = preload("res://Custom/EnemyCreatorSkill.tscn")
+const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", "Deception", "Diplomacy", "Intimidation", "Lore", "Medicine", "Nature", "Occultism", "Performance", "Religion", "Society", "Stealth", "Survival", "Thievery"]
+
+@onready var name_field: LabelDataField = %NameField
+@onready var level_field: LabelDataField = %LevelField
+@onready var perception_field: LabelDataField = %PerceptionField
+@onready var senses_field: LabelDataField = %SensesField
+@onready var languages_field: LabelDataField = %LanguagesField
+
+
+@onready var skills_vbox: VBoxContainer = %SkillsVbox
+
+func _ready() -> void:
+	# Set min heights for nodes
+	for node in find_children("*"):
+		if is_instance_of(node, LineEdit) || is_instance_of(node, TextEdit):
+			node.custom_minimum_size.y = 25
+
+	# Setup skills
+	for child in skills_vbox.get_children():
+		child.queue_free()
+
+	for i in SKILLS.size():
+		if (i > 0):
+			skills_vbox.add_child(HSeparator.new())
+		var newSkill: EnemyCreatorSkill = ENEMY_CREATOR_SKILL.instantiate()
+		skills_vbox.add_child(newSkill)
+		newSkill.skill_name = SKILLS[i]
+		newSkill.name = SKILLS[i] + "Panel"
 
 func create_enemy():
 	var new_enemy_sheet: Dictionary = {}
@@ -15,8 +43,8 @@ func create_enemy():
 	
 	var details: Dictionary = new_enemy_sheet["system"]["details"]
 	
-	new_enemy_sheet["name"] = name_line.text
-	details["level"]["value"] = int(level_spinbox.value)
+	new_enemy_sheet["name"] = name_field.get_value()
+	details["level"]["value"] = int(level_field.get_value())
 	
 	var file_name: String = new_enemy_sheet["name"]
 	var base_file_name: String = file_name

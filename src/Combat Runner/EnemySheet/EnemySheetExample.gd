@@ -33,8 +33,6 @@ _id and img are not yet used.
 		"type": "fly",
 		"value": 40
 	}
-
-
 '
 
 const DEFAULT: Dictionary = {
