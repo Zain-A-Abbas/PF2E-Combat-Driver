@@ -20,6 +20,7 @@ const SAVING_THROWS: String = "res://Table/TableData/Saving Throws.csv"
 const SKILLS: String = "res://Table/TableData/Skills.csv"
 const SPELL_BONUSES: String = "res://Table/TableData/Spell Bonuses.csv"
 const SPELL_DCS: String = "res://Table/TableData/Spell DCs.csv"
+const SPELL_ATTACK: String = "res://Table/TableData/Spell Attack.csv"
 const STRIKE_ATTACK_BONUS: String = "res://Table/TableData/Strike Attack Bonus.csv"
 const STRIKE_DAMAGE: String = "res://Table/TableData/Strike Damage.csv"
 
@@ -28,8 +29,12 @@ enum TableType {
 	HP,
 	AC,
 	SPELL_DC,
+	SPELL_ATTACK,
 	SKILLS,
-	ABILITY_SCORES
+	ABILITY_SCORES,
+	STRIKE_BONUS,
+	STRIKE_DAMAGE,
+	AREA_DAMAGE
 }
 
 @export var table_type: TableType = TableType.NONE
@@ -56,8 +61,17 @@ func _ready() -> void:
 			read_csv(SKILLS)
 		TableType.SPELL_DC:
 			read_csv(SPELL_DCS)
+		TableType.SPELL_ATTACK:
+			read_csv(SPELL_ATTACK)
 		TableType.ABILITY_SCORES:
 			read_csv(ABILITY_MODIFIERS)
+			read_csv(SKILLS)
+		TableType.STRIKE_BONUS:
+			read_csv(STRIKE_ATTACK_BONUS)
+		TableType.STRIKE_DAMAGE:
+			read_csv(STRIKE_DAMAGE)
+		TableType.AREA_DAMAGE:
+			read_csv(AREA_DAMAGE)
 
 static func add_tables(parent: Control):
 	var skills_table: Table = Table.new()
@@ -95,6 +109,7 @@ func create_header(header_text: Array[String]):
 func add_row(row_data: Array[String]):
 	assert(row_data.size() == column_count)
 	odd_even_row += 1
+	var i: int = 0
 	for cell_text in row_data:
 		var newPanel: PanelContainer = PanelContainer.new()
 		var newLabel: Label = Label.new()
@@ -106,8 +121,12 @@ func add_row(row_data: Array[String]):
 		
 		newLabel.add_theme_color_override("font_color", Color.BLACK)
 		newLabel.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		newLabel.add_theme_font_override("font", MONTSERRAT_REGULAR)
+		if i > 0:
+			newLabel.add_theme_font_override("font", MONTSERRAT_REGULAR)
+		else:
+			newLabel.add_theme_font_override("font", MONTSERRAT_BOLD)
 		newLabel.text = cell_text
 		
 		newPanel.add_child(newLabel)
 		add_child(newPanel)
+		i += 1

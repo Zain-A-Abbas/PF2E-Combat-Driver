@@ -99,6 +99,7 @@ layout_mode = 2
 [node name="CurrentHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 18
 text = "HP"
 vertical_alignment = 1
@@ -114,6 +115,7 @@ alignment = 2
 [node name="MaxHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 18
 text = "MAX"
 vertical_alignment = 1
@@ -131,6 +133,7 @@ layout_mode = 2
 [node name="DamageLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 18
 text = "DAMAGE"
 vertical_alignment = 1
@@ -146,7 +149,7 @@ alignment = 2
 [node name="DamageButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("3_p6xjd")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = " APPLY "
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
@@ -159,9 +162,8 @@ custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 size_flags_vertical = 0
 mouse_filter = 1
-theme = ExtResource("3_p6xjd")
 theme_override_font_sizes/font_size = 24
-text = "X"
+text = "✕"
 
 [connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer/HPBarControl/EnemyName" to="." method="_on_enemy_name_focus_entered"]
 [connection signal="text_changed" from="HBoxContainer/Control/MarginContainer/HPBarControl/EnemyName" to="." method="_on_enemy_name_text_changed"]

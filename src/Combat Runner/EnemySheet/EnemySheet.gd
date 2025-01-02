@@ -331,9 +331,10 @@ func setup_other_defensive_abilities():
 			if ability["system"]["category"] is String:
 				if (ability["system"]["category"] == "defensive") || (ability["system"]["category"] == "interaction" && ability["system"]["actionType"]["value"] == "reaction"):
 					valid_ability = true
-		if !ability["system"]["rules"].is_empty():
-			if ability["system"]["rules"][0]["key"] == "FlatModifier":
-				valid_ability = false
+		if ability["system"].has("rules"):
+			if !ability["system"]["rules"].is_empty():
+				if ability["system"]["rules"][0]["key"] == "FlatModifier":
+					valid_ability = false
 		if !valid_ability:
 			continue
 		
@@ -374,6 +375,7 @@ func setup_other_defensive_abilities():
 		var desc_text = text_interpreter.ability_parser(ability["system"]["description"]["value"])
 		new_ability_entry.text = ability_name + action_icon + ability_traits + desc_text
 		defensive_abilities.add_child(new_ability_entry)
+	
 	if defensive_abilities.get_child_count() > 0:
 		defensive_abilities.visible = true
 
@@ -412,8 +414,23 @@ func setup_attacks():
 			var new_attack_entry = create_sheet_content()
 			new_attack_entry.info_type = SheetContent.InfoTypes.TRAIT
 			
+			var attack_traits_array: Array[String] = []
+			if ability["system"]["traits"]["value"] is Array[String]:
+				attack_traits_array = ability["system"]["traits"]["value"]
+			else:
+				for attack_trait in ability["system"]["traits"]["value"]:
+					attack_traits_array.append(str(attack_trait))
+			var ranged: bool = false
+			for attack_trait in attack_traits_array:
+				if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
+					ranged = true
+			
 			# Add name and icon
-			var melee = "[b]" + "Melee" + "[/b] "
+			var melee: String
+			if !ranged:
+				melee = "[b]" + "Melee" + "[/b] "
+			else:
+				melee = "[b]" + "Ranged" + "[/b] "
 			var attack_icon := ONE_ACTION + " "
 			var attack_name: String = ability["name"] + " "
 			
@@ -424,7 +441,7 @@ func setup_attacks():
 			if attack_bonus < 0:
 				attack_plus = ""
 			var multiple_attack_penalty: int = 5
-			if ability["system"]["traits"]["value"].has("agile"):
+			if attack_traits_array.has("agile"):
 				multiple_attack_penalty = 4
 			var attack_bonus_text: String = attack_plus + "[url]" + str(attack_bonus) + "[/url]" + " "
 			if attack_bonus - multiple_attack_penalty < 0:
@@ -437,11 +454,11 @@ func setup_attacks():
 			# Traits
 			var attack_traits: String = "("
 			var i: int = 0
-			for attack_trait in ability["system"]["traits"]["value"]:
+			for attack_trait in attack_traits_array:
 				var final_trait: String = text_interpreter.trait_name_parser(attack_trait)
 				attack_traits += get_sheet_tooltip("trait", final_trait) + final_trait + "[/hint]"
 				i += 1
-				if i < ability["system"]["traits"]["value"].size():
+				if i < attack_traits_array.size():
 					attack_traits += ", "
 			attack_traits += ") "
 			if attack_traits == "() ":
@@ -455,6 +472,8 @@ func setup_attacks():
 					damage_text += " plus "
 				damage_text += ability["system"]["damageRolls"][damage_roll]["damage"] + " " + ability["system"]["damageRolls"][damage_roll]["damageType"] 
 				i += 1
+			if ability["system"].has("oneLineDamageRoll"):
+				damage_text += ability["system"]["oneLineDamageRoll"]
 			
 			new_attack_entry.text = melee + attack_icon + attack_name + attack_bonus_text + attack_traits + damage_text
 			attacks.add_child(new_attack_entry)

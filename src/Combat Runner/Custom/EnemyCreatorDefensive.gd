@@ -1,6 +1,7 @@
 extends VBoxContainer
 
-const DEFENSIVE_ABILITY = preload("res://Custom/DefensiveAbility.tscn")
+const ENEMY_ABILITY = preload("res://Custom/EnemyAbility.tscn")
+const WEAKNESS_RESISTANCE_FIELD = preload("res://Custom/WeaknessResistanceField.tscn")
 
 @onready var weaknesses_v_box: VBoxContainer = %WeaknessesVBox
 @onready var resistances_v_box: VBoxContainer = %ResistancesVBox
@@ -8,16 +9,16 @@ const DEFENSIVE_ABILITY = preload("res://Custom/DefensiveAbility.tscn")
 @onready var defensive_abilities_v_box: VBoxContainer = %DefensiveAbilitiesVBox
 @onready var new_defensive_ability_button: Button = %NewDefensiveAbilityButton
 
-func unfocused_new_resist(new_resist: LineEdit):
-	if new_resist.text == "":
+func unfocused_new_resist(new_resist: HBoxContainer):
+	if new_resist.get_child(0).text == "":
 		new_resist.queue_free()
 
 func add_new_resist(vbox: VBoxContainer):
-	var newLineEdit: LineEdit = LineEdit.new()
-	vbox.add_child(newLineEdit)
-	vbox.move_child(newLineEdit, vbox.get_child_count() - 2)
-	newLineEdit.grab_focus()
-	newLineEdit.focus_exited.connect(unfocused_new_resist.bind(newLineEdit))
+	var new_resist_field: HBoxContainer = WEAKNESS_RESISTANCE_FIELD.instantiate()
+	vbox.add_child(new_resist_field)
+	vbox.move_child(new_resist_field, vbox.get_child_count() - 2)
+	new_resist_field.get_child(0).grab_focus()
+	new_resist_field.get_child(0).focus_exited.connect(unfocused_new_resist.bind(new_resist_field))
 
 
 func _on_add_weakness_button_pressed() -> void:
@@ -33,4 +34,4 @@ func _on_add_immunity_button_pressed() -> void:
 
 
 func _on_new_defensive_ability_button_pressed() -> void:
-	defensive_abilities_v_box.add_child(DEFENSIVE_ABILITY.instantiate())
+	defensive_abilities_v_box.add_child(ENEMY_ABILITY.instantiate())

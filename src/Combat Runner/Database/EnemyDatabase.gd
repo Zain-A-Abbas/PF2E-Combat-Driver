@@ -7,17 +7,19 @@ enum SORT_MODE {
 	LEVEL
 }
 
-@onready var enemy_list := $Database/DatabaseSheets/EnemyList
-@onready var enemy_sheet := $Database/DatabaseSheets/VBoxContainer/EnemySheet
+@onready var enemy_list: ItemList = %EnemyList
+@onready var enemy_sheet: Sheet = %EnemySheet
+
 
 # The filter menus; the filtering traits and numbers are retrieved directly from them
-@onready var size_filter_menu := $CenterContainer/SizeFilterMenu
-@onready var rarity_filter_menu := $CenterContainer/RarityFilterMenu
-@onready var trait_filter_menu := $CenterContainer/TraitFilterMenu
-@onready var search_bar := $Database/MarginContainer/SortingFiltering/SearchBar
-@onready var numbers_filtering := $CenterContainer/NumbersFiltering
+@onready var size_filter_menu: FilteringMenu = %SizeFilterMenu
+@onready var rarity_filter_menu: FilteringMenu = %RarityFilterMenu
+@onready var trait_filter_menu: PanelContainer = %TraitFilterMenu
+@onready var numbers_filtering: PanelContainer = %NumbersFiltering
+@onready var search_bar: LineEdit = %SearchBar
 @onready var enemy_creator = %EnemyCreator
 @onready var enemy_creator_window: Window = %EnemyCreatorWindow
+
 
 signal add_enemy(enemy_data)
 
@@ -115,7 +117,7 @@ func outOfBounds(value: int, f: NumberFilterData):
 	return !(value >= f.lower_bound && value <= f.upper_bound)
 	
 
-func number_filter( enemies_to_filter: Array[EnemyFilterData]) -> Array[EnemyFilterData]:
+func number_filter( enemies_to_filter: Array[EnemyFilterData] ) -> Array[EnemyFilterData]:
 	var filterData : Array[NumberFilterData] = numbers_filtering.get_number_filter_data()
 	var validEnemies : Array[EnemyFilterData] = enemies_to_filter
 	#main filter

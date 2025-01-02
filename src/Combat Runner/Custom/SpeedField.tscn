@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://queo7xmb50cs"]
+
+[ext_resource type="Script" path="res://Custom/SpeedField.gd" id="1_e3jl2"]
+
+[node name="SpeedField" type="HBoxContainer"]
+script = ExtResource("1_e3jl2")
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 2
+item_count = 6
+popup/item_0/text = "Land"
+popup/item_1/text = "Fly"
+popup/item_1/id = 1
+popup/item_2/text = "Swim"
+popup/item_2/id = 2
+popup/item_3/text = "Climb"
+popup/item_3/id = 3
+popup/item_4/text = "Burrow"
+popup/item_4/id = 4
+popup/item_5/text = "Custom"
+popup/item_5/id = 5
+
+[node name="CustomSpeedLine" type="LineEdit" parent="."]
+visible = false
+layout_mode = 2
+theme_override_constants/minimum_character_width = 8
+expand_to_text_length = true
+caret_blink = true
+
+[node name="SpeedAmount" type="LineEdit" parent="."]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 4
+caret_blink = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,15 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://dl1hgfsvcpcfn"]
 
-[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_cguut"]
-[ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="1_sme3b"]
-[ext_resource type="Script" path="res://Custom/DefensiveAbility.gd" id="2_rxcnt"]
-[ext_resource type="Texture2D" uid="uid://cimkw4bm0lovt" path="res://Icons/Action.png" id="4_3yy40"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="1_dkgjl"]
+[ext_resource type="Script" path="res://Custom/EnemyAbility.gd" id="2_0ntsq"]
+[ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="3_snn8b"]
+[ext_resource type="Texture2D" uid="uid://cimkw4bm0lovt" path="res://Icons/Action.png" id="4_2o1fl"]
 
-[node name="DefensiveAbility" type="PanelContainer"]
+[node name="EnemyAbility" type="PanelContainer"]
 offset_right = 403.0
 offset_bottom = 105.0
-theme_override_styles/panel = ExtResource("1_cguut")
-script = ExtResource("2_rxcnt")
+theme_override_styles/panel = ExtResource("1_dkgjl")
+script = ExtResource("2_0ntsq")
 
 [node name="VBox" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -17,7 +17,8 @@ layout_mode = 2
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBox"]
 layout_mode = 2
 
-[node name="LabelDataField" parent="VBox/HBoxContainer3" instance=ExtResource("1_sme3b")]
+[node name="NameField" parent="VBox/HBoxContainer3" instance=ExtResource("3_snn8b")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 label_text = "Name"
@@ -25,7 +26,7 @@ minimum_character_width = 13
 
 [node name="ActionIcon" type="TextureRect" parent="VBox/HBoxContainer3"]
 layout_mode = 2
-texture = ExtResource("4_3yy40")
+texture = ExtResource("4_2o1fl")
 expand_mode = 3
 
 [node name="ActionOption" type="OptionButton" parent="VBox/HBoxContainer3"]
@@ -47,7 +48,13 @@ popup/item_4/id = 4
 custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
 size_flags_horizontal = 8
-text = "X"
+text = "✕"
+
+[node name="TraitsField" parent="VBox" instance=ExtResource("3_snn8b")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Traits"
+minimum_character_width = 20
 
 [node name="ReactionTrigger" type="VBoxContainer" parent="VBox"]
 unique_name_in_owner = true
@@ -58,7 +65,8 @@ layout_mode = 2
 layout_mode = 2
 text = "Trigger"
 
-[node name="TextEdit" type="TextEdit" parent="VBox/ReactionTrigger"]
+[node name="TriggerTextEdit" type="TextEdit" parent="VBox/ReactionTrigger"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 wrap_mode = 1
@@ -73,7 +81,8 @@ size_flags_vertical = 3
 layout_mode = 2
 text = "Effect"
 
-[node name="TextEdit" type="TextEdit" parent="VBox/VBoxContainer2"]
+[node name="EffectTextEdit" type="TextEdit" parent="VBox/VBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 wrap_mode = 1

@@ -1,11 +1,20 @@
-[gd_scene load_steps=14 format=3 uid="uid://bekrgofys7uc7"]
+[gd_scene load_steps=15 format=3 uid="uid://bekrgofys7uc7"]
 
-[ext_resource type="Theme" uid="uid://bdi2c7b3hyktq" path="res://Themes/Combat.tres" id="1_42cmn"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_01qoj"]
 [ext_resource type="Script" path="res://Combat/DiceResults.gd" id="1_m0fvx"]
-[ext_resource type="Theme" uid="uid://bucbvtpc225di" path="res://Themes/Theme1.tres" id="1_mi777"]
 [ext_resource type="Script" path="res://Combat/Combat.gd" id="2_gvh2h"]
 [ext_resource type="PackedScene" uid="uid://bmuq4plht6pkj" path="res://Combat/DiceButton.tscn" id="2_wbg3i"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="3_odqcp"]
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="4_o0xil"]
+[ext_resource type="StyleBox" uid="uid://caixi2nwu5inu" path="res://Themes/SheetPanel.tres" id="6_xv8n1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ph34c"]
+bg_color = Color(0.95, 0.95, 0.95, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqhlj"]
 bg_color = Color(0, 0.145098, 0.392157, 1)
@@ -23,9 +32,7 @@ bg_color = Color(0, 0.145098, 0.392157, 1)
 /styles/BGStylebox = SubResource("StyleBoxFlat_pwvle")
 /styles/l = SubResource("StyleBoxTexture_e6s5d")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2d1k3"]
-
-[sub_resource type="Theme" id="Theme_cxjl0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_crno0"]
 
 [node name="Combat" type="Control"]
 layout_mode = 3
@@ -34,24 +41,30 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_42cmn")
+theme = ExtResource("1_01qoj")
 script = ExtResource("2_gvh2h")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ph34c")
+metadata/_edit_lock_ = true
 
-[node name="Panel" type="ColorRect" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Panel" type="ColorRect" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 15.0
 theme = SubResource("Theme_ch1wy")
+color = Color(0.493545, 0.493546, 0.493546, 1)
 
-[node name="InitiativeRolling" type="VBoxContainer" parent="HBoxContainer/Panel"]
+[node name="InitiativeRolling" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,235 +75,267 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 15.0
 theme = SubResource("Theme_i6n4j")
 
-[node name="Initiative" type="VBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling"]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("3_odqcp")
+
+[node name="Initiative" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Panel" type="PanelContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative"]
+[node name="DieRollerLabel" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative"]
+texture_filter = 1
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_2d1k3")
-
-[node name="Label" type="Label" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/Panel"]
-layout_mode = 2
+theme_override_font_sizes/font_size = 16
 text = "Initiative"
 
-[node name="InitiativeMargins" type="MarginContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative"]
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative"]
+layout_mode = 2
+
+[node name="InitiativeMargins" type="MarginContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins"]
 layout_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="InitiativeContainer" type="VBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/ScrollContainer"]
+[node name="InitiativeContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="InitiativeOptions" type="HBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer"]
+[node name="InitiativeOptions" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer"]
 layout_mode = 2
 
-[node name="RerollInitiativeButton" type="Button" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions"]
+[node name="RerollInitiativeButton" type="Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Re-roll Initiative"
 
-[node name="CopyInitiativeButton" type="Button" parent="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions"]
+[node name="CopyInitiativeButton" type="Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions"]
 layout_mode = 2
 text = "Copy"
 
-[node name="Rolling" type="VBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling"]
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 1.85
+size_flags_stretch_ratio = 2.0
+theme_override_styles/panel = ExtResource("3_odqcp")
+
+[node name="Rolling" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="TextHeader" type="ColorRect" parent="HBoxContainer/Panel/InitiativeRolling/Rolling"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.08
-theme = SubResource("Theme_cxjl0")
-color = Color(0.694118, 0.694118, 0.694118, 1)
-metadata/_edit_group_ = true
-
-[node name="DieRollerLabel" type="Label" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/TextHeader"]
+[node name="DieRollerLabel" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
 texture_filter = 1
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+layout_mode = 2
 theme_override_font_sizes/font_size = 16
-text = " Die Roller"
+text = "Die Roller"
 
-[node name="ResultsBg" type="ColorRect" parent="HBoxContainer/Panel/InitiativeRolling/Rolling"]
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
 layout_mode = 2
 size_flags_vertical = 3
-theme = SubResource("Theme_cxjl0")
-color = Color(0.878431, 0.878431, 0.878431, 1)
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_bottom = 2
 
-[node name="Results" type="Label" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/ResultsBg"]
+[node name="Results" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer"]
+unique_name_in_owner = true
 texture_filter = 1
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
 script = ExtResource("1_m0fvx")
 
-[node name="DiceButtons" type="VBoxContainer" parent="HBoxContainer/Panel/InitiativeRolling/Rolling"]
+[node name="DiceButtons" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="ClearDice" type="Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons"]
+[node name="ClearDice" type="Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons"]
 layout_mode = 2
-theme = ExtResource("1_mi777")
 text = "Clear Results"
 
-[node name="GridContainer" type="GridContainer" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons"]
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 2
 columns = 4
 
-[node name="d2Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d2Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 
-[node name="d4Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d4Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d4"
 dice_amount = 4
 
-[node name="d6Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d6Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d6"
 dice_amount = 6
 
-[node name="d8Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d8Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d8"
 dice_amount = 8
 
-[node name="d10Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d10Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d10"
 dice_amount = 10
 
-[node name="d12Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d12Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d12"
 dice_amount = 12
 
-[node name="d20Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d20Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d20"
 dice_amount = 20
 
-[node name="d100Button" parent="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+[node name="d100Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/GridContainer" instance=ExtResource("2_wbg3i")]
+unique_name_in_owner = true
 layout_mode = 2
+theme = null
 text = "d%"
 dice_amount = 100
 
-[node name="TrackerSheetSplit" type="HSplitContainer" parent="HBoxContainer"]
+[node name="TrackerSheetSplit" type="HSplitContainer" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 85.0
 
-[node name="EncounterTracker" type="TabContainer" parent="HBoxContainer/TrackerSheetSplit"]
+[node name="EncounterTracker" type="TabContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 45.0
+current_tab = 0
 drag_to_rearrange_enabled = true
 
-[node name="Encounter A" type="VBoxContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker"]
+[node name="Encounter A" type="VBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker"]
 layout_mode = 2
+metadata/_tab_index = 0
 
-[node name="BlankEnemyButton" type="Button" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
+[node name="BlankEnemyButton" type="Button" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
 layout_mode = 2
 text = "+Blank"
 
-[node name="EnemyTrackerPanel" type="PanelContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
+[node name="EnemyTrackerPanel" type="PanelContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_crno0")
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EnemyTrackerPanel"]
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EnemyTrackerPanel"]
 layout_mode = 2
 
-[node name="Enemies" type="VBoxContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EnemyTrackerPanel/ScrollContainer"]
+[node name="Enemies" type="VBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EnemyTrackerPanel/ScrollContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="EXPTotal" type="PanelContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
+[node name="EXPTotal" type="PanelContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="ColorRect" type="ColorRect" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal"]
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal"]
 layout_mode = 2
-color = Color(0, 0.145098, 0.392157, 1)
+color = Color(0.2553, 0.48714, 0.69, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal"]
 layout_mode = 2
 theme_override_constants/margin_left = 6
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 6
 theme_override_constants/margin_bottom = 4
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer"]
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Clear"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
 
-[node name="LevelSpinbox" type="SpinBox" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="LevelSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
+size_flags_vertical = 4
 
-[node name="PartyLevelLabel" type="Label" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="PartyLevelLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
 size_flags_vertical = 1
 text = "Party Level"
 vertical_alignment = 1
 
-[node name="PlayerCountSpinbox" type="SpinBox" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="PlayerCountSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
 size_flags_horizontal = 8
+size_flags_vertical = 4
 
-[node name="PartyCountLabel" type="Label" parent="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="PartyCountLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
 size_flags_vertical = 1
 text = "Player Count"
 vertical_alignment = 1
 
-[node name="SheetandDatabase" type="VBoxContainer" parent="HBoxContainer/TrackerSheetSplit"]
+[node name="SheetandDatabase" type="VBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 40.0
 
-[node name="VSplitContainer" type="VSplitContainer" parent="HBoxContainer/TrackerSheetSplit/SheetandDatabase"]
+[node name="VSplitContainer" type="VSplitContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/SheetandDatabase"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="EnemySheet" parent="HBoxContainer/TrackerSheetSplit/SheetandDatabase/VSplitContainer" instance=ExtResource("4_o0xil")]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/SheetandDatabase/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("6_xv8n1")
+
+[node name="EnemySheet" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/SheetandDatabase/VSplitContainer/PanelContainer" instance=ExtResource("4_o0xil")]
+unique_name_in_owner = true
 layout_mode = 2
 
-[connection signal="pressed" from="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/RerollInitiativeButton" to="." method="_on_reroll_initiative_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/CopyInitiativeButton" to="." method="_on_copy_initiative_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Panel/InitiativeRolling/Rolling/DiceButtons/ClearDice" to="HBoxContainer/Panel/InitiativeRolling/Rolling/ResultsBg/Results" method="_on_clear_dice_pressed"]
-[connection signal="tab_changed" from="HBoxContainer/TrackerSheetSplit/EncounterTracker" to="." method="_on_encounter_tracker_tab_changed"]
-[connection signal="pressed" from="HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/BlankEnemyButton" to="." method="add_enemy_from_sheet" binds= [{}]]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/RerollInitiativeButton" to="." method="_on_reroll_initiative_button_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/CopyInitiativeButton" to="." method="_on_copy_initiative_button_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/ClearDice" to="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/Results" method="_on_clear_dice_pressed"]
+[connection signal="tab_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker" to="." method="_on_encounter_tracker_tab_changed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/BlankEnemyButton" to="." method="add_enemy_from_sheet" binds= [{}]]

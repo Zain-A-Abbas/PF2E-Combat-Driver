@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx5iy1mfvgx2o"]
+
+[ext_resource type="Script" path="res://Custom/WeaknessResistanceField.gd" id="1_37mak"]
+
+[node name="WeaknessResistHBox" type="HBoxContainer"]
+script = ExtResource("1_37mak")
+
+[node name="DamageTypeName" type="LineEdit" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResistValue" type="SpinBox" parent="."]
+unique_name_in_owner = true
+layout_mode = 2

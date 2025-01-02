@@ -1,12 +1,19 @@
-[gd_scene load_steps=11 format=3 uid="uid://c4mule60b5ehu"]
+[gd_scene load_steps=17 format=3 uid="uid://c4mule60b5ehu"]
 
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_d7k5c"]
 [ext_resource type="Script" path="res://Database/EnemyCreator.gd" id="1_q8537"]
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="3_l83o3"]
 [ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="4_vbygb"]
+[ext_resource type="PackedScene" uid="uid://queo7xmb50cs" path="res://Custom/SpeedField.tscn" id="5_a4nr1"]
+[ext_resource type="Script" path="res://Custom/EnemyCreatorGeneral.gd" id="5_f73rx"]
 [ext_resource type="PackedScene" uid="uid://c8u4avblutkgu" path="res://Table/Table.tscn" id="5_m8os8"]
 [ext_resource type="Script" path="res://Custom/EnemyCreatorDefensive.gd" id="6_3xsao"]
-[ext_resource type="PackedScene" uid="uid://dl1hgfsvcpcfn" path="res://Custom/DefensiveAbility.tscn" id="7_oppdb"]
+[ext_resource type="PackedScene" uid="uid://dl1hgfsvcpcfn" path="res://Custom/EnemyAbility.tscn" id="7_oppdb"]
+[ext_resource type="StyleBox" uid="uid://sxm5kta617hi" path="res://Themes/EnemyCreatorTab.tres" id="9_a5gth"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="9_uhgxp"]
+[ext_resource type="Script" path="res://Custom/EnemyCreatorAttacks.gd" id="10_snsf6"]
+[ext_resource type="PackedScene" uid="uid://bx5iy1mfvgx2o" path="res://Custom/WeaknessResistanceField.tscn" id="11_e6dyq"]
+[ext_resource type="Script" path="res://Custom/EnemyDataFormatter.gd" id="12_o30mp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt2bf"]
 content_margin_left = 4.0
@@ -21,18 +28,6 @@ border_width_bottom = 2
 border_color = Color(0.118581, 0.118581, 0.118581, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b4jvt"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3nts"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(1, 1, 1, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.695503, 0.695503, 0.695503, 1)
 
 [node name="EnemyCreator" type="PanelContainer"]
 custom_minimum_size = Vector2(800, 600)
@@ -55,7 +50,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Name"
-minimum_character_width = 12
+minimum_character_width = 16
 
 [node name="LevelField" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
@@ -71,95 +66,162 @@ label_text = "Perception"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="SensesField" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource("4_vbygb")]
-unique_name_in_owner = true
-layout_mode = 2
-label_text = "Senses"
-minimum_character_width = 10
-
-[node name="LanguagesField" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource("4_vbygb")]
-unique_name_in_owner = true
-layout_mode = 2
-label_text = "Languages"
-minimum_character_width = 10
-
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 0
+current_tab = 2
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+unique_name_in_owner = true
+visible = false
 layout_mode = 2
+script = ExtResource("5_f73rx")
 metadata/_tab_index = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = ExtResource("3_l83o3")
+theme_override_styles/panel = ExtResource("9_a5gth")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer"]
 layout_mode = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 1.7
-theme_override_styles/panel = ExtResource("3_l83o3")
+size_flags_stretch_ratio = 1.2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer"]
-layout_mode = 2
-
-[node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Ability Modifiers"
 
-[node name="HBoxContainer" type="GridContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer" type="GridContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 columns = 3
 
-[node name="STRField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="STRField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "STR"
 minimum_character_width = 3
 
-[node name="DEXField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="DEXField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "DEX"
 minimum_character_width = 3
 
-[node name="CONField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="CONField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "CON"
 minimum_character_width = 3
 
-[node name="INTField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="INTField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "INT"
 minimum_character_width = 3
 
-[node name="WISField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="WISField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "WIS"
 minimum_character_width = 3
 
-[node name="CHAField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="CHAField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "CHA"
 minimum_character_width = 3
 
-[node name="TraitsLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="SensesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Senses"
+minimum_character_width = 10
+
+[node name="LanguagesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Languages"
+minimum_character_width = 10
+
+[node name="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField" index="0"]
+text = "Languages"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField" index="1"]
+theme_override_constants/minimum_character_width = 10
+text = "Common, "
+placeholder_text = "Common, "
+
+[node name="TraitsLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Traits"
 
-[node name="TextEdit" type="TextEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="TraitsTextEdit" type="TextEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 placeholder_text = "Medium, Mindless, Undead, Unholy, Zombie "
 wrap_mode = 1
 scroll_fit_content_height = true
 caret_blink = true
 
-[node name="Abiliy Scores" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer" instance=ExtResource("5_m8os8")]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Speed"
+
+[node name="NewSpeedFieldButton" type="Button" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="SpeedFieldVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpeedField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox" instance=ExtResource("5_a4nr1")]
+layout_mode = 2
+
+[node name="OptionButton" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="0"]
+selected = 0
+
+[node name="SpeedAmount" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="2"]
+text = "25"
+
+[node name="NotesLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Notes"
+
+[node name="NotesTextEdit" type="TextEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+wrap_mode = 1
+scroll_fit_content_height = true
+caret_blink = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Ability Scores" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/ScrollContainer" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 5
@@ -173,205 +235,197 @@ metadata/_tab_index = 1
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_a3nts")
+theme_override_styles/panel = ExtResource("9_a5gth")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer"]
 layout_mode = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/panel = ExtResource("3_l83o3")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="HPField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="HPField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "HP"
 numbers_only = true
 
-[node name="ACField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="ACField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "AC"
 numbers_only = true
 minimum_character_width = 3
 
-[node name="FortitudeSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="FortitudeSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "Fort"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="ReflexSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="ReflexSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "Reflex"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="WillSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="WillSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
 layout_mode = 2
 label_text = "Will"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="SavesHBox" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="SavingThrowAbilitiesField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
-layout_mode = 2
-label_text = "Saving Throw Abilities"
-minimum_character_width = 16
-
-[node name="ResistancesHBox" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="ResistancesHBox" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/panel = ExtResource("3_l83o3")
+theme_override_styles/panel = ExtResource("9_uhgxp")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Weaknesses"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_right = 2
 
-[node name="WeaknessesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="WeaknessesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox"]
+[node name="WeaknessResistHBox" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox" instance=ExtResource("11_e6dyq")]
 layout_mode = 2
 
-[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox"]
-layout_mode = 2
-
-[node name="AddWeaknessButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox"]
+[node name="AddWeaknessButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox"]
 layout_mode = 2
 text = "+"
 
-[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_right = 2
 
-[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox"]
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/panel = ExtResource("3_l83o3")
+theme_override_styles/panel = ExtResource("9_uhgxp")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer"]
 layout_mode = 2
 text = "Resistances"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_right = 2
 
-[node name="ResistancesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="ResistancesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox"]
+[node name="WeaknessResistHBox" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox" instance=ExtResource("11_e6dyq")]
 layout_mode = 2
 
-[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox"]
-layout_mode = 2
-
-[node name="AddResistanceButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox"]
+[node name="AddResistanceButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox"]
 layout_mode = 2
 text = "+"
 
-[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox"]
+[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/panel = ExtResource("3_l83o3")
+theme_override_styles/panel = ExtResource("9_uhgxp")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer"]
 layout_mode = 2
 text = "Immunities"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_right = 2
 
-[node name="ImmunitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="ImmunitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
 layout_mode = 2
 
-[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
+[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
 layout_mode = 2
 
-[node name="AddImmunityButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
+[node name="AddImmunityButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox"]
 layout_mode = 2
 text = "+"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Defensive Abilities"
 
-[node name="NewDefensiveAbilityButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+[node name="NewDefensiveAbilityButton" type="Button" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "+"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
-[node name="DefensiveAbilitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/ScrollContainer"]
+[node name="DefensiveAbilitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="DefensiveAbility" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/ScrollContainer/DefensiveAbilitiesVBox" instance=ExtResource("7_oppdb")]
+[node name="DefensiveAbility" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/DefensiveAbilitiesVBox" instance=ExtResource("7_oppdb")]
 layout_mode = 2
 
 [node name="DefenseTables" type="TabContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer"]
@@ -409,14 +463,132 @@ layout_mode = 2
 table_type = 3
 
 [node name="Attacks" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
-visible = false
+unique_name_in_owner = true
 layout_mode = 2
+script = ExtResource("10_snsf6")
 metadata/_tab_index = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Attacks"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("9_a5gth")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="StrikesLabel" type="Label" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Strikes"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 170)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="StrikesVbox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StrikeCreator" type="Button" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/StrikesVbox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+"
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Offensive Abilities"
+
+[node name="NewOffensiveAbilityButton" type="Button" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="OffensiveAbilitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="EnemyAbility" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/ScrollContainer/OffensiveAbilitiesVBox" instance=ExtResource("7_oppdb")]
+layout_mode = 2
+
+[node name="AttackTables" type="TabContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.92
+current_tab = 0
+
+[node name="Strike Bonus" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="AttackTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Strike Bonus" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 7
+
+[node name="Damage Table" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="DamageTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Damage Table" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 8
+
+[node name="Spell DCs" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="SpellDCsTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Spell DCs" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 3
+
+[node name="Spell Attack" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="SpellAttackTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Spell Attack" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 4
+
+[node name="Area Damage" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="AreaDamageTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Area Damage" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 9
 
 [node name="Skills" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 visible = false
@@ -426,7 +598,7 @@ metadata/_tab_index = 3
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Skills"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_a3nts")
+theme_override_styles/panel = ExtResource("9_a5gth")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer"]
 layout_mode = 2
@@ -474,8 +646,101 @@ table_type = 3
 layout_mode = 2
 text = "Save Sheet"
 
-[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox/AddWeaknessButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_weakness_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox/AddResistanceButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_resistance_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox/AddImmunityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_immunity_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/NewDefensiveAbilityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_new_defensive_ability_button_pressed"]
+[node name="AttackEditorWindow" type="Window" parent="."]
+unique_name_in_owner = true
+auto_translate_mode = 1
+title = "Attack Editor"
+initial_position = 1
+size = Vector2i(413, 147)
+visible = false
+wrap_controls = true
+transient = true
+exclusive = true
+keep_title_visible = true
+theme = ExtResource("1_d7k5c")
+
+[node name="PanelContainer" type="PanelContainer" parent="AttackEditorWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AttackEditorWindow/PanelContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AttackEditorWindow/PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="StrikeNameField" parent="AttackEditorWindow/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Strike Name"
+minimum_character_width = 12
+
+[node name="TypeFieldContainer" type="HBoxContainer" parent="AttackEditorWindow/PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="StrikeTypeLabel" type="Label" parent="AttackEditorWindow/PanelContainer/VBoxContainer/HBoxContainer/TypeFieldContainer"]
+layout_mode = 2
+text = "Type"
+
+[node name="StrikeTypeOptions" type="OptionButton" parent="AttackEditorWindow/PanelContainer/VBoxContainer/HBoxContainer/TypeFieldContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Melee"
+popup/item_1/text = "Ranged"
+popup/item_1/id = 1
+
+[node name="StrikeTraitsField" parent="AttackEditorWindow/PanelContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Traits"
+minimum_character_width = 26
+
+[node name="Label" parent="AttackEditorWindow/PanelContainer/VBoxContainer/StrikeTraitsField" index="0"]
+text = "Traits"
+
+[node name="LineEdit" parent="AttackEditorWindow/PanelContainer/VBoxContainer/StrikeTraitsField" index="1"]
+theme_override_constants/minimum_character_width = 26
+placeholder_text = "agile, magical, reach 10"
+
+[node name="StrikeBonusField" parent="AttackEditorWindow/PanelContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Strike Bonus"
+numbers_only = true
+
+[node name="StrikeDamageField" parent="AttackEditorWindow/PanelContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Strike Damage"
+minimum_character_width = 24
+
+[node name="AttackSaveButton" type="Button" parent="AttackEditorWindow/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save"
+
+[node name="EnemyDataFormatter" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("12_o30mp")
+
+[connection signal="pressed" from="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewSpeedFieldButton" to="VBoxContainer/TabContainer/General" method="_on_new_speed_field_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox/AddWeaknessButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_weakness_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox/AddResistanceButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_resistance_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox/AddImmunityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_immunity_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewDefensiveAbilityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_new_defensive_ability_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/StrikesVbox/StrikeCreator" to="VBoxContainer/TabContainer/Attacks" method="_on_strike_creator_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/NewOffensiveAbilityButton" to="VBoxContainer/TabContainer/Attacks" method="_on_new_offensive_ability_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SaveSheetButton" to="." method="_on_save_sheet_button_pressed"]
+[connection signal="close_requested" from="AttackEditorWindow" to="VBoxContainer/TabContainer/Attacks" method="_on_attack_editor_window_close_requested"]
+[connection signal="pressed" from="AttackEditorWindow/PanelContainer/VBoxContainer/AttackSaveButton" to="VBoxContainer/TabContainer/Attacks" method="_on_attack_save_button_pressed"]
+[connection signal="sheet_created" from="EnemyDataFormatter" to="." method="_on_enemy_data_formatter_sheet_created"]
+
+[editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField"]
+[editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField"]
+[editable path="AttackEditorWindow/PanelContainer/VBoxContainer/StrikeTraitsField"]

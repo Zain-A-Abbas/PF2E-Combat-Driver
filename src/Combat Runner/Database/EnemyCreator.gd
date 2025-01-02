@@ -8,6 +8,9 @@ const CUSTOM_ENEMIES_LOCATION: String = "res://Data/Enemies/custom-enemies/"
 const ENEMY_CREATOR_SKILL = preload("res://Custom/EnemyCreatorSkill.tscn")
 const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", "Deception", "Diplomacy", "Intimidation", "Lore", "Medicine", "Nature", "Occultism", "Performance", "Religion", "Society", "Stealth", "Survival", "Thievery"]
 
+@onready var tab_container: TabContainer = %TabContainer
+
+@onready var enemy_data_formatter: Node = %EnemyDataFormatter
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
@@ -18,6 +21,7 @@ const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", 
 @onready var skills_vbox: VBoxContainer = %SkillsVbox
 
 func _ready() -> void:
+	tab_container.current_tab = 0
 	# Set min heights for nodes
 	for node in find_children("*"):
 		if is_instance_of(node, LineEdit) || is_instance_of(node, TextEdit):
@@ -36,6 +40,8 @@ func _ready() -> void:
 		newSkill.name = SKILLS[i] + "Panel"
 
 func create_enemy():
+	enemy_data_formatter.create_enemy()
+	return
 	var new_enemy_sheet: Dictionary = {}
 	var example = EnemySheetExample.new()
 	new_enemy_sheet = example.DEFAULT.duplicate(true)
@@ -65,3 +71,7 @@ func has_file_name(file_name: String, folder: DirAccess):
 
 func _on_save_sheet_button_pressed():
 	create_enemy()
+
+
+func _on_enemy_data_formatter_sheet_created() -> void:
+	emit_signal("sheet_created")

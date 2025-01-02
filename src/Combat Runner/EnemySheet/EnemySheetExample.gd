@@ -123,7 +123,7 @@ const DEFAULT: Dictionary = {
 		"traits": {
 			"languages": {
 				"value": [
-					"common"
+					
 				]
 			},
 			"rarity": "common",
@@ -133,9 +133,7 @@ const DEFAULT: Dictionary = {
 			"size": {
 				"value": "medium"
 			},
-			"value": [
-				"example trait"
-			]
+			"value": []
 		}
 	},
 	"type": "npc"
@@ -143,25 +141,38 @@ const DEFAULT: Dictionary = {
 
 const ATTACK_TEMPLATE: Dictionary = {
 	"name": "Attack Name",
-	"type": "melee",
+	"type": "melee", # "melee" does not mean actually melee.
 	"system": {
 		"bonus": {
 			"value": 10
 		},
-		"damageRolls": {
-			"0": {
-				"damage": "3d10+5",
-				"damageType": "piercing"
-			},
-			"1": {
-				"damage": "1d12",
-				"damageType": "fire"
-			}
-		},
+		"damageRolls": {},
+		"oneLineDamageRoll": "",
 		"traits": {
 			"value": []
 		},
 		"attackEffects": {
+			"value": []
+		},
+	}
+}
+
+# Used for both offensive and defensive special; abilities
+const ABILITY_TEMPLATE: Dictionary = {
+	"name": "Ability Name",
+	"type": "action", 
+	"system": {
+		"category": "offensive",
+		"actionType": {
+			"value": ""
+		},
+		"actions": {
+			"value": ""
+		},
+		"description": {
+			"value": ""
+		},
+		"traits": {
 			"value": []
 		},
 	}

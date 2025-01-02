@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=33 format=3 uid="uid://cipxsfp7eqshp"]
+[gd_resource type="Theme" load_steps=42 format=3 uid="uid://cipxsfp7eqshp"]
 
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_g84is"]
+[ext_resource type="Texture2D" uid="uid://bbiyt4467sjt8" path="res://Icons/SpinboxArrows.png" id="2_qfgkh"]
 
 [sub_resource type="SystemFont" id="SystemFont_riuwr"]
 font_names = PackedStringArray("MS UI Gothic")
@@ -13,10 +14,10 @@ content_margin_right = 4.0
 content_margin_bottom = 4.0
 bg_color = Color(1, 1, 1, 0.75)
 draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color(0.3042, 0.43108, 0.78, 1)
 corner_detail = 5
 
@@ -24,16 +25,18 @@ corner_detail = 5
 content_margin_top = 4.0
 content_margin_bottom = 4.0
 bg_color = Color(0.5035, 0.659775, 0.95, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color(0.294, 0.346267, 0.49, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jadgb"]
+content_margin_left = 8.0
 content_margin_top = 4.0
+content_margin_right = 8.0
 content_margin_bottom = 4.0
-bg_color = Color(0.947199, 0.947199, 0.947199, 1)
+bg_color = Color(0.9, 0.9, 0.9, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -44,18 +47,49 @@ border_color = Color(0.724643, 0.724643, 0.724642, 1)
 content_margin_top = 4.0
 content_margin_bottom = 4.0
 bg_color = Color(0.4067, 0.554855, 0.83, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color(0.305882, 0.431373, 0.780392, 1)
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_ic58r"]
-color = Color(0, 0, 0, 0.196078)
-thickness = 5
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_lurag"]
+color = Color(0, 0, 0, 0.419608)
+thickness = 2
+
+[sub_resource type="SystemFont" id="SystemFont_d7ho6"]
+font_names = PackedStringArray("MS UI Gothic")
+multichannel_signed_distance_field = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wg7qv"]
+bg_color = Color(0.929715, 0.929715, 0.929714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.227451, 0.509804, 0.788235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w4y25"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0v510"]
+bg_color = Color(0.89, 0.89, 0.89, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.66, 0.66, 0.66, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guspq"]
+bg_color = Color(0.337261, 0.610644, 0.890162, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.159787, 0.411742, 0.655394, 1)
 
 [sub_resource type="SystemFont" id="SystemFont_mt863"]
-font_names = PackedStringArray("MS UI Gothic")
+font_names = PackedStringArray("Arial")
 multichannel_signed_distance_field = true
 
 [sub_resource type="SystemFont" id="SystemFont_7bren"]
@@ -107,6 +141,20 @@ bg_color = Color(0.138226, 0.260069, 1, 1)
 corner_detail = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4y0ma"]
+
+[sub_resource type="SystemFont" id="SystemFont_wg2ln"]
+font_names = PackedStringArray("Arial")
+font_weight = 600
+multichannel_signed_distance_field = true
+
+[sub_resource type="SystemFont" id="SystemFont_163e5"]
+font_names = PackedStringArray("Arial")
+multichannel_signed_distance_field = true
+
+[sub_resource type="SystemFont" id="SystemFont_olp63"]
+font_names = PackedStringArray("Arial")
+font_weight = 600
+multichannel_signed_distance_field = true
 
 [sub_resource type="SystemFont" id="SystemFont_g11s3"]
 font_names = PackedStringArray("MS UI Gothic")
@@ -231,8 +279,8 @@ expand_margin_right = 2.0
 expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_qomhb"]
-color = Color(0, 0, 0, 0.196078)
-thickness = 4
+color = Color(0, 0, 0, 0.419608)
+thickness = 2
 vertical = true
 
 [sub_resource type="SystemFont" id="SystemFont_vu2t6"]
@@ -250,7 +298,15 @@ Button/styles/focus = SubResource("StyleBoxFlat_ewaa7")
 Button/styles/hover = SubResource("StyleBoxFlat_l0fqv")
 Button/styles/normal = SubResource("StyleBoxFlat_jadgb")
 Button/styles/pressed = SubResource("StyleBoxFlat_d0tip")
-HSeparator/styles/separator = SubResource("StyleBoxLine_ic58r")
+HSeparator/styles/separator = SubResource("StyleBoxLine_lurag")
+ItemList/colors/font_color = Color(0, 0, 0, 1)
+ItemList/colors/font_hovered_color = Color(0, 0, 0, 1)
+ItemList/colors/font_selected_color = Color(0, 0, 0, 1)
+ItemList/fonts/font = SubResource("SystemFont_d7ho6")
+ItemList/styles/hovered = SubResource("StyleBoxFlat_wg7qv")
+ItemList/styles/panel = SubResource("StyleBoxFlat_w4y25")
+ItemList/styles/selected = SubResource("StyleBoxFlat_0v510")
+ItemList/styles/selected_focus = SubResource("StyleBoxFlat_guspq")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/fonts/font = SubResource("SystemFont_mt863")
 LineEdit/colors/caret_color = Color(0, 0, 0, 1)
@@ -273,9 +329,21 @@ PopupMenu/fonts/font = SubResource("SystemFont_v7ldh")
 PopupMenu/styles/hover = SubResource("StyleBoxFlat_g360g")
 PopupMenu/styles/panel = ExtResource("1_g84is")
 PopupMenu/styles/separator = SubResource("StyleBoxEmpty_4y0ma")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/bold_font_size = 16
+RichTextLabel/font_sizes/normal_font_size = 14
+RichTextLabel/fonts/bold_font = SubResource("SystemFont_wg2ln")
+RichTextLabel/fonts/normal_font = SubResource("SystemFont_163e5")
+SpinBox/icons/updown = ExtResource("2_qfgkh")
+StrikeData/base_type = &"Label"
+StrikeData/font_sizes/font_size = 16
+StrikeName/base_type = &"Label"
+StrikeName/font_sizes/font_size = 16
+StrikeName/fonts/font = SubResource("SystemFont_olp63")
 TabContainer/colors/font_hovered_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_selected_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_unselected_color = Color(0, 0, 0, 1)
+TabContainer/font_sizes/font_size = 16
 TabContainer/fonts/font = SubResource("SystemFont_g11s3")
 TabContainer/styles/panel = SubResource("StyleBoxFlat_0y84y")
 TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_5ovfo")

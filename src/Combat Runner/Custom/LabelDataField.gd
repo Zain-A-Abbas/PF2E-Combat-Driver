@@ -12,6 +12,9 @@ class_name LabelDataField
 func _ready() -> void:
 	line_edit.add_theme_constant_override("minimum_character_width", minimum_character_width)
 
+func set_value(val: String):
+	line_edit.text = val
+
 func get_value() -> String:
 	return line_edit.text
 

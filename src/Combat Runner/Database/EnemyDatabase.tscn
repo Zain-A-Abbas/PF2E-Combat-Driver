@@ -2,15 +2,27 @@
 
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="1_bdhe6"]
 [ext_resource type="Script" path="res://Database/EnemyDatabase.gd" id="1_oki1l"]
-[ext_resource type="FontFile" uid="uid://deqhew2apixpi" path="res://Fonts/GOTHICB.TTF" id="2_1phum"]
-[ext_resource type="Theme" uid="uid://usptm04bxef0" path="res://Themes/FilteringSorting.tres" id="2_etg7m"]
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="5_ofgan"]
+[ext_resource type="StyleBox" uid="uid://caixi2nwu5inu" path="res://Themes/SheetPanel.tres" id="3_mj4bq"]
 [ext_resource type="PackedScene" uid="uid://bg2q2nt5lb8xs" path="res://Database/RarityFiltering.tscn" id="7_p2jkh"]
 [ext_resource type="PackedScene" uid="uid://bvo7dlcc42sjo" path="res://Database/SizeFiltering.tscn" id="7_r2utg"]
 [ext_resource type="PackedScene" uid="uid://vxjcml8k865s" path="res://Database/TraitFiltering.tscn" id="8_003v4"]
 [ext_resource type="PackedScene" uid="uid://bxm3l24gj3syg" path="res://Database/NumbersFiltering.tscn" id="9_bo4n0"]
 [ext_resource type="PackedScene" uid="uid://c4mule60b5ehu" path="res://Custom/EnemyCreator.tscn" id="10_fkyqp"]
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="10_p35gr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix1ud"]
+bg_color = Color(0.95, 0.95, 0.95, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wjgl"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 
 [node name="EnemyDatabase" type="Control"]
 layout_mode = 3
@@ -19,167 +31,179 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("10_p35gr")
 script = ExtResource("1_oki1l")
 metadata/_edit_lock_ = true
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.945098, 0.92549, 0.898039, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_ix1ud")
 
-[node name="Database" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Database" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Database"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/Database"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.05
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 6
 
-[node name="SortingFiltering" type="HBoxContainer" parent="Database/MarginContainer"]
+[node name="SortingFiltering" type="HBoxContainer" parent="PanelContainer/Database/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("2_etg7m")
 theme_override_constants/separation = 12
 
-[node name="SearchBar" type="LineEdit" parent="Database/MarginContainer/SortingFiltering"]
-custom_minimum_size = Vector2(140, 0)
+[node name="SearchBar" type="LineEdit" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("5_ofgan")
+size_flags_vertical = 4
+theme_override_constants/minimum_character_width = 16
 placeholder_text = "Search by Name"
+caret_blink = true
 
-[node name="SortBy" type="Label" parent="Database/MarginContainer/SortingFiltering"]
+[node name="SortBy" type="Label" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_1phum")
 text = "Sort by:"
 
-[node name="Button" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="Button" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Name"
 
-[node name="Button2" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="Button2" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Level"
 
-[node name="Filters" type="Label" parent="Database/MarginContainer/SortingFiltering"]
+[node name="Filters" type="Label" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_1phum")
-text = "Filters:"
+text = "Filter by:"
 
-[node name="NumbersFilterButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="NumbersFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Numbers"
 
-[node name="RarityFilterButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="RarityFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Rarity"
 
-[node name="SizeFilterButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="SizeFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Size"
 
-[node name="SavesFilterButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="SavesFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Strongest / Weakest Saves"
 
-[node name="TraitsFilterButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="TraitsFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Traits"
 
-[node name="ResetButton2" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="ResetButton2" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-theme = ExtResource("5_ofgan")
 text = "Reset selection"
 
-[node name="NewEnemyButton" type="Button" parent="Database/MarginContainer/SortingFiltering"]
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
+
+[node name="NewEnemyButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+layout_mode = 2
+size_flags_vertical = 4
 text = "Create new enemy"
 
-[node name="DatabaseSheets" type="HBoxContainer" parent="Database"]
+[node name="DatabaseSheets" type="HBoxContainer" parent="PanelContainer/Database"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="EnemyList" type="ItemList" parent="Database/DatabaseSheets"]
-custom_minimum_size = Vector2(200, 0)
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_0wjgl")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Database/DatabaseSheets"]
+[node name="EnemyList" type="ItemList" parent="PanelContainer/Database/DatabaseSheets/PanelContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 3
+item_0/text = "The dog"
+item_1/text = "How do you do fellow kids"
+item_2/text = "Destroy this dog"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Database/DatabaseSheets"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 5.0
 
-[node name="EnemySheet" parent="Database/DatabaseSheets/VBoxContainer" instance=ExtResource("1_bdhe6")]
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("3_mj4bq")
+
+[node name="EnemySheet" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer2" instance=ExtResource("1_bdhe6")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="Database/DatabaseSheets/VBoxContainer"]
+[node name="PanelContainer" type="MarginContainer" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
 
-[node name="AddToCombatButton" type="Button" parent="Database/DatabaseSheets/VBoxContainer/PanelContainer"]
+[node name="AddToCombatButton" type="Button" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Add to Combat"
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer"]
+layout_mode = 2
 mouse_filter = 2
 metadata/_edit_lock_ = true
 
-[node name="SizeFilterMenu" parent="CenterContainer" instance=ExtResource("7_r2utg")]
+[node name="SizeFilterMenu" parent="PanelContainer/CenterContainer" instance=ExtResource("7_r2utg")]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="RarityFilterMenu" parent="CenterContainer" instance=ExtResource("7_p2jkh")]
+[node name="RarityFilterMenu" parent="PanelContainer/CenterContainer" instance=ExtResource("7_p2jkh")]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="TraitFilterMenu" parent="CenterContainer" instance=ExtResource("8_003v4")]
+[node name="TraitFilterMenu" parent="PanelContainer/CenterContainer" instance=ExtResource("8_003v4")]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="NumbersFiltering" parent="CenterContainer" instance=ExtResource("9_bo4n0")]
+[node name="NumbersFiltering" parent="PanelContainer/CenterContainer" instance=ExtResource("9_bo4n0")]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="EnemyCreatorWindow" type="Window" parent="CenterContainer"]
+[node name="EnemyCreatorWindow" type="Window" parent="PanelContainer/CenterContainer"]
 unique_name_in_owner = true
 title = "Enemy Creator"
 initial_position = 1
@@ -192,7 +216,7 @@ force_native = true
 keep_title_visible = true
 theme = ExtResource("10_p35gr")
 
-[node name="EnemyCreator" parent="CenterContainer/EnemyCreatorWindow" instance=ExtResource("10_fkyqp")]
+[node name="EnemyCreator" parent="PanelContainer/CenterContainer/EnemyCreatorWindow" instance=ExtResource("10_fkyqp")]
 unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
@@ -202,18 +226,19 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[connection signal="text_changed" from="Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/NumbersFilterButton" to="." method="_on_numbers_filter_button_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/RarityFilterButton" to="." method="_on_rarity_filter_button_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/SizeFilterButton" to="." method="_on_size_filter_button_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/TraitsFilterButton" to="." method="_on_traits_filter_button_pressed"]
-[connection signal="pressed" from="Database/MarginContainer/SortingFiltering/NewEnemyButton" to="." method="_on_new_enemy_button_pressed"]
-[connection signal="item_selected" from="Database/DatabaseSheets/EnemyList" to="." method="_on_enemy_list_item_selected"]
-[connection signal="pressed" from="Database/DatabaseSheets/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
-[connection signal="apply_filter" from="CenterContainer/SizeFilterMenu" to="." method="_on_size_filter_menu_apply_filter"]
-[connection signal="apply_filter" from="CenterContainer/RarityFilterMenu" to="." method="_on_rarity_filter_menu_apply_filter"]
-[connection signal="apply_filter" from="CenterContainer/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
-[connection signal="apply_filter" from="CenterContainer/NumbersFiltering" to="." method="_on_numbers_filtering_apply_filter"]
-[connection signal="close_requested" from="CenterContainer/EnemyCreatorWindow" to="." method="enemy_creator_closed"]
+[connection signal="text_changed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/NumbersFilterButton" to="." method="_on_numbers_filter_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/RarityFilterButton" to="." method="_on_rarity_filter_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SizeFilterButton" to="." method="_on_size_filter_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/TraitsFilterButton" to="." method="_on_traits_filter_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/NewEnemyButton" to="." method="_on_new_enemy_button_pressed"]
+[connection signal="item_selected" from="PanelContainer/Database/DatabaseSheets/PanelContainer/EnemyList" to="." method="_on_enemy_list_item_selected"]
+[connection signal="pressed" from="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
+[connection signal="apply_filter" from="PanelContainer/CenterContainer/SizeFilterMenu" to="." method="_on_size_filter_menu_apply_filter"]
+[connection signal="apply_filter" from="PanelContainer/CenterContainer/RarityFilterMenu" to="." method="_on_rarity_filter_menu_apply_filter"]
+[connection signal="apply_filter" from="PanelContainer/CenterContainer/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
+[connection signal="apply_filter" from="PanelContainer/CenterContainer/NumbersFiltering" to="." method="_on_numbers_filtering_apply_filter"]
+[connection signal="close_requested" from="PanelContainer/CenterContainer/EnemyCreatorWindow" to="." method="enemy_creator_closed"]
+[connection signal="sheet_created" from="PanelContainer/CenterContainer/EnemyCreatorWindow/EnemyCreator" to="." method="_on_enemy_creator_sheet_created"]

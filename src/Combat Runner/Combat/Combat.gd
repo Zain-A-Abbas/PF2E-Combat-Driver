@@ -5,12 +5,11 @@ const ENEMY_INFO_TEMPLATE = preload("res://Combat/EnemyInfoTemplate.tscn")
 # Initiative is an enemy on the initiative
 const ENEMY_INITIATIVE = preload("res://Combat/EnemyInitiative.tscn")
 
-@onready var enemies: Node
-@onready var enemy_sheet = $HBoxContainer/TrackerSheetSplit/SheetandDatabase/VSplitContainer/EnemySheet
-@onready var initiative_container = $HBoxContainer/Panel/InitiativeRolling/Initiative/InitiativeMargins/VBoxContainer/ScrollContainer/InitiativeContainer
+@onready var enemies: VBoxContainer = %Enemies
+@onready var enemy_sheet: Sheet = %EnemySheet
+@onready var initiative_container: VBoxContainer = %InitiativeContainer
 
 func _ready():
-	enemies = $"HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EnemyTrackerPanel/ScrollContainer/Enemies"
 	EventBus.encounter_save_directory_chosen.connect(save_validated)
 	EventBus.encounter_load_directory_chosen.connect(load_validated)
 

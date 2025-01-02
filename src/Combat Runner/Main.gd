@@ -1,7 +1,7 @@
 extends Control
 
-@onready var combat = $TabBar/Combat
-@onready var enemy_database = $TabBar/EnemyDatabase
+@onready var combat: Control = %Combat
+@onready var enemy_database: Control = %"Enemy Database"
 
 
 # Called when the node enters the scene tree for the first time.
