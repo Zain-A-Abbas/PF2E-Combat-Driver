@@ -177,3 +177,42 @@ const ABILITY_TEMPLATE: Dictionary = {
 		},
 	}
 }
+
+
+const SPELLCASTING_TEMPLATE: Dictionary = {
+	"name": "Arcane Prepared Spells",
+	"type": "spellcastingEntry",
+	"system": {
+		"spelldc": {
+			"dc": 0,
+			"value": 0
+		},
+		"prepared": {
+			"value": ""
+		},
+		"location": {
+			"value": ""
+		},
+	}
+}
+
+const SPELL_TEMPLATE: Dictionary = {
+	"name": "Spell Name",
+	"type": "spell",
+	"system": {
+		"level": {
+			"value": 0 # Fill this out with level
+		},
+		"location": {
+			"value": ""
+		},
+		"category": {
+			"value": "spell"
+		},
+		"damageRolls": {},
+		"oneLineDamageRoll": "",
+		"traits": {
+			"value": [] # Fill this with cantrip if spell is in 0 tier
+		}
+	}
+}

@@ -34,7 +34,8 @@ enum TableType {
 	ABILITY_SCORES,
 	STRIKE_BONUS,
 	STRIKE_DAMAGE,
-	AREA_DAMAGE
+	AREA_DAMAGE,
+	PERCEPTION
 }
 
 @export var table_type: TableType = TableType.NONE
@@ -72,6 +73,8 @@ func _ready() -> void:
 			read_csv(STRIKE_DAMAGE)
 		TableType.AREA_DAMAGE:
 			read_csv(AREA_DAMAGE)
+		TableType.PERCEPTION:
+			read_csv(PERCEPTION)
 
 static func add_tables(parent: Control):
 	var skills_table: Table = Table.new()

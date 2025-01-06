@@ -281,7 +281,7 @@ func _on_numbers_filtering_apply_filter():
 	numbers_filtering.visible = false
 	sort_filter_enemies()
 
-func _on_search_bar_text_changed(new_text):
+func _on_search_bar_text_changed(_new_text):
 	sort_filter_enemies()
 
 func _on_numbers_filter_button_pressed():

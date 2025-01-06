@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c4mule60b5ehu"]
+[gd_scene load_steps=19 format=3 uid="uid://c4mule60b5ehu"]
 
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_d7k5c"]
 [ext_resource type="Script" path="res://Database/EnemyCreator.gd" id="1_q8537"]
@@ -14,6 +14,8 @@
 [ext_resource type="Script" path="res://Custom/EnemyCreatorAttacks.gd" id="10_snsf6"]
 [ext_resource type="PackedScene" uid="uid://bx5iy1mfvgx2o" path="res://Custom/WeaknessResistanceField.tscn" id="11_e6dyq"]
 [ext_resource type="Script" path="res://Custom/EnemyDataFormatter.gd" id="12_o30mp"]
+[ext_resource type="Script" path="res://Custom/EnemyCreatorSpells.gd" id="14_07ghh"]
+[ext_resource type="Script" path="res://Custom/EnemyRoadMapFiller.gd" id="15_bt72b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt2bf"]
 content_margin_left = 4.0
@@ -50,7 +52,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Name"
-minimum_character_width = 16
+minimum_character_width = 12
 
 [node name="LevelField" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
@@ -59,19 +61,75 @@ label_text = "Level"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="PerceptionField" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource("4_vbygb")]
+[node name="Label" parent="VBoxContainer/PanelContainer/GridContainer/LevelField" index="0"]
+text = "Level"
+
+[node name="LineEdit" parent="VBoxContainer/PanelContainer/GridContainer/LevelField" index="1"]
+theme_override_constants/minimum_character_width = 2
+text = "0"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer/GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/GridContainer/HBoxContainer"]
+layout_mode = 2
+text = "Size"
+
+[node name="SizeOption" type="OptionButton" parent="VBoxContainer/PanelContainer/GridContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-label_text = "Perception"
-numbers_only = true
-minimum_character_width = 2
+selected = 2
+item_count = 6
+popup/item_0/text = "Tiny"
+popup/item_1/text = "Small"
+popup/item_1/id = 1
+popup/item_2/text = "Medium"
+popup/item_2/id = 2
+popup/item_3/text = "Large"
+popup/item_3/id = 3
+popup/item_4/text = "Huge"
+popup/item_4/id = 4
+popup/item_5/text = "Gargantuan"
+popup/item_5/id = 5
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/PanelContainer/GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Road Map"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 7
+popup/item_0/text = "Brute"
+popup/item_1/text = "Magical Striker"
+popup/item_1/id = 1
+popup/item_2/text = "Skill Paragon"
+popup/item_2/id = 2
+popup/item_3/text = "Skirmisher"
+popup/item_3/id = 3
+popup/item_4/text = "Sniper"
+popup/item_4/id = 4
+popup/item_5/text = "Soldier"
+popup/item_5/id = 5
+popup/item_6/text = "Spellcaster"
+popup/item_6/id = 6
+
+[node name="AutofillButton" type="Button" parent="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "dgfdfgdfg"
+text = "Create Road Map"
 
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 2
+current_tab = 4
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -91,7 +149,7 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 1.2
+size_flags_stretch_ratio = 0.98
 
 [node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -136,6 +194,12 @@ unique_name_in_owner = true
 layout_mode = 2
 label_text = "CHA"
 minimum_character_width = 3
+
+[node name="PerceptionField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Perception"
+numbers_only = true
 
 [node name="SensesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
@@ -217,16 +281,34 @@ wrap_mode = 1
 scroll_fit_content_height = true
 caret_blink = true
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+current_tab = 0
 
-[node name="Ability Scores" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/ScrollContainer" instance=ExtResource("5_m8os8")]
+[node name="Ability Scores" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/TabContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-table_type = 5
+metadata/_tab_index = 0
+
+[node name="Ability Scores" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/TabContainer/Ability Scores" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 6
+
+[node name="Perception" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_tab_index = 1
+
+[node name="Perception Table" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/TabContainer/Perception" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 10
 
 [node name="Defensive" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 script = ExtResource("6_3xsao")
@@ -434,36 +516,37 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.9
 current_tab = 0
 
-[node name="HP Table" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+[node name="HP" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="HP Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/HP Table" instance=ExtResource("5_m8os8")]
+[node name="HP Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/HP" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 1
 
-[node name="AC Table" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+[node name="AC" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="AC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/AC Table" instance=ExtResource("5_m8os8")]
+[node name="AC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/AC" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 2
 
-[node name="DC Table" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+[node name="DCs" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
-[node name="DC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/DC Table" instance=ExtResource("5_m8os8")]
+[node name="DC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/DCs" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 table_type = 3
 
 [node name="Attacks" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("10_snsf6")
 metadata/_tab_index = 2
@@ -550,12 +633,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 table_type = 7
 
-[node name="Damage Table" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
+[node name="Damage" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="DamageTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Damage Table" instance=ExtResource("5_m8os8")]
+[node name="DamageTable" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/AttackTables/Damage" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 8
@@ -591,6 +674,7 @@ size_flags_horizontal = 3
 table_type = 9
 
 [node name="Skills" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 3
@@ -600,47 +684,286 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = ExtResource("9_a5gth")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer"]
-layout_mode = 2
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_styles/panel = ExtResource("3_l83o3")
 
-[node name="SkillContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2/PanelContainer"]
+[node name="SkillContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/VBoxContainer/PanelContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 0
 
-[node name="SkillsSectionLabel" type="Label" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2/PanelContainer/SkillContainer"]
+[node name="SkillsSectionLabel" type="Label" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/VBoxContainer/PanelContainer/SkillContainer"]
 layout_mode = 2
 text = "Skills"
 vertical_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2/PanelContainer/SkillContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/VBoxContainer/PanelContainer/SkillContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="SkillsVbox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2/PanelContainer/SkillContainer/ScrollContainer"]
+[node name="SkillsVbox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/VBoxContainer/PanelContainer/SkillContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 0
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.9
 
-[node name="Skills Table" parent="VBoxContainer/TabContainer/Skills/PanelContainer/VBoxContainer/HBoxContainer2/ScrollContainer" instance=ExtResource("5_m8os8")]
+[node name="Skills Table" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/ScrollContainer" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 3
+
+[node name="Spells" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("14_07ghh")
+metadata/_tab_index = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/Spells"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("9_a5gth")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="SpellListBox" type="OptionButton" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 5
+popup/item_0/text = "None"
+popup/item_1/text = "Arcane"
+popup/item_1/id = 1
+popup/item_2/text = "Divine"
+popup/item_2/id = 2
+popup/item_3/text = "Occult"
+popup/item_3/id = 4
+popup/item_4/text = "Primal"
+popup/item_4/id = 5
+
+[node name="CastingTypeBox" type="OptionButton" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Prepared"
+popup/item_1/text = "Spontaneous"
+popup/item_1/id = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="SpellDCField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Spell DC"
+numbers_only = true
+
+[node name="SpellAttackField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Spell Attack"
+numbers_only = true
+
+[node name="SpellFieldsPanel" type="PanelContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_uhgxp")
+
+[node name="SpellFieldsContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CantripsField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Cantrips"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField" index="0"]
+text = "Cantrips"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="1stRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "1st"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "1st"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="2ndRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "2nd"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "2nd"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="3rdRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "3rd"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "3rd"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="4thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "4th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "4th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="5thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "5th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "5th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="6thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "6th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "6th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="7thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "7th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "7th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="8thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "8th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "8th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="9thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "9th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "9th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="10thRankField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "10th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "10th"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="SpellTables" type="TabContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.92
+current_tab = 0
+
+[node name="Spell DCs" type="ScrollContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/SpellTables"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="SpellDCsTable" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/SpellTables/Spell DCs" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 3
+
+[node name="Spell Attack" type="ScrollContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/SpellTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="SpellAttackTable" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/SpellTables/Spell Attack" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 4
 
 [node name="SaveSheetButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -729,6 +1052,10 @@ text = "Save"
 unique_name_in_owner = true
 script = ExtResource("12_o30mp")
 
+[node name="EnemyRoadMapFiller" type="Node" parent="."]
+script = ExtResource("15_bt72b")
+
+[connection signal="pressed" from="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2/AutofillButton" to="EnemyRoadMapFiller" method="autofill_clicked"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewSpeedFieldButton" to="VBoxContainer/TabContainer/General" method="_on_new_speed_field_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox/AddWeaknessButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_weakness_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox/AddResistanceButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_resistance_button_pressed"]
@@ -736,11 +1063,24 @@ script = ExtResource("12_o30mp")
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewDefensiveAbilityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_new_defensive_ability_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/StrikesVbox/StrikeCreator" to="VBoxContainer/TabContainer/Attacks" method="_on_strike_creator_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/NewOffensiveAbilityButton" to="VBoxContainer/TabContainer/Attacks" method="_on_new_offensive_ability_button_pressed"]
+[connection signal="item_selected" from="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer/SpellListBox" to="VBoxContainer/TabContainer/Spells" method="_on_spell_list_box_item_selected"]
 [connection signal="pressed" from="VBoxContainer/SaveSheetButton" to="." method="_on_save_sheet_button_pressed"]
 [connection signal="close_requested" from="AttackEditorWindow" to="VBoxContainer/TabContainer/Attacks" method="_on_attack_editor_window_close_requested"]
 [connection signal="pressed" from="AttackEditorWindow/PanelContainer/VBoxContainer/AttackSaveButton" to="VBoxContainer/TabContainer/Attacks" method="_on_attack_save_button_pressed"]
 [connection signal="sheet_created" from="EnemyDataFormatter" to="." method="_on_enemy_data_formatter_sheet_created"]
 
+[editable path="VBoxContainer/PanelContainer/GridContainer/LevelField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField"]
 [editable path="AttackEditorWindow/PanelContainer/VBoxContainer/StrikeTraitsField"]

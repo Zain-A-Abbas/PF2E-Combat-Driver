@@ -10,6 +10,7 @@ signal sheet_created
 @onready var traits_text_edit: TextEdit = %TraitsTextEdit
 @onready var notes_text_edit: TextEdit = %NotesTextEdit
 @onready var speed_field_v_box: VBoxContainer = %SpeedFieldVBox
+@onready var size_option: OptionButton = %SizeOption
 
 @onready var str_field: LabelDataField = %STRField
 @onready var dex_field: LabelDataField = %DEXField
@@ -30,6 +31,23 @@ signal sheet_created
 
 @onready var strikes_vbox: VBoxContainer = %StrikesVbox
 @onready var offensive_abilities_v_box: VBoxContainer = %OffensiveAbilitiesVBox
+
+@onready var spell_list_box: OptionButton = %SpellListBox
+@onready var casting_type_box: OptionButton = %CastingTypeBox
+@onready var spell_dc_field: LabelDataField = %SpellDCField
+@onready var spell_attack_field: LabelDataField = %SpellAttackField
+@onready var cantrips_field: LabelDataField = %CantripsField
+@onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
+@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
+@onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
+@onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
+@onready var _4_th_rank_field: LabelDataField = %"4thRankField"
+@onready var _5_th_rank_field: LabelDataField = %"5thRankField"
+@onready var _6_th_rank_field: LabelDataField = %"6thRankField"
+@onready var _7_th_rank_field: LabelDataField = %"7thRankField"
+@onready var _8_th_rank_field: LabelDataField = %"8thRankField"
+@onready var _9_th_rank_field: LabelDataField = %"9thRankField"
+@onready var _10_th_rank_field: LabelDataField = %"10thRankField"
 
 const CUSTOM_ENEMIES_LOCATION: String = "res://Data/Enemies/custom-enemies/"
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
@@ -67,6 +85,8 @@ func create_enemy():
 			traits["size"]["value"] = enemy_trait.to_lower()
 			continue
 		traits["value"].append(enemy_trait)
+	
+	traits["size"]["value"] = size_option.get_item_text(size_option.selected)
 	
 	# Ability Modifiers
 	new_enemy_sheet["system"]["abilities"]["str"]["mod"] = int(str_field.get_value())
@@ -139,12 +159,36 @@ func create_enemy():
 	
 	#endregion
 	
+	#region Spellcasting
+	
+	if spell_list_box.selected != 0:
+		var spells_found: bool = false
+		var spell_field_value: String = ""
+		var i: int = 0
+		for spell_field in spell_fields_container.get_children():
+			if spell_field is LabelDataField:
+				spell_field_value = spell_field.get_value()
+				if spell_field_value != "":
+					spells_found = true
+					add_spell_entry(i, spell_field_value, new_enemy_sheet["items"])
+			i += 1
+		
+		if spells_found:
+			var new_casting_entry: Dictionary = EnemySheetExample.SPELLCASTING_TEMPLATE.duplicate(true)
+			new_casting_entry["name"] = spell_list_box.get_item_text(spell_list_box.selected) + " " + casting_type_box.get_item_text(casting_type_box.selected) + " Spells"
+			new_casting_entry["system"]["spelldc"]["dc"] = int(spell_dc_field.get_value())
+			new_casting_entry["system"]["spelldc"]["value"] = int(spell_attack_field.get_value())
+			new_enemy_sheet["items"].append(new_casting_entry)
+	
+	
+	#endregion
+	
 	var file_name: String = new_enemy_sheet["name"]
 	var base_file_name: String = file_name
 	var directory := DirAccess.open(CUSTOM_ENEMIES_LOCATION)
-	var i: int = 1
+	var i: int = 0
 	while has_file_name(file_name, directory):
-		file_name = base_file_name + "-" + str(i)
+		file_name = base_file_name + "-" + str(i + 1)
 		print(file_name)
 		i += 1
 	
@@ -164,7 +208,7 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 			new_ability["name"] = ability.name_field.get_value()
 			match ability.action_option.selected:
 				0, 1, 2:
-					new_ability["system"]["actions"]["value"] = str(ability.action_option.selected)
+					new_ability["system"]["actions"]["value"] = str(1 + ability.action_option.selected)
 				3:
 					new_ability["system"]["actionType"]["value"] = "free"
 				4:
@@ -179,6 +223,17 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 				new_ability["system"]["category"] = "defensive"
 			
 			items_array.append(new_ability)
+
+func add_spell_entry(spell_level: int, spell_field_value: String, items_array: Array):
+	spell_field_value = spell_field_value.replace(", ", ",")
+	var spells: PackedStringArray = spell_field_value.split(",", false)
+	for spell in spells:
+		var new_spell_entry: Dictionary = EnemySheetExample.SPELL_TEMPLATE.duplicate(true)
+		new_spell_entry["name"] = spell
+		new_spell_entry["system"]["level"]["value"] = spell_level
+		if spell_level == 0:
+			new_spell_entry["system"]["traits"]["value"].append("cantrip")
+		items_array.append(new_spell_entry)
 
 func has_file_name(file_name: String, folder: DirAccess):
 	return folder.get_files().has(file_name + ".json")

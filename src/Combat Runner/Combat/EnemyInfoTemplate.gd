@@ -112,6 +112,5 @@ func _on_current_hp_focus_entered():
 	enemy_focus()
 
 
-
 func _on_enemy_name_text_changed(new_text):
 	emit_signal("renamed_enemy", self, new_text)

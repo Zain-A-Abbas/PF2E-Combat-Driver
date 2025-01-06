@@ -71,6 +71,20 @@ func _on_attack_save_button_pressed() -> void:
 		current_editing_container.fill_data(current_editing_data)
 	attack_editor_window.hide()
 
+func new_roadmap_attack(attack: String, damage: String, ranged: bool = false):
+	var new_strike_data: EnemyCreatorStrike = EnemyCreatorStrike.new()
+	new_strike_data.strike_name = "Strike"
+	if !ranged:
+		new_strike_data.strike_type = EnemyCreatorStrike.StrikeType.MELEE
+	else:
+		new_strike_data.strike_type = EnemyCreatorStrike.StrikeType.RANGED
+	new_strike_data.strike_bonus = int(attack)
+	new_strike_data.strike_damage = damage
+	
+	var new_strike: EnemyCreatorStrikeContainer = ENEMY_CREATOR_STRIKE_CONTAINER.instantiate()
+	strikes_vbox.add_child(new_strike)
+	new_strike.edit_button_clicked.connect(strike_edit)
+	new_strike.fill_data(new_strike_data)
 
 func _on_new_offensive_ability_button_pressed() -> void:
 	offensive_abilities_v_box.add_child(ENEMY_ABILITY.instantiate())
