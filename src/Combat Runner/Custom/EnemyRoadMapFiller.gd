@@ -112,6 +112,18 @@ func autofill_clicked() -> void:
 	match option_button.selected:
 		0:
 			fill_brute(level_number)
+		1:
+			fill_magical_striker(level_number)
+		2:
+			fill_skill_paragon(level_number)
+		3:
+			fill_skirmisher(level_number)
+		4:
+			fill_sniper(level_number)
+		5:
+			fill_soldier(level_number)
+		6:
+			fill_spellcaster(level_number)
 
 func fill_brute(level: int):
 	perception_field.set_value(get_table_value_by_level(perception_table, level, 3))

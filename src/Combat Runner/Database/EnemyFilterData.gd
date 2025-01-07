@@ -55,7 +55,6 @@ func initialize(enemy_data, file_location):
 	var enemy_traits = enemy_data["system"]["traits"]
 	
 	
-	
 	creature_name = enemy_data["name"]
 	level = enemy_data["system"]["details"]["level"]["value"]
 	hp = enemy_system_data["hp"]["max"]

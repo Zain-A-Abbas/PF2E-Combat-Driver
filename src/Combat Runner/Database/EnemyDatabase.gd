@@ -10,7 +10,6 @@ enum SORT_MODE {
 @onready var enemy_list: ItemList = %EnemyList
 @onready var enemy_sheet: Sheet = %EnemySheet
 
-
 # The filter menus; the filtering traits and numbers are retrieved directly from them
 @onready var size_filter_menu: FilteringMenu = %SizeFilterMenu
 @onready var rarity_filter_menu: FilteringMenu = %RarityFilterMenu
@@ -20,13 +19,15 @@ enum SORT_MODE {
 @onready var enemy_creator = %EnemyCreator
 @onready var enemy_creator_window: Window = %EnemyCreatorWindow
 
-
 signal add_enemy(enemy_data)
 
+# CSharp database loader
+var csharp_database: Node
+
 # Holds all enemy data
-var enemies: Array[EnemyFilterData]
+var enemies: Array[Node]
 # Holds enemies that have been filtered and sorted
-var filtered_sorted_enemies: Array[EnemyFilterData] = enemies
+var filtered_sorted_enemies: Array[Node] = enemies
 var sorting_mode: SORT_MODE = SORT_MODE.ALPHABETICAL : set = set_sorting
 func set_sorting(val):
 	if sorting_mode == val:
@@ -36,6 +37,8 @@ func set_sorting(val):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var enemy_database = load("res://Database/EnemyDatabase.cs")
+	csharp_database = enemy_database.new() 
 	add_enemies()
 
 
@@ -46,8 +49,8 @@ func add_enemies():
 	# Open the enemy database folder
 	var directory := DirAccess.open(ENEMY_DATABASE)
 	# Search through every subfolder, as enemies are placed into fodlers corresponding to rulebook source
-	
-	for subfolder in directory.get_directories():
+	var start_time: float = Time.get_ticks_msec()
+	'for subfolder in directory.get_directories():
 		var bestiary_folder := DirAccess.open(ENEMY_DATABASE + subfolder)
 		for file in bestiary_folder.get_files():
 			# Take their file location, use it to create an enemy file and then parse it as text to enemies vairable
@@ -60,9 +63,13 @@ func add_enemies():
 				continue
 			var enemy_filter_data = EnemyFilterData.new()
 			enemy_filter_data.initialize(enemy_data, enemy_file_location)
-			enemies.append(enemy_filter_data)
+			enemies.append(enemy_filter_data)'
+	var temp_enemies: Array = csharp_database.addEnemies()
+	for enemy in temp_enemies:
+		enemies.append(enemy)
+	print("Time: " + str((Time.get_ticks_msec() - start_time) / 1000.0))
 	sort_filter_enemies()
-
+	
 # Filters enemies, sorts them, then makes them visible
 func sort_filter_enemies():
 	enemy_list.clear()
@@ -71,26 +78,24 @@ func sort_filter_enemies():
 	
 	filtered_sorted_enemies = filter_enemies(filtered_sorted_enemies)
 	
-	
-	
 	match sorting_mode:
 		SORT_MODE.ALPHABETICAL:
 			filtered_sorted_enemies.sort_custom(sort_alphabetic)
 		SORT_MODE.LEVEL:
 			filtered_sorted_enemies.sort_custom(sort_level)
 	for enemy in filtered_sorted_enemies:
-		enemy_list.add_item(enemy.creature_name)
+		enemy_list.add_item(enemy.enemyName)
 
-static func sort_alphabetic(enemy_a: EnemyFilterData, enemy_b: EnemyFilterData):
-	return enemy_a.creature_name < enemy_b.creature_name
+static func sort_alphabetic(enemy_a: Node, enemy_b: Node):
+	return enemy_a.enemyName < enemy_b.enemyName
 
-static func sort_level(enemy_a: EnemyFilterData, enemy_b: EnemyFilterData):
+static func sort_level(enemy_a: Node, enemy_b: Node):
 	return enemy_a.level < enemy_b.level
 
 
 # Filters
 
-func filter_enemies(enemies_to_filter: Array[EnemyFilterData]) -> Array[EnemyFilterData]:
+func filter_enemies(enemies_to_filter: Array[Node]) -> Array[Node]:
 	var filtering := enemies_to_filter.duplicate()
 	filtering = name_filter(filtering, search_bar.text)
 	filtering = general_filter(filtering, "rarity")
@@ -99,16 +104,16 @@ func filter_enemies(enemies_to_filter: Array[EnemyFilterData]) -> Array[EnemyFil
 	filtering = number_filter(filtering)
 	return filtering
 
-func name_filter( enemies_to_filter: Array[EnemyFilterData], search_name: String ) -> Array[EnemyFilterData]:
+func name_filter( enemies_to_filter: Array[Node], search_name: String ) -> Array[Node]:
 	
 	if search_name == "":
 		return enemies_to_filter
 	
 	# Enemies to include
-	var include_enemies: Array[EnemyFilterData] = []
+	var include_enemies: Array[Node] = []
 	
 	for enemy in enemies_to_filter:
-		if enemy.creature_name.to_lower().contains(search_name.to_lower()):
+		if enemy.enemyName.to_lower().contains(search_name.to_lower()):
 			include_enemies.append(enemy)
 	
 	return include_enemies
@@ -117,13 +122,13 @@ func outOfBounds(value: int, f: NumberFilterData):
 	return !(value >= f.lower_bound && value <= f.upper_bound)
 	
 
-func number_filter( enemies_to_filter: Array[EnemyFilterData] ) -> Array[EnemyFilterData]:
+func number_filter( enemies_to_filter: Array[Node] ) -> Array[Node]:
 	var filterData : Array[NumberFilterData] = numbers_filtering.get_number_filter_data()
-	var validEnemies : Array[EnemyFilterData] = enemies_to_filter
-	#main filter
+	var validEnemies : Array[Node] = enemies_to_filter
 	for filter: NumberFilterData in filterData:
 		if filter.lower_bound == 0 && filter.upper_bound == 0:
 			continue
+		print(filter.text)
 		var validEnemiesSize : int = validEnemies.size()-1
 		for i in range(validEnemiesSize, -1, -1):
 			match filter.text:
@@ -148,15 +153,63 @@ func number_filter( enemies_to_filter: Array[EnemyFilterData] ) -> Array[EnemyFi
 				"Perception":
 					if outOfBounds(validEnemies[i].perception, filter):
 						validEnemies.remove_at(i)
+				"Score":
+					var score: String
+					match filter.dropdown_option:
+						0:
+							score = "str"
+						1:
+							score = "dex"
+						2:
+							score = "con"
+						3:
+							score = "int"
+						4:
+							score = "wis"
+						5:
+							score = "cha"
+					if outOfBounds(validEnemies[i].abilityScores[score], filter):
+						validEnemies.remove_at(i)
+				"Speed":
+					var speed_type: String = NumberFilteringOption.SPEEDS[filter.dropdown_option].to_lower()
+					if !validEnemies[i].speed.has(speed_type):
+						validEnemies.remove_at(i)
+					elif outOfBounds(int(validEnemies[i].speed[speed_type]), filter):
+						validEnemies.remove_at(i)
+				"Resistance":
+					if filter.dropdown_option == 0:
+						continue
+					var resistance_type: String = NumberFilteringOption.ELEMENTS[filter.dropdown_option].to_lower()
+					resistance_type = resistance_type.to_lower().replace(" ", "-")
+					if !validEnemies[i].resistances.has(resistance_type):
+						validEnemies.remove_at(i)
+					elif outOfBounds(int(validEnemies[i].resistances[resistance_type]), filter):
+						validEnemies.remove_at(i)
+				"Weakness":
+					if filter.dropdown_option == 0:
+						continue
+					var weakness_type: String = NumberFilteringOption.ELEMENTS[filter.dropdown_option]
+					weakness_type = weakness_type.to_lower().replace(" ", "-")
+					if !validEnemies[i].weaknesses.has(weakness_type):
+						validEnemies.remove_at(i)
+					elif outOfBounds(int(validEnemies[i].weaknesses[weakness_type]), filter):
+						validEnemies.remove_at(i)
+				"Immunity":
+					if filter.dropdown_option == 0:
+						continue
+					var immunity_type: String = NumberFilteringOption.ELEMENTS[filter.dropdown_option].to_lower()
+					immunity_type = immunity_type.to_lower().replace(" ", "-")
+					if !validEnemies[i].immunities.has(immunity_type):
+						validEnemies.remove_at(i)
 	return validEnemies
 
 # Sorts by rarity, traits and size; They share a function because of how similar they are
-func general_filter( enemies_to_filter: Array[EnemyFilterData], rarity_size_traits: String ) -> Array[EnemyFilterData]:
+func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String ) -> Array[Node]:
 	
 	
 	# Enemies to include and enemies to remove
-	var include_enemies: Array[EnemyFilterData] = []
-	var remove_enemies: Array[EnemyFilterData] = []
+	var include_enemies: Array[Node] = []
+	var remove_enemies: Array[Node] = []
 	
 	# Holds the filters; assigned to the size, rarity, or trait filter menus
 	var current_filter_menu
@@ -213,7 +266,7 @@ func general_filter( enemies_to_filter: Array[EnemyFilterData], rarity_size_trai
 	
 	# If there are any enemies ticked to include at all, just return all the ones who are not set to be excluded
 	if !include_enemies.is_empty():
-		var final_enemies: Array[EnemyFilterData] = []
+		var final_enemies: Array[Node] = []
 		for enemy in include_enemies:
 			if !remove_enemies.has(enemy):
 				final_enemies.append(enemy)
@@ -221,7 +274,7 @@ func general_filter( enemies_to_filter: Array[EnemyFilterData], rarity_size_trai
 	
 	# If no enemies are set to include, then just add every enemy not excluded
 	if !remove_enemies.is_empty():
-		var final_enemies: Array[EnemyFilterData] = []
+		var final_enemies: Array[Node] = []
 		for enemy in enemies_to_filter:
 			if !remove_enemies.has(enemy):
 				final_enemies.append(enemy)
@@ -235,7 +288,7 @@ func new_enemy():
 # Signals
 
 func _on_enemy_list_item_selected(index):
-	var enemy_file = FileAccess.open(filtered_sorted_enemies[index].database_reference, FileAccess.READ)
+	var enemy_file = FileAccess.open(filtered_sorted_enemies[index].fileReference, FileAccess.READ)
 	var json_conversion = JSON.new()
 	json_conversion.parse(enemy_file.get_as_text())
 	var enemy_data = json_conversion.get_data()

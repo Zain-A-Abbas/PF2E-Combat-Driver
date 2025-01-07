@@ -8,15 +8,16 @@ offset_top = 2.0
 offset_right = 179.0
 offset_bottom = 36.0
 script = ExtResource("2_txxrd")
+has_spinboxes = null
 list_filtering = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 
-[node name="MenuButton" type="MenuButton" parent="HBoxContainer"]
+[node name="MenuButton" type="OptionButton" parent="HBoxContainer"]
 visible = false
 layout_mode = 2
-text = "Acid"
+selected = 0
 item_count = 25
 popup/item_0/text = "Acid"
 popup/item_1/text = "All"
@@ -80,6 +81,7 @@ layout_mode = 2
 layout_mode = 2
 min_value = -100.0
 max_value = 1000.0
+rounded = true
 
 [node name="Label" type="Label" parent="SpinboxContainer"]
 layout_mode = 2
@@ -90,3 +92,4 @@ text = "to"
 layout_mode = 2
 min_value = -100.0
 max_value = 1000.0
+rounded = true

@@ -1,26 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvo7dlcc42sjo"]
+[gd_scene load_steps=7 format=3 uid="uid://bvo7dlcc42sjo"]
 
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="1_s7mcf"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_s1sca"]
 [ext_resource type="Script" path="res://Database/EnemyFiltering.gd" id="2_f3hhq"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_oyj40"]
 [ext_resource type="Script" path="res://Database/Subfilter.gd" id="3_uqko4"]
 [ext_resource type="PackedScene" uid="uid://en7jicp5pl3p" path="res://Database/TraitFilterButton.tscn" id="4_5o8nm"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4xac"]
-bg_color = Color(0.603922, 0.603922, 0.603922, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.462745, 0.462745, 0.462745, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="5_r0lg8"]
 
 [node name="FilterMenu" type="PanelContainer"]
 offset_right = 400.0
 offset_bottom = 100.0
-theme = ExtResource("1_s7mcf")
+theme = ExtResource("1_s1sca")
+theme_override_styles/panel = ExtResource("2_oyj40")
 script = ExtResource("2_f3hhq")
 filter_type = "Size"
 metadata/_edit_lock_ = true
@@ -37,6 +28,7 @@ layout_mode = 2
 
 [node name="FilterLabel" type="Label" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
+theme_type_variation = &"StrikeName"
 text = "Sizes"
 
 [node name="Subfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer"]
@@ -60,7 +52,7 @@ text = "Reset selection"
 [node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/Subfilter"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_u4xac")
+theme_override_styles/panel = ExtResource("5_r0lg8")
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/Subfilter/ButtonsContainer"]
 layout_mode = 2

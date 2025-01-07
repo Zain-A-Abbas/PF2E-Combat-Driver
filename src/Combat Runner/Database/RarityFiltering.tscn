@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bg2q2nt5lb8xs"]
+[gd_scene load_steps=11 format=3 uid="uid://bg2q2nt5lb8xs"]
 
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="1_brq3b"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_xqng2"]
 [ext_resource type="Script" path="res://Database/EnemyFiltering.gd" id="2_js1dd"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_wm8ss"]
 [ext_resource type="PackedScene" uid="uid://slrfberfilcb" path="res://Database/Subfilter.tscn" id="3_c1rbr"]
 [ext_resource type="PackedScene" uid="uid://en7jicp5pl3p" path="res://Database/TraitFilterButton.tscn" id="4_qrq1j"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="5_dhg2q"]
 [ext_resource type="StyleBox" uid="uid://jxeg1qno0j61" path="res://Themes/TraitStyleboxes/RegularTrait.tres" id="5_qsek5"]
 [ext_resource type="StyleBox" uid="uid://bqqvue0rytre7" path="res://Themes/TraitStyleboxes/UncommonTrait.tres" id="6_hmtej"]
 [ext_resource type="StyleBox" uid="uid://dhfjvvdkybro5" path="res://Themes/TraitStyleboxes/RareTrait.tres" id="7_aevm1"]
@@ -12,7 +14,8 @@
 [node name="FilterMenu" type="PanelContainer"]
 offset_right = 400.0
 offset_bottom = 100.0
-theme = ExtResource("1_brq3b")
+theme = ExtResource("1_xqng2")
+theme_override_styles/panel = ExtResource("2_wm8ss")
 script = ExtResource("2_js1dd")
 metadata/_edit_lock_ = true
 
@@ -35,6 +38,9 @@ layout_mode = 2
 
 [node name="SubfilterLabel" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer" index="0"]
 visible = false
+
+[node name="ButtonsContainer" parent="MarginContainer/FiltersContainer/Subfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_dhg2q")
 
 [node name="Common" parent="MarginContainer/FiltersContainer/Subfilter/ButtonsContainer/MarginContainer/GridContainer" index="0" instance=ExtResource("4_qrq1j")]
 layout_mode = 2

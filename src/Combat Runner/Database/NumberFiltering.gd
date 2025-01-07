@@ -3,6 +3,7 @@ extends FilteringMenu
 @onready var grid_container = $MarginContainer/FiltersContainer/GridContainer
 
 func _ready():
+	visible = false
 	filter_container = find_children("", "FilterButton", true, true)
 
 # If there are no filters, this returns true to skip unneeded iterations entirely

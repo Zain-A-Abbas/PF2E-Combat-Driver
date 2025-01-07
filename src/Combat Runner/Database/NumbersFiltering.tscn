@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxm3l24gj3syg"]
+[gd_scene load_steps=5 format=3 uid="uid://bxm3l24gj3syg"]
 
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="1_kvq4g"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_7qkyv"]
 [ext_resource type="Script" path="res://Database/NumberFiltering.gd" id="2_e7vna"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_nn6v0"]
 [ext_resource type="PackedScene" uid="uid://ws2ua84a6nnc" path="res://Database/NumberFilterOption.tscn" id="3_aqtuy"]
 
 [node name="NumbersFiltering" type="PanelContainer"]
 offset_right = 400.0
 offset_bottom = 100.0
-theme = ExtResource("1_kvq4g")
+theme = ExtResource("1_7qkyv")
+theme_override_styles/panel = ExtResource("2_nn6v0")
 script = ExtResource("2_e7vna")
 metadata/_edit_lock_ = true
 
@@ -23,7 +25,8 @@ layout_mode = 2
 
 [node name="FilterLabel" type="Label" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
-text = "Rarity"
+theme_type_variation = &"StrikeName"
+text = "Numbers"
 
 [node name="ResetAllButton" type="Button" parent="MarginContainer/FiltersContainer"]
 layout_direction = 3
@@ -39,52 +42,70 @@ columns = 4
 [node name="NumberFilterOption" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Level"
+has_spinboxes = true
 
 [node name="NumberFilterOption2" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "HP"
+has_spinboxes = true
 
 [node name="NumberFilterOption3" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "AC"
+has_spinboxes = true
 
 [node name="NumberFilterOption4" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Score"
 has_dropdown = true
+has_spinboxes = true
 list_filtering = 0
 
 [node name="NumberFilterOption5" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Fortitude Save"
+has_spinboxes = true
 
 [node name="NumberFilterOption6" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Reflex Save"
+has_spinboxes = true
 
 [node name="NumberFilterOption7" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Will Save"
+has_spinboxes = true
 
 [node name="NumberFilterOption8" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Perception"
+has_spinboxes = true
 
 [node name="NumberFilterOption9" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Speed"
 has_dropdown = true
+has_spinboxes = true
 list_filtering = 1
+spinbox_characters = 3
 
 [node name="NumberFilterOption10" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Resistance"
 has_dropdown = true
+has_spinboxes = true
 
 [node name="NumberFilterOption11" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Weakness"
 has_dropdown = true
+has_spinboxes = true
+
+[node name="NumberFilterOption12" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+layout_mode = 2
+filter_option = "Immunity"
+has_dropdown = true
+has_spinboxes = false
 
 [node name="ApplyButton" type="Button" parent="MarginContainer/FiltersContainer"]
 layout_direction = 3

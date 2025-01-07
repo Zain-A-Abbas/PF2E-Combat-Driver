@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://vxjcml8k865s"]
+[gd_scene load_steps=6 format=3 uid="uid://vxjcml8k865s"]
 
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="1_q6l6g"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_lhn0y"]
 [ext_resource type="Script" path="res://Database/TraitFiltering.gd" id="2_amglq"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_kaq3q"]
 [ext_resource type="PackedScene" uid="uid://slrfberfilcb" path="res://Database/Subfilter.tscn" id="3_jociw"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="5_4r50r"]
 
 [node name="FilterMenu" type="PanelContainer"]
 offset_right = 600.0
 offset_bottom = 518.0
-theme = ExtResource("1_q6l6g")
+theme = ExtResource("1_lhn0y")
+theme_override_styles/panel = ExtResource("2_kaq3q")
 script = ExtResource("2_amglq")
 metadata/_edit_lock_ = true
 
@@ -29,6 +32,7 @@ theme_override_constants/separation = 5
 
 [node name="FilterLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer"]
 layout_mode = 2
+theme_type_variation = &"StrikeData"
 text = "Traits"
 
 [node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/FiltersContainer"]
@@ -47,7 +51,8 @@ text = "Apply filters"
 
 [node name="IncludeAndCheck" type="CheckBox" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
-button_pressed = true
+theme_type_variation = &"RadioButton"
+icon_alignment = 1
 
 [node name="IncludeAndLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
@@ -59,6 +64,7 @@ theme_override_constants/margin_right = 4
 
 [node name="IncludeOrCheck" type="CheckBox" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"RadioButton"
 
 [node name="IncludeOrLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
@@ -83,6 +89,9 @@ visible = true
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
 
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
+
 [node name="CreatureTypeSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
 subfilter_name = "Creature Type"
@@ -98,6 +107,9 @@ visible = true
 
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
+
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
 
 [node name="ElementalSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
@@ -115,6 +127,9 @@ visible = true
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
 
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
+
 [node name="EnergySubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
 subfilter_name = "Energy"
@@ -130,6 +145,9 @@ visible = true
 
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
+
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
 
 [node name="MonsterSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
@@ -147,6 +165,9 @@ visible = true
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
 
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
+
 [node name="PlanarSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
 subfilter_name = "Planar"
@@ -163,6 +184,9 @@ visible = true
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
 
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
+
 [node name="WeaponSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
 layout_mode = 2
 subfilter_name = "Weapon"
@@ -178,6 +202,9 @@ visible = true
 
 [node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter/HBoxContainer" index="3"]
 text = "Deselect Button"
+
+[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter" index="1"]
+theme_override_styles/panel = ExtResource("5_4r50r")
 
 [node name="ApplyButton" type="Button" parent="MarginContainer/ScrollContainer/FiltersContainer"]
 layout_direction = 3
