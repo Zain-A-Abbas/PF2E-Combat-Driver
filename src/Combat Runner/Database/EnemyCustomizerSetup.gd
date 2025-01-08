@@ -60,6 +60,7 @@ extends Node
 @onready var defensive: VBoxContainer = %Defensive
 @onready var skills_vbox: VBoxContainer = %SkillsVbox
 @onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
+@onready var constant_spells_field: LabelDataField = %ConstantSpellsField
 
 const SPEEDS : Array[String] = ["Land", "Fly", "Swim", "Climb", "Burrow"]
 const SPEED_FIELD = preload("res://Custom/SpeedField.tscn")
@@ -347,19 +348,30 @@ func customize_current_enemy():
 			
 			spell_dc_field.set_value_num(ability["system"]["spelldc"]["dc"])
 			spell_attack_field.set_value_num(ability["system"]["spelldc"]["value"])
+		
 		elif ability["type"] == "spell":
 			var spell_rank: int
+			var spell_name: String = ability["name"]
+			
 			if ability["system"]["location"].has("heightenedLevel"):
 				spell_rank = ability["system"]["location"]["heightenedLevel"]
 			else:
-				ability["system"]["level"]["value"]
+				spell_rank = ability["system"]["level"]["value"]
 			
-			var spell_field: LabelDataField = spell_fields_container.get_child(spell_rank)
+			var spell_field: LabelDataField
+			if ability["name"].to_lower().contains("(constant)"):
+				spell_field = constant_spells_field
+				spell_name = spell_name.replace("(Constant)", "")
+				spell_name = spell_name.replace("(constant)", "")
+				spell_name = spell_name.strip_edges()
+			else:
+				spell_field = spell_fields_container.get_child(spell_rank)
+			
 			var spell_text: String = spell_field.get_value()
 			if spell_text == "":
-				spell_field.set_value(ability["name"])
+				spell_field.set_value(spell_name)
 			else:
-				spell_field.set_value(spell_text + ", " + ability["name"])
+				spell_field.set_value(spell_text + ", " + spell_name)
 	spell_list_box.emit_signal("item_selected", spell_list_box.selected)
 	
 	

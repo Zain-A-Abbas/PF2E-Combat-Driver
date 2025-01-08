@@ -967,6 +967,19 @@ text = "10th"
 [node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField" index="1"]
 theme_override_constants/minimum_character_width = 24
 
+[node name="ConstantSpellsField" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Constant"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "Constant"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
 [node name="SpellTables" type="TabContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1115,4 +1128,5 @@ script = ExtResource("17_rxw0s")
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField"]
+[editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField"]
 [editable path="AttackEditorWindow/PanelContainer/VBoxContainer/StrikeTraitsField"]

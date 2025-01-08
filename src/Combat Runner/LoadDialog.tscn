@@ -11,6 +11,7 @@ ok_button_text = "Open"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.json")
+use_native_dialog = true
 script = ExtResource("1_chn7h")
 
-[connection signal="confirmed" from="." to="." method="_on_confirmed"]
+[connection signal="file_selected" from="." to="." method="_on_file_selected"]

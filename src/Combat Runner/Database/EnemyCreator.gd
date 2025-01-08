@@ -4,7 +4,6 @@ class_name EnemyCreator
 signal sheet_created
 
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
-const CUSTOM_ENEMIES_LOCATION: String = "res://Data/Enemies/custom-enemies/"
 
 const ENEMY_CREATOR_SKILL = preload("res://Custom/EnemyCreatorSkill.tscn")
 const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", "Deception", "Diplomacy", "Intimidation", "Lore", "Medicine", "Nature", "Occultism", "Performance", "Religion", "Society", "Stealth", "Survival", "Thievery"]

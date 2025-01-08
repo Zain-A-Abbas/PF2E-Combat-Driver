@@ -17,6 +17,7 @@ const ENEMY_INITIATIVE = preload("res://Combat/EnemyInitiative.tscn")
 func _ready():
 	EventBus.encounter_save_directory_chosen.connect(save_validated)
 	EventBus.encounter_load_directory_chosen.connect(load_validated)
+	print(ProjectSettings.globalize_path("user://enemies"))
 
 # Adding an enemy from a pre-existing sheet
 func add_enemy_from_sheet(enemy_data: Dictionary):
@@ -90,8 +91,8 @@ func check_names():
 	new_enemy.name_bar.text = new_enemy_name
 
 # Runs when you highlight an enemy to view its sheet
-func view_enemy_sheet(enemy_data):
-	enemy_sheet.setup(enemy_data)
+func view_enemy_sheet(enemy_data, enemy_name: String):
+	enemy_sheet.setup(enemy_data, {"custom_name": enemy_name})
 
 # When an enemy is removed
 func remove_enemy(enemy: Node):
@@ -105,10 +106,11 @@ func remove_enemy(enemy: Node):
 func save_encounter():
 	if enemies.get_child_count() == 0:
 		return
+	
 	SaveDialog.choose_save_directory()
 
-func save_validated():
-	var save_file_location = SaveDialog.current_path
+func save_validated(path: String):
+	var save_file_location: String = path
 	var save_data := EncounterFile.new()
 	var file_save = FileAccess.open(save_file_location, FileAccess.WRITE)
 	
@@ -126,11 +128,12 @@ func save_validated():
 func open_encounter():
 	LoadDialog.choose_load_directory()
 
-func load_validated():
+func load_validated(path: String):
 	# Prompts the user for where the file is, then opens and reads the file
-	var load_file_location = LoadDialog.current_path
+	var load_file_location: String = path
 	var load_file := FileAccess.open(load_file_location, FileAccess.READ)
 	var encounter_data = load_file.get_var(true)
+	
 	
 	# For each enemy, create new encounter data and an info template, add the info template to enemies
 		# then fill the info template with info and pass it to the initiative

@@ -8,7 +8,7 @@ class_name EnemyInfoTemplate
 @onready var damage := $HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage
 
 # For displaying the sheet on the combat page
-signal viewing_enemy(enemy_data)
+signal viewing_enemy(enemy_data, enemy_name: String)
 signal deleted_enemy(enemy)
 signal renamed_enemy(enemy, new_name)
 
@@ -67,7 +67,7 @@ func enemy_focus():
 	if enemy_data == {}:
 		return
 	
-	emit_signal("viewing_enemy", enemy_data)
+	emit_signal("viewing_enemy", enemy_data, enemy_name)
 
 func _on_current_hp_text_submitted(new_text):
 	hp = int(new_text)
@@ -112,5 +112,7 @@ func _on_current_hp_focus_entered():
 	enemy_focus()
 
 
-func _on_enemy_name_text_changed(new_text):
+func _on_enemy_name_text_changed(new_text: String):
+	enemy_name = new_text
 	emit_signal("renamed_enemy", self, new_text)
+	enemy_focus()

@@ -39,7 +39,10 @@ func setup(enemy_file, conditions = {}):
 	enemy_attributes = enemy_system["attributes"]
 	
 	# Set up name and level
-	enemy_name.text = enemy_data["name"]
+	if !conditions.has("custom_name"):
+		enemy_name.text = enemy_data["name"]
+	else:
+		enemy_name.text = conditions["custom_name"]
 	enemy_level.text = "CREATURE " + str(enemy_system["details"]["level"]["value"])
 	
 	

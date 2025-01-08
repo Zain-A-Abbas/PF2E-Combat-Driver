@@ -25,7 +25,7 @@ func _make_custom_tooltip(for_text):
 		
 		InfoTypes.TRAIT:
 			var tooltip_header = for_text.split("|")[0]
-			var tooltip_description = for_text.split("|")[1]
+			var tooltip_description = for_text.split("|")[1].strip_edges()
 			tooltip = preload("res://Tooltips/TraitTooltip.tscn").instantiate()
 			tooltip.get_node("MarginContainer").get_node("VBoxContainer").get_node("Header").get_node("TooltipHeader").text = tooltip_header
 			tooltip.get_node("MarginContainer").get_node("VBoxContainer").get_node("TooltipText").text = tooltip_description

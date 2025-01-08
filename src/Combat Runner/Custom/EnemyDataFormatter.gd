@@ -48,8 +48,9 @@ signal sheet_created
 @onready var _8_th_rank_field: LabelDataField = %"8thRankField"
 @onready var _9_th_rank_field: LabelDataField = %"9thRankField"
 @onready var _10_th_rank_field: LabelDataField = %"10thRankField"
+@onready var constant_spells_field: LabelDataField = %ConstantSpellsField
 
-const CUSTOM_ENEMIES_LOCATION: String = "res://Data/Enemies/custom-enemies/"
+const CUSTOM_ENEMIES_LOCATION: String = "user://Enemies/custom-enemies/"
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
 
 func create_enemy():
@@ -86,7 +87,7 @@ func create_enemy():
 			continue
 		traits["value"].append(enemy_trait)
 	
-	traits["size"]["value"] = size_option.get_item_text(size_option.selected)
+	traits["size"]["value"] = size_option.get_item_text(size_option.selected).to_upper()
 	
 	# Ability Modifiers
 	new_enemy_sheet["system"]["abilities"]["str"]["mod"] = int(str_field.get_value())
@@ -167,10 +168,11 @@ func create_enemy():
 		var i: int = 0
 		for spell_field in spell_fields_container.get_children():
 			if spell_field is LabelDataField:
+				var constant: bool = spell_field == constant_spells_field
 				spell_field_value = spell_field.get_value()
 				if spell_field_value != "":
 					spells_found = true
-					add_spell_entry(i, spell_field_value, new_enemy_sheet["items"])
+					add_spell_entry(i, spell_field_value, new_enemy_sheet["items"], constant)
 			i += 1
 		
 		if spells_found:
@@ -211,6 +213,7 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 			match ability.action_option.selected:
 				0, 1, 2:
 					new_ability["system"]["actions"]["value"] = str(1 + ability.action_option.selected)
+					new_ability["system"]["actionType"]["value"] = "action"
 				3:
 					new_ability["system"]["actionType"]["value"] = "free"
 				4:
@@ -226,12 +229,14 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 			
 			items_array.append(new_ability)
 
-func add_spell_entry(spell_level: int, spell_field_value: String, items_array: Array):
+func add_spell_entry(spell_level: int, spell_field_value: String, items_array: Array, constant: bool = false):
 	spell_field_value = spell_field_value.replace(", ", ",")
 	var spells: PackedStringArray = spell_field_value.split(",", false)
 	for spell in spells:
 		var new_spell_entry: Dictionary = EnemySheetExample.SPELL_TEMPLATE.duplicate(true)
 		new_spell_entry["name"] = spell
+		if constant:
+			new_spell_entry["name"] += " (Constant)"
 		new_spell_entry["system"]["level"]["value"] = spell_level
 		if spell_level == 0:
 			new_spell_entry["system"]["traits"]["value"].append("cantrip")

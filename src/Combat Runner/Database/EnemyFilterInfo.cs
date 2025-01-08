@@ -1,8 +1,5 @@
 using Godot;
-using System;
-using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
-using System.Linq;
 
 public partial class EnemyFilterInfo : Node
 {
@@ -85,11 +82,12 @@ public partial class EnemyFilterInfo : Node
         speed = JObjectToDictionary(jObjectSpeed);
         // Adds any immunities, weaknesses, and resistances the creature has
         // Immunities are only a binary, so stored in an array
+        immunities = new Godot.Collections.Array<string>();
         if (enemySystemData.ContainsKey("immunities"))
         {
             foreach (var immunity in enemySystemData["immunities"])
             {
-                //immunities.Add(immunity["type"].ToString());
+                immunities.Add(immunity["type"].ToString());
             }
         }
 

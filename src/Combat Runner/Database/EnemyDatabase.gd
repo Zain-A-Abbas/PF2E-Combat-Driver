@@ -1,11 +1,12 @@
 extends Control
 
-const ENEMY_DATABASE = "res://Data/Enemies/"
-
 enum SORT_MODE {
 	ALPHABETICAL,
 	LEVEL
 }
+
+const ENEMY_DATABASE = "res://Data/Enemies/"
+const EnemyDatabaseSourceFile: String = "res://Database/EnemyDatabase.cs"
 
 @onready var enemy_list: ItemList = %EnemyList
 @onready var enemy_sheet: Sheet = %EnemySheet
@@ -37,7 +38,7 @@ func set_sorting(val):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var enemy_database = load("res://Database/EnemyDatabase.cs")
+	var enemy_database = load(EnemyDatabaseSourceFile)
 	csharp_database = enemy_database.new() 
 	add_enemies()
 	enemy_list.select(0)

@@ -24,7 +24,7 @@ class_name NumberFilteringOption
 			await ready
 		spinbox_container.visible = has_spinboxes
 
-const ABILITY_SCORES : Array[String] = ["Strength", "Dexterity", "Constitution", "Charisma", "Wisdom", "Intelligence"]
+const ABILITY_SCORES : Array[String] = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
 const SPEEDS : Array[String] = ["Land", "Fly", "Swim", "Climb", "Burrow"]
 const ELEMENTS : Array[String] = ["None", "Acid", "All", "Bleed", "Bludgeoning", "Chaotic", "Cold", "Cold Iron", "Electricity", "Evil", "Fire", "Force", "Good", "Lawful", "Mental", "Negative", "Orichalum", "Physical", "Piercing", "Poison", "Positive", "Precision", "Silver", "Slashing", "Sonic", "Splash"]
 
@@ -73,3 +73,7 @@ func set_filter_option(val):
 	if label:
 		label.text = filter_option
 		
+
+func reset():
+	spin_box.value = 0
+	spin_box_2.value = 0

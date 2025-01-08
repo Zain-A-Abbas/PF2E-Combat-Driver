@@ -23,3 +23,9 @@ func get_number_filter_data() -> Array[NumberFilterData]:
 
 func _on_apply_button_pressed():
 	emit_signal("apply_filter")
+
+
+func _on_reset_all_button_pressed() -> void:
+	for child in grid_container.get_children():
+		if child is NumberFilteringOption:
+			child.reset()

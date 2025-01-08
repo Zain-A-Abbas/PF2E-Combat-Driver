@@ -12,5 +12,5 @@ func _get_property_list():
 		"type": TYPE_ARRAY,
 		"usage": property_usage, # See above assignment.
 	})
-
+	
 	return properties

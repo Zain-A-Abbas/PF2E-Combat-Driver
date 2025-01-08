@@ -1,7 +1,7 @@
 extends Node
 class_name TextInterpreter
 
-const ABILITIES = preload("res://Data/Abilities.json")
+const ABILITIES = preload("res://EnemySheet/Abilities.json")
 
 static var abilities_dictionary: Dictionary = ABILITIES.get_data()
 
