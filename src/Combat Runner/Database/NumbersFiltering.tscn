@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxm3l24gj3syg"]
+[gd_scene load_steps=6 format=3 uid="uid://bxm3l24gj3syg"]
 
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_7qkyv"]
 [ext_resource type="Script" path="res://Database/NumberFiltering.gd" id="2_e7vna"]
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_nn6v0"]
 [ext_resource type="PackedScene" uid="uid://ws2ua84a6nnc" path="res://Database/NumberFilterOption.tscn" id="3_aqtuy"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="4_0olng"]
 
 [node name="NumbersFiltering" type="PanelContainer"]
 offset_right = 400.0
@@ -34,74 +35,68 @@ layout_mode = 2
 size_flags_horizontal = 0
 text = "Reset All"
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/FiltersContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("4_0olng")
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/FiltersContainer/PanelContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/h_separation = 50
 columns = 4
 
-[node name="NumberFilterOption" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Level"
-has_spinboxes = true
 
-[node name="NumberFilterOption2" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption2" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "HP"
-has_spinboxes = true
 
-[node name="NumberFilterOption3" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption3" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "AC"
-has_spinboxes = true
 
-[node name="NumberFilterOption4" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption4" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Score"
 has_dropdown = true
-has_spinboxes = true
 list_filtering = 0
 
-[node name="NumberFilterOption5" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption5" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Fortitude Save"
-has_spinboxes = true
 
-[node name="NumberFilterOption6" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption6" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Reflex Save"
-has_spinboxes = true
 
-[node name="NumberFilterOption7" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption7" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Will Save"
-has_spinboxes = true
 
-[node name="NumberFilterOption8" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption8" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Perception"
-has_spinboxes = true
 
-[node name="NumberFilterOption9" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption9" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Speed"
 has_dropdown = true
-has_spinboxes = true
 list_filtering = 1
 spinbox_characters = 3
 
-[node name="NumberFilterOption10" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption10" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Resistance"
 has_dropdown = true
-has_spinboxes = true
 
-[node name="NumberFilterOption11" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption11" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Weakness"
 has_dropdown = true
-has_spinboxes = true
 
-[node name="NumberFilterOption12" parent="MarginContainer/FiltersContainer/GridContainer" instance=ExtResource("3_aqtuy")]
+[node name="NumberFilterOption12" parent="MarginContainer/FiltersContainer/PanelContainer/GridContainer" instance=ExtResource("3_aqtuy")]
 layout_mode = 2
 filter_option = "Immunity"
 has_dropdown = true

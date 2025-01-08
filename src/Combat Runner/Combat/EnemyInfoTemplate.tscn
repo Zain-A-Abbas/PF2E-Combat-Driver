@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dp0drwiihwcev"]
+[gd_scene load_steps=9 format=3 uid="uid://dp0drwiihwcev"]
 
 [ext_resource type="Script" path="res://Combat/EnemyInfoTemplate.gd" id="1_7cgx7"]
-[ext_resource type="Theme" uid="uid://bsaqql2vu2wau" path="res://Themes/EnemyTracker.tres" id="1_ayg27"]
 [ext_resource type="Script" path="res://Combat/HPBar.gd" id="1_pktmf"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_ruaex"]
 [ext_resource type="Theme" uid="uid://deur64cv551t" path="res://Themes/EnemyHP.tres" id="2_bymrl"]
-[ext_resource type="Theme" uid="uid://bucbvtpc225di" path="res://Themes/Theme1.tres" id="3_p6xjd"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_umj3t"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="6_m236s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55eia"]
 bg_color = Color(1, 0.384314, 0.423529, 1)
@@ -16,9 +17,12 @@ bg_color = Color(1, 1, 1, 1)
 custom_minimum_size = Vector2(400, 0)
 offset_right = 800.0
 offset_bottom = 80.0
+theme = ExtResource("1_ruaex")
+theme_override_styles/panel = ExtResource("2_umj3t")
 script = ExtResource("1_7cgx7")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 2
 mouse_filter = 1
 color = Color(0, 0.145098, 0.392157, 1)
@@ -84,7 +88,7 @@ theme_override_constants/margin_bottom = 4
 [node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Control/MarginContainer2"]
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("3_p6xjd")
+theme_override_styles/panel = ExtResource("6_m236s")
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/PanelContainer"]
 layout_mode = 2
@@ -99,7 +103,7 @@ layout_mode = 2
 [node name="CurrentHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 18
 text = "HP"
 vertical_alignment = 1
@@ -107,7 +111,7 @@ vertical_alignment = 1
 [node name="CurrentHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("1_ayg27")
+theme_override_constants/minimum_character_width = 3
 text = "100"
 placeholder_text = " ---"
 alignment = 2
@@ -115,7 +119,7 @@ alignment = 2
 [node name="MaxHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 18
 text = "MAX"
 vertical_alignment = 1
@@ -123,7 +127,7 @@ vertical_alignment = 1
 [node name="MaxHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("1_ayg27")
+theme_override_constants/minimum_character_width = 3
 alignment = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
@@ -133,7 +137,7 @@ layout_mode = 2
 [node name="DamageLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 18
 text = "DAMAGE"
 vertical_alignment = 1
@@ -141,7 +145,7 @@ vertical_alignment = 1
 [node name="Damage" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("1_ayg27")
+theme_override_constants/minimum_character_width = 3
 text = "0"
 placeholder_text = " ---"
 alignment = 2
@@ -149,7 +153,7 @@ alignment = 2
 [node name="DamageButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = " APPLY "
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]

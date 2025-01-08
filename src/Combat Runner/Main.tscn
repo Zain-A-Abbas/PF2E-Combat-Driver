@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bephoc2bc3atp"]
+[gd_scene load_steps=6 format=3 uid="uid://bephoc2bc3atp"]
 
 [ext_resource type="PackedScene" uid="uid://bekrgofys7uc7" path="res://Combat.tscn" id="1_4vf2w"]
 [ext_resource type="Script" path="res://Main.gd" id="1_32guc"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="2_gi4p8"]
 [ext_resource type="PackedScene" uid="uid://bmbtqllw2ypjc" path="res://Database/EnemyDatabase.tscn" id="2_np0t7"]
 
 [sub_resource type="Theme" id="Theme_ys4q2"]
@@ -34,6 +35,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_gi4p8")
 current_tab = 0
 metadata/_edit_lock_ = true
 

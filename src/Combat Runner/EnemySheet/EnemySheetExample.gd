@@ -97,7 +97,7 @@ const DEFAULT: Dictionary = {
 				"value": 1
 			},
 			"source": {
-				"value": "Some Source"
+				"value": "Custom Enemy"
 			}
 		},
 		"resources": {

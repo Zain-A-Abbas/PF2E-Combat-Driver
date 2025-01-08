@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://kg3x603pe2ss"]
+[gd_scene load_steps=6 format=3 uid="uid://kg3x603pe2ss"]
 
 [ext_resource type="Theme" uid="uid://dx77a5ogmmnut" path="res://Themes/MainHeader.tres" id="1_7o8fp"]
 [ext_resource type="Script" path="res://EnemySheet/EnemySheet.gd" id="1_omui5"]
-[ext_resource type="PackedScene" uid="uid://dwskv7vekkgsa" path="res://Trait.tscn" id="2_ji0hp"]
 [ext_resource type="Theme" uid="uid://byxv6hajwxsqf" path="res://Themes/EnemySheetContext.tres" id="4_hamg6"]
 [ext_resource type="PackedScene" uid="uid://pchkfvbqq5ur" path="res://EnemySheet/SheetContent.tscn" id="5_0yafw"]
 [ext_resource type="Script" path="res://EnemySheet/SheetContentsText.gd" id="5_3nxba"]
@@ -61,13 +60,11 @@ theme = ExtResource("1_7o8fp")
 
 [node name="EnemyName" type="Label" parent="SheetData/SheetScroller/SheetInfo/Header"]
 layout_mode = 2
-text = "FG"
 vertical_alignment = 1
 uppercase = true
 
 [node name="EnemyLevel" type="Label" parent="SheetData/SheetScroller/SheetInfo/Header"]
 layout_mode = 2
-text = "Creature 18"
 horizontal_alignment = 2
 vertical_alignment = 1
 uppercase = true
@@ -87,23 +84,21 @@ theme_override_constants/separation = 0
 [node name="MarginContainer" type="MarginContainer" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Traits"]
 layout_mode = 2
 
-[node name="Trait" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Traits" instance=ExtResource("2_ji0hp")]
-layout_mode = 2
-
 [node name="Source" type="RichTextLabel" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data"]
 layout_mode = 2
 bbcode_enabled = true
-text = "[b]Source[/b] [i]AAA[/i] "
+text = "[b]Source[/b]"
 fit_content = true
 
 [node name="Senses" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
 theme = null
+text = "[b]Perception[/b]"
 
 [node name="Languages" type="RichTextLabel" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data"]
 layout_mode = 2
 bbcode_enabled = true
-text = "[b]Languages[/b] Common, Draconic"
+text = "[b]Languages[/b]"
 fit_content = true
 script = ExtResource("5_3nxba")
 info_type = 1
@@ -111,12 +106,12 @@ info_type = 1
 [node name="Skills" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
 theme = null
-text = "[b]Skills[/b] Athletics +28, Acrobatics +5"
+text = "[b]Skills[/b] "
 
 [node name="Abilities" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
 theme = null
-text = "[b]STR[/b] +7"
+text = "[b]STR[/b]"
 
 [node name="HSeparator" type="HSeparator" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data"]
 layout_mode = 2
@@ -124,12 +119,12 @@ layout_mode = 2
 [node name="ACSaves" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
 theme = null
-text = "[b]AC[/b] 42"
+text = "[b]AC[/b]"
 
 [node name="HPResistances" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
 theme = null
-text = "[b]HP[/b] 390"
+text = "[b]HP[/b]"
 
 [node name="DefensiveAbilities" type="VBoxContainer" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data"]
 visible = false

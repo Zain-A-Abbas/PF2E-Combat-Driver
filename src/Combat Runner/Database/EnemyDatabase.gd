@@ -40,6 +40,8 @@ func _ready():
 	var enemy_database = load("res://Database/EnemyDatabase.cs")
 	csharp_database = enemy_database.new() 
 	add_enemies()
+	enemy_list.select(0)
+	_on_enemy_list_item_selected(0)
 
 
 # Adds enemies to the enemies array

@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://Combat/DiceResults.gd" id="1_m0fvx"]
 [ext_resource type="Script" path="res://Combat/Combat.gd" id="2_gvh2h"]
 [ext_resource type="PackedScene" uid="uid://bmuq4plht6pkj" path="res://Combat/DiceButton.tscn" id="2_wbg3i"]
-[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="3_odqcp"]
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="4_o0xil"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="6_aoh23"]
 [ext_resource type="StyleBox" uid="uid://caixi2nwu5inu" path="res://Themes/SheetPanel.tres" id="6_xv8n1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ph34c"]
@@ -78,16 +78,18 @@ theme = SubResource("Theme_i6n4j")
 [node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = ExtResource("3_odqcp")
+theme_override_styles/panel = ExtResource("6_aoh23")
 
 [node name="Initiative" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/separation = 0
 
 [node name="DieRollerLabel" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative"]
 texture_filter = 1
 layout_mode = 2
-theme_override_font_sizes/font_size = 16
+theme_type_variation = &"StrikeName"
+theme_override_font_sizes/font_size = 18
 text = "Initiative"
 
 [node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative"]
@@ -129,7 +131,7 @@ text = "Copy"
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-theme_override_styles/panel = ExtResource("3_odqcp")
+theme_override_styles/panel = ExtResource("6_aoh23")
 
 [node name="Rolling" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2"]
 layout_mode = 2
@@ -139,7 +141,8 @@ theme_override_constants/separation = 0
 [node name="DieRollerLabel" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
 texture_filter = 1
 layout_mode = 2
-theme_override_font_sizes/font_size = 16
+theme_type_variation = &"StrikeName"
+theme_override_font_sizes/font_size = 18
 text = "Die Roller"
 
 [node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]
@@ -267,8 +270,10 @@ size_flags_horizontal = 3
 [node name="EXPTotal" type="PanelContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
 layout_mode = 2
 size_flags_vertical = 8
+theme_override_styles/panel = ExtResource("6_aoh23")
 
 [node name="ColorRect" type="ColorRect" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal"]
+visible = false
 layout_mode = 2
 color = Color(0.2553, 0.48714, 0.69, 1)
 
@@ -290,32 +295,54 @@ text = "Clear"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Encounter Strength: "
+
+[node name="EncounterStrengthLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "-"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
 size_flags_horizontal = 10
 
-[node name="LevelSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="PartyLevelLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
-size_flags_vertical = 4
-
-[node name="PartyLevelLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
-layout_direction = 2
-layout_mode = 2
+size_flags_horizontal = 9
 size_flags_vertical = 1
 text = "Party Level"
 vertical_alignment = 1
 
-[node name="PlayerCountSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="LevelSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_direction = 2
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 9
 size_flags_vertical = 4
+min_value = 1.0
+value = 1.0
 
-[node name="PartyCountLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="PartyCountLabel" type="Label" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
 layout_direction = 2
 layout_mode = 2
+size_flags_horizontal = 9
 size_flags_vertical = 1
 text = "Player Count"
 vertical_alignment = 1
+
+[node name="PlayerCountSpinbox" type="SpinBox" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 9
+size_flags_vertical = 4
+min_value = 1.0
+value = 4.0
 
 [node name="SheetandDatabase" type="VBoxContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit"]
 layout_mode = 2
@@ -340,3 +367,5 @@ layout_mode = 2
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/ClearDice" to="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/Results" method="_on_clear_dice_pressed"]
 [connection signal="tab_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker" to="." method="_on_encounter_tracker_tab_changed"]
 [connection signal="pressed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/BlankEnemyButton" to="." method="add_enemy_from_sheet" binds= [{}]]
+[connection signal="value_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer/LevelSpinbox" to="." method="_on_encounter_spinboxes_changed"]
+[connection signal="value_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer/PlayerCountSpinbox" to="." method="_on_encounter_spinboxes_changed"]

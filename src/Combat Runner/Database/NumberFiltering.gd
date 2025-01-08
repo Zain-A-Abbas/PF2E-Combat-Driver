@@ -1,6 +1,7 @@
 extends FilteringMenu
 
-@onready var grid_container = $MarginContainer/FiltersContainer/GridContainer
+@onready var grid_container: GridContainer = %GridContainer
+
 
 func _ready():
 	visible = false

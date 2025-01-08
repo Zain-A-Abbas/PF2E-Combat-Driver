@@ -1,9 +1,15 @@
 extends Node
 class_name TextInterpreter
 
+const ABILITIES = preload("res://Data/Abilities.json")
+
+static var abilities_dictionary: Dictionary = ABILITIES.get_data()
+
 ## Parses ability descriptions
 func ability_parser(ability_text: String) -> String:
-	var parsed_description = remove_unnecessary(ability_text)
+	var parsed_description: String = ability_text
+	parsed_description = glossary_parser(parsed_description)
+	parsed_description = remove_unnecessary(parsed_description)
 	parsed_description = area_parser(parsed_description)
 	parsed_description = condition_parser(parsed_description)
 	parsed_description = damage_parser(parsed_description)
@@ -18,13 +24,28 @@ func ability_parser(ability_text: String) -> String:
 	parsed_description = list_parser(parsed_description)
 	return parsed_description
 
+func glossary_parser(ability_text: String) -> String:
+	var regex: RegEx = RegEx.new()
+	regex.compile("@Localize\\[PF2E\\.NPC\\.Abilities\\.Glossary\\.([^\\]]+)\\]")
+	
+	var search = regex.search(ability_text)
+	
+	if search == null:
+		return ability_text
+	
+	var ability_name: String = search.strings[1]
+	var parsed_description: String = abilities_dictionary["Abilities"][ability_name]
+	
+	return parsed_description
+
 ## Removes unnecessary things such as <>'s, \ns, bestiary-ability and bestiary-effects from description
 func remove_unnecessary(ability_text: String) -> String:
 	var regex = RegEx.new()
 	
 	# Gets rid of line breaks
 	regex.compile("\n")
-	var parsed_description = regex.sub(ability_text, " ", true)
+	var parsed_description: String = regex.sub(ability_text, " ", true)
+	
 	
 	# Gets rid of html codes
 	regex.compile("(<hr \\/>|<p>|<\\/p>|<em>|<\\/em>)")

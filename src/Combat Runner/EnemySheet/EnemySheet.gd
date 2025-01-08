@@ -385,8 +385,9 @@ func setup_speed():
 	var speed_entry = create_sheet_content()
 	var speed_text: String = "[b]Speed[/b] "
 	var speed = enemy_attributes["speed"]
-	if speed["value"] > 0:
-		speed_text += str(speed["value"]) + " feet"
+	if speed["value"] != null:
+		if speed["value"] > 0:
+			speed_text += str(speed["value"]) + " feet"
 	# Add different speed methods
 	if speed.has("otherSpeeds"):
 		for speed_type in speed["otherSpeeds"]:

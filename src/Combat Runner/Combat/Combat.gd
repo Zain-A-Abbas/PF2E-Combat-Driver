@@ -9,6 +9,11 @@ const ENEMY_INITIATIVE = preload("res://Combat/EnemyInitiative.tscn")
 @onready var enemy_sheet: Sheet = %EnemySheet
 @onready var initiative_container: VBoxContainer = %InitiativeContainer
 
+# Encouter strength
+@onready var encounter_strength_label: Label = %EncounterStrengthLabel
+@onready var level_spinbox: SpinBox = %LevelSpinbox
+@onready var player_count_spinbox: SpinBox = %PlayerCountSpinbox
+
 func _ready():
 	EventBus.encounter_save_directory_chosen.connect(save_validated)
 	EventBus.encounter_load_directory_chosen.connect(load_validated)
@@ -44,6 +49,8 @@ func add_enemy_to_initiative(enemy):
 	enemy.renamed_enemy.connect(update_initiative_name)
 	
 	sort_initiative()
+	
+	update_encounter_strength()
 
 # Sorts Initiative
 func sort_initiative():
@@ -65,10 +72,22 @@ func update_initiative_name(enemy, new_name: String):
 # Ensures that every name in the combat is unique when creating an enemy instance
 func check_names():
 	var new_enemy = enemies.get_child(-1)
+	var new_enemy_name: String = new_enemy.enemy_name
+	var enemy_names: Array[String] = []
+	
 	for preexisting_enemy in enemies.get_children():
-		if preexisting_enemy != new_enemy && new_enemy.enemy_name == preexisting_enemy.enemy_name:
-			new_enemy.name_bar.text += "+"
-			new_enemy.enemy_name += "+"
+		if preexisting_enemy != new_enemy:
+			#new_enemy.name_bar.text += "+"
+			#new_enemy.enemy_name += "+"
+			enemy_names.append(preexisting_enemy.enemy_name)
+	
+	var same_name_count: int = 0
+	while (enemy_names.has(new_enemy_name)):
+		# 65 because that is when "A" starts
+		new_enemy_name = new_enemy.enemy_name + " " + OS.get_keycode_string(65 + same_name_count)
+		same_name_count += 1
+	new_enemy.enemy_name = new_enemy_name
+	new_enemy.name_bar.text = new_enemy_name
 
 # Runs when you highlight an enemy to view its sheet
 func view_enemy_sheet(enemy_data):
@@ -123,6 +142,54 @@ func load_validated():
 		loaded_enemy.viewing_enemy.connect(view_enemy_sheet)
 		add_enemy_to_initiative(loaded_enemy)
 
+func update_encounter_strength():
+	var party_count: int = player_count_spinbox.value
+	var party_level: int = level_spinbox.value
+	var exp: int = 0
+	for enemy in enemies.get_children():
+		if enemy is EnemyInfoTemplate:
+			if enemy.enemy_data != {}:
+				var enemy_level: int = enemy.enemy_data["system"]["details"]["level"]["value"]
+				if enemy_level <= party_level - 4:
+					exp += 10
+				elif enemy_level == party_level - 3:
+					exp += 15
+				elif enemy_level == party_level - 2:
+					exp += 20
+				elif enemy_level == party_level - 1:
+					exp += 30
+				elif enemy_level == party_level:
+					exp += 40
+				elif enemy_level == party_level + 1:
+					exp += 60
+				elif enemy_level == party_level + 2:
+					exp += 80
+				elif enemy_level == party_level + 3:
+					exp += 120
+				elif enemy_level >= party_level + 4:
+					exp += 160
+	
+	var trivial: int = 40 + (10 * (party_count - 4))
+	var low: int = 60 + (20 * (party_count - 4))
+	var moderate: int = 80 + (20 * (party_count - 4))
+	var severe: int = 120 + (30 * (party_count - 4))
+	var extreme: int = 160 + (40 * (party_count - 4))
+	
+	var encounter_level: String
+	if exp < low:
+		encounter_level = "Trivial"
+	elif exp < moderate:
+		encounter_level = "Low"
+	elif exp < severe:
+		encounter_level = "Moderate"
+	elif exp < extreme:
+		encounter_level = "Severe"
+	else:
+		encounter_level = "Extreme"
+	
+	encounter_strength_label.text = encounter_level
+
+
 # SIGNALS
 
 func _on_reroll_initiative_button_pressed():
@@ -145,3 +212,7 @@ func _on_copy_initiative_button_pressed():
 func _on_encounter_tracker_tab_changed(tab):
 	#print("tab changed to " + str(tab))
 	pass
+
+
+func _on_encounter_spinboxes_changed(value: float) -> void:
+	update_encounter_strength()
