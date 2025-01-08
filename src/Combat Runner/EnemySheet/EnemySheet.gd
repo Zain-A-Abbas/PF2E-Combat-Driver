@@ -11,10 +11,10 @@ const REACTION := "[img=24]res://Icons/Reaction.png[/img]"
 const FREE_ACTION := "[img=24]res://Icons/FreeAction.png[/img]"
 
 # A lot of these are their own variable just for faster referencing
-var enemy_data: Dictionary
-var enemy_system
-var enemy_abilities
-var enemy_attributes
+var enemy_data: Dictionary = {}
+var enemy_system: Dictionary = {}
+var enemy_abilities: Array = []
+var enemy_attributes: Dictionary = {}
 
 @onready var enemy_name := $SheetData/SheetScroller/SheetInfo/Header/EnemyName
 @onready var enemy_level := $SheetData/SheetScroller/SheetInfo/Header/EnemyLevel

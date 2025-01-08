@@ -88,16 +88,13 @@ func area_parser(ability_text: String) -> String:
 ## Recursive function that keeps sifting through the description for condition text
 func condition_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]")
-	if regex.search(description_text) == null:
+	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.([A-Za-z]+)]\\{(\\w+)\\s(\\d+)\\}")
+	var seached_description: RegExMatch = regex.search(description_text)
+	if seached_description == null:
 		return description_text
-	var condition_text = regex.search(description_text).strings[1]
+	var condition_text: String = seached_description.strings[2] + " " + seached_description.strings[3]
 	condition_text = regex.sub(description_text, condition_text)
-	# Next step gets condition text stored as {Condition [number]}
-	regex.compile("\\{([A-Za-z]+)\\s(\\d+)\\}")
-	if regex.search(condition_text) != null:
-		condition_text = regex.sub(condition_text, " " + regex.search(condition_text).strings[2])
-	
+
 	return condition_parser(condition_text)
 
 ## Gets damage from [[/r xdy[[element]]

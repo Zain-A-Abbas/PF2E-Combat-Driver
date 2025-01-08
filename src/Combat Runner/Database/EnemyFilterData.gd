@@ -32,6 +32,8 @@ var size: String : get = get_size
 
 func get_size():
 	match size:
+		"tiny":
+			return "tiny"
 		"sml", "sm":
 			return "small"
 		"med":

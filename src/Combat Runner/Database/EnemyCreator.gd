@@ -1,4 +1,5 @@
 extends PanelContainer
+class_name EnemyCreator
 
 signal sheet_created
 
@@ -17,10 +18,16 @@ const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", 
 @onready var senses_field: LabelDataField = %SensesField
 @onready var languages_field: LabelDataField = %LanguagesField
 
-
 @onready var skills_vbox: VBoxContainer = %SkillsVbox
 
+@onready var enemy_customizer_setup: Node = %EnemyCustomizerSetup
+
+
+@export var sheet: Sheet
+
 func _ready() -> void:
+	enemy_customizer_setup.sheet = sheet
+	
 	tab_container.current_tab = 0
 	# Set min heights for nodes
 	for node in find_children("*"):
@@ -51,3 +58,7 @@ func _on_save_sheet_button_pressed():
 
 func _on_enemy_data_formatter_sheet_created() -> void:
 	emit_signal("sheet_created")
+
+
+func _on_customize_enemy_button_pressed() -> void:
+	enemy_customizer_setup.customize_current_enemy()

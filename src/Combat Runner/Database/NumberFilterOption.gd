@@ -25,7 +25,7 @@ class_name NumberFilteringOption
 		spinbox_container.visible = has_spinboxes
 
 const ABILITY_SCORES : Array[String] = ["Strength", "Dexterity", "Constitution", "Charisma", "Wisdom", "Intelligence"]
-const SPEEDS : Array[String]= ["Land", "Fly", "Swim", "Climb", "Burrow"]
+const SPEEDS : Array[String] = ["Land", "Fly", "Swim", "Climb", "Burrow"]
 const ELEMENTS : Array[String] = ["None", "Acid", "All", "Bleed", "Bludgeoning", "Chaotic", "Cold", "Cold Iron", "Electricity", "Evil", "Fire", "Force", "Good", "Lawful", "Mental", "Negative", "Orichalum", "Physical", "Piercing", "Poison", "Positive", "Precision", "Silver", "Slashing", "Sonic", "Splash"]
 
 enum ListFiltering { ABILITY_SCORES, SPEEDS, ELEMENTS }

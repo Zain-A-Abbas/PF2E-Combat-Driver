@@ -1,5 +1,7 @@
 extends Node
 
+#region Onreadies
+
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
@@ -51,6 +53,8 @@ extends Node
 
 @onready var option_button: OptionButton = %OptionButton
 @onready var autofill_button: Button = %AutofillButton
+
+#endregion
 
 const ABILITY_MODIFIERS: String				 = "res://Custom/Roadmap Tables/Ability Modifiers.csv"
 const AREA_DAMAGE: String					 = "res://Custom/Roadmap Tables/Area Damage.csv"
@@ -142,7 +146,7 @@ func fill_brute(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 0))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 1)
 	)
 	
@@ -164,7 +168,7 @@ func fill_magical_striker(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 1))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 1)
 	)
 	
@@ -193,7 +197,7 @@ func fill_skill_paragon(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 2))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 2), get_table_value_by_level(strike_damage_table, level, 2)
 	)
 
@@ -215,7 +219,7 @@ func fill_skirmisher(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 1))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 2)
 	)
 
@@ -238,10 +242,10 @@ func fill_sniper(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 2))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 1), true
 	)
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 3), get_table_value_by_level(strike_damage_table, level, 3)
 	)
 
@@ -263,7 +267,7 @@ func fill_soldier(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 0))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 1)
 	)
 
@@ -285,7 +289,7 @@ func fill_spellcaster(level: int):
 	
 	hp_field.set_value(get_table_value_by_level(hp_table, level, 2))
 	
-	attacks.new_roadmap_attack(
+	attacks.new_data_attack(
 		get_table_value_by_level(strike_attack_table, level, 3), get_table_value_by_level(strike_damage_table, level, 3)
 	)
 	

@@ -71,15 +71,17 @@ func _on_attack_save_button_pressed() -> void:
 		current_editing_container.fill_data(current_editing_data)
 	attack_editor_window.hide()
 
-func new_roadmap_attack(attack: String, damage: String, ranged: bool = false):
+# Used by roadmaps and the customize button
+func new_data_attack(attack: String, damage: String, ranged: bool = false, strike_name: String = "Strike", traits: PackedStringArray = []):
 	var new_strike_data: EnemyCreatorStrike = EnemyCreatorStrike.new()
-	new_strike_data.strike_name = "Strike"
+	new_strike_data.strike_name = strike_name
 	if !ranged:
 		new_strike_data.strike_type = EnemyCreatorStrike.StrikeType.MELEE
 	else:
 		new_strike_data.strike_type = EnemyCreatorStrike.StrikeType.RANGED
 	new_strike_data.strike_bonus = int(attack)
 	new_strike_data.strike_damage = damage
+	new_strike_data.traits = traits
 	
 	var new_strike: EnemyCreatorStrikeContainer = ENEMY_CREATOR_STRIKE_CONTAINER.instantiate()
 	strikes_vbox.add_child(new_strike)

@@ -131,6 +131,11 @@ layout_mode = 2
 size_flags_vertical = 4
 text = "Create new enemy"
 
+[node name="CustomizeEnemyButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Customize current enemy"
+
 [node name="DatabaseSheets" type="HBoxContainer" parent="PanelContainer/Database"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -217,7 +222,7 @@ force_native = true
 keep_title_visible = true
 theme = ExtResource("10_p35gr")
 
-[node name="EnemyCreator" parent="PanelContainer/CenterContainer/EnemyCreatorWindow" instance=ExtResource("10_fkyqp")]
+[node name="EnemyCreator" parent="PanelContainer/CenterContainer/EnemyCreatorWindow" node_paths=PackedStringArray("sheet") instance=ExtResource("10_fkyqp")]
 unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
@@ -226,6 +231,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+sheet = NodePath("../../../Database/DatabaseSheets/VBoxContainer/PanelContainer2/EnemySheet")
 
 [connection signal="text_changed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/Button" to="." method="_on_button_pressed"]
@@ -235,6 +241,7 @@ size_flags_vertical = 3
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SizeFilterButton" to="." method="_on_size_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/TraitsFilterButton" to="." method="_on_traits_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/NewEnemyButton" to="." method="_on_new_enemy_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/CustomizeEnemyButton" to="PanelContainer/CenterContainer/EnemyCreatorWindow/EnemyCreator" method="_on_customize_enemy_button_pressed"]
 [connection signal="item_selected" from="PanelContainer/Database/DatabaseSheets/PanelContainer/EnemyList" to="." method="_on_enemy_list_item_selected"]
 [connection signal="pressed" from="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/SizeFilterMenu" to="." method="_on_size_filter_menu_apply_filter"]

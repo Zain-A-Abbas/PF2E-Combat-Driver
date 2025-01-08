@@ -15,6 +15,9 @@ func _ready() -> void:
 func set_value(val: String):
 	line_edit.text = val
 
+func set_value_num(val):
+	line_edit.text = str(val)
+
 func get_value() -> String:
 	return line_edit.text
 

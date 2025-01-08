@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c4mule60b5ehu"]
+[gd_scene load_steps=20 format=3 uid="uid://c4mule60b5ehu"]
 
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_d7k5c"]
 [ext_resource type="Script" path="res://Database/EnemyCreator.gd" id="1_q8537"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://Custom/EnemyDataFormatter.gd" id="12_o30mp"]
 [ext_resource type="Script" path="res://Custom/EnemyCreatorSpells.gd" id="14_07ghh"]
 [ext_resource type="Script" path="res://Custom/EnemyRoadMapFiller.gd" id="15_bt72b"]
+[ext_resource type="Script" path="res://Database/EnemyCustomizerSetup.gd" id="17_rxw0s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt2bf"]
 content_margin_left = 4.0
@@ -129,7 +130,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 4
+current_tab = 2
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -205,7 +206,7 @@ numbers_only = true
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Senses"
-minimum_character_width = 10
+minimum_character_width = 24
 
 [node name="LanguagesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
@@ -342,21 +343,25 @@ label_text = "AC"
 numbers_only = true
 minimum_character_width = 3
 
-[node name="FortitudeSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="FortitudeSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Fort"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="ReflexSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="ReflexSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Reflex"
 numbers_only = true
 minimum_character_width = 2
 
-[node name="WillSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("4_vbygb")]
+[node name="WillSaveField" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Will"
@@ -542,11 +547,11 @@ metadata/_tab_index = 2
 
 [node name="DC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/DCs" instance=ExtResource("5_m8os8")]
 layout_mode = 2
+size_flags_horizontal = 3
 table_type = 3
 
 [node name="Attacks" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 script = ExtResource("10_snsf6")
 metadata/_tab_index = 2
@@ -730,6 +735,7 @@ table_type = 3
 
 [node name="Spells" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("14_07ghh")
 metadata/_tab_index = 4
@@ -1053,7 +1059,12 @@ unique_name_in_owner = true
 script = ExtResource("12_o30mp")
 
 [node name="EnemyRoadMapFiller" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("15_bt72b")
+
+[node name="EnemyCustomizerSetup" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("17_rxw0s")
 
 [connection signal="pressed" from="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2/AutofillButton" to="EnemyRoadMapFiller" method="autofill_clicked"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewSpeedFieldButton" to="VBoxContainer/TabContainer/General" method="_on_new_speed_field_button_pressed"]

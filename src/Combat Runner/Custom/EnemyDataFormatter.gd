@@ -214,8 +214,8 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 				4:
 					new_ability["system"]["actionType"]["value"] = "reaction"
 			
-			if ability.action_option.selected == 3:
-				new_ability["system"]["description"]["value"] = "<strong>Trigger</strong> " + ability.trigger_text_edit.text + "; <strong>Effect</strong> " + ability.effect_text_edit.text
+			if ability.action_option.selected == 4:
+				new_ability["system"]["description"]["value"] = "<strong>Trigger</strong> " + ability.trigger_text_edit.text + " <strong>Effect</strong> " + ability.effect_text_edit.text
 			else:
 				new_ability["system"]["description"]["value"] = ability.effect_text_edit.text
 		

@@ -1,5 +1,6 @@
 @tool
 extends PanelContainer
+class_name Trait
 
 @onready var trait_text := $MarginContainer/TraitText
 @export var trait_name: String = "UNCOMMON" : set = set_trait
@@ -36,7 +37,7 @@ func set_trait(val):
 			add_theme_stylebox_override("panel", regular_trait)
 
 
-func trait_interpreter(val) -> String:
+static func trait_interpreter(val) -> String:
 	match val:
 		"tiny":
 			return "TINY"

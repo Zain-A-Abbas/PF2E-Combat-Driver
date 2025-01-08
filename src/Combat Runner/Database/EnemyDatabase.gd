@@ -349,6 +349,7 @@ func _on_new_enemy_button_pressed():
 	new_enemy()
 
 
+
 func _on_enemy_creator_sheet_created():
 	enemy_creator_window.hide()
 	add_enemies()
