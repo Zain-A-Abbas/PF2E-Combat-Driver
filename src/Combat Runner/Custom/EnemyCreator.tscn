@@ -130,7 +130,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 2
+current_tab = 4
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -530,10 +530,20 @@ layout_mode = 2
 size_flags_horizontal = 3
 table_type = 1
 
-[node name="AC" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+[node name="Saves" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
+
+[node name="Saves Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/Saves" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+table_type = 3
+
+[node name="AC" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
 
 [node name="AC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/AC" instance=ExtResource("5_m8os8")]
 layout_mode = 2
@@ -543,15 +553,25 @@ table_type = 2
 [node name="DCs" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
 visible = false
 layout_mode = 2
-metadata/_tab_index = 2
+metadata/_tab_index = 3
 
 [node name="DC Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/DCs" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
 table_type = 3
 
+[node name="Resistances & Weaknesses" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="Resistances Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/Resistances & Weaknesses" instance=ExtResource("5_m8os8")]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Attacks" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("10_snsf6")
 metadata/_tab_index = 2
@@ -735,7 +755,6 @@ table_type = 3
 
 [node name="Spells" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 script = ExtResource("14_07ghh")
 metadata/_tab_index = 4
@@ -767,18 +786,20 @@ popup/item_1/id = 1
 popup/item_2/text = "Divine"
 popup/item_2/id = 2
 popup/item_3/text = "Occult"
-popup/item_3/id = 4
+popup/item_3/id = 3
 popup/item_4/text = "Primal"
-popup/item_4/id = 5
+popup/item_4/id = 4
 
 [node name="CastingTypeBox" type="OptionButton" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 selected = 0
-item_count = 2
+item_count = 3
 popup/item_0/text = "Prepared"
 popup/item_1/text = "Spontaneous"
 popup/item_1/id = 1
+popup/item_2/text = "Innate"
+popup/item_2/id = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2

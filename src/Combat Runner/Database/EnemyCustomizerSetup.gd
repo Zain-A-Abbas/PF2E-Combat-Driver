@@ -58,6 +58,8 @@ extends Node
 
 @onready var enemy_creator: EnemyCreator = $".."
 @onready var defensive: VBoxContainer = %Defensive
+@onready var skills_vbox: VBoxContainer = %SkillsVbox
+@onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
 
 const SPEEDS : Array[String] = ["Land", "Fly", "Swim", "Climb", "Burrow"]
 const SPEED_FIELD = preload("res://Custom/SpeedField.tscn")
@@ -70,6 +72,7 @@ const ENEMY_CREATOR_STRIKE_CONTAINER = preload("res://Custom/EnemyCreatorStrikeC
 var sheet: Sheet
 
 func customize_current_enemy():
+	
 	if sheet == null:
 		return
 	if sheet.enemy_data == {}:
@@ -192,39 +195,43 @@ func customize_current_enemy():
 	
 	#region Strikes
 	
+	for strike in strikes_vbox.get_children():
+		if strike is EnemyCreatorStrikeContainer:
+			strike.queue_free()
 	for ability in enemy_abilities:
-		if ability["type"] == "melee":
-			var attack_traits_array: Array[String] = []
-			if ability["system"]["traits"]["value"] is Array[String]:
-				attack_traits_array = ability["system"]["traits"]["value"]
-			else:
-				for attack_trait in ability["system"]["traits"]["value"]:
-					attack_traits_array.append(str(attack_trait))
-			
-			var ranged: bool = false
-			for attack_trait in attack_traits_array:
-				if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
-					ranged = true
-			
+		if ability["type"] != "melee":
+			continue
+		var attack_traits_array: Array[String] = []
+		if ability["system"]["traits"]["value"] is Array[String]:
+			attack_traits_array = ability["system"]["traits"]["value"]
+		else:
+			for attack_trait in ability["system"]["traits"]["value"]:
+				attack_traits_array.append(str(attack_trait))
 		
-			# Damage
-			var damage_text: String = ""
-			var i: int = 0
-			for damage_roll in ability["system"]["damageRolls"].keys():
-				if i > 0:
-					damage_text += " plus "
-				damage_text += ability["system"]["damageRolls"][damage_roll]["damage"] + " " + ability["system"]["damageRolls"][damage_roll]["damageType"] 
-				i += 1
-			if ability["system"].has("oneLineDamageRoll"):
-				damage_text += ability["system"]["oneLineDamageRoll"]
+		var ranged: bool = false
+		for attack_trait in attack_traits_array:
+			if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
+				ranged = true
+		
+	
+		# Damage
+		var damage_text: String = ""
+		var i: int = 0
+		for damage_roll in ability["system"]["damageRolls"].keys():
+			if i > 0:
+				damage_text += " plus "
+			damage_text += ability["system"]["damageRolls"][damage_roll]["damage"] + " " + ability["system"]["damageRolls"][damage_roll]["damageType"] 
+			i += 1
+		if ability["system"].has("oneLineDamageRoll"):
+			damage_text += ability["system"]["oneLineDamageRoll"]
 
-			attacks.new_data_attack(
-				str(ability["system"]["bonus"]["value"]),
-				damage_text,
-				ranged,
-				ability["name"],
-				attack_traits_array
-				)
+		attacks.new_data_attack(
+			str(ability["system"]["bonus"]["value"]),
+			damage_text,
+			ranged,
+			ability["name"],
+			attack_traits_array
+			)
 	
 	#endregion
 	
@@ -293,6 +300,68 @@ func customize_current_enemy():
 			new_ability._on_action_option_item_selected(3)
 	
 	#endregion
+	
+	#region Skills
+	
+	for skill in skills_vbox.get_children():
+		if skill is EnemyCreatorSkill:
+			skill.label_data_field.set_value_num("")
+	for ability in enemy_abilities:
+		if ability["type"] != "lore":
+			continue
+		for skill in skills_vbox.get_children():
+			if skill is EnemyCreatorSkill:
+				if skill.skill_name == ability["name"]:
+					skill.label_data_field.set_value_num(ability["system"]["mod"]["value"])
+	
+	#endregion
+	
+	#region Spellcasting
+	for spell_rank in spell_fields_container.get_children():
+		if spell_rank is LabelDataField:
+			spell_rank.set_value("")
+	spell_list_box.select(0)
+	casting_type_box.select(0)
+	spell_attack_field.set_value("")
+	spell_dc_field.set_value("")
+	
+	for ability in enemy_abilities:
+		if ability["type"] == "spellcastingEntry":
+			match ability["system"]["tradition"]["value"]:
+				"arcane":
+					spell_list_box.select(1)
+				"divine":
+					spell_list_box.select(2)
+				"occult":
+					spell_list_box.select(3)
+				"primal":
+					spell_list_box.select(4)
+			
+			match ability["system"]["prepared"]["value"]:
+				"prepared":
+					casting_type_box.select(1)
+				"spontaneous":
+					casting_type_box.select(2)
+				"innate":
+					casting_type_box.select(2)
+			
+			spell_dc_field.set_value_num(ability["system"]["spelldc"]["dc"])
+			spell_attack_field.set_value_num(ability["system"]["spelldc"]["value"])
+		elif ability["type"] == "spell":
+			var spell_rank: int
+			if ability["system"]["location"].has("heightenedLevel"):
+				spell_rank = ability["system"]["location"]["heightenedLevel"]
+			else:
+				ability["system"]["level"]["value"]
+			
+			var spell_field: LabelDataField = spell_fields_container.get_child(spell_rank)
+			var spell_text: String = spell_field.get_value()
+			if spell_text == "":
+				spell_field.set_value(ability["name"])
+			else:
+				spell_field.set_value(spell_text + ", " + ability["name"])
+	spell_list_box.emit_signal("item_selected", spell_list_box.selected)
+	
 	
 	
 	var parent: Node = enemy_creator.get_parent()

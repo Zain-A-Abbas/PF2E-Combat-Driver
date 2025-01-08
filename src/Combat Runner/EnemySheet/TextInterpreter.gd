@@ -20,7 +20,9 @@ func ability_parser(ability_text: String) -> String:
 	parsed_description = recharge_parser(parsed_description)
 	parsed_description = action_parser(parsed_description)
 	parsed_description = enemy_name_parser(parsed_description)
-	parsed_description = format_parser(parsed_description)
+	parsed_description = act_parser(parsed_description)
+	parsed_description = bold_parser(parsed_description)
+	parsed_description = italics_parser(parsed_description)
 	parsed_description = list_parser(parsed_description)
 	return parsed_description
 
@@ -46,9 +48,14 @@ func remove_unnecessary(ability_text: String) -> String:
 	regex.compile("\n")
 	var parsed_description: String = regex.sub(ability_text, " ", true)
 	
+	# Replace <hr /> and </p><p> with a space 
+	regex.compile("(<hr \\/>)")
+	parsed_description = regex.sub(parsed_description, " ", true)
+	regex.compile("(<\\/p><p>)")
+	parsed_description = regex.sub(parsed_description, " ", true)
 	
-	# Gets rid of html codes
-	regex.compile("(<hr \\/>|<p>|<\\/p>|<em>|<\\/em>)")
+	# Gets rid of unneeded html codes
+	regex.compile("(<p>|<\\/p>|<span ?.*?>|<\\/span>)")
 	parsed_description = regex.sub(parsed_description, "", true)
 	
 	# Gets rid of unnecessary ability text
@@ -88,11 +95,25 @@ func area_parser(ability_text: String) -> String:
 ## Recursive function that keeps sifting through the description for condition text
 func condition_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.([A-Za-z]+)]\\{(\\w+)\\s(\\d+)\\}")
-	var seached_description: RegExMatch = regex.search(description_text)
-	if seached_description == null:
-		return description_text
-	var condition_text: String = seached_description.strings[2] + " " + seached_description.strings[3]
+	var condition_text: String
+	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]\\{(\\w+)\\s(\\d+)\\}")
+	var searched_description: RegExMatch = regex.search(description_text)
+	if searched_description != null:
+		condition_text = searched_description.strings[2] + " " + searched_description.strings[3]
+	else:
+		# If failed, try without the number in the curly braces
+		regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]\\{(\\w+)\\}")
+		searched_description = regex.search(description_text)
+		if searched_description != null:
+			condition_text = searched_description.strings[2]
+		else:
+			# If failed, try without the curly braces
+			regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]")
+			searched_description = regex.search(description_text)
+			if searched_description != null:
+				condition_text = searched_description.strings[1]
+			else:
+				return description_text
 	condition_text = regex.sub(description_text, condition_text)
 
 	return condition_parser(condition_text)
@@ -100,7 +121,7 @@ func condition_parser(description_text: String) -> String:
 ## Gets damage from [[/r xdy[[element]]
 func damage_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("\\[\\[/r (\\S+)\\[(\\S+)\\]\\]\\]")
+	regex.compile("\\[\\[/r (.*?)\\[(\\S+)\\]\\]\\]")
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
@@ -182,15 +203,34 @@ func enemy_name_parser(description_text: String) -> String:
 	var enemy_name: String = enemy_strings.strings[2]
 	return enemy_name_parser(regex.sub(description_text, enemy_name))
 
-## Corrects formatting such as turning <strong> to [b]
-func format_parser(description_text: String) -> String:
+## Filters out [[/act
+func act_parser(description_text: String):
+	var regex: RegEx = RegEx.new()
+	regex.compile("\\[\\[/act (\\w+)\\]\\]")
+	var act: RegExMatch = regex.search(description_text)
+	if act == null:
+		return description_text
+	return act_parser(regex.sub(description_text, act.strings[1]))
+
+## Turns <strong> to [b]
+func bold_parser(description_text: String) -> String:
 	var regex = RegEx.new()
 	regex.compile("<strong>")
 	if regex.search(description_text) == null:
 		return description_text
 	var formatted_description: String = regex.sub(description_text, "[b]")
 	regex.compile("</strong>")
-	return format_parser(regex.sub(formatted_description, "[/b]"))
+	return bold_parser(regex.sub(formatted_description, "[/b]"))
+
+## Turns <em> to [i]
+func italics_parser(description_text: String) -> String:
+	var regex = RegEx.new()
+	regex.compile("<em>")
+	if regex.search(description_text) == null:
+		return description_text
+	var formatted_description: String = regex.sub(description_text, "[i]")
+	regex.compile("</em>")
+	return italics_parser(regex.sub(formatted_description, "[/i]"))
 
 ## Makes lists out of abilities like spells
 func list_parser(description_text: String) -> String:

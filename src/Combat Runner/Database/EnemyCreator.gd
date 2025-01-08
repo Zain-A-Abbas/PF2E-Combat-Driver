@@ -22,12 +22,12 @@ const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", 
 
 @onready var enemy_customizer_setup: Node = %EnemyCustomizerSetup
 
-
 @export var sheet: Sheet
+
+var current_focused_line_edit: LineEdit
 
 func _ready() -> void:
 	enemy_customizer_setup.sheet = sheet
-	
 	tab_container.current_tab = 0
 	# Set min heights for nodes
 	for node in find_children("*"):
@@ -45,6 +45,21 @@ func _ready() -> void:
 		skills_vbox.add_child(newSkill)
 		newSkill.skill_name = SKILLS[i]
 		newSkill.name = SKILLS[i] + "Panel"
+	
+	for child in find_children("", "Table"):
+		if child is Table:
+			child.cell_clicked.connect(get_table_number)
+
+	get_viewport().gui_focus_changed.connect(focus_changed)
+
+func get_table_number(amount: int):
+	if current_focused_line_edit:
+		current_focused_line_edit.text = str(amount)
+		current_focused_line_edit = null
+
+func focus_changed(control: Control):
+	if control is LineEdit:
+		current_focused_line_edit = control
 
 func create_enemy():
 	enemy_data_formatter.create_enemy()

@@ -190,7 +190,7 @@ const SPELLCASTING_TEMPLATE: Dictionary = {
 		"prepared": {
 			"value": ""
 		},
-		"location": {
+		"tradition": {
 			"value": ""
 		},
 	}

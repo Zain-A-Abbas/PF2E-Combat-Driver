@@ -1,9 +1,12 @@
 extends GridContainer
 class_name Table
 
+signal cell_clicked(text: int)
+
 const TABLE_HEADER_CELL = preload("res://Table/TableHeaderCell.tres")
 const TABLE_ODD_ROW_CELL = preload("res://Table/TableOddRowCell.tres")
 const TABLE_EVEN_ROW_CELL = preload("res://Table/TableEvenRowCell.tres")
+const TABLE_BUTTON = preload("res://Table/TableButton.tscn")
 
 const MONTSERRAT_BOLD = preload("res://Fonts/Montserrat-Bold.ttf")
 const MONTSERRAT_REGULAR = preload("res://Fonts/Montserrat-Regular.ttf")
@@ -35,7 +38,9 @@ enum TableType {
 	STRIKE_BONUS,
 	STRIKE_DAMAGE,
 	AREA_DAMAGE,
-	PERCEPTION
+	PERCEPTION,
+	RESISTANCES,
+	SAVES
 }
 
 @export var table_type: TableType = TableType.NONE
@@ -75,6 +80,10 @@ func _ready() -> void:
 			read_csv(AREA_DAMAGE)
 		TableType.PERCEPTION:
 			read_csv(PERCEPTION)
+		TableType.RESISTANCES:
+			read_csv(RESISTANCES_AND_WEAKNESSES)
+		TableType.SAVES:
+			read_csv(SAVING_THROWS)
 
 static func add_tables(parent: Control):
 	var skills_table: Table = Table.new()
@@ -130,6 +139,26 @@ func add_row(row_data: Array[String]):
 			newLabel.add_theme_font_override("font", MONTSERRAT_BOLD)
 		newLabel.text = cell_text
 		
+		# Adds the button to the number cells
+		if i > 0:
+			var new_button: Button = TABLE_BUTTON.instantiate()
+			new_button.pressed.connect(button_pressed.bind(newLabel))
+			newPanel.add_child(new_button)
+		
 		newPanel.add_child(newLabel)
 		add_child(newPanel)
 		i += 1
+
+func button_pressed(cell_label: Label):
+	var cell_text: PackedStringArray = cell_label.text.split("-")
+	if cell_text.size() == 1:
+		emit_signal("cell_clicked", int(cell_text[0]))
+	else:
+		var numbers: Array[int] = []
+		for number in cell_text:
+			numbers.append(int(number))
+		var avg: int = 0
+		for number in numbers:
+			avg += number
+		avg /= numbers.size()
+		emit_signal("cell_clicked", avg)

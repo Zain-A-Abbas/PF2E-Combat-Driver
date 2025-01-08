@@ -178,6 +178,8 @@ func create_enemy():
 			new_casting_entry["name"] = spell_list_box.get_item_text(spell_list_box.selected) + " " + casting_type_box.get_item_text(casting_type_box.selected) + " Spells"
 			new_casting_entry["system"]["spelldc"]["dc"] = int(spell_dc_field.get_value())
 			new_casting_entry["system"]["spelldc"]["value"] = int(spell_attack_field.get_value())
+			new_casting_entry["system"]["tradition"]["value"] = spell_list_box.get_item_text(spell_list_box.selected).to_lower()
+			new_casting_entry["system"]["prepared"]["value"] = casting_type_box.get_item_text(casting_type_box.selected).to_lower()
 			new_enemy_sheet["items"].append(new_casting_entry)
 	
 	
