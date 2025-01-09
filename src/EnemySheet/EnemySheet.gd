@@ -10,12 +10,6 @@ const THREE_ACTIVITY := "[img=24]res://Icons/3Activity.png[/img]"
 const REACTION := "[img=24]res://Icons/Reaction.png[/img]"
 const FREE_ACTION := "[img=24]res://Icons/FreeAction.png[/img]"
 
-# A lot of these are their own variable just for faster referencing
-var enemy_data: Dictionary = {}
-var enemy_system: Dictionary = {}
-var enemy_abilities: Array = []
-var enemy_attributes: Dictionary = {}
-
 @onready var enemy_name := $SheetData/SheetScroller/SheetInfo/Header/EnemyName
 @onready var enemy_level := $SheetData/SheetScroller/SheetInfo/Header/EnemyLevel
 @onready var trait_container := $SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Traits
@@ -29,6 +23,14 @@ var enemy_attributes: Dictionary = {}
 @onready var defensive_abilities := $SheetData/SheetScroller/SheetInfo/SheetMargin/Data/DefensiveAbilities
 @onready var attacks := $"SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Speed&OffensiveAbilities"
 
+# A lot of these are their own variable just for faster referencing
+var enemy_data: Dictionary = {}
+var enemy_system: Dictionary = {}
+var enemy_abilities: Array = []
+var enemy_attributes: Dictionary = {}
+
+# For zooming during runtime
+static var sheet_theme: Theme = load("res://Themes/EnemySheetContext.tres")
 
 func setup(enemy_file, conditions = {}):
 	# Gets the enemy sheet data
