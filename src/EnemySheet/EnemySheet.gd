@@ -735,9 +735,12 @@ func setup_offensive_abilities():
 			attacks.visible = true
 
 func create_sheet_content() -> SheetContent:
-	var new_sheet_content = SHEET_CONTENT.instantiate()
-	new_sheet_content.enemy_name = enemy_data["name"]
+	var new_sheet_content: RichTextLabel = SHEET_CONTENT.instantiate()
+	new_sheet_content.meta_clicked.connect(sheet_content_clicked)
 	return new_sheet_content
+
+func sheet_content_clicked(meta):
+	EventBus.emit_signal("d20_rolled", meta.to_int(), enemy_name.text)
 
 func get_sheet_tooltip(tooltip_type, tooltip_reference) -> String:
 	var tooltip_list
