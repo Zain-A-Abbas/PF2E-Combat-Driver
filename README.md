@@ -9,8 +9,7 @@ You are also able to create new enemy sheets, and customize pre-existing ones.
 In the current incomplete state, the project must be opened in Godot 4.3. An exported binary will be available when it is mostly complete.
 
 ## Work In Progress
-
-This project is still in its early stages, and is thus incomplete for the time being. The major features that currently function:
+This project is not yet feature complete. The major features at time of writing:
 * Searching through enemies
 * Filtering and sorting enemies in different conditions
 * Creation of custom enemies, both from scratch and through roadmaps to automatically allocate stats
@@ -32,6 +31,19 @@ Known bugs:
 This project is created in Godot 4.3.
 
 Enemy data is from: https://github.com/foundryvtt/pf2e
+
+## Installation
+The windows installation can be found on the release page. First time opening the software will take ~30 seconds, and then a normal amount of time thereafter.
+
+## Other
+The user interface is in some areas inspired by [Kyle Olson's Combat Manager](http://combatmanager.com/) for the previous edition of the game.
+For anyone compiling the program on their own, the "Data" folder from the src folder must be placed alongside the binary.
+
+Custom enemies are in the following folders based on operating system:
+* Windows: %APPDATA%\Godot\app_userdata\[project_name]
+* macOS: ~/Library/Application Support/Godot/app_userdata/[project_name]
+* Linux: ~/.local/share/godot/app_userdata/[project_name]
+
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/bdebaf4b-d99e-4323-b8bb-fc46a65628c1)
