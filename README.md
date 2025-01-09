@@ -2,33 +2,32 @@
 
 ⚠ This software is not supported, endorsed, or approved by Paizo Inc, or any associated groups.
 
-Combat Driver allows you to create and share individual combat encounters for the PF2E tabletop system while letting you search through a list of monsters and NPCs with many search and filter options.
-Combat Driver will also allow you to efficiently create your own enemies and modify existing ones, and allows you to measure up an encounter's difficulty in comparison to your game party.
+Combat Driver allows you to create and share individual combat encounters for the PF2E tabletop system while letting you comprehensivley search and filter through a list of monsters and NPCs available for the game.
+You are also able to create new enemy sheets, and customize pre-existing ones.
 
 ## How To Use
 In the current incomplete state, the project must be opened in Godot 4.3. An exported binary will be available when it is mostly complete.
-
-## Basic Details
-Enemies can be searched from and filtered through from the EnemyDatabase table. Most filtering options work. Encounters can be saved and loaded using Ctrl+S and Ctrl+O, respectively.
-
 
 ## Work In Progress
 
 This project is still in its early stages, and is thus incomplete for the time being. The major features that currently function:
 * Searching through enemies
 * Filtering and sorting enemies in different conditions
+* Creation of custom enemies, both from scratch and through roadmaps to automatically allocate stats
+* Modification of pre-existing enemies
 * Bundling up enemies as encounters, along with tracking HP
 * Saving and loading encounters
 * Dice roller + Clicking on rolls on an enemy sheet to quickly do a D20 roll for that number
+* Listing encounter strength based on party level/size
 
-The major features that are not yet available are:
-* Automatically listing encounter strength based on party level/size
-* Allowing creation of custom enemies
-* Allowing modification of pre-existing enemies
+Features that are to be added:
+* Allowing for clicking on multi-element damage rolls to immediately roll them
+* Creating elite/weak enemy variants with the click of a button
+* State tracking
 
-The formatting of a number of enemy sheets is broken at the moment, but the majority should be readable and without issue.
-
-The appearance of the software will also receive a makeover in the long-term.
+Known bugs:
+* Enemies with multiple spell lists will have every spell be displayed on every spell list.
+* In some rare cases, ability descriptions are not accurately displayed.
 
 This project is created in Godot 4.3.
 
