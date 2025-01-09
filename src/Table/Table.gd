@@ -92,6 +92,7 @@ static func add_tables(parent: Control):
 	skills_table.read_csv(SKILLS)
 
 func read_csv(file_address: String):
+	print(file_address)
 	var csvAccess: FileAccess = FileAccess.open(file_address, FileAccess.READ)
 	var header: PackedStringArray = csvAccess.get_csv_line()
 	create_header(header)

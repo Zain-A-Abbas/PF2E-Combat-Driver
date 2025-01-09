@@ -22,7 +22,7 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies";
         {
             foreach (string file in Directory.GetFiles(subDirectory))
             {
-                processEnemy(subDirectory, file, enemiesArray);
+                processEnemy(file, enemiesArray);
             }
         }
     
@@ -33,7 +33,7 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies";
             {
                 foreach (string file in Directory.GetFiles(subDirectory))
                 {
-                    processEnemy(subDirectory, file, enemiesArray);
+                    processEnemy(file, enemiesArray);
                 }
             }
         
@@ -41,15 +41,14 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies";
         return enemiesArray;
     }
 
-private void processEnemy(string subDirectory, string file, Godot.Collections.Array<Node> array) {
-    string enemyFileDirectory = Path.Combine(subDirectory, file);
-    string json = File.ReadAllText(enemyFileDirectory);
+private void processEnemy(string file, Godot.Collections.Array<Node> array) {
+    string json = File.ReadAllText(file);
     JObject enemyData = JObject.Parse(json);
 
     string enemyType = (string)enemyData["type"];
     if (enemyType != "npc") {return;}
     
-    string fileReference = enemyFileDirectory;
+    string fileReference = file;
     array.Add(new EnemyFilterInfo(enemyData, fileReference));
 }
 
