@@ -4,8 +4,7 @@
 [ext_resource type="Script" path="res://Main.gd" id="1_32guc"]
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="2_gi4p8"]
 [ext_resource type="PackedScene" uid="uid://bmbtqllw2ypjc" path="res://Database/EnemyDatabase.tscn" id="2_np0t7"]
-
-[sub_resource type="Theme" id="Theme_ys4q2"]
+[ext_resource type="Script" path="res://ErrorWindow.gd" id="5_fd1do"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -14,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_ys4q2")
+theme = ExtResource("2_gi4p8")
 script = ExtResource("1_32guc")
 metadata/_edit_lock_ = true
 
@@ -28,24 +27,103 @@ grow_vertical = 2
 color = Color(0.0941176, 0.0901961, 0.160784, 1)
 metadata/_edit_lock_ = true
 
-[node name="TabBar" type="TabContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="SaveButton" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save Encounter"
+
+[node name="LoadButton" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load Encounter"
+
+[node name="TabBar" type="TabContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 theme = ExtResource("2_gi4p8")
 current_tab = 0
 metadata/_edit_lock_ = true
 
-[node name="Combat" parent="TabBar" instance=ExtResource("1_4vf2w")]
+[node name="Combat" parent="VBoxContainer/TabBar" instance=ExtResource("1_4vf2w")]
 unique_name_in_owner = true
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="Enemy Database" parent="TabBar" instance=ExtResource("2_np0t7")]
+[node name="Enemy Database" parent="VBoxContainer/TabBar" instance=ExtResource("2_np0t7")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
+
+[node name="ErrorWindow" type="Window" parent="."]
+unique_name_in_owner = true
+auto_translate_mode = 1
+title = "Warning"
+initial_position = 1
+size = Vector2i(400, 100)
+visible = false
+wrap_controls = true
+transient = true
+exclusive = true
+force_native = true
+keep_title_visible = true
+theme = ExtResource("2_gi4p8")
+script = ExtResource("5_fd1do")
+
+[node name="ColorRect" type="ColorRect" parent="ErrorWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ErrorWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_gi4p8")
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ErrorWindow/MarginContainer"]
+layout_mode = 2
+
+[node name="ErrorText" type="Label" parent="ErrorWindow/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Enemies must be present to save."
+
+[node name="ErrorButton" type="Button" parent="ErrorWindow/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+text = "OK"
+
+[connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/SaveButton" to="VBoxContainer/TabBar/Combat" method="save_encounter"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/LoadButton" to="VBoxContainer/TabBar/Combat" method="open_encounter"]
+[connection signal="pressed" from="ErrorWindow/MarginContainer/VBoxContainer/ErrorButton" to="ErrorWindow" method="_on_error_button_pressed"]

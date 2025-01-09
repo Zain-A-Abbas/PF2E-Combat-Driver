@@ -7,3 +7,6 @@ signal d20_rolled(mod)
 signal encounter_save_directory_chosen(path: String)
 @warning_ignore("unused_signal")
 signal encounter_load_directory_chosen(path: String)
+
+@warning_ignore("unused_signal")
+signal error_popup(text: String)

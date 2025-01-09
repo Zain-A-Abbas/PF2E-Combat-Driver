@@ -96,19 +96,19 @@ func area_parser(ability_text: String) -> String:
 func condition_parser(description_text: String) -> String:
 	var regex = RegEx.new()
 	var condition_text: String
-	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]\\{(\\w+)\\s(\\d+)\\}")
+	regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.([\\w\\-]+)]\\{([\\w\\-]+)\\s(\\d+)\\}")
 	var searched_description: RegExMatch = regex.search(description_text)
 	if searched_description != null:
 		condition_text = searched_description.strings[2] + " " + searched_description.strings[3]
 	else:
 		# If failed, try without the number in the curly braces
-		regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]\\{(\\w+)\\}")
+		regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.([\\w\\-]+)]\\{([\\w\\-]+)\\}")
 		searched_description = regex.search(description_text)
 		if searched_description != null:
 			condition_text = searched_description.strings[2]
 		else:
 			# If failed, try without the curly braces
-			regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.(\\w+)]")
+			regex.compile("@UUID\\[Compendium.pf2e.conditionitems.Item.([\\w\\-]+)]")
 			searched_description = regex.search(description_text)
 			if searched_description != null:
 				condition_text = searched_description.strings[1]
@@ -186,12 +186,20 @@ func recharge_parser(description_text: String) -> String:
 ## Parses common actions such as escaping
 func action_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@UUID\\[Compendium\\.pf2e\\.actionspf2e\\.Item\\.(.*?)\\]")
+	regex.compile("@UUID\\[Compendium\\.pf2e\\.actionspf2e\\.Item\\.(.*?)\\]\\{(.*?)}")
 	var action_strings = regex.search(description_text)
-	if regex.search(description_text) == null:
-		return description_text
-	var action_name: String = action_strings.strings[1]
-	return action_parser(regex.sub(description_text, action_name))
+	var action_name: String
+	if action_strings != null:
+		action_name = action_strings.strings[2]
+		return action_parser(regex.sub(description_text, action_name))
+	
+	regex.compile("@UUID\\[Compendium\\.pf2e\\.actionspf2e\\.Item\\.(.*?)\\]")
+	action_strings = regex.search(description_text)
+	if action_strings != null:
+		action_name = action_strings.strings[1]
+		return action_parser(regex.sub(description_text, action_name))
+	
+	return description_text
 
 ## Parses enemy names if it refers to another enemy
 func enemy_name_parser(description_text: String) -> String:

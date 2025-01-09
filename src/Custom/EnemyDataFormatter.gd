@@ -54,6 +54,16 @@ const CUSTOM_ENEMIES_LOCATION: String = "user://Enemies/custom-enemies/"
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
 
 func create_enemy():
+	#region Error checking
+	
+	if name_field.get_value().strip_edges() == "":
+		EventBus.error_popup.emit("Name is required to save enemy.")
+		return
+	
+	
+	
+	#endregion
+	
 	var new_enemy_sheet: Dictionary = {}
 	var example = EnemySheetExample.new()
 	new_enemy_sheet = example.DEFAULT.duplicate(true)

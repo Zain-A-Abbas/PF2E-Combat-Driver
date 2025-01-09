@@ -105,6 +105,7 @@ func remove_enemy(enemy: Node):
 
 func save_encounter():
 	if enemies.get_child_count() == 0:
+		EventBus.error_popup.emit("Cannot save empty encounter.")
 		return
 	
 	SaveDialog.choose_save_directory()
