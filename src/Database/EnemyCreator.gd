@@ -71,7 +71,7 @@ func _on_save_sheet_button_pressed():
 
 
 func _on_enemy_data_formatter_sheet_created() -> void:
-	emit_signal("sheet_created")
+	sheet_created.emit()
 
 
 func _on_customize_enemy_button_pressed() -> void:

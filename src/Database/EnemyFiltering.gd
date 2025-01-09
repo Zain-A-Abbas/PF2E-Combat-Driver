@@ -18,4 +18,4 @@ func has_no_filters() -> bool:
 	return true
 
 func _on_apply_button_pressed():
-	emit_signal("apply_filter")
+	apply_filter.emit()

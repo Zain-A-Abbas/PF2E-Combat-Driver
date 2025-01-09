@@ -152,7 +152,7 @@ func add_row(row_data: Array[String]):
 func button_pressed(cell_label: Label):
 	var cell_text: PackedStringArray = cell_label.text.split("-")
 	if cell_text.size() == 1:
-		emit_signal("cell_clicked", int(cell_text[0]))
+		cell_clicked.emit(int(cell_text[0]))
 	else:
 		var numbers: Array[int] = []
 		for number in cell_text:
@@ -161,4 +161,4 @@ func button_pressed(cell_label: Label):
 		for number in numbers:
 			avg += number
 		avg /= numbers.size()
-		emit_signal("cell_clicked", avg)
+		cell_clicked.emit(avg)

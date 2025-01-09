@@ -37,7 +37,7 @@ extends Node
 @onready var spell_dc_field: LabelDataField = %SpellDCField
 @onready var spell_attack_field: LabelDataField = %SpellAttackField
 @onready var cantrips_field: LabelDataField = %CantripsField
-@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
+'@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
 @onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
 @onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
 @onready var _4_th_rank_field: LabelDataField = %"4thRankField"
@@ -46,7 +46,7 @@ extends Node
 @onready var _7_th_rank_field: LabelDataField = %"7thRankField"
 @onready var _8_th_rank_field: LabelDataField = %"8thRankField"
 @onready var _9_th_rank_field: LabelDataField = %"9thRankField"
-@onready var _10_th_rank_field: LabelDataField = %"10thRankField"
+@onready var _10_th_rank_field: LabelDataField = %"10thRankField"'
 
 @onready var attacks: VBoxContainer = %Attacks
 @onready var spells: VBoxContainer = %Spells
@@ -83,7 +83,6 @@ var strike_attack_table: Array = []			# extreme - high - moderate - low
 var strike_damage_table: Array = []			# extreme - high - moderate - low
 
 func _ready() -> void:
-	var curr_time: float = Time.get_ticks_msec()
 	populate_local_array(ability_modifier_table, ABILITY_MODIFIERS)
 	populate_local_array(ac_table, ARMOR_CLASS)
 	populate_local_array(hp_table, HIT_POINTS)
@@ -94,7 +93,6 @@ func _ready() -> void:
 	populate_local_array(spell_dcs_table, SPELL_D_CS)
 	populate_local_array(strike_attack_table, STRIKE_ATTACK_BONUS)
 	populate_local_array(strike_damage_table, STRIKE_DAMAGE)
-	
 
 func populate_local_array(array: Array, file: String):
 	var csv_accessor: FileAccess = FileAccess.open(file, FileAccess.READ)
@@ -108,7 +106,6 @@ func get_table_value_by_level(table: Array, level: int, column: int):
 	return table[level][column]
 
 func autofill_clicked() -> void:
-	var valid_level: bool = false
 	var level_number: int = int(level_field.get_value())
 	if level_number < -1 || level_number > 24:
 		return

@@ -38,7 +38,7 @@ signal sheet_created
 @onready var spell_attack_field: LabelDataField = %SpellAttackField
 @onready var cantrips_field: LabelDataField = %CantripsField
 @onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
-@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
+'@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
 @onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
 @onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
 @onready var _4_th_rank_field: LabelDataField = %"4thRankField"
@@ -47,7 +47,7 @@ signal sheet_created
 @onready var _7_th_rank_field: LabelDataField = %"7thRankField"
 @onready var _8_th_rank_field: LabelDataField = %"8thRankField"
 @onready var _9_th_rank_field: LabelDataField = %"9thRankField"
-@onready var _10_th_rank_field: LabelDataField = %"10thRankField"
+@onready var _10_th_rank_field: LabelDataField = %"10thRankField"'
 @onready var constant_spells_field: LabelDataField = %ConstantSpellsField
 
 const CUSTOM_ENEMIES_LOCATION: String = "user://Enemies/custom-enemies/"
@@ -162,10 +162,10 @@ func create_enemy():
 	
 	#region Spellcasting
 	
+	var i: int = 0
 	if spell_list_box.selected != 0:
 		var spells_found: bool = false
 		var spell_field_value: String = ""
-		var i: int = 0
 		for spell_field in spell_fields_container.get_children():
 			if spell_field is LabelDataField:
 				var constant: bool = spell_field == constant_spells_field
@@ -190,7 +190,7 @@ func create_enemy():
 	var file_name: String = new_enemy_sheet["name"]
 	var base_file_name: String = file_name
 	var directory := DirAccess.open(CUSTOM_ENEMIES_LOCATION)
-	var i: int = 0
+	i = 0
 	while has_file_name(file_name, directory):
 		file_name = base_file_name + "-" + str(i + 1)
 		print(file_name)
@@ -199,7 +199,7 @@ func create_enemy():
 	var new_file = FileAccess.open(CUSTOM_ENEMIES_LOCATION + file_name + ".json", FileAccess.WRITE)
 	new_file.store_line(JSON.stringify(new_enemy_sheet, "\t"))
 	new_file.close()
-	emit_signal("sheet_created")
+	sheet_created.emit()
 
 # If defense is false, then offense
 func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: bool = true):

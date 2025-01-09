@@ -50,7 +50,6 @@ func add_enemies():
 	enemies.clear()
 	
 	# Open the enemy database folder
-	var directory := DirAccess.open(ENEMY_DATABASE)
 	# Search through every subfolder, as enemies are placed into fodlers corresponding to rulebook source
 	var start_time: float = Time.get_ticks_msec()
 	'for subfolder in directory.get_directories():
@@ -344,7 +343,7 @@ func _on_numbers_filter_button_pressed():
 	numbers_filtering.visible = !numbers_filtering.visible
 
 func _on_add_to_combat_button_pressed():
-	emit_signal("add_enemy", enemy_sheet.enemy_data)
+	add_enemy.emit(enemy_sheet.enemy_data)
 
 func _on_new_enemy_button_pressed():
 	new_enemy()

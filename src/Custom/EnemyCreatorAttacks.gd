@@ -54,7 +54,7 @@ func _on_strike_creator_pressed() -> void:
 
 func _on_attack_save_button_pressed() -> void:
 	current_editing_data.strike_name = strike_name_field.get_value()
-	current_editing_data.strike_type = strike_type_options.selected
+	current_editing_data.strike_type = strike_type_options.selected as EnemyCreatorStrike.StrikeType
 	
 	var traits_string: String = strike_traits_field.get_value().replace(", ", ",")
 	current_editing_data.traits = traits_string.split(",", false)

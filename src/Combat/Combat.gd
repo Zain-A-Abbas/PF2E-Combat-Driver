@@ -146,46 +146,45 @@ func load_validated(path: String):
 		add_enemy_to_initiative(loaded_enemy)
 
 func update_encounter_strength():
-	var party_count: int = player_count_spinbox.value
-	var party_level: int = level_spinbox.value
-	var exp: int = 0
+	var party_count: int = int(player_count_spinbox.value)
+	var party_level: int = int(level_spinbox.value)
+	var exp_obtained: int = 0
 	for enemy in enemies.get_children():
 		if enemy is EnemyInfoTemplate:
 			if enemy.enemy_data != {}:
 				var enemy_level: int = enemy.enemy_data["system"]["details"]["level"]["value"]
 				if enemy_level <= party_level - 4:
-					exp += 10
+					exp_obtained += 10
 				elif enemy_level == party_level - 3:
-					exp += 15
+					exp_obtained += 15
 				elif enemy_level == party_level - 2:
-					exp += 20
+					exp_obtained += 20
 				elif enemy_level == party_level - 1:
-					exp += 30
+					exp_obtained += 30
 				elif enemy_level == party_level:
-					exp += 40
+					exp_obtained += 40
 				elif enemy_level == party_level + 1:
-					exp += 60
+					exp_obtained += 60
 				elif enemy_level == party_level + 2:
-					exp += 80
+					exp_obtained += 80
 				elif enemy_level == party_level + 3:
-					exp += 120
+					exp_obtained += 120
 				elif enemy_level >= party_level + 4:
-					exp += 160
+					exp_obtained += 160
 	
-	var trivial: int = 40 + (10 * (party_count - 4))
 	var low: int = 60 + (20 * (party_count - 4))
 	var moderate: int = 80 + (20 * (party_count - 4))
 	var severe: int = 120 + (30 * (party_count - 4))
 	var extreme: int = 160 + (40 * (party_count - 4))
 	
 	var encounter_level: String
-	if exp < low:
+	if exp_obtained < low:
 		encounter_level = "Trivial"
-	elif exp < moderate:
+	elif exp_obtained < moderate:
 		encounter_level = "Low"
-	elif exp < severe:
+	elif exp_obtained < severe:
 		encounter_level = "Moderate"
-	elif exp < extreme:
+	elif exp_obtained < extreme:
 		encounter_level = "Severe"
 	else:
 		encounter_level = "Extreme"
@@ -212,10 +211,10 @@ func _on_copy_initiative_button_pressed():
 	DisplayServer.clipboard_set(initiative_copy_text)
 
 
-func _on_encounter_tracker_tab_changed(tab):
+func _on_encounter_tracker_tab_changed(_tab):
 	#print("tab changed to " + str(tab))
 	pass
 
 
-func _on_encounter_spinboxes_changed(value: float) -> void:
+func _on_encounter_spinboxes_changed(_value: float) -> void:
 	update_encounter_strength()

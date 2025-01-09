@@ -43,4 +43,4 @@ func close() -> void:
 
 
 func _on_edit_button_pressed() -> void:
-	emit_signal("edit_button_clicked", self)
+	edit_button_clicked.emit(self)

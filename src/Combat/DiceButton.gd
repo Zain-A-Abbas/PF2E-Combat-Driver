@@ -13,4 +13,4 @@ func set_dice(val: int):
 	dice_amount = val
 
 func _pressed():
-	emit_signal("dice_rolled", dice_amount)
+	dice_rolled.emit(dice_amount)

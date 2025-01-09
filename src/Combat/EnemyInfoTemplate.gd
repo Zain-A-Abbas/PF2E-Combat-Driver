@@ -67,7 +67,7 @@ func enemy_focus():
 	if enemy_data == {}:
 		return
 	
-	emit_signal("viewing_enemy", enemy_data, enemy_name)
+	viewing_enemy.emit(enemy_data, enemy_name)
 
 func _on_current_hp_text_submitted(new_text):
 	hp = int(new_text)
@@ -93,7 +93,7 @@ func _on_damage_button_pressed():
 
 
 func _on_delete_button_pressed():
-	emit_signal("deleted_enemy", self)
+	deleted_enemy.emit(self)
 
 
 func _on_enemy_name_focus_entered():
@@ -114,5 +114,5 @@ func _on_current_hp_focus_entered():
 
 func _on_enemy_name_text_changed(new_text: String):
 	enemy_name = new_text
-	emit_signal("renamed_enemy", self, new_text)
+	renamed_enemy.emit(self, new_text)
 	enemy_focus()

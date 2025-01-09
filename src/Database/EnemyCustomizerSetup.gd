@@ -37,16 +37,6 @@ extends Node
 @onready var spell_dc_field: LabelDataField = %SpellDCField
 @onready var spell_attack_field: LabelDataField = %SpellAttackField
 @onready var cantrips_field: LabelDataField = %CantripsField
-@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
-@onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
-@onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
-@onready var _4_th_rank_field: LabelDataField = %"4thRankField"
-@onready var _5_th_rank_field: LabelDataField = %"5thRankField"
-@onready var _6_th_rank_field: LabelDataField = %"6thRankField"
-@onready var _7_th_rank_field: LabelDataField = %"7thRankField"
-@onready var _8_th_rank_field: LabelDataField = %"8thRankField"
-@onready var _9_th_rank_field: LabelDataField = %"9thRankField"
-@onready var _10_th_rank_field: LabelDataField = %"10thRankField"
 
 @onready var attacks: VBoxContainer = %Attacks
 @onready var spells: VBoxContainer = %Spells
@@ -114,7 +104,6 @@ func customize_current_enemy():
 	cha_field.set_value_num(enemy_system["abilities"]["cha"]["mod"])
 	
 	perception_field.set_value_num(enemy_system["attributes"]["perception"]["value"])
-	var enemy_senses: Array
 	if enemy_system["traits"]["senses"] is Array:
 		senses_field.set_value(
 			", ".join(PackedStringArray(enemy_system["traits"]["senses"]))
