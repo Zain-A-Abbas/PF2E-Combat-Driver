@@ -86,10 +86,12 @@ func _on_max_hp_focus_exited():
 
 func _on_damage_button_pressed():
 	enemy_focus()
-	if int(current_hp.text):
-		if int(damage.text):
-			hp -= int(damage.text)
-			damage.text = ""
+	if !int(current_hp.text):
+		current_hp.text = str(0)
+		hp = 0
+	if int(damage.text):
+		hp -= int(damage.text)
+		damage.text = ""
 
 
 func _on_delete_button_pressed():
@@ -116,3 +118,8 @@ func _on_enemy_name_text_changed(new_text: String):
 	enemy_name = new_text
 	renamed_enemy.emit(self, new_text)
 	enemy_focus()
+
+
+func _on_damage_gui_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		_on_damage_button_pressed()

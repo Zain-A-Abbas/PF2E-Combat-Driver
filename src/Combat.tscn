@@ -33,6 +33,16 @@ bg_color = Color(0, 0.145098, 0.392157, 1)
 /styles/l = SubResource("StyleBoxTexture_e6s5d")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_crno0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.4085, 0.416025, 0.43, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.364706, 0, 0, 1)
 
 [node name="Combat" type="Control"]
 layout_mode = 3
@@ -266,6 +276,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 6
 
 [node name="EXPTotal" type="PanelContainer" parent="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A"]
 layout_mode = 2

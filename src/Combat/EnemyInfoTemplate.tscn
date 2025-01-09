@@ -178,5 +178,6 @@ text = "✕"
 [connection signal="focus_exited" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_focus_exited"]
 [connection signal="text_submitted" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_text_submitted"]
 [connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_focus_entered"]
+[connection signal="gui_input" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_gui_input"]
 [connection signal="pressed" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/DamageButton" to="." method="_on_damage_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/MarginContainer/DeleteButton" to="." method="_on_delete_button_pressed"]

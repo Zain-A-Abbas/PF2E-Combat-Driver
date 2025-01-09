@@ -127,7 +127,7 @@ func damage_parser(description_text: String) -> String:
 	if regex.search(description_text) == null:
 		return description_text
 	var damage_text = damage_strings.strings[2]
-	return damage_parser3(regex.sub(description_text, damage_text))
+	return damage_parser(regex.sub(description_text, damage_text))
 
 ## Gets damage from [[/r xdy[element]]]
 func damage_parser2(description_text: String) -> String:
@@ -137,17 +137,17 @@ func damage_parser2(description_text: String) -> String:
 	if regex.search(description_text) == null:
 		return description_text
 	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
-	return damage_parser(regex.sub(description_text, damage_text))
+	return damage_parser2(regex.sub(description_text, damage_text))
 
 ## Gets damage from @Damage[xdy[element]]
 func damage_parser3(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@Damage\\[(.*?)\\[(.*?)]]")
+	regex.compile("@Damage\\[(.*?)\\[(.*?)\\]\\]")
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
 	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
-	return damage_parser2(regex.sub(description_text, damage_text))
+	return damage_parser3(regex.sub(description_text, damage_text))
 
 
 ## Gets spell names from @UUID[Compendium.pf2e.spells-srd.Item.X]
