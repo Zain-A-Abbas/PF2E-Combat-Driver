@@ -138,3 +138,9 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 theme_override_constants/separation = 6
+
+[connection signal="meta_clicked" from="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Languages" to="." method="sheet_content_clicked"]
+[connection signal="meta_clicked" from="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Skills" to="." method="sheet_content_clicked"]
+[connection signal="meta_clicked" from="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/Abilities" to="." method="sheet_content_clicked"]
+[connection signal="meta_clicked" from="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/ACSaves" to="." method="sheet_content_clicked"]
+[connection signal="meta_clicked" from="SheetData/SheetScroller/SheetInfo/SheetMargin/Data/HPResistances" to="." method="sheet_content_clicked"]

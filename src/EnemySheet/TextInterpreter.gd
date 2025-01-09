@@ -118,10 +118,21 @@ func condition_parser(description_text: String) -> String:
 
 	return condition_parser(condition_text)
 
-## Gets damage from [[/r xdy[[element]]
+## Gets damage from [[/r xdy[element]]{more stuff}
+	# Having 3 functions for this is not nice but it is a lot faster than making the regex even more ugly
 func damage_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("\\[\\[/r (.*?)\\[(\\S+)\\]\\]\\]")
+	regex.compile("\\[\\[/r (.*?)\\]\\]\\{(.*?)\\}")
+	var damage_strings = regex.search(description_text)
+	if regex.search(description_text) == null:
+		return description_text
+	var damage_text = damage_strings.strings[2]
+	return damage_parser3(regex.sub(description_text, damage_text))
+
+## Gets damage from [[/r xdy[element]]]
+func damage_parser2(description_text: String) -> String:
+	var regex = RegEx.new()
+	regex.compile("\\[\\[/r (.*?)\\]\\]")
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
@@ -129,7 +140,7 @@ func damage_parser(description_text: String) -> String:
 	return damage_parser(regex.sub(description_text, damage_text))
 
 ## Gets damage from @Damage[xdy[element]]
-func damage_parser2(description_text: String) -> String:
+func damage_parser3(description_text: String) -> String:
 	var regex = RegEx.new()
 	regex.compile("@Damage\\[(.*?)\\[(.*?)]]")
 	var damage_strings = regex.search(description_text)
@@ -138,16 +149,6 @@ func damage_parser2(description_text: String) -> String:
 	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
 	return damage_parser2(regex.sub(description_text, damage_text))
 
-## Gets damage from [[/r xdy[[element]]{more stuff}
-	# Having 3 functions for this is not nice but it is a lot faster than making the regex even more gritty
-func damage_parser3(description_text: String) -> String:
-	var regex = RegEx.new()
-	regex.compile("\\[\\[/r (.*?)]]{([^}]*)}")
-	var damage_strings = regex.search(description_text)
-	if regex.search(description_text) == null:
-		return description_text
-	var damage_text = damage_strings.strings[2]
-	return damage_parser3(regex.sub(description_text, damage_text))
 
 ## Gets spell names from @UUID[Compendium.pf2e.spells-srd.Item.X]
 # TD: Add URL here for spell previews.
