@@ -2,7 +2,9 @@ extends Control
 
 enum SORT_MODE {
 	ALPHABETICAL,
-	LEVEL
+	LEVEL,
+	ALPHABETICAL_REVERSE,
+	LEVEL_REVERSE
 }
 
 const ENEMY_DATABASE = "res://Data/Enemies/"
@@ -10,6 +12,9 @@ const EnemyDatabaseSourceFile: String = "res://Database/EnemyDatabase.cs"
 
 @onready var enemy_list: ItemList = %EnemyList
 @onready var enemy_sheet: Sheet = %EnemySheet
+
+@onready var sort_by_name_button: Button = %SortByNameButton
+@onready var sort_by_level_button: Button = %SortByLevelButton
 
 # The filter menus; the filtering traits and numbers are retrieved directly from them
 @onready var size_filter_menu: FilteringMenu = %SizeFilterMenu
@@ -85,6 +90,10 @@ func sort_filter_enemies():
 			filtered_sorted_enemies.sort_custom(sort_alphabetic)
 		SORT_MODE.LEVEL:
 			filtered_sorted_enemies.sort_custom(sort_level)
+		SORT_MODE.ALPHABETICAL_REVERSE:
+			filtered_sorted_enemies.sort_custom(sort_alphabetic_reverse)
+		SORT_MODE.LEVEL_REVERSE:
+			filtered_sorted_enemies.sort_custom(sort_level_reverse)
 	for enemy in filtered_sorted_enemies:
 		enemy_list.add_item(enemy.enemyName)
 
@@ -93,6 +102,12 @@ static func sort_alphabetic(enemy_a: Node, enemy_b: Node):
 
 static func sort_level(enemy_a: Node, enemy_b: Node):
 	return enemy_a.level < enemy_b.level
+
+static func sort_alphabetic_reverse(enemy_a: Node, enemy_b: Node):
+	return enemy_a.enemyName > enemy_b.enemyName
+
+static func sort_level_reverse(enemy_a: Node, enemy_b: Node):
+	return enemy_a.level > enemy_b.level
 
 
 # Filters
@@ -297,11 +312,17 @@ func _on_enemy_list_item_selected(index):
 	enemy_sheet.setup(enemy_data)
 
 
-func _on_button_pressed():
-	sorting_mode = SORT_MODE.ALPHABETICAL
+func _on_sort_by_name_pressed():
+	if sorting_mode == SORT_MODE.ALPHABETICAL:
+		sorting_mode = SORT_MODE.ALPHABETICAL_REVERSE
+	else:
+		sorting_mode = SORT_MODE.ALPHABETICAL
 
-func _on_button_2_pressed():
-	sorting_mode = SORT_MODE.LEVEL
+func _on_sort_by_level_pressed():
+	if sorting_mode == SORT_MODE.LEVEL:
+		sorting_mode = SORT_MODE.LEVEL_REVERSE
+	else:
+		sorting_mode = SORT_MODE.LEVEL
 
 
 

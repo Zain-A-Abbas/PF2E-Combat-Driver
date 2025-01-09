@@ -72,15 +72,18 @@ caret_blink = true
 layout_mode = 2
 text = "Sort by:"
 
-[node name="Button" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+[node name="SortByNameButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 text = "Name"
 
-[node name="Button2" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+[node name="SortByLevelButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 text = "Level"
+metadata/reversa = false
 
 [node name="Filters" type="Label" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
@@ -234,8 +237,8 @@ size_flags_vertical = 3
 sheet = NodePath("../../../Database/DatabaseSheets/VBoxContainer/PanelContainer2/EnemySheet")
 
 [connection signal="text_changed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
-[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SortByNameButton" to="." method="_on_sort_by_name_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SortByLevelButton" to="." method="_on_sort_by_level_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/NumbersFilterButton" to="." method="_on_numbers_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/RarityFilterButton" to="." method="_on_rarity_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SizeFilterButton" to="." method="_on_size_filter_button_pressed"]
