@@ -5,8 +5,8 @@
 Combat Driver allows you to create and share individual combat encounters for the PF2E tabletop system while letting you comprehensivley search and filter through a list of monsters and NPCs available for the game.
 You are also able to create new enemy sheets, and customize pre-existing ones.
 
-## How To Use
-In the current incomplete state, the project must be opened in Godot 4.3. An exported binary will be available when it is mostly complete.
+## Installation
+The windows installation can be found on the release page. First time opening the software will take ~30 seconds, and then a normal amount of time thereafter. Binaries for other operating systems are not available yet, but they can be exported through Godot.
 
 ## Work In Progress
 This project is not yet feature complete. The major features at time of writing:
@@ -32,8 +32,6 @@ This project is created in Godot 4.3.
 
 Enemy data is from: https://github.com/foundryvtt/pf2e
 
-## Installation
-The windows installation can be found on the release page. First time opening the software will take ~30 seconds, and then a normal amount of time thereafter.
 
 ## Other
 The user interface is in some areas inspired by [Kyle Olson's Combat Manager](http://combatmanager.com/) for the previous edition of the game.
