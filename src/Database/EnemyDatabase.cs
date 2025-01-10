@@ -10,7 +10,7 @@ public partial class EnemyDatabase : Godot.Node
 {
 
 static readonly string ENEMY_DATABASE = "res://Data/Enemies/";
-static readonly string CUSTOM_ENEMIES = "user://Enemies";
+static readonly string CUSTOM_ENEMIES = "user://Enemies/custom-enemies";
 
     public Godot.Collections.Array<Node> addEnemies() {
         Godot.Collections.Array<Node> enemiesArray = new Godot.Collections.Array<Node>();
@@ -28,14 +28,11 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies";
     
 
         nativePath = ProjectSettings.GlobalizePath(CUSTOM_ENEMIES);
-        
-            foreach (string subDirectory in Directory.GetDirectories(nativePath))
-            {
-                foreach (string file in Directory.GetFiles(subDirectory))
-                {
-                    processEnemy(file, enemiesArray);
-                }
-            }
+        Directory.CreateDirectory(nativePath);
+        foreach (string file in Directory.GetFiles(nativePath))
+        {
+            processEnemy(file, enemiesArray);
+        }
         
         
         return enemiesArray;
