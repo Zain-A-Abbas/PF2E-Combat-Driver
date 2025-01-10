@@ -94,8 +94,6 @@ func sort_filter_enemies():
 			filtered_sorted_enemies.sort_custom(sort_alphabetic_reverse)
 		SORT_MODE.LEVEL_REVERSE:
 			filtered_sorted_enemies.sort_custom(sort_level_reverse)
-	for enemy in filtered_sorted_enemies:
-		enemy_list.add_item(enemy.enemyName)
 	
 	for i in filtered_sorted_enemies.size():
 		enemy_list.add_item(filtered_sorted_enemies[i].enemyName)
