@@ -130,7 +130,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 4
+current_tab = 1
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -310,7 +310,6 @@ table_type = 10
 
 [node name="Defensive" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 script = ExtResource("6_3xsao")
 metadata/_tab_index = 1
@@ -505,6 +504,7 @@ text = "+"
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="DefensiveAbilitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
@@ -633,6 +633,7 @@ text = "+"
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="OffensiveAbilitiesVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Attacks/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
@@ -755,6 +756,7 @@ table_type = 3
 
 [node name="Spells" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("14_07ghh")
 metadata/_tab_index = 4

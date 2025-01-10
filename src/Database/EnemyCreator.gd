@@ -52,6 +52,7 @@ func _ready() -> void:
 	get_viewport().gui_focus_changed.connect(focus_changed)
 
 func get_table_number(amount: int):
+	await get_tree().process_frame
 	if current_focused_line_edit:
 		current_focused_line_edit.text = str(amount)
 		current_focused_line_edit = null
