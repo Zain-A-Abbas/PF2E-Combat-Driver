@@ -6,7 +6,7 @@ Combat Driver allows you to create and share individual combat encounters for th
 You are also able to create new enemy sheets, and customize pre-existing ones.
 
 ## Installation
-The windows installation can be found on the [Itch.io](https://threedaysguy.itch.io/combat-driver) page. First time opening the software will take ~30 seconds, and then a normal amount of time thereafter. Binaries for other operating systems are not available yet, but they can be exported through Godot.
+The windows executable can be found on the [Itch.io](https://threedaysguy.itch.io/combat-driver) page. First time opening the software will take ~30 seconds, and then a normal amount of time thereafter. Binaries for other operating systems are not available yet, but they can be exported through Godot.
 
 ## Work In Progress
 This project is not yet feature complete. The major features at time of writing:
