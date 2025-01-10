@@ -217,3 +217,24 @@ const SPELL_TEMPLATE: Dictionary = {
 		}
 	}
 }
+
+const SKILL_TEMPLATE: Dictionary = {
+	"name": "Skill Name",
+	"type": "lore",
+	"system": {
+		"description": {
+			"value": ""
+		},
+		"mod": {
+			"value": 23
+		},
+		"proficient": {
+			"value": 0
+		},
+		"rules": [],
+		"slug": null,
+		"source": {
+			"value": ""
+		}
+	},
+}

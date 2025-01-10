@@ -32,6 +32,8 @@ signal sheet_created
 @onready var strikes_vbox: VBoxContainer = %StrikesVbox
 @onready var offensive_abilities_v_box: VBoxContainer = %OffensiveAbilitiesVBox
 
+@onready var skills_vbox: VBoxContainer = %SkillsVbox
+
 @onready var spell_list_box: OptionButton = %SpellListBox
 @onready var casting_type_box: OptionButton = %CastingTypeBox
 @onready var spell_dc_field: LabelDataField = %SpellDCField
@@ -166,6 +168,19 @@ func create_enemy(editing: bool = false):
 			new_enemy_sheet["items"].append(new_attack)
 	
 	ability_formatter(offensive_abilities_v_box.get_children(), new_enemy_sheet["items"], false)
+	
+	#endregion
+	
+	#region Skills
+	
+	for skill in skills_vbox.get_children():
+		if skill is EnemyCreatorSkill:
+			if int(skill.label_data_field.get_value()) > 0:
+				var skill_name: String = skill.skill_name
+				var new_skill: Dictionary = EnemySheetExample.SKILL_TEMPLATE.duplicate(true)
+				new_skill["name"] = skill_name
+				new_skill["system"]["mod"]["value"] = int(skill.label_data_field.get_value())
+				new_enemy_sheet["items"].append(new_skill)
 	
 	#endregion
 	
