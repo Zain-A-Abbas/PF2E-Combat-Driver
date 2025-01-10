@@ -149,7 +149,7 @@ func setup_senses():
 	# Add tooltips to the senses
 	i = 0
 	for sense in enemy_senses:
-		enemy_senses[i] = get_sheet_tooltip("sense", sense) + sense + "[/hint]"
+		#enemy_senses[i] = get_sheet_tooltip("sense", sense) + sense + "[/hint]"
 		senses.text += enemy_senses[i]
 		if enemy_senses.size() > i + 1:
 			senses.text += ", "
@@ -259,70 +259,73 @@ func setup_hp_immunities_weaknesses():
 			hp_resistances.text += " (" + enemy_attributes["hp"]["details"] + ")"
 	
 	if enemy_attributes.has("immunities"):
-		hp_resistances.text += "; "
-		hp_resistances.text += "[b]Immunities[/b] "
-		var i: int = 0
-		for immunity in enemy_attributes["immunities"]:
-			hp_resistances.text += "[i]" + immunity["type"] + "[/i]"
-			i += 1
-			if i < enemy_attributes["immunities"].size():
-				hp_resistances.text += ", "
+		if enemy_attributes["immunities"].size() > 0:
+			hp_resistances.text += "; "
+			hp_resistances.text += "[b]Immunities[/b] "
+			var i: int = 0
+			for immunity in enemy_attributes["immunities"]:
+				hp_resistances.text += "[i]" + immunity["type"] + "[/i]"
+				i += 1
+				if i < enemy_attributes["immunities"].size():
+					hp_resistances.text += ", "
 	
 	
 	if enemy_attributes.has("resistances"):
-		hp_resistances.text += "; "
-		hp_resistances.text += "[b]Resistances[/b] "
-		# Enabled at different points so double vs can show up with or without weakness exceptions
-		var double_vs: bool = false
-		var i: int = 0
-		for resistance in enemy_attributes["resistances"]:
-			hp_resistances.text += resistance["type"] + " " + str(resistance["value"])
-			var j: int = 0
-			if resistance.has("exceptions"):
-				if resistance["exceptions"].size() > 0:
-					hp_resistances.text += " (except "
-					for exception in resistance["exceptions"]:
-						hp_resistances.text += exception
-						j += 1
-						if j < resistance["exceptions"].size():
+		if enemy_attributes["resistances"].size() > 0:
+			hp_resistances.text += "; "
+			hp_resistances.text += "[b]Resistances[/b] "
+			# Enabled at different points so double vs can show up with or without weakness exceptions
+			var double_vs: bool = false
+			var i: int = 0
+			for resistance in enemy_attributes["resistances"]:
+				hp_resistances.text += resistance["type"] + " " + str(resistance["value"])
+				var j: int = 0
+				if resistance.has("exceptions"):
+					if resistance["exceptions"].size() > 0:
+						hp_resistances.text += " (except "
+						for exception in resistance["exceptions"]:
+							hp_resistances.text += exception
+							j += 1
+							if j < resistance["exceptions"].size():
+								hp_resistances.text += ", "
+							else:
+								if resistance.has("doubleVs"):
+									double_vs = true
+									hp_resistances.text += "; double resistance vs. "
+									var k: int = 0
+									for double_versus in resistance["doubleVs"]:
+										hp_resistances.text += double_versus
+										k += 1
+										if k < resistance["doubleVs"].size():
+											hp_resistances.text += ", "
+								hp_resistances.text += ")"
+				
+				if resistance.has("doubleVs") && !double_vs:
+					double_vs = true
+					hp_resistances.text += "(double resistance vs. "
+					var k: int = 0
+					for double_versus in resistance["doubleVs"]:
+						hp_resistances.text += double_versus
+						k += 1
+						if k < resistance["doubleVs"].size():
 							hp_resistances.text += ", "
 						else:
-							if resistance.has("doubleVs"):
-								double_vs = true
-								hp_resistances.text += "; double resistance vs. "
-								var k: int = 0
-								for double_versus in resistance["doubleVs"]:
-									hp_resistances.text += double_versus
-									k += 1
-									if k < resistance["doubleVs"].size():
-										hp_resistances.text += ", "
 							hp_resistances.text += ")"
-			
-			if resistance.has("doubleVs") && !double_vs:
-				double_vs = true
-				hp_resistances.text += "(double resistance vs. "
-				var k: int = 0
-				for double_versus in resistance["doubleVs"]:
-					hp_resistances.text += double_versus
-					k += 1
-					if k < resistance["doubleVs"].size():
-						hp_resistances.text += ", "
-					else:
-						hp_resistances.text += ")"
-			i += 1
-			if i < enemy_attributes["resistances"].size():
-				hp_resistances.text += ", "
+				i += 1
+				if i < enemy_attributes["resistances"].size():
+					hp_resistances.text += ", "
 	
 	
 	if enemy_attributes.has("weaknesses"):
-		hp_resistances.text += "; "
-		hp_resistances.text += "[b]Weaknesses[/b] "
-		var i: int = 0
-		for weakness in enemy_attributes["weaknesses"]:
-			hp_resistances.text += weakness["type"] + " " + str(weakness["value"])
-			i += 1
-			if i < enemy_attributes["weaknesses"].size():
-				hp_resistances.text += ", "
+		if enemy_attributes["weaknesses"].size() > 0:
+			hp_resistances.text += "; "
+			hp_resistances.text += "[b]Weaknesses[/b] "
+			var i: int = 0
+			for weakness in enemy_attributes["weaknesses"]:
+				hp_resistances.text += weakness["type"] + " " + str(weakness["value"])
+				i += 1
+				if i < enemy_attributes["weaknesses"].size():
+					hp_resistances.text += ", "
 
 func setup_other_defensive_abilities():
 	var text_interpreter: TextInterpreter = TextInterpreter.new()
@@ -368,7 +371,8 @@ func setup_other_defensive_abilities():
 		var ability_traits: String = "("
 		var i: int = 0
 		for ability_trait in ability["system"]["traits"]["value"]:
-			ability_traits += get_sheet_tooltip("trait", ability_trait) + ability_trait + "[/hint]"
+			#ability_traits += get_sheet_tooltip("trait", ability_trait) + ability_trait + "[/hint]"
+			ability_traits += ability_trait
 			i += 1
 			if i < ability["system"]["traits"]["value"].size():
 				ability_traits += ", "
@@ -462,7 +466,8 @@ func setup_attacks():
 			var i: int = 0
 			for attack_trait in attack_traits_array:
 				var final_trait: String = text_interpreter.trait_name_parser(attack_trait)
-				attack_traits += get_sheet_tooltip("trait", final_trait) + final_trait + "[/hint]"
+				#attack_traits += get_sheet_tooltip("trait", final_trait) + final_trait + "[/hint]"
+				attack_traits += final_trait
 				i += 1
 				if i < attack_traits_array.size():
 					attack_traits += ", "
@@ -719,7 +724,8 @@ func setup_offensive_abilities():
 			var i: int = 0
 			for ability_trait in ability["system"]["traits"]["value"]:
 				var final_trait: String = text_interpreter.trait_name_parser(ability_trait)
-				ability_traits += get_sheet_tooltip("trait", final_trait) + final_trait + "[/hint]"
+				#ability_traits += get_sheet_tooltip("trait", final_trait) + final_trait + "[/hint]"
+				ability_traits += final_trait
 				i += 1
 				if i < ability["system"]["traits"]["value"].size():
 					ability_traits += ", "
