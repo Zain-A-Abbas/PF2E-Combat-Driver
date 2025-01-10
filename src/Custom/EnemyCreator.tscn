@@ -130,7 +130,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 1
+current_tab = 3
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -310,6 +310,7 @@ table_type = 10
 
 [node name="Defensive" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("6_3xsao")
 metadata/_tab_index = 1
@@ -568,6 +569,7 @@ metadata/_tab_index = 4
 [node name="Resistances Table" parent="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/DefenseTables/Resistances & Weaknesses" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
+allow_click = false
 
 [node name="Attacks" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
@@ -701,7 +703,6 @@ table_type = 9
 
 [node name="Skills" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
@@ -752,7 +753,7 @@ size_flags_stretch_ratio = 0.9
 [node name="Skills Table" parent="VBoxContainer/TabContainer/Skills/PanelContainer/HBoxContainer2/ScrollContainer" instance=ExtResource("5_m8os8")]
 layout_mode = 2
 size_flags_horizontal = 3
-table_type = 3
+table_type = 5
 
 [node name="Spells" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true

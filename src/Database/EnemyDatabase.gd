@@ -15,6 +15,8 @@ const EnemyDatabaseSourceFile: String = "res://Database/EnemyDatabase.cs"
 
 @onready var sort_by_name_button: Button = %SortByNameButton
 @onready var sort_by_level_button: Button = %SortByLevelButton
+@onready var edit_enemy_button: Button = %EditEnemyButton
+@onready var delete_enemy_button: Button = %DeleteEnemyButton
 
 # The filter menus; the filtering traits and numbers are retrieved directly from them
 @onready var size_filter_menu: FilteringMenu = %SizeFilterMenu
@@ -32,6 +34,9 @@ var csharp_database: Node
 
 # Holds all enemy data
 var enemies: Array[Node]
+# Currently selceted enemy
+var enemy_index: int
+
 # Holds enemies that have been filtered and sorted
 var filtered_sorted_enemies: Array[Node] = enemies
 var sorting_mode: SORT_MODE = SORT_MODE.ALPHABETICAL : set = set_sorting
@@ -301,16 +306,26 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 	
 	return enemies_to_filter
 
-func new_enemy():
+func new_enemy(editing: bool):
+	enemy_creator.editing = editing
+	enemy_creator.name_field.line_edit.editable = !editing
 	enemy_creator_window.show()
 
 # Signals
 
 func _on_enemy_list_item_selected(index):
-	var enemy_file = FileAccess.open(filtered_sorted_enemies[index].fileReference, FileAccess.READ)
+	enemy_index = index
+	var enemy_file = FileAccess.open(filtered_sorted_enemies[enemy_index].fileReference, FileAccess.READ)
 	var json_conversion = JSON.new()
 	json_conversion.parse(enemy_file.get_as_text())
 	var enemy_data = json_conversion.get_data()
+	
+	delete_enemy_button.visible = false
+	edit_enemy_button.visible = false
+	if enemy_data.has("custom_enemy"):
+		if enemy_data["custom_enemy"]:
+			delete_enemy_button.visible = true
+			edit_enemy_button.visible = true
 	enemy_sheet.setup(enemy_data)
 
 
@@ -368,9 +383,11 @@ func _on_numbers_filter_button_pressed():
 func _on_add_to_combat_button_pressed():
 	add_enemy.emit(enemy_sheet.enemy_data)
 
-func _on_new_enemy_button_pressed():
-	new_enemy()
+func _on_new_enemy_button_pressed() -> void:
+	new_enemy(false)
 
+func _on_edit_enemy_button_pressed() -> void:
+	new_enemy(true)
 
 
 func _on_enemy_creator_sheet_created():
@@ -380,3 +397,25 @@ func _on_enemy_creator_sheet_created():
 
 func enemy_creator_closed() -> void:
 	enemy_creator_window.hide()
+
+
+func _on_delete_enemy_button_pressed() -> void:
+	EventBus.confirm_popup.emit("Delete custom enemy?", "Confirm", "Cancel")
+	EventBus.popup_confirmed.connect(delete_confirm, CONNECT_ONE_SHOT)
+
+func delete_confirm(confirmed: bool):
+	if !confirmed:
+		return
+	# If so then delete the file reference and, and remove the listitem current index from the listitem and the enemies array 
+	
+	var current_enemy: Node
+	var file_path: String = filtered_sorted_enemies[enemy_index].fileReference
+	for i in enemies.size():
+		if enemies[i].fileReference == file_path:
+			current_enemy = enemies[i]
+			enemies.remove_at(i)
+			break
+	enemy_list.remove_item(enemy_index)
+	filtered_sorted_enemies.remove_at(enemy_index)
+	DirAccess.remove_absolute(file_path)
+	current_enemy.queue_free()

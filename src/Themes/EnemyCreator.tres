@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=42 format=3 uid="uid://cipxsfp7eqshp"]
+[gd_resource type="Theme" load_steps=43 format=3 uid="uid://cipxsfp7eqshp"]
 
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_g84is"]
 [ext_resource type="Texture2D" uid="uid://bbiyt4467sjt8" path="res://Icons/SpinboxArrows.png" id="2_qfgkh"]
@@ -6,6 +6,18 @@
 [sub_resource type="SystemFont" id="SystemFont_riuwr"]
 font_names = PackedStringArray("MS UI Gothic")
 multichannel_signed_distance_field = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jadgb"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9, 0.9, 0.9, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.724643, 0.724643, 0.724642, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewaa7"]
 content_margin_left = 4.0
@@ -30,18 +42,6 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.294, 0.346267, 0.49, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jadgb"]
-content_margin_left = 8.0
-content_margin_top = 4.0
-content_margin_right = 8.0
-content_margin_bottom = 4.0
-bg_color = Color(0.9, 0.9, 0.9, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.724643, 0.724643, 0.724642, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0tip"]
 content_margin_top = 4.0
@@ -110,6 +110,16 @@ border_color = Color(0.2278, 0.38994, 0.67, 1)
 content_margin_left = 5.0
 content_margin_right = 5.0
 bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.74558, 0.74558, 0.74558, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1rsm2"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.796243, 0.796243, 0.796243, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -289,11 +299,13 @@ multichannel_signed_distance_field = true
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0.16, 0.16, 0.16, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(0, 0, 0, 1)
 Button/fonts/font = SubResource("SystemFont_riuwr")
+Button/styles/disabled = SubResource("StyleBoxFlat_jadgb")
 Button/styles/focus = SubResource("StyleBoxFlat_ewaa7")
 Button/styles/hover = SubResource("StyleBoxFlat_l0fqv")
 Button/styles/normal = SubResource("StyleBoxFlat_jadgb")
@@ -312,11 +324,13 @@ Label/fonts/font = SubResource("SystemFont_mt863")
 LineEdit/colors/caret_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_placeholder_color = Color(0.351562, 0.351563, 0.351563, 0.94902)
+LineEdit/colors/font_uneditable_color = Color(0.160784, 0.160784, 0.160784, 1)
 LineEdit/colors/selection_color = Color(0.2291, 0.50955, 0.79, 1)
 LineEdit/constants/minimum_character_width = 2
 LineEdit/fonts/font = SubResource("SystemFont_7bren")
 LineEdit/styles/focus = SubResource("StyleBoxFlat_vvqdk")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_gwipa")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_1rsm2")
 OptionButton/colors/font_color = Color(0, 0, 0, 1)
 OptionButton/fonts/font = SubResource("SystemFont_rxv5l")
 OptionButton/styles/hover = SubResource("StyleBoxFlat_wsevq")

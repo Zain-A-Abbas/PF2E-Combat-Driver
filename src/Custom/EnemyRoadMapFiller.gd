@@ -174,7 +174,7 @@ func fill_magical_striker(level: int):
 	spells._on_spell_list_box_item_selected(spell_list_box.selected)
 	
 	spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 1))
-	spell_attack_field.set_value(get_table_value_by_level(spell_dcs_table, level, 1))
+	spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 1))
 
 
 func fill_skill_paragon(level: int):
@@ -295,4 +295,4 @@ func fill_spellcaster(level: int):
 	spells._on_spell_list_box_item_selected(spell_list_box.selected)
 	
 	spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 0))
-	spell_attack_field.set_value(get_table_value_by_level(spell_dcs_table, level, 0))
+	spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 0))

@@ -53,13 +53,12 @@ signal sheet_created
 const CUSTOM_ENEMIES_LOCATION: String = "user://Enemies/custom-enemies/"
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
 
-func create_enemy():
+func create_enemy(editing: bool = false):
 	#region Error checking
 	
 	if name_field.get_value().strip_edges() == "":
 		EventBus.error_popup.emit("Name is required to save enemy.")
 		return
-	
 	
 	
 	#endregion
@@ -201,10 +200,11 @@ func create_enemy():
 	var base_file_name: String = file_name
 	var directory := DirAccess.open(CUSTOM_ENEMIES_LOCATION)
 	i = 0
-	while has_file_name(file_name, directory):
-		file_name = base_file_name + "-" + str(i + 1)
-		print(file_name)
-		i += 1
+	if !editing:
+		while has_file_name(file_name, directory):
+			file_name = base_file_name + "-" + str(i + 1)
+			print(file_name)
+			i += 1
 	
 	var new_file = FileAccess.open(CUSTOM_ENEMIES_LOCATION + file_name + ".json", FileAccess.WRITE)
 	new_file.store_line(JSON.stringify(new_enemy_sheet, "\t"))

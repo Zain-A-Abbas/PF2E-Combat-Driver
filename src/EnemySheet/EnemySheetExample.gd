@@ -37,6 +37,7 @@ _id and img are not yet used.
 
 const DEFAULT: Dictionary = {
 	"_id": "some random alphanum string",
+	"custom_enemy": true,
 	"img": "x.svg",
 	"items": [],
 	"name": "Enemy Name",

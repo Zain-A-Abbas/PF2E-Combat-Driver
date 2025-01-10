@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bephoc2bc3atp"]
+[gd_scene load_steps=7 format=3 uid="uid://bephoc2bc3atp"]
 
 [ext_resource type="PackedScene" uid="uid://bekrgofys7uc7" path="res://Combat.tscn" id="1_4vf2w"]
 [ext_resource type="Script" path="res://Main.gd" id="1_32guc"]
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="2_gi4p8"]
 [ext_resource type="PackedScene" uid="uid://bmbtqllw2ypjc" path="res://Database/EnemyDatabase.tscn" id="2_np0t7"]
 [ext_resource type="Script" path="res://ErrorWindow.gd" id="5_fd1do"]
+[ext_resource type="Script" path="res://ConfirmationWindow.gd" id="6_3uqht"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -124,6 +125,70 @@ size_flags_horizontal = 8
 size_flags_vertical = 10
 text = "OK"
 
+[node name="ConfirmationWindow" type="Window" parent="."]
+unique_name_in_owner = true
+auto_translate_mode = 1
+title = "Confirm"
+initial_position = 1
+size = Vector2i(400, 100)
+visible = false
+wrap_controls = true
+transient = true
+exclusive = true
+keep_title_visible = true
+theme = ExtResource("2_gi4p8")
+script = ExtResource("6_3uqht")
+
+[node name="ColorRect" type="ColorRect" parent="ConfirmationWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ConfirmationWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_gi4p8")
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfirmationWindow/MarginContainer"]
+layout_mode = 2
+
+[node name="ConfirmText" type="Label" parent="ConfirmationWindow/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Enemies must be present to save."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ConfirmationWindow/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+
+[node name="YesButton" type="Button" parent="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+text = "Confirm"
+
+[node name="NoButton" type="Button" parent="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+text = "Cancel"
+
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/SaveButton" to="VBoxContainer/TabBar/Combat" method="save_encounter"]
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/LoadButton" to="VBoxContainer/TabBar/Combat" method="open_encounter"]
 [connection signal="pressed" from="ErrorWindow/MarginContainer/VBoxContainer/ErrorButton" to="ErrorWindow" method="_on_error_button_pressed"]
+[connection signal="pressed" from="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer/YesButton" to="ConfirmationWindow" method="_on_yes_button_pressed"]
+[connection signal="pressed" from="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer/NoButton" to="ConfirmationWindow" method="_on_no_button_pressed"]

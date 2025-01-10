@@ -44,6 +44,7 @@ enum TableType {
 }
 
 @export var table_type: TableType = TableType.NONE
+@export var allow_click: bool = true
 
 var column_count: int = 0
 var odd_even_row: int = 0
@@ -92,7 +93,6 @@ static func add_tables(parent: Control):
 	skills_table.read_csv(SKILLS)
 
 func read_csv(file_address: String):
-	print(file_address)
 	var csvAccess: FileAccess = FileAccess.open(file_address, FileAccess.READ)
 	var header: PackedStringArray = csvAccess.get_csv_line()
 	create_header(header)
@@ -142,9 +142,10 @@ func add_row(row_data: Array[String]):
 		
 		# Adds the button to the number cells
 		if i > 0:
-			var new_button: Button = TABLE_BUTTON.instantiate()
-			new_button.pressed.connect(button_pressed.bind(newLabel))
-			newPanel.add_child(new_button)
+			if allow_click:
+				var new_button: Button = TABLE_BUTTON.instantiate()
+				new_button.pressed.connect(button_pressed.bind(newLabel))
+				newPanel.add_child(new_button)
 		
 		newPanel.add_child(newLabel)
 		add_child(newPanel)

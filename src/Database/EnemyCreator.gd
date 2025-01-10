@@ -25,6 +25,9 @@ const SKILLS: Array[String] = ["Acrobatics", "Arcana", "Athletics", "Crafting", 
 
 var current_focused_line_edit: LineEdit
 
+# If this is true, then simply overwrite the enemy file
+var editing: bool = false
+
 func _ready() -> void:
 	enemy_customizer_setup.sheet = sheet
 	tab_container.current_tab = 0
@@ -52,7 +55,6 @@ func _ready() -> void:
 	get_viewport().gui_focus_changed.connect(focus_changed)
 
 func get_table_number(amount: int):
-	await get_tree().process_frame
 	if current_focused_line_edit:
 		current_focused_line_edit.text = str(amount)
 		current_focused_line_edit = null
@@ -62,7 +64,7 @@ func focus_changed(control: Control):
 		current_focused_line_edit = control
 
 func create_enemy():
-	enemy_data_formatter.create_enemy()
+	enemy_data_formatter.create_enemy(editing)
 
 func has_file_name(file_name: String, folder: DirAccess):
 	return folder.get_files().has(file_name + ".json")
