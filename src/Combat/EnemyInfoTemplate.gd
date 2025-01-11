@@ -1,16 +1,20 @@
 extends PanelContainer
 class_name EnemyInfoTemplate
 
-@onready var name_bar:= $HBoxContainer/Control/MarginContainer/HPBarControl/EnemyName
-@onready var hp_bar := $HBoxContainer/Control/MarginContainer/HPBarControl/HPBar
-@onready var current_hp := $HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/CurrentHP
-@onready var max_hp_box := $HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP
-@onready var damage := $HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage
+@onready var hp_bar: ProgressBar = %HPBar
+@onready var name_bar: LineEdit = %EnemyName
+@onready var current_hp: LineEdit = %CurrentHP
+@onready var max_hp_box: LineEdit = %MaxHP
+@onready var damage: LineEdit = %Damage
+
+@onready var up_move_button: Button = %UpMoveButton
+@onready var down_move_button: Button = %DownMoveButton
 
 # For displaying the sheet on the combat page
 signal viewing_enemy(enemy_data, enemy_name: String)
 signal deleted_enemy(enemy)
 signal renamed_enemy(enemy, new_name)
+signal reordered_enemy
 
 var regex := RegEx.new()
 var hp: int = 0 : set = set_hp
@@ -36,6 +40,8 @@ var conditions = {}
 
 func _ready():
 	regex.compile("^[0 -9]*$")
+	await get_tree().process_frame
+	reordered_enemy.emit()
 
 func setup_enemy(encounter_enemy: EnemyEncounterData):
 	max_hp = encounter_enemy.max_hp
@@ -66,8 +72,26 @@ func enemy_focus():
 	# Don't do anything if blank sheet
 	if enemy_data == {}:
 		return
-	
 	viewing_enemy.emit(enemy_data, enemy_name)
+
+# 1 is down, -1 is up
+func move_enemy(dir: int):
+	if dir == -1 && get_index() == 0:
+		return
+	if dir == 1 && get_index() == get_parent().get_child_count() - 1:
+		return
+	
+	get_parent().move_child(self, get_index() + dir)
+	reordered_enemy.emit()
+
+# A little strange way of handling it but has to be retrofitted into this architecture
+func verify_buttons():
+	button_toggle(get_index() != 0, get_index() != get_parent().get_child_count() - 1)
+
+func button_toggle(up_button: bool, down_button: bool):
+	up_move_button.disabled = !up_button
+	down_move_button.disabled = !down_button
+
 
 func _on_current_hp_text_submitted(new_text):
 	hp = int(new_text)

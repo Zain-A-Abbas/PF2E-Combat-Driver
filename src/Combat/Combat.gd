@@ -48,10 +48,16 @@ func add_enemy_to_initiative(enemy):
 	
 	enemy.deleted_enemy.connect(remove_enemy)
 	enemy.renamed_enemy.connect(update_initiative_name)
+	enemy.reordered_enemy.connect(check_reorder_buttons)
 	
 	sort_initiative()
 	
 	update_encounter_strength()
+
+func check_reorder_buttons():
+	for child in enemies.get_children():
+		if child is EnemyInfoTemplate:
+			child.verify_buttons()
 
 # Sorts Initiative
 func sort_initiative():
@@ -184,7 +190,7 @@ func update_encounter_strength():
 				elif enemy_level >= party_level + 4:
 					exp_obtained += 160
 	
-	var trivial: int = 40 + (10 * (party_count) - 4)
+	#var trivial: int = 40 + (10 * (party_count) - 4)
 	var low: int = 60 + (20 * (party_count - 4))
 	var moderate: int = 80 + (20 * (party_count - 4))
 	var severe: int = 120 + (30 * (party_count - 4))

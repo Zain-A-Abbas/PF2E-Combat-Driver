@@ -47,6 +47,7 @@ layout_mode = 2
 mouse_filter = 1
 
 [node name="HPBar" type="ProgressBar" parent="HBoxContainer/Control/MarginContainer/HPBarControl"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,6 +63,7 @@ script = ExtResource("1_pktmf")
 metadata/_edit_lock_ = true
 
 [node name="EnemyName" type="LineEdit" parent="HBoxContainer/Control/MarginContainer/HPBarControl"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 1
 anchors_preset = 15
@@ -85,22 +87,26 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Control/MarginContainer2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Control/MarginContainer2"]
 layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 mouse_filter = 1
 theme_override_styles/panel = ExtResource("6_m236s")
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 2
 theme_override_constants/margin_bottom = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="CurrentHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="CurrentHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -108,7 +114,8 @@ theme_override_font_sizes/font_size = 18
 text = "HP"
 vertical_alignment = 1
 
-[node name="CurrentHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="CurrentHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 1
 theme_override_constants/minimum_character_width = 3
@@ -116,7 +123,7 @@ text = "100"
 placeholder_text = " ---"
 alignment = 2
 
-[node name="MaxHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="MaxHPLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -124,17 +131,18 @@ theme_override_font_sizes/font_size = 18
 text = "MAX"
 vertical_alignment = 1
 
-[node name="MaxHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="MaxHP" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 1
 theme_override_constants/minimum_character_width = 3
 alignment = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 
-[node name="DamageLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="DamageLabel" type="Label" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -142,7 +150,8 @@ theme_override_font_sizes/font_size = 18
 text = "DAMAGE"
 vertical_alignment = 1
 
-[node name="Damage" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="Damage" type="LineEdit" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 1
 theme_override_constants/minimum_character_width = 3
@@ -150,11 +159,24 @@ text = "0"
 placeholder_text = " ---"
 alignment = 2
 
-[node name="DamageButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+[node name="DamageButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = " APPLY "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+
+[node name="UpMoveButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▲"
+
+[node name="DownMoveButton" type="Button" parent="HBoxContainer/Control/MarginContainer2/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▼"
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -171,13 +193,15 @@ text = "✕"
 
 [connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer/HPBarControl/EnemyName" to="." method="_on_enemy_name_focus_entered"]
 [connection signal="text_changed" from="HBoxContainer/Control/MarginContainer/HPBarControl/EnemyName" to="." method="_on_enemy_name_text_changed"]
-[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_focus_entered"]
-[connection signal="focus_exited" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_focus_exited"]
-[connection signal="text_submitted" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_text_submitted"]
-[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_focus_entered"]
-[connection signal="focus_exited" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_focus_exited"]
-[connection signal="text_submitted" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_text_submitted"]
-[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_focus_entered"]
-[connection signal="gui_input" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_gui_input"]
-[connection signal="pressed" from="HBoxContainer/Control/MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/DamageButton" to="." method="_on_damage_button_pressed"]
+[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_focus_exited"]
+[connection signal="text_submitted" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/CurrentHP" to="." method="_on_current_hp_text_submitted"]
+[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_focus_exited"]
+[connection signal="text_submitted" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/MaxHP" to="." method="_on_max_hp_text_submitted"]
+[connection signal="focus_entered" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_focus_entered"]
+[connection signal="gui_input" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/Damage" to="." method="_on_damage_gui_input"]
+[connection signal="pressed" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/DamageButton" to="." method="_on_damage_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/HBoxContainer/UpMoveButton" to="." method="move_enemy" binds= [-1]]
+[connection signal="pressed" from="HBoxContainer/Control/MarginContainer2/HBoxContainer/HBoxContainer/DownMoveButton" to="." method="move_enemy" binds= [1]]
 [connection signal="pressed" from="HBoxContainer/MarginContainer/DeleteButton" to="." method="_on_delete_button_pressed"]

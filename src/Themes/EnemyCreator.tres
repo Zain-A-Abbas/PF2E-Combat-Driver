@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=43 format=3 uid="uid://cipxsfp7eqshp"]
+[gd_resource type="Theme" load_steps=44 format=3 uid="uid://cipxsfp7eqshp"]
 
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_g84is"]
 [ext_resource type="Texture2D" uid="uid://bbiyt4467sjt8" path="res://Icons/SpinboxArrows.png" id="2_qfgkh"]
@@ -7,12 +7,12 @@
 font_names = PackedStringArray("MS UI Gothic")
 multichannel_signed_distance_field = true
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jadgb"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xc8pu"]
 content_margin_left = 8.0
 content_margin_top = 4.0
 content_margin_right = 8.0
 content_margin_bottom = 4.0
-bg_color = Color(0.9, 0.9, 0.9, 1)
+bg_color = Color(0.964742, 0.964742, 0.964742, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -42,6 +42,18 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.294, 0.346267, 0.49, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jadgb"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9, 0.9, 0.9, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.724643, 0.724643, 0.724642, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0tip"]
 content_margin_top = 4.0
@@ -299,13 +311,13 @@ multichannel_signed_distance_field = true
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_disabled_color = Color(0.16, 0.16, 0.16, 1)
+Button/colors/font_disabled_color = Color(0.577009, 0.577008, 0.577008, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(0, 0, 0, 1)
 Button/fonts/font = SubResource("SystemFont_riuwr")
-Button/styles/disabled = SubResource("StyleBoxFlat_jadgb")
+Button/styles/disabled = SubResource("StyleBoxFlat_xc8pu")
 Button/styles/focus = SubResource("StyleBoxFlat_ewaa7")
 Button/styles/hover = SubResource("StyleBoxFlat_l0fqv")
 Button/styles/normal = SubResource("StyleBoxFlat_jadgb")
