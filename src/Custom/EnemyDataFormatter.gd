@@ -249,6 +249,8 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 					new_ability["system"]["actionType"]["value"] = "free"
 				4:
 					new_ability["system"]["actionType"]["value"] = "reaction"
+				5:
+					new_ability["system"]["actionType"]["value"] = "passive"
 			
 			if ability.action_option.selected == 4:
 				new_ability["system"]["description"]["value"] = "<strong>Trigger</strong> " + ability.trigger_text_edit.text + " <strong>Effect</strong> " + ability.effect_text_edit.text
@@ -257,6 +259,9 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 		
 			if defense:
 				new_ability["system"]["category"] = "defensive"
+			
+			for ability_trait in ability.traits_field.get_value().split(",", false):
+				new_ability["system"]["traits"]["value"].append(ability_trait.strip_edges())
 			
 			items_array.append(new_ability)
 

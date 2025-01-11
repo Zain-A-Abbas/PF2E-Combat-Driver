@@ -285,6 +285,10 @@ func customize_current_enemy():
 			var action_count: int = int(ability["system"]["actions"]["value"]) - 1
 			new_ability.action_option.select(action_count)
 			new_ability._on_action_option_item_selected(action_count)
+		elif action_type == "passive":
+			new_ability.action_option.select(5)
+			new_ability._on_action_option_item_selected(5)
+			
 		else:
 			new_ability.action_option.select(3)
 			new_ability._on_action_option_item_selected(3)

@@ -29,6 +29,8 @@ func _on_action_option_item_selected(index: int) -> void:
 			action_icon.texture = FREE_ACTION
 		4:
 			action_icon.texture = REACTION
+		5:
+			action_icon.texture = null
 
 
 func _on_close_button_pressed() -> void:
