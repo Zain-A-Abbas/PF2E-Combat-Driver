@@ -79,7 +79,7 @@ func remove_unnecessary(ability_text: String) -> String:
 ## Turns bursts, cones, etc. into a readable format
 func area_parser(ability_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@Template\\[type:(\\w+)\\|distance:(\\w+)](?:{([^}]*)})?")
+	regex.compile("@Template\\[type:(\\w+)\\|distance:(\\w+)(\\|traits:(.*?))?](?:{([^}]*)})?")
 	if regex.search(ability_text) == null:
 		return ability_text
 	var area_text = regex.search(ability_text).strings
