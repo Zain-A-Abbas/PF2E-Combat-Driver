@@ -62,6 +62,10 @@ func create_enemy(editing: bool = false):
 		EventBus.error_popup.emit("Name is required to save enemy.")
 		return
 	
+	for character in ["\\", "/", ":", "*", "?", "\"", "<", ">", "|"]:
+		if name_field.get_value().contains(character):
+			EventBus.error_popup.emit("Name cannot contain the following characters: \\ / : * ? \" < > |")
+	
 	
 	#endregion
 	
@@ -212,6 +216,7 @@ func create_enemy(editing: bool = false):
 	#endregion
 	
 	var file_name: String = new_enemy_sheet["name"]
+	file_name.replace("\"", "")
 	var base_file_name: String = file_name
 	var directory := DirAccess.open(CUSTOM_ENEMIES_LOCATION)
 	i = 0

@@ -40,6 +40,9 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies/custom-enemies";
 
 private void processEnemy(string file, Godot.Collections.Array<Node> array) {
     string json = File.ReadAllText(file);
+    if (!file.Contains(".json")) {
+        return;
+    }
     JObject enemyData = JObject.Parse(json);
 
     string enemyType = (string)enemyData["type"];
