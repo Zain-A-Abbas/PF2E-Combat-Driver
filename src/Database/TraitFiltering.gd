@@ -14,7 +14,6 @@ extends FilteringMenu
 var include_and_or: bool = true : set = set_inclusion
 
 func _ready():
-	
 	# Assigning these values automatically creatres the trait buttons within each subfilter
 	ancestry_subfilter.traits = ["Aasimar", "Anadi", "Android", "Aphorite", "Ardande", "Automaton", "Azarketi", "Beastkin", "Catfolk", "Changeling", "Conrasu", "Dhampir", "Duskwalker", "Dwarf", "Elf", "Fetchling", "Fleshwarp", "Ganzi", "Geniekin", "Ghoran", "Gnoll", "Gnome", "Goblin", "Goloma", "Grippli", "Half-Elf", "Halfling", "Half-Orc", "Hobgoblin", "Human", "Ifrit", "Kashrishi", "Kitsune", "Kobold", "Leshy", "Lizardfolk", "Nagaji", "Orc", "Oread", "Poppet", "Ratfolk", "Reflection", "Shisk", "Shoony", "Skeleton", "Sprite", "Strix", "Suli", "Sylph", "Talos", "Tengu", "Tiefling", "Undine", "Vanara", "Vishkanya"]
 	creature_type_subfilter.traits  = ["Aberration", "Animal", "Astral", "Beast", "Celestial", "Construct", "Dragon", "Dream", "Elemental", "Ethereal", "Fey", "Fiend", "Fungus", "Giant", "Humanoid", "Monitor", "Negative", "Ooze", "Petitioner", "Plant", "Positive", "Spirit", "Time", "Undead"]
@@ -30,9 +29,15 @@ func fill_filter_container():
 	for child in filters_container.get_children():
 		if child is Subfilter:
 			for filter_button in child.filter_buttons_container.get_children():
-				if filter_button is FilterButton:
+				if filter_button is TraitFilterButton:
 					filter_container.append(filter_button)
+	for button in filter_container:
+		button.trait_filter_button_pressed.connect(trait_filter_button_changed)
 
+func trait_filter_button_changed(text: String, filter_state: int):
+	for button in filter_container:
+		if button.trait_text.text == text:
+			button.filter_state = filter_state
 
 func _on_reset_button_pressed():
 	for child in filters_container.get_children():

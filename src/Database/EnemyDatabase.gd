@@ -235,6 +235,9 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 	var include_enemies: Array[Node] = []
 	var remove_enemies: Array[Node] = []
 	
+	# Don't search through the same trait multiple times
+	var searched_traits: Array[String] = []
+	
 	# Holds the filters; assigned to the size, rarity, or trait filter menus
 	var current_filter_menu
 	
@@ -254,7 +257,12 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 	
 	# Goes through every enemy, stacks them up to the filter
 	for enemy in enemies_to_filter:
+		searched_traits = []
 		for filter_button in current_filter_menu.filter_container:
+			if rarity_size_traits == "traits":
+				if searched_traits.has(filter_button.trait_name):
+					continue
+				searched_traits.append(filter_button.trait_name)
 			
 			# The value that is being compared between the enemy filter data and the filter node
 			var comparison_value: Variant

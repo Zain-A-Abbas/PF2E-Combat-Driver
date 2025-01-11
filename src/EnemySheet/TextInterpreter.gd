@@ -136,6 +136,7 @@ func damage_parser2(description_text: String) -> String:
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
+	print(damage_strings.strings)
 	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
 	return damage_parser2(regex.sub(description_text, damage_text))
 

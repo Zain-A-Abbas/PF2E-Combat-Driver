@@ -7,7 +7,7 @@
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qv5ad"]
 load_path = "res://.godot/imported/FilterIcons.png-2290632db7663188baa3d7507a5ac123.ctex"
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bycvr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfoch"]
 atlas = SubResource("CompressedTexture2D_qv5ad")
 region = Rect2(0, 0, 64, 64)
 margin = Rect2(0, 8, 0, 15)
@@ -41,16 +41,16 @@ vertical_alignment = 1
 
 [node name="ToggleTexture" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-texture = SubResource("AtlasTexture_bycvr")
+texture = SubResource("AtlasTexture_cfoch")
 expand_mode = 3
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_48a8l")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_48a8l")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_48a8l")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_48a8l")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_48a8l")
 
 [connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]

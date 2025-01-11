@@ -2,6 +2,8 @@
 extends FilterButton
 class_name TraitFilterButton
 
+signal trait_filter_button_pressed(text: String, filter_state: int)
+
 const regular_trait = preload("res://Themes/TraitStyleboxes/RegularTrait.tres")
 const uncommon_trait = preload("res://Themes/TraitStyleboxes/UncommonTrait.tres")
 const rare_trait = preload("res://Themes/TraitStyleboxes/RareTrait.tres")
@@ -47,7 +49,10 @@ func _on_button_mouse_entered():
 	add_theme_stylebox_override("panel", new_stylebox)
 
 
-
 func _on_button_mouse_exited():
 	#print("mouse out the house")
 	add_theme_stylebox_override("panel", get_trait_type())
+
+func _on_button_pressed():
+	super()
+	trait_filter_button_pressed.emit(trait_text.text, filter_state)
