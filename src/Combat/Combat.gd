@@ -122,7 +122,12 @@ func save_validated(path: String):
 		save_data.enemies[enemy_dict_entry] = enemy_combat_data
 		i += 1
 	
+	save_data.party_count = player_count_spinbox.value
+	save_data.party_level = level_spinbox.value
+	
 	file_save.store_var(save_data.enemies)
+	file_save.store_64(save_data.party_count)
+	file_save.store_64(save_data.party_level)
 	file_save.close()
 
 # Loads an encounter file
@@ -135,7 +140,6 @@ func load_validated(path: String):
 	var load_file := FileAccess.open(load_file_location, FileAccess.READ)
 	var encounter_data = load_file.get_var(true)
 	
-	
 	# For each enemy, create new encounter data and an info template, add the info template to enemies
 		# then fill the info template with info and pass it to the initiative
 	for enemy in encounter_data.values():
@@ -145,6 +149,9 @@ func load_validated(path: String):
 		loaded_enemy.setup_enemy(new_encounter_data.initialize_from_save_data(enemy))
 		loaded_enemy.viewing_enemy.connect(view_enemy_sheet)
 		add_enemy_to_initiative(loaded_enemy)
+	
+	player_count_spinbox.value = load_file.get_64()
+	level_spinbox.value = load_file.get_64()
 
 func update_encounter_strength():
 	var party_count: int = int(player_count_spinbox.value)
