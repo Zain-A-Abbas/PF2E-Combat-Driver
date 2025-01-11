@@ -433,9 +433,14 @@ func setup_attacks():
 				for attack_trait in ability["system"]["traits"]["value"]:
 					attack_traits_array.append(str(attack_trait))
 			var ranged: bool = false
-			for attack_trait in attack_traits_array:
-				if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
+			if ability["system"].has("weaponType"):
+				if ability["system"]["weaponType"]["value"] == "ranged":
 					ranged = true
+			if ranged:
+				for attack_trait in attack_traits_array:
+					if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
+						ranged = true
+			
 			
 			# Add name and icon
 			var melee: String

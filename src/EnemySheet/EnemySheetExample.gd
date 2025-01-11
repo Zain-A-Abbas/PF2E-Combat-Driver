@@ -176,6 +176,9 @@ const ABILITY_TEMPLATE: Dictionary = {
 		"traits": {
 			"value": []
 		},
+		"weaponType": {
+			"value": "melee"
+		}
 	}
 }
 
