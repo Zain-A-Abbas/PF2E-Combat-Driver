@@ -154,7 +154,11 @@ func update_encounter_strength():
 		if enemy is EnemyInfoTemplate:
 			if enemy.enemy_data != {}:
 				var enemy_level: int = enemy.enemy_data["system"]["details"]["level"]["value"]
-				if enemy_level <= party_level - 4:
+				if enemy_level <= party_level - 6:
+					exp_obtained += 1
+				elif enemy_level == party_level - 5:
+					exp_obtained += 5
+				elif enemy_level == party_level - 4:
 					exp_obtained += 10
 				elif enemy_level == party_level - 3:
 					exp_obtained += 15
@@ -173,12 +177,14 @@ func update_encounter_strength():
 				elif enemy_level >= party_level + 4:
 					exp_obtained += 160
 	
+	var trivial: int = 40 + (10 * (party_count) - 4)
 	var low: int = 60 + (20 * (party_count - 4))
 	var moderate: int = 80 + (20 * (party_count - 4))
 	var severe: int = 120 + (30 * (party_count - 4))
 	var extreme: int = 160 + (40 * (party_count - 4))
 	
 	var encounter_level: String
+	
 	if exp_obtained < low:
 		encounter_level = "Trivial"
 	elif exp_obtained < moderate:

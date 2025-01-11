@@ -162,7 +162,6 @@ func button_pressed(cell_label: Label):
 		use_avg = true
 	
 	if use_avg:
-		print(cell_text)
 		var numbers: Array[int] = []
 		for number in cell_text:
 			if int(number) > 0:
