@@ -65,6 +65,7 @@ func create_enemy(editing: bool = false):
 	for character in ["\\", "/", ":", "*", "?", "\"", "<", ">", "|"]:
 		if name_field.get_value().contains(character):
 			EventBus.error_popup.emit("Name cannot contain the following characters: \\ / : * ? \" < > |")
+			return
 	
 	
 	#endregion

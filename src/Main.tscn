@@ -189,6 +189,7 @@ text = "Cancel"
 
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/SaveButton" to="VBoxContainer/TabBar/Combat" method="save_encounter"]
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/LoadButton" to="VBoxContainer/TabBar/Combat" method="open_encounter"]
+[connection signal="close_requested" from="ErrorWindow" to="ErrorWindow" method="_on_error_button_pressed"]
 [connection signal="pressed" from="ErrorWindow/MarginContainer/VBoxContainer/ErrorButton" to="ErrorWindow" method="_on_error_button_pressed"]
 [connection signal="pressed" from="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer/YesButton" to="ConfirmationWindow" method="_on_yes_button_pressed"]
 [connection signal="pressed" from="ConfirmationWindow/MarginContainer/VBoxContainer/HBoxContainer/NoButton" to="ConfirmationWindow" method="_on_no_button_pressed"]
