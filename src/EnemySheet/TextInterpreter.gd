@@ -132,12 +132,15 @@ func damage_parser(description_text: String) -> String:
 ## Gets damage from [[/r xdy[element]]]
 func damage_parser2(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("\\[\\[/r (.*?)\\]\\]")
+	regex.compile("\\[\\[/r (.*?)\\[(.*?)\\]\\]\\]")
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
 	print(damage_strings.strings)
-	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
+	var damage_keywords: PackedStringArray = damage_strings.strings[2].split(",")
+	var damage_text = damage_strings.strings[1]
+	for keyword in damage_keywords:
+		damage_text += " " + keyword
 	return damage_parser2(regex.sub(description_text, damage_text))
 
 ## Gets damage from @Damage[xdy[element]]
