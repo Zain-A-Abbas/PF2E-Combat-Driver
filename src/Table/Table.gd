@@ -153,14 +153,24 @@ func add_row(row_data: Array[String]):
 
 func button_pressed(cell_label: Label):
 	var cell_text: PackedStringArray = cell_label.text.split("-")
+	var use_avg: bool = false
 	if cell_text.size() == 1:
-		cell_clicked.emit(int(cell_text[0]))
+		cell_text = cell_label.text.split("+")
+		if cell_text.size() > 1:
+			use_avg = true
 	else:
+		use_avg = true
+	
+	if use_avg:
+		print(cell_text)
 		var numbers: Array[int] = []
 		for number in cell_text:
-			numbers.append(int(number))
+			if int(number) > 0:
+				numbers.append(int(number))
 		var avg: int = 0
 		for number in numbers:
 			avg += number
 		avg /= numbers.size()
 		cell_clicked.emit(avg)
+	else:
+		cell_clicked.emit(int(cell_text[0]))
