@@ -290,27 +290,29 @@ func setup_hp_immunities_weaknesses():
 								hp_resistances.text += ", "
 							else:
 								if resistance.has("doubleVs"):
-									double_vs = true
-									hp_resistances.text += "; double resistance vs. "
-									var k: int = 0
-									for double_versus in resistance["doubleVs"]:
-										hp_resistances.text += double_versus
-										k += 1
-										if k < resistance["doubleVs"].size():
-											hp_resistances.text += ", "
-								hp_resistances.text += ")"
+									if resistance["doubleVs"].size() > 0:
+										double_vs = true
+										hp_resistances.text += "; double resistance vs. "
+										var k: int = 0
+										for double_versus in resistance["doubleVs"]:
+											hp_resistances.text += double_versus
+											k += 1
+											if k < resistance["doubleVs"].size():
+												hp_resistances.text += ", "
+									hp_resistances.text += ")"
 				
 				if resistance.has("doubleVs") && !double_vs:
-					double_vs = true
-					hp_resistances.text += "(double resistance vs. "
-					var k: int = 0
-					for double_versus in resistance["doubleVs"]:
-						hp_resistances.text += double_versus
-						k += 1
-						if k < resistance["doubleVs"].size():
-							hp_resistances.text += ", "
-						else:
-							hp_resistances.text += ")"
+					if resistance["doubleVs"].size() > 0:
+						double_vs = true
+						hp_resistances.text += "(double resistance vs. "
+						var k: int = 0
+						for double_versus in resistance["doubleVs"]:
+							hp_resistances.text += double_versus
+							k += 1
+							if k < resistance["doubleVs"].size():
+								hp_resistances.text += ", "
+							else:
+								hp_resistances.text += ")"
 				i += 1
 				if i < enemy_attributes["resistances"].size():
 					hp_resistances.text += ", "
