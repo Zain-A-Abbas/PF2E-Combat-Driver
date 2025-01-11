@@ -24,6 +24,7 @@ extends Node
 @onready var fortitude_save_field: LabelDataField = %FortitudeSaveField
 @onready var reflex_save_field: LabelDataField = %ReflexSaveField
 @onready var will_save_field: LabelDataField = %WillSaveField
+@onready var extra_save_notes: LabelDataField = %ExtraSaveNotes
 @onready var weaknesses_v_box: VBoxContainer = %WeaknessesVBox
 @onready var resistances_v_box: VBoxContainer = %ResistancesVBox
 @onready var immunities_v_box: VBoxContainer = %ImmunitiesVBox
@@ -180,6 +181,9 @@ func customize_current_enemy():
 			immunities_v_box.move_child(new_immunity, immunities_v_box.get_child_count() - 2)
 			new_immunity.text = immunity["type"]
 			defensive.setup_new_immunity(new_immunity)
+	
+	if enemy_attributes["allSaves"]["value"] != "" && enemy_attributes["allSaves"]["value"] != null:
+		extra_save_notes.set_value(enemy_attributes["allSaves"]["value"])
 	
 	#endregion
 	

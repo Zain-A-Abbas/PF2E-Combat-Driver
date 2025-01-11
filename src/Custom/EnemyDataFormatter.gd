@@ -24,6 +24,7 @@ signal sheet_created
 @onready var fortitude_save_field: LabelDataField = %FortitudeSaveField
 @onready var reflex_save_field: LabelDataField = %ReflexSaveField
 @onready var will_save_field: LabelDataField = %WillSaveField
+@onready var extra_save_notes: LabelDataField = %ExtraSaveNotes
 @onready var weaknesses_v_box: VBoxContainer = %WeaknessesVBox
 @onready var resistances_v_box: VBoxContainer = %ResistancesVBox
 @onready var immunities_v_box: VBoxContainer = %ImmunitiesVBox
@@ -132,7 +133,9 @@ func create_enemy(editing: bool = false):
 	system["saves"]["fortitude"]["value"] = int(fortitude_save_field.get_value())
 	system["saves"]["reflex"]["value"] = int(reflex_save_field.get_value())
 	system["saves"]["will"]["value"] = int(will_save_field.get_value())
-
+	attributes["allSaves"]["value"] = extra_save_notes.get_value()
+	
+	
 	# Weaknesses, resistances, immunities
 	for weakness_field in weaknesses_v_box.get_children():
 		if weakness_field is WeaknessResistanceField:
