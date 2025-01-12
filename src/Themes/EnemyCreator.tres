@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=44 format=3 uid="uid://cipxsfp7eqshp"]
+[gd_resource type="Theme" load_steps=49 format=3 uid="uid://cipxsfp7eqshp"]
 
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_g84is"]
 [ext_resource type="Texture2D" uid="uid://bbiyt4467sjt8" path="res://Icons/SpinboxArrows.png" id="2_qfgkh"]
@@ -64,6 +64,55 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.305882, 0.431373, 0.780392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jum72"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.56, 0.56, 0.56, 1)
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xfuc6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.3, 0.3, 0.3, 1)
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc2dt"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.18, 0.18, 0.18, 1)
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fooa"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 0.0
+bg_color = Color(0.92, 0.92, 0.92, 1)
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1tto"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_lurag"]
 color = Color(0, 0, 0, 0.419608)
@@ -322,6 +371,11 @@ Button/styles/focus = SubResource("StyleBoxFlat_ewaa7")
 Button/styles/hover = SubResource("StyleBoxFlat_l0fqv")
 Button/styles/normal = SubResource("StyleBoxFlat_jadgb")
 Button/styles/pressed = SubResource("StyleBoxFlat_d0tip")
+HScrollBar/styles/grabber = SubResource("StyleBoxFlat_jum72")
+HScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_xfuc6")
+HScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_jc2dt")
+HScrollBar/styles/scroll = SubResource("StyleBoxFlat_0fooa")
+HScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_a1tto")
 HSeparator/styles/separator = SubResource("StyleBoxLine_lurag")
 ItemList/colors/font_color = Color(0, 0, 0, 1)
 ItemList/colors/font_hovered_color = Color(0, 0, 0, 1)

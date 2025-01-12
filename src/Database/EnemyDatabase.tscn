@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bmbtqllw2ypjc"]
+[gd_scene load_steps=13 format=3 uid="uid://bmbtqllw2ypjc"]
 
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="1_bdhe6"]
 [ext_resource type="Script" path="res://Database/EnemyDatabase.gd" id="1_oki1l"]
@@ -23,6 +23,18 @@ border_width_left = 2
 border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mneab"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.408329, 0.408329, 0.408329, 1)
+border_width_left = 2
+border_width_top = 35
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.241156, 0.241156, 0.241156, 1)
 
 [node name="EnemyDatabase" type="Control"]
 layout_mode = 3
@@ -151,9 +163,10 @@ layout_mode = 2
 size_flags_vertical = 4
 text = "Delete enemy"
 
-[node name="DatabaseSheets" type="HBoxContainer" parent="PanelContainer/Database"]
+[node name="DatabaseSheets" type="HSplitContainer" parent="PanelContainer/Database"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/separation = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets"]
 layout_mode = 2
@@ -170,31 +183,35 @@ item_0/text = "The dog"
 item_1/text = "How do you do fellow kids"
 item_2/text = "Destroy this dog"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Database/DatabaseSheets"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/Database/DatabaseSheets"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Database/DatabaseSheets/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 5.0
 
-[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = ExtResource("3_mj4bq")
 
-[node name="EnemySheet" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer2" instance=ExtResource("1_bdhe6")]
+[node name="EnemySheet" parent="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer2" instance=ExtResource("1_bdhe6")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="PanelContainer" type="MarginContainer" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_constants/margin_left = 2
-theme_override_constants/margin_top = 2
-theme_override_constants/margin_right = 2
-theme_override_constants/margin_bottom = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mneab")
 
-[node name="AddToCombatButton" type="Button" parent="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer"]
+[node name="AddToCombatButton" type="Button" parent="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Add to Combat"
@@ -246,7 +263,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-sheet = NodePath("../../../Database/DatabaseSheets/VBoxContainer/PanelContainer2/EnemySheet")
+sheet = NodePath("../../../Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer2/EnemySheet")
 
 [connection signal="text_changed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SortByNameButton" to="." method="_on_sort_by_name_pressed"]
@@ -260,7 +277,7 @@ sheet = NodePath("../../../Database/DatabaseSheets/VBoxContainer/PanelContainer2
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/EditEnemyButton" to="." method="_on_edit_enemy_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/DeleteEnemyButton" to="." method="_on_delete_enemy_button_pressed"]
 [connection signal="item_selected" from="PanelContainer/Database/DatabaseSheets/PanelContainer/EnemyList" to="." method="_on_enemy_list_item_selected"]
-[connection signal="pressed" from="PanelContainer/Database/DatabaseSheets/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/SizeFilterMenu" to="." method="_on_size_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/RarityFilterMenu" to="." method="_on_rarity_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
