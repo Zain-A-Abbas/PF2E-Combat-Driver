@@ -245,6 +245,7 @@ func italics_parser(description_text: String) -> String:
 	regex.compile("</em>")
 	return italics_parser(regex.sub(formatted_description, "[/i]"))
 
+
 ## Makes lists out of abilities like spells
 func list_parser(description_text: String) -> String:
 	if !description_text.contains("<ul>"):

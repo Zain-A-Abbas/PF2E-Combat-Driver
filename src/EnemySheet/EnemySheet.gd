@@ -131,13 +131,13 @@ func setup_senses():
 	senses.text = ""
 	var perception = "[b]Perception[/b] " + "+" + "[url]" + str(enemy_system["attributes"]["perception"]["value"]) + "[/url]"
 	
-	var enemy_senses: Array
+	var enemy_senses: Array[String]
 	if enemy_system["traits"]["senses"] is Array:
-		enemy_senses = enemy_system["traits"]["senses"]
+		enemy_senses.assign(enemy_system["traits"]["senses"])
 	else:
-		enemy_senses = enemy_system["traits"]["senses"]["value"].split(",")
+		enemy_senses.assign(enemy_system["traits"]["senses"]["value"].split(","))
 	var i: int = 0
-	if !enemy_senses.is_empty():
+	if !enemy_senses.is_empty(): 
 		if enemy_senses[0] != "":
 			for sense in enemy_senses:
 				if sense[0] == " ":
@@ -152,6 +152,9 @@ func setup_senses():
 	# Add tooltips to the senses
 	i = 0
 	for sense in enemy_senses:
+		# A few random enemies have this. What the hell? They don't even use <i> otherwise, it's <em>.
+		enemy_senses[i] = enemy_senses[i].replace("<i>", "[i]")
+		enemy_senses[i] = enemy_senses[i].replace("</i>", "[/i]")
 		#enemy_senses[i] = get_sheet_tooltip("sense", sense) + sense + "[/hint]"
 		senses.text += enemy_senses[i]
 		if enemy_senses.size() > i + 1:
