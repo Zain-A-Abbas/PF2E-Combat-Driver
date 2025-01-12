@@ -3,25 +3,25 @@
 [ext_resource type="Script" path="res://Combat/EnemyInitiative.gd" id="1_p40nu"]
 
 [node name="EnemyInitiative" type="HBoxContainer"]
+size_flags_horizontal = 3
 theme_override_constants/separation = 0
 script = ExtResource("1_p40nu")
 
 [node name="EnemyName" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 10.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Great Evil King Ganondorf"
-text_overrun_behavior = 3
+text_overrun_behavior = 1
 
-[node name="InitText" type="Label" parent="."]
+[node name="InitField" type="LineEdit" parent="."]
+unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 10
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = " Init: "
+size_flags_horizontal = 8
+theme_override_constants/minimum_character_width = 3
+text = "90"
+alignment = 2
+caret_blink = true
 
-[node name="InitCount" type="Label" parent="."]
-layout_mode = 2
-size_flags_horizontal = 10
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "20"
+[connection signal="text_changed" from="InitField" to="." method="_on_init_field_text_changed"]

@@ -43,6 +43,7 @@ func add_enemy_to_initiative(enemy):
 	var new_initiative_count = ENEMY_INITIATIVE.instantiate()
 	# Adds it to the initiative list, sets it up
 	initiative_container.add_child(new_initiative_count)
+	new_initiative_count.initiative_changed.connect(sort_initiative)
 	new_initiative_count.setup_initiative(enemy)
 	new_initiative_count.enemy_node = enemy
 	

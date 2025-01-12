@@ -1,7 +1,9 @@
 extends HBoxContainer
 
+signal initiative_changed
+
 @onready var enemy_name = $EnemyName
-@onready var initiative_count = $InitCount
+@onready var init_field: LineEdit = %InitField
 
 var enemy_data: Dictionary
 # The enemy node that this initiative is tied to, for the sake of deleting initiative
@@ -16,19 +18,29 @@ func setup_initiative(enemy: EnemyInfoTemplate):
 	enemy_name.text = enemy.enemy_name
 	
 	if enemy_data == {}:
-		initiative_count.text = str(initiative)
+		init_field.text = str(initiative)
 		return
 	
 	initiative += enemy_data["system"]["attributes"]["perception"]["value"]
-	initiative_count.text = str(initiative)
+	init_field.text = str(initiative)
 
 func reroll_initiative():
 	initiative = randi_range(1, 20)
 	if enemy_data == {}:
-		initiative_count.text = str(initiative)
+		init_field.text = str(initiative)
 		return
+	
 	initiative += enemy_data["system"]["attributes"]["perception"]["value"]
-	initiative_count.text = str(initiative)
+	init_field.text = str(initiative)
 
 func rename_enemy(new_name: String):
 	enemy_name.text = new_name
+
+
+
+
+func _on_init_field_text_changed(new_text: String) -> void:
+	var new_initiative: int = int(new_text)
+	initiative = new_initiative
+	init_field.text = str(initiative)
+	emit_signal("initiative_changed")
