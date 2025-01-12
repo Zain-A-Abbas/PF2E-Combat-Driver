@@ -489,15 +489,7 @@ func setup_attacks():
 				attack_traits = ""
 			
 			# Damage
-			var damage_text: String = "[b]Damage[/b] "
-			i = 0
-			for damage_roll in ability["system"]["damageRolls"].keys():
-				if i > 0:
-					damage_text += " plus "
-				damage_text += ability["system"]["damageRolls"][damage_roll]["damage"] + " " + ability["system"]["damageRolls"][damage_roll]["damageType"] 
-				i += 1
-			if ability["system"].has("oneLineDamageRoll"):
-				damage_text += ability["system"]["oneLineDamageRoll"]
+			var damage_text: String = get_damage_text(ability)
 			
 			new_attack_entry.text = melee + attack_icon + attack_name + attack_bonus_text + attack_traits + damage_text
 			attacks.add_child(new_attack_entry)
@@ -505,6 +497,56 @@ func setup_attacks():
 	if attacks.get_child_count() > 0:
 		attacks.visible = true
 
+func get_damage_text(ability: Dictionary) -> String:
+	var system: Dictionary = ability["system"]
+	var damage_text: String = "[b]Damage[/b] "
+	
+	var i: int = 0
+	for damage_roll in system["damageRolls"].keys():
+		if i > 0:
+			damage_text += " plus "
+		damage_text += system["damageRolls"][damage_roll]["damage"] + " " + system["damageRolls"][damage_roll]["damageType"] 
+		i += 1
+	if system.has("oneLineDamageRoll"):
+		damage_text += system["oneLineDamageRoll"]
+	
+	var extra_text: String = ""
+	if system.has("rules"):
+		var rules: Array = system["rules"]
+		var predicate: Array
+		var condition_regex: RegEx = RegEx.new()
+		condition_regex.compile("target:trait:(.*)")
+		for rule: Dictionary in rules:
+			# Check if has condition
+			if rule["key"] != "DamageDice":
+				continue
+			if !rule.has("predicate"):
+				continue
+			
+			predicate = rule["predicate"]
+			var condition_match: RegExMatch
+			for condition: Dictionary in predicate:
+				print("w")
+				if !condition.has("or"):
+					continue
+				print("x")
+				for condition_text: String in condition["or"]:
+					condition_match = condition_regex.search(condition_text)
+					if condition_match == null:
+						print(condition_text)
+						print("y")
+						continue
+				
+					if extra_text == "":
+						extra_text = " ("
+				
+					extra_text += "plus an additional " + rule["dieSize"] + " " + rule["damageType"] + " to creatures with the " + condition_match.strings[1] + " trait"
+		if !extra_text.is_empty():
+			extra_text += ")"
+	
+	damage_text += extra_text
+	
+	return damage_text
 
 func setup_spells():
 	var has_spells: bool = false
