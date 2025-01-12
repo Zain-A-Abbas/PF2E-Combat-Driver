@@ -40,6 +40,8 @@ func get_size():
 			return "medium"
 		"lrg", "lg":
 			return "large"
+		"huge":
+			return "huge"
 		"grg":
 			return "gargantuan"
 		_:

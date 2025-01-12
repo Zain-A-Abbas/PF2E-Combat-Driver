@@ -118,7 +118,30 @@ public partial class EnemyFilterInfo : Node
 
         alignment = (string)enemyData["system"]["details"]["alignment"]["value"];
         rarity = (string)enemyTraits["rarity"];
-        size = (string)enemyTraits["size"]["value"];
+
+        string traitSize = (string)enemyTraits["size"]["value"];
+        switch (traitSize)
+        {
+            case "tiny":
+                size = "tiny";
+                break;
+            case "sml":
+            case "sm":
+                size = "small";
+                break;
+            case "lrg":
+            case "lg":
+                size = "large";
+                break;
+            case "huge":
+                size = "huge";
+                break;
+            case "grg":
+                size = "gargantuan";
+                break;
+        }
+
+
         traits = new Godot.Collections.Array<string>();
         foreach (string enemyTrait in enemyTraits["value"])
         {
