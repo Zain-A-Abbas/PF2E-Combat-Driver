@@ -165,73 +165,103 @@ theme_override_constants/minimum_character_width = 23
 text = "Custom Enemy"
 placeholder_text = "Custom Enemy"
 
-[node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_l83o3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Ability Modifiers"
 
-[node name="HBoxContainer" type="GridContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+[node name="HBoxContainer" type="GridContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 columns = 3
 
-[node name="STRField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="STRField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "STR"
 minimum_character_width = 3
 
-[node name="DEXField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="DEXField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "DEX"
 minimum_character_width = 3
 
-[node name="CONField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="CONField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "CON"
 minimum_character_width = 3
 
-[node name="INTField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="INTField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "INT"
 minimum_character_width = 3
 
-[node name="WISField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="WISField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "WIS"
 minimum_character_width = 3
 
-[node name="CHAField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="CHAField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "CHA"
 minimum_character_width = 3
 
-[node name="PerceptionField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PerceptionField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Perception"
 numbers_only = true
 
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Rarity"
+
+[node name="RarityButton" type="OptionButton" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 4
+popup/item_0/text = "Common"
+popup/item_1/text = "Uncommon"
+popup/item_1/id = 1
+popup/item_2/text = "Rare"
+popup/item_2/id = 2
+popup/item_3/text = "Unique"
+popup/item_3/id = 3
+
 [node name="SensesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Senses"
-minimum_character_width = 24
+minimum_character_width = 26
 
 [node name="LanguagesField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
 unique_name_in_owner = true
 layout_mode = 2
 label_text = "Languages"
-minimum_character_width = 10
+minimum_character_width = 24
 
 [node name="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField" index="0"]
 text = "Languages"
 
 [node name="LineEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField" index="1"]
-theme_override_constants/minimum_character_width = 10
+theme_override_constants/minimum_character_width = 24
 text = "Common, "
 placeholder_text = "Common, "
 
@@ -247,40 +277,43 @@ wrap_mode = 1
 scroll_fit_content_height = true
 caret_blink = true
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_styles/panel = ExtResource("3_l83o3")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Speed"
 
-[node name="NewSpeedFieldButton" type="Button" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="NewSpeedFieldButton" type="Button" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "+"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 85)
 layout_mode = 2
 horizontal_scroll_mode = 0
 
-[node name="SpeedFieldVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
+[node name="SpeedFieldVBox" type="VBoxContainer" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="SpeedField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox" instance=ExtResource("5_a4nr1")]
+[node name="SpeedField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox" instance=ExtResource("5_a4nr1")]
 layout_mode = 2
 
-[node name="OptionButton" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="0"]
+[node name="OptionButton" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="0"]
 selected = 0
 
-[node name="SpeedAmount" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="2"]
+[node name="SpeedAmount" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="2"]
 text = "25"
 
 [node name="NotesLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
@@ -1125,7 +1158,7 @@ unique_name_in_owner = true
 script = ExtResource("17_rxw0s")
 
 [connection signal="pressed" from="VBoxContainer/PanelContainer/GridContainer/HBoxContainer2/AutofillButton" to="EnemyRoadMapFiller" method="autofill_clicked"]
-[connection signal="pressed" from="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NewSpeedFieldButton" to="VBoxContainer/TabContainer/General" method="_on_new_speed_field_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/NewSpeedFieldButton" to="VBoxContainer/TabContainer/General" method="_on_new_speed_field_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer/WeaknessesVBox/AddWeaknessButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_weakness_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer2/VBoxContainer/ScrollContainer/MarginContainer/ResistancesVBox/AddResistanceButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_resistance_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Defensive/PanelContainer/HBoxContainer/VBoxContainer/ResistancesHBox/PanelContainer3/VBoxContainer/ScrollContainer/MarginContainer/ImmunitiesVBox/AddImmunityButton" to="VBoxContainer/TabContainer/Defensive" method="_on_add_immunity_button_pressed"]
@@ -1141,7 +1174,7 @@ script = ExtResource("17_rxw0s")
 [editable path="VBoxContainer/PanelContainer/GridContainer/LevelField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/SourceField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField"]
-[editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField"]
+[editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField"]

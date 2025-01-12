@@ -6,6 +6,7 @@ extends Node
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
+@onready var rarity_button: OptionButton = %RarityButton
 @onready var senses_field: LabelDataField = %SensesField
 @onready var languages_field: LabelDataField = %LanguagesField
 @onready var traits_text_edit: TextEdit = %TraitsTextEdit
@@ -116,6 +117,29 @@ func customize_current_enemy():
 	languages_field.set_value(", ".join(PackedStringArray(enemy_system["traits"]["languages"]["value"])))
 	traits_text_edit.text = ", ".join(PackedStringArray(enemy_system["traits"]["value"]))
 	
+	# Rarity
+	var rarity_text: String
+	if !enemy_system["traits"].has("rarity"):
+		rarity_button.select(3)
+		rarity_text = "unique"
+	else:
+		rarity_text = enemy_system["traits"]["rarity"].to_lower()
+		match rarity_text:
+			"common":
+				rarity_button.select(0)
+			"uncommon":
+				rarity_button.select(1)
+			"rare":
+				rarity_button.select(2)
+			"unique":
+				rarity_button.select(3)
+			_:
+				rarity_button.select(0)
+	if !enemy_system["traits"]["value"].has(rarity_text):
+			if traits_text_edit.text != "":
+				traits_text_edit.text += ", "
+			traits_text_edit.text += rarity_text
+	
 	# Speeds
 	for child in speed_field_v_box.get_children():
 		child.queue_free()
@@ -213,7 +237,6 @@ func customize_current_enemy():
 				if attack_trait.contains("range-increment") || attack_trait.contains("ranged"):
 					ranged = true
 		
-	
 		# Damage
 		var damage_text: String = ""
 		var i: int = 0

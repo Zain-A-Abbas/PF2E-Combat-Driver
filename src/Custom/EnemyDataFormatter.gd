@@ -6,6 +6,7 @@ signal sheet_created(file_address: String)
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
+@onready var rarity_button: OptionButton = %RarityButton
 @onready var senses_field: LabelDataField = %SensesField
 @onready var languages_field: LabelDataField = %LanguagesField
 @onready var traits_text_edit: TextEdit = %TraitsTextEdit
@@ -92,6 +93,8 @@ func create_enemy(editing: bool = false):
 	attributes["perception"]["value"] = int(perception_field.get_value())
 	traits["senses"]["value"] = senses_field.get_value()
 	new_enemy_sheet["notes"] = notes_text_edit.text
+	
+	traits["rarity"] = rarity_button.get_item_text(rarity_button.selected).to_lower()
 	
 	# Languages
 	var languages_string: String = languages_field.get_value().replace(", ", ",")
@@ -232,7 +235,7 @@ func create_enemy(editing: bool = false):
 	if !editing:
 		while has_file_name(file_name, directory):
 			file_name = base_file_name + "-" + str(i + 1)
-			print(file_name)
+			#print(file_name)
 			i += 1
 	
 	var file_address: String = CUSTOM_ENEMIES_LOCATION + file_name + ".json"
