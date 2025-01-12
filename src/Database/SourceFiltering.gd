@@ -24,6 +24,7 @@ func add_source_on_runtime(new_source: String):
 	
 	if source_is_new:
 		add_new_source(new_source)
+		set_filter_container()
 
 func set_filter_container():
 	filter_container = find_children("", "FilterButton", true, false)
