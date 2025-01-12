@@ -1,14 +1,18 @@
 extends FilteringMenu
 
-@onready var ancestry_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter
-@onready var creature_type_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter
-@onready var elemental_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter
-@onready var energy_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter
-@onready var monster_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter
-@onready var planar_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter
-@onready var weapon_subfilter := $MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter
 
-@onready var filters_container := $MarginContainer/ScrollContainer/FiltersContainer
+@onready var ancestry_subfilter: Subfilter = %AncestrySubfilter
+@onready var creature_type_subfilter: Subfilter = %CreatureTypeSubfilter
+@onready var elemental_subfilter: Subfilter = %ElementalSubfilter
+@onready var energy_subfilter: Subfilter = %EnergySubfilter
+@onready var monster_subfilter: Subfilter = %MonsterSubfilter
+@onready var planar_subfilter: Subfilter = %PlanarSubfilter
+@onready var weapon_subfilter: Subfilter = %WeaponSubfilter
+
+@onready var filters_container: VBoxContainer = %FiltersContainer
+
+@onready var include_and_check: CheckBox = %IncludeAndCheck
+@onready var include_or_check: CheckBox = %IncludeOrCheck
 
 # "False" means including enemies as long as they have a ticked trait, true means including every trait that is ticked
 var include_and_or: bool = true : set = set_inclusion
@@ -26,11 +30,9 @@ func _ready():
 
 func fill_filter_container():
 	filter_container = []
-	for child in filters_container.get_children():
-		if child is Subfilter:
-			for filter_button in child.filter_buttons_container.get_children():
-				if filter_button is TraitFilterButton:
-					filter_container.append(filter_button)
+	for filter_button in find_children("", "TraitFilterButton", true, false):
+		if filter_button is TraitFilterButton:
+			filter_container.append(filter_button)
 	for button in filter_container:
 		button.trait_filter_button_pressed.connect(trait_filter_button_changed)
 
@@ -40,27 +42,23 @@ func trait_filter_button_changed(text: String, filter_state: int):
 			button.filter_state = filter_state
 
 func _on_reset_button_pressed():
-	for child in filters_container.get_children():
-		if child is Subfilter:
-			child.reset_filters()
+	for child in find_children("*", "SubFilter", true, false):
+		child.reset_filters()
 
 
 func _on_trait_search_text_changed(new_text):
-	for child in filters_container.get_children():
-		if child is Subfilter:
-			for filter_button in child.filter_buttons_container.get_children():
-				if filter_button is FilterButton:
-					if new_text == "":
-						filter_button.visible = true
-					else:
-						filter_button.visible = filter_button.trait_name.to_lower().contains(new_text.to_lower())
+	for filter_button in find_children("*", "FilterButton", true, false):
+		if new_text == "":
+			filter_button.visible = true
+		else:
+			filter_button.visible = filter_button.trait_name.to_lower().contains(new_text.to_lower())
 
 func set_inclusion(val):
 	include_and_or = val
-	$MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeAndCheck.button_pressed = include_and_or
-	$MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeAndCheck.disabled = include_and_or
-	$MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeOrCheck.button_pressed = !include_and_or
-	$MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeOrCheck.disabled = !include_and_or
+	include_and_check.button_pressed = include_and_or
+	include_and_check.disabled = include_and_or
+	include_or_check.button_pressed = !include_and_or
+	include_or_check.disabled = !include_and_or
 
 func _on_alt_apply_button_pressed():
 	_on_apply_button_pressed()

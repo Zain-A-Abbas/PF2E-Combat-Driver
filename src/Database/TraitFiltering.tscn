@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_lhn0y"]
 [ext_resource type="Script" path="res://Database/TraitFiltering.gd" id="2_amglq"]
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_kaq3q"]
-[ext_resource type="PackedScene" uid="uid://slrfberfilcb" path="res://Database/Subfilter.tscn" id="3_jociw"]
+[ext_resource type="Script" path="res://Database/Subfilter.gd" id="4_1qv2s"]
 [ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="5_4r50r"]
 
 [node name="FilterMenu" type="PanelContainer"]
@@ -21,208 +21,419 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
-custom_minimum_size = Vector2(0, 500)
-layout_mode = 2
-horizontal_scroll_mode = 0
-
-[node name="FiltersContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer"]
+[node name="FiltersContainer" type="VBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/separation = 5
 
-[node name="FilterLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer"]
+[node name="FilterLabel" type="Label" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
 theme_type_variation = &"StrikeName"
 text = "Traits"
 
-[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/FiltersContainer"]
+[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
 
-[node name="ResetButton" type="Button" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 text = "Reset selection"
 
-[node name="AltApplyButton" type="Button" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="AltApplyButton" type="Button" parent="MarginContainer/FiltersContainer/VBoxContainer"]
 layout_direction = 3
 layout_mode = 2
 size_flags_horizontal = 0
 text = "Apply filters"
 
-[node name="IncludeAndCheck" type="CheckBox" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="IncludeAndCheck" type="CheckBox" parent="MarginContainer/FiltersContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"RadioButton"
 icon_alignment = 1
 
-[node name="IncludeAndLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="IncludeAndLabel" type="Label" parent="MarginContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
 text = "Include all (AND)"
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_right = 4
 
-[node name="IncludeOrCheck" type="CheckBox" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="IncludeOrCheck" type="CheckBox" parent="MarginContainer/FiltersContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"RadioButton"
 
-[node name="IncludeOrLabel" type="Label" parent="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer"]
+[node name="IncludeOrLabel" type="Label" parent="MarginContainer/FiltersContainer/VBoxContainer"]
 layout_mode = 2
 text = "Include any (OR)"
 
-[node name="TraitSearch" type="LineEdit" parent="MarginContainer/ScrollContainer/FiltersContainer"]
+[node name="TraitSearch" type="LineEdit" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
 placeholder_text = "Search among traits"
 
-[node name="AncestrySubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/FiltersContainer"]
+custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter/HBoxContainer" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AncestrySubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Ancestry"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="CreatureTypeSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="CreatureTypeSubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Creature Type"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Creature Type"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="ElementalSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="ElementalSubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Elemental"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Elemental"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="EnergySubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="EnergySubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Energy"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Energy"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="MonsterSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="MonsterSubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Monster"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Monster"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="PlanarSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="PlanarSubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Planar"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Planar"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="WeaponSubfilter" parent="MarginContainer/ScrollContainer/FiltersContainer" instance=ExtResource("3_jociw")]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/ButtonsContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="WeaponSubfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer" node_paths=PackedStringArray("filter_buttons_container")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_1qv2s")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 subfilter_name = "Weapon"
 
-[node name="SubfilterLabel" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter/HBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
 text = "Weapon"
 
-[node name="IncludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter/HBoxContainer" index="1"]
-visible = true
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
 
-[node name="ExcludeButton" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter/HBoxContainer" index="2"]
-visible = true
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
 
-[node name="ResetButton" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter/HBoxContainer" index="3"]
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
 text = "Deselect Button"
 
-[node name="ButtonsContainer" parent="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter" index="1"]
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
 theme_override_styles/panel = ExtResource("5_4r50r")
 
-[node name="ApplyButton" type="Button" parent="MarginContainer/ScrollContainer/FiltersContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/ButtonsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/ButtonsContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="ApplyButton" type="Button" parent="MarginContainer/FiltersContainer"]
 layout_direction = 3
 layout_mode = 2
 size_flags_horizontal = 0
 text = "Apply filters"
 
-[connection signal="pressed" from="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
-[connection signal="pressed" from="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/AltApplyButton" to="." method="_on_alt_apply_button_pressed"]
-[connection signal="pressed" from="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeAndCheck" to="." method="_on_include_and_check_pressed"]
-[connection signal="pressed" from="MarginContainer/ScrollContainer/FiltersContainer/VBoxContainer/IncludeOrCheck" to="." method="_on_include_or_check_pressed"]
-[connection signal="text_changed" from="MarginContainer/ScrollContainer/FiltersContainer/TraitSearch" to="." method="_on_trait_search_text_changed"]
-[connection signal="pressed" from="MarginContainer/ScrollContainer/FiltersContainer/ApplyButton" to="." method="_on_apply_button_pressed"]
-
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/AncestrySubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/CreatureTypeSubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/ElementalSubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/EnergySubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/MonsterSubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/PlanarSubfilter"]
-[editable path="MarginContainer/ScrollContainer/FiltersContainer/WeaponSubfilter"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/VBoxContainer/AltApplyButton" to="." method="_on_alt_apply_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/VBoxContainer/IncludeAndCheck" to="." method="_on_include_and_check_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/VBoxContainer/IncludeOrCheck" to="." method="_on_include_or_check_pressed"]
+[connection signal="text_changed" from="MarginContainer/FiltersContainer/TraitSearch" to="." method="_on_trait_search_text_changed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/AncestrySubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/CreatureTypeSubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/ElementalSubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/EnergySubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/MonsterSubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/PlanarSubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/ScrollContainer/VBoxContainer/WeaponSubfilter" method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ApplyButton" to="." method="_on_apply_button_pressed"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgcrgvgf7hi6f"]
+[gd_scene load_steps=7 format=3 uid="uid://bgcrgvgf7hi6f"]
 
-[ext_resource type="Theme" uid="uid://be3xj0wqsh8kv" path="res://Themes/FilterWindow.tres" id="1_ld3hk"]
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_iimuf"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_heqkp"]
 [ext_resource type="PackedScene" uid="uid://slrfberfilcb" path="res://Database/Subfilter.tscn" id="2_hewgo"]
 [ext_resource type="Script" path="res://Database/EnemyFiltering.gd" id="2_y8gwq"]
 [ext_resource type="PackedScene" uid="uid://en7jicp5pl3p" path="res://Database/TraitFilterButton.tscn" id="3_xxbua"]
@@ -9,7 +10,8 @@
 [node name="FilterMenu" type="PanelContainer"]
 offset_right = 400.0
 offset_bottom = 100.0
-theme = ExtResource("1_ld3hk")
+theme = ExtResource("1_iimuf")
+theme_override_styles/panel = ExtResource("2_heqkp")
 script = ExtResource("2_y8gwq")
 metadata/_edit_lock_ = true
 
@@ -25,6 +27,8 @@ layout_mode = 2
 
 [node name="FilterLabel" type="Label" parent="MarginContainer/FiltersContainer"]
 layout_mode = 2
+theme_type_variation = &"StrikeName"
+theme_override_font_sizes/font_size = 20
 text = "Sizes"
 
 [node name="Subfilter" parent="MarginContainer/FiltersContainer" instance=ExtResource("2_hewgo")]

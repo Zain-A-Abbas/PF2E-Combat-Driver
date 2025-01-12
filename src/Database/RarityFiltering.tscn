@@ -34,8 +34,9 @@ layout_mode = 2
 theme_type_variation = &"StrikeName"
 text = "Rarity"
 
-[node name="Subfilter" parent="MarginContainer/FiltersContainer" instance=ExtResource("3_c1rbr")]
+[node name="Subfilter" parent="MarginContainer/FiltersContainer" node_paths=PackedStringArray("filter_buttons_container") instance=ExtResource("3_c1rbr")]
 layout_mode = 2
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 
 [node name="SubfilterLabel" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer" index="0"]
 visible = false

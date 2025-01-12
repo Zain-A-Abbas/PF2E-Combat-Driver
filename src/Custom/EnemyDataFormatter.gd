@@ -2,6 +2,7 @@ extends Node
 
 signal sheet_created
 
+@onready var source_field: LabelDataField = %SourceField
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
@@ -83,6 +84,9 @@ func create_enemy(editing: bool = false):
 	
 	#region General
 	
+	if source_field.get_value().strip_edges() == "":
+		source_field.set_value("Custom Enemy")
+	system["details"]["source"]["value"] = source_field.get_value()
 	new_enemy_sheet["name"] = name_field.get_value()
 	details["level"]["value"] = int(level_field.get_value())
 	attributes["perception"]["value"] = int(perception_field.get_value())

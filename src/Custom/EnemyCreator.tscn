@@ -130,11 +130,10 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b4jvt")
-current_tab = 1
+current_tab = 0
 
 [node name="General" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 script = ExtResource("5_f73rx")
 metadata/_tab_index = 0
@@ -151,6 +150,20 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.98
+
+[node name="SourceField" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_vbygb")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Source"
+minimum_character_width = 23
+
+[node name="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/SourceField" index="0"]
+text = "Source"
+
+[node name="LineEdit" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/SourceField" index="1"]
+theme_override_constants/minimum_character_width = 23
+text = "Custom Enemy"
+placeholder_text = "Custom Enemy"
 
 [node name="AbilityModifiersLabel" type="Label" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -310,6 +323,7 @@ table_type = 10
 
 [node name="Defensive" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 script = ExtResource("6_3xsao")
 metadata/_tab_index = 1
@@ -1125,6 +1139,7 @@ script = ExtResource("17_rxw0s")
 [connection signal="sheet_created" from="EnemyDataFormatter" to="." method="_on_enemy_data_formatter_sheet_created"]
 
 [editable path="VBoxContainer/PanelContainer/GridContainer/LevelField"]
+[editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/SourceField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/LanguagesField"]
 [editable path="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField"]
 [editable path="VBoxContainer/TabContainer/Spells/PanelContainer/HBoxContainer2/VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField"]

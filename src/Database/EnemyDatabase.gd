@@ -23,6 +23,8 @@ const EnemyDatabaseSourceFile: String = "res://Database/EnemyDatabase.cs"
 @onready var rarity_filter_menu: FilteringMenu = %RarityFilterMenu
 @onready var trait_filter_menu: PanelContainer = %TraitFilterMenu
 @onready var numbers_filtering: PanelContainer = %NumbersFiltering
+@onready var source_filtering: PanelContainer = %SourceFiltering
+
 @onready var search_bar: LineEdit = %SearchBar
 @onready var enemy_creator = %EnemyCreator
 @onready var enemy_creator_window: Window = %EnemyCreatorWindow
@@ -79,6 +81,8 @@ func add_enemies():
 	var temp_enemies: Array = csharp_database.addEnemies()
 	for enemy in temp_enemies:
 		enemies.append(enemy)
+	if !enemies.is_empty():
+		source_filtering.setup(enemies[0].getSources())
 	print("Time: " + str((Time.get_ticks_msec() - start_time) / 1000.0))
 	sort_filter_enemies()
 	
@@ -125,6 +129,7 @@ func filter_enemies(enemies_to_filter: Array[Node]) -> Array[Node]:
 	filtering = general_filter(filtering, "rarity")
 	filtering = general_filter(filtering, "size")
 	filtering = general_filter(filtering, "traits")
+	filtering = general_filter(filtering, "sources")
 	filtering = number_filter(filtering)
 	return filtering
 
@@ -249,6 +254,8 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 			current_filter_menu = size_filter_menu
 		"traits":
 			current_filter_menu = trait_filter_menu
+		"sources":
+			current_filter_menu = source_filtering
 	
 	
 	# If no filters are interacted with in the corresponding filter menu, then do not even iterate through the enemies
@@ -258,6 +265,7 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 	# Goes through every enemy, stacks them up to the filter
 	for enemy in enemies_to_filter:
 		searched_traits = []
+		
 		for filter_button in current_filter_menu.filter_container:
 			if rarity_size_traits == "traits":
 				if searched_traits.has(filter_button.trait_name):
@@ -275,7 +283,8 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 					comparison_value = enemy.size
 				"traits":
 					comparison_value = enemy.traits
-			
+				"sources":
+					comparison_value = enemy.source
 			
 			if rarity_size_traits == "traits":
 				for enemy_trait in comparison_value:
@@ -385,8 +394,15 @@ func _on_numbers_filtering_apply_filter():
 func _on_search_bar_text_changed(_new_text):
 	sort_filter_enemies()
 
+func _on_source_filtering_apply_filter() -> void:
+	source_filtering.visible = false
+	sort_filter_enemies()
+
 func _on_numbers_filter_button_pressed():
 	numbers_filtering.visible = !numbers_filtering.visible
+
+func _on_sources_filter_button_pressed() -> void:
+	source_filtering.visible = !source_filtering.visible
 
 func _on_add_to_combat_button_pressed():
 	add_enemy.emit(enemy_sheet.enemy_data)

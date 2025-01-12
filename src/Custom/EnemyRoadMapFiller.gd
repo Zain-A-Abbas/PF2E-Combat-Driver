@@ -2,6 +2,7 @@ extends Node
 
 #region Onreadies
 
+@onready var source_field: LabelDataField = %SourceField
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
@@ -110,6 +111,7 @@ func autofill_clicked() -> void:
 	if level_number < -1 || level_number > 24:
 		return
 	
+	source_field.set_value("Custom Enemy")
 	match option_button.selected:
 		0:
 			fill_brute(level_number)

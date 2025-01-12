@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=3 uid="uid://berrl82k45e5d"]
+
+[ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_vyeff"]
+[ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="2_obc3a"]
+[ext_resource type="Script" path="res://Database/SourceFiltering.gd" id="3_pjkdb"]
+[ext_resource type="Script" path="res://Database/Subfilter.gd" id="4_3lt0a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4xac"]
+bg_color = Color(0.603922, 0.603922, 0.603922, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.462745, 0.462745, 0.462745, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="SourceFiltering" type="PanelContainer"]
+custom_minimum_size = Vector2(1000, 0)
+offset_right = 400.0
+offset_bottom = 100.0
+theme = ExtResource("1_vyeff")
+theme_override_styles/panel = ExtResource("2_obc3a")
+script = ExtResource("3_pjkdb")
+filter_type = "Source"
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="FiltersContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="FilterLabel" type="Label" parent="MarginContainer/FiltersContainer"]
+layout_mode = 2
+theme_type_variation = &"StrikeName"
+theme_override_font_sizes/font_size = 20
+text = "Sources"
+
+[node name="Subfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer" node_paths=PackedStringArray("filter_buttons_container", "filter_options")]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("4_3lt0a")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/ScrollContainer/GridContainer")
+subfilter_name = "Sources"
+filter_options = [null]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/Subfilter"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SubfilterLabel" type="Label" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Size"
+
+[node name="IncludeButton" type="Button" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Include group"
+
+[node name="ExcludeButton" type="Button" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Exclude group"
+
+[node name="ResetButton" type="Button" parent="MarginContainer/FiltersContainer/Subfilter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Reset selection"
+
+[node name="SourceSearch" type="LineEdit" parent="MarginContainer/FiltersContainer/Subfilter"]
+layout_mode = 2
+placeholder_text = "Search among sources"
+
+[node name="ButtonsContainer" type="PanelContainer" parent="MarginContainer/FiltersContainer/Subfilter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_u4xac")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/FiltersContainer/Subfilter/ButtonsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/FiltersContainer/Subfilter/ButtonsContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="GridContainer" type="HFlowContainer" parent="MarginContainer/FiltersContainer/Subfilter/ButtonsContainer/MarginContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ApplyButton" type="Button" parent="MarginContainer/FiltersContainer"]
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Apply filters"
+
+[connection signal="pressed" from="MarginContainer/FiltersContainer/Subfilter/HBoxContainer/IncludeButton" to="MarginContainer/FiltersContainer/Subfilter" method="_on_include_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/Subfilter/HBoxContainer/ExcludeButton" to="MarginContainer/FiltersContainer/Subfilter" method="_on_exclude_button_pressed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/Subfilter/HBoxContainer/ResetButton" to="MarginContainer/FiltersContainer/Subfilter" method="_on_reset_button_pressed"]
+[connection signal="text_changed" from="MarginContainer/FiltersContainer/Subfilter/SourceSearch" to="." method="_on_source_search_text_changed"]
+[connection signal="pressed" from="MarginContainer/FiltersContainer/ApplyButton" to="." method="_on_apply_button_pressed"]

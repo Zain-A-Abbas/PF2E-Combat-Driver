@@ -2,6 +2,7 @@ extends Node
 
 #region Onreadies
 
+@onready var source_field: LabelDataField = %SourceField
 @onready var name_field: LabelDataField = %NameField
 @onready var level_field: LabelDataField = %LevelField
 @onready var perception_field: LabelDataField = %PerceptionField
@@ -79,6 +80,7 @@ func customize_current_enemy():
 	
 	#region General
 	
+	source_field.set_value(enemy_system["details"]["source"]["value"])
 	name_field.set_value(enemy_data["name"])
 	level_field.set_value_num(enemy_system["details"]["level"]["value"])
 	

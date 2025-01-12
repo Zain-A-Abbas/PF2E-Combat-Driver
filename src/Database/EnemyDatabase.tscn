@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bmbtqllw2ypjc"]
+[gd_scene load_steps=14 format=3 uid="uid://bmbtqllw2ypjc"]
 
 [ext_resource type="PackedScene" uid="uid://kg3x603pe2ss" path="res://EnemySheet.tscn" id="1_bdhe6"]
 [ext_resource type="Script" path="res://Database/EnemyDatabase.gd" id="1_oki1l"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bvo7dlcc42sjo" path="res://Database/SizeFiltering.tscn" id="7_r2utg"]
 [ext_resource type="PackedScene" uid="uid://vxjcml8k865s" path="res://Database/TraitFiltering.tscn" id="8_003v4"]
 [ext_resource type="PackedScene" uid="uid://bxm3l24gj3syg" path="res://Database/NumbersFiltering.tscn" id="9_bo4n0"]
+[ext_resource type="PackedScene" uid="uid://berrl82k45e5d" path="res://Database/SourceFiltering.tscn" id="9_clmu4"]
 [ext_resource type="PackedScene" uid="uid://c4mule60b5ehu" path="res://Custom/EnemyCreator.tscn" id="10_fkyqp"]
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="10_p35gr"]
 
@@ -132,6 +133,11 @@ size_flags_horizontal = 0
 size_flags_vertical = 4
 text = "Traits"
 
+[node name="SourcesFilterButton" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Sources"
+
 [node name="ResetButton2" type="Button" parent="PanelContainer/Database/MarginContainer/SortingFiltering"]
 layout_mode = 2
 size_flags_horizontal = 0
@@ -232,11 +238,6 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="TraitFilterMenu" parent="PanelContainer/CenterContainer" instance=ExtResource("8_003v4")]
-unique_name_in_owner = true
-visible = false
-layout_mode = 2
-
 [node name="NumbersFiltering" parent="PanelContainer/CenterContainer" instance=ExtResource("9_bo4n0")]
 unique_name_in_owner = true
 visible = false
@@ -266,6 +267,40 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 sheet = NodePath("../../../Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer2/EnemySheet")
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="TraitFilterMenu" parent="Control" instance=ExtResource("8_003v4")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.15
+anchor_right = 0.8
+anchor_bottom = 0.85
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="SourceFiltering" parent="Control" instance=ExtResource("9_clmu4")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.15
+anchor_right = 0.8
+anchor_bottom = 0.85
+offset_right = 0.0
+offset_bottom = 0.0
+
 [connection signal="text_changed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SearchBar" to="." method="_on_search_bar_text_changed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SortByNameButton" to="." method="_on_sort_by_name_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SortByLevelButton" to="." method="_on_sort_by_level_pressed"]
@@ -273,6 +308,7 @@ sheet = NodePath("../../../Database/DatabaseSheets/MarginContainer/VBoxContainer
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/RarityFilterButton" to="." method="_on_rarity_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SizeFilterButton" to="." method="_on_size_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/TraitsFilterButton" to="." method="_on_traits_filter_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/SourcesFilterButton" to="." method="_on_sources_filter_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/NewEnemyButton" to="." method="_on_new_enemy_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/CustomizeEnemyButton" to="PanelContainer/CenterContainer/EnemyCreatorWindow/EnemyCreator" method="_on_customize_enemy_button_pressed"]
 [connection signal="pressed" from="PanelContainer/Database/MarginContainer/SortingFiltering/EditEnemyButton" to="." method="_on_edit_enemy_button_pressed"]
@@ -281,7 +317,8 @@ sheet = NodePath("../../../Database/DatabaseSheets/MarginContainer/VBoxContainer
 [connection signal="pressed" from="PanelContainer/Database/DatabaseSheets/MarginContainer/VBoxContainer/PanelContainer/AddToCombatButton" to="." method="_on_add_to_combat_button_pressed"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/SizeFilterMenu" to="." method="_on_size_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/RarityFilterMenu" to="." method="_on_rarity_filter_menu_apply_filter"]
-[connection signal="apply_filter" from="PanelContainer/CenterContainer/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
 [connection signal="apply_filter" from="PanelContainer/CenterContainer/NumbersFiltering" to="." method="_on_numbers_filtering_apply_filter"]
 [connection signal="close_requested" from="PanelContainer/CenterContainer/EnemyCreatorWindow" to="." method="enemy_creator_closed"]
 [connection signal="sheet_created" from="PanelContainer/CenterContainer/EnemyCreatorWindow/EnemyCreator" to="." method="_on_enemy_creator_sheet_created"]
+[connection signal="apply_filter" from="Control/TraitFilterMenu" to="." method="_on_trait_filter_menu_apply_filter"]
+[connection signal="apply_filter" from="Control/SourceFiltering" to="." method="_on_source_filtering_apply_filter"]

@@ -1,9 +1,14 @@
+using System.ComponentModel;
+using System.Diagnostics;
 using Godot;
 using Newtonsoft.Json.Linq;
 
 public partial class EnemyFilterInfo : Node
 {
     public string fileReference;
+
+    public string source;
+    static Godot.Collections.Array<string> sources = new Godot.Collections.Array<string>();
 
     public string enemyName;
 
@@ -31,6 +36,11 @@ public partial class EnemyFilterInfo : Node
     public EnemyFilterInfo(JObject enemyData, string fileLocation)
     {
         fileReference = fileLocation;
+        source = (string)enemyData["system"]["details"]["source"]["value"];
+        if (!sources.Contains(source))
+        {
+            sources.Add(source);
+        }
 
         // Adds the system for easier data retrieval here
         JObject enemySystemData = (JObject)enemyData["system"]["attributes"];
@@ -183,5 +193,15 @@ public partial class EnemyFilterInfo : Node
         }
 
         return dictionary;
+    }
+
+    public static Godot.Collections.Array<string> getSources() {
+        Godot.Collections.Array<string> returnSources = new Godot.Collections.Array<string>();
+
+        foreach (string source in sources) {
+            returnSources.Add(source);
+        }
+
+        return returnSources;
     }
 }

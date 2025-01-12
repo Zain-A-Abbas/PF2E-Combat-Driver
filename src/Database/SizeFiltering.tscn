@@ -31,9 +31,10 @@ layout_mode = 2
 theme_type_variation = &"StrikeName"
 text = "Size"
 
-[node name="Subfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer"]
+[node name="Subfilter" type="VBoxContainer" parent="MarginContainer/FiltersContainer" node_paths=PackedStringArray("filter_buttons_container")]
 layout_mode = 2
 script = ExtResource("3_uqko4")
+filter_buttons_container = NodePath("ButtonsContainer/MarginContainer/GridContainer")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/FiltersContainer/Subfilter"]
 layout_mode = 2

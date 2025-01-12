@@ -6,7 +6,7 @@ class_name FilterButton
 @onready var toggle_texture := $MarginContainer/HBoxContainer/ToggleTexture
 @export var trait_name: String = "UNCOMMON" : set = set_trait
 
-const FilterButtonTexture = preload ("res://Icons/FilterButton.tres")
+const FilterButtonTexture = preload("res://Icons/FilterButton.tres")
 
 enum FilterState {
 	NONE,
