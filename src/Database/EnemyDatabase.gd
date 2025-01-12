@@ -414,9 +414,16 @@ func _on_edit_enemy_button_pressed() -> void:
 	new_enemy(true)
 
 
-func _on_enemy_creator_sheet_created():
+func _on_enemy_creator_sheet_created(file_address: String):
 	enemy_creator_window.hide()
-	add_enemies()
+	file_address = ProjectSettings.globalize_path(file_address)
+	print(file_address)
+	var new_db_enemy: Node = csharp_database.processSingleEnemy(file_address)
+	if !new_db_enemy:
+		return
+	enemies.append(new_db_enemy)
+	source_filtering.add_source_on_runtime(new_db_enemy.source)
+	sort_filter_enemies()
 
 
 func enemy_creator_closed() -> void:

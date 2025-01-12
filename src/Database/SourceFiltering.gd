@@ -6,10 +6,24 @@ const FILTER_BUTTON = preload("res://Database/FilterButton.tscn")
 
 func setup(sources: Array):
 	for source in sources:
-		var new_source_filter: FilterButton = FILTER_BUTTON.instantiate()
-		new_source_filter.set_trait(source)
-		sources_container.add_child(new_source_filter)
+		add_new_source(source)
 	set_filter_container()
+
+func add_new_source(new_source: String):
+	var new_source_filter: FilterButton = FILTER_BUTTON.instantiate()
+	new_source_filter.set_trait(new_source)
+	sources_container.add_child(new_source_filter)
+
+func add_source_on_runtime(new_source: String):
+	var source_is_new: bool = true
+	for filter_node in sources_container.get_children():
+		if filter_node is FilterButton:
+			if filter_node.trait_name == new_source:
+				source_is_new = false
+				return
+	
+	if source_is_new:
+		add_new_source(new_source)
 
 func set_filter_container():
 	filter_container = find_children("", "FilterButton", true, false)

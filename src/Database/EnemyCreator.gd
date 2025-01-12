@@ -1,7 +1,7 @@
 extends PanelContainer
 class_name EnemyCreator
 
-signal sheet_created
+signal sheet_created(file_address: String)
 
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
 
@@ -73,8 +73,8 @@ func _on_save_sheet_button_pressed():
 	create_enemy()
 
 
-func _on_enemy_data_formatter_sheet_created() -> void:
-	sheet_created.emit()
+func _on_enemy_data_formatter_sheet_created(file_address: String) -> void:
+	sheet_created.emit(file_address)
 
 
 func _on_customize_enemy_button_pressed() -> void:
