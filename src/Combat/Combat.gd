@@ -129,8 +129,8 @@ func save_validated(path: String):
 		save_data.enemies[enemy_dict_entry] = enemy_combat_data
 		i += 1
 	
-	save_data.party_count = player_count_spinbox.value
-	save_data.party_level = level_spinbox.value
+	save_data.party_count = int(player_count_spinbox.value)
+	save_data.party_level = int(level_spinbox.value)
 	
 	file_save.store_var(save_data.enemies)
 	file_save.store_64(save_data.party_count)

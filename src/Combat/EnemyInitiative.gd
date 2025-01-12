@@ -43,4 +43,4 @@ func _on_init_field_text_changed(new_text: String) -> void:
 	var new_initiative: int = int(new_text)
 	initiative = new_initiative
 	init_field.text = str(initiative)
-	emit_signal("initiative_changed")
+	initiative_changed.emit()

@@ -32,6 +32,9 @@ var enemy_attributes: Dictionary = {}
 # For zooming during runtime
 static var sheet_theme: Theme = load("res://Themes/EnemySheetContext.tres")
 
+func _ready() -> void:
+	senses.meta_clicked.connect(sheet_content_clicked)
+
 func setup(enemy_file, conditions = {}):
 	# Gets the enemy sheet data
 	enemy_data = enemy_file
