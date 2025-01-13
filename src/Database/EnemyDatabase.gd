@@ -332,7 +332,10 @@ func new_enemy():
 
 func _on_enemy_list_item_selected(index):
 	enemy_index = index
-	var enemy_file = FileAccess.open(filtered_sorted_enemies[enemy_index].fileReference, FileAccess.READ)
+	display_enemy(filtered_sorted_enemies[enemy_index].fileReference)
+
+func display_enemy(file_address: String):
+	var enemy_file = FileAccess.open(file_address, FileAccess.READ)
 	var json_conversion = JSON.new()
 	json_conversion.parse(enemy_file.get_as_text())
 	var enemy_data = json_conversion.get_data()
@@ -424,6 +427,7 @@ func _on_enemy_creator_sheet_created(file_address: String, editing: bool, source
 				enemy.source = source
 	source_filtering.add_source_on_runtime(source)
 	sort_filter_enemies()
+	display_enemy(file_address)
 
 
 func enemy_creator_closed() -> void:
