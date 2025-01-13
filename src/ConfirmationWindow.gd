@@ -14,7 +14,7 @@ func confirm_popup(popup_text: String, confirm_button_text: String, cancel_butto
 	yes_button.text = confirm_button_text
 	no_button.text = cancel_button_text
 	show()
-
+	grab_focus()
 
 func _on_yes_button_pressed() -> void:
 	EventBus.popup_confirmed.emit(true)

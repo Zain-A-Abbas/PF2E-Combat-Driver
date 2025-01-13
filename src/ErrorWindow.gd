@@ -9,6 +9,7 @@ func _ready() -> void:
 func error_popup(popup_text: String):
 	error_text.text = popup_text
 	show()
+	grab_focus()
 
 func _on_error_button_pressed() -> void:
 	hide()
