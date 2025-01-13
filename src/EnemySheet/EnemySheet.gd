@@ -129,7 +129,7 @@ func insert_trait(trait_name: String):
 
 func setup_senses():
 	senses.text = ""
-	var perception = "[b]Perception[/b] " + "+" + "[url]" + str(enemy_system["attributes"]["perception"]["value"]) + "[/url]"
+	var perception = "[b]Perception[/b] " + "+" + get_d20_meta(enemy_system["attributes"]["perception"]["value"], "Perception")
 	
 	var enemy_senses: Array[String]
 	if enemy_system["traits"]["senses"] is Array:
@@ -184,7 +184,7 @@ func setup_skills():
 	
 	var i: int = 0
 	for skill in enemy_skills:
-		var skill_text = "[i]" + skill["name"] + "[/i]" + " +" + "[url]" + str(skill["system"]["mod"]["value"]) + "[/url]"
+		var skill_text = "[i]" + skill["name"] + "[/i]" + " +" + get_d20_meta(skill["system"]["mod"]["value"], skill["name"])
 		skills.text += skill_text
 		i += 1
 		if i < enemy_skills.size():
@@ -198,32 +198,32 @@ func setup_ability_mods():
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Str[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["str"]["mod"]) + "[/url]" + ", "
+	abilities.text += "[b]Str[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["str"]["mod"], "STR") + ", "
 	if enemy_system["abilities"]["dex"]["mod"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Dex[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["dex"]["mod"]) + "[/url]" + ", "
+	abilities.text += "[b]Dex[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["dex"]["mod"], "DEX") + ", "
 	if enemy_system["abilities"]["con"]["mod"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Con[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["con"]["mod"]) + "[/url]" + ", "
+	abilities.text += "[b]Con[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["con"]["mod"], "CON") + ", "
 	if enemy_system["abilities"]["int"]["mod"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Int[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["int"]["mod"]) + "[/url]" + ", "
+	abilities.text += "[b]Int[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["int"]["mod"], "INT") + ", "
 	if enemy_system["abilities"]["wis"]["mod"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Wis[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["wis"]["mod"]) + "[/url]" + ", "
+	abilities.text += "[b]Wis[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["wis"]["mod"], "WIS") + ", "
 	if enemy_system["abilities"]["cha"]["mod"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	abilities.text += "[b]Cha[/b] " + positive_negative + "[url]" + str(enemy_system["abilities"]["cha"]["mod"]) + "[/url]"
+	abilities.text += "[b]Cha[/b] " + positive_negative + get_d20_meta(enemy_system["abilities"]["cha"]["mod"], "CHA")
 
 func setup_defensive_abilities():
 	# AC and Saving Throws
@@ -242,17 +242,17 @@ func setup_ac_saves():
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	ac_saves.text += "[b]Fort[/b] " + positive_negative + "[url]" + str(enemy_system["saves"]["fortitude"]["value"]) + "[/url], "
+	ac_saves.text += "[b]Fort[/b] " + positive_negative + get_d20_meta(enemy_system["saves"]["fortitude"]["value"], "Fortitude") + ", "
 	if enemy_system["saves"]["fortitude"]["value"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	ac_saves.text += "[b]Ref[/b] " + positive_negative + "[url]" + str(enemy_system["saves"]["reflex"]["value"]) + "[/url], "
+	ac_saves.text += "[b]Ref[/b] " + positive_negative + get_d20_meta(enemy_system["saves"]["reflex"]["value"], "Reflex") + ", "
 	if enemy_system["saves"]["fortitude"]["value"] > 0:
 		positive_negative = "+"
 	else:
 		positive_negative = ""
-	ac_saves.text += "[b]Will[/b] " + positive_negative + "[url]" + str(enemy_system["saves"]["will"]["value"]) + "[/url]"
+	ac_saves.text += "[b]Will[/b] " + positive_negative + get_d20_meta(enemy_system["saves"]["will"]["value"], "Will")
 	
 	if enemy_attributes["allSaves"]["value"] != "" && enemy_attributes["allSaves"]["value"] != null:
 		ac_saves.text += "; " + enemy_attributes["allSaves"]["value"]
@@ -389,7 +389,8 @@ func setup_other_defensive_abilities():
 			ability_traits = ""
 		
 		# Add description
-		var desc_text = text_interpreter.ability_parser(ability["system"]["description"]["value"])
+		var desc_text: String = text_interpreter.ability_parser(ability["system"]["description"]["value"])
+		desc_text = get_damage_roll_meta(desc_text)
 		new_ability_entry.text = ability_name + action_icon + ability_traits + desc_text
 		defensive_abilities.add_child(new_ability_entry)
 	
@@ -466,13 +467,14 @@ func setup_attacks():
 			var multiple_attack_penalty: int = 5
 			if attack_traits_array.has("agile"):
 				multiple_attack_penalty = 4
-			var attack_bonus_text: String = attack_plus + "[url]" + str(attack_bonus) + "[/url]" + " "
+			var attack_bonus_text: String = attack_plus + get_d20_meta(attack_bonus, "Attack") + " "
 			if attack_bonus - multiple_attack_penalty < 0:
 				attack_plus = ""
-			attack_bonus_text += "[" + attack_plus + "[url]" + str(attack_bonus - multiple_attack_penalty) + "[/url]"
+			attack_bonus_text += "[" + attack_plus + get_d20_meta(attack_bonus - multiple_attack_penalty, "Attack (MAP: -" + str(multiple_attack_penalty) + ")")
 			if attack_bonus - multiple_attack_penalty * 2 < 0:
 				attack_plus = ""
-			attack_bonus_text += "/" + attack_plus + "[url]" + str(attack_bonus - multiple_attack_penalty * 2) + "[/url]" + "] "
+			attack_bonus_text += "/" + attack_plus + get_d20_meta(attack_bonus - multiple_attack_penalty * 2, "Attack (MAP: -" + str(multiple_attack_penalty * 2) + ")")
+			attack_bonus_text += "] "
 			
 			# Traits
 			var attack_traits: String = "("
@@ -493,6 +495,8 @@ func setup_attacks():
 			
 			new_attack_entry.text = melee + attack_icon + attack_name + attack_bonus_text + attack_traits + damage_text
 			attacks.add_child(new_attack_entry)
+			
+			
 	
 	if attacks.get_child_count() > 0:
 		attacks.visible = true
@@ -510,6 +514,8 @@ func get_damage_text(ability: Dictionary) -> String:
 	if system.has("oneLineDamageRoll"):
 		damage_text += system["oneLineDamageRoll"]
 	
+	damage_text = get_damage_roll_meta(damage_text)
+	
 	var extra_text: String = ""
 	if system.has("rules"):
 		var rules: Array = system["rules"]
@@ -526,34 +532,32 @@ func get_damage_text(ability: Dictionary) -> String:
 			predicate = rule["predicate"]
 			var condition_match: RegExMatch
 			for condition: Dictionary in predicate:
-				print("w")
 				if !condition.has("or"):
 					continue
-				print("x")
 				for condition_text: String in condition["or"]:
 					condition_match = condition_regex.search(condition_text)
 					if condition_match == null:
-						print(condition_text)
-						print("y")
 						continue
-				
+					
 					if extra_text == "":
 						extra_text = " ("
-				
+					
 					extra_text += "plus an additional " + rule["dieSize"] + " " + rule["damageType"] + " to creatures with the " + condition_match.strings[1] + " trait"
 		if !extra_text.is_empty():
 			extra_text += ")"
 	
+	extra_text = get_damage_roll_meta(extra_text)
+	
 	damage_text += extra_text
 	
 	return damage_text
+
 
 func setup_spells():
 	var has_spells: bool = false
 	
 	# Holds every individual casting entry an enemy may have
 	var spellcasting_entries = []
-	
 	
 	# Verify that the enemy has spells
 	for ability in enemy_abilities:
@@ -610,7 +614,7 @@ func setup_casting_entry(ability):
 		focus_spell_count = clamp(focus_spell_count, 1, 3)
 	
 	if !is_focus:
-		attack_roll_focus_points_text = "attack +" + "[url]" + str(attack_roll) + "[/url]; "
+		attack_roll_focus_points_text = "attack +" + get_d20_meta(attack_roll, "Focus") +  "; "
 	else:
 		attack_roll_focus_points_text = str(focus_spell_count) + " Focus Points; [b]" + ordinal_numbers(int(ceili(enemy_system["details"]["level"]["value"] / 2))) + "[/b] "
 	
@@ -791,19 +795,68 @@ func setup_offensive_abilities():
 			
 			# Description
 			var ability_description: String = text_interpreter.ability_parser(ability["system"]["description"]["value"])
-			
+			ability_description = get_damage_roll_meta(ability_description)
 			
 			new_offensive_entry.text = ability_name + action_icon + ability_traits + ability_description
 			attacks.add_child(new_offensive_entry)
 			attacks.visible = true
+
+func get_d20_meta(number, type: String):
+	var number_text: String = str(number)
+	
+	var roll_dictionary: Dictionary = {
+		"type": "d20",
+		"rolls": {
+			type: "d20+" + number_text,
+		}
+	}
+	
+	var meta: String = "[url=" + JSON.stringify(roll_dictionary) + "]" + number_text + "[/url]"
+	return meta
+
+
+func get_damage_roll_meta(damage_text: String):
+	var meta: String = damage_text
+	
+	var dice_count: String = "(?:\\d+)?"
+	var dice_number: String = "d(?:\\d+)"
+	var damage_bonus: String = "(?:\\s*\\+\\s*\\d+)?"
+	var element: String = "(\\s+[a-zA-Z-]+)?"
+	var damage_roll_regex: String = "(" + dice_count + dice_number + damage_bonus + ")" + element
+	var roll_regex: RegEx = RegEx.new()
+	roll_regex.compile(damage_roll_regex)
+	var roll_matches: Array[RegExMatch] = roll_regex.search_all(damage_text)
+	if roll_matches.is_empty():
+		return meta
+	for roll_match in roll_matches:
+		var dice_roll: String = roll_match.strings[1]
+		var roll_element: String = "damage"
+		if roll_match.strings.size() > 2:
+			roll_element = roll_match.strings[2].strip_edges()
+		
+		var roll_dictionary: Dictionary = {
+				"type": "damage",
+				"rolls": {
+					roll_element: dice_roll,
+				}
+		}
+		
+		var tag: String = "[url=" + JSON.stringify(roll_dictionary) + "]" + roll_match.strings[0] + "[/url]"
+		meta = meta.replace(roll_match.strings[0], tag)
+	return meta
 
 func create_sheet_content() -> SheetContent:
 	var new_sheet_content: RichTextLabel = SHEET_CONTENT.instantiate()
 	new_sheet_content.meta_clicked.connect(sheet_content_clicked)
 	return new_sheet_content
 
-func sheet_content_clicked(meta):
-	EventBus.emit_signal("d20_rolled", meta.to_int(), enemy_name.text)
+func sheet_content_clicked(meta: Variant):
+	var roll_json: JSON = JSON.new()
+	roll_json.parse(str(meta))
+	
+	var roll_data: Dictionary = roll_json.get_data()
+	EventBus.dice_roll.emit(roll_data, enemy_name.text)
+	#EventBus.emit_signal("d20_rolled", meta.to_int(), enemy_name.text)
 
 func get_sheet_tooltip(tooltip_type, tooltip_reference) -> String:
 	var tooltip_list
