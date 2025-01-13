@@ -1,6 +1,6 @@
 extends Node
 
-signal sheet_created(file_address: String)
+signal sheet_created(file_address: String, editing: bool, source: String)
 
 @onready var source_field: LabelDataField = %SourceField
 @onready var name_field: LabelDataField = %NameField
@@ -175,7 +175,7 @@ func create_enemy(editing: bool = false):
 			new_attack["system"]["oneLineDamageRoll"] = strike_data.strike_damage
 			
 			if strike_data.strike_type == EnemyCreatorStrike.StrikeType.RANGED:
-				new_attack["system"]["weaponType"] = "ranged"
+				new_attack["system"]["weaponType"]["value"] = "ranged"
 				strike_data.traits.append("ranged") # To qualify for showing up as "ranged" on the sheet
 			
 			for attack_trait in strike_data.traits:
@@ -242,7 +242,7 @@ func create_enemy(editing: bool = false):
 	var new_file = FileAccess.open(file_address, FileAccess.WRITE)
 	new_file.store_line(JSON.stringify(new_enemy_sheet, "\t"))
 	new_file.close()
-	sheet_created.emit(file_address)
+	sheet_created.emit(file_address, editing, system["details"]["source"]["value"])
 
 # If defense is false, then offense
 func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: bool = true):

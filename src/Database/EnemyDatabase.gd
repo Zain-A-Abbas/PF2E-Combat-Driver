@@ -323,9 +323,9 @@ func general_filter( enemies_to_filter: Array[Node], rarity_size_traits: String 
 	
 	return enemies_to_filter
 
-func new_enemy(editing: bool):
-	enemy_creator.editing = editing
-	enemy_creator.name_field.line_edit.editable = !editing
+func new_enemy():
+	enemy_creator.editing = false
+	enemy_creator.name_field.line_edit.editable = true
 	enemy_creator_window.show()
 
 # Signals
@@ -408,20 +408,21 @@ func _on_add_to_combat_button_pressed():
 	add_enemy.emit(enemy_sheet.enemy_data)
 
 func _on_new_enemy_button_pressed() -> void:
-	new_enemy(false)
+	new_enemy()
 
-func _on_edit_enemy_button_pressed() -> void:
-	new_enemy(true)
-
-
-func _on_enemy_creator_sheet_created(file_address: String):
+func _on_enemy_creator_sheet_created(file_address: String, editing: bool, source: String):
 	enemy_creator_window.hide()
 	file_address = ProjectSettings.globalize_path(file_address)
-	var new_db_enemy: Node = csharp_database.processSingleEnemy(file_address)
-	if !new_db_enemy:
-		return
-	enemies.append(new_db_enemy)
-	source_filtering.add_source_on_runtime(new_db_enemy.source)
+	if !editing:
+		var new_db_enemy: Node = csharp_database.processSingleEnemy(file_address)
+		if !new_db_enemy:
+			return
+		enemies.append(new_db_enemy)
+	else:
+		for enemy in enemies:
+			if enemy.fileReference == file_address:
+				enemy.source = source
+	source_filtering.add_source_on_runtime(source)
 	sort_filter_enemies()
 
 

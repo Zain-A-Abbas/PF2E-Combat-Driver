@@ -529,20 +529,12 @@ func get_damage_text(ability: Dictionary) -> String:
 			if !rule.has("predicate"):
 				continue
 			
-			predicate = rule["predicate"]
-			var condition_match: RegExMatch
-			for condition: Dictionary in predicate:
-				if !condition.has("or"):
-					continue
-				for condition_text: String in condition["or"]:
-					condition_match = condition_regex.search(condition_text)
-					if condition_match == null:
-						continue
-					
-					if extra_text == "":
-						extra_text = " ("
-					
-					extra_text += "plus an additional " + rule["dieSize"] + " " + rule["damageType"] + " to creatures with the " + condition_match.strings[1] + " trait"
+			var extra_damage_rule: String = evaluate_damage_rule(rule)
+			if extra_damage_rule == "":
+				continue
+			if extra_text == "":
+				extra_text = " ("
+			extra_text += extra_damage_rule
 		if !extra_text.is_empty():
 			extra_text += ")"
 	
@@ -552,6 +544,34 @@ func get_damage_text(ability: Dictionary) -> String:
 	
 	return damage_text
 
+func evaluate_damage_rule(rule: Dictionary) -> String:
+	if !rule.has("dieSize"):
+		return ""
+	var predicate: Array = rule["predicate"]
+	var condition: String
+	if predicate[0] is Dictionary:
+		if predicate[0].has("or"):
+			condition = predicate[0]["or"][0]
+	else:
+		condition = predicate[0]
+	
+	var target_trait_regex: RegEx = RegEx.new()
+	target_trait_regex.compile("target:trait:(.*)")
+	var target_condition_regex: RegEx = RegEx.new()
+	target_condition_regex.compile("target:condition:(.*)")
+	
+	var extra_damage: String = rule["dieSize"]
+	if rule.has("diceNumber"):
+		extra_damage = extra_damage.insert(0, str(rule["diceNumber"]))
+	var condition_text: String = "plus an additional " + extra_damage + " " + rule["damageType"] + " to "
+	if target_trait_regex.search(condition) != null:
+		condition_text += "targets with the " + target_trait_regex.search(condition).strings[1].replace("-", " ") + " trait"
+	elif target_condition_regex.search(condition) != null:
+		condition_text += target_condition_regex.search(condition).strings[1].replace("-", " ") + " targets"
+	else:
+		condition_text += condition.replace("-", " ") + " targets"
+	
+	return condition_text
 
 func setup_spells():
 	var has_spells: bool = false

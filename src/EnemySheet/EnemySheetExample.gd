@@ -155,6 +155,9 @@ const ATTACK_TEMPLATE: Dictionary = {
 		"attackEffects": {
 			"value": []
 		},
+		"weaponType": {
+			"value": "melee"
+		}
 	}
 }
 

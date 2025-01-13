@@ -65,12 +65,14 @@ const ENEMY_CREATOR_STRIKE_CONTAINER = preload("res://Custom/EnemyCreatorStrikeC
 
 var sheet: Sheet
 
-func customize_current_enemy():
+func customize_current_enemy(editing: bool):
 	
 	if sheet == null:
 		return
 	if sheet.enemy_data == {}:
 		return
+	
+	enemy_creator.editing = editing
 	
 	var ability_interpreter: TextInterpreter = TextInterpreter.new()
 	
@@ -83,6 +85,7 @@ func customize_current_enemy():
 	
 	source_field.set_value(enemy_system["details"]["source"]["value"])
 	name_field.set_value(enemy_data["name"])
+	name_field.line_edit.editable = !editing # Can't change if just editing sheet
 	level_field.set_value_num(enemy_system["details"]["level"]["value"])
 	
 	var size: String = Trait.trait_interpreter(enemy_system["traits"]["size"]["value"])
