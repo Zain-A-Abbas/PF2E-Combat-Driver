@@ -3,6 +3,7 @@ extends Node
 @warning_ignore("unused_signal")
 signal d20_rolled(mod)
 
+@warning_ignore("unused_signal")
 signal dice_roll(roll_data: Dictionary, enemy_name: String)
 
 @warning_ignore("unused_signal")

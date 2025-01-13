@@ -77,5 +77,5 @@ func _on_enemy_data_formatter_sheet_created(file_address: String, editing_sheet:
 	sheet_created.emit(file_address, editing_sheet, source)
 
 
-func _on_customize_enemy_button_pressed(editing: bool) -> void:
-	enemy_customizer_setup.customize_current_enemy(editing)
+func _on_customize_enemy_button_pressed(editing_sheet: bool) -> void:
+	enemy_customizer_setup.customize_current_enemy(editing_sheet)

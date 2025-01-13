@@ -55,13 +55,13 @@ func sheet_roll(roll_data: Dictionary, enemy_name: String):
 		var rolled: RolledDice = interpret_roll(roll_data["rolls"][key], key)
 		roll_text += " " + rolled.roll_name + ": " + rolled.roll_results + " = " + str(rolled.roll_total)
 	elif roll_data["type"] == "damage":
-		var total_damage: int = 0
+		#var total_damage: int = 0
 		var keys: Array = roll_data["rolls"].keys()
 		for key in keys:
 			roll_text += "\n"
 			var rolled: RolledDice = interpret_roll(roll_data["rolls"][key], key)
 			roll_text += " " + rolled.roll_results + " = " + str(rolled.roll_total) + " " + rolled.roll_name
-			total_damage += rolled.roll_total
+			#total_damage += rolled.roll_total
 	text += roll_text
 
 func interpret_roll(roll: String, roll_name: String) -> RolledDice:

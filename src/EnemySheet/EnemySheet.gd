@@ -519,7 +519,6 @@ func get_damage_text(ability: Dictionary) -> String:
 	var extra_text: String = ""
 	if system.has("rules"):
 		var rules: Array = system["rules"]
-		var predicate: Array
 		var condition_regex: RegEx = RegEx.new()
 		condition_regex.compile("target:trait:(.*)")
 		for rule: Dictionary in rules:
