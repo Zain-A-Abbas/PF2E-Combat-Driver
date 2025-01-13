@@ -305,7 +305,7 @@ func setup_hp_immunities_weaknesses():
 											k += 1
 											if k < resistance["doubleVs"].size():
 												hp_resistances.text += ", "
-									hp_resistances.text += ")"
+						hp_resistances.text += ")"
 				
 				if resistance.has("doubleVs") && !double_vs:
 					if resistance["doubleVs"].size() > 0:
@@ -648,7 +648,7 @@ func setup_casting_entry(ability):
 	if !is_focus:
 		# Find spells then sort by level
 		
-		spell_list.text += "[ul]"
+		spell_list.text += "[ul bullet=•]"
 		
 		var has_normal_spells: bool = false
 		var has_cantrips: bool = false
@@ -711,7 +711,7 @@ func setup_casting_entry(ability):
 					spell_level_text += ", "
 				# Makes the last spell end with "; " instead of ", "
 				spell_level_text[-2] = ";"
-				spell_list.text += spell_level_text + "\n"
+				spell_list.text += " " + spell_level_text + "\n"
 
 		# Add cantrips to the spell list
 		if has_cantrips:

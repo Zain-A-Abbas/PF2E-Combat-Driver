@@ -15,7 +15,8 @@ func ability_parser(ability_text: String) -> String:
 	parsed_description = damage_parser(parsed_description)
 	parsed_description = damage_parser2(parsed_description)
 	parsed_description = damage_parser3(parsed_description)
-	parsed_description = spell_parser(parsed_description)
+	parsed_description = srd_parser(parsed_description, "spells-srd")
+	parsed_description = srd_parser(parsed_description, "equipment-srd")
 	parsed_description = save_parser(parsed_description)
 	parsed_description = recharge_parser(parsed_description)
 	parsed_description = action_parser(parsed_description)
@@ -153,17 +154,16 @@ func damage_parser3(description_text: String) -> String:
 	var damage_text = damage_strings.strings[1] + " " + damage_strings.strings[2]
 	return damage_parser3(regex.sub(description_text, damage_text))
 
-
 ## Gets spell names from @UUID[Compendium.pf2e.spells-srd.Item.X]
 # TD: Add URL here for spell previews.
-func spell_parser(description_text: String) -> String:
+func srd_parser(description_text: String, srd_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@UUID\\[Compendium\\.pf2e\\.spells-srd\\.Item\\.(.*?)\\]")
+	regex.compile("@UUID\\[Compendium\\.pf2e\\." + srd_text + "\\.Item\\.(.*?)\\]")
 	var damage_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text
 	var spell_text = damage_strings.strings[1]
-	return spell_parser(regex.sub(description_text, spell_text))
+	return srd_parser(regex.sub(description_text, spell_text), srd_text)
 
 ## Get saves from @Check[type:X|dc:Y|Z]
 func save_parser(description_text: String) -> String:
@@ -254,7 +254,7 @@ func list_parser(description_text: String) -> String:
 	# Sets start and end point of list
 	var ul_pos: int = description_text.find("<ul>")
 		# +5 is to account for </ul> itself
-		
+	
 	var ul_end_len: int = description_text.find("</ul>") - description_text.find("<ul>") + 5
 	var list_text: String = description_text.substr(ul_pos, ul_end_len)
 	var list_items: PackedStringArray = list_text.split("</li> <li>")
@@ -275,10 +275,11 @@ func list_parser(description_text: String) -> String:
 	
 	# Finally edits the list into new_description and returns that
 	var new_description: String = description_text
-	var formatted_list: String = "\n [ul]"
+	var formatted_list: String = "[ul bullet=•]"
 	for list_item in list_items:
-		formatted_list += list_item + "\n"
-	formatted_list += "[/ul]\n "
+		formatted_list += " " + list_item + "\n"
+	formatted_list += "[/ul]"
+	
 	
 	new_description = new_description.erase(ul_pos, ul_end_len)
 	new_description = new_description.insert(ul_pos, formatted_list)
