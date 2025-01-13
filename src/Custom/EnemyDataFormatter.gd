@@ -176,7 +176,6 @@ func create_enemy(editing: bool = false):
 			
 			if strike_data.strike_type == EnemyCreatorStrike.StrikeType.RANGED:
 				new_attack["system"]["weaponType"]["value"] = "ranged"
-				strike_data.traits.append("ranged") # To qualify for showing up as "ranged" on the sheet
 			
 			for attack_trait in strike_data.traits:
 				new_attack["system"]["traits"]["value"].append(attack_trait)
