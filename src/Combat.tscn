@@ -187,6 +187,20 @@ theme_override_constants/separation = 0
 layout_mode = 2
 text = "Clear Results"
 
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons"]
+layout_mode = 2
+
+[node name="CustomRollLine" type="LineEdit" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "d20"
+
+[node name="CustomRollButton" type="Button" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Custom Roll"
+
 [node name="GridContainer" type="GridContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -382,6 +396,8 @@ layout_mode = 2
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/RerollInitiativeButton" to="." method="_on_reroll_initiative_button_pressed"]
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer/Initiative/InitiativeMargins/VBoxContainer/InitiativeOptions/CopyInitiativeButton" to="." method="_on_copy_initiative_button_pressed"]
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/ClearDice" to="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/ScrollContainer/Results" method="_on_clear_dice_pressed"]
+[connection signal="text_submitted" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/HBoxContainer/CustomRollLine" to="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/ScrollContainer/Results" method="roll_custom_dice"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/DiceButtons/HBoxContainer/CustomRollButton" to="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/ScrollContainer/Results" method="_on_custom_roll_button_pressed"]
 [connection signal="tab_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker" to="." method="_on_encounter_tracker_tab_changed"]
 [connection signal="pressed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/BlankEnemyButton" to="." method="add_enemy_from_sheet" binds= [{}]]
 [connection signal="value_changed" from="PanelContainer/HBoxContainer/TrackerSheetSplit/EncounterTracker/Encounter A/EXPTotal/MarginContainer/HBoxContainer/HBoxContainer/HBoxContainer/LevelSpinbox" to="." method="_on_encounter_spinboxes_changed"]

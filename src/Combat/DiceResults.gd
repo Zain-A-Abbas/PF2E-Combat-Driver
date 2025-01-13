@@ -7,6 +7,8 @@ extends Label
 @onready var d_12_button: Button = %d12Button
 @onready var d_20_button: Button = %d20Button
 @onready var d_100_button: Button = %d100Button
+@onready var custom_roll_line: LineEdit = %CustomRollLine
+@onready var custom_roll_button: Button = %CustomRollButton
 
 var last_enemy: String
 
@@ -44,21 +46,22 @@ func d20_with_mod(mod: int, enemy_name: String):
 func sheet_roll(roll_data: Dictionary, enemy_name: String):
 	var roll_text: String = ""
 	# If enemy isn't the last one in the roll text, then add a new line and heir name
-	if enemy_name != last_enemy:
+	if enemy_name != last_enemy && enemy_name != "":
 		if text != "":
 			text += "\n"
-		last_enemy = enemy_name
 		roll_text += enemy_name + ":"
+	last_enemy = enemy_name
 	if roll_data["type"] == "d20":
 		roll_text += "\n"
 		var key: String = roll_data["rolls"].keys()[0]
 		var rolled: RolledDice = interpret_roll(roll_data["rolls"][key], key)
 		roll_text += " " + rolled.roll_name + ": " + rolled.roll_results + " = " + str(rolled.roll_total)
-	elif roll_data["type"] == "damage":
+	elif roll_data["type"] == "damage" || roll_data["type"] == "custom":
 		#var total_damage: int = 0
 		var keys: Array = roll_data["rolls"].keys()
 		for key in keys:
-			roll_text += "\n"
+			if roll_data["type"] == "damage" || text != "":
+				roll_text += "\n"
 			var rolled: RolledDice = interpret_roll(roll_data["rolls"][key], key)
 			roll_text += " " + rolled.roll_results + " = " + str(rolled.roll_total) + " " + rolled.roll_name
 			#total_damage += rolled.roll_total
@@ -100,6 +103,19 @@ func interpret_roll(roll: String, roll_name: String) -> RolledDice:
 	
 	return rolled
 
+func roll_custom_dice(custom_text: String):
+	var dice: Dictionary = {
+		"type": "custom",
+		"rolls": {
+			"": custom_text.replace(" ", "")
+		},
+	}
+	sheet_roll(dice, "")
+
 func _on_clear_dice_pressed():
 	text = ""
 	last_enemy = ""
+
+
+func _on_custom_roll_button_pressed() -> void:
+	roll_custom_dice(custom_roll_line.text)
