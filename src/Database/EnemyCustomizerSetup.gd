@@ -138,10 +138,10 @@ func customize_current_enemy(editing: bool):
 				rarity_button.select(3)
 			_:
 				rarity_button.select(0)
-	if !enemy_system["traits"]["value"].has(rarity_text):
+	'if !enemy_system["traits"]["value"].has(rarity_text):
 			if traits_text_edit.text != "":
 				traits_text_edit.text += ", "
-			traits_text_edit.text += rarity_text
+			traits_text_edit.text += rarity_text'
 	
 	# Speeds
 	for child in speed_field_v_box.get_children():
