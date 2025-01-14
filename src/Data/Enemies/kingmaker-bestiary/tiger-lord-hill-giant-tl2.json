@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "YJR2VSzinZXYbwkd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm"
             },
             "img": "systems/pf2e/icons/equipment/weapons/greatclub.webp",
             "name": "Greatclub",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "greatclub",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 2
                 },
                 "category": "martial",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 2,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "club",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,49 +65,44 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 1
+                },
                 "size": "lg",
                 "slug": "greatclub",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "backswing",
-                        "evocation",
                         "magical",
                         "shove"
                     ]
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "R7WS5l7jScWRr53y",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 200000,
             "system": {
                 "acBonus": 3,
                 "baseItem": "hide-armor",
+                "bulk": {
+                    "value": 2
+                },
                 "category": "medium",
                 "checkPenalty": -2,
                 "containerId": null,
@@ -140,9 +115,6 @@
                     "inSlot": true,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": "2"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -152,69 +124,48 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "lg",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
-                "stackGroup": null,
                 "strength": 2,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "3"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "XwujWRcPvBs2BAHX",
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/sack.webp",
+            "img": "icons/containers/bags/sack-simple-leather-brown.webp",
             "name": "Sack for Holding Rocks",
             "sort": 300000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0
+                },
                 "containerId": null,
                 "description": {
                     "value": ""
@@ -224,9 +175,6 @@
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "hardness": 0,
                 "hp": {
                     "max": 0,
@@ -235,35 +183,28 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "equipment"
@@ -274,30 +215,19 @@
             "name": "Rock",
             "sort": 400000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 0,
+                "bulk": {
                     "value": 0
                 },
-                "consumableType": {
-                    "value": "ammo"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "ammo",
                 "containerId": null,
+                "damage": null,
                 "description": {
                     "value": ""
                 },
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -307,26 +237,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 5,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -334,8 +260,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "-"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -370,11 +298,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -414,11 +344,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -459,11 +391,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -478,57 +412,13 @@
             "type": "melee"
         },
         {
-            "_id": "NDm80a7dNC5LKMIS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "T1WSPSyMbIh6gzFQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uG0Z8PsyZtsYuvGR"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uG0Z8PsyZtsYuvGR"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Catch Rock",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -540,23 +430,35 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.CatchRock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "catch-rock",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "catch-rock"
+                        ],
+                        "selector": [
+                            "ac",
+                            "saving-throw"
+                        ],
+                        "type": "circumstance",
+                        "value": 4
+                    }
+                ],
                 "slug": "catch-rock",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -565,7 +467,7 @@
             "_id": "XU7E8CJIc6dwyRml",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockback",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -577,34 +479,28 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The hill giant's last action was a successful melee Strike</p>\n<p><strong>Effect</strong> The hill giant's swing drives their enemy back. They push the foe back 5 feet, with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.Item.Shove]. The hill giant can follow the foe as normal on a successful Shove.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "093ZnioHRqaohRiq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Throw Rock",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -616,23 +512,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ThrowRock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "throw-rock",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -641,7 +530,7 @@
             "_id": "xEHY10Oxi5BJJCmQ",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Wide Swing",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -653,72 +542,19 @@
                 "description": {
                     "value": "<p>The hill giant makes a single greatclub Strike and compares the attack roll result to the ACs of up to two foes within its reach.</p>\n<p>This counts as two attacks for the hill giant's multiple attack penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "JCIT1A7JjlTVTE77",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "cErOQRFr9TYEuwmw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Tiger Lord Hill Giant (TL2)",
@@ -757,31 +593,42 @@
                 "temp": 0,
                 "value": 250
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 20
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 35
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Variant hill giant",
-            "creatureType": "Giant",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "jotun"
+                ]
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "<p>Selfish and crude, these rough-skinned raiders are bullies and ultimately cowards. Quick-tempered and fond of violence, a hill giant gladly raids and pillages the defenseless but is quick to flee from those who are bigger, stronger, or better organized than they are. A hill giant is never above shoving or tricking one of their own kind to slow down their opponent or get the best loot.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They are divided into a number of subtypes.</p>",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 20,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -798,27 +645,23 @@
                 "value": 22
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 25
+            },
+            "intimidation": {
+                "base": 20
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "jotun"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "chaotic",
                 "earth",
+                "evil",
                 "giant",
                 "humanoid"
             ]

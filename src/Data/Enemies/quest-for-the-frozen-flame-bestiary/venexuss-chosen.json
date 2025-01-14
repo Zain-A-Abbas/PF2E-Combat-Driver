@@ -14,86 +14,28 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
                     "slot3": {
                         "max": 1,
-                        "prepared": {},
                         "value": 1
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 24,
                     "item": 0,
@@ -131,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -179,11 +123,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -200,94 +146,10 @@
             "type": "melee"
         },
         {
-            "_id": "nzCdcKaS0IlddCqU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "AMyNKtfPhwh2DHdi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "sk6mstkla6974kgr",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Tail Lash",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -297,22 +159,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature within reach of the chosen's tail Strike uses an action to Strike or attempt a skill check</p><hr />\n<p><strong>Effect</strong> Venexus's chosen attempts to Strike the triggering creature with their tail. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Tail Lash (Attack Roll)]</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Tail Lash (Skill Check)]</p>"
+                    "value": "<p><strong>Trigger</strong> A creature within reach of the chosen's tail Strike uses an action to Strike or attempt a skill check</p><hr />\n<p><strong>Effect</strong> Venexus's chosen attempts to Strike the triggering creature with their tail. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Tail Lash]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -321,7 +179,7 @@
             "_id": "botjbmmlqthtuyvr",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -333,25 +191,20 @@
                 "description": {
                     "value": "<p>Venexus's chosen changes between their humanoid shape and hybrid shape. They gain a tail unarmed Strike while in their hybrid shape.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -360,7 +213,7 @@
             "_id": "n9wb07dzz79rvza3",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Flurry of Blows",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -372,20 +225,21 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Venexus's chosen makes two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -394,7 +248,7 @@
             "_id": "7d6owc4c3ssmh5wv",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ice Walk",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -406,20 +260,16 @@
                 "description": {
                     "value": "<p>Venexus's chosen ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -428,7 +278,7 @@
             "_id": "mkw6u7li3sp8qn94",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Powerful Fists",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -440,34 +290,28 @@
                 "description": {
                     "value": "<p>Venexus's chosen's fist Strikes are treated as cold iron and silver, and the chosen doesn't take penalties when making lethal attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "yU3OApyfsJlQV2Ki",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -479,118 +323,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "sjdty4fx9i5pcos5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7x7zac2y2jte7vg4",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vxhwnwtegwqmm5mx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4xdcqryj597prqij",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Venexus's Chosen",
@@ -629,12 +374,6 @@
                 "temp": 0,
                 "value": 115
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 14
-            },
             "resistances": [
                 {
                     "type": "cold",
@@ -654,19 +393,42 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "Dragonkin monks",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "draconic",
+                    "hallit"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #176: Lost Mammoth Valley"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #176: Lost Mammoth Valley"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 14,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -683,27 +445,31 @@
                 "value": 14
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 14
+            },
+            "athletics": {
+                "base": 11
+            },
+            "intimidation": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "draconic",
-                    "hallit"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "beast",
                 "beastkin",
-                "humanoid"
+                "evil",
+                "humanoid",
+                "lawful"
             ]
         }
     },

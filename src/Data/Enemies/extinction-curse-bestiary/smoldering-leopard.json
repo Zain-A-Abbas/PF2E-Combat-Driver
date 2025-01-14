@@ -32,15 +32,18 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "finesse"
+                        "finesse",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -77,16 +80,19 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "finesse"
+                        "finesse",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -96,94 +102,10 @@
             "type": "melee"
         },
         {
-            "_id": "SBj6G1VOAt4Bk46Z",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "eJ1kLbGFLHyRoqnW",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "kBizs5Rm1STeq41l",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Aura of Smoke",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -193,10 +115,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>Every creature within the aura is @UUID[Compendium.pf2e.conditionitems.Item.Concealed]; smoldering leopards can see through this concealment.</p>"
+                    "value": "<p>10 feet. Every creature within the aura is @UUID[Compendium.pf2e.conditionitems.Item.Concealed]; smoldering leopards can see through this concealment.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -216,18 +140,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -236,7 +151,7 @@
             "_id": "URItNOOpBctKvf7C",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Pounce",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -248,23 +163,16 @@
                 "description": {
                     "value": "<p>The smoldering leopard Strides and makes a Strike at the end of that movement. If the leopard began this action @UUID[Compendium.pf2e.conditionitems.Item.Hidden], it remains hidden until after making this ability's Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -273,7 +181,7 @@
             "_id": "tkLePiTdXXB3VbWz",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Scorching Maul",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -283,39 +191,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The smoldering leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]. A creature hit by both claw Strikes also takes [[/r 1d4[persistent,fire]]] damage. Both attacks count toward its multiple attack penalty, but the penalty increases only after both attacks are made.</p>"
+                    "value": "<p>The smoldering leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]. A creature hit by both claw Strikes also takes @Damage[1d4[persistent,fire]] damage. Both attacks count toward its multiple attack penalty, but the penalty increases only after both attacks are made.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "WLQETe40LtIHyPGa",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -325,10 +224,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The smoldering leopard deals an extra 1d4 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>The smoldering leopard deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -337,138 +238,25 @@
                         "dieSize": "d4",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "1NJ1ppP9J1Xh5wdM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Q2f4p5YaVeShhWE3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "OLaJWLiujGgz8HCl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.DimLightOrDarkness",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "lighting:dim-light",
-                                    "lighting:darkness"
-                                ]
-                            }
-                        ],
-                        "selector": "stealth",
-                        "value": 3
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+14 in dim light or darker",
-                        "options": "lighting:dim-light,lighting:darkness"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Smoldering Leopard",
@@ -507,12 +295,6 @@
                 "temp": 0,
                 "value": 45
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 11
-            },
             "resistances": [
                 {
                     "type": "electricity",
@@ -534,25 +316,44 @@
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 3
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #151: The Show Must Go On"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #151: The Show Must Go On"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 11,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -569,22 +370,41 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 11
+            },
+            "athletics": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 11,
+                "special": [
+                    {
+                        "base": 14,
+                        "label": "in dim light or darker",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "lighting:dim-light",
+                                    "lighting:darkness"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "animal",
-                "fiend"
+                "evil",
+                "fiend",
+                "unholy"
             ]
         }
     },

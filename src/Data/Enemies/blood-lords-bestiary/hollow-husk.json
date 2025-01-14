@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "Owzvlnvanp7SlDUu",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -66,11 +66,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -82,52 +84,10 @@
             "type": "melee"
         },
         {
-            "_id": "H726yVfOBE8Tf9Hx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "uKEQE3CkbxKUUsUH",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -139,34 +99,28 @@
                 "description": {
                     "value": "<p>A hollow husk is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "AVE4gXE6GDmGnEon",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 500000,
+            "name": "Void Healing",
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -178,8 +132,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -190,18 +146,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -210,7 +157,7 @@
             "_id": "VV1cgiDjco87IMUF",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Memory Drain",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -220,36 +167,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The hollow husk has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> Memories flow from the grabbed creature into the empty void that is the hollow husk's mind. The hollow husk deals the creature @Damage[3d6[mental]] damage, and the creature must attempt a @Check[type:will|dc:16|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>"
+                    "value": "<p><strong>Requirements</strong> The hollow husk has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> Memories flow from the grabbed creature into the empty void that is the hollow husk's mind. The hollow husk deals the creature @Damage[3d6[mental]] damage, and the creature must attempt a @Check[will|dc:16|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "8HBRyEneqU4oAH3V",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -261,49 +202,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "NrueXMn2iQGBwdXM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Hollow Husk",
@@ -337,7 +248,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 130,
                 "temp": 0,
                 "value": 130
@@ -359,19 +270,13 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -381,19 +286,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #183: Field of Maidens"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #183: Field of Maidens"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -410,22 +329,21 @@
                 "value": 11
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 14
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

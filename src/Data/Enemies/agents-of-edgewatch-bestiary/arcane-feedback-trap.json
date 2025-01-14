@@ -18,27 +18,19 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature in area <strong>E1</strong> casts an arcane spell or uses an arcane ability</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a stone spike attack against the triggering creature. For the next 1 minute thereafter, the ripples are stronger, giving the trap a +2 circumstance bonus on stone spike Strikes during this time.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "earth",
-                        "evocation"
+                        "earth"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -68,11 +60,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -107,17 +101,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A spike of stone bursts from the south wall and quickly retracts.</p>",
-            "disable": "<p>@Check[type:arcana|dc:33|name:Quell Rippling Stone] (master) to quell the rippling stone or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (7th level, counteract DC 31) to dispel the magical feedback.</p>",
+            "disable": "<p>@Check[arcana|dc:33|name:Quell Rippling Stone] (master) to quell the rippling stone or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (7th level, counteract DC 31) to dispel the magical feedback.</p>",
             "isComplex": false,
             "level": {
                 "value": 13
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #160: Assault on Hunting Lodge Seven"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #160: Assault on Hunting Lodge Seven"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

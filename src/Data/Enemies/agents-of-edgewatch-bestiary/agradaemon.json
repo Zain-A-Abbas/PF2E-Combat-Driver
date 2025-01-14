@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,17 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
-                    "value": true
+                    "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": true
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 41,
                     "item": 0,
@@ -103,56 +40,48 @@
                 },
                 "tradition": {
                     "value": "divine"
-                }
+                },
+                "traits": {}
             },
             "type": "spellcastingEntry"
         },
         {
             "_id": "ISPwI38E07yEA3SH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.10VcmSYNBrvBphu1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.10VcmSYNBrvBphu1"
             },
             "img": "systems/pf2e/icons/spells/massacre.webp",
             "name": "Massacre",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "9d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "9d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You unleash a wave of necromantic energy to snuff out the life force of those in its path. Each living creature of 19th level or lower in the line must attempt a Fortitude save. If the damage from massacre reduces a creature to 0 Hit Points, that creature dies instantly. If massacre doesn't kill even a single creature, the negative energy violently explodes back toward you, dealing an additional 30 negative damage to every living creature in the line (even those above 19th level) and 30 negative damage to you.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 10d6 negative damage.</p>\n<p><strong>Failure</strong> The creature takes 115 negative damage.</p>\n<p><strong>Critical Failure</strong> The creature dies.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> The spell can affect living creatures up to 19th level. Increase the damage to 10d6 on a success, and to 115 on a failure.</p>"
+                    "value": "<p>You unleash a wave of necromantic energy to snuff out the life force of those in its path. Each living creature of 19th level or lower in the line must attempt a Fortitude save. If the damage from massacre reduces a creature to 0 Hit Points, that creature dies instantly. If massacre doesn't kill even a single creature, the void energy violently explodes back toward you, dealing an additional 30 void damage to every living creature in the line (even those above 19th level) and 30 void damage to you.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 10d6 void damage.</p>\n<p><strong>Failure</strong> The creature takes 115 void damage.</p>\n<p><strong>Critical Failure</strong> The creature dies.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> The spell can affect living creatures up to 19th level. Increase the damage to 10d6 on a success, and to 115 on a failure.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 10
@@ -160,109 +89,81 @@
                 "location": {
                     "value": "9jJY47nOXFMztxEo"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "massacre",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
             "type": "spell"
         },
         {
-            "_id": "iJKwN1LKbDQCHSDb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv"
-                }
+            "_id": "GZQV926XjVkLi7Ji",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv"
             },
             "img": "systems/pf2e/icons/spells/volcanic-eruption.webp",
             "name": "Volcanic Eruption",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
+                "area": {
+                    "type": "cylinder",
+                    "value": 5
                 },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "fire"
-                            },
-                            "value": "14d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "14d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
-                    "value": "<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 16d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take 4d6 fire damage from the intense heat, regardless of the results of their saving throws.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>"
+                    "value": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take @Damage[(@item.rank -4)d6[fire]] damage from the intense heat, regardless of the results of their saving throws.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Volcanic Eruption]</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -272,64 +173,42 @@
                     "type": "interval"
                 },
                 "level": {
-                    "value": 8
+                    "value": 7
                 },
                 "location": {
+                    "heightenedLevel": 8,
                     "uses": {
                         "max": 3,
                         "value": 3
                     },
                     "value": "9jJY47nOXFMztxEo"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "volcanic-eruption",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -337,42 +216,26 @@
         },
         {
             "_id": "iQcx2fN9o92Zwsh3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
             },
-            "img": "systems/pf2e/icons/spells/dimension-door.webp",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
             "name": "Dimension Door",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -380,56 +243,33 @@
                 "location": {
                     "value": "9jJY47nOXFMztxEo"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "1 mile"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "dimension-door",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "teleportation",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
                     ]
                 }
             },
@@ -437,42 +277,26 @@
         },
         {
             "_id": "X8cGGECu7Z03n3qr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
             },
-            "img": "systems/pf2e/icons/spells/dimension-door.webp",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
             "name": "Dimension Door (At Will)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -480,56 +304,33 @@
                 "location": {
                     "value": "9jJY47nOXFMztxEo"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "dimension-door",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "teleportation",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
                     ]
                 }
             },
@@ -537,45 +338,29 @@
         },
         {
             "_id": "GxUTTFPLkoN92z94",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
             },
             "img": "systems/pf2e/icons/spells/detect-alignment.webp",
             "name": "Detect Alignment (At Will) (Good Only)",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -583,56 +368,33 @@
                 "location": {
                     "value": "9jJY47nOXFMztxEo"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "detect-alignment",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "detection",
-                        "divination"
+                        "manipulate"
                     ]
                 }
             },
@@ -664,17 +426,19 @@
                     },
                     "4pws1y4thvpvjsvu61n0qb": {
                         "damage": "2d6",
-                        "damageType": "evil"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -682,7 +446,8 @@
                         "evil",
                         "finesse",
                         "magical",
-                        "reach-15"
+                        "reach-15",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -726,16 +491,19 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "range-increment-100",
-                        "splash"
+                        "splash",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -745,52 +513,10 @@
             "type": "melee"
         },
         {
-            "_id": "j2lpHYGglR2Lc1Ut",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 900000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "K287MomJCMfPXPLf",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Smoke Vision",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -802,65 +528,16 @@
                 "description": {
                     "value": "<p>Smoke doesn't impair an agradaemon's vision; it ignores the concealed condition from smoke.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "HCuDpfMGf5F5xT6L",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -869,7 +546,7 @@
             "_id": "eTWouqSZqarzUigD",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+1 Status to All Saves vs. Magic",
-            "sort": 1200000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -881,8 +558,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -904,18 +583,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -924,7 +594,7 @@
             "_id": "n9d7kqBHgMv3tOmv",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Choking Smog",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -934,10 +604,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:100]{100 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>The agradaemon is surrounded by ashy smoke. Creatures within the aura are concealed, and creatures outside of it are concealed to creatures within it. Non-daemon creatures can't breathe in the aura and must hold their breath or suffocate.</p>"
+                    "value": "<p>100 feet. The agradaemon is surrounded by ashy smoke. Creatures within the aura are concealed, and creatures outside of it are concealed to creatures within it. Non-daemon creatures can't breathe in the aura and must hold their breath or suffocate.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -946,15 +618,11 @@
                         "slug": "choking-smog",
                         "traits": [
                             "air",
-                            "aura",
                             "fire"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -962,12 +630,6 @@
                         "aura",
                         "fire"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -976,7 +638,7 @@
             "_id": "fC6dc9AdYYKBeuWn",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Daemonic Pledge",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -986,29 +648,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The agradaemon designates a single willing mortal as a pledged fanatic. That creature gains resistance to fire equal to its level, immunity to the agradaemon's choking smog aura, and smoke vision.</p>\n<p>The agradaemon can have up to 10 pledged fanatics at one time and can remove the status from any number of pledged fanatics as a free action with the concentrate trait. The status can also be removed with an <em>@UUID[Compendium.pf2e.spells-srd.Item.Atone]</em> ritual.</p>"
+                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The agradaemon designates a single willing mortal as a pledged fanatic. That creature gains resistance to fire equal to its level, immunity to the agradaemon's choking smog aura, and smoke vision.</p>\n<p>The agradaemon can have up to 10 pledged fanatics at one time and can remove the status from any number of pledged fanatics as a free action with the concentrate trait. The status can also be removed with an @UUID[Compendium.pf2e.spells-srd.Item.Atone] ritual.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "healing",
-                        "necromancy"
+                        "healing"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1017,7 +676,7 @@
             "_id": "pnx6alHWYJ3kLnBW",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Proven Devotion",
-            "sort": 1500000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1027,16 +686,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The agradaemon regains 15 Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p>\n<p>A pledged creature that dies in this way explodes and deals @Damage[9d10[fire]] damage in a @Template[type:emanation|distance:20] (@Check[type:reflex|dc:41|basic:true] save).</p>"
+                    "value": "<p>The agradaemon regains @Damage[15[untyped]] Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p>\n<p>A pledged creature that dies in this way explodes and deals @Damage[9d10[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:41|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1044,26 +702,18 @@
                         "evil",
                         "fire"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "JNMs0qEBFo57y0tr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Rend",
-            "sort": 1600000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1075,118 +725,19 @@
                 "description": {
                     "value": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "rend",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "VM9iSuJHM8eq0cmA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 37
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "sjMiqwoevAZxToVI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 37
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7QDnqyFpT0wi4meR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 37
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "HMMIa6ftwtvzYjZt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 39
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Agradaemon",
@@ -1233,12 +784,6 @@
                     "type": "fire"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 31
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -1254,25 +799,39 @@
                     "value": 20
                 },
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 20
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "telepathy 100 feet",
+                "value": [
+                    "common",
+                    "daemonic",
+                    "pyric"
+                ]
+            },
             "level": {
                 "value": 19
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #162: Ruins of the Radiant Siege"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #162: Ruins of the Radiant Siege"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 31,
+            "senses": []
         },
         "resources": {
             "focus": {
@@ -1294,30 +853,31 @@
                 "value": 31
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 37
+            },
+            "deception": {
+                "base": 37
+            },
+            "diplomacy": {
+                "base": 37
+            },
+            "intimidation": {
+                "base": 39
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "Telepathy 100 feet",
-                "selected": [],
-                "value": [
-                    "common",
-                    "daemonic",
-                    "ignan"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "grg"
             },
             "value": [
                 "daemon",
+                "evil",
                 "fiend",
-                "fire"
+                "fire",
+                "unholy"
             ]
         }
     },

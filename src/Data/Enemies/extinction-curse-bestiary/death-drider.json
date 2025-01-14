@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -66,11 +68,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -84,56 +88,43 @@
             "type": "melee"
         },
         {
-            "_id": "s2ZCoyccvRlVnT8V",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "_id": "89iNsonBI863Pvyb",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Sack of Spiders",
             "sort": 300000,
             "system": {
                 "actionType": {
-                    "value": "passive"
+                    "value": "reaction"
                 },
                 "actions": {
                     "value": null
                 },
-                "category": "interaction",
+                "category": "defensive",
+                "deathNote": true,
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p><strong>Trigger</strong> The death drider is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The death drider explodes in a shower of spiders. Each adjacent creature must succeed at a @Check[reflex|dc:31|traits:damaging-effect] save or take @Damage[3d6[piercing]] damage and be exposed to death drider venom.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "bcrG00wkCK5L7uZE",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -146,8 +137,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -158,56 +151,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "89iNsonBI863Pvyb",
-            "img": "systems/pf2e/icons/actions/Reaction.webp",
-            "name": "Sack of Spiders",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "reaction"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p><strong>Trigger</strong> The death drider is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The death drider explodes in a shower of spiders. Each adjacent creature must succeed at a @Check[type:reflex|dc:31|traits:damaging-effect] save or take @Damage[3d6[piercing]] damage and be exposed to death drider venom.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -216,6 +162,38 @@
             "_id": "FQIgX2HCNkiPsSUB",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Death Drider Venom",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The drained condition persists after the poison's duration ends</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d8[poison]] damage and drained 2 (1 round)</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": "death-drider-venom",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "poison"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "MoGzK6NqeB1NQ13G",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Hungering Web",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -226,159 +204,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The drained condition persists after the poison's duration ends</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d8[poison]] damage and drained 2 (1 round)</p>"
+                    "value": "<p>A creature hit by a death drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and stuck to the nearest surface (@UUID[Compendium.pf2e.actionspf2e.Item.Escape] DC 31). Each round thereafter until it breaks free, the creature takes @Damage[3d6[piercing]] damage(@Check[reflex|dc:31|basic] save) and, on a failed save, is exposed to death drider venom.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "death-drider-venom",
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "poison"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "MoGzK6NqeB1NQ13G",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Hungering Web",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>A creature hit by a death drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and stuck to the nearest surface (@UUID[Compendium.pf2e.actionspf2e.Item.Escape] DC 31). Each round thereafter until it breaks free, the creature takes @Damage[3d6[piercing]] damage(@Check[type:reflex|dc:31|basic:true] save) and, on a failed save, is exposed to death drider venom.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "hungering-web",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "QuaBxW1qeO6732BX",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Nv6fDISwItvrWUDq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Xsi8GNAmEjo6UXGn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "EnMgC84DxeZQHNX9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Death Drider",
@@ -412,7 +252,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 235,
                 "temp": 0,
                 "value": 235
@@ -434,12 +274,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 24
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -451,19 +285,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Variant drider",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "elven",
+                    "necril",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #155: Lord of the Black Sands"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #155: Lord of the Black Sands"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 24,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -480,25 +332,30 @@
                 "value": 23
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 30
+            },
+            "athletics": {
+                "base": 28
+            },
+            "intimidation": {
+                "base": 24
+            },
+            "stealth": {
+                "base": 30
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "elven",
-                    "necril",
-                    "undercommon"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

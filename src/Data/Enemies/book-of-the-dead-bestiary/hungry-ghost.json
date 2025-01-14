@@ -20,17 +20,19 @@
                 "damageRolls": {
                     "rmsf1urneuo0xhlasawt": {
                         "damage": "2d8+4",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,52 +48,10 @@
             "type": "melee"
         },
         {
-            "_id": "TCn4mhscYuvLcXc1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "nwwxqa7o7t95veoj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Living Visage",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -103,69 +63,16 @@
                 "description": {
                     "value": "<p>While they have more than 30 HP, the hungry ghost appears to be a living creature. They have an automatic result of 34 on Deception checks and DCs to conceal their undead status and can Feed on the Living covertly.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "jfD7HOJyLqdUeAsO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -174,7 +81,7 @@
             "_id": "z3ckvu9q74atbpee",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Feed on the Living",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -184,26 +91,21 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>The hungry ghost touches a creature in reach. If the target is a living creature, it takes damage from the ghost's ghostly touch with a @Check[type:fortitude|dc:24] save. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the Feed on the Living is lost.</p>\n<hr />\n<p><strong>Critical Success</strong> The target's life energy overpowers the ghost. The hungry ghost takes [[/r 5[positive]]] damage, and the target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>"
+                    "value": "<p>The hungry ghost touches a creature in reach. If the target is a living creature, it takes damage from the ghost's ghostly touch with a @Check[fortitude|dc:24] save. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the Feed on the Living is lost.</p>\n<hr />\n<p><strong>Critical Success</strong> The target's life energy overpowers the ghost. The hungry ghost takes @Damage[5[vitality]] damage, and the target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "necromancy",
-                        "negative"
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -212,7 +114,7 @@
             "_id": "ai6gr48jowwpnc0m",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ravenous Undoing",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -224,34 +126,28 @@
                 "description": {
                     "value": "<p>In each 24-hour period, the hungry ghost must use Feed on the Living to consume 30 HP (any HP the ghost would gain count toward this total, even if the ghost has enough HP that they don't actually regain the full amount). If the ghost hasn't consumed enough HP, they mindlessly and recklessly feed on any living creature they come across until satiated.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "r7kfGxLnvo6gvY8J",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rejuvenation",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -264,81 +160,67 @@
                 "description": {
                     "value": "<p>When destroyed, hungry ghosts reform after [[/br 2d4 #Rejuvenation]]{2d4 days} fully healed at whatever location they were at when last destroyed. They're only permanently destroyed when they have been given a proper burial, have had their grave cleaned and maintained for at least a year, or have been judged to be redeemed by Pharasma.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-rejuvenation",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "gsf8udrcvcqxxb2w",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 800000,
+            "_id": "jfD7HOJyLqdUeAsO",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 600000,
             "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
                 "description": {
-                    "value": ""
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "mod": {
-                    "value": 14
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
-            "type": "lore"
-        },
-        {
-            "_id": "fg4swedneyaaat16",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
+            "type": "action"
         },
         {
             "_id": "3p1n4in9wahzixgz",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Ghost Lore",
-            "sort": 1000000,
+            "sort": 700000,
             "system": {
                 "description": {
                     "value": ""
@@ -349,34 +231,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "014i0w71cgdio4t1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -412,7 +273,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing, rejuvenation",
+                "details": "void healing, rejuvenation",
                 "max": 60,
                 "temp": 0,
                 "value": 60
@@ -437,12 +298,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -451,7 +306,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -469,19 +324,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "one other language",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Hungry ghosts arise from those who didn't receive proper burials or whose graves were neglected. They are not bound to a site or item but are compelled to see opportunities to commit good deeds in hopes of gaining favors that can aid them in achieving a final rest. Their need to feed on living energy often conflicts with this goal, however.</p>\n<hr />\n<p>Tethered to the world after death by powerful emotions that haven't been resolved, ghosts haunt the living as sad echoes of their former selves.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -498,19 +370,19 @@
                 "value": 15
             }
         },
+        "skills": {
+            "deception": {
+                "base": 14
+            },
+            "diplomacy": {
+                "base": 14
+            },
+            "religion": {
+                "base": 17
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "One Other Language",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

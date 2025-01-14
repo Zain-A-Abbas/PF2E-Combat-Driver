@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "53nspqw7nXEZ4lce",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
@@ -21,25 +19,18 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p>@Damage[(4d10+22)[bludgeoning]], @Check[type:fortitude|dc:47|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[(4d10+22)[bludgeoning]], @Check[fortitude|dc:47|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -60,22 +51,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature reaches the hall's midpoint</p>\n<hr />\n<p><strong>Effect</strong> The trap attempts a shadow tether Strike against the triggering creature. On a hit, the triggering creature is automatically @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]. The trap then rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -104,11 +91,13 @@
                 "description": {
                     "value": "<p>Plus the creature is automatically @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -134,6 +123,16 @@
                 "temp": 0,
                 "value": 132
             },
+            "immunities": [
+                {
+                    "exceptions": [],
+                    "type": "critical-hits"
+                },
+                {
+                    "exceptions": [],
+                    "type": "precision"
+                }
+            ],
             "stealth": {
                 "details": "<p>(legendary)</p>",
                 "value": 38
@@ -142,17 +141,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Three shadow tethers form when a creature reaches the hall's midpoint; each lashes, grabs, and crushes creatures in the hall.</p>",
-            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to disable each tether or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (10th level, counteract DC 48) to counteract each tether</p>",
+            "disable": "<p>@Check[thievery|dc:48] (legendary) to disable each tether or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (10th level, counteract DC 48) to counteract each tether</p>",
             "isComplex": true,
             "level": {
                 "value": 20
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #186: Ghost King's Rage"
+            },
             "reset": "",
-            "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] creature, in any combination.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #186: Ghost King's Rage"
-            }
+            "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] creature, in any combination.</p>"
         },
         "saves": {
             "fortitude": {

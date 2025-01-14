@@ -28,21 +28,23 @@
                     },
                     "ipuk9q9tpuum3f2xpvttr": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     },
                     "x63sln1474j1wa01wk0p0t": {
                         "damage": "1d6",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -80,21 +82,23 @@
                     },
                     "hr0xgnvh7iuuc5q14keyt": {
                         "damage": "1d6",
-                        "damageType": "negative"
+                        "damageType": "void"
                     },
                     "rtoxofafm88d0ydxirvigr": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -124,25 +128,18 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of an evil or chaotic creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains [[/r 6d6]] Hit Points. It can regain Hit Points from any given corpse only once.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "manipulate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -161,27 +158,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a zeal-damned ghoul the next midnight.</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a zeal-damned ghoul the next midnight.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "ghoul-fever",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -200,29 +190,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                    "value": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "paralysis",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation",
-                        "occult",
-                        "necromancy"
+                        "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -243,120 +225,21 @@
                 "description": {
                     "value": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "ObTi3WP8OgBnlT57",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "uUsiZe80ZPKkB45a",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "y2DuXZxYbnGwb7A0",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ga6Hu9mYreSeCqxG",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zeal-damned Ghoul",
@@ -395,12 +278,6 @@
                 "temp": 0,
                 "value": 175
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 21
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -412,19 +289,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #161: Belly of the Black Whale"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #161: Belly of the Black Whale"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 21,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -441,25 +335,31 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 22
+            },
+            "athletics": {
+                "base": 20
+            },
+            "deception": {
+                "base": 18
+            },
+            "stealth": {
+                "base": 22
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "ghoul",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

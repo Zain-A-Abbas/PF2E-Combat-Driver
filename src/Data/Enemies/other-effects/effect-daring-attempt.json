@@ -1,0 +1,54 @@
+{
+    "_id": "w0kwwWC7QTmytbVt",
+    "img": "icons/sundries/gaming/playing-cards-brown.webp",
+    "name": "Effect: Daring Attempt",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.pf2e.journals.JournalEntry.BSp4LUSaOmUyjBko.JournalEntryPage.jHn1m1r95YgMQSvM]{Daring Attempt}</p>\n<p>Select one untrained skill. You are trained in that skill.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Hero Point Deck"
+        },
+        "rules": [
+            {
+                "choices": {
+                    "config": "skills",
+                    "predicate": [
+                        "skill:{choice|value}:rank:0"
+                    ]
+                },
+                "flag": "daringAttempt",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Skill"
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.{item|flags.pf2e.rulesSelections.daringAttempt}.rank",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -14,30 +14,23 @@ var initiative: int = 0
 func setup_initiative(enemy: EnemyInfoTemplate):
 	initiative = randi_range(1, 20)
 	
-	enemy_data = enemy.enemy_data
-	enemy_name.text = enemy.enemy_name
+	if enemy:
+		enemy_data = enemy.enemy_data
+		enemy_name.text = enemy.enemy_name
 	
 	if enemy_data == {}:
 		init_field.text = str(initiative)
 		return
 	
-	initiative += enemy_data["system"]["attributes"]["perception"]["value"]
+	if enemy_data["system"]["attributes"].has("perception"):
+		initiative += enemy_data["system"]["attributes"]["perception"]["value"]
+	else:
+		initiative += enemy_data["system"]["perception"]["mod"]
 	init_field.text = str(initiative)
 
-func reroll_initiative():
-	initiative = randi_range(1, 20)
-	if enemy_data == {}:
-		init_field.text = str(initiative)
-		return
-	
-	initiative += enemy_data["system"]["attributes"]["perception"]["value"]
-	init_field.text = str(initiative)
 
 func rename_enemy(new_name: String):
 	enemy_name.text = new_name
-
-
-
 
 func _on_init_field_text_changed(new_text: String) -> void:
 	var new_initiative: int = int(new_text)

@@ -1,0 +1,371 @@
+{
+    "_id": "lQcfACi4RQrjIl5S",
+    "img": "systems/pf2e/icons/default-icons/npc.svg",
+    "items": [
+        {
+            "_id": "7rJEkIl1VXcFTedq",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Gnarled Branch",
+            "sort": 100000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "custom": "",
+                    "value": [
+                        "grab"
+                    ]
+                },
+                "bonus": {
+                    "value": 24
+                },
+                "damageRolls": {
+                    "29awkaz1ZsNNkC5f": {
+                        "damage": "2d12+7",
+                        "damageType": "bludgeoning"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "reach-20"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "lPoSVdgFBsdSsiBN",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Regeneration 15 (Deactivated by Fire)",
+            "sort": 200000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Monster Core"
+                },
+                "rules": [
+                    {
+                        "deactivatedBy": [
+                            "fire"
+                        ],
+                        "key": "FastHealing",
+                        "type": "regeneration",
+                        "value": 15
+                    }
+                ],
+                "slug": "regeneration",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "g7R7kGhJrJHS3qzH",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Constrict",
+            "sort": 300000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Damage[(1d12+7)[bludgeoning]], @Check[fortitude|dc:30|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "constrict",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "ogH30QUlyvXcZTO9",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy"
+            },
+            "img": "systems/pf2e/icons/actions/TwoActions.webp",
+            "name": "Engulf",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Check[reflex|dc:30], @Damage[(8d10)[bludgeoning]] damage, Escape DC 27, Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "engulf",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "QQiFKxKI0j0hb7PX",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Entangling Growth",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>30 feet.</p>\n<p>Plant life erupts out of any and all soil surrounding the elemental thicket, making the area greater difficult terrain out to 5 feet and difficult terrain out to 30 feet. This ability requires soil and has no effect on terrain without it, such as worked stone, solid rock, open water, etc.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 30,
+                        "slug": "entangling-growth",
+                        "traits": [
+                            "plant",
+                            "primal"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "aura",
+                        "plant",
+                        "primal"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "5vu1EDwV4YDm5F5U",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Grab",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "grab",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        }
+    ],
+    "name": "Elemental Thicket",
+    "system": {
+        "abilities": {
+            "cha": {
+                "mod": 1
+            },
+            "con": {
+                "mod": 6
+            },
+            "dex": {
+                "mod": 4
+            },
+            "int": {
+                "mod": 1
+            },
+            "str": {
+                "mod": 7
+            },
+            "wis": {
+                "mod": 2
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 28
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "regeneration 15 (deactivated by fire)",
+                "max": 240,
+                "temp": 0,
+                "value": 240
+            },
+            "immunities": [
+                {
+                    "exceptions": [],
+                    "type": "bleed"
+                },
+                {
+                    "exceptions": [],
+                    "type": "paralyzed"
+                },
+                {
+                    "exceptions": [],
+                    "type": "poison"
+                },
+                {
+                    "exceptions": [],
+                    "type": "sleep"
+                }
+            ],
+            "speed": {
+                "otherSpeeds": [
+                    {
+                        "type": "burrow",
+                        "value": 25
+                    },
+                    {
+                        "type": "climb",
+                        "value": 25
+                    }
+                ],
+                "value": 25
+            },
+            "weaknesses": [
+                {
+                    "exceptions": [],
+                    "type": "axe-vulnerability",
+                    "value": 10
+                },
+                {
+                    "exceptions": [],
+                    "type": "fire",
+                    "value": 15
+                }
+            ]
+        },
+        "details": {
+            "blurb": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
+            "level": {
+                "value": 11
+            },
+            "privateNotes": "",
+            "publicNotes": "<p>In the Universe, plant growth proceeds on a scale of days, weeks, years, and decades. Conversely, an elemental thicket grows constantly and in seconds. These writhing masses of living wood are the elemental embodiment of growth itself, swelling up when least expected to consume all in their path.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 24,
+            "senses": []
+        },
+        "resources": {},
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 20
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 13
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 25
+            }
+        },
+        "skills": {
+            "athletics": {
+                "base": 23
+            }
+        },
+        "traits": {
+            "rarity": "common",
+            "size": {
+                "value": "huge"
+            },
+            "value": [
+                "elemental",
+                "plant",
+                "wood"
+            ]
+        }
+    },
+    "type": "npc"
+}

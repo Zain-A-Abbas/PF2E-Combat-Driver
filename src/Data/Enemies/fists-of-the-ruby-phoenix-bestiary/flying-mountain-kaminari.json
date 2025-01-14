@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -73,11 +75,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -109,23 +113,16 @@
                 "description": {
                     "value": "<p>A kaminari can move in wind with ease. They ignore all difficult terrain from wind and don't need to Maneuver in Flight in high winds.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -146,23 +143,16 @@
                 "description": {
                     "value": "<p>Wind, precipitation, and clouds don't impair a kaminari's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.Item.Concealed] condition from storms, mist, precipitation, and the like.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -181,27 +171,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[type:burst|distance:20]s within 60 feet with the effects of a 9th-level wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[type:reflex|dc:40|basic:true] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/br 4dr #Recharge Hurricane Bag]]{1d4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[type:fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. Failure The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is deafened permanently.</p>"
+                    "value": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[burst|distance:20]s within 60 feet with the effects of a 9th-rank wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[reflex|dc:40|basic] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/gmr 1d4 #Recharge Hurricane Bag]]{1d4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. Failure The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is deafened permanently.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "air"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -220,28 +203,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Electricity leaps between two kaminari. The kaminari establishes a connection with another kaminari within 150 feet, and lightning and thunder form a line between the centers of their spaces. For the next minute, a creature that begins its turn in the line or enters the line on its turn takes @Damage[4d12[electricity]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature can take this damage only once per round, even if it moves through several tempest tethers. If the distance between the kaminari ever exceeds 150 feet, the tether breaks.</p>"
+                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Electricity leaps between two kaminari. The kaminari establishes a connection with another kaminari within 150 feet, and lightning and thunder form a line between the centers of their spaces. For the next minute, a creature that begins its turn in the line or enters the line on its turn takes @Damage[4d12[electricity]] damage (@Check[reflex|dc:40|basic] save). A creature can take this damage only once per round, even if it moves through several tempest tethers. If the distance between the kaminari ever exceeds 150 feet, the tether breaks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "electricity",
-                        "air"
+                        "air",
+                        "electricity"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -260,159 +241,46 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The peal of a kaminari's drums bring thunder and lightning. The kaminari summons four 100-foot-tall columns of lightning to strike in @Template[type:burst|distance:5]s within 60 feet. These columns can't overlap. Creatures in the burst take @Damage[8d12[electricity]] damage and must attempt a @Check[type:reflex|dc:40|traits:damaging-effect] save. The kaminari can't use Thunder Drums again for [[/br 1d4 #Recharge Thunder Drums]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>"
+                    "value": "<p>The peal of a kaminari's drums bring thunder and lightning. The kaminari summons four 100-foot-tall columns of lightning to strike in @Template[burst|distance:5]s within 60 feet. These columns can't overlap. Creatures in the burst take @Damage[8d12[electricity]] damage and must attempt a @Check[reflex|dc:40|traits:damaging-effect] save. The kaminari can't use Thunder Drums again for [[/gmr 1d4 #Recharge Thunder Drums]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "electricity"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "5BQTAvO95OOP6pCi",
+            "_id": "Xzsg5ZIVPfElXGdi",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
+            "name": "Flying Mountains Lore",
             "sort": 800000,
             "system": {
                 "description": {
                     "value": ""
                 },
                 "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.ManeuverInFlight",
-                        "predicate": [
-                            "action:maneuver-in-flight"
-                        ],
-                        "selector": "acrobatics",
-                        "value": 5
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+36 to Maneuver in Flight",
-                        "options": "action:maneuver-in-flight"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nDsECFRS90fL46BL",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Xzsg5ZIVPfElXGdi",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Flying Mountains Lore",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
                     "value": 35
                 },
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "CFBEBGbdyLbNZagv",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 37
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "mmfCzHlIDe2wx8th",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -464,12 +332,6 @@
                     "type": "sonic"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 33
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -481,19 +343,32 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "senzar",
+                    "tien"
+                ]
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #168: King of the Mountain"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #168: King of the Mountain"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 33,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -510,23 +385,36 @@
                 "value": 27
             }
         },
-        "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "senzar",
-                    "tien"
+        "skills": {
+            "acrobatics": {
+                "base": 31,
+                "special": [
+                    {
+                        "base": 36,
+                        "label": "to Maneuver in Flight",
+                        "predicate": [
+                            "action:maneuver-in-flight"
+                        ]
+                    }
                 ]
             },
-            "rarity": "rare",
-            "senses": {
-                "value": ""
+            "athletics": {
+                "base": 31
             },
+            "nature": {
+                "base": 37
+            },
+            "religion": {
+                "base": 35
+            }
+        },
+        "traits": {
+            "rarity": "rare",
             "size": {
                 "value": "huge"
             },
             "value": [
+                "chaotic",
                 "humanoid",
                 "kami"
             ]

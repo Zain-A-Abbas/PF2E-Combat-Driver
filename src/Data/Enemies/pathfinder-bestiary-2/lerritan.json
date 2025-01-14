@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,35 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
                     "slot0": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot10": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot7": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
                     },
                     "slot8": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
                     },
                     "slot9": {
                         "max": 2,
-                        "prepared": [],
                         "value": 2
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 46,
                     "mod": 0,
@@ -108,53 +63,95 @@
         },
         {
             "_id": "fv0uY3OTjnkkpn5d",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.wLIvH0AT1u7oa64N"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.wLIvH0AT1u7oa64N"
             },
-            "img": "systems/pf2e/icons/spells/cataclysm.webp",
+            "img": "icons/magic/earth/lava-explosion-orange.webp",
             "name": "Cataclysm",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 60
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "acid"
-                            },
-                            "value": "3d10"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "acid"
+                    },
+                    "1": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "bludgeoning"
+                    },
+                    "2": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "cold"
+                    },
+                    "3": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "electricity"
+                    },
+                    "4": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "bludgeoning"
+                    },
+                    "5": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
-                    "value": "<p>You call upon the unimaginable power of world-ending cataclysms, ripping a small piece of each cataclysm and combining them together into one horrifically powerful attack. The following effects come down upon all creatures in the area. Treat the resistances of creatures in the area as if they were 10 lower for the purpose of determining the cataclysm's damage. Each creature attempts one basic Reflex save that applies to all six types of damage.</p>\n<ul>\n<li>Flesh-dissolving acid rain deals 3d10 acid damage.</li>\n<li>A roaring earthquake shakes and bludgeons creatures on the ground, dealing 3d10 bludgeoning damage.</li>\n<li>A blast of freezing wind deals 3d10 cold damage.</li>\n<li>Incredible lightning lashes the area, dealing 3d10 electricity damage.</li>\n<li>Beating winds churn across the sky, dealing 3d10 bludgeoning damage to creatures flying in the area.</li>\n<li>An instant tsunami sweeps over creatures in the area, dealing 3d10 bludgeoning damage with the water trait (doubled for creatures swimming in the area).</li>\n<li>A massive wildfire burns in a sudden inferno, dealing 3d10 fire damage. </li>\n</ul>"
+                    "value": "<p>You call upon the unimaginable power of world-ending cataclysms, ripping a small piece of each cataclysm and combining them together into one horrifically powerful attack. The following effects come down upon all creatures in the area. Treat the resistances of creatures in the area as if they were 10 lower for the purpose of determining the cataclysm's damage. Each creature attempts one basic Reflex save that applies to all five types of damage.</p>\n<ul>\n<li>Flesh-dissolving acid rain deals 3d10 acid damage.</li>\n<li>A roaring earthquake shakes and bludgeons creatures on the ground, dealing 3d10 bludgeoning damage.</li>\n<li>A blast of freezing wind deals 3d10 cold damage.</li>\n<li>Incredible lightning lashes the area, dealing 3d10 electricity damage.</li>\n<li>Beating winds churn across the sky, dealing 3d10 bludgeoning damage to creatures flying in the area.</li>\n<li>An instant tsunami sweeps over creatures in the area, dealing 3d10 bludgeoning damage with the water trait (doubled for creatures swimming in the area).</li>\n<li>A massive wildfire burns in a sudden inferno, dealing 3d10 fire damage.</li>\n</ul>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 10
@@ -162,61 +159,39 @@
                 "location": {
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "1,000 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "cataclysm",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "acid",
+                        "air",
                         "cold",
+                        "concentrate",
                         "earth",
                         "electricity",
                         "fire",
-                        "water",
-                        "evocation"
+                        "manipulate",
+                        "water"
                     ]
                 }
             },
@@ -224,53 +199,44 @@
         },
         {
             "_id": "XqYb2FnNHShaRyop",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
             },
-            "img": "systems/pf2e/icons/spells/fireball.webp",
+            "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
             "name": "Fireball",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "fire"
-                            },
-                            "value": "18d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "18d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -285,111 +251,94 @@
                 "location": {
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "500 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fireball",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
             "type": "spell"
         },
         {
-            "_id": "EEnO5a9s4vceIrOS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl"
-                }
+            "_id": "cY5rvLtVuvHqtW3K",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl"
             },
-            "img": "systems/pf2e/icons/spells/meteor-swarm.webp",
+            "img": "icons/magic/light/projectile-beams-salvo-yellow.webp",
             "name": "Meteor Swarm",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
+                "area": {
+                    "type": "burst",
+                    "value": 40
                 },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "bludgeoning"
-                            },
-                            "value": "6d10"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "6d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "bludgeoning"
+                    },
+                    "6BEyrCCNpDfJh5P8": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "14d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
-                    "value": "<p>You call down four meteors that explode in a fiery blast. Each meteor deals 6d10 bludgeoning damage to any creatures in the 10-foot burst at the center of its area of effect before exploding, dealing 14d6 fire damage to any creatures in its 40-foot burst. The meteors' central 10-foot bursts can't overlap, and a creature takes the same amount of fire damage no matter how many overlapping explosions it's caught in. The saving throw applies to both the bludgeoning and the fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6.</p>"
+                    "value": "<p>You call down four meteors that explode in a fiery blast. Each meteor deals 6d10 bludgeoning damage to any creatures in the @Template[burst|distance:10] at the center of its area of effect before exploding, dealing 14d6 fire damage to any creatures in its @Template[burst|distance:40]. The meteors' central 10-foot bursts can't overlap, and a creature attempts only one saving throw against the spell no matter how many overlapping explosions it's caught in, and they can take each type of damage once. The saving throw applies to both the bludgeoning and the fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
-                        "0": "1d10"
+                        "0": "1d10",
+                        "6BEyrCCNpDfJh5P8": "2d6"
                     },
                     "interval": 1,
                     "type": "interval"
@@ -398,58 +347,36 @@
                     "value": 9
                 },
                 "location": {
+                    "heightenedLevel": 9,
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "500 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "meteor-swarm",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -457,53 +384,44 @@
         },
         {
             "_id": "Yh3Jl9TWUdPMwHKx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu"
             },
             "img": "systems/pf2e/icons/spells/earthquake.webp",
             "name": "Earthquake",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 60
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "bludgeoning"
-                            },
-                            "value": "11d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "11d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "bludgeoning"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
-                    "value": "<p>You shake the ground, topple creatures into fissures, and collapse structures. The GM might add additional effects in certain areas. Cliffs might collapse, causing creatures to fall, or a lake might drain as fissures open up below its surface, leaving a morass of quicksand. Shaking Ground The ground is difficult terrain, and creatures on it take a -2 circumstance penalty to attack rolls, AC, and skill checks. Fissures Each creature on the ground must attempt a Reflex save at the start of its turn to keep its footing and avoid falling into 40-foot-deep fissures that open beneath it. The fissures are permanent, and their sides require @Check[type:athletics|dc:15|traits:action:climb] to Climb. Collapse Structures and ceilings might collapse. The GM rolls a flat check for each (@Check[type:flat|dc:16] for a sturdy structure, @Check[type:flat|dc:14] for an average structure and most natural formations, @Check[type:flat|dc:9] for a shoddy structure, all adjusted higher or lower as the GM sees fit). A collapse deals 11d6 bludgeoning damage; each creature caught in a collapse must attempt a Reflex save to avoid it.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half the collapse damage.</p>\n<p><strong>Success</strong> The creature takes half the collapse damage and falls @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>\n<p><strong>Failure</strong> The creature takes the full collapse damage and falls Prone.</p>\n<p><strong>Critical Failure</strong> The creature takes the full collapse damage and falls into a fissure.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> You create a massive earthquake that can devastate a settlement. The range increases to half a mile and the area to a quarter-mile burst.</p>"
+                    "value": "<p>You shake the ground, topple creatures into fissures, and collapse structures. The GM might add additional effects in certain areas. Cliffs might collapse, causing creatures to fall, or a lake might drain as fissures open up below its surface, leaving a morass of quicksand. Shaking Ground The ground is difficult terrain, and creatures on it take a -2 circumstance penalty to attack rolls, AC, and skill checks. Fissures Each creature on the ground must attempt a Reflex save at the start of its turn to keep its footing and avoid falling into 40-foot-deep fissures that open beneath it. The fissures are permanent, and their sides require @Check[athletics|dc:15|traits:action:climb] to Climb. Collapse Structures and ceilings might collapse. The GM rolls a flat check for each (@Check[flat|dc:16] for a sturdy structure, @Check[flat|dc:14] for an average structure and most natural formations, @Check[flat|dc:9] for a shoddy structure, all adjusted higher or lower as the GM sees fit). A collapse deals 11d6 bludgeoning damage; each creature caught in a collapse must attempt a Reflex save to avoid it.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half the collapse damage.</p>\n<p><strong>Success</strong> The creature takes half the collapse damage and falls @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>\n<p><strong>Failure</strong> The creature takes the full collapse damage and falls Prone.</p>\n<p><strong>Critical Failure</strong> The creature takes the full collapse damage and falls into a fissure.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> You create a massive earthquake that can devastate a settlement. The range increases to half a mile and the area to a quarter-mile burst.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 round"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 8
@@ -511,56 +429,33 @@
                 "location": {
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "500 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "earthquake",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "earth",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -568,42 +463,26 @@
         },
         {
             "_id": "71Z5UP7uzcvxSIy9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ"
             },
-            "img": "systems/pf2e/icons/spells/plane-shift.webp",
+            "img": "icons/magic/lightning/bolt-strike-explosion-purple.webp",
             "name": "Plane Shift (To the Material Plane, Plane of Fire, or Plane of Earth only)",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Shadow Plane, or the Abyss. You must have specific knowledge of the destination plane and use a magic tuning fork created from material from that plane as a focus for the spell. While the tuning forks for most prominent planes are uncommon, just like the spell plane shift, more obscure planes and demiplanes often have rare tuning forks. The spell is highly imprecise, and you appear 1d20x25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. Plane shift doesn't provide a means of return travel, though casting plane shift again allows you to return to your previous plane unless there are extenuating circumstances.</p>"
+                    "value": "<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must have specific knowledge of the destination plane and use a magic tuning fork created from material from that plane as a focus for the spell. While the tuning forks for most prominent planes are uncommon, just like the spell plane shift, more obscure planes and demiplanes often have rare tuning forks. The spell is highly imprecise, and you appear 1d20x25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. Plane shift doesn't provide a means of return travel, though casting plane shift again allows you to return to your previous plane unless there are extenuating circumstances.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 7
@@ -611,58 +490,35 @@
                 "location": {
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "plane-shift",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing creature, or up to 8 willing creatures joining hands"
                 },
                 "time": {
                     "value": "10 minutes"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
+                    ],
                     "value": [
-                        "teleportation",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
                     ]
                 }
             },
@@ -670,51 +526,37 @@
         },
         {
             "_id": "juFVcQGyYfSyREij",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe"
             },
-            "img": "systems/pf2e/icons/spells/produce-flame.webp",
+            "img": "icons/magic/fire/flame-burning-earth-orange.webp",
             "name": "Produce Flame",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "fire"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 1d4 fire damage plus your spellcasting ability modifier. On a critical success, the target takes double damage and [[/r 1d4[persistent,fire]]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage] on a critical hit by 1d4.</p>"
+                    "value": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -729,59 +571,35 @@
                 "location": {
                     "value": "ej30s3gZXMNhiGRr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "produce-flame",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "attack",
-                        "fire",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "fire",
+                        "manipulate"
                     ]
                 }
             },
@@ -789,24 +607,22 @@
         },
         {
             "_id": "aTZDvupAiIZ4j3su",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.rXt4629QSg7KDTgJ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.rXt4629QSg7KDTgJ"
             },
             "img": "systems/pf2e/icons/equipment/weapons/warhammer.webp",
             "name": "+3 Greater Striking Warhammer",
             "sort": 800000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "warhammer",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -816,15 +632,12 @@
                     "die": "d8"
                 },
                 "description": {
-                    "value": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single‑sided or double‑sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                    "value": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "hammer",
                 "hardness": 0,
@@ -835,34 +648,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 3
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "range": null,
@@ -870,17 +668,15 @@
                     "value": ""
                 },
                 "rules": [],
-                "size": "med",
-                "slug": "warhammer",
-                "source": {
-                    "value": ""
+                "runes": {
+                    "potency": 3,
+                    "property": [],
+                    "striking": 2
                 },
+                "size": "grg",
+                "slug": "warhammer",
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -890,9 +686,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
@@ -931,11 +724,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -979,11 +774,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1026,11 +823,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1045,57 +844,13 @@
             "type": "melee"
         },
         {
-            "_id": "CDAurAI8XPZBeHsL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 1200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "cb6s0BQEA2EVpswg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -1107,23 +862,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1132,7 +880,7 @@
             "_id": "nszzMLENLPQ4zPoa",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tenacious Flames",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1142,10 +890,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:100]{100 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>Creatures in the emanation cannot recover from persistent fire damage.</p>"
+                    "value": "<p>100 feet. Creatures in the emanation cannot recover from persistent fire damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1163,44 +913,31 @@
                         "radius": 100,
                         "slug": "tenacious-flames",
                         "traits": [
-                            "evocation",
                             "fire",
                             "primal"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "evocation",
                         "fire",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "mY1TZIEvZh0l0OBD",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Throw Rock",
-            "sort": 1500000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1212,23 +949,16 @@
                 "description": {
                     "value": "<p>A lerritan can break stony scales off its body to throw; these scales reform at the end of each round, so the lerritan is never without a supply of rocks to hurl.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ThrowRock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "throw-rock",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1237,7 +967,7 @@
             "_id": "JGXYh66auv2dCHDv",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Volcanic Eruption",
-            "sort": 1600000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1247,148 +977,25 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The volcano on the lerritan's back erupts and sends lava bombs raining down in a @Template[type:emanation|distance:30], dealing @Damage[12d12[fire]] damage.</p>\n<p>Each creature in the area must attempt a @Check[type:reflex|dc:46|traits:damaging-effect] saving throw. The lava globules quickly cool into heavy stones, transforming the area into greater difficult terrain for non-lerritans.</p>\n<p>The lerritan can't use for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.Encumbered] for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] (Escape DC 46).</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased in a rocky crust with lava on the inside. The creature is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] (Escape DC 46), can't breathe, takes [[/r 3d12[persistent,fire]]] damage, and can't recover from this persistent fire damage until freed.</p>"
+                    "value": "<p>The volcano on the lerritan's back erupts and sends lava bombs raining down in a @Template[emanation|distance:30], dealing @Damage[12d12[fire]] damage.</p>\n<p>Each creature in the area must attempt a @Check[reflex|dc:46|traits:damaging-effect] saving throw. The lava globules quickly cool into heavy stones, transforming the area into greater difficult terrain for non-lerritans.</p>\n<p>The lerritan can't use for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.Encumbered] for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] (Escape DC 46).</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased in a rocky crust with lava on the inside. The creature is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] (Escape DC 46), can't breathe, takes @Damage[3d12[persistent,fire]] damage, and can't recover from this persistent fire damage until freed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "earth",
-                        "evocation",
                         "fire",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "cLHINWETTXLy2Od3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 41
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "8oIkJ2zDAdcw05Nk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "eu4qsXBEVRd3v9EC",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "CuwQzc1k3LDHIij6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 36
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "tqyZ21GeSPMenZuY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 38
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Lerritan",
@@ -1441,12 +1048,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 35
-            },
             "resistances": [
                 {
                     "type": "piercing",
@@ -1469,19 +1070,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "jotun",
+                    "petran",
+                    "pyric"
+                ]
+            },
             "level": {
                 "value": 21
             },
             "privateNotes": "",
             "publicNotes": "<p>Lerritans are unstoppable giants with skin of volcanic glass and blood of roiling lava. These malicious arsonists would see the world burned to a cinder. They pay homage to Ymeri, the evil elemental demigod of fire, and they bully other fiery creatures. When the urge to immolate grows too great to ignore, lerritans burn forests, destroy villages, and boil rivers, but they avoid large bodies of water.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 35,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1503,30 +1123,32 @@
                 "value": 36
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 41
+            },
+            "crafting": {
+                "base": 33
+            },
+            "intimidation": {
+                "base": 35
+            },
+            "religion": {
+                "base": 36
+            },
+            "survival": {
+                "base": 38
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "ignan",
-                    "jotun",
-                    "terran"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "grg"
             },
             "value": [
                 "earth",
                 "elemental",
+                "evil",
                 "fire"
             ]
         }

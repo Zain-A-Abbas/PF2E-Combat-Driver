@@ -18,23 +18,16 @@
                 "description": {
                     "value": "<p>An amoeba swarm can sense nearby creatures through vibration and air or water movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -53,25 +46,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The amoeba swarm slithers over each creature in its space, dealing @Damage[1d6[acid]] damage (@Check[type:reflex|dc:14|basic:true] save). A creature that critically fails is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>"
+                    "value": "<p>The amoeba swarm slithers over each creature in its space, dealing @Damage[1d6[acid]] damage (@Check[reflex|dc:14|basic] save). A creature that critically fails is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -92,65 +78,19 @@
                 "description": {
                     "value": "<p>An amoeba's acid damages only organic material-not metal, stone, or other inorganic substances.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "1yoCf7iLNmn7SD5D",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 1
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Water",
-                        "predicate": [
-                            "terrain:water"
-                        ],
-                        "selector": "stealth",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+3 in Water",
-                        "options": "terrain:water"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Amoeba Swarm",
@@ -206,12 +146,6 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 3
-            },
             "resistances": [
                 {
                     "type": "slashing",
@@ -251,19 +185,36 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Ooze",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>An amoeba swarm consists of thousands of individual single-celled organisms held together by acrid-smelling slime. As ravenous as they are mindless, amoeba swarms use no tactics.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 3,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "motion-sense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -280,19 +231,22 @@
                 "value": 3
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 1,
+                "special": [
+                    {
+                        "base": 3,
+                        "label": "in Water",
+                        "predicate": [
+                            "terrain:water"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "motion sense 60 feet, no vision"
-            },
             "size": {
                 "value": "lg"
             },

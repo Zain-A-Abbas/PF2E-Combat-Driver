@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -42,14 +44,9 @@
             "type": "melee"
         },
         {
-            "_id": "PbbPgVS2y8b9zkfV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
+            "_id": "U3ko77Ip12zOsdtU",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Cute Aggression",
             "sort": 200000,
             "system": {
                 "actionType": {
@@ -60,104 +57,18 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>Floolf pups are so adorable that any creature that is either a mammal, or has an Intelligence above 3 that sees or touches a floolf pup must succeed at a @Check[will|dc:27] save or it will defend the floolf pup with its life. This effect ends when the creature is no longer able to perceive the pup.</p>\n<p>If the creature can speak, anytime it remembers the floolf pup, it feels a compulsion (@Check[will|dc:15] save) to tell their story of the encounter, invariably ending with the phrase, \"I would die for that floolf.\"</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "Uko4CKB4JYwPAYvX",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 20 feet",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "U3ko77Ip12zOsdtU",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Cute Aggression",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>Floolf pups are so adorable that any creature that is either a mammal, or has an Intelligence above 3 that sees or touches a floolf pup must succeed at a @Check[type:will|dc:27] save or it will defend the floolf pup with its life. This effect ends when the creature is no longer able to perceive the pup.</p>\n<p>If the creature can speak, anytime it remembers the floolf pup, it feels a compulsion (Will save DC 15) to tell their story of the encounter, invariably ending with the phrase, “I would die for that floolf.”</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -166,7 +77,7 @@
             "_id": "0d7t9d9FM1tmJZDw",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Pack Attack",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -176,14 +87,16 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The floolf's attack deals [[/r 1d8]] extra damage to creatures within the reach of at least two of floolf's allies.</p>"
+                    "value": "<p>The floolf's attack deals 1d8 extra damage to creatures within the reach of at least two of floolf's allies.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "pack-attack",
                         "toggleable": true
@@ -199,113 +112,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "8uZ6PsshIULHy1pG",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "VUeWGHAuU2CpDdrC",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "uBhPU1izwhLt4Ms0",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "oiXgrsgYCIKgz9j6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Floolf",
@@ -349,31 +161,44 @@
                     "type": "cold"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 0
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 35
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Blog: April Fool's Bestiary"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Blog: April Fool's Bestiary"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 11,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 20,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -390,19 +215,22 @@
                 "value": 20
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 9
+            },
+            "athletics": {
+                "base": 9
+            },
+            "stealth": {
+                "base": 11
+            },
+            "survival": {
+                "base": 10
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "Darkvision, scent (imprecise) 20 feet"
-            },
             "size": {
                 "value": "med"
             },

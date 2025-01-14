@@ -1,6 +1,5 @@
 {
     "_id": "AngiDlZ45l632ZrI",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
@@ -10,6 +9,9 @@
             "sort": 100000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p><em>Relics are a special type of magic item that can grow in power as their wielders unlock additional abilities. The full rules for relics and their aspects begin on page 94 of the Gamemastery Guide.</em></p>"
@@ -19,9 +21,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "hardness": 0,
                 "hp": {
                     "max": 0,
@@ -30,35 +29,28 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "worn"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "equipment"
@@ -93,11 +85,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -115,10 +109,8 @@
         },
         {
             "_id": "OXgeEMcOYKgC7nbD",
-            "flags": {
-                "core": {
-                    "sourceId": "Actor.FcWJMfysZwOrib2W.Item.4KGlzeHqmtsJnLv9"
-                }
+            "_stats": {
+                "compendiumSource": "Actor.FcWJMfysZwOrib2W.Item.4KGlzeHqmtsJnLv9"
             },
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Spectral Hand",
@@ -137,17 +129,19 @@
                 "damageRolls": {
                     "0": {
                         "damage": "2d6+3",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -164,10 +158,8 @@
         },
         {
             "_id": "RblFLpWezn71gpeq",
-            "flags": {
-                "core": {
-                    "sourceId": "Actor.FcWJMfysZwOrib2W.Item.e4gcYFnxnq6FmPws"
-                }
+            "_stats": {
+                "compendiumSource": "Actor.FcWJMfysZwOrib2W.Item.e4gcYFnxnq6FmPws"
             },
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Deadly Spark",
@@ -192,18 +184,19 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "air",
                         "divine",
                         "electricity",
-                        "evocation",
                         "range-20"
                     ]
                 },
@@ -214,57 +207,13 @@
             "type": "melee"
         },
         {
-            "_id": "98oLnVVl0tvsGdHl",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "YPqH3eXv1Ux2rBDb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Lifesense (Imprecise) 60 feet",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -276,72 +225,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "YWWsxw1woFyoUa9a",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -350,7 +243,7 @@
             "_id": "I9tVwoP0Z0dV0r5j",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Clan Dagger Relic",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -362,27 +255,19 @@
                 "description": {
                     "value": "<p>The corrupted relic is Taargick's clan dagger rather than an amulet. When the spirit Manifests, the clan dagger teleports into its hand. The clan dagger can be targeted by Strikes (AC 21, Hardness 8, HP 20, BT 10).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -391,7 +276,7 @@
             "_id": "pgjyNm2rRbnBKZmb",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Sudden Manifestation",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -403,8 +288,10 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The relic detects a creature using its lifesense.</p>\n<hr />\n<p><strong>Effect</strong> The relic Manifests. If this causes an encounter to begin, the relic gains a +4 status bonus to its initiative roll.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -425,18 +312,49 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "YWWsxw1woFyoUa9a",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -445,7 +363,7 @@
             "_id": "0I5zkpKVe1aT6Em3",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Blood Accusation",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -457,23 +375,19 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature within 30 feet of the corrupted blade spirit takes persistent bleed damage</p>\n<hr />\n<p><strong>Effect</strong> The corrupted blade spirit shapes the spilled blood into words that remind the bleeding creature of their fears, mistakes, and shames. The corrupted blade spirit Demoralizes the creature, additionally dealing @Damage[1d6[mental]] damage on a critical success.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "fear",
                         "linguistic",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -482,7 +396,7 @@
             "_id": "56iLpxxqpM1gYATc",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Death Gaze",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -492,30 +406,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The spirit targets a creature it can see within 30 feet, dealing to it @Damage[4d6[negative]] damage (@Check[type:fortitude|dc:20|basic:true] save).</p>\n<p>A creature with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Negative Healing] instead regains @Damage[4d6[healing]] Hit Points and is then temporarily immune for 10 minutes.</p>"
+                    "value": "<p>The spirit targets a creature it can see within 30 feet, dealing to it @Damage[4d6[void]] damage (@Check[fortitude|dc:20|basic] save).</p>\n<p>A creature with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Void Healing] instead regains @Damage[4d6[healing]] Hit Points and is then temporarily immune for 10 minutes.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "necromancy",
-                        "negative"
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -524,7 +430,7 @@
             "_id": "DYPC5uZCfiJo895S",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Manifest",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -536,98 +442,21 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The relic detects at least one creature using its lifesense.</p>\n<hr />\n<p><strong>Effect</strong> The spirit within the relic manifests in an open space within 10 feet of the amulet. When it does, the relic teleports around its neck. The spirit remains in its manifested state until it no longer senses any living creatures within range of its lifesense.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "NylQJJ7gGXRGTW2Q",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "BmVeGFLQy5gzbrZx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "HXozieTR226fAKQH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Corrupted Blade Spirit",
@@ -661,7 +490,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 50,
                 "temp": 0,
                 "value": 50
@@ -686,12 +515,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -700,7 +523,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -717,19 +540,41 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant Corrupted Relic",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "dwarven"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>Creatures that once held particular items dear can be bound to them after death, their souls inhabiting the item from within. These might be the faithful haunting symbols of their faith, warriors clinging to their old weapons, or the greedy inhabiting their precious wealth. These spirits' physical bodies have long since degraded, but they keep their corrupted relics pristine. The spirits manifest on the unsuspecting or curious, determined to destroy anyone who would dare show any interest in their one precious possession.</p>\n<p>Though rare, there are several kinds of corrupted relics. The bound spirit can manifest in different ways, from animating an ancient weapon to possessing anyone who dons the item. Destroying the relic often ends up being the simplest, most direct way to banish the haunt itself. Destroying or dispelling the spirit without destroying the relic, however, can sometimes leave priceless treasure behind.</p>\n<p>The amulet shown here has the air and death aspects. Its minor gifts, deadly spark and death gaze, power some of the spirit's abilities. Someone who claims the relic might gain different gifts from those aspects.</p>",
-            "source": {
-                "value": "Pathfinder #193: Mantle of Gold"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "lifesense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -746,29 +591,28 @@
                 "value": 11
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 11
+            },
+            "intimidation": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 11
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "dwarven"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, lifesense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "incorporeal",
                 "spirit",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

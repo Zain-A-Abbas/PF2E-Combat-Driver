@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,14 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 33,
                     "mod": 0,
@@ -108,50 +42,42 @@
         },
         {
             "_id": "3uRLdLFqMcwv98J5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE"
             },
             "img": "systems/pf2e/icons/spells/vampiric-touch.webp",
             "name": "Vampiric Touch",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "14d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "14d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 negative damage to the target. You gain temporary Hit Points equal to half the negative damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+                    "value": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -170,58 +96,35 @@
                     },
                     "value": "aeyCi4yAR1t8VtMz"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "vampiric-touch",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -229,42 +132,31 @@
         },
         {
             "_id": "jZKxpsarp1yG1Sgo",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 3
@@ -276,60 +168,37 @@
                     },
                     "value": "aeyCi4yAR1t8VtMz"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fear",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "fear",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -361,11 +230,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -400,11 +271,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -418,52 +291,10 @@
             "type": "melee"
         },
         {
-            "_id": "KqYkMZZ4hM5T9rej",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "8GQKAYkj3NIJHurF",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Children of the Night",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -475,27 +306,19 @@
                 "description": {
                     "value": "<p>The presence of a vrykolakas ancient inspires savage creatures to crawl forth to do its bidding, including rat swarms, wargs, werewolves, and similar creatures. The vrykolakas ancient can give telepathic orders to these creatures within 100 feet, but they can't communicate back.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "enchantment",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -504,7 +327,7 @@
             "_id": "tTPvWYYvp1PgybyK",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Swift Tracker",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -516,37 +339,107 @@
                 "description": {
                     "value": "<p>The vrykolakas moves at full Speed while @UUID[Compendium.pf2e.actionspf2e.Item.Track]{Tracking}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "WPVTRIdQSTbDZImk",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Feral Possession",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p><strong>Trigger</strong> The vrykolakas is reduced to 0 Hit Points, and an animal is within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> Unlike most other undead, a vrykolakas isn't destroyed when it reaches 0 HP. Instead, it attempts to cast its spirit into an animal within 100 feet, which must attempt a Will save (DC 33). On a failure, the animal is possessed. This has the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Possession] spell, but it lasts a number of days equal to the vrykolakas's level. This possession can't be counteracted with magic (though remove curse works against it normally).</p>\n<p>If the animal succeeds at its save, the vrykolakas can attempt to possess a different animal within 100 feet. If at any point an animal critically succeeds at its save or no animal is within 100 feet, the vrykolakas fails to possess anything and is destroyed.</p>\n<p>A vrykolakas possessing an animal seeks out its burial site (see Burial Site Bound) immediately, burying itself there. While the vrykolakas is in this state of recovery, its animal host is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], and beheading it destroys the vrykolakas and kills its host. Removing the curse destroys the vrykolakas and returns the animal to normal.</p>\n<p>After [[/gmr 1d4 #days]]{1d4 days}, if the vrykolakas hasn't been destroyed, the animal dies and the vrykolakas rises in a new body that's identical to its previous one, formed from the animal's remains.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "curse",
+                        "divine",
+                        "incapacitation",
+                        "mental",
+                        "possession"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "sSAVmevencpx75UB",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Pestilential Aura",
+            "sort": 900000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>5 feet. @Check[fortitude|dc:33]</p>\n<p>Creatures beginning their turn in the area while the vrykolakas is in its true form are exposed to bubonic plague.</p>\n<hr />\n<p><strong>Bubonic Plague</strong></p>\n<p>This widespread illness can sweep through entire communities, leaving few unaffected. The first indication of the disease is a telltale swelling of glands. In some cases, the disease can move into your lungs (pneumonic plague) or blood (septicemic plague), which is even more fatal.</p>\n<p>If you have bubonic plague, you can't remove the @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] condition while affected.</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> fatigued (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #minutes]]{1d20 minutes} (1 day)</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 5,
+                        "slug": "pestilential-aura",
+                        "traits": [
+                            "divine"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "aura",
+                        "divine"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "zUZAQv67fQN1itGn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 900000,
+            "name": "Void Healing",
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -558,8 +451,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -570,115 +465,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "WPVTRIdQSTbDZImk",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Feral Possession",
-            "sort": 1000000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p><strong>Trigger</strong> The vrykolakas is reduced to 0 Hit Points, and an animal is within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> Unlike most other undead, a vrykolakas isn't destroyed when it reaches 0 HP. Instead, it attempts to cast its spirit into an animal within 100 feet, which must attempt a Will save (DC 33). On a failure, the animal is possessed. This has the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.Possession]</em> spell, but it lasts a number of days equal to the vrykolakas's level. This possession can't be counteracted with magic (though remove curse works against it normally).</p>\n<p>If the animal succeeds at its save, the vrykolakas can attempt to possess a different animal within 100 feet. If at any point an animal critically succeeds at its save or no animal is within 100 feet, the vrykolakas fails to possess anything and is destroyed.</p>\n<p>A vrykolakas possessing an animal seeks out its burial site (see Burial Site Bound) immediately, burying itself there. While the vrykolakas is in this state of recovery, its animal host is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], and beheading it destroys the vrykolakas and kills its host. Removing the curse destroys the vrykolakas and returns the animal to normal.</p>\n<p>After [[/r 1d4 #days]]{1d4 days}, if the vrykolakas hasn't been destroyed, the animal dies and the vrykolakas rises in a new body that's identical to its previous one, formed from the animal's remains.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "curse",
-                        "divine",
-                        "incapacitation",
-                        "mental",
-                        "necromancy",
-                        "possession"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "sSAVmevencpx75UB",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Pestilential Aura",
-            "sort": 1100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura] @Check[type:fortitude|dc:33]</p>\n<p>Creatures beginning their turn in the area while the vrykolakas is in its true form are exposed to bubonic plague.</p>\n<hr />\n<p><strong>Bubonic Plague</strong></p>\n<p>This widespread illness can sweep through entire communities, leaving few unaffected. The first indication of the disease is a telltale swelling of glands. In some cases, the disease can move into your lungs (pneumonic plague) or blood (septicemic plague), which is even more fatal.</p>\n<p>If you have bubonic plague, you can't remove the @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] condition while affected.</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> fatigued (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/r 1d20 #minutes]]{1d20 minutes}</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "Aura",
-                        "radius": 5,
-                        "slug": "pestilential-aura",
-                        "traits": [
-                            "aura",
-                            "divine",
-                            "necromancy"
-                        ]
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "aura",
-                        "divine",
-                        "necromancy"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -687,7 +476,7 @@
             "_id": "JGEy5BcX7MQ17sdA",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Vrykolakas Vulnerabilities",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -699,37 +488,28 @@
                 "description": {
                     "value": "<p>Vrykolakas all have the following vulnerabilities.</p><ul><li><strong>Burial Site Bound</strong> A vrykolakas is bound to the place of its death or interment. It must return to this location once per week and bury itself in the earth for 24 hours, during which time it is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] and can be beheaded. If it is unable to return to this site, it is reduced to 0 Hit Points and attempts to use Feral Corruption; if this host animal can't return to the burial site before the possession effect ends, the vrykolakas is destroyed and the animal host returns to normal.</li><li><strong>Vulnerable to Decapitation</strong> A vrykolakas that is beheaded can't use its Feral Possession, and a beheaded corpse cannot rise as a vrykolakas.</li></ul>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "x1kqxURcucjG3BaP",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -739,10 +519,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A vrykolakas ancient can transform into a form resembling the body it had in life, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.Humanoid Form]</em> but with unlimited duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.action-macros.Macro.Impersonate: Deception]{Impersonate} in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "value": "<p>A vrykolakas ancient can transform into a form resembling the body it had in life, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.Humanoid Form] but with unlimited duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.action-macros.Macro.Impersonate: Deception]{Impersonate} in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -764,23 +546,13 @@
                     }
                 ],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "polymorph",
-                        "transmutation"
+                        "polymorph"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -789,7 +561,7 @@
             "_id": "DC3068Ne4eQKeeW1",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Create Spawn",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -799,29 +571,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas ancient can turn this creature into a vrykolakas spawn by donating some of its own blood to the creature and burying it in earth for 3 nights.</p>\n<p>Such vrykolakas spawn are generally friendly to the vrykolakas that created them, but they are not under its control and typically wander off on their own rampage within [[/r 1d6 #days]]{1d6 days} of their creation.</p>"
+                    "value": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas ancient can turn this creature into a vrykolakas spawn by donating some of its own blood to the creature and burying it in earth for 3 nights.</p>\n<p>Such vrykolakas spawn are generally friendly to the vrykolakas that created them, but they are not under its control and typically wander off on their own rampage within [[/gmr 1d6 #days]]{1d6 days} of their creation.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "downtime",
-                        "necromancy"
+                        "downtime"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -830,6 +594,40 @@
             "_id": "G0D3kQHUd2mouA90",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Dominate Animal",
+            "sort": 1400000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>DC 33</p>\n<p>The vrykolakas can cast @UUID[Compendium.pf2e.spells-srd.Item.Dominate] at will as a divine innate spell that affects only animals. A creature that succeeds is immune to that vrykolakas's Dominate Animal for 24 hours. Destroying the vrykolakas ends the effect, but reducing it to 0 HP does not.</p>\n<p>A dominated animal takes a -4 circumstance penalty to saving throws against the vrykolakas's Feral Possession.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "divine",
+                        "incapacitation",
+                        "mental"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "pTjXZs6ZwSF31KLb",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Drink Blood",
             "sort": 1500000,
             "system": {
                 "actionType": {
@@ -840,84 +638,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>DC 33,</p>\n<p>The vrykolakas can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.Dominate]</em> at will as a divine innate spell that affects only animals. A creature that succeeds is immune to that vrykolakas's Dominate Animal for 24 hours. Destroying the vrykolakas ends the effect, but reducing it to 0 HP does not.</p>\n<p>A dominated animal takes a -4 circumstance penalty to saving throws against the vrykolakas's Feral Possession.</p>"
+                    "value": "<p><strong>Requirements</strong> The vrykolakas' last action was a successful fangs Strike</p><hr /><p><strong>Effect</strong> The vrykolakas sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC. On a success, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2}, and the vrykolakas regains @Damage[25[healing]] Hit Points, gaining any excess HP as temporary Hit Points.</p>\n<p>Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire, but it increases the creature's drained condition value by 1. A vrykolakas can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>The target creature's drained condition value decreases by 1 per week.</p>\n<p>A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "divine",
-                        "enchantment",
-                        "incapacitation",
-                        "mental"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "pTjXZs6ZwSF31KLb",
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Drink Blood",
-            "sort": 1600000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p><strong>Requirements</strong> The vrykolakas' last action was a successful fangs Strike</p>\n<hr />\n<p><strong>Effect</strong> The vrykolakas sinks its fangs into that creature to drink its blood. This requires an Athletics check against the creature's Fortitude DC. On a success, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2}, and the vrykolakas regains 25 HP, gaining any excess HP as temporary Hit Points.</p>\n<p>Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire, but it increases the creature's drained condition value by 1. A vrykolakas can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>The target creature's drained condition value decreases by 1 per week.</p>\n<p>A blood transfusion, which requires a successful @Check[type:medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "drink-blood",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "5PvfqR4GcUsfw2mR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Rend",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -929,23 +675,16 @@
                 "description": {
                     "value": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "rend",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -954,7 +693,7 @@
             "_id": "Mtkrvum6bboSrXtq",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Sanguine Mauling",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -966,23 +705,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The vrykolakas ancient's last action was to Drink Blood</p>\n<hr />\n<p><strong>Effect</strong> The vrykolakas ancient makes two claw Strikes. Both count toward its multiple attack penalty, but the penalty increases only after it makes both attacks. If it hits with both claws, the target takes @Damage[1d6[bleed]].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -991,7 +723,7 @@
             "_id": "uot20BQOy52S73qO",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Steal Breath",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1001,191 +733,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The vrykolakas ancient is adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] creature</p>\n<hr />\n<p><strong>Effect</strong> The vrykolakas ancient steals the creature's breath. The unconscious creature begins suffocating, can't be awakened for 1 round, and must attempt a @Check[type:fortitude|dc:33] save. If a creature is targeted with this ability in consecutive rounds, the save DC decreases by 2 each round after the first.</p>\n<hr />\n<p><strong>Critical Success</strong> The target immediately awakens and is then temporarily immune to Steal Breath for 24 hours.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target takes [[/r 1d10]] damage.</p>\n<p><strong>Critical Failure</strong> The target is reduced to 0 HP and becomes @UUID[Compendium.pf2e.conditionitems.Item.Dying]{Dying 1}.</p>"
+                    "value": "<p><strong>Requirements</strong> The vrykolakas ancient is adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] creature</p>\n<hr />\n<p><strong>Effect</strong> The vrykolakas ancient steals the creature's breath. The unconscious creature begins suffocating, can't be awakened for 1 round, and must attempt a @Check[fortitude|dc:33] save. If a creature is targeted with this ability in consecutive rounds, the save DC decreases by 2 each round after the first.</p>\n<hr />\n<p><strong>Critical Success</strong> The target immediately awakens and is then temporarily immune to Steal Breath for 24 hours.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target takes [[/r 1d10]] damage.</p>\n<p><strong>Critical Failure</strong> The target is reduced to 0 HP and becomes @UUID[Compendium.pf2e.conditionitems.Item.Dying]{Dying 1}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "manipulate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "b4sjYX72WTc2SCZ7",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7GWu8xG1F4IGPMPt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Z4jT41vColfjLOsW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "frtT7ai9flp23PcI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "w8mscZmgnMxWSuL2",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "kNdejtImCXUk3JDq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 26
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "AMuQp9AELHSASZuT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Vrykolakas Ancient",
@@ -1219,7 +783,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "(negative healing)",
+                "details": "(void healing)",
                 "max": 250,
                 "temp": 0,
                 "value": 250
@@ -1241,12 +805,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 23
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -1258,19 +816,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "Undead",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "<p>Vrykolakas ancients are the sinister overlords of their kind, stealing blood, breath, and life to feed their immortal hunger.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 23,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1292,26 +866,38 @@
                 "value": 21
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 24
+            },
+            "athletics": {
+                "base": 29
+            },
+            "deception": {
+                "base": 27
+            },
+            "intimidation": {
+                "base": 27
+            },
+            "religion": {
+                "base": 19
+            },
+            "stealth": {
+                "base": 26
+            },
+            "survival": {
+                "base": 23
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "undead",
+                "unholy",
                 "vampire"
             ]
         }

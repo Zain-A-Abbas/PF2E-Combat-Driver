@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -48,14 +50,12 @@
             "type": "melee"
         },
         {
-            "_id": "ePsV5S7OpOaaRvqp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
+            "_id": "KDLArWFsnVlzq9p3",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Tremorsense (Precise) 60 feet",
             "sort": 200000,
             "system": {
                 "actionType": {
@@ -66,81 +66,30 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "KDLArWFsnVlzq9p3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Tremorsense (Precise) 60 feet",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p><span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</span></p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "UMgQr2Wl0tRhRLpp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -150,25 +99,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[1d8[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[1d8[bludgeoning]], @Check[fortitude|dc:17|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -177,7 +119,7 @@
             "_id": "jYqUfCeV3KNH2GSV",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Shed Darkness",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -187,40 +129,33 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[type:burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1st level or lower but has no effect on magical light from 2nd-level or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
+                    "value": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1st level or lower but has no effect on magical light from 2nd-rank or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Adventure: Crown of the Kobold King"
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": "Pathfinder Adventure: Crown of the Kobold King"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "darkness",
-                        "evocation",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "aIBr8fPXzpp8pGEq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -232,49 +167,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "oF9uIdbaqfbVheZT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Darkmantle",
@@ -313,12 +218,6 @@
                 "temp": 0,
                 "value": 20
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -330,19 +229,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>These dark blue or black mollusk-like creatures have a similar appearance to an octopus, save that they have only six tentacles, all of which are connected by a thick leathery shroud. While darkmantle aren't a particularly good climber, they excel at clinging and can clutch onto a cave roof for days, patiently waiting to ambush any prey that walks below them with a disorienting blob of darkness. When clinging to a cave roof, and with their bulbous red eyes closed down to squints, darkmantles in ambush look similar to stalactites. Their preferred hunting method works best on creatures without darkvision, so they frequent ruins aboveground or shallow caves not far from the outside world. When darkmantles sense prey, they shed darkness down onto their prey before dropping away from the ceiling to flap quickly down to their victim, whereupon these beasts clutch and squeeze with their thick, muscular tentacles. Despite the shape of darkmantles, their bodies's texture is more like thick leather or even rubber-they can't cause damage with their spike-shaped bodies by dropping down onto other creatures.</p>\n<p>Darkmantles have a swift life cycle-their young grow to maturity in a matter of months, and most of these creatures die of old age after living for only a few years. As a result, generations of darkmantles quickly accrue, and over the years, they've developed a similarly rapid propensity to adapt to new locations. Aquatic caverns, for example, might be infested with darkmantles that can swim instead of fly; on the other hand, icy caverns would've led to darkmantles that developed white or pale blue colorations, and these specimens might produce blasts of obscuring fog instead of darkness. The deepest, darkest reaches of the Darklands are rumored to host darkmantles of incredible size, capable of smothering multiple human-sized victims simultaneously. These deep-dwelling darkmantles have the capacity to shed more powerful darkness that can plunge even creatures with darkvision into inky blackness- darkness in which these deep-dwelling creatures can, of course, still see well within.</p>",
-            "source": {
-                "value": "Pathfinder Adventure: Crown of the Kobold King"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: Crown of the Kobold King"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -359,16 +277,13 @@
                 "value": 4
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 7
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, tremorsense (precise) 60 feet"
-            },
             "size": {
                 "value": "sm"
             },

@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,14 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 26,
                     "mod": 0,
@@ -108,53 +42,44 @@
         },
         {
             "_id": "Pf5vvLRmAkPaLN0r",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60"
             },
-            "img": "systems/pf2e/icons/spells/cloudkill.webp",
+            "img": "icons/creatures/slimes/slime-movement-splash-green.webp",
             "name": "Cloudkill",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "poison"
-                            },
-                            "value": "6d8"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "6d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "poison"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You conjure a poisonous fog. This functions as <em>@UUID[Compendium.pf2e.spells-srd.Item.Obscuring Mist]</em>, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
+                    "value": "<p>You conjure a poisonous fog. This functions as @UUID[Compendium.pf2e.spells-srd.Item.Mist], except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -169,108 +94,203 @@
                 "location": {
                     "value": "nQJ4bCNSLy7MFyXP"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "cloudkill",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "poison",
-                        "necromancy"
+                        "manipulate",
+                        "poison"
                     ]
                 }
             },
             "type": "spell"
         },
         {
-            "_id": "NS4Sroct6rpeddeR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0"
-                }
+            "_id": "mbr0k4VLD5DblIlR",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
             },
-            "img": "systems/pf2e/icons/spells/acid-arrow.webp",
-            "name": "Acid Arrow (At will)",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+            "name": "Dimension Door",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "acid"
-                            },
-                            "value": "7d8"
-                        }
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 4
+                },
+                "location": {
+                    "value": "nQJ4bCNSLy7MFyXP"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "dimension-door",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "AVCJ2SYe5pptCOsw",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
+            },
+            "img": "systems/pf2e/icons/spells/fear.webp",
+            "name": "Fear (At will)",
+            "sort": 400000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
                     }
                 },
                 "description": {
-                    "value": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r 1d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage].</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
+                    "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
+                    "value": "varies"
+                },
+                "level": {
+                    "value": 3
+                },
+                "location": {
+                    "value": "nQJ4bCNSLy7MFyXP"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "fear",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "emotion",
+                        "fear",
+                        "manipulate",
+                        "mental"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "4MzJVcfYcPuvs7SR",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0"
+            },
+            "img": "systems/pf2e/icons/spells/acid-arrow.webp",
+            "name": "Acid Arrow (At will)",
+            "sort": 500000,
+            "system": {
+                "area": null,
+                "cost": {
                     "value": ""
                 },
-                "hasCounteractCheck": {
-                    "value": false
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "acid"
+                    }
+                },
+                "defense": null,
+                "description": {
+                    "value": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus @Damage[(floor(@item.rank/2))d6[persistent,acid]] damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
                 },
                 "heightening": {
                     "damage": {
@@ -280,266 +300,40 @@
                     "type": "interval"
                 },
                 "level": {
-                    "value": 4
+                    "value": 2
                 },
                 "location": {
+                    "heightenedLevel": 4,
                     "value": "nQJ4bCNSLy7MFyXP"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "acid-arrow",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "acid",
                         "attack",
-                        "evocation"
-                    ]
-                }
-            },
-            "type": "spell"
-        },
-        {
-            "_id": "mbr0k4VLD5DblIlR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
-                }
-            },
-            "img": "systems/pf2e/icons/spells/dimension-door.webp",
-            "name": "Dimension Door",
-            "sort": 400000,
-            "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
-                "cost": {
-                    "value": ""
-                },
-                "damage": {
-                    "value": {}
-                },
-                "description": {
-                    "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
-                },
-                "duration": {
-                    "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
-                },
-                "level": {
-                    "value": 4
-                },
-                "location": {
-                    "value": "nQJ4bCNSLy7MFyXP"
-                },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
-                },
-                "range": {
-                    "value": "120 feet"
-                },
-                "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
-                "slug": "dimension-door",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
-                "target": {
-                    "value": ""
-                },
-                "time": {
-                    "value": "2"
-                },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "teleportation",
-                        "conjuration"
-                    ]
-                }
-            },
-            "type": "spell"
-        },
-        {
-            "_id": "AVCJ2SYe5pptCOsw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
-            },
-            "img": "systems/pf2e/icons/spells/fear.webp",
-            "name": "Fear (At will)",
-            "sort": 500000,
-            "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
-                "cost": {
-                    "value": ""
-                },
-                "damage": {
-                    "value": {}
-                },
-                "description": {
-                    "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
-                },
-                "duration": {
-                    "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
-                },
-                "level": {
-                    "value": 3
-                },
-                "location": {
-                    "value": "nQJ4bCNSLy7MFyXP"
-                },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
-                },
-                "range": {
-                    "value": "30 feet"
-                },
-                "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
-                "slug": "fear",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
-                "target": {
-                    "value": "1 creature"
-                },
-                "time": {
-                    "value": "2"
-                },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "divine",
-                        "occult",
-                        "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "emotion",
-                        "fear",
-                        "mental",
-                        "enchantment"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -574,22 +368,25 @@
                     },
                     "hh8988wa4xba6db6ztzp": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "chaotic",
-                        "magical"
+                        "magical",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -627,24 +424,27 @@
                     },
                     "gwrhzwpl9llfszh6esmg": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
                         "chaotic",
                         "magical",
-                        "reach-10"
+                        "reach-10",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -654,57 +454,13 @@
             "type": "melee"
         },
         {
-            "_id": "MopioBBWXr3np4t0",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "zhw2nm585TNwCDjL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Telepathy",
-            "sort": 900000,
+            "name": "Telepathy 100 feet",
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -716,69 +472,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "telepathy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "divination",
                         "magical"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "EWOsMDPiDiwsUVSL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1000000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -787,7 +493,7 @@
             "_id": "aRmGycM99xyVkKnJ",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Caustic Blood",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -797,25 +503,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> The nyogoth takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The nyogoth sprays its acidic blood on adjacent creatures, dealing @Damage[6d6[acid]] damage (@Check[type:reflex|dc:29|basic:true] save).</p>"
+                    "value": "<p><strong>Trigger</strong> The nyogoth takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The nyogoth sprays its acidic blood on adjacent creatures, dealing @Damage[6d6[acid]] damage (@Check[reflex|dc:29|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -824,7 +523,7 @@
             "_id": "V5mIlHkiRCxhndVN",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Feeding Frenzy",
-            "sort": 1200000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -834,25 +533,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The nyogoth has @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] a creature</p>\n<hr />\n<p><strong>Effect</strong> The nyogoth slavers and chews at the grabbed creature, dealing [[/r (2d6+7)[slashing]]] damage and @Damage[1d6[acid]] damage (@Check[type:fortitude|dc:29|basic:true] save).</p>"
+                    "value": "<p><strong>Requirements</strong> The nyogoth has @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] a creature</p><hr /><p><strong>Effect</strong> The nyogoth slavers and chews at the grabbed creature, dealing @Damage[(2d6+7)[slashing],1d6[acid]]{2d6+7 slashing and 1d6 acid} damage (@Check[fortitude|dc:29|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -861,7 +553,7 @@
             "_id": "mcIvTT80sYixnl9W",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Nauseating Display",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -871,48 +563,38 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The nyogoth untangles its tentacles and prolapses its many mouths, turning itself inside out in a truly nauseating display. Creatures in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:29] save, after which they are temporarily immune to further Nauseating Displays for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 3} and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 5} and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>"
+                    "value": "<p>The nyogoth untangles its tentacles and prolapses its many mouths, turning itself inside out in a truly nauseating display. Creatures in a @Template[emanation|distance:30] must attempt a @Check[will|dc:29] save, after which they are temporarily immune to further Nauseating Displays for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 3} and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 5} and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "emotion",
-                        "enchantment",
                         "fear",
                         "incapacitation",
                         "mental",
                         "occult",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "U6lHO1793L8PN4Hc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -924,141 +606,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "oxh0AN3d64PaBvfW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "RNCaxNKe0fP3GZrH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "1KzZ99vspEesje49",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "So5AzMmLIqsvZO9N",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vb3SSp042FiIfRBm",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Nyogoth",
@@ -1108,12 +668,6 @@
                     "type": "fear-effects"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 19
-            },
             "resistances": [
                 {
                     "type": "mental",
@@ -1136,27 +690,38 @@
                 ],
                 "value": 5
             },
-            "weaknesses": [
-                {
-                    "type": "lawful",
-                    "value": 10
-                }
-            ]
+            "weaknesses": []
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Fiend",
+            "languages": {
+                "details": "telepathy 100 feet",
+                "value": [
+                    "chthonian"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Little more than a coiled mass of intestines encircling a massive gaping maw, this qlippoth is an Abyssal scavenger, subsisting on the filth and leftovers of demons and qlippoth alike, although it relishes any opportunity to consume living prey. Despite this seeming lowly role in the Abyssal ecosystem, a nyogoth is far from a stupid beast and can orchestrate cunning ambushes to secure its next meal.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 19,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1178,27 +743,34 @@
                 "value": 16
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 21
+            },
+            "athletics": {
+                "base": 21
+            },
+            "intimidation": {
+                "base": 19
+            },
+            "occultism": {
+                "base": 16
+            },
+            "stealth": {
+                "base": 21
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "Telepathy 100 feet",
-                "selected": [],
-                "value": [
-                    "abyssal"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "fiend",
-                "qlippoth"
+                "qlippoth",
+                "unholy"
             ]
         }
     },

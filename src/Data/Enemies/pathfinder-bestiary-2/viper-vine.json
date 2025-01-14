@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -73,11 +75,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -92,57 +96,13 @@
             "type": "melee"
         },
         {
-            "_id": "61GyOh9BdFBPZCUD",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "S7QInhdroOaf7k84",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Tremorsense",
-            "sort": 400000,
+            "name": "Tremorsense 60 feet",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -154,23 +114,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -179,7 +132,7 @@
             "_id": "cDS4azJaDaRZITrQ",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Cold Vulnerability",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -189,27 +142,20 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "value": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "cold"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -218,6 +164,43 @@
             "_id": "UcQu3REAJGDNFfE0",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Captivating Pollen",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The viper vine releases a @Template[emanation|distance:60] of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a @Check[will|dc:33] save or be captivated.</p>\n<p>The viper vine can't use Captivating Pollen for [[/gmr 1d4 #Recharge Captivating Pollen]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated], and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 24 hours.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "incapacitation",
+                        "mental",
+                        "poison"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "MWff0Ro0CLotg930",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Constrict",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -228,86 +211,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The viper vine releases a @Template[type:emanation|distance:60] of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a @Check[type:will|dc:33] save or be captivated.</p>\n<p>The viper vine can't use Captivating Pollen for [[/br 4dr #Recharge Captivating Pollen]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated], and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 24 hours.</p>"
+                    "value": "<p>@Damage[(3d8+8)[bludgeoning]] damage, @Check[fortitude|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "enchantment",
-                        "incapacitation",
-                        "mental",
-                        "poison"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "MWff0Ro0CLotg930",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Constrict",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>@Damage[(3d8+8)[bludgeoning]] damage, @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "6gwNFiImkw2H0QWA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -319,72 +246,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "KRXpXn3HE9STwBuO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "T6q7EUEzuFX5iDu5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Viper Vine",
@@ -423,12 +297,6 @@
                 "temp": 0,
                 "value": 270
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 22
-            },
             "resistances": [
                 {
                     "type": "poison",
@@ -441,19 +309,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Plant",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 22,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -470,19 +357,16 @@
                 "value": 22
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 27
+            },
+            "stealth": {
+                "base": 24
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision, tremorsense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "lg"
             },

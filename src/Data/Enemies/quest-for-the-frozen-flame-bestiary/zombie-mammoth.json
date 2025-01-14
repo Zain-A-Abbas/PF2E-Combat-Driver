@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "fl5yawn8yoqeitko",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -64,11 +64,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -103,11 +105,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -145,11 +149,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -163,143 +169,10 @@
             "type": "melee"
         },
         {
-            "_id": "spar99bNs3S8gnpC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "1o5Jz1S1Cik8CB5K",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "btW36EFZtvZ3vSz0",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "ajcrvjvems9obb68",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 800000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -311,20 +184,56 @@
                 "description": {
                     "value": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "btW36EFZtvZ3vSz0",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -333,7 +242,7 @@
             "_id": "5o7glwp5ufvh3jxn",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Dual Tusks",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -345,20 +254,16 @@
                 "description": {
                     "value": "<p>The zombie mammoth makes two tusk Strikes, each against a different creature. This counts as one attack for the mammoth's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -367,7 +272,7 @@
             "_id": "9kqejjpibzpc2kq6",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Impaling Tusks",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -379,20 +284,16 @@
                 "description": {
                     "value": "<p>The zombie mammoth makes a tusk Strike against a creature it's grabbing with its trunk. If the attack hits, the creature is impaled upon one of the mammoth's tusks, freeing the trunk to make attacks. Each of the mammoth's tusks can hold two Medium or smaller creatures. A mammoth can attack with its tusks while creatures are impaled upon them.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -401,7 +302,7 @@
             "_id": "p5zl348w6xkugcq6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Grabbing Trunk",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -413,46 +314,19 @@
                 "description": {
                     "value": "<p>A Medium or smaller creature hit by the zombie mammoth's trunk is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]. If the mammoth moves, it can bring the grabbed creature along with it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "qnog0mq64nq5iocc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zombie Mammoth",
@@ -486,7 +360,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 200,
                 "temp": 0,
                 "value": 200
@@ -508,12 +382,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [],
                 "special": "",
@@ -521,7 +389,7 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -531,19 +399,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #176: Lost Mammoth Valley"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #176: Lost Mammoth Valley"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -560,22 +447,21 @@
                 "value": 15
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 19
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "huge"
             },
             "value": [
+                "evil",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

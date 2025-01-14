@@ -3,94 +3,10 @@
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
-            "_id": "pbwIXTUIrcHbVCd3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "S8UsqHDRsdN6XtV5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "KEJNkeF17Hd5RgpW",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Feral Trackers",
-            "sort": 300000,
+            "sort": 100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -102,8 +18,10 @@
                 "description": {
                     "value": "<p>A feral skull swarm gains a +2 circumstance bonus to Perception checks to Seek and to Survival checks to Track, both against any creature that has taken damage from the swarm's Feral Gnaw within the previous 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -134,32 +52,52 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "oX8m7VQu9DO6VFnp",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Boneshard Burst",
+            "sort": 200000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a @Template[burst|distance:30], dealing @Damage[3d12[piercing],2d12[void]]{3d12 piercing damage and 2d12 void damage} (@Check[reflex|dc:32|basic] save).</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "YvbJG9mY33OhkVRp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -171,8 +109,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -183,56 +123,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "oX8m7VQu9DO6VFnp",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Boneshard Burst",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a @Template[type:burst|distance:30], dealing [[/r {3d12[piercing],2d12[negative]}]]{3d12 piercing damage and 2d12 negative damage} (@Check[type:reflex|dc:32|basic:true] save).</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -241,7 +134,7 @@
             "_id": "UFxr3UoWoyUD8Oh4",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Feral Gnaw",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -251,25 +144,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the swarm's space takes [[/r {2d6[bludgeoning],2d6[piercing],2d6[slashing]}]]{2d6 bludgeoning damage, 2d6 piercing damage, and 2d6 slashing damage} (@Check[type:reflex|dc:32|basic:true] save).</p>\n<p>A creature that fails its saving throw also takes @Damage[1d10[bleed]].</p>"
+                    "value": "<p>Each enemy in the swarm's space takes @Damage[2d6[bludgeoning],2d6[piercing],2d6[slashing]]{2d6 bludgeoning damage, 2d6 piercing damage, and 2d6 slashing damage} (@Check[reflex|dc:32|basic] save).</p>\n<p>A creature that fails its saving throw also takes @Damage[1d10[bleed]].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -278,7 +164,7 @@
             "_id": "4x1dSgcNIbL7YtTa",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Frightening Howl",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -288,80 +174,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The feral skull swarm emits a terrifying howl. Each creature within @Template[type:emanation|distance:60]{60 feet} must succeed at a @Check[type:will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>"
+                    "value": "<p>The feral skull swarm emits a terrifying howl. Each creature within @Template[emanation|distance:60]{60 feet} must succeed at a @Check[will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "emotion",
-                        "enchantment",
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "bZcnXhViegJfhh5C",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "VMEfNEAyjagIvy8s",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Feral Skull Swarm",
@@ -395,7 +227,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 160,
                 "temp": 0,
                 "value": 160
@@ -420,12 +252,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 21
-            },
             "resistances": [
                 {
                     "type": "bludgeoning",
@@ -468,19 +294,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "<p>Some skull swarms are crafted from the heads of feral and dangerous beasts. These can include predatory cats, bears, dinosaurs, and the like, but just as often they're made from bulls, horses, apes, and other creatures that were gentler in life. In death, a feral skull swarm is bloodthirsty regardless of its origins, with a keen scent for living flesh. Even herbivore skulls diligently chew on the flesh of their swarm's victims.</p>\n<hr />\n<p>A skull swarm is composed of reanimated masses of craniums and jawbones, forming a terrifying avalanche of undead fury. Most skull swarms are mindless, though some retain a vestige of wit, awareness, and even magical talents from life, culminating in a highly intelligent swarm mind.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 21,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -497,26 +342,25 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 22
+            },
+            "survival": {
+                "base": 21
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "huge"
             },
             "value": [
+                "evil",
                 "mindless",
                 "swarm",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

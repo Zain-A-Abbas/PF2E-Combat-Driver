@@ -3,52 +3,10 @@
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
-            "_id": "VgsFe1dtKkzBHRVz",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "VB7Ak1txQ1RPwHwJ",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Construct Armor (Hardness 3)",
-            "sort": 200000,
+            "sort": 100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -60,8 +18,10 @@
                 "description": {
                     "value": "<p>Like normal objects, an animated silverware swarm has Hardness. This Hardness reduces any damage the swarm takes by an amount equal to the Hardness. Once an animated silverware swarm is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 12.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -111,18 +71,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -131,6 +82,38 @@
             "_id": "GpYSF4Qy9tOtd9Z4",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Slice and Dice",
+            "sort": 200000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>Each enemy in the animated silverware swarm's space takes @Damage[1d6[piercing]] damage or @Damage[1d6[slashing]] damage (@Check[reflex|dc:17|basic] save)</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "magical"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "3BpK7a2mX5UCDLmB",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Stick a Fork in It",
             "sort": 300000,
             "system": {
                 "actionType": {
@@ -141,90 +124,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the animated silverware swarm's space takes @Damage[1d6[piercing]] damage or @Damage[1d6[slashing]] damage (@Check[type:reflex|dc:17|basic:true] save)</p>"
+                    "value": "<p>The animated silverware swarm attempts to pin a single creature.</p>\n<p>The target must attempt a @Check[reflex|dc:17] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Silverware pins portions of the target's clothing and gear. The target takes a -10-foot circumstance penalty to its Speeds as long as it remains in the swarm's space.</p>\n<p><strong>Failure</strong> As success, and the target also can't Step until it leaves the swarm's space.</p>\n<p><strong>Critical Failure</strong> The target is thoroughly pinned by the silverware, becoming @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] until it @UUID[Compendium.pf2e.actionspf2e.Item.Escape]{Escapes} (DC 17) or uses 2 Interact actions to remove all of the silverware pinning them down.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Stick a Fork in It]</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "magical"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "3BpK7a2mX5UCDLmB",
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Stick a Fork in It",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>The animated silverware swarm attempts to pin a single creature.</p>\n<p>The target must attempt a @Check[type:reflex|dc:17] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Silverware pins portions of the target's clothing and gear. The target takes a -10-foot circumstance penalty to its Speeds as long as it remains in the swarm's space.</p>\n<p><strong>Failure</strong> As success, and the target also can't Step until it leaves the swarm's space.</p>\n<p><strong>Critical Failure</strong> The target is thoroughly pinned by the silverware, becoming @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] until it @UUID[Compendium.pf2e.actionspf2e.Item.Escape]{Escapes} (DC 17) or uses 2 Interact actions to remove all of the silverware pinning them down.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Stick a Fork in It]</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "VvtBsmeYmhmC0ClY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Animated Silverware Swarm",
@@ -271,12 +185,6 @@
                     "type": "precision"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 5
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 20
@@ -293,19 +201,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>Nobles are known to pay great amounts to animate their silverware, both for ease in cleaning and to serve as novelties during dinner parties.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 5,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -322,19 +244,13 @@
                 "value": 3
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 8
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },

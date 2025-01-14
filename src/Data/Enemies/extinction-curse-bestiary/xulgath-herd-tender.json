@@ -4,18 +4,13 @@
     "items": [
         {
             "_id": "W8SyDxIX2baPiKD7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/alchemists-fire.webp",
             "name": "Alchemist's Fire (Moderate)",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 1
@@ -23,23 +18,28 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "martial",
                 "containerId": null,
                 "damage": {
                     "damageType": "fire",
                     "dice": 2,
-                    "die": "d8"
+                    "die": "d8",
+                    "persistent": {
+                        "faces": null,
+                        "number": 2,
+                        "type": "fire"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -50,69 +50,35 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 10
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 4,
                 "range": 20,
                 "reload": {
                     "value": "-"
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Moderate.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Moderate.criticalSuccess"
-                    }
-                ],
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "alchemists-fire-moderate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 2
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": null
                 },
                 "traits": {
                     "rarity": "common",
@@ -126,33 +92,28 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "nYZMYEzR32X1P92B",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F"
             },
             "img": "systems/pf2e/icons/equipment/weapons/composite-shortbow.webp",
             "name": "Composite Shortbow",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "composite-shortbow",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -169,9 +130,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "bow",
                 "hardness": 0,
                 "hp": {
@@ -181,34 +139,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 14
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": 60,
@@ -216,56 +159,48 @@
                     "value": "0"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "composite-shortbow",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "deadly-d10",
-                        "evocation",
                         "magical",
                         "propulsive"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-plus-hands"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "yjr96NTn2dmpnLe9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.f1gwoTkf3Nn0v3PN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.f1gwoTkf3Nn0v3PN"
             },
             "img": "systems/pf2e/icons/equipment/weapons/whip.webp",
             "name": "Whip",
             "sort": 300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "whip",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -282,9 +217,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "flail",
                 "hardness": 0,
                 "hp": {
@@ -294,34 +226,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -329,17 +246,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "whip",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -353,26 +268,24 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "2capJkB8aKjuDrD7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 400000,
             "system": {
                 "acBonus": 3,
                 "baseItem": "hide-armor",
+                "bulk": {
+                    "value": 2
+                },
                 "category": "medium",
                 "checkPenalty": -2,
                 "containerId": null,
@@ -385,9 +298,6 @@
                     "inSlot": false,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": "2"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -397,97 +307,60 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "med",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
-                "stackGroup": null,
                 "strength": 2,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "3"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "c8ksgcE5cpLKm4iF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g"
             },
             "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
             "name": "Arrows",
             "sort": 500000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 0,
-                    "value": 0
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "ammo"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "ammo",
                 "containerId": null,
+                "damage": null,
                 "description": {
                     "value": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -497,14 +370,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -512,13 +380,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 20,
                 "rules": [],
                 "size": "med",
                 "slug": "arrows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "arrows",
                 "traits": {
                     "rarity": "common",
@@ -527,8 +397,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -562,11 +434,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -607,11 +481,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -646,11 +522,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -692,11 +570,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -734,36 +614,31 @@
                     "value": 20
                 },
                 "damageRolls": {
-                    "Dp1kb7EkZXLsMoZp": {
+                    "0": {
                         "damage": "2d8",
+                        "damageType": "fire"
+                    },
+                    "1": {
+                        "category": "persistent",
+                        "damage": "2",
+                        "damageType": "fire"
+                    },
+                    "2": {
+                        "category": "splash",
+                        "damage": "2",
                         "damageType": "fire"
                     }
                 },
                 "description": {
                     "value": ""
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Moderate.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Moderate.criticalSuccess"
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
+                "rules": [],
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -779,52 +654,10 @@
             "type": "melee"
         },
         {
-            "_id": "Bqkj3XCvzqqQZur2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "OpULqY48Og5zS0iV",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Mounted Defense",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -836,8 +669,10 @@
                 "description": {
                     "value": "<p><strong>Prerequisite</strong> The herd-tender is mounted</p>\n<p><strong>Trigger</strong> The herd-tender is targeted with a melee or ranged attack by an attacker they can see</p>\n<hr />\n<p><strong>Effect</strong> The herd-tender gains a +2 circumstance bonus to AC against the triggering attack.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -857,18 +692,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -877,7 +703,7 @@
             "_id": "ax83ccfFLMazkzxs",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Powerful Stench",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -887,10 +713,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>A creature that enters the area must attempt a @Check[type:fortitude|dc:26] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}, and on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it is sickened. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>"
+                    "value": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:26] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}, and on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it is sickened. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -898,27 +726,17 @@
                         "radius": 30,
                         "slug": "powerful-stench",
                         "traits": [
-                            "aura",
                             "olfactory"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
                         "olfactory"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -927,7 +745,7 @@
             "_id": "jaYwPmKt8kxpFg9N",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Feral Directive",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -939,23 +757,16 @@
                 "description": {
                     "value": "<p>The xulgath attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Command an Animal] on their mount, but instead of demanding a specific action such as Stride or Strike, the xulgath gives a general directive, such as to return to camp or to attack a small group the mount can see. The mount and the xulgath each retain 3 actions on their turns, but the mount doesn't change its general tactics until the xulgath uses Feral Directive or Command an Animal again.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -964,7 +775,7 @@
             "_id": "c1nV69h5eKoUvmDM",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Mounted Superiority",
-            "sort": 1500000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -974,10 +785,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A mounted xulgath's Strikes deal an additional [[/r {1d8}]]{1d8 damage} to creatures that aren't mounted.</p>"
+                    "value": "<p>A mounted xulgath's Strikes deal an additional 1d8 damage to creatures that aren't mounted.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -997,73 +810,18 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "aESx6vSWpBErsFJX",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "VDwYRZThNfOjUNuG",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "ycvmtIzMkmfLy5hY",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Dinosaur Lore",
-            "sort": 1800000,
+            "sort": 1500000,
             "system": {
                 "description": {
                     "value": ""
@@ -1074,103 +832,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "juP0vKVgjsTaCHMq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "aKeXjpU2OxlNzZyR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "uhlPJDJHQWn59jLy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4p2MGnGoUiVGQSAx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1211,31 +879,42 @@
                 "temp": 0,
                 "value": 135
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 17
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Humanoid",
+            "languages": {
+                "details": "",
+                "value": [
+                    "draconic",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #154: Siege of the Dinosaurs"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #154: Siege of the Dinosaurs"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 17,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1252,23 +931,34 @@
                 "value": 14
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 16
+            },
+            "athletics": {
+                "base": 18
+            },
+            "intimidation": {
+                "base": 16
+            },
+            "nature": {
+                "base": 17
+            },
+            "stealth": {
+                "base": 16
+            },
+            "survival": {
+                "base": 17
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "draconic",
-                    "undercommon"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "humanoid",
                 "xulgath"
             ]

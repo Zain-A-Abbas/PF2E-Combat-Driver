@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,17 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": true
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 20,
                     "mod": 0,
@@ -108,45 +45,29 @@
         },
         {
             "_id": "rcWb1X7tL04A2SNN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c"
             },
             "img": "systems/pf2e/icons/spells/darkness.webp",
             "name": "Darkness (At Will)",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's level or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.Concealed].</p>"
+                    "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.Concealed].</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -155,58 +76,35 @@
                     "heightenedLevel": 2,
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "darkness",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "darkness",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -214,42 +112,31 @@
         },
         {
             "_id": "Hp62DUOGaWaAPA8r",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp"
             },
             "img": "systems/pf2e/icons/spells/death-knell.webp",
             "name": "Death Knell",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>You snuff the life out of a creature on the brink of death. The target must attempt a Will save. If this kills it, you gain 10 temporary HP and a +1 status bonus to attack and damage rolls for 10 minutes.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target's @UUID[Compendium.pf2e.conditionitems.Item.Dying] value increases by 1.</p>\n<p><strong>Failure</strong> The target dies.</p>"
+                    "value": "<p>You snuff the life out of a creature on the brink of death. The target must attempt a Will save. If this kills it, you gain 10 temporary HP and a +1 status bonus to attack and damage rolls for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's @UUID[Compendium.pf2e.conditionitems.Item.Dying] value increases by 1.</p>\n<p><strong>Failure</strong> The target dies.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Death Knell]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -258,56 +145,33 @@
                     "heightenedLevel": 2,
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "death-knell",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature that has 0 HP"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "necromancy"
+                        "manipulate"
                     ]
                 }
             },
@@ -315,42 +179,26 @@
         },
         {
             "_id": "PJOR80vFh20QH5qO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.rthC6dGm3nNrt1xN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.rthC6dGm3nNrt1xN"
             },
             "img": "systems/pf2e/icons/spells/spectral-hand.webp",
             "name": "Spectral Hand",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You create a semicorporeal hand out of your essence that delivers touch spells for you. Whenever you Cast a Spell with a range of touch, you can have the hand crawl to a target within range along the ground, touch it, and then crawl back to you. When making a melee spell attack with the hand, you use your normal bonuses. The hand can move as far as it needs to within range. The hand has your AC and saves, but any damage to the hand destroys it and causes you to take 1d6 damage.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -359,55 +207,32 @@
                     "heightenedLevel": 2,
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "spectral-hand",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "necromancy"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -415,51 +240,42 @@
         },
         {
             "_id": "AccE0fme1xuVdjv5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
             },
             "img": "systems/pf2e/icons/spells/chill-touch.webp",
             "name": "Chill Touch",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": true,
+                        "category": null,
+                        "formula": "1d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>Siphoning negative energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals negative damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The negative damage to living creatures increases by 1d4.</p>"
+                    "value": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -474,58 +290,35 @@
                 "location": {
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "chill-touch",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living or undead creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "negative",
-                        "necromancy"
+                        "concentrate",
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -533,51 +326,42 @@
         },
         {
             "_id": "K3wq9Adoadc6GXj6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
             },
             "img": "systems/pf2e/icons/spells/daze.webp",
             "name": "Daze",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "mental"
-                            },
-                            "value": "0"
-                        }
+                    "0": {
+                        "applyMod": true,
+                        "category": null,
+                        "formula": "0",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "mental"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "will"
                     }
                 },
                 "description": {
                     "value": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 round"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -592,59 +376,36 @@
                 "location": {
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "60 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "daze",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
+                        "concentrate",
+                        "manipulate",
                         "mental",
-                        "nonlethal",
-                        "enchantment"
+                        "nonlethal"
                     ]
                 }
             },
@@ -652,45 +413,29 @@
         },
         {
             "_id": "u2Swu9GqcWTekOge",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
             },
             "img": "systems/pf2e/icons/spells/detect-magic.webp",
             "name": "Detect Magic",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the level of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>"
+                    "value": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -698,60 +443,36 @@
                 "location": {
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "detect-magic",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "detection",
                         "cantrip",
-                        "divination"
+                        "concentrate",
+                        "detection",
+                        "manipulate"
                     ]
                 }
             },
@@ -759,50 +480,42 @@
         },
         {
             "_id": "k0MusTb6YfsJIQth",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD"
             },
-            "img": "systems/pf2e/icons/spells/phantom-pain.webp",
+            "img": "icons/magic/unholy/strike-beam-blood-small-red-purple.webp",
             "name": "Phantom Pain",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "mental"
-                            },
-                            "value": "2d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "mental"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
                     }
                 },
                 "description": {
-                    "value": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and [[/r 1d4[persistent,mental]]]. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage]{Persistent Mental Damage}, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. If the target recovers from being Sickened, the Persistent Damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the Persistent Damage by 1d4.</p>"
+                    "value": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>@Damage[(@item.level)d4[persistent,mental]]{Leveled Persistent Mental Damage}</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -818,56 +531,34 @@
                     "heightenedLevel": 2,
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "phantom-pain",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
+                        "illusion",
+                        "manipulate",
                         "mental",
-                        "nonlethal",
-                        "illusion"
+                        "nonlethal"
                     ]
                 }
             },
@@ -875,42 +566,26 @@
         },
         {
             "_id": "fGJY7HWPzlpF9aZi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
             },
             "img": "systems/pf2e/icons/spells/shield.webp",
             "name": "Shield",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the @UUID[Compendium.pf2e.feats-srd.Item.Shield Block] reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the <em>@UUID[Compendium.pf2e.spells-srd.Item.Magic Missile]</em> spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Shield]</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+                    "value": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the @UUID[Compendium.pf2e.feats-srd.Item.Shield Block] reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the @UUID[Compendium.pf2e.spells-srd.Item.Force Barrage] spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Shield]</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "until the start of your next turn"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -918,58 +593,34 @@
                 "location": {
                     "value": "opNwYrwABCLTV4vZ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "shield",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "force",
-                        "abjuration"
+                        "concentrate",
+                        "force"
                     ]
                 }
             },
@@ -977,24 +628,22 @@
         },
         {
             "_id": "JCt4Rcga5mbhfwPx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.TDrO7Xdyn7juFy3c"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.TDrO7Xdyn7juFy3c"
             },
             "img": "systems/pf2e/icons/equipment/weapons/kukri.webp",
             "name": "Kukri",
             "sort": 1000000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "kukri",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -1004,15 +653,12 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>The blade of this foot‑long knife curves inward and lacks a cross guard at the hilt.</p>"
+                    "value": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
                 },
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "knife",
                 "hardness": 0,
@@ -1023,34 +669,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 6
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1058,17 +689,15 @@
                     "value": ""
                 },
                 "rules": [],
-                "size": "sm",
-                "slug": "kukri",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
                 },
+                "size": "med",
+                "slug": "kukri",
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -1080,48 +709,32 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "SO2jaHTafmBJ8DGi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.cTBmQgWUyf50x3dY"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.cTBmQgWUyf50x3dY"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/black-lotus-extract.webp",
+            "img": "icons/consumables/potions/potion-flask-corked-tied-necklace-teal.webp",
             "name": "Black Smear Poison",
             "sort": 1100000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "potion"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "potion",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>Many calignis use a debilitating poison crafted from subterranean fungi.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> As stage 1</p>\n<p><strong>Stage 3</strong> @Damage[1d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round)</p>"
+                    "value": "<p>Many calignis use a debilitating poison crafted from subterranean fungi.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> As stage 1</p>\n<p><strong>Stage 3</strong> @Damage[1d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round)</p>"
                 },
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1131,28 +744,24 @@
                 "level": {
                     "value": 2
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "black-smear-poison",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
@@ -1165,8 +774,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -1203,11 +814,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1224,10 +837,8 @@
         },
         {
             "_id": "uzTaJDrIHuQpGZCH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Greater Darkvision",
@@ -1243,33 +854,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "VLQ2Vi92N8KogGpN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Light Blindness",
@@ -1285,65 +887,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LightBlindness]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "light-blindness",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "gINTMtPPDP3qyAhd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1352,7 +905,7 @@
             "_id": "sMQewzNATahHc65F",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Death Implosion",
-            "sort": 1600000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1363,27 +916,20 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When the caligni slayer dies, their body implodes violently into nothingness, dealing @Damage[3d10[sonic]] damage to creatures in a @Template[type:emanation|distance:10]. Each creature in the area must attempt a @Check[type:fortitude|dc:20|traits:damaging-effect] save.</p>\n<p>The slayer's gear and treasure are unaffected by the implosion and are left in a pile where they died.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is deafened for 24 hours.</p>"
+                    "value": "<p>When the caligni slayer dies, their body implodes violently into nothingness, dealing @Damage[3d10[sonic]] damage to creatures in a @Template[emanation|distance:10]. Each creature in the area must attempt a @Check[fortitude|dc:20|traits:damaging-effect] save.</p>\n<p>The slayer's gear and treasure are unaffected by the implosion and are left in a pile where they died.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is deafened for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "sonic"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1392,7 +938,7 @@
             "_id": "s7GGq81IzCx73D2B",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Call to Blood",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1402,29 +948,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each caligni within 30 feet gains a +2 status bonus to attack rolls against @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] creatures. This bonus lasts for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Call to Blood]</p>"
+                    "value": "<p>Each caligni within 30 feet gains a +2 status bonus to attack rolls against @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures. This bonus lasts for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Call to Blood]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "enchantment",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1433,7 +971,7 @@
             "_id": "WtPKkX18bEjTQBFy",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Soul Harvest",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1443,156 +981,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The caligni slayer deals an additional @Damage[2d6[negative]] damage to @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] creatures.</p>"
+                    "value": "<p>The caligni slayer deals an additional @Damage[2d6[void]] damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "damageType": "negative",
+                        "damageType": "void",
                         "diceNumber": 2,
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed"
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
-                    "value": [
-                        "necromancy"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
+                    "value": []
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "uSy9TqYc4K5yZpqA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "0EvxKSJxBXUaOvxw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Arcana",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "IPT71neh2xagjt7i",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nT8CGvRUrSHtD6bI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "JTzQfOFiMxRHo2p1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Caligni Slayer",
@@ -1631,31 +1045,42 @@
                 "temp": 0,
                 "value": 45
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Humanoid",
+            "languages": {
+                "details": "",
+                "value": [
+                    "caligni",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "<p>Caligni slayers possess greater occult talents than others of their kind. In most other calignis, the power bartered from the long-lost demigods known as the Forsaken merely burns within. But in caligni slayers, this power is a deep and terrible hunger. Slayers embrace their evil impulses as a result, and they seek to feed on others with their soul harvest ability to keep this supernatural hunger sated. Slayers denied the opportunity to feed descend into paranoia and, eventually, murderous rage.</p>\n<p>Delayed feeding improves but never fully restores their composure and patience. Perhaps the greatest manifestation of a slayer's hunger appears at the moment of their death. Upon its last breath, a slayer collapses into itself in a violent, lightless implosion, rather than the blinding eruption of other calignis' deaths, consuming the body itself in a final attempt at satiation.</p>\n<p>Slayers view themselves as the cleverest and most gifted of the calignis. They seethe with ill-concealed envy at the position of power caligni stalkers occupy, ever scheming to displace them and claim that power for their own. For their part, stalkers tolerate these machinations as an acceptable price for the talents slayers contribute to an enclave. If necessary, any slayer who grows too ambitious can become a brave sacrifice in battle, for the good of the enclave. In physical stature, slayers fall between the willowy caligni dancers and the diminutive creepers. Stalkers tower above most slayers-yet another source of slayers' envy and resentment.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "type": "greater-darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1677,27 +1102,32 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 9
+            },
+            "arcana": {
+                "base": 10
+            },
+            "athletics": {
+                "base": 7
+            },
+            "occultism": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 10
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "caligni",
-                    "undercommon"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "greater darkvision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
                 "caligni",
+                "chaotic",
+                "evil",
                 "humanoid"
             ]
         }

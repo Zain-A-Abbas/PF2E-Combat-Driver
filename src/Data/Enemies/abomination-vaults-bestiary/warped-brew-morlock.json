@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -67,11 +69,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -108,11 +112,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -126,57 +132,13 @@
             "type": "melee"
         },
         {
-            "_id": "XjvtH7IilCnzJpIN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "H2rT9wdiejx3F1b0",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Light Blindness",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -188,37 +150,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LightBlindness]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "light-blindness",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "G412UtVloe7PIpa4",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+2 Status to All Saves vs. Disease and Poison",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -230,8 +183,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -250,18 +205,9 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -270,7 +216,7 @@
             "_id": "3vycv9ThXOQbgNBf",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Instinctual Tinker",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -280,25 +226,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[type:crafting] check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains @Damage[4d6[healing]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains @Damage[2d6[healing]] Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking [[/r {2d6}]]{2d6 damage} (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Instinctual Tinker (Critical Success)]</p>"
+                    "value": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[crafting|defense:fortitude] check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains @Damage[4d6[healing]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains @Damage[2d6[healing]] Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking @Damage[2d6[untyped]] damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Instinctual Tinker (Critical Success)]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -307,7 +246,7 @@
             "_id": "HaYQ8Cd4C0hYSFdc",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Leap Attack",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -319,37 +258,28 @@
                 "description": {
                     "value": "<p>The morlock Strides up to twice its Speed, during which it attempts a @UUID[Compendium.pf2e.actionspf2e.Item.High Jump] or a @UUID[Compendium.pf2e.actionspf2e.Item.Long Jump]. At any point during its movement, the morlock can make a melee Strike against an enemy in its reach.</p>\n<p>The morlock then can't use Leap Attack for 1 round.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "NXk6QjCfO8eW6Txp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -359,10 +289,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A morlock's Strikes deal an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>A morlock's Strikes deal an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -371,45 +303,22 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -418,7 +327,7 @@
             "_id": "Y6Rqq2ahFM07WKRm",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Swarming Stance",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -430,8 +339,10 @@
                 "description": {
                     "value": "<p>A morlock can share the same space as another morlock, but no more than two morlocks can occupy the same space. When morlocks share the same space, they gain a +1 circumstance bonus to attack rolls.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -451,135 +362,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "XzaLoiUlsO70ko1e",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "rET5SfCVJHTK7d5a",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Climb",
-                        "predicate": [
-                            "action:climb"
-                        ],
-                        "selector": "athletics",
-                        "value": 3
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+11 Climbing",
-                        "options": "action:climb"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "1gu2mF6EgXl6v3eM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "Repair only",
-                        "options": ""
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "XUXBrT0KGQKkyY1x",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Warped Brew Morlock",
@@ -621,12 +409,6 @@
                 "temp": 0,
                 "value": 38
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -638,19 +420,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Humanoid",
+            "languages": {
+                "details": "",
+                "value": [
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
-            "source": {
-                "value": "Pathfinder #164: Hands of the Devil"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #164: Hands of the Devil"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -667,25 +465,38 @@
                 "value": 9
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "acrobatics": {
+                "base": 7
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "undercommon"
+            "athletics": {
+                "base": 8,
+                "special": [
+                    {
+                        "base": 11,
+                        "label": "Climbing",
+                        "predicate": [
+                            "action:climb"
+                        ]
+                    }
                 ]
             },
-            "rarity": "common",
-            "senses": {
-                "value": "darkvision"
+            "crafting": {
+                "base": 8,
+                "note": "Repair only"
             },
+            "stealth": {
+                "base": 9
+            }
+        },
+        "traits": {
+            "rarity": "common",
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "humanoid"
             ]
         }

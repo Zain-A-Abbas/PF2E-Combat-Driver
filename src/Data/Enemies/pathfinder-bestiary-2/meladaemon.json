@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,14 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 31,
                     "mod": 0,
@@ -108,50 +42,41 @@
         },
         {
             "_id": "eWYkBia919BmhUz4",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD"
             },
-            "img": "systems/pf2e/icons/spells/phantom-pain.webp",
+            "img": "icons/magic/unholy/strike-beam-blood-small-red-purple.webp",
             "name": "Phantom Pain",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "mental"
-                            },
-                            "value": "12d4"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "12d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "mental"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
                     }
                 },
                 "description": {
-                    "value": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and [[/r 1d4[persistent,mental]]]. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage], and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. If the target recovers from being Sickened, the Persistent Damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the Persistent Damage by 1d4.</p>"
+                    "value": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and @Damage[1d4[persistent,mental]]. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage], and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. If the target recovers from being Sickened, the Persistent Damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the Persistent Damage by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -166,56 +91,34 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "phantom-pain",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
+                        "illusion",
+                        "manipulate",
                         "mental",
-                        "nonlethal",
-                        "illusion"
+                        "nonlethal"
                     ]
                 }
             },
@@ -223,42 +126,26 @@
         },
         {
             "_id": "n9tpbLZJuCML2aEm",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
             },
-            "img": "systems/pf2e/icons/spells/dimension-door.webp",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
             "name": "Dimension Door",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -266,56 +153,33 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "dimension-door",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "teleportation",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
                     ]
                 }
             },
@@ -323,42 +187,31 @@
         },
         {
             "_id": "pSQCf3m3lML6XaSp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -366,60 +219,37 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fear",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "fear",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -427,50 +257,36 @@
         },
         {
             "_id": "8lQzvlhmZk1A0Cgw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
             },
             "img": "systems/pf2e/icons/spells/magic-missile.webp",
             "name": "Magic Missile (At will)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "force"
-                            },
-                            "value": "1d4+1"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "1d4+1",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "force"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -478,56 +294,33 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "magic-missile",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "force",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -535,45 +328,26 @@
         },
         {
             "_id": "HBMWUpw0W3Y7kU12",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD"
             },
             "img": "systems/pf2e/icons/spells/blight.webp",
             "name": "Blight",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "areatype": {
-                    "value": "radius circle centered on you"
-                },
-                "category": {
-                    "value": "ritual"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You twist and stunt plants in the area, causing them to wither. In addition to other dangers from failing plant life, this decreases the crop yield for farms. If you cast this ritual in an area affected by plant growth, blight attempts to counteract plant growth instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Completely spoil the crop yield in the area, or decrease the yield by half in an area with up to a 1-mile radius.</p>\n<p><strong>Success</strong> Decease the crop yield in the area by half.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unexpected way, determined by the GM but generally as contradictory to your true desires as possible (for instance, enriching crops when you would prefer to blight them).</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 year"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -581,54 +355,38 @@
                 "location": {
                     "value": null
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": "Nature (expert)"
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
+                "ritual": {
+                    "primary": {
+                        "check": "Nature (expert)"
+                    },
+                    "secondary": {
+                        "casters": 1,
+                        "checks": "Survival"
+                    }
+                },
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": "1"
-                },
-                "secondarycheck": {
-                    "value": "Survival"
-                },
                 "slug": "blight",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 day"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
-                        "negative",
                         "plant",
-                        "necromancy"
+                        "void"
                     ]
                 }
             },
@@ -636,42 +394,26 @@
         },
         {
             "_id": "ARgSXbi7YTyqxDpw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
             },
-            "img": "systems/pf2e/icons/spells/dimension-door.webp",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
             "name": "Dimension Door (At will)",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -679,56 +421,33 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "dimension-door",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "teleportation",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
                     ]
                 }
             },
@@ -736,45 +455,29 @@
         },
         {
             "_id": "toXHeAIIzSZkh0pV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
             },
             "img": "systems/pf2e/icons/spells/detect-alignment.webp",
             "name": "Detect Alignment (At will) (Good only)",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -782,56 +485,33 @@
                 "location": {
                     "value": "OACmutVuYdHoFbvw"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "detect-alignment",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "detection",
-                        "divination"
+                        "manipulate"
                     ]
                 }
             },
@@ -862,23 +542,26 @@
                     },
                     "yxh2yeelmebudlvgb1h7g": {
                         "damage": "1d6",
-                        "damageType": "evil"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "evil",
                         "magical",
-                        "reach-10"
+                        "reach-10",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -913,24 +596,27 @@
                     },
                     "1": {
                         "damage": "1d6",
-                        "damageType": "evil"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
                         "evil",
                         "magical",
-                        "reach-10"
+                        "reach-10",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -940,57 +626,13 @@
             "type": "melee"
         },
         {
-            "_id": "GY6jeRcNdp5Fd9OB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "HRJpFIoBwbJ1rwnG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Telepathy",
-            "sort": 1200000,
+            "name": "Telepathy 100 feet",
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1002,41 +644,31 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "telepathy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "divination",
                         "magical"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "dTZURdZLg8n5enSz",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Lifesense",
-            "sort": 1300000,
+            "name": "Lifesense (Imprecise) 30 feet",
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1048,65 +680,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "9Q05lkXgY0PrqSQz",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1115,7 +698,7 @@
             "_id": "RLJbJxbajEsFLapw",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+1 Status to All Saves vs. Magic",
-            "sort": 1500000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1127,8 +710,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1150,18 +735,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1170,7 +746,7 @@
             "_id": "BmhdDSnmoRYLlefv",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Consumptive Aura",
-            "sort": 1600000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1180,10 +756,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>A meladaemon emanates an aura of intense hunger. Each round a creature begins its turn in the aura, it must attempt a @Check[type:fortitude|dc:27|traits:damaging-effect] save. On a failure, the creature takes @Damage[1d6[negative]] damage (@Damage[2d6[negative]] damage on a critical failure) and becomes @UUID[Compendium.pf2e.conditionitems.Item.Fatigued]. This fatigue ends as soon as the creature eats any food.</p>"
+                    "value": "<p>20 feet. A meladaemon emanates an aura of intense hunger. Each round a creature begins its turn in the aura, it must attempt a @Check[fortitude|dc:27|traits:damaging-effect] save. On a failure, the creature takes @Damage[1d6[void]] damage (@Damage[2d6[void]] damage on a critical failure) and becomes @UUID[Compendium.pf2e.conditionitems.Item.Fatigued]. This fatigue ends as soon as the creature eats any food.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1191,27 +769,17 @@
                         "radius": 20,
                         "slug": "consumptive-aura",
                         "traits": [
-                            "aura",
                             "divine"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
                         "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1220,7 +788,7 @@
             "_id": "rx9aGcoGrLLVPzhV",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Withering Opportunity",
-            "sort": 1700000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -1232,23 +800,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The meladaemon is attacked by an adjacent creature and the attack misses</p>\n<hr />\n<p><strong>Effect</strong> The meladaemon swipes at the triggering creature, which must immediately attempt a save against the meladaemon's withering touch.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1257,7 +818,7 @@
             "_id": "S8XYYEnqxZeY5C7K",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Daemonic Famine",
-            "sort": 1800000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1267,27 +828,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 4</strong> as stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3} (1 day)</p>\n<p><strong>Stage 6</strong> dead</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 4</strong> as stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3} (1 day)</p>\n<p><strong>Stage 6</strong> dead</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "daemonic-famine",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1296,7 +850,7 @@
             "_id": "ERMHc3Xc7e0s0qGD",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Withering Touch",
-            "sort": 1900000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1306,43 +860,33 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When the meladaemon hits with a claw Strike or a creature begins its turn grabbed by the meladaemon, the creature must attempt a @Check[type:fortitude|dc:30|traits:damaging-effect] save. On a failure, the creature takes @Damage[1d6[negative]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Fatigued]. This fatigue ends when the creature drinks.</p>"
+                    "value": "<p>When the meladaemon hits with a claw Strike or a creature begins its turn grabbed by the meladaemon, the creature must attempt a @Check[fortitude|dc:30|traits:damaging-effect] save. On a failure, the creature takes @Damage[1d6[void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Fatigued]. This fatigue ends when the creature drinks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "withering-touch",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "evil",
-                        "necromancy"
+                        "evil"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "wqGETtOyNtSqKkGC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 2000000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1354,164 +898,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "xi3eErvKwKkpRL24",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4KsvCatETnxW5UIR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "M0aEzOcpuDvtXjRJ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "gF3pPQmC0xeVi1KK",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "V72ri7bteLYJHCgg",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "I6yFvDK2ulGlS6A0",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Meladaemon",
@@ -1555,12 +954,6 @@
                     "type": "death-effects"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 21
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -1572,25 +965,47 @@
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 10
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "Fiend",
+            "languages": {
+                "details": "telepathy 100 feet",
+                "value": [
+                    "common",
+                    "daemonic"
+                ]
+            },
             "level": {
                 "value": 11
             },
             "privateNotes": "",
             "publicNotes": "<p>Meladaemons personify death by starvation and thirst, and revel in spreading the same despair that brought about their mortal demise. When they aren't blighting fields, massacring livestock, or tainting water supplies, they experiment on prisoners to study how long creatures can go without sustenance and the deleterious effects that result from such deprivation. Fiercely loyal to Trelmarixian, Horseman of Famine, they serve no other beings. They work alongside other daemons if Trelmarixian wills it, but are notoriously traitorous.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 21,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "lifesense"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1612,33 +1027,41 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 20
+            },
+            "deception": {
+                "base": 23
+            },
+            "intimidation": {
+                "base": 23
+            },
+            "religion": {
+                "base": 20
+            },
+            "stealth": {
+                "base": 23
+            },
+            "survival": {
+                "base": 19
+            }
+        },
         "spellcasting": {
             "rituals": {
                 "dc": 31
             }
         },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "Telepathy 100 feet",
-                "selected": [],
-                "value": [
-                    "common",
-                    "daemonic"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, lifesense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "daemon",
-                "fiend"
+                "evil",
+                "fiend",
+                "unholy"
             ]
         }
     },

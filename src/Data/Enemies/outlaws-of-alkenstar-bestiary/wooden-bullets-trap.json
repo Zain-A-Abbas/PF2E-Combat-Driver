@@ -18,20 +18,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature or object weighing at least 50 pounds is placed on the porch (marked \"T\" on the map)</p>\n<hr />\n<p><strong>Effect</strong> A stream of wooden sling bullets flies from a launcher. The trap Strikes the two nearest creatures and then rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -60,11 +56,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -115,17 +113,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A hopper full of wooden sling bullets is attached to several launching devices, which spew the bullets at high velocity through various holes in the boards covering the window. A distinctive \"click\" and whirring sound indicate the trap has been sprung.</p>",
-            "disable": "<p>@Check[type:thievery|dc:17|name:reinforce the porch sensor|traits:complex,hazard,trap,mechanical] (trained) to reinforce the porch pressure sensor or @Check[type:crafting|dc:15|name:Cover the holes|traits:complex,hazard,trap,mechanical] (trained) to cover the holes launching the bullets</p>",
+            "disable": "<p>@Check[thievery|dc:17|name:reinforce the porch sensor|traits:complex,hazard,trap,mechanical] (trained) to reinforce the porch pressure sensor or @Check[crafting|dc:15|name:Cover the holes|traits:complex,hazard,trap,mechanical] (trained) to cover the holes launching the bullets</p>",
             "isComplex": true,
             "level": {
                 "value": 3
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #178: Punks in a Powder Keg"
+            },
             "reset": "<p>The trap stops after 10 rounds or when the weight on the porch is removed, whichever comes first. The trap can operate for a total of 10 rounds before its ammunition is exhausted.</p>",
-            "routine": "<p>(2 actions) The wooden bullets trap Strikes the two nearest creatures. It ignores @UUID[Compendium.pf2e.conditionitems.Item.Prone] creatures as the bullets fly overhead.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #178: Punks in a Powder Keg"
-            }
+            "routine": "<p>(2 actions) The wooden bullets trap Strikes the two nearest creatures. It ignores @UUID[Compendium.pf2e.conditionitems.Item.Prone] creatures as the bullets fly overhead.</p>"
         },
         "saves": {
             "fortitude": {

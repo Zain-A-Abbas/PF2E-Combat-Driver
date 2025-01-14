@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "qqtlpu9sh6jrz6al",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -64,11 +64,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -106,11 +108,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -122,94 +126,10 @@
             "type": "melee"
         },
         {
-            "_id": "PEwUDxCmwQU7iXRB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "x5YMgFhxE61drhbR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "xQwUVlH4hSbZ8gXZ",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -221,34 +141,28 @@
                 "description": {
                     "value": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "wXd16Zzoer6v9GTr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 700000,
+            "name": "Void Healing",
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -260,8 +174,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -272,18 +188,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -292,7 +199,7 @@
             "_id": "385vxush4j2p4hh2",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Furious Charge",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -304,12 +211,14 @@
                 "description": {
                     "value": "<p>The megaloceros Strides twice and makes a hoof Strike after either Stride. If the Strike hits, the megaloceros deals an additional @Damage[2d4[bludgeoning]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "furious-charge",
                         "toggleable": true
@@ -326,64 +235,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "9q7klic3mf4s4mb1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "qo5w4wsulsj5doxe",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zombie Megaloceros",
@@ -417,7 +274,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 100,
                 "temp": 0,
                 "value": 100
@@ -439,12 +296,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 10
-            },
             "speed": {
                 "otherSpeeds": [],
                 "special": "",
@@ -452,7 +303,7 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -462,19 +313,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant megaloceros",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
-            "source": {
-                "value": "Pathfinder #176: Lost Mammoth Valley"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #176: Lost Mammoth Valley"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 10,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -491,22 +361,24 @@
                 "value": 8
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 13
+            },
+            "survival": {
+                "base": 10
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low-light vision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "evil",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

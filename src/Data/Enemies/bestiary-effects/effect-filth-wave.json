@@ -1,0 +1,52 @@
+{
+    "_id": "Qomp2EujVCbzJb4X",
+    "img": "icons/commodities/materials/slime-purple.webp",
+    "name": "Effect: Filth Wave",
+    "system": {
+        "badge": {
+            "labels": [
+                "-5 ft.",
+                "-10 ft."
+            ],
+            "loop": false,
+            "type": "counter",
+            "value": 2
+        },
+        "description": {
+            "value": "<p>You take a penalty to your Speeds.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Monster Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "value": "-5*@item.badge.value"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

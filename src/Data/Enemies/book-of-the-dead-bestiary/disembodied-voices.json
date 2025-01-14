@@ -16,28 +16,23 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature enters the haunt's area</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals @Damage[(1d6+4)[mental]] damage to creatures in the area (@Check[type:will|dc:19|basic:true]). On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>"
+                    "value": "<p><strong>Trigger</strong> A creature enters the haunt's area</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals @Damage[(1d6+4)[mental]] damage to creatures in the area (@Check[will|dc:19|basic]). On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "emotion",
-                        "enchantment",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -47,14 +42,15 @@
     "system": {
         "attributes": {
             "ac": {
-                "value": 10
+                "value": null
             },
+            "emitsSound": "encounter",
             "hardness": 0,
             "hp": {
                 "details": "",
-                "max": 10,
+                "max": null,
                 "temp": 0,
-                "value": 10
+                "value": null
             },
             "stealth": {
                 "details": "<p>(trained) to feel breath upon your neck</p>",
@@ -64,17 +60,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.</p>",
-            "disable": "<p>@Check[type:religion|dc:15|name:Ward Yourself From Evil] (trained) to ward yourself from evil or @Check[type:performance|dc:16|name:Drown Out the Spirits' Voices] to drown out the spirits' voices</p>",
+            "disable": "<p>@Check[religion|dc:15|name:Ward Yourself From Evil] (trained) to ward yourself from evil or @Check[performance|dc:16|name:Drown Out the Spirits' Voices] to drown out the spirits' voices</p>",
             "isComplex": false,
             "level": {
                 "value": 0
             },
-            "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Book of the Dead"
-            }
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
+            },
+            "reset": "<p>1 hour</p>",
+            "routine": ""
         },
         "saves": {
             "fortitude": {

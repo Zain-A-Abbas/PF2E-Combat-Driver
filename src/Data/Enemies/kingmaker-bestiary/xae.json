@@ -20,17 +20,19 @@
                 "damageRolls": {
                     "m9z53xyIoPesGkCF": {
                         "damage": "2d10+12",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,57 +48,13 @@
             "type": "melee"
         },
         {
-            "_id": "HZwLWbZdPHnymsUr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "pyyskEw6HoHX0DBp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Site Bound",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -108,86 +66,28 @@
                 "description": {
                     "value": "<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-site-bound",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "mTecTRC1ab5f2qOh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "bMbUyfSqVR9lWDB7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rejuvenation",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -200,26 +100,58 @@
                 "description": {
                     "value": "<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-rejuvenation",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "mTecTRC1ab5f2qOh",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -228,6 +160,39 @@
             "_id": "E2BfR5UhdImAFitO",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Shyka's Judgement",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>Xae clasps her hands together and cries out in Sylvan for Shyka to judge those who dare intrude upon the shrine-\"Aid me, Shyka, so that your shrine will remain undefiled!\" The seven statues around the perimeter of the room suddenly animate and hurl spectral versions of their hourglass-headed maces into the room, filling area <strong>A3</strong> with a whirling vortex of pale blue-and-white energy. All living creatures in area <strong>A3</strong> must attempt a @Check[will|dc:30] save. Xae cannot call upon Shyka's Judgment for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[12d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as their mind struggles with memories that seem to be from past lives that weigh the character's current actions in judgment.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[18d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} by their mental struggle with their judgmental past lives. The creature also takes @Damage[2d6[persistent,mental]] damage that ends if they leave area <strong>A3</strong>.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "mental",
+                        "primal"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "LXvqvVhorWXVewtI",
+            "img": "systems/pf2e/icons/actions/TwoActions.webp",
+            "name": "Twist Time",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -238,63 +203,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Xae clasps her hands together and cries out in Sylvan for Shyka to judge those who dare intrude upon the shrine-\"Aid me, Shyka, so that your shrine will remain undefiled!\" The seven statues around the perimeter of the room suddenly animate and hurl spectral versions of their hourglass‑headed maces into the room, filling area <strong>A3</strong> with a whirling vortex of pale blue-and-white energy. All living creatures in area <strong>A3</strong> must attempt a @Check[type:will|dc:30] save. Xae cannot call upon Shyka's Judgment for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[12d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as their mind struggles with memories that seem to be from past lives that weigh the character's current actions in judgment.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[18d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} by their mental struggle with their judgmental past lives. The creature also takes [[/r 2d6[persistent,mental]]] damage that ends if they leave area <strong>A3</strong>.</p>"
+                    "value": "<p>Xae attempts a ghostly hand strike. If she hits, she inflicts damage as normal, but the target struck must also attempt a @Check[fortitude|dc:30] save (the target takes a -2 penalty to this saving throw if the strike was a critical hit).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round as the rest of reality seems to speed up.</p>\n<p><strong>Failure</strong> The creature becomes decrepit from unnatural aging. It is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2}, and as long as it has the slowed condition, it is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} as well.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature feels death knocking on the door-it is @UUID[Compendium.pf2e.conditionitems.Item.Doomed]{Doomed 1} as long as it remains slowed by Twist Time.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "enchantment",
-                        "mental",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "LXvqvVhorWXVewtI",
-            "img": "systems/pf2e/icons/actions/TwoActions.webp",
-            "name": "Twist Time",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 2
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Xae attempts a ghostly hand strike. If she hits, she inflicts damage as normal, but the target struck must also attempt a @Check[type:fortitude|dc:30] save (the target takes a -2 penalty to this saving throw if the strike was a critical hit).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round as the rest of reality seems to speed up.</p>\n<p><strong>Failure</strong> The creature becomes decrepit from unnatural aging. It is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2}, and as long as it has the slowed condition, it is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} as well.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature feels death knocking on the door-it is @UUID[Compendium.pf2e.conditionitems.Item.Doomed]{Doomed 1} as long as it remains slowed by Twist Time.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "primal",
-                        "transmutation"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -303,7 +225,7 @@
             "_id": "MDHk8qTYvCueXiiR",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Dwelling Lore",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "description": {
                     "value": ""
@@ -314,80 +236,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "cQvehcsl2jrTv9JH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "We4dHpZ0fcXD0jxS",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vp076AdhWqLJ51v7",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -423,7 +278,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing, rejuvenation",
+                "details": "void healing, rejuvenation",
                 "max": 150,
                 "temp": 0,
                 "value": 150
@@ -448,12 +303,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 19
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -462,7 +311,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 10
@@ -479,19 +328,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "Female gnome ghost",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "fey",
+                    "gnomish"
+                ]
+            },
             "level": {
                 "value": 11
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 19,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -508,24 +375,24 @@
                 "value": 19
             }
         },
+        "skills": {
+            "nature": {
+                "base": 21
+            },
+            "occultism": {
+                "base": 22
+            },
+            "stealth": {
+                "base": 22
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "gnomish",
-                    "sylvan"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
+                "chaotic",
                 "ghost",
                 "incorporeal",
                 "spirit",

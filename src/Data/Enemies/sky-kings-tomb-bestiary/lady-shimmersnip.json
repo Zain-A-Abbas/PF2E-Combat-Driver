@@ -1,14 +1,11 @@
 {
     "_id": "0VMod1UuV6GIQozy",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
             "_id": "FybAGu5NsbbQwTSW",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7"
             },
             "img": "systems/pf2e/icons/conditions/enfeebled.webp",
             "name": "Enfeebled",
@@ -22,6 +19,11 @@
                 },
                 "group": "abilities",
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -41,9 +43,6 @@
                     }
                 ],
                 "slug": "enfeebled",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -53,10 +52,8 @@
         },
         {
             "_id": "V5h82KFJ1lnz9DOR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm"
             },
             "img": "systems/pf2e/icons/conditions/clumsy.webp",
             "name": "Clumsy",
@@ -70,6 +67,11 @@
                 },
                 "group": "abilities",
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -86,9 +88,6 @@
                     }
                 ],
                 "slug": "clumsy",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "value": {
                     "isValued": true,
                     "value": 2
@@ -122,11 +121,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -140,52 +141,10 @@
             "type": "melee"
         },
         {
-            "_id": "YnfFdQs1dxCIBHYJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "vHAnfWC23o0LOVJW",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Parasitized",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -197,19 +156,15 @@
                 "description": {
                     "value": "<p>Lady Shimmersnip has two giant leeches partly burrowed into her body, making her @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2}. These conditions' modifiers can change and aren't reflected in her stat block.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -218,7 +173,7 @@
             "_id": "ez4TlFP9ir8diYv7",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Scuttle",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -230,23 +185,32 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature that the giant crab can see targets the crab with an attack</p>\n<hr />\n<p><strong>Effect</strong> The giant crab scuttles to the side and gains a +2 circumstance bonus to AC against the triggering attack. After the attack resolves, the crab can Stride up to its speed in a straight line as part of the reaction.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "ac",
+                        "key": "RollOption",
+                        "option": "scuttle",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "scuttle"
+                        ],
+                        "selector": "ac",
+                        "type": "circumstance",
+                        "value": 2
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -255,7 +219,7 @@
             "_id": "WXEuGWzgAk5JMfEE",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Vulnerable to Prone",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -265,10 +229,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>If a creature critically succeeds on a check to @UUID[Compendium.pf2e.actionspf2e.Item.Trip] the giant crab, the crab is flipped over onto its back in addition to the usual effects. A giant crab that is flipped onto its back has a particularly hard time defending itself; instead of taking the normal -2 circumstance penalty to AC for being @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed], it takes a -4 circumstance penalty to AC.</p>"
+                    "value": "<p>If a creature critically succeeds on a check to @UUID[Compendium.pf2e.actionspf2e.Item.Trip] the giant crab, the crab is flipped over onto its back in addition to the usual effects. A giant crab that is flipped onto its back has a particularly hard time defending itself; instead of taking the normal -2 circumstance penalty to AC for being @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard], it takes a -4 circumstance penalty to AC.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -283,36 +249,26 @@
                             "vulnerable-prone"
                         ],
                         "selector": "ac",
+                        "type": "circumstance",
                         "value": -4
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "iHR7yRqYeZST3uB5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -322,39 +278,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[(1d6+4)[bludgeoning]] damage, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[(1d6+4)[bludgeoning]] damage, @Check[fortitude|dc:18|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "TfK9D77zOoU9jjxj",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -366,95 +313,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "w57RLg30jZEOB4Qn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "xMv2XGvEPJsPOVpO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "n96a9FpHfeBVCjTr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Lady Shimmersnip",
@@ -491,13 +362,7 @@
                 "details": "",
                 "max": 24,
                 "temp": 0,
-                "value": 24
-            },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
+                "value": 21
             },
             "resistances": [
                 {
@@ -519,19 +384,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant Giant Crab",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Crabs are scavenging crustaceans known for their hard shells and iconic sideways gait. They use their claws to defend themselves, hunt, and fight other crabs for territory. When confronted with threats from outside their species, most crabs prefer to flee, but when retreat isn't possible, they clamp on to their foes as tightly as they can.</p>\n<p>The statistics presented here represent giant crabs that live close to the water's surface. Crabs that live deeper underwater often exhibit more extreme adaptations to their environment. Crabs who live in the depths where little light reaches gain darkvision and cold resistance, and those adapted to the most hostile reaches of the deep sea can detect nearby creatures through subtle shifts in ocean currents.</p>\n<p>These skittering creatures are prized for their delicious meat, but their size makes them dangerous targets for harvesting.</p>",
-            "source": {
-                "value": "Pathfinder #193: Mantle of Gold"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -548,21 +427,21 @@
                 "value": 8
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 7
+            },
+            "athletics": {
+                "base": 8
+            },
+            "stealth": {
+                "base": 7
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
-                "value": "med"
+                "value": "lg"
             },
             "value": [
                 "animal",

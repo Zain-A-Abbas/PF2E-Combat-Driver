@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -46,99 +48,13 @@
             "type": "melee"
         },
         {
-            "_id": "APd8zemC3kgQClDQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "mqgxK9jf9zGXE672",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "kFT6c7OlCSLY8QF1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Regeneration 15 (Deactivated by Acid or Fire)",
-            "sort": 400000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -151,8 +67,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -166,18 +84,9 @@
                     }
                 ],
                 "slug": "regeneration",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -186,7 +95,7 @@
             "_id": "0DDWtKSDSWdXnkgj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Bloodfire Fever",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -196,27 +105,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] (1 day)</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] (1 day)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "bloodfire-fever",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -225,7 +127,7 @@
             "_id": "RNDT57aD8UzBIRVk",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Pack Attack",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -235,10 +137,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The trollhound deals an extra [[/r 1d6]] damage to any creature within reach of at least two of the trollhound's allies.</p>"
+                    "value": "<p>The trollhound deals an extra 1d6 damage to any creature within reach of at least two of the trollhound's allies.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -258,32 +162,21 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "de8ASlT2fs4snv5M",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -295,118 +188,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "BBpgzMpzUP1pxIrM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bHGfkynmsmDJsBU9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "FsLYOWKf40dWd2iX",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "oD5GByioYVpfCE41",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Trollhound",
@@ -445,12 +239,6 @@
                 "temp": 0,
                 "value": 65
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 35
@@ -463,19 +251,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Beast",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "<p>Trollhounds are squat, slavering beasts akin to trolls in canine form. Requiring vast quantities of meat to fuel their regenerative metabolisms, packs of wild trollhounds prowl the foothills of regions where trolls dwell, their voracious hunger driving them to slaughter and consume any prey they encounter. In some regions, trolls breed trollhounds as pets, utilizing the trollhounds' keen sense of smell to aid in the hunt.</p>\n<p>Covered in fetid, weeping sores, trollhounds are carriers of a debilitating contagion known as bloodfire fever. Creatures that contract the disease through the bite of a trollhound experience deep internal pain, as if their blood were on fire. Additional symptoms include loss of muscle coordination, pus-filled blisters, and overall lethargy and fatigue. Other than suffering from skin irritation, both trolls and trollhounds are immune to the major effects of the disease.</p>\n<p>Trollhounds are fearless on the hunt and in combat, relying on their ability to regenerate to carry them through. Not even the threat of fire is enough to repel them, as the beasts don't recognize the danger it represents. Nevertheless, fire is one of the most effective tools in combating trollhounds; canny hunters know to burn every last remnant of a supposedly slain trollhound, for their regenerative powers are potent indeed.</p>\n<p>While trolls themselves have had great success in domesticating, training, and even befriending trollhounds, the same cannot be said for other would-be masters. Whether impeded by constant exposure to trollhounds' diseased slobber, their ravenous hunger that never seems to be fully sated, or simply their foul personality and quick-to-bite temperament, most attempts to use trollhounds in place of more reliable guardians end in pain, misery, and a pack of feral trollhounds escaping into the hinterlands. Left to their own devices, a pack of escaped trollhounds can breed relatively quickly, and it can take less than a year for a small pack to multiply into a significant threat to the countryside. Best to leave the trollhounds to the trolls, as they say!</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -492,19 +299,22 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 6
+            },
+            "athletics": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 8
+            },
+            "survival": {
+                "base": 6
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },

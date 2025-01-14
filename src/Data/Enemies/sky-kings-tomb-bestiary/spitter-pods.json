@@ -1,6 +1,5 @@
 {
     "_id": "G1FXZqJTG2tqgzHH",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/hazard.svg",
     "items": [
         {
@@ -19,8 +18,10 @@
                 "description": {
                     "value": "<p>A non-fungus creatures enters area <strong>E4</strong></p>\n<hr />\n<p><strong>Effect</strong> The spitter pod rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -32,14 +33,8 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -68,11 +63,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "poison",
@@ -109,17 +106,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Specialized spore pods burst open, expel toxic globules, and recharge from alchemical reservoirs.</p>",
-            "disable": "<p>@Check[type:crafting|dc:18] to add disruptive chemicals to the fungus's reservoir, @Check[type:nature|dc:18] (trained) to recognize how to constrict the chemicals' flow, or @Check[type:deception|dc:20] (trained) to spread spores that befuddle the fungus; three total successes are required to disable the trap.</p>",
+            "disable": "<p>@Check[crafting|dc:18] to add disruptive chemicals to the fungus's reservoir, @Check[nature|dc:18] (trained) to recognize how to constrict the chemicals' flow, or @Check[deception|dc:20] (trained) to spread spores that befuddle the fungus; three total successes are required to disable the trap.</p>",
             "isComplex": true,
             "level": {
                 "value": 2
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
+            },
             "reset": "",
-            "routine": "<p>(3 actions) The spitter pods alternate between making Strikes and Reloading. The pods lose 1 action for each successful check to disable the trap.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #193: Mantle of Gold"
-            }
+            "routine": "<p>(3 actions) The spitter pods alternate between making Strikes and Reloading. The pods lose 1 action for each successful check to disable the trap.</p>"
         },
         "saves": {
             "fortitude": {

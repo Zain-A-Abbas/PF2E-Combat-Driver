@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -72,11 +74,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -113,11 +117,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -131,57 +137,13 @@
             "type": "melee"
         },
         {
-            "_id": "AyfJyi6gCHBgaToD",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "wcJ7xyyDuDpmKxyt",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 30 feet",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -193,37 +155,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "vBp53lYo9D4gq1jh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "All-Around Vision",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -235,8 +188,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -247,31 +202,54 @@
                     }
                 ],
                 "slug": "all-around-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "k2PMRhPXO7eus3sg",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Necrotic Decay",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p>When the shanrigol behemoth dies, its flesh rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body. This gas deals @Damage[9d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:27|basic] save).</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "divine",
+                        "void"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "mUJY9mXKNFT1G9Ri",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 700000,
             "system": {
                 "actionType": {
@@ -284,8 +262,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -296,60 +276,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "k2PMRhPXO7eus3sg",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Necrotic Decay",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p>When the shanrigol behemoth dies, its flesh rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around the body. This gas deals @Damage[9d6[negative]] damage to creatures in this area as their flesh curdles and rots as well (@Check[type:fortitude|dc:27|basic:true] save).</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "divine",
-                        "necromancy",
-                        "negative"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -358,7 +287,7 @@
             "_id": "QaDq4G70qrufNlS5",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Sapping Squeeze",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -368,25 +297,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The shanrigol has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> The shanrigol squeezes the life essence from its target, dealing @Damage[(1d10+11)[bludgeoning]] and @Damage[1d6[bleed]] (@Check[type:fortitude|dc:25|basic:true] save).</p>\n<p>The shanrigol regains temporary Hit Points equal to half the amount of bludgeoning damage a single target takes; these temporary Hit Points last for 1 minute.</p>"
+                    "value": "<p><strong>Requirements</strong> The shanrigol has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> The shanrigol squeezes the life essence from its target, dealing @Damage[(1d10+11)[bludgeoning],1d6[bleed]]{1d10+11 bludgeoning and 1d6 persistent bleed damage} (@Check[fortitude|dc:25|basic] save).</p>\n<p>The shanrigol regains temporary Hit Points equal to half the amount of bludgeoning damage a single target takes; these temporary Hit Points last for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -395,7 +317,7 @@
             "_id": "tce3ovXnnblqwD77",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Shred Flesh",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -407,8 +329,10 @@
                 "description": {
                     "value": "<p>A shanrigol behemoth's attacks brutally rend its foes. Creatures critically hit by the shanrigol's fleshy slap Strike take an additional @Damage[2d6[bleed]] and are @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for as long as they are bleeding.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -418,7 +342,8 @@
                         ],
                         "selector": "fleshy-slap-damage",
                         "text": "{item|system.description.value}",
-                        "title": "{item|name}"
+                        "title": "{item|name}",
+                        "visibility": "owner"
                     },
                     {
                         "critical": true,
@@ -430,15 +355,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -447,7 +366,7 @@
             "_id": "nQoYz6B0Wx0OjS4e",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Undulating Step",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -459,23 +378,16 @@
                 "description": {
                     "value": "<p>The shanrigol separates its flesh from its bones to fit through small spaces. It Strides, ignoring difficult terrain and fitting through tight spaces as though it were a Tiny creature.</p>\n<p>It can't use any actions other than Undulating Step until it occupies an area large enough for its normal form.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -484,7 +396,7 @@
             "_id": "j0uUpSfzz62wPB0o",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Web Trap",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -496,37 +408,28 @@
                 "description": {
                     "value": "<p>A creature hit by the shanrigol behemoth's web attack is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and stuck to the nearest surface until it can Escape (DC 25).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "web-trap",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "cxiSU1lrmfq49Cag",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -538,72 +441,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "Zz6dOcuAJUpMQiSf",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "RukMiF8Pv2gkSWJy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Shanrigol Behemoth",
@@ -637,7 +487,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 140,
                 "temp": 0,
                 "value": 140
@@ -659,12 +509,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 18
-            },
             "resistances": [
                 {
                     "type": "piercing",
@@ -690,25 +534,44 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "<p>Shanrigols that grow with the additions of many living victims can become truly enormous in size and pose a greater danger in their expanding hunting territories. Subterranean communities have collapsed entire tunnels to prevent the creatures from reaching their settlements.</p>\n<p>Many shanrigol behemoths absorb enough brain matter to form crude intelligences and take a serpentine or humanoid shape. They're more varied in their abilities than shanrigol heaps, as they often gain abilities from their constituent creatures. The shanrigol behemoth presented below contains flesh from driders and urdefhans, giving it a web attack and necrotic decay ability. Not all shanrigol behemoths have these two abilities, but should have other abilities to replace them.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>",
-            "source": {
-                "value": "Pathfinder #164: Hands of the Devil"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #164: Hands of the Devil"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 18,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -725,16 +588,16 @@
                 "value": 16
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 20
+            },
+            "stealth": {
+                "base": 16
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, tremorsense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "grg"
             },

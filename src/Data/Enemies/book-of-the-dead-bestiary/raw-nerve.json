@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -49,57 +51,13 @@
             "type": "melee"
         },
         {
-            "_id": "a3wMuTNkVSHLbp4T",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "YXtsCv8FMKUxjjDY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Telepathy 100 feet",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -111,27 +69,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "telepathy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "divination",
                         "magical"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -140,7 +90,7 @@
             "_id": "9nhauoark4hd73ic",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Thoughtsense 60 feet",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -152,24 +102,19 @@
                 "description": {
                     "value": "<p>The raw nerve senses all non-mindless creatures at the listed range.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -178,7 +123,7 @@
             "_id": "53r0jhgz2tlvtcn9",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Accelerating Inquest",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -188,10 +133,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The raw nerve mentally probes a creature within 100 feet, attempting an @Check[type:occultism] check against the creature's Will DC. On a success, the raw nerve can Step, and gains a +2 circumstance bonus to AC against that creature until the start of the raw nerve's next turn.</p>"
+                    "value": "<p>The raw nerve mentally probes a creature within 100 feet, attempting an @Check[occultism|defense:will] check against the creature's Will DC. On a success, the raw nerve can Step, and gains a +2 circumstance bonus to AC against that creature until the start of the raw nerve's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -211,20 +158,13 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "detection",
-                        "divination",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -233,7 +173,7 @@
             "_id": "26zb7felsd7fhdyg",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Float",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -245,20 +185,16 @@
                 "description": {
                     "value": "<p>A raw nerve floats a few inches from the ground. As such, it can ignore difficult terrain.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -267,7 +203,7 @@
             "_id": "u7gqkauw2hdfde3u",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Involuntary Reaction",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -277,22 +213,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A creature struck by a raw nerve's nerve ending strike must succeed at a @Check[type:reflex|dc:26] saving throw or be unable to use reactions until the start of its next turn.</p>"
+                    "value": "<p>A creature struck by a raw nerve's nerve ending strike must succeed at a @Check[reflex|dc:26] saving throw or be unable to use reactions until the start of its next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "involuntary-reaction",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -301,7 +233,7 @@
             "_id": "olrz72ebabiexxj8",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Synaptic Overload",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -311,59 +243,31 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The raw nerve releases a burst of mental energy in a @Template[type:cone|distance:30], dealing @Damage[4d12[mental]] damage to each creature in the cone (@Check[type:will|dc:23] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}</p>"
+                    "value": "<p>The raw nerve releases a burst of mental energy in a @Template[cone|distance:30], dealing @Damage[4d12[mental]] damage to each creature in the cone (@Check[will|dc:23] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "enchantment",
                         "incapacitation",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "p4odc3dnktqro9cn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "kyvbc251jzpofo6c",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Lore",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "description": {
                     "value": ""
@@ -374,80 +278,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "rwiepzehkitq7b39",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "u8gz792gxna093fz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "lkayr4zc5lhewmp2",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -483,7 +320,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 150,
                 "temp": 0,
                 "value": 150
@@ -511,12 +348,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 17
-            },
             "speed": {
                 "details": "float",
                 "otherSpeeds": [],
@@ -531,19 +362,41 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "(can't speak any language), telepathy 100 feet",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "<p>When a living creature is killed by massive amounts of electricity (such as by being struck by lightning or subjected to a magical attack), their dying terror sometimes causes their soul to linger on the Material Plane. Necromantic energy takes hold of their brain and nervous system, causing these organs to burst forth from the charred flesh and become a raw nerve. These horrific undead float a few inches off the ground in a macabre arrangement morbidly parodying the creature's living form, with its brain at the top and nerves dangling below, crackling with electrical energy.</p>\n<p>A raw nerve can sense the thoughts of the living, perceiving them as a chaotic jumble that evokes an uncontrollable rage. The undead seeks to destroy the sources of these thoughts, which often means killing every living creature it can sense. Once a raw nerve detects no more thoughts, it grows still, floating in an almost meditative state. However, its fury instantly reawakens should a thinking creature pass too close. Though it's not mindless, a raw nerve can't be reasoned with, and the only way to stop one is to destroy it.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 17,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "thoughtsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -560,24 +413,29 @@
                 "value": 19
             }
         },
+        "skills": {
+            "intimidation": {
+                "base": 16
+            },
+            "medicine": {
+                "base": 15
+            },
+            "occultism": {
+                "base": 18
+            },
+            "stealth": {
+                "base": 16
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(Can't Speak Any Language), Telepathy 100 feet",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, thoughtsense 60 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
-                "undead"
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

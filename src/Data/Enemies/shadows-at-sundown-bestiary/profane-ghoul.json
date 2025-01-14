@@ -28,17 +28,19 @@
                     },
                     "w7hxxhmg9wixd109pr7g": {
                         "damage": "2d6",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -76,17 +78,19 @@
                     },
                     "g6c93jrf3reth5regio8": {
                         "damage": "2d6",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -101,57 +105,13 @@
             "type": "melee"
         },
         {
-            "_id": "VLCaGIcIh6S0iifY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "uclkH2Aphlv04bBH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -163,8 +123,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -175,31 +137,52 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "ysNFAC1sOx9OuF5i",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ghoul Fever",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ghoul] the next midnight.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "ghoul-ghoul-fever",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "disease"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "klxWydBc0gA2WrM3",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Profane Paralysis",
             "sort": 500000,
             "system": {
                 "actionType": {
@@ -210,65 +193,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ghoul] the next midnight.</p>"
+                    "value": "<p>Any living, non-elf creature hit by the profane ghoul's attack must attempt a @Check[fortitude|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "ghoul-ghoul-fever",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "disease"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "klxWydBc0gA2WrM3",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Profane Paralysis",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Any living, non-elf creature hit by the profane ghoul's attack must attempt a @Check[type:fortitude|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation",
-                        "necromancy",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -277,7 +216,7 @@
             "_id": "AMnjR0eut6YiIx82",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Profane Whispers",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -287,27 +226,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The ghoul whispers profane secrets of undeath. Living creatures within @Template[type:emanation|distance:10]{10 feet} of the ghoul take [[/r 2d8[persistent,mental]]] damage. Those with ghoul fever must also succeed at a @Check[type:will|dc:29] save or have the disease advance one step. The profane ghoul can't use Profane Whispers again for 24 hours.</p>"
+                    "value": "<p>The ghoul whispers profane secrets of undeath. Living creatures within @Template[emanation|distance:10]{10 feet} of the ghoul take @Damage[2d8[persistent,mental]] damage. Those with ghoul fever must also succeed at a @Check[will|dc:29] save or have the disease advance one step. The profane ghoul can't use Profane Whispers again for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "mental",
-                        "necromancy",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -316,7 +250,7 @@
             "_id": "uH3obP1kShzCW2fe",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Scuttle",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -328,117 +262,21 @@
                 "description": {
                     "value": "<p>The profane ghoul crawls on all fours, moving up to half its Speed. This movement doesn't trigger reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "9Sy3h8hUfvCKCCMB",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ZG7HCoJe7l5sZbvB",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "01t9SfEKC5y9Fd4w",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "IWYhOCwI9Wu6RKRY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Profane Ghoul",
@@ -472,7 +310,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 180,
                 "temp": 0,
                 "value": 180
@@ -494,12 +332,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 19
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -511,19 +343,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant ghoul",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Adventure: Shadows at Sundown"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: Shadows at Sundown"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 19,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -540,25 +389,30 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 22
+            },
+            "athletics": {
+                "base": 17
+            },
+            "religion": {
+                "base": 19
+            },
+            "stealth": {
+                "base": 20
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "ghoul",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

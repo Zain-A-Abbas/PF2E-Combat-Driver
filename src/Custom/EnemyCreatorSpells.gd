@@ -1,16 +1,20 @@
 extends VBoxContainer
 
-@onready var spell_list_box: OptionButton = %SpellListBox
-@onready var casting_type_box: OptionButton = %CastingTypeBox
-@onready var spell_dc_field: LabelDataField = %SpellDCField
-@onready var spell_attack_field: LabelDataField = %SpellAttackField
-@onready var spell_fields_panel: PanelContainer = %SpellFieldsPanel
+@onready var new_casting_entry_button: Button = %NewCastingEntryButton
+@onready var delete_casting_entry_button: Button = %DeleteCastingEntryButton
 
-func _ready() -> void:
-	_on_spell_list_box_item_selected(0)
+@onready var casting_entry_tabs: TabContainer = %CastingEntryTabs
 
-func _on_spell_list_box_item_selected(index: int) -> void:
-	casting_type_box.visible = index != 0
-	spell_dc_field.visible = index != 0
-	spell_attack_field.visible = index != 0
-	spell_fields_panel.visible = index != 0
+const CASTING_ENTRY = preload("res://Custom/CastingEntry.tscn")
+
+func _on_new_casting_entry_button_pressed() -> void:
+	casting_entry_tabs.add_child(CASTING_ENTRY.instantiate())
+
+func _on_delete_casting_entry_button_pressed() -> void:
+	if casting_entry_tabs.get_child_count() > 0:
+		casting_entry_tabs.get_child(casting_entry_tabs.current_tab).queue_free()
+	_on_visibility_changed()
+
+
+func _on_visibility_changed() -> void:
+	delete_casting_entry_button.disabled = casting_entry_tabs.get_child_count() == 0

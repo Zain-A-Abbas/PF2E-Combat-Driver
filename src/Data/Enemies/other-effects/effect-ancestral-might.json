@@ -1,0 +1,76 @@
+{
+    "_id": "qKS1TilScX0SmesO",
+    "img": "icons/sundries/gaming/playing-cards-brown.webp",
+    "name": "Effect: Ancestral Might",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.pf2e.journals.JournalEntry.BSp4LUSaOmUyjBko.JournalEntryPage.quxPxuMub8k6abzN]{Ancestral Might}</p>\n<p>You gain a +2 status bonus to checks based on the attributes that are boosted by your ancestry (ignoring free boosts). If your ancestry only grants free boosts, select one attribute to gain the bonus to instead.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Hero Point Deck"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": {
+                    "config": "abilities"
+                },
+                "flag": "firstBoost",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.HeroPointDeck.AncestralMight.FirstBoostPrompt",
+                "rollOption": "ancestral-might:first-boost"
+            },
+            {
+                "adjustName": false,
+                "allowNoSelection": true,
+                "choices": {
+                    "config": "abilities",
+                    "predicate": [
+                        {
+                            "not": "ancestral-might:first-boost:{choice|value}"
+                        }
+                    ]
+                },
+                "flag": "secondBoost",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.HeroPointDeck.AncestralMight.SecondBoostPrompt"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "{item|flags.pf2e.rulesSelections.firstBoost}-based",
+                "slug": "ancestral-might-first",
+                "type": "status",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "{item|flags.pf2e.rulesSelections.secondBoost}-based",
+                "slug": "ancestral-might-second",
+                "type": "status",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

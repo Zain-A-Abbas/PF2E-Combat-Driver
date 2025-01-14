@@ -1,0 +1,44 @@
+{
+    "_id": "zNOomUXHZHcc1PWD",
+    "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/quick-wig.webp",
+    "name": "Effect: Vengeful Fibers",
+    "system": {
+        "description": {
+            "value": "<p>The target takes a –10-foot circumstance penalty to Speed</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #187: The Seventh Arch"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "land-speed",
+                "type": "circumstance",
+                "value": -10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -1,0 +1,44 @@
+{
+    "_id": "s4XFUgK8UgKnpKrX",
+    "img": "systems/pf2e/icons/spells/ancestral-defense.webp",
+    "name": "Effect: Chemical Fertilizer",
+    "system": {
+        "description": {
+            "value": "<p>Gains a +15-foot status bonus to its Speed until the end of its next turn.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #193: Mantle of Gold"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "land-speed",
+                "type": "status",
+                "value": 15
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "target": null,
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

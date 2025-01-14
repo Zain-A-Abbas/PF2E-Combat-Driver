@@ -1,0 +1,58 @@
+{
+    "_id": "HArljmKc2IR7rtfc",
+    "img": "systems/pf2e/icons/equipment/alchemical-items/drugs/alcohol.webp",
+    "name": "Effect: Swig",
+    "system": {
+        "description": {
+            "value": "<p>The dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become clumsy 1.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Gamemastery Guide"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "melee-strike-damage",
+                "type": "item",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "fear"
+                ],
+                "selector": "saving-throw",
+                "type": "item",
+                "value": 2
+            },
+            {
+                "inMemoryOnly": true,
+                "key": "GrantItem",
+                "uuid": "Compendium.pf2e.conditionitems.Item.Clumsy"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

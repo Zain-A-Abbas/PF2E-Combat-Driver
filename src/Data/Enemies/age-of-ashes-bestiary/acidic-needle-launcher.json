@@ -18,25 +18,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature moves into the area indicated on the map</p>\n<hr />\n<p><strong>Effect</strong> The trap shoots an acidic needle at a random target in the area indicated on the map, then rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -69,11 +62,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
@@ -117,17 +112,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A ceiling-mounted launcher rains resinous needles onto intruders, after which the needles melt into acid.</p>",
-            "disable": "<p>@Check[type:thievery|dc:36|name:Disable Firing Mechanism|traits:mechanical,trap,complex] to disable some firing mechanisms, making three adjacent squares in the trapped area safe to enter.</p>",
+            "disable": "<p>@Check[thievery|dc:36|name:Disable Firing Mechanism|traits:mechanical,trap,complex] to disable some firing mechanisms, making three adjacent squares in the trapped area safe to enter.</p>",
             "isComplex": true,
             "level": {
                 "value": 16
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #149: Against the Scarlet Triad"
+            },
             "reset": "",
-            "routine": "<p>(3 actions) The acidic needle launcher fires a needle at a random target in the area indicated on the map.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #149: Against the Scarlet Triad"
-            }
+            "routine": "<p>(3 actions) The acidic needle launcher fires a needle at a random target in the area indicated on the map.</p>"
         },
         "saves": {
             "fortitude": {

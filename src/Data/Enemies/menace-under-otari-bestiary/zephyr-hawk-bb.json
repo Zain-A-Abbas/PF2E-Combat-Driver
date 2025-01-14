@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,52 +48,10 @@
             "type": "melee"
         },
         {
-            "_id": "J7jljAzKdEbTuHtB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "x8uwJOVGskq8pjOH",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Circling Attack",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -101,74 +61,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like @UUID[Compendium.pf2e.feats-srd.Item.Attack of Opportunity]. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.</p>"
+                    "value": "<p>The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like Reactive Strike. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "ZeT6XVtOg8fOGoyd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "DH40UDQNata0kgNy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zephyr Hawk (BB)",
@@ -199,7 +106,7 @@
         "attributes": {
             "ac": {
                 "details": "",
-                "value": 21
+                "value": 18
             },
             "allSaves": {
                 "value": ""
@@ -221,12 +128,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -238,19 +139,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Elemental",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
-            "publicNotes": "<p>Air elementals, such as the zephyr hawk, appear in a variety of sizes and shapes. From the Plane of Air, zephyr hawks are often summoned to be used as airborne messengers. Air elementals can also arrive spontaneously during powerful storms and tornadoes where elemental vortexes form.</p>\n<p>Zephyr hawks appear to be made of clouds, with distinct shapes that give them the appearance of having the wings and beaks of birds. When one sees clouds that resemble animals, they're often unknowingly observing air elementals. Zephyr hawks sometimes drift among wind currents in great flocks called casts.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publicNotes": "<p>Air elementals, such as a zephyr hawk, appear in a variety of sizes and shapes. From the Plane of Air, zephyr hawks are often summoned to be used as airborne messengers. Air elementals can also arrive spontaneously during powerful storms and tornadoes where elemental vortexes form.</p>\n<p>Zephyr hawks appear to be made of clouds, with distinct shapes that give them the appearance of having the wings and beaks of birds. When one sees clouds that resemble animals, they're often unknowingly observing air elementals. Zephyr hawks sometimes drift among wind currents in great flocks called casts.</p>",
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -267,16 +182,16 @@
                 "value": 7
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "stealth": {
+                "base": 11
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "sm"
             },

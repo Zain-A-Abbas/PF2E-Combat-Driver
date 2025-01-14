@@ -14,86 +14,40 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
                     "slot3": {
                         "max": 4,
-                        "prepared": {},
                         "value": 4
                     },
                     "slot4": {
                         "max": 2,
-                        "prepared": {},
                         "value": 2
                     },
                     "slot5": {
                         "max": 1,
-                        "prepared": {},
                         "value": 1
                     },
                     "slot6": {
                         "max": 9,
-                        "prepared": {},
                         "value": 9
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 32,
                     "item": 0,
@@ -108,162 +62,42 @@
         },
         {
             "_id": "pinpyfNWV1SZTT5s",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE"
             },
             "img": "systems/pf2e/icons/spells/spiritual-blast.webp",
             "name": "Spirit Blast",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "force"
-                            },
-                            "value": "16d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "16d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "spirit"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 force damage. Because spirit blast affects the creature's spirit, it can damage a target projecting its consciousness (such as via project image) or possessing another creature even if the target's body is elsewhere. The possessed creature isn't harmed by the blast. The blast doesn't harm creatures that have no spirit, such as constructs.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+                    "value": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
-                },
-                "level": {
-                    "value": 6
-                },
-                "location": {
-                    "heightenedLevel": 6,
-                    "value": "Pd2a0LCF9zAkHizr"
-                },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
-                },
-                "range": {
-                    "value": "30 feet"
-                },
-                "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
-                "slug": "spirit-blast",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
-                "target": {
-                    "value": "1 creature"
-                },
-                "time": {
-                    "value": "2"
-                },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "force",
-                        "necromancy"
-                    ]
-                }
-            },
-            "type": "spell"
-        },
-        {
-            "_id": "9zoMyudksHwvB1G1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.fd31tAHSSGXyOxW6"
-                }
-            },
-            "img": "systems/pf2e/icons/spells/vampiric-exsanguination.webp",
-            "name": "Vampiric Exsanguination",
-            "sort": 300000,
-            "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": {
-                    "type": "cone",
-                    "value": 30
-                },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
-                "cost": {
-                    "value": ""
-                },
-                "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "12d6"
-                        }
-                    }
-                },
-                "description": {
-                    "value": "<p>You draw in the blood and life force of other creatures through your outstretched arms. You deal 12d6 negative damage to living creatures in the area. You gain temporary Hit Points equal to half the damage a single creature takes from this spell; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
-                },
-                "duration": {
-                    "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -279,58 +113,122 @@
                     "heightenedLevel": 6,
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "spirit-blast",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "spirit"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "9zoMyudksHwvB1G1",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.fd31tAHSSGXyOxW6"
+            },
+            "img": "systems/pf2e/icons/spells/vampiric-exsanguination.webp",
+            "name": "Vampiric Exsanguination",
+            "sort": 300000,
+            "system": {
+                "area": {
+                    "type": "cone",
+                    "value": 30
+                },
+                "cost": {
                     "value": ""
                 },
-                "prepared": {
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "category": null,
+                        "formula": "12d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
+                    }
+                },
+                "description": {
+                    "value": "<p>You draw in the blood and life force of other creatures through your outstretched arms. You deal 12d6 void damage to living creatures in the area. You gain temporary Hit Points equal to half the damage a single creature takes from this spell; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+                },
+                "duration": {
+                    "sustained": false,
                     "value": ""
                 },
-                "primarycheck": {
-                    "value": ""
+                "heightening": {
+                    "damage": {
+                        "0": "2d6"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 6
+                },
+                "location": {
+                    "heightenedLevel": 6,
+                    "value": "Pd2a0LCF9zAkHizr"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "vampiric-exsanguination",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -338,50 +236,36 @@
         },
         {
             "_id": "9YOxdMKeXBVf6OXM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG"
             },
-            "img": "systems/pf2e/icons/spells/shadow-blast.webp",
+            "img": "icons/magic/unholy/beam-impact-purple.webp",
             "name": "Shadow Blast",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "untyped"
-                            },
-                            "value": "5d8"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "5d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a 30-foot cone, a 15-foot burst within 120 feet, or a 50-foot line. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -397,56 +281,33 @@
                     "heightenedLevel": 5,
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "shadow-blast",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
-                        "shadow",
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "shadow"
                     ]
                 }
             },
@@ -454,62 +315,37 @@
         },
         {
             "_id": "G9nh4xascor46dH6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.eexkxcqnkXazsGfK"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.eexkxcqnkXazsGfK"
             },
             "img": "systems/pf2e/icons/spells/enervation.webp",
             "name": "Enervation",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "line",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "persistent",
-                                "value": "negative"
-                            },
-                            "value": "4d8"
-                        }
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>Extending a finger, you fire a beam of negative energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r 2d8[persistent,negative]]] damage.</p>\n<p><strong>Failure</strong> The creature takes [[/r 4d8[persistent,negative]]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r 4d8[persistent,negative]]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.Doomed]{Doomed 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent negative damage increases by [[/r 1d8[persistent,negative]]] damage on a success, or by [[/r 2d8[persistent,negative]]] damage on a failure or critical failure.</p>"
+                    "value": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(floor(@item.rank/2))d8[persistent,void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(floor(@item.rank/2)*2)d8[persistent,void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(floor(@item.rank/2)*2)d8[persistent,void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.Doomed]{Doomed 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
                 },
-                "hasCounteractCheck": {
-                    "value": false
-                },
                 "heightening": {
-                    "damage": {
-                        "0": "2d8"
-                    },
-                    "interval": 2,
-                    "type": "interval"
+                    "damage": {}
                 },
                 "level": {
                     "value": 4
@@ -518,57 +354,34 @@
                     "heightenedLevel": 4,
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": false
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Advanced Player's Guide"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "enervation",
-                "source": {
-                    "value": "Pathfinder Advanced Player's Guide"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "negative",
-                        "necromancy"
+                        "concentrate",
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -576,42 +389,26 @@
         },
         {
             "_id": "WXUWUzWuxTGk3K4j",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.WVc30DGbM7TRLLul"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.WVc30DGbM7TRLLul"
             },
-            "img": "systems/pf2e/icons/spells/ghostly-tragedy.webp",
+            "img": "icons/magic/water/tendrils-ice-growth.webp",
             "name": "Ghostly Tragedy",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>This spell compels local spirits to reenact a violent event of the recent past that you're aware of and name as you @UUID[Compendium.pf2e.actionspf2e.Item.Cast a Spell]{Cast the Spell}. You take the role of the primary victim. The reenactment plays out the final 9 minutes leading up to the death or injury of the victim and the minute after their death or injury. The spirits don't change form, so this doesn't help determine perpetrators by their look. Spiritual forms of missing creatures necessary for the event manifest as needed, and missing items appear as shadowy outlines.</p>\n<p>Once the scene ends, you take @Damage[2d6[negative]] damage for each ghostly apparition that participated in the scene (typically equal to the number of creatures involved other than the victim). Any creature that observed the ghostly recreation, including you, can attempt checks to investigate the event to discover new clues and information.</p>"
+                    "value": "<p>This spell compels local spirits to reenact a violent event of the recent past that you're aware of and name as you @UUID[Compendium.pf2e.actionspf2e.Item.Cast a Spell]{Cast the Spell}. You take the role of the primary victim. The reenactment plays out the final 9 minutes leading up to the death or injury of the victim and the minute after their death or injury. The spirits don't change form, so this doesn't help determine perpetrators by their look. Spiritual forms of missing creatures necessary for the event manifest as needed, and missing items appear as shadowy outlines.</p>\n<p>Once the scene ends, you take @Damage[2d6[void]] damage for each ghostly apparition that participated in the scene (typically equal to the number of creatures involved other than the victim). Any creature that observed the ghostly recreation, including you, can attempt checks to investigate the event to discover new clues and information.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -624,55 +421,32 @@
                     },
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": false
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Advanced Player's Guide"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ghostly-tragedy",
-                "source": {
-                    "value": "Pathfinder Advanced Player's Guide"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 minute"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -680,42 +454,26 @@
         },
         {
             "_id": "xiB7rbhlfd8SsmhY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.GUeRTriJkMlMlVrk"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.GUeRTriJkMlMlVrk"
             },
             "img": "systems/pf2e/icons/spells/bind-undead.webp",
             "name": "Bind Undead",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>With a word of necromantic power, you seize control of the target. It gains the minion trait. If you or an ally uses any hostile actions against the target, the spell ends.</p>"
+                    "value": "<p>With a word of power, you seize control of the target. It gains the minion trait. If you or an ally uses any hostile actions against the target, the spell ends.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Bind Undead]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 day"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 3
@@ -724,56 +482,33 @@
                     "heightenedLevel": 3,
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "bind-undead",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
-                    "value": "1 mindless undead creature with a level no greater than bind undead's spell level"
+                    "value": "1 mindless undead creature with a level no greater than bind undead's spell rank"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "necromancy"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -781,42 +516,31 @@
         },
         {
             "_id": "JJ47XL6St7DIB1De",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -829,60 +553,37 @@
                     },
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "fear",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -890,51 +591,43 @@
         },
         {
             "_id": "ZBS1tOt7kfL8yBRw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
             },
             "img": "systems/pf2e/icons/spells/harm.webp",
             "name": "Harm",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage",
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, verbal, somatic)</strong> You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+                    "value": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -954,9 +647,6 @@
                     },
                     "value": "Pd2a0LCF9zAkHizr"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "4gyp3qlsv5ywdyjq": {
                         "_id": "4gyp3qlsv5ywdyjq",
@@ -964,17 +654,15 @@
                         "overlayType": "override",
                         "sort": 3,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "value": "1d8+8"
-                                    }
+                                "0": {
+                                    "formula": "1d8+8",
+                                    "kinds": [
+                                        "healing"
+                                    ]
                                 }
                             },
+                            "defense": null,
                             "heightening": {
                                 "damage": {
                                     "0": "1d8+8"
@@ -983,18 +671,18 @@
                             "range": {
                                 "value": "30 feet"
                             },
-                            "save": {
-                                "basic": "",
-                                "value": ""
-                            },
-                            "spellType": {
-                                "value": "heal"
-                            },
                             "target": {
                                 "value": "1 willing undead creature"
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1003,9 +691,6 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true
-                            },
                             "range": {
                                 "value": "touch"
                             },
@@ -1023,11 +708,6 @@
                                 "type": "emanation",
                                 "value": 30
                             },
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "range": {
                                 "value": ""
                             },
@@ -1036,6 +716,13 @@
                             },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1045,9 +732,12 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
+                            "damage": {
+                                "0": {
+                                    "kinds": [
+                                        "damage"
+                                    ]
+                                }
                             },
                             "range": {
                                 "value": "30 feet"
@@ -1057,56 +747,42 @@
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "harm",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature or 1 willing undead creature"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -1114,24 +790,22 @@
         },
         {
             "_id": "dWDxhvABpzr9Iubs",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.9iDqOLNFKxiTcFKE"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.9iDqOLNFKxiTcFKE"
             },
             "img": "systems/pf2e/icons/equipment/weapons/mace.webp",
             "name": "Mace",
             "sort": 1000000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "mace",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -1148,9 +822,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "club",
                 "hardness": 0,
                 "hp": {
@@ -1160,34 +831,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1195,17 +851,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "mace",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -1215,9 +869,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
@@ -1249,11 +900,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1296,11 +949,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1315,57 +970,13 @@
             "type": "melee"
         },
         {
-            "_id": "KB3dAuCJuP1fvJj1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "0a0R5L9eHRL770lk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.OSnNiMdqgARyEVuv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.OSnNiMdqgARyEVuv"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Breathsense (Precise) 60 feet",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1377,34 +988,28 @@
                 "description": {
                     "value": "<p>A jiang-shi can't perceive living creatures beyond 5 feet except with their breathsense. A living creature within the listed range who holds its breath is @UUID[Compendium.pf2e.conditionitems.Item.Invisible] to the jiang-shi for as long as it holds its breath. To hold its breath in this way, a creature must have one hand free to fully plug its nose or cover its mouth.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-jiang-shi-basic-breathsense-60-feet",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "942tW0398ldkqoyk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Fast Healing 10",
-            "sort": 1500000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1416,8 +1021,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -1429,32 +1036,91 @@
                     }
                 ],
                 "slug": "fast-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "cVXdT14wxKimZClN",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.R1vYhCJ2KvT8uAy1"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Jiang-Shi Vulnerabilities",
+            "sort": 1500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>All jiang-shi possess the following vulnerabilities.</p>\n<ul>\n<li><strong>Revulsion</strong> A jiang-shi can't voluntarily come within 10 feet of a brandished mirror or the sound of ringing handbells. A creature can Interact with a mirror or handbell to brandish or ring the item for 1 round (similar to Raising a Shield). If the jiang-shi involuntarily comes within 10 feet of an object of their revulsion, they gain the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition, running from the object of their revulsion until they are 10 feet or farther from the object. After 1 round of being exposed to the object of their revulsion, a jiang-shi can attempt a @Check[will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/gmr 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Bitter Epiphany</strong> A jiang-shi is afflicted by severe melancholia when reminded of their debased nature and the truth of their existential disconnection from living beings. When a jiang-shi sees an altar with at least 1 Bulk of food offerings to ancestor spirits, they must attempt a @Check[will|dc:25] save. They are then temporarily immune to Bitter Epiphany for 1 minute.</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> The jiang-shi is unaffected.</p>\n<p><strong>Success</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The jiang-shi is stupefied 2 and @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
+                },
+                "rules": [],
+                "slug": "vampire-jiang-shi-basic-jiang-shi-vulnerabilities",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "QTvQkFjvczOYx7t8",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BBqjQN5Gbe4PWP56"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "One More Breath",
+            "sort": 1600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p>Unlike other undead, a jiang-shi isn't destroyed at 0 HP. Instead, they fall @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] and awaken in 1 minute with 1 Hit Point. Scattering at least 1 Bulk of glutinous rice or hen eggs on an unconscious jiang-shi destroys them permanently. If the jiang-shi was reduced to 0 HP by an attack from a weapon made of duskwood, they're destroyed immediately.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
+                },
+                "rules": [],
+                "slug": "vampire-jiang-shi-basic-one-more-breath",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "divine",
+                        "void"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "RZU7C9rxkfFtWjAK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 1600000,
+            "name": "Void Healing",
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1466,8 +1132,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -1478,115 +1146,21 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "cVXdT14wxKimZClN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.R1vYhCJ2KvT8uAy1"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Jiang-Shi Vulnerabilities",
-            "sort": 1700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>All jiang-shi possess the following vulnerabilities.</p>\n<ul>\n<li><strong>Revulsion</strong> A jiang-shi can't voluntarily come within 10 feet of a brandished mirror or the sound of ringing handbells. A creature can Interact with a mirror or handbell to brandish or ring the item for 1 round (similar to Raising a Shield). If the jiang-shi involuntarily comes within 10 feet of an object of their revulsion, they gain the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition, running from the object of their revulsion until they are 10 feet or farther from the object. After 1 round of being exposed to the object of their revulsion, a jiang-shi can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Bitter Epiphany</strong> A jiang-shi is afflicted by severe melancholia when reminded of their debased nature and the truth of their existential disconnection from living beings. When a jiang-shi sees an altar with at least 1 Bulk of food offerings to ancestor spirits, they must attempt a @Check[type:will|dc:25] save. They are then temporarily immune to Bitter Epiphany for 1 minute.</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> The jiang-shi is unaffected.</p>\n<p><strong>Success</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The jiang-shi is stupefied 2 and @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "vampire-jiang-shi-basic-jiang-shi-vulnerabilities",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "QTvQkFjvczOYx7t8",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BBqjQN5Gbe4PWP56"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "One More Breath",
-            "sort": 1800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p>Unlike other undead, a jiang-shi isn't destroyed at 0 HP. Instead, they fall @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] and awaken in 1 minute with 1 Hit Point. Scattering at least 1 Bulk of glutinous rice or hen eggs on an unconscious jiang-shi destroys them permanently. If the jiang-shi was reduced to 0 HP by an attack from a weapon made of darkwood, they're destroyed immediately.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "vampire-jiang-shi-basic-one-more-breath",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "divine",
-                        "necromancy",
-                        "negative"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "qViybdc6hq6JwJNP",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.hwrZQSADT36TjDdv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.hwrZQSADT36TjDdv"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Warped Fulu",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1598,8 +1172,10 @@
                 "description": {
                     "value": "<p>The jiang-shi has corrupted the fulu attached to their brow. The jiang-shi is immune to spells cast from a magic item without expending a spell slot, such as from a scroll or wand. A creature can @UUID[Compendium.pf2e.actionspf2e.Item.Steal] the fulu to remove it, rolling against the jiangshi's Perception DC. This immediately ends the jiang-shi's immunity to these effects. If a creature then destroys the removed fulu with an Interact action, the jiang-shi also loses their fast healing ability. A jiang-shi can create a replacement fulu by spending 1 uninterrupted hour inscribing a strip of paper (or similar) with a writing instrument.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [
                     {
@@ -1611,29 +1187,21 @@
                     }
                 ],
                 "slug": "vampire-jiang-shi-basic-warped-fulu",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "sE93R44GXNoE5W3Y",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.QMlQ5AvcunCvjlfM"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.QMlQ5AvcunCvjlfM"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Drain Qi",
-            "sort": 2000000,
+            "sort": 1900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1643,39 +1211,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], @UUID[Compendium.pf2e.conditionitems.Item.Restrained], @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], or willing creature is within the jiang-shi's reach</p>\n<hr />\n<p><strong>Effect</strong> The jiang-shi drains the victim's life energy, or qi, through their breath. This requires an @Check[type:athletics] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and the jiang-shi regains [[/r 13 #Hit Points]]{13 HP}, gaining any excess as temporary Hit Points. Draining qi from a creature that's already drained doesn't restore any HP to the jiang-shi but increases the victim's drained condition value by 1, killing the victim when it reaches drained 5. If the victim has the ability to cast ki spells, it can spend 1 Focus Point to avoid becoming drained. This protects it only from the current attack, not from subsequent attempts to Drain Qi.</p>\n<p>A victim's drained condition value decreases by 1 every week. If the creature restricts their diet to glutinous rice for at least 1 day and spends 10 minutes dancing, jogging, or otherwise engaging in vigorous physical activity by succeeding at a @Check[type:athletics|dc:25] check, it reduces its drained condition by 1.</p>"
+                    "value": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], @UUID[Compendium.pf2e.conditionitems.Item.Restrained], @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], or willing creature is within the jiang-shi's reach</p>\n<hr />\n<p><strong>Effect</strong> The jiang-shi drains the victim's life energy, or qi, through their breath. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and the jiang-shi regains @Damage[13[healing]] HP, gaining any excess as temporary Hit Points. Draining qi from a creature that's already drained doesn't restore any HP to the jiang-shi but increases the victim's drained condition value by 1, killing the victim when it reaches drained 5. If the victim has the ability to cast ki spells, it can spend 1 Focus Point to avoid becoming drained. This protects it only from the current attack, not from subsequent attempts to Drain Qi.</p>\n<p>A victim's drained condition value decreases by 1 every week. If the creature restricts their diet to glutinous rice for at least 1 day and spends 10 minutes dancing, jogging, or otherwise engaging in vigorous physical activity by succeeding at a @Check[athletics|dc:25] check, it reduces its drained condition by 1.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-jiang-shi-basic-drain-qi",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "hGLTi7qRn9Hbn8VM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.O6AXB9aZB0K14sS5"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.O6AXB9aZB0K14sS5"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rigor Mortis",
-            "sort": 2100000,
+            "sort": 2000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1687,34 +1248,28 @@
                 "description": {
                     "value": "<p>The jiang-shi ignores difficult terrain and effects that would render them @UUID[Compendium.pf2e.conditionitems.Item.Prone]. A jiang-shi can't take the @UUID[Compendium.pf2e.actionspf2e.Item.Drop Prone] action. When they @UUID[Compendium.pf2e.actionspf2e.Item.Leap] they don't trigger reactions that are normally triggered by move actions, such as Attacks of Opportunity.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-jiang-shi-basic-rigor-mortis",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "VaJj5noJcvvTyDKp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 2200000,
+            "sort": 2100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1726,118 +1281,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "pw60orhvod30qfkd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "v8grjxchbcml14te",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "kh0pw5sucmbirjg5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "n34k0p5cjzb70y0q",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Provincial Jiang-shi",
@@ -1871,7 +1327,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "fast healing 10, negative healing, one more breath",
+                "details": "fast healing 10, void healing, one more breath",
                 "max": 130,
                 "temp": 0,
                 "value": 130
@@ -1896,16 +1352,10 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 22
-            },
             "resistances": [
                 {
                     "exceptions": [
-                        "darkwood"
+                        "duskwood"
                     ],
                     "type": "physical",
                     "value": 10
@@ -1919,19 +1369,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril",
+                    "tien"
+                ]
+            },
             "level": {
                 "value": 11
             },
             "privateNotes": "",
             "publicNotes": "<p>Jiang-shi are terrifying hopping vampires from Tian Xia. Though similar to other vampires—they are undead, drain vital energy from the living, and can be slain only in specific ways—jiang-shi feast upon the breath of the living, also known as qi or ki, instead of blood. While they possess unique powers, including their magic-deflecting paper fulus, extraordinary jumping ability, and immunity to sunlight, jiang-shi also possess unique vulnerabilities, such as the inability to see living creatures save through breathsense, a revulsion to bells and mirrors, and near-stupefying melancholia. Thankfully, most jiang-shi can't create vampiric spawn.</p>\n<p>Roused rudely from their nightmarish slumber, the provincial jiang-shi roams the villages and graveyards around their domain searching for sustenance to slake their hunger.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "breathsense (precise) 60 feet",
+            "mod": 22,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1948,25 +1416,30 @@
                 "value": 24
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 16
+            },
+            "athletics": {
+                "base": 22
+            },
+            "intimidation": {
+                "base": 20
+            },
+            "religion": {
+                "base": 22
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril",
-                    "tien"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "breathsense (precise) 60 feet, darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "undead",
+                "unholy",
                 "vampire"
             ]
         }

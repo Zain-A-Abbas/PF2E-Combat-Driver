@@ -1,6 +1,5 @@
 {
     "_id": "piG1RSGHklQy2H57",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/hazard.svg",
     "items": [
         {
@@ -19,19 +18,15 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> Pressure is applied to the floor tile</p>\n<hr />\n<p><strong>Effect</strong> The trap shoots 4 darts as a single attack.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -53,18 +48,20 @@
                 },
                 "damageRolls": {
                     "FvJOZZltiMs0O216": {
-                        "damage": "3d6",
+                        "damage": "3d4",
                         "damageType": "piercing"
                     }
                 },
                 "description": {
-                    "value": "<p>Plus @Damage[1d10[poison]] damage (@Check[type:fortitude|dc:16] negates the poison damage)</p>"
+                    "value": "<p>Plus @Damage[1d10[poison]] damage (@Check[fortitude|dc:16] negates the poison damage)</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -107,17 +104,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A series of hidden launch tubes fire toxic darts at a 5-foot square.</p>",
-            "disable": "<p>@Check[type:thievery|dc:16] (trained)</p>",
+            "disable": "<p>@Check[thievery|dc:16] (trained)</p>",
             "isComplex": false,
             "level": {
                 "value": 1
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #193: Mantle of Gold"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

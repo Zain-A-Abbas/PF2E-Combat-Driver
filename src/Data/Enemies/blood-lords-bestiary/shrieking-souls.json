@@ -16,26 +16,21 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The spirit screams, dealing @Damage[(6d12+41)[sonic]] damage to all creatures in a @Template[type:cone|distance:30] (@Check[type:fortitude|dc:40|basic:true]).</p>"
+                    "value": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The spirit screams, dealing @Damage[(6d12+41)[sonic]] damage to all creatures in a @Template[cone|distance:30] (@Check[fortitude|dc:40|basic]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "evocation",
                         "occult",
                         "sonic"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -63,17 +58,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A terrified soul releases an earsplitting scream.</p>",
-            "disable": "<p>@Check[type:diplomacy|dc:44] (master) to comfort the spirit or @Check[type:occultism|dc:45] (master) to ward off the spirit</p>",
+            "disable": "<p>@Check[diplomacy|dc:44] (master) to comfort the spirit or @Check[occultism|dc:45] (master) to ward off the spirit</p>",
             "isComplex": false,
             "level": {
                 "value": 18
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #186: Ghost King's Rage"
+            },
             "reset": "<p>1 hour.</p>",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #186: Ghost King's Rage"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

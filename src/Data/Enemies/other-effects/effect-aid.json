@@ -1,0 +1,75 @@
+{
+    "_id": "AHMUpMbaVkZ5A1KX",
+    "img": "systems/pf2e/icons/spells/efficient-apport.webp",
+    "name": "Effect: Aid",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.pf2e.actionspf2e.Item.Aid]</p>\n<p>You gain a circumstance bonus to the aided check based on the result of your ally's Aid check.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.SpecificRule.BonusLabel.NegativeOne",
+                        "value": -1
+                    },
+                    {
+                        "label": "PF2E.SpecificRule.BonusLabel.PlusOne",
+                        "value": 1
+                    },
+                    {
+                        "label": "PF2E.SpecificRule.BonusLabel.PlusTwo",
+                        "value": 2
+                    },
+                    {
+                        "label": "PF2E.SpecificRule.BonusLabel.PlusThree",
+                        "value": 3
+                    },
+                    {
+                        "label": "PF2E.SpecificRule.BonusLabel.PlusFour",
+                        "value": 4
+                    }
+                ],
+                "flag": "aidBonus",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Aid.Prompt"
+            },
+            {
+                "key": "FlatModifier",
+                "removeAfterRoll": true,
+                "selector": [
+                    "attack-roll",
+                    "skill-check"
+                ],
+                "type": "circumstance",
+                "value": "@item.flags.pf2e.rulesSelections.aidBonus"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

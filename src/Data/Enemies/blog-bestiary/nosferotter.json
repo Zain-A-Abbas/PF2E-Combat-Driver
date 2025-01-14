@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -67,11 +69,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -106,11 +110,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -124,57 +130,13 @@
             "type": "melee"
         },
         {
-            "_id": "BAWX026pxAado21l",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "SATUmquYZJjYAnOZ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 500000,
+            "name": "Void Healing",
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -186,8 +148,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -198,32 +162,21 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "gFhjA0vgY0HDCWGa",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Aquatic Ambush",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -235,23 +188,34 @@
                 "description": {
                     "value": "<p>30 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "aquatic-ambush",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "EphemeralEffect",
+                        "predicate": [
+                            "aquatic-ambush"
+                        ],
+                        "selectors": [
+                            "strike-attack-roll",
+                            "strike-damage"
+                        ],
+                        "uuid": "Compendium.pf2e.conditionitems.Item.Off-Guard"
+                    }
+                ],
                 "slug": "aquatic-ambush",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -260,7 +224,7 @@
             "_id": "1ocffL8Sr2wYwVjT",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Dead Gaze",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -270,29 +234,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Look into its beady little eyes. You are now @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round unless you succeeded on a @Check[type:will|dc:20] save.</p>"
+                    "value": "<p>Look into its beady little eyes. You are now @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round unless you succeeded on a @Check[will|dc:20] save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "enchantment",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -301,7 +257,7 @@
             "_id": "jEoWg5wqbeaOWfji",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Squeak of Doom",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -311,79 +267,25 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The nosferotter lets out an ominous, but cute, squeak. All creatures within 30 feet must attempt a @Check[type:will|dc:20] save.</p>\n<p>They are then temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can do nothing but wonder whether the nosferotter is cute or terrifying for 1 round.</p>\n<p><strong>Failure</strong> The creature is so confused that it attacks its allies for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but permanently. It's that bad.</p>"
+                    "value": "<p>The nosferotter lets out an ominous, but cute, squeak. All creatures within 30 feet must attempt a @Check[will|dc:20] save.</p>\n<p>They are then temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can do nothing but wonder whether the nosferotter is cute or terrifying for 1 round.</p>\n<p><strong>Failure</strong> The creature is so confused that it attacks its allies for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but permanently. It's that bad.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "emotion",
-                        "enchantment",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "NG0swGV7ndDR6uh9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "9dujnsPXmI41n5JE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Nosferotter",
@@ -417,16 +319,10 @@
                 "value": null
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 30,
                 "temp": 0,
                 "value": 30
-            },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 11
             },
             "speed": {
                 "otherSpeeds": [],
@@ -434,19 +330,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Blog: April Fool's Bestiary"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Blog: April Fool's Bestiary"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 11,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -463,22 +376,16 @@
                 "value": 7
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 7
+            },
+            "diplomacy": {
+                "base": 8
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "Darkvision"
-            },
             "size": {
                 "value": "med"
             },

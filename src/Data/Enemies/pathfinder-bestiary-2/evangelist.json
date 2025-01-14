@@ -33,11 +33,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -45,7 +47,8 @@
                         "evil",
                         "magical",
                         "reach-10",
-                        "trip"
+                        "trip",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -56,10 +59,8 @@
         },
         {
             "_id": "L19PpXXqJh02tp7Q",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Greater Darkvision",
@@ -75,23 +76,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -112,36 +106,26 @@
                 "description": {
                     "value": "<p>A velstrac automatically knows whether a creature it sees has any of the @UUID[Compendium.pf2e.conditionitems.Item.Doomed], @UUID[Compendium.pf2e.conditionitems.Item.Dying], and @UUID[Compendium.pf2e.conditionitems.Item.Wounded] conditions, as well as the value of those conditions</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "6rslY3YCHH1EYxYL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+1 Status to All Saves vs. Magic",
@@ -157,22 +141,16 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
                         "key": "FlatModifier",
                         "predicate": [
-                            {
-                                "or": [
-                                    "magical",
-                                    "arcane",
-                                    "divine",
-                                    "primal",
-                                    "occult"
-                                ]
-                            }
+                            "item:magical"
                         ],
                         "selector": "saving-throw",
                         "type": "status",
@@ -180,31 +158,20 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "FNBiiooVEkzVDOTE",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Regeneration 10 (Deactivated by Good or Silver)",
+            "name": "Regeneration 10 (Deactivated by Holy or Silver)",
             "sort": 500000,
             "system": {
                 "actionType": {
@@ -218,13 +185,15 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
                         "deactivatedBy": [
-                            "good",
+                            "holy",
                             "silver"
                         ],
                         "key": "FastHealing",
@@ -233,28 +202,17 @@
                     }
                 ],
                 "slug": "regeneration",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "ZWe69IC3j34b3dqx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
@@ -270,23 +228,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -305,10 +256,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>When a creature ends its turn in the aura, it sees the face of a departed loved one in place of the evangelist's face. The creature must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>"
+                    "value": "<p>30 feet. When a creature ends its turn in the aura, it sees the face of a departed loved one in place of the evangelist's face. The creature must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -316,9 +269,7 @@
                         "radius": 30,
                         "slug": "unnerving-gaze",
                         "traits": [
-                            "aura",
                             "divine",
-                            "enchantment",
                             "fear",
                             "mental",
                             "visual"
@@ -326,25 +277,15 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
                         "divine",
-                        "enchantment",
                         "fear",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -365,26 +306,18 @@
                 "description": {
                     "value": "<p>Chains in the evangelist's vicinity sprout barbs and writhe menacingly. The evangelist can make chain Strikes against any creature that is adjacent to an unattended chain within 20 feet, in addition to those within the reach of the evangelist's chain Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "transmutation"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -403,32 +336,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The evangelist stares at a creature they can see within 30 feet. The target must immediately attempt a @Check[type:will|dc:21] save against Unnerving gaze. In addition, if the creature was already @UUID[Compendium.pf2e.conditionitems.Item.Frightened], on a failed save, the evangelist is @UUID[Compendium.pf2e.conditionitems.Item.Concealed] from the creature for as long as the creature remains frightened.</p>\n<p>After attempting this save, the creature is then temporarily immune until the start of the evangelist's next turn.</p>"
+                    "value": "<p>The evangelist stares at a creature they can see within 30 feet. The target must immediately attempt a @Check[will|dc:21] save against Unnerving gaze. In addition, if the creature was already @UUID[Compendium.pf2e.conditionitems.Item.Frightened], on a failed save, the evangelist is @UUID[Compendium.pf2e.conditionitems.Item.Concealed] from the creature for as long as the creature remains frightened.</p>\n<p>After attempting this save, the creature is then temporarily immune until the start of the evangelist's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "enchantment",
                         "fear",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -449,147 +374,25 @@
                 "description": {
                     "value": "<p>When the evangelist critically hits with a chain Strike, the target is impaled and anchored in place, becoming @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by the chain. The creature is unable to recover from persistent bleed damage until it gets free (@UUID[Compendium.pf2e.actionspf2e.Item.Escape] DC 25).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Impaling Chain]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "impaling-chain",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "xgs04FEGUFQZNe6J",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "2ZLcb6YaJSLH6uwI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "sVprGEfE0LLavlFZ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nXkGhW9oSZZBFUit",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "f9IFJFpAiTTkfyhz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "ujbUCBlQf3V81dRB",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Torture Lore",
-            "sort": 1600000,
+            "sort": 1100000,
             "system": {
                 "description": {
                     "value": ""
@@ -600,11 +403,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -640,7 +445,7 @@
                 "value": "+1 status to all saves vs. magic"
             },
             "hp": {
-                "details": "regeneration 10 (deactivated by good or silver)",
+                "details": "regeneration 10 (deactivated by holy or silver)",
                 "max": 90,
                 "temp": 0,
                 "value": 90
@@ -650,19 +455,13 @@
                     "type": "cold"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 5
                 },
                 {
@@ -672,19 +471,37 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "",
-            "creatureType": "Fiend",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "diabolic",
+                    "shadowtongue"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Evangelists, the velstracs' unofficial ambassadors, roam the farthest reaches of the planes to spread the word of their kind's abhorrent belief in perfection through pain. They are therefore the most frequently encountered velstracs on the Material Plane, leading covens of hedonistic mortal flesh-sculptors or serving as wardens of horrific dungeons. In regions ruled by infernal powers, evangelists may serve as lieutenants or advisors, whispering secret paths to power in exchange for mortal's souls or choice mortal flesh. Evangelists are the same size as humans, although with the heavy chains that always drape their forms, they often weigh 350 pounds or more.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "painsight",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "greater-darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -701,28 +518,33 @@
                 "value": 11
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "athletics": {
+                "base": 15
+            },
+            "crafting": {
+                "base": 10
+            },
+            "intimidation": {
+                "base": 15
+            },
+            "religion": {
+                "base": 11
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "infernal",
-                    "shadowtongue"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "greater darkvision, painsight"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "fiend",
+                "lawful",
+                "unholy",
                 "velstrac"
             ]
         }

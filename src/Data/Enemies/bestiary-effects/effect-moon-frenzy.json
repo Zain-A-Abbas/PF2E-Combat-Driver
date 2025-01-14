@@ -1,0 +1,56 @@
+{
+    "_id": "dRe8n1nBWMIXd8jh",
+    "img": "systems/pf2e/icons/spells/darkness.webp",
+    "name": "Effect: Moon Frenzy",
+    "system": {
+        "description": {
+            "value": "<p>The creature becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike (or a similar Strike) by 2.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Monster Core"
+        },
+        "rules": [
+            {
+                "key": "CreatureSize",
+                "reach": {
+                    "add": 5
+                },
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "selector": [
+                    "antler-damage",
+                    "fangs-damage",
+                    "jaws-damage",
+                    "mandibles-damage",
+                    "tusk-damage"
+                ],
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

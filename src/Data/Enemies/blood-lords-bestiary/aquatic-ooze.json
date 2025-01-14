@@ -34,11 +34,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -67,23 +69,16 @@
                 "description": {
                     "value": "<p>A gray ooze can sense nearby creatures through vibration and air or water movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -104,33 +99,24 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature enters a space occupied by a gray ooze</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled</p>\n<hr />\n<p><strong>Effect</strong> The gray ooze automatically notices the creature, then makes a pseudopod Strike against one creature adjacent to itself before rolling initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "8nLUnVkKYxkXvAZs",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
@@ -144,25 +130,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[1d6[bludgeoning]] damage plus @Damage[1d6[acid]] damage, @Check[type:fortitude|dc:21|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[1d6[bludgeoning],1d6[acid]]{1d6 bludgeoning plus 1d6 acid}, @Check[fortitude|dc:21|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -183,23 +162,16 @@
                 "description": {
                     "value": "<p>A gray ooze's acid damages only metal and organic materials, not stone.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -218,34 +190,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A creature hit by the ooze's pseudopod is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] unless it succeeds at a @Check[type:fortitude|dc:19] save. A victim can attempt a new save to recover at the end of each of its turns.</p>"
+                    "value": "<p>A creature hit by the ooze's pseudopod is @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] unless it succeeds at a @Check[fortitude|dc:19] save. A victim can attempt a new save to recover at the end of each of its turns.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "rA2rDDvXjf2Cfr4w",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
@@ -261,88 +227,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "EtUaVMSZBeIVKmLu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6dch35LAYgze01qE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Moist",
-                        "predicate": [
-                            "terrain:moist"
-                        ],
-                        "selector": "stealth",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+12 in moist environments",
-                        "options": "terrain:moist"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Aquatic Ooze",
@@ -398,12 +295,6 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "resistances": [
                 {
                     "type": "slashing",
@@ -429,19 +320,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant gray ooze",
-            "creatureType": "Ooze",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>These dangerous oozes are the bane of any who travel through swamps, marshes, or damp caves. Easily masquerading as pools of clear water or patches of wet stone, gray oozes lie in wait for unwary victims to reach down for a drink or step into what appears to be a puddle, then lash out with whiplike pseudopods to ensnare and consume their hapless prey.</p>",
-            "source": {
-                "value": "Pathfinder #182: Graveclaw"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #182: Graveclaw"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "motion-sense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -458,19 +366,25 @@
                 "value": 8
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 10,
+                "special": [
+                    {
+                        "base": 12,
+                        "label": "in moist environments",
+                        "predicate": [
+                            "terrain:moist"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "motion sense 60 feet, no vision"
-            },
             "size": {
                 "value": "med"
             },

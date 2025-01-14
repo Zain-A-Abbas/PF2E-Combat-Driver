@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "jaws",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -45,94 +47,10 @@
             "type": "melee"
         },
         {
-            "_id": "xRQZegRo2JOZB7hU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "4BNXIgVORiBDrL95",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "WU4cXLzhnoCczalO",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Irritating Dander",
-            "sort": 400000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -144,23 +62,16 @@
                 "description": {
                     "value": "<p>A creature that hits the goblin bat-dog with an unarmed attack, tries to @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] it, or otherwise touches it is exposed to goblin pox.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -169,7 +80,7 @@
             "_id": "1AbBtZhPY7lYpSm0",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Goblin Pox",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -179,76 +90,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Goblins and goblin dogs (including goblin bat-dogs) are immune to goblin pox.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} and can't reduce its sickened value below 1 (1 day)</p>"
+                    "value": "<p>Goblins and goblin dogs (including goblin bat-dogs) are immune to goblin pox.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} and can't reduce its sickened value below 1 (1 day)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "6f4wOHPtCdDTXBoi",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "DDTEebmrqDGCJbuX",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Goblin Bat-Dog",
@@ -287,12 +145,6 @@
                 "temp": 0,
                 "value": 53
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -304,19 +156,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant goblin dog",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -333,19 +204,16 @@
                 "value": 7
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 10
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "low-light vision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },

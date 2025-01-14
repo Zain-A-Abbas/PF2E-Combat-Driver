@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -45,57 +47,13 @@
             "type": "melee"
         },
         {
-            "_id": "YerPyajhgUANJwRq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "V90pHqyo14mQzVuc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 30 feet",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -107,23 +65,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -132,7 +83,7 @@
             "_id": "GimuDrJ7GoLAne8i",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Avoid the Swat",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -144,8 +95,10 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The giant fly is targeted with a melee or ranged attack by an attacker it can see</p>\n<hr />\n<p><strong>Effect</strong> The giant fly gains a +2 circumstance bonus against the triggering attack. If the attack misses, the giant insect can Fly up to its fly Speed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -165,18 +118,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -185,7 +129,7 @@
             "_id": "kGJwFA2RdVWHs6ty",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Fly Pox",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -195,77 +139,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A giant fly could carry any disease, but most transmit a virulent but not fatal infection called Fly Pox with their bite</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 4</strong> as stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> enfeebled 2 and @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] (1 day)</p>"
+                    "value": "<p>A giant fly could carry any disease, but most transmit a virulent but not fatal infection called Fly Pox with their bite</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 4</strong> as stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> enfeebled 2 and @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] (1 day)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "fly-pox",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease",
                         "virulent"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "FABtp8TBjsp2wCXL",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "FP6HC9aUvUb19NTT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Giant Fly",
@@ -304,12 +195,6 @@
                 "temp": 0,
                 "value": 20
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -325,19 +210,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>This pony-sized fly's twitching limbs seem to never stop moving as it constantly cleans itself and scoops anything edible into its mouthparts. While primarily carrion eaters, giant flies sometimes prey on livestock or other animals too slow to get away.</p>\n<hr />\n<p>Giant flies are pony-sized insects that have massive compound eyes and bodies bristling with short, stiff hairs. Their lairs are notorious for the rotting meat they stockpile to lay their eggs into. Their maggot-dens are also prime breeding grounds for virulent diseases.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -354,19 +258,16 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 7
+            },
+            "athletics": {
+                "base": 6
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, tremorsense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },

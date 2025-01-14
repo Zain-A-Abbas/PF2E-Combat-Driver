@@ -21,17 +21,19 @@
                 "damageRolls": {
                     "rgqwwr4quzch137ojdxw": {
                         "damage": "2d6+2",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -47,57 +49,13 @@
             "type": "melee"
         },
         {
-            "_id": "WbJQr5XhkIENzNfG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "CfzB5r8CSHETuXfA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Site Bound",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -109,23 +67,16 @@
                 "description": {
                     "value": "<p>A ghost can stray no more than 120 feet from where it was killed or the place it haunts. Some are bound to items or creatures that were special to them rather than a location.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-site-bound",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -134,7 +85,7 @@
             "_id": "soQbbQbVd6xMuJl6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Incorporeal",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -146,34 +97,33 @@
                 "description": {
                     "value": "<p>A ghost has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] and @UUID[Compendium.pf2e.actionspf2e.Item.Shove], don't work against a ghost, and a ghost can't attempt such checks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "Immunity",
+                        "type": "precision"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "HvOzFzF3j47WTzIv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rejuvenation",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -186,40 +136,30 @@
                 "description": {
                     "value": "<p>Setting right the injustice that led to the ghost's death allows it to move on to the afterlife. Otherwise, when destroyed, the ghost re-forms after [[/br 2d4 #Rejuvenation]]{2d4 days} within the location it's bound to, fully healed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-rejuvenation",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "uYQrEbjjw3XIQ1cO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd"
             },
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Frightful Moan",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -229,56 +169,25 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each living creature within @Template[type:emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[type:will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
+                    "value": "<p>Each living creature within @Template[emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-frightful-moan",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "enchantment",
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "ol85747StrQp4hsx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Ghost Commoner (BB)",
@@ -322,18 +231,18 @@
             },
             "immunities": [
                 {
+                    "exceptions": [],
                     "type": "poison"
                 },
                 {
+                    "exceptions": [],
                     "type": "unconscious"
+                },
+                {
+                    "exceptions": [],
+                    "type": "bleed"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 10
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -342,7 +251,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -359,19 +268,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Spirit",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 10,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -388,16 +311,13 @@
                 "value": 8
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
@@ -405,7 +325,8 @@
                 "ghost",
                 "incorporeal",
                 "spirit",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

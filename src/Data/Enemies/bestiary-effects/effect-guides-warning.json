@@ -1,0 +1,44 @@
+{
+    "_id": "UiISDbCjK6AUDsll",
+    "img": "icons/skills/targeting/target-glowing-yellow.webp",
+    "name": "Effect: Guide's Warning",
+    "system": {
+        "description": {
+            "value": "<p>You gain a +1 circumstance bonus to initiative rolls.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 0
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Gamemastery Guide"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "initiative",
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -70,11 +72,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -115,11 +119,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -160,11 +166,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -205,11 +213,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -248,11 +258,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -280,25 +292,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>For the clockwork amalgam to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for 7 days, after which time it becomes unaware of its surroundings and can't act until it's wound again.</p>\n<p>The amalgam can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt a @Check[type:thievery|dc:33|name:Wind Down|traits:manipulate,action:disable-a-device] check to Disable a Device to wind the amalgam down. For each success, the assassin loses 1 hour of operational time. This can be done even if the amalgam is in standby mode.</p>"
+                    "value": "<p>For the clockwork amalgam to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for 7 days, after which time it becomes unaware of its surroundings and can't act until it's wound again.</p>\n<p>The amalgam can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt a @Check[thievery|dc:33|name:Wind Down|traits:manipulate,action:disable-a-device] check to Disable a Device to wind the amalgam down. For each success, the assassin loses 1 hour of operational time. This can be done even if the amalgam is in standby mode.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -319,23 +324,16 @@
                 "description": {
                     "value": "<p>The clockwork amalgam can recalibrate its internal structure to shed damaged components and replace them with new ones, restoring 125 HP to the construct. Each time it uses this ability, the clockwork amalgam permanently deactivates one of its five melee attacks as the components from that arm reassemble within the core of the machine.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -356,23 +354,21 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>The clockwork amalgam becomes a blur of spinning weaponry. It makes up to five melee Strikes (one for each active melee attack it has available), taking a -4 penalty to the attack roll for each attack, but ignoring the multiple attack penalty until it has made all of its attacks. It can use each melee attack only once and it can target each creature in reach only once. If the clockwork amalgam used Whirring Doom in the previous round, it can use it again this round using only 1 action instead of 3. The amalgam's movement Speed is halved until the end of its next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -393,23 +389,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -430,49 +419,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "JA7khTfng7A4q6cA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 38
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Clockwork Amalgam",
@@ -512,12 +471,6 @@
                 "value": 455
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 36
-            },
             "resistances": [
                 {
                     "exceptions": [
@@ -544,19 +497,29 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 20
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #161: Belly of the Black Whale"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #161: Belly of the Black Whale"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 36,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -573,16 +536,13 @@
                 "value": 28
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 38
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "lg"
             },

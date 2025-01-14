@@ -32,11 +32,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -63,23 +65,16 @@
                 "description": {
                     "value": "<p>A verdurous ooze can sense nearby creatures through vibration and air or water movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -98,25 +93,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A creature that hits a verdurous ooze with a metal weapon or unarmed attack must attempt a @Check[type:reflex|dc:21|traits:damaging-effect] save. On a failure, the weapon or creature takes @Damage[2d4[acid]] damage (after dealing damage to the ooze as normal). Thrown weapons take this damage automatically with no save.</p>"
+                    "value": "<p>A creature that hits a verdurous ooze with a metal weapon or unarmed attack must attempt a @Check[reflex|dc:21|traits:damaging-effect] save. On a failure, the weapon or creature takes @Damage[2d4[acid]] damage (after dealing damage to the ooze as normal). Thrown weapons take this damage automatically with no save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -135,10 +123,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<p>The verdurous ooze constantly emits supernatural vapors that cause nearby plants to grow rapidly and writhe and grasp at anything and everything within the emanation. This area becomes difficult terrain for non-verdurous ooze creatures. When a creature starts its turn in this aura, it must succeed at a @Check[type:reflex|dc:21] save or take a -10-foot circumstance penalty to its Speeds until it leaves the emanation.</p>"
+                    "value": "<p>20 feet. The verdurous ooze constantly emits supernatural vapors that cause nearby plants to grow rapidly and writhe and grasp at anything and everything within the emanation. This area becomes difficult terrain for non-verdurous ooze creatures. When a creature starts its turn in this aura, it must succeed at a @Check[reflex|dc:21] save or take a -10-foot circumstance penalty to its Speeds until it leaves the emanation.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -146,29 +136,17 @@
                         "radius": 20,
                         "slug": "enliven-foliage",
                         "traits": [
-                            "aura",
-                            "primal",
-                            "transmutation"
+                            "primal"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -189,33 +167,24 @@
                 "description": {
                     "value": "<p>When a verdurous ooze that has 10 or more HP is hit by an attack that would deal piercing or slashing damage, it splits into two identical oozes, each with half the original's HP. One ooze is in the same space as the original, and the other is in an adjacent, unoccupied space. If no adjacent space is unoccupied, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or heavy to push).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "okXnipjpQrYq6vGT",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
@@ -229,25 +198,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[2d6[bludgeoning]] damage plus @Damage[1d6[acid]] damage, @Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[2d6[bludgeoning],1d6[acid]]{2d6 bludgeoning plus 1d6 acid}, @Check[fortitude|dc:24|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -266,16 +228,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The verdurous ooze adjusts its aura of supernatural vapors to affect living creatures within a @Template[type:emanation|distance:20], forcing them to attempt a @Check[type:will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to Sleep Gas for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If it's still unconscious after 1 minute, it wakes up automatically.</p>\n<p><strong>Critical Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If it's still unconscious after 1 hour, it wakes up automatically.</p>"
+                    "value": "<p>The verdurous ooze adjusts its aura of supernatural vapors to affect living creatures within a @Template[emanation|distance:20], forcing them to attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to Sleep Gas for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If it's still unconscious after 1 minute, it wakes up automatically.</p>\n<p><strong>Critical Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If it's still unconscious after 1 hour, it wakes up automatically.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -284,12 +245,6 @@
                         "poison",
                         "sleep"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -310,33 +265,24 @@
                 "description": {
                     "value": "<p>A verdurous ooze's acid damages only metal and flesh-not bone, stone, or other materials.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "k8uRKWJkW8KHtabq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
@@ -352,93 +298,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "XShGKtvsWOjzekVI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "L3qJCQDZiZu5wjEW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 4
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "In Tall Grass or Undergrowth",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "terrain:undergrowth",
-                                    "terrain:grass"
-                                ]
-                            }
-                        ],
-                        "selector": "stealth",
-                        "value": 6
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+10 in tall grass or undergrowth",
-                        "options": "terrain:grass,terrain:undergrowth"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Verdurous Ooze",
@@ -500,31 +372,42 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 15
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Ooze",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Verdurous oozes are found in temperate forests, warm jungles, or other places where plant life grows in abundance. Unlike many types of oozes, verdurous oozes are not particularly good climbers and have been known to get trapped in natural or artificial chasms. Warlords and wizards sometimes make use of that fact and keep verdurous oozes as guardians in pits around the walls of their fortresses or towers.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "motion-sense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -541,19 +424,30 @@
                 "value": 10
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 15
+            },
+            "stealth": {
+                "base": 4,
+                "special": [
+                    {
+                        "base": 10,
+                        "label": "in tall grass or undergrowth",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "terrain:undergrowth",
+                                    "terrain:grass"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "motion sense 60 feet, no vision"
-            },
             "size": {
                 "value": "med"
             },

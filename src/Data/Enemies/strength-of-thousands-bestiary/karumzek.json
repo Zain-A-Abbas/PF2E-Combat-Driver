@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "label": "Spellcasting Type",
                     "type": "String",
@@ -23,86 +22,27 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
                     "slot2": {
                         "max": 2,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "jUAm540uEAU6hGmp"
                             },
-                            "3": {
+                            {
                                 "id": "DFxmQtvWqrMW7gtj"
                             }
-                        },
+                        ],
                         "value": 2
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 21,
                     "item": 0,
@@ -119,42 +59,31 @@
         },
         {
             "_id": "jUAm540uEAU6hGmp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp"
             },
             "img": "systems/pf2e/icons/spells/death-knell.webp",
             "name": "Death Knell",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>You snuff the life out of a creature on the brink of death. The target must attempt a Will save. If this kills it, you gain 10 temporary HP and a +1 status bonus to attack and damage rolls for 10 minutes.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target's @UUID[Compendium.pf2e.conditionitems.Item.Dying] value increases by 1.</p>\n<p><strong>Failure</strong> The target dies.</p>"
+                    "value": "<p>You snuff the life out of a creature on the brink of death. The target must attempt a Will save. If this kills it, you gain 10 temporary HP and a +1 status bonus to attack and damage rolls for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's @UUID[Compendium.pf2e.conditionitems.Item.Dying] value increases by 1.</p>\n<p><strong>Failure</strong> The target dies.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Death Knell]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -162,56 +91,33 @@
                 "location": {
                     "value": "cF7DrYFZ83ZOhP5d"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "death-knell",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature that has 0 HP"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "death",
-                        "necromancy"
+                        "manipulate"
                     ]
                 }
             },
@@ -219,42 +125,26 @@
         },
         {
             "_id": "ah5UAOtBrrFFz246",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
             },
-            "img": "systems/pf2e/icons/spells/invisibility.webp",
+            "img": "icons/creatures/magical/construct-stone-earth-gray.webp",
             "name": "Invisibility (At Will) (self only)",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Cloaked in illusion, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Invisible]. This makes it @UUID[Compendium.pf2e.conditionitems.Item.Undetected] to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -263,55 +153,32 @@
                     "heightenedLevel": 2,
                     "value": "cF7DrYFZ83ZOhP5d"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "invisibility",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "self"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "illusion"
+                        "illusion",
+                        "manipulate"
                     ]
                 }
             },
@@ -319,53 +186,44 @@
         },
         {
             "_id": "QuABUI5Y8YbFVKMN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.cB17yFc9456Pyfec"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.cB17yFc9456Pyfec"
             },
-            "img": "systems/pf2e/icons/spells/vomit-swarm.webp",
+            "img": "icons/creatures/invertebrates/spider-beetle-runed-green.webp",
             "name": "Vomit Swarm",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "piercing"
-                            },
-                            "value": "2d8"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "2d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "piercing"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>You belch forth a swarm of magical vermin. You evoke and shape the creatures from your own imagination, allowing you to change the appearance of the creatures (typically a mix of centipedes, roaches, wasps, and worms), but this doesn't change the effect of the spell. The vermin swarm over anyone in the area, their bites and stings dealing @Damage[2d8[piercing]] damage (basic Reflex save). A creature that fails its saving throw also becomes @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. Once the spell ends, the swarm disappears.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by @Damage[1d8[piercing]].</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -381,56 +239,33 @@
                     "heightenedLevel": 2,
                     "value": "cF7DrYFZ83ZOhP5d"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": false
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Advanced Player's Guide"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "vomit-swarm",
-                "source": {
-                    "value": "Pathfinder Advanced Player's Guide"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "evocation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -438,42 +273,26 @@
         },
         {
             "_id": "DFxmQtvWqrMW7gtj",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.0fKHBh5goe2eiFYL"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.0fKHBh5goe2eiFYL"
             },
-            "img": "systems/pf2e/icons/spells/negate-aroma.webp",
+            "img": "icons/magic/air/wind-tornado-spiral-teal-green.webp",
             "name": "Negate Aroma (Constant)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target loses its odor, preventing creatures from passively noticing its presence via smell alone, even if the creatures have precise or imprecise scent. A creature attempting a Perception check to Seek with scent and other senses might notice the lack of natural scent. If the target has any abilities that result from its smell, such as an overpowering scent, those abilities are also negated.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 30 feet, and you can target up to 10 creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -482,55 +301,32 @@
                     "heightenedLevel": 2,
                     "value": "cF7DrYFZ83ZOhP5d"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "negate-aroma",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
-                        "abjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -563,11 +359,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -579,99 +377,13 @@
             "type": "melee"
         },
         {
-            "_id": "7CarMVIkSOee2WFf",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "XvZPn46Rw3djJ7Gd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "WW2JVDgG0Tj6PCXe",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -683,23 +395,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -708,7 +413,7 @@
             "_id": "tew93zc38tdbtkse",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Poison Sense (precise) 30 feet",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -720,20 +425,16 @@
                 "description": {
                     "value": "<p>A karumzek senses any poisoned creature. It can spend an action with the concentrate trait to determine the poison's type and current stage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -742,7 +443,7 @@
             "_id": "9mktwykhulu3lc4o",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Change Shape",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -754,25 +455,20 @@
                 "description": {
                     "value": "<p>A karumzek can take the shape of a Tiny spider. This doesn't change its Speed or Strikes.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
                         "concentrate",
-                        "polymorph",
-                        "transmutation"
+                        "polymorph"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -781,7 +477,7 @@
             "_id": "eezf25m1slduyc4d",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Karumzek Venom",
-            "sort": 1200000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -791,143 +487,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1}, and enfeebled 1 (1 round)</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1}, and enfeebled 1 (1 round)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison",
                         "virulent"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "zjvuerm8mnfp5aoy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4z01dzl96bc52wzn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "rg0n60n9iitw0fvl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "0a8s6vapr63f09qh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "q5hdjcd3me4cgzg6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Karumzek",
@@ -977,12 +554,6 @@
                     "type": "poison"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 11
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -994,25 +565,44 @@
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 5
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "chthonian",
+                    "common",
+                    "diabolic",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #171: Hurricane's Howl"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #171: Hurricane's Howl"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "poison sense (precise) 30 feet",
+            "mod": 11,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1029,26 +619,32 @@
                 "value": 8
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 10
+            },
+            "crafting": {
+                "base": 12
+            },
+            "nature": {
+                "base": 8
+            },
+            "religion": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "abyssal",
-                    "common",
-                    "infernal",
-                    "undercommon"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, poison sense (precise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
-                "aberration"
+                "aberration",
+                "evil",
+                "unholy"
             ]
         }
     },

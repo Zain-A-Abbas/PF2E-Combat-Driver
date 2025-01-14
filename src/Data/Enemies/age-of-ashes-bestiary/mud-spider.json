@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
@@ -71,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": [],
@@ -105,24 +109,17 @@
                 "description": {
                     "value": "<p>The mud spiders ignore difficult terrain from mud.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -141,27 +138,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> 1d6 poison (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison, flat-footed, and clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> 1d6 poison, flat-footed, and clumsy 2 (1 round)</p>\n<p><strong>Stage 4</strong> 1d6 poison and paralyzed (1 round).</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:23]</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison, @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard], and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 3</strong> 1d6 poison, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 4</strong> 1d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] (1 round).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "giant-tarantula-venom",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -180,25 +170,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[type:cone|distance:15]. This deals @Damage[4d6[piercing]] damage with a @Check[type:reflex|dc:25|basic:true] save.</p>"
+                    "value": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[cone|distance:15]. This deals @Damage[4d6[piercing]|traits:area-damage] damage with a @Check[reflex|dc:25|basic] save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -219,95 +202,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "4rTD29ar48AlhtxT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "o4UM6YaXV0rxY3Wx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "8YIlAMlQZzGZLm5f",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Mud Spider",
@@ -346,12 +253,6 @@
                 "temp": 0,
                 "value": 135
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 14
-            },
             "speed": {
                 "details": "mudwalking",
                 "otherSpeeds": [
@@ -364,19 +265,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant giant tarantula",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Tarantulas are ambush predators, but will attack prey in the open.</p>",
-            "source": {
-                "value": "Pathfinder #146: Cult of Cinders"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #146: Cult of Cinders"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 14,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -393,16 +308,19 @@
                 "value": 10
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 9
+            },
+            "athletics": {
+                "base": 16
+            },
+            "stealth": {
+                "base": 11
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },

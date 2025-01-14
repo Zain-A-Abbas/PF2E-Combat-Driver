@@ -1,0 +1,54 @@
+{
+    "_id": "gHczZWA34WQx4px0",
+    "img": "systems/pf2e/icons/spells/hideous-laughter.webp",
+    "name": "Effect: Bully the Departed",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains regeneration 15 (deactivated by force or good), and deals an extra @Damage[1d8[spirit]] damage on its Strikes.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 3"
+        },
+        "rules": [
+            {
+                "deactivatedBy": [
+                    "force",
+                    "holy"
+                ],
+                "key": "FastHealing",
+                "type": "regeneration",
+                "value": 15
+            },
+            {
+                "damageType": "spirit",
+                "diceNumber": 1,
+                "dieSize": "d8",
+                "key": "DamageDice",
+                "selector": "strike-damage"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -29,16 +29,19 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "magical",
-                        "reach-10"
+                        "reach-10",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -74,16 +77,19 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "magical"
+                        "magical",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -119,15 +125,18 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "magical"
+                        "magical",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -137,52 +146,10 @@
             "type": "melee"
         },
         {
-            "_id": "xrTsXVD8ANr8DS7x",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "GYJ6GHWDxvwvbLki",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sound Imitation",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -194,8 +161,10 @@
                 "description": {
                     "value": "<p>A karina who succeeds at a Deception check to Lie can mimic any voice they have heard. They have a +4 circumstance bonus to this check.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -209,18 +178,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -229,7 +189,7 @@
             "_id": "H1PGojvxkIsvrHqR",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Grave Blight",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -239,27 +199,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage, every hour the victim must succeed at another Fortitude save or be @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute, @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 day)</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage, every hour the victim must succeed at another Fortitude save or be @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute, @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 day)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -268,7 +221,7 @@
             "_id": "efUGr9NzEDDkHLgh",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Mocking Cry",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -280,39 +233,30 @@
                 "description": {
                     "value": "<p>The Karina mimics a voice and mocks a creature within 30 feet. They attempt a Deception check to Demoralize the creature.</p>\n<p>Regardless of whether the check succeeds, the target creature is temporarily immune to the Karina's Mocking Cry for 1 hour.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "SUcSXRslpjPkGsMT",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -324,118 +268,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "2UfxLBiduVhWxRxa",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "tKWOBk2I9mVqgmv1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "keB77FJ4WhSl3H49",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "15h0UbzT6wU8NMDY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Karina",
@@ -474,12 +319,6 @@
                 "temp": 0,
                 "value": 95
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -491,25 +330,41 @@
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 5
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "(can't speak any language)",
+                "value": [
+                    "mwangi"
+                ]
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "<p>Karinas-also known as plague birds-are large owl-like creatures with dark red feathers, powerful talons, and unsettling eyes. Their broad wings conceal a pair of wiry humanoid arms that end in clawed fingers, which they use to dig through burial sites in search of corpses. The fell purpose of this is still a mystery, though most believe that karinas make off with these dead bodies to consume them in the safety of their lairs. The difficulty of tracking the beasts, as well as the danger, makes it difficult to know for sure.</p>\n<p>A karina's terrifying appearance suggests that they're not natural creatures. Many legends claim that karinas first flew out of Abaddon to the Material Plane to consume the corpses of the first mortals, while others state that the first karina was born from the soul of the first mortal who partook in cannibalism. The power of good repulses karinas, suggesting an evil or fiendish origin.</p>\n<p>Karinas are plague carriers and intentionally attack creatures to spread their own personal pestilence. The supernatural disease they carry, known as grave blight, causes fever, disorientation, and (at later stages) an innate desire to attack others and spread the disease. Karinas revel in the slow collapse of villages, lurking in the surrounding jungle to observe every miserable moment. As the locals bury their dead, the karinas swoop in to steal the corpses.</p>\n<p>In addition to carrying a terrible disease, karinas also have the ability to mimic voices. They typically repeat phrases they've heard, but twist the voice into a fiendish corruption of the original. Intelligent enough to recognize the friends and family of a possible target, a karina will use the mocking voice of a loved one to frighten them. When terrorizing a village, they generally work together in groups of two or three.</p>",
-            "source": {
-                "value": "Pathfinder Lost Omens: The Mwangi Expanse"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Lost Omens: The Mwangi Expanse"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -526,24 +381,30 @@
                 "value": 10
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "athletics": {
+                "base": 12
+            },
+            "deception": {
+                "base": 12
+            },
+            "stealth": {
+                "base": 15
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(Can't Speak Any Language)",
-                "selected": [],
-                "value": [
-                    "mwangi"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "beast",
-                "fiend"
+                "evil",
+                "fiend",
+                "unholy"
             ]
         }
     },

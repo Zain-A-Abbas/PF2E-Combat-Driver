@@ -28,11 +28,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -71,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -116,11 +120,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -135,14 +141,9 @@
             "type": "melee"
         },
         {
-            "_id": "L97RozqSBXjCukbA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
+            "_id": "zdW63lmShrSpZWkm",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Otherworldly Vision",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -153,78 +154,32 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>A froghemoth's alien eyes allow it to perceive creatures within 30 feet, even if they are @UUID[Compendium.pf2e.conditionitems.Item.Invisible] or ethereal. It can still be fooled by successful Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.Hide], but it has Perception DC 38 in such cases. It also sees through and is unaffected by illusions with the visual trait if they are within 30 feet.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "zdW63lmShrSpZWkm",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Otherworldly Vision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>A froghemoth's alien eyes allow it to perceive creatures within 30 feet, even if they are @UUID[Compendium.pf2e.conditionitems.Item.Invisible] or ethereal. It can still be fooled by successful Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.Hide], but it has @Check[type:perception|dc:38|traits:action:seek] in such cases. It also sees through and is unaffected by illusions with the visual trait if they are within 30 feet.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XPEavSJTuusA8TlU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "All-Around Vision",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -236,8 +191,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -248,18 +205,9 @@
                     }
                 ],
                 "slug": "all-around-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -268,7 +216,7 @@
             "_id": "pfYqWHlnkQUBpJIo",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Electric Torpor",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -280,37 +228,28 @@
                 "description": {
                     "value": "<p>Though a froghemoth is immune to electricity damage, it is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round whenever it would have otherwise taken electricity damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "dydhZgaxaoJL5dXx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Aquatic Ambush",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -322,23 +261,34 @@
                 "description": {
                     "value": "<p>40 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "aquatic-ambush",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "EphemeralEffect",
+                        "predicate": [
+                            "aquatic-ambush"
+                        ],
+                        "selectors": [
+                            "strike-attack-roll",
+                            "strike-damage"
+                        ],
+                        "uuid": "Compendium.pf2e.conditionitems.Item.Off-Guard"
+                    }
+                ],
                 "slug": "aquatic-ambush",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -347,7 +297,7 @@
             "_id": "2KNgUCdMbbr8kaE7",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Barbed Tongue",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -359,23 +309,16 @@
                 "description": {
                     "value": "<p>A creature hit by the froghemoth's tongue becomes @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by the froghemoth. The creature isn't @UUID[Compendium.pf2e.conditionitems.Item.Immobilized], but it can't move beyond the reach of the froghemoth's tongue. A creature can sever the tongue with a successful Strike against AC 31 that deals at least 15 slashing damage.</p>\n<p>This deals no damage to the froghemoth but prevents it from using its tongue Strike until it regrows its tongue, which takes 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "barbed-tongue",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -384,7 +327,7 @@
             "_id": "tVBujCEfyKPKjA2Q",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Flailing Tentacles",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -396,37 +339,28 @@
                 "description": {
                     "value": "<p>The froghemoth makes up to four tentacle Strikes, each against a different target. These count toward the froghemoth's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "VLwTahhYo1OObMUv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Greater Constrict",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -436,25 +370,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[(3d6+12)[bludgeoning]] damage, @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                    "value": "<p>@Damage[(3d6+12)[bludgeoning]] damage, @Check[fortitude|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -463,7 +390,7 @@
             "_id": "BfQDGpd8cSNGgENd",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Retract Tongue",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -473,39 +400,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The froghemoth pulls a creature grabbed by its tongue toward itself. The froghemoth rolls an Athletics check against the creature's Fortitude DC. On a success, the froghemoth pulls the creature into an adjacent space, and if it critically succeeds it can also make a bite Strike against the creature after the pull.</p>"
+                    "value": "<p>The froghemoth pulls a creature grabbed by its tongue toward itself. The froghemoth rolls an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC. On a success, the froghemoth pulls the creature into an adjacent space, and if it critically succeeds it can also make a bite Strike against the creature after the pull.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "h61KXB1CbfC2hTh2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swallow Whole",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -517,39 +435,30 @@
                 "description": {
                     "value": "<p>Large, @Damage[(3d6+9)[bludgeoning]] damage, Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "swallow-whole",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "hV3hgI3sPR9ZrQeK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -561,111 +470,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "LahoiBxKjT7Ue7VY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "8Q112n7FWbWrP6Lv",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Ic32ezDxqx8TwcBo",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Swamps",
-                        "predicate": [
-                            "terrain:swamp"
-                        ],
-                        "selector": "stealth",
-                        "value": 3
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+30 in Swamps",
-                        "options": "terrain:swamp"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Froghemoth",
@@ -709,12 +526,6 @@
                     "type": "electricity"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -726,19 +537,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Aberration",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "<p>A terrifying abomination of teeth, tentacles, and unbridled rage, the froghemoth is thankfully rarely encountered even in the deepest swamplands or most remote Darklands caverns. Capable of devouring dinosaurs and even dragons, it is a frighteningly effective ambush hunter, immersing itself in the mire with only its eyestalk protruding and watching in every direction at once with uncanny precision.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "otherworldly vision 30 feet",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -755,19 +580,28 @@
                 "value": 23
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 23
+            },
+            "athletics": {
+                "base": 27
+            },
+            "stealth": {
+                "base": 27,
+                "special": [
+                    {
+                        "base": 30,
+                        "label": "in Swamps",
+                        "predicate": [
+                            "terrain:swamp"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, otherworldly vision 30 feet"
-            },
             "size": {
                 "value": "huge"
             },

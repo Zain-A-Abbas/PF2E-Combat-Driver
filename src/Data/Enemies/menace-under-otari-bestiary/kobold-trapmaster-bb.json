@@ -4,19 +4,19 @@
     "items": [
         {
             "_id": "tsvAQRhznMxKN8gX",
-            "img": "systems/pf2e/icons/equipment/weapons/shortsword.webp",
+            "img": "icons/weapons/swords/sword-guard-purple.webp",
             "name": "Shortsword",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -34,9 +34,6 @@
                     "invested": null,
                     "slot": ""
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "sword",
                 "hardness": 0,
                 "hp": {
@@ -46,34 +43,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 9
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "range": null,
@@ -81,17 +63,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -103,9 +83,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
@@ -116,15 +93,15 @@
             "name": "Spear",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -134,16 +111,13 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one‑handed as a melee weapon and can be thrown.</p>"
+                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null,
                     "slot": ""
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "spear",
                 "hardness": 0,
@@ -154,34 +128,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 3,
                 "range": null,
@@ -189,17 +148,15 @@
                     "value": "-"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -209,21 +166,21 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "OeI9TdZOVyciyh0n",
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 300000,
             "system": {
                 "acBonus": 1,
                 "baseItem": null,
+                "bulk": {
+                    "value": 1
+                },
                 "category": "light",
                 "checkPenalty": -1,
                 "containerId": null,
@@ -237,9 +194,6 @@
                     "invested": null,
                     "slot": ""
                 },
-                "equippedBulk": {
-                    "value": "1"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -249,128 +203,65 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "property1": {
-                    "critDamage": "",
-                    "critDamageType": "",
-                    "critDice": 0,
-                    "critDie": "",
-                    "damageType": "",
-                    "dice": 0,
-                    "die": "",
-                    "value": ""
-                },
-                "property2": {
-                    "critDamage": "",
-                    "critDamageType": "",
-                    "critDice": 0,
-                    "critDie": "",
-                    "damageType": "",
-                    "dice": 0,
-                    "die": "",
-                    "value": ""
-                },
-                "property3": {
-                    "critDamage": "",
-                    "critDamageType": "",
-                    "critDice": 0,
-                    "critDie": "",
-                    "damageType": "",
-                    "dice": 0,
-                    "die": "",
-                    "value": ""
-                },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "speedPenalty": 0,
                 "strength": 0,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "fx6MEhp40JvDajQh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx"
             },
             "img": "systems/pf2e/icons/equipment/snares/spike-snare.webp",
             "name": "Spike Trap",
             "sort": 400000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0
                 },
-                "consumableType": {
-                    "value": "snare"
-                },
-                "consume": {
-                    "value": "2d8"
-                },
+                "category": "snare",
                 "containerId": null,
+                "damage": {
+                    "formula": "2d8",
+                    "kind": "damage",
+                    "type": "piercing"
+                },
                 "description": {
-                    "value": "<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2d8 piercing damage. The creature must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
+                    "value": "<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2d8 piercing damage. The creature must attempt a @Check[reflex|dc:17|basic] saving throw.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "slot": ""
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -380,28 +271,24 @@
                 "level": {
                     "value": 1
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "spike-snare",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -414,8 +301,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "-"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -449,11 +338,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -497,11 +388,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -515,63 +408,10 @@
             "type": "melee"
         },
         {
-            "_id": "B1zHLf1i3W3pgrBz",
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Hurried Retreat",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "domain": "ac",
-                        "key": "RollOption",
-                        "option": "hurried-retreat",
-                        "toggleable": true
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "predicate": [
-                            "hurried-retreat"
-                        ],
-                        "selector": "ac",
-                        "type": "circumstance",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "Mcbgf9KdTTBPuio6",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Quick Trap",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -581,35 +421,82 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The kobold trapmaster deploys one spike trap in an adjacent square.</p>"
+                    "value": "<p>The kobold trapmaster deploys one of their spike traps in an adjacent square.</p>\n<hr />\n<p>Once this trap is deployed in a square, it deals @Damage[2d8[piercing]|name:Spike Trap] damage to anyone who steps on that square and they must attempt a @Check[reflex|dc:17|basic] saving throw. A hero takes no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure. These traps can be disabled with a successful @Check[thievery|dc:15|traits:action:disable-a-device] check.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "CHJtUAFotmtE0vu1",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.menace-under-otari-bestiary.Actor.QaldZV2p9RpMXzzn.Item.Y5pZ1lg8o21ONX8u"
+            },
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Scamper",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "action"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": 1
                 },
-                "weapon": {
-                    "value": ""
+                "category": "offensive",
+                "description": {
+                    "value": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "scamper",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "scamper"
+                        ],
+                        "selector": "land-speed",
+                        "value": 5
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "scamper"
+                        ],
+                        "selector": "ac",
+                        "type": "circumstance",
+                        "value": 2
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "yDzPXpPBRfYG5UfY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
@@ -623,10 +510,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The kobold trapmaster deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] condition.</p>"
+                    "value": "<p>The kobold trapmaster deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] condition.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -634,154 +523,25 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "sXZ80MEcWSNN1Ct0",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Spike Trap",
-            "sort": 1000000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Once this trap is deployed in a square, it deals @Damage[2d8[piercing]] damage to anyone who steps on that square and they must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "z7XiX30WE6Mav2n5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "moHzPBkJU2w94AmQ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "TVQpfD0BB42O03tx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Kobold Trapmaster (BB)",
@@ -823,31 +583,39 @@
                 "temp": 0,
                 "value": 28
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Kobold trapmasters are the masterminds behind crafting and implementing wily traps in kobold lairs, and are widely respected among their kind.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -864,16 +632,19 @@
                 "value": 5
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 7
+            },
+            "crafting": {
+                "base": 8
+            },
+            "stealth": {
+                "base": 7
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "sm"
             },

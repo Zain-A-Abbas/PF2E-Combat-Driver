@@ -3,57 +3,13 @@
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
-            "_id": "1XcBf83piy2PM7Cz",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "iHnI7q8QtrKoIykw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Form Up",
-            "sort": 200000,
+            "sort": 100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -65,23 +21,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FormUp]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "form-up",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -90,7 +39,7 @@
             "_id": "iRJr4T1z55H8BuXN",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Ratspeak",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -102,33 +51,27 @@
                 "description": {
                     "value": "<p>A hadi mob can communicate with rodents.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "q4uh2ZDAUJANLZOA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Troop Defenses",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -140,23 +83,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "troop-defenses",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -165,7 +101,7 @@
             "_id": "qstNLWmMNP6R8yRS",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Gnaw and Chew",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -175,21 +111,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> the hadi mob bites and tears into the flesh of each enemy adjacent to the troop (@Check[type:reflex|dc:33|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(2d8+8)[slashing]] damage plus hadi pestilence</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(4d8+12)[slashing]] damage plus hadi pestilence</p>\n<p><span class=\"pf2-icon\">3</span> @Damage[(6d8+12)[slashing]] damage plus hadi pestilence</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> the hadi mob bites and tears into the flesh of each enemy adjacent to the troop (@Check[reflex|dc:33|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d8+8)[slashing]] damage plus hadi pestilence</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+12)[slashing]] damage plus hadi pestilence</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d8+12)[slashing]] damage plus hadi pestilence</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -198,7 +135,7 @@
             "_id": "EbTIXqirgVPztryD",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Hadi Pestilence",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -208,26 +145,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>This daemonic disease turns the victim into a hadi.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 3} (1 week)</p>\n<p><strong>Stage 6</strong> transform into a hadi (1 year). For a PC, the best way to model this is to replace ancestry Hit Points, size, Speeds, ability boosts, ability flaws, traits, and special abilities with those of the ratfolk ancestry. The character loses previous ancestry feats, selecting replacements from the ratfolk ancestry.</p>"
+                    "value": "<p>This daemonic disease turns the victim into a hadi.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 3} (1 week)</p>\n<p><strong>Stage 6</strong> transform into a hadi (1 year). For a PC, the best way to model this is to replace ancestry Hit Points, size, Speeds, ability boosts, ability flaws, traits, and special abilities with those of the ratfolk ancestry. The character loses previous ancestry feats, selecting replacements from the ratfolk ancestry.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "disease",
                         "divine",
-                        "evil",
-                        "necromancy"
+                        "evil"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -236,7 +168,7 @@
             "_id": "NUQd8l3bX5hiMxzV",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Troop Movement",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -248,89 +180,18 @@
                 "description": {
                     "value": "<p>Whenever the hadi mob Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "CbFI95rvDS9B0NQx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.ClimbOrSwim",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "action:climb",
-                                    "action:swim"
-                                ]
-                            }
-                        ],
-                        "selector": "athletics",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+29 to Climb or Swim",
-                        "options": "action:climb,action:swim"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "OHbN91zYcDZtLfRd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Hadi Mob",
@@ -369,12 +230,6 @@
                 "temp": 0,
                 "value": 270
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -398,19 +253,36 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "ratspeak",
+                "value": [
+                    "common",
+                    "daemonic"
+                ]
+            },
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "<p>aemons, including leukodaemons, once ruled over part of the fallen city of Kho. While they did, they created the first hadis.</p>\n<p>Hadis look more fiendish and sinister than typical ratfolk. In hadi society, those who foster and cultivate blights and sickness are alchemists known as \"tafens\". Others, known as \"rajwans,\" focus their training on brutal combat and barbarian rages.</p>\n<p>Individually, most hadis are no match for a high level group, but when confronted in their lair, they can gather together into a dangerous mob.</p>\n<h2>Hadi Evil</h2>\n<p>Although the original hadis created by daemons in ages past were ascended from rats infused with fiendish qualities that tempered their sapience with an engineered evil, over the generations the hadi people have formed their own society. They cling to evil ways largely out of tradition or fear, but there are an increasing number of hadis who admire Kho's derhiis and seek their own paths. Others, particularly those who have traveled far from Kho, have come to understand the plight of their folk under the weight of a fiendish past. Non-evil hadi thus exist, but they are viewed by those in positions of power in Kho as dangers to the social order. These hadi do not carry the pestilence their more sinister kin do and many actively work to suppress the spread of illnesses.</p>",
-            "source": {
-                "value": "Pathfinder #191: The Destiny War"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #191: The Destiny War"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -427,23 +299,35 @@
                 "value": 23
             }
         },
-        "traits": {
-            "languages": {
-                "custom": "Ratspeak",
-                "selected": [],
-                "value": [
-                    "common",
-                    "daemonic"
+        "skills": {
+            "athletics": {
+                "base": 27,
+                "special": [
+                    {
+                        "base": 29,
+                        "label": "to Climb or Swim",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "action:climb",
+                                    "action:swim"
+                                ]
+                            }
+                        ]
+                    }
                 ]
             },
+            "stealth": {
+                "base": 29
+            }
+        },
+        "traits": {
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "grg"
             },
             "value": [
+                "evil",
                 "humanoid",
                 "ratfolk",
                 "troop"

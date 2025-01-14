@@ -16,10 +16,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>The monkeys' awful racket of screeches and howls drowns out other sounds. Any creature performing an auditory action in the area must yell over the din, requiring a successful @Check[type:fortitude|dc:15] save or @Check[type:performance|dc:15] check to project loudly enough; on a failure, the action is lost.</p>"
+                    "value": "<p>20 feet. The monkeys' awful racket of screeches and howls drowns out other sounds. Any creature performing an auditory action in the area must yell over the din, requiring a successful @Check[fortitude|dc:15] save or @Check[performance|dc:15] check to project loudly enough; on a failure, the action is lost.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -27,27 +29,17 @@
                         "radius": 20,
                         "slug": "cacophony",
                         "traits": [
-                            "auditory",
-                            "aura"
+                            "auditory"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "aura"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -66,25 +58,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The swarm rummages through the possessions of a single creature within its space, attempting a @Check[type:thievery] check against the creature's Reflex DC.</p>\n<p>On a success, the monkeys take one random item of negligible Bulk that the creature is wearing but not closely guarding, such as an object in a loosely carried pouch.</p>"
+                    "value": "<p>The swarm rummages through the possessions of a single creature within its space, attempting a @Check[thievery|defense:reflex] check against the creature's Reflex DC.</p>\n<p>On a success, the monkeys take one random item of negligible Bulk that the creature is wearing but not closely guarding, such as an object in a loosely carried pouch.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -103,74 +88,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each creature in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:18|basic:true] save).</p>"
+                    "value": "<p>Each creature in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[reflex|dc:18|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "PB1DZNETfpk3nBJe",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ExkyUEuq7XSuKgBQ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Thievery",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Monkey Swarm",
@@ -217,12 +149,6 @@
                     "type": "swarm-mind"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "resistances": [
                 {
                     "type": "piercing",
@@ -254,19 +180,29 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>A single monkey can cause mischief. A troop of monkeys, emboldened by their numbers, can cause utter chaos, attacking anyone and looting anything in sight before scattering away with whatever they can carry.</p>\n<hr />\n<p>Monkeys vary greatly in size, color, and behavior. Some are distinguished by bright orange fur, others for black fur in sharp contrast with a white face. Some produce distinct noises, like howls that can be heard from a village away. Others vie for dominance within ever-changing social hierarchies. Their size and aptitude for climbing allow them to quickly escape threats; combined with being a little too clever for their own good, this allows them to get up to all sorts of mischief and usually escape to do it again.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -283,16 +219,16 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 8
+            },
+            "thievery": {
+                "base": 8
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "lg"
             },

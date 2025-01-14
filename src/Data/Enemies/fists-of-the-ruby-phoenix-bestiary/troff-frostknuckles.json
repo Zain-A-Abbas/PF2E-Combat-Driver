@@ -4,23 +4,21 @@
     "items": [
         {
             "_id": "zItNhmNjS4wVdwWY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
             },
-            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/handwraps-of-mighty-blows.webp",
+            "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
             "name": "+2 Striking Frost Handwraps of Mighty Blows",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 1
                 },
                 "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
                     "value": 0
                 },
                 "category": "unarmed",
@@ -39,9 +37,6 @@
                     "inSlot": false,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "brawling",
                 "hardness": 0,
                 "hp": {
@@ -51,34 +46,19 @@
                 "level": {
                     "value": 2
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 35
                     }
                 },
-                "propertyRune1": {
-                    "value": "frost"
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -86,17 +66,17 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [
+                        "frost"
+                    ],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "handwraps-of-mighty-blows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -106,31 +86,28 @@
                         "invested",
                         "magical",
                         "nonlethal",
-                        "transmutation",
                         "unarmed"
                     ]
                 },
                 "usage": {
                     "value": "worngloves"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "ksxlZjKnc1Li0gFK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki"
             },
             "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/bracers-of-armor.webp",
             "name": "Bracers of Armor II",
             "sort": 200000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0.1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>"
@@ -138,9 +115,6 @@
                 "equipped": {
                     "carryType": "worn",
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -150,19 +124,19 @@
                 "level": {
                     "value": 14
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 4000
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -187,23 +161,15 @@
                 ],
                 "size": "med",
                 "slug": "bracers-of-armor-ii",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "invested",
                         "magical"
                     ]
                 },
                 "usage": {
                     "value": "wornbracers"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "equipment"
@@ -236,11 +202,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -286,11 +254,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -307,51 +277,39 @@
             "type": "melee"
         },
         {
-            "_id": "EDvNQiLZnL4ItXgM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "_id": "U1uqr0HgPoIr8ash",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Avalanche Pummel",
             "sort": 500000,
             "system": {
                 "actionType": {
-                    "value": "passive"
+                    "value": "action"
                 },
                 "actions": {
-                    "value": null
+                    "value": 1
                 },
-                "category": "interaction",
+                "category": "offensive",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>Troff makes an icicle gouge Strike against an @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creature. On a hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled]. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded]. Either way, the effect lasts until the start of Troff's next turn. If his Strike fails (but isn't a critical failure), Troff still deals @Damage[13[piercing]] damage to the creature.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "U1uqr0HgPoIr8ash",
+            "_id": "54wMKEbOXBHvnjXX",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Avalanche Pummel",
+            "name": "Chattering Blow",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -362,65 +320,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Troff makes an icicle gouge Strike against a @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] creature. On a hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled]. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded]. Either way, the effect lasts until the start of Troff's next turn. If his Strike fails (but isn't a critical failure), Troff still deals [[/r 13[piercing]]] damage to the creature.</p>"
+                    "value": "<p><strong>Requirements</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Effect</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d4[persistent,cold]] damage and a -5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Failure</strong> As success, but the damage is @Damage[4d4[persistent,cold]] damage and the penalty is -15-foot.</p>\n<p><strong>Critical Failure</strong> As success, but the damage is @Damage[6d4[persistent,cold]] damage and the creature is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] instead of taking a Speed penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "54wMKEbOXBHvnjXX",
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Chattering Blow",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p><strong>Requirements</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Effect</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[type:fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r 2d4[persistent,cold]]] damage and a -5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Failure</strong> As success, but the damage is [[/r 4d4[persistent,cold]]] damage and the penalty is -15-foot.</p>\n<p><strong>Critical Failure</strong> As success, but the damage is [[/r 6d4[persistent,cold]]] damage and the creature is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] instead of taking a Speed penalty.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "cold",
                         "press"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -429,7 +343,7 @@
             "_id": "PoK81ppdAf3Y4ZT7",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Flurry of Blows",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -441,25 +355,18 @@
                 "description": {
                     "value": "<p>Troff makes two Strikes with his fist or with a monk weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "flourish"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -468,7 +375,7 @@
             "_id": "a2Ht2VRQHOf9f798",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Icicle Stance",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -478,99 +385,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> Troff rolls initiative or his turn starts</p>\n<hr />\n<p><strong>Effect</strong> Troff readies himself to strike suddenly, like a falling icicle. While in this stance, Troff can make icicle gouge Strikes. While Troff is above a creature and in icicle stance, that creature is @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] to him.</p>"
+                    "value": "<p><strong>Trigger</strong> Troff rolls initiative or his turn starts</p>\n<hr />\n<p><strong>Effect</strong> Troff readies himself to strike suddenly, like a falling icicle. While in this stance, Troff can make icicle gouge Strikes. While Troff is above a creature and in icicle stance, that creature is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to him.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "stance"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "pWzrUEYZ0Yintyx7",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "lGiYHJPb8C470eaa",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "q99vqZhtvzSwv5gr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Troff Frostknuckles",
@@ -609,12 +440,6 @@
                 "temp": 0,
                 "value": 250
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 23
-            },
             "resistances": [
                 {
                     "type": "cold",
@@ -632,19 +457,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Male hobgoblin brawler",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "goblin",
+                    "skald",
+                    "taldane"
+                ]
+            },
             "level": {
                 "value": 14
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #167: Ready? Fight!"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #167: Ready? Fight!"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 23,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -661,20 +504,19 @@
                 "value": 25
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 27
+            },
+            "athletics": {
+                "base": 27
+            },
+            "stealth": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "goblin",
-                    "skald",
-                    "taldane"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

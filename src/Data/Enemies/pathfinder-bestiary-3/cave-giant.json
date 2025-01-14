@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "iTfbhSJKdyCWiK82",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x"
             },
-            "img": "systems/pf2e/icons/equipment/weapons/greataxe.webp",
+            "img": "icons/weapons/axes/axe-double-engraved.webp",
             "name": "Greataxe",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "greataxe",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 2
                 },
                 "category": "martial",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 2,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "axe",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,17 +65,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "lg",
                 "slug": "greataxe",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -105,26 +83,24 @@
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "OH1Q3D4pEsUjTVQV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 200000,
             "system": {
                 "acBonus": 3,
                 "baseItem": "hide-armor",
+                "bulk": {
+                    "value": 2
+                },
                 "category": "medium",
                 "checkPenalty": -2,
                 "containerId": null,
@@ -138,9 +114,6 @@
                     "inSlot": true,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": "2"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -150,69 +123,48 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "lg",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
-                "stackGroup": null,
                 "strength": 2,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "3"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "K1MeCVjxSahZAhHQ",
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/sack.webp",
+            "img": "icons/containers/bags/sack-simple-leather-brown.webp",
             "name": "Sack for Holding Rocks",
             "sort": 300000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0
+                },
                 "containerId": null,
                 "description": {
                     "value": ""
@@ -222,9 +174,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "hardness": 0,
                 "hp": {
                     "max": 0,
@@ -233,35 +182,28 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "equipment"
@@ -272,30 +214,19 @@
             "name": "Rock",
             "sort": 400000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 0,
+                "bulk": {
                     "value": 0
                 },
-                "consumableType": {
-                    "value": "potion"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "potion",
                 "containerId": null,
+                "damage": null,
                 "description": {
                     "value": ""
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -305,26 +236,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 5,
                 "rules": [],
                 "size": "med",
                 "slug": "rock",
-                "source": {
-                    "value": ""
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -332,8 +259,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "-"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -368,11 +297,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -412,11 +343,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -457,11 +390,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -476,57 +411,13 @@
             "type": "melee"
         },
         {
-            "_id": "M1p2Iq57MOBT9II9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "Zo7w17AAhYEJgyRJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uG0Z8PsyZtsYuvGR"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uG0Z8PsyZtsYuvGR"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Catch Rock",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -538,23 +429,35 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.CatchRock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "catch-rock",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "catch-rock"
+                        ],
+                        "selector": [
+                            "ac",
+                            "saving-throw"
+                        ],
+                        "type": "circumstance",
+                        "value": 4
+                    }
+                ],
                 "slug": "catch-rock",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -563,7 +466,7 @@
             "_id": "yRRl0UTbRwQx83WC",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Smear",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -573,41 +476,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The cave giant is within reach of a creature that is adjacent to a wall or other solid vertical surface</p>\n<hr />\n<p><strong>Effect</strong> The cave giant snags the creature and smashes it against the wall. The giant attempts an @Check[type:athletics|defense:reflex] check against the target's Reflex DC. On a success, the cave giant @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Grab]{Grabs} the creature and smears it along the nearby wall, dealing @Damage[(2d8+8)[bludgeoning]] damage. On a critical success, the damage is doubled.</p>"
+                    "value": "<p><strong>Requirements</strong> The cave giant is within reach of a creature that is adjacent to a wall or other solid vertical surface</p>\n<hr />\n<p><strong>Effect</strong> The cave giant snags the creature and smashes it against the wall. The giant attempts an @Check[athletics|defense:reflex] check against the target's Reflex DC. On a success, the cave giant @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Grab]{Grabs} the creature and smears it along the nearby wall, dealing @Damage[(2d8+8)[bludgeoning]] damage. On a critical success, the damage is doubled.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "udfFYOsTo90aVSzS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Throw Rock",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -619,72 +513,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ThrowRock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "throw-rock",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "29bxFHs2xOMFVJbR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "HDi9cFttLkyaT7sH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Cave Giant",
@@ -723,31 +564,41 @@
                 "temp": 0,
                 "value": 110
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 15
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 35
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "jotun"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Cave giants are the vicious loners of the giant world. Even their closest ancestral kin, the rampaging hill giants, mostly find cave giants too brutal and antisocial to form alliances with. For their part, cave giants-garbed in stinking hides festooned with the rotting skulls of their victims-seem ambivalent about their foul reputation. They are more interested in hunting and killing their next meal than forming alliances.</p>\n<p>For all their disregard of others' opinions, cave giants are cautious when it comes to defending territory. Cave giant traps are simple yet effective, such as rounded boulders that can be pushed down steep tunnels, camouflaged pits filled with sharpened stakes, and even compromised stalactites that can suddenly fall on unsuspecting intruders.</p>\n<p>In coastal towns and hillside villages with caves a common feature of the landscape, cave giants star as common villains in local tall tales. Many youngsters and aspiring heroes dare one another to venture into remote grottoes or abandoned mine shafts in the hopes of discovering a cave giant, and all too often their searches prove successful. Grieving villagers pay skilled adventures handsomely to locate the whereabouts of their missing kin. The bounty for such hunts might be as much as an entire village harvest's worth of gold, particularly if a local cave giant has been a frequent enough menace or the missing villager is particularly beloved.</p>\n<hr />\n<p>Many kinds of giants lurk in the inhospitable corners of the world, making their homes in unlikely locales ranging from fetid sinkholes and ruined battlefields to mass graveyards and barren badlands.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 15,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -764,22 +615,22 @@
                 "value": 11
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 18
+            },
+            "intimidation": {
+                "base": 14
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "jotun"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "giant",
                 "humanoid"
             ]

@@ -1,0 +1,48 @@
+{
+    "_id": "7txhqKeWFyTJhrEE",
+    "img": "systems/pf2e/icons/spells/gust-of-wind.webp",
+    "name": "Effect: Viscous Breath",
+    "system": {
+        "description": {
+            "value": "<p>Creatures in the aura take a –2 status penalty to any non-magical physical attacks they attempt.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "not": "item:magical"
+                    }
+                ],
+                "selector": "attack",
+                "type": "status",
+                "value": -2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

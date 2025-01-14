@@ -16,28 +16,20 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p>If a creature passes the middle pair of pillars, both doors leading out of the room slam shut and lock; while the trap is active, the doors must be battered open with a successful @Check[type:athletics|dc:23|name:Batter Open Door|traits:action:force-open] check or sufficient damage (Hardness 12; HP 48 [BT 24]). One of the starknife carvings glows with light, detaches from the pillar, and then flies outward, making a magical starknife Ranged Strike against a random creature within range. The trap then rolls initiative with its Stealth modifier of +12</p>"
+                    "value": "<p>If a creature passes the middle pair of pillars, both doors leading out of the room slam shut and lock; while the trap is active, the doors must be battered open with a successful @Check[athletics|dc:23|name:Batter Open Door|traits:action:force-open] check or sufficient damage (Hardness 12; HP 48 [BT 24]). One of the starknife carvings glows with light, detaches from the pillar, and then flies outward, making a magical starknife Ranged Strike against a random creature within range. The trap then rolls initiative with its Stealth modifier of +12</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "arcane",
-                        "evocation"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -66,11 +58,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -116,17 +110,18 @@
         "customModifiers": {},
         "details": {
             "description": "<p>Starknife symbols on the six pillars glow and shoot across the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> on any four of the six pillars disables the entire trap (the trap is a 2nd-level spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] on any four of the six pillars disables the entire trap (the trap is a 2nd-rank spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
             "isComplex": true,
             "level": {
                 "value": 5
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: Troubles in Otari"
+            },
             "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets each day at sundown.</p>",
-            "routine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Adventure: Troubles in Otari"
-            }
+            "routine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>"
         },
         "saves": {
             "fortitude": {

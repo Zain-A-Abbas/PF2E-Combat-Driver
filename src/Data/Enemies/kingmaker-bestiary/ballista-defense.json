@@ -18,20 +18,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The alarm is raised while the PCs are approaching the Palace</p>\n<hr />\n<p><strong>Effect</strong> The guards ready and load the ballista. The ballista defense then rolls Initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -60,11 +56,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -108,17 +106,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A ballista armed with a massive bolt fires on a creature approaching the Palace.</p>",
-            "disable": "<p>@Check[type:thievery|dc:36] (master) to sabotage the ballista by reaching through the firing slit from outside (this DC is reduced by 10 if the PCs are in the room with the ballista, @Check[type:thievery|dc:26]), or @Check[type:intimidation|dc:33] to frighten off the Pitax Warden operating the ballista.</p>",
+            "disable": "<p>@Check[thievery|dc:36] (master) to sabotage the ballista by reaching through the firing slit from outside (this DC is reduced by 10 if the PCs are in the room with the ballista, @Check[thievery|dc:26]), or @Check[intimidation|dc:33] to frighten off the Pitax Warden operating the ballista.</p>",
             "isComplex": true,
             "level": {
                 "value": 11
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
+            },
             "reset": "<p>(1 day) If the PCs haven't reached 30 Liberation Points, additional ammunition for a ballista can be secured in a day, but if the PCs have reached 30 Liberation Points, a ballista that runs out of ammo cannot be reset.</p>",
-            "routine": "<p>(3 actions) The ballista takes 1 action to fire a ballista bolt and 2 actions to reload. After ten rounds, the ballista is out of ammunition and can no longer function.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Kingmaker"
-            }
+            "routine": "<p>(3 actions) The ballista takes 1 action to fire a ballista bolt and 2 actions to reload. After ten rounds, the ballista is out of ammunition and can no longer function.</p>"
         },
         "saves": {
             "fortitude": {

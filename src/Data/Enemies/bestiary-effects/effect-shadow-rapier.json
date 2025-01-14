@@ -1,0 +1,55 @@
+{
+    "_id": "TSdrv1FmLHJnk9AD",
+    "img": "systems/pf2e/icons/equipment/weapons/rapier.webp",
+    "name": "Effect: Shadow Rapier",
+    "system": {
+        "description": {
+            "value": "<p>The rake shrouds their sword in void energy, changing the damage type to void.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Book of the Dead"
+        },
+        "rules": [
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess",
+                    "success"
+                ],
+                "selector": "damage",
+                "text": "{item|system.description.value}",
+                "title": "{item|name}"
+            },
+            {
+                "key": "DamageDice",
+                "override": {
+                    "damageType": "void"
+                },
+                "selector": "damage"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

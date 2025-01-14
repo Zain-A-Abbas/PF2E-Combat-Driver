@@ -1,0 +1,45 @@
+{
+    "_id": "uwYGEeqvt8pwjhXa",
+    "img": "systems/pf2e/icons/effects/critical-effect.webp",
+    "name": "Effect: Dazzled until end of your next turn",
+    "system": {
+        "description": {
+            "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.Critical Fumble Deck #51], @UUID[Compendium.pf2e.criticaldeck.JournalEntry.Critical Fumble Deck #52]</strong></p>\n<p>You are @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] until the end of your next turn.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Critical Decks"
+        },
+        "rules": [
+            {
+                "key": "GrantItem",
+                "onDeleteActions": {
+                    "grantee": "restrict"
+                },
+                "uuid": "Compendium.pf2e.conditionitems.Item.Dazzled"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

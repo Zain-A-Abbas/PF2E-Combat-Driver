@@ -35,11 +35,7 @@ extends Node
 @onready var strikes_vbox: VBoxContainer = %StrikesVbox
 @onready var offensive_abilities_v_box: VBoxContainer = %OffensiveAbilitiesVBox
 
-@onready var spell_list_box: OptionButton = %SpellListBox
-@onready var casting_type_box: OptionButton = %CastingTypeBox
-@onready var spell_dc_field: LabelDataField = %SpellDCField
-@onready var spell_attack_field: LabelDataField = %SpellAttackField
-@onready var cantrips_field: LabelDataField = %CantripsField
+@onready var casting_entry_tabs: TabContainer = %CastingEntryTabs
 
 @onready var attacks: VBoxContainer = %Attacks
 @onready var spells: VBoxContainer = %Spells
@@ -52,8 +48,6 @@ extends Node
 @onready var enemy_creator: EnemyCreator = $".."
 @onready var defensive: VBoxContainer = %Defensive
 @onready var skills_vbox: VBoxContainer = %SkillsVbox
-@onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
-@onready var constant_spells_field: LabelDataField = %ConstantSpellsField
 
 const SPEEDS : Array[String] = ["Land", "Fly", "Swim", "Climb", "Burrow"]
 const SPEED_FIELD = preload("res://Custom/SpeedField.tscn")
@@ -62,7 +56,7 @@ const ELEMENTS : Array[String] = ["None", "Acid", "All", "Bleed", "Bludgeoning",
 const WEAKNESS_RESISTANCE_FIELD = preload("res://Custom/WeaknessResistanceField.tscn")
 const ENEMY_ABILITY = preload("res://Custom/EnemyAbility.tscn")
 const ENEMY_CREATOR_STRIKE_CONTAINER = preload("res://Custom/EnemyCreatorStrikeContainer.tscn")
-
+const CASTING_ENTRY = preload("res://Custom/CastingEntry.tscn")
 var sheet: Sheet
 
 func customize_current_enemy(editing: bool):
@@ -81,9 +75,14 @@ func customize_current_enemy(editing: bool):
 	var enemy_abilities: Array = sheet.enemy_abilities
 	var enemy_attributes: Dictionary = sheet.enemy_attributes
 	
+	var old_sheet: bool = enemy_system["details"].has("source")
+	
 	#region General
 	
-	source_field.set_value(enemy_system["details"]["source"]["value"])
+	if old_sheet:
+		source_field.set_value(enemy_system["details"]["source"]["value"])
+	else:
+		source_field.set_value(enemy_system["details"]["publication"]["title"])
 	name_field.set_value(enemy_data["name"])
 	name_field.line_edit.editable = !editing # Can't change if just editing sheet
 	level_field.set_value_num(enemy_system["details"]["level"]["value"])
@@ -110,14 +109,36 @@ func customize_current_enemy(editing: bool):
 	wis_field.set_value_num(enemy_system["abilities"]["wis"]["mod"])
 	cha_field.set_value_num(enemy_system["abilities"]["cha"]["mod"])
 	
-	perception_field.set_value_num(enemy_system["attributes"]["perception"]["value"])
-	if enemy_system["traits"]["senses"] is Array:
-		senses_field.set_value(
-			", ".join(PackedStringArray(enemy_system["traits"]["senses"]))
-		)
+	if old_sheet:
+		perception_field.set_value_num(enemy_system["attributes"]["perception"]["value"])
 	else:
-		senses_field.set_value(enemy_system["traits"]["senses"]["value"])
-	languages_field.set_value(", ".join(PackedStringArray(enemy_system["traits"]["languages"]["value"])))
+		perception_field.set_value_num(enemy_system["perception"]["mod"])
+	
+	if old_sheet:
+		if enemy_system["traits"]["senses"] is Array:
+			senses_field.set_value(
+				", ".join(PackedStringArray(enemy_system["traits"]["senses"]))
+			)
+		else:
+			senses_field.set_value(enemy_system["traits"]["senses"]["value"])
+	else:
+		var senses_array: Array = enemy_system["perception"]["senses"]
+		var senses_text: PackedStringArray = [] 
+		for sense in senses_array:
+			var sense_text: String = sense["type"]
+			sense_text.replace("-", " ")
+			if sense.has("acuity"):
+				sense_text += " (" + sense["acuity"] + ")"
+			if sense.has("range"):
+				sense_text += " " + str(sense["range"])
+			senses_text.append(sense_text)
+		senses_field.set_value(
+				", ".join(senses_text)
+			)
+	if old_sheet:
+		languages_field.set_value(", ".join(PackedStringArray(enemy_system["traits"]["languages"]["value"])))
+	else:
+		languages_field.set_value(", ".join(PackedStringArray(enemy_system["details"]["languages"]["value"])))
 	traits_text_edit.text = ", ".join(PackedStringArray(enemy_system["traits"]["value"]))
 	
 	# Rarity
@@ -347,62 +368,57 @@ func customize_current_enemy(editing: bool):
 	#endregion
 	
 	#region Spellcasting
-	for spell_rank in spell_fields_container.get_children():
-		if spell_rank is LabelDataField:
-			spell_rank.set_value("")
-	spell_list_box.select(0)
-	casting_type_box.select(0)
-	spell_attack_field.set_value("")
-	spell_dc_field.set_value("")
+	for child in casting_entry_tabs.get_children():
+		child.queue_free()
 	
 	for ability in enemy_abilities:
-		if ability["type"] == "spellcastingEntry":
-			match ability["system"]["tradition"]["value"]:
-				"arcane":
-					spell_list_box.select(1)
-				"divine":
-					spell_list_box.select(2)
-				"occult":
-					spell_list_box.select(3)
-				"primal":
-					spell_list_box.select(4)
-			
-			match ability["system"]["prepared"]["value"]:
-				"prepared":
-					casting_type_box.select(1)
-				"spontaneous":
-					casting_type_box.select(2)
-				"innate":
-					casting_type_box.select(2)
-			
-			spell_dc_field.set_value_num(ability["system"]["spelldc"]["dc"])
-			spell_attack_field.set_value_num(ability["system"]["spelldc"]["value"])
+		if ability["type"] != "spellcastingEntry":
+			continue
+		var new_casting_entry: CastingEntry = CASTING_ENTRY.instantiate()
+		casting_entry_tabs.add_child(new_casting_entry)
+		new_casting_entry.entry_name_field.set_value(ability["name"])
+		new_casting_entry.spell_dc_field.set_value_num(ability["system"]["spelldc"]["dc"])
+		new_casting_entry.spell_attack_field.set_value_num(ability["system"]["spelldc"]["value"])
+		if !ability.has("_id"):
+			ability["_id"] = ""
+		if ability["_id"] == "":
+			ability["_id"] = ability["name"]
 		
-		elif ability["type"] == "spell":
-			var spell_rank: int
-			var spell_name: String = ability["name"]
+		
+		for spell_ability in enemy_abilities:
+			if spell_ability["type"] != "spell":
+				continue
+			# If spell is not associated with any spell list then associate it with this one
+			if spell_ability["system"]["location"]["value"] == "":
+				spell_ability["system"]["location"]["value"] = ability["_id"]
+			# If spell is associated with a spell list but not this one then move on
+			if spell_ability["system"]["location"]["value"] != ability["_id"]:
+				continue
 			
-			if ability["system"]["location"].has("heightenedLevel"):
-				spell_rank = ability["system"]["location"]["heightenedLevel"]
+			var spell_rank: int
+			var spell_name: String = spell_ability["name"]
+			
+			if spell_ability["system"]["location"].has("heightenedLevel"):
+				spell_rank = spell_ability["system"]["location"]["heightenedLevel"]
 			else:
-				spell_rank = ability["system"]["level"]["value"]
+				spell_rank = spell_ability["system"]["level"]["value"]
 			
 			var spell_field: LabelDataField
-			if ability["name"].to_lower().contains("(constant)"):
-				spell_field = constant_spells_field
+			if spell_ability["system"]["traits"]["value"].has("cantrip"):
+				spell_field = new_casting_entry.spell_fields_container.get_child(0)
+			elif spell_ability["name"].to_lower().contains("(constant)"):
+				spell_field = new_casting_entry.constant_spells_field
 				spell_name = spell_name.replace("(Constant)", "")
 				spell_name = spell_name.replace("(constant)", "")
 				spell_name = spell_name.strip_edges()
 			else:
-				spell_field = spell_fields_container.get_child(spell_rank)
+				spell_field = new_casting_entry.spell_fields_container.get_child(spell_rank)
 			
 			var spell_text: String = spell_field.get_value()
 			if spell_text == "":
 				spell_field.set_value(spell_name)
 			else:
 				spell_field.set_value(spell_text + ", " + spell_name)
-	spell_list_box.emit_signal("item_selected", spell_list_box.selected)
-	
 	
 	
 	var parent: Node = enemy_creator.get_parent()

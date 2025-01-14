@@ -79,9 +79,6 @@ const DEFAULT: Dictionary = {
 			"weaknesses": [],
 			"resistances": [],
 			"immunities": [],
-			"perception": {
-				"value": 6
-			},
 			"speed": {
 				"otherSpeeds": [
 				],
@@ -97,8 +94,8 @@ const DEFAULT: Dictionary = {
 			"level": {
 				"value": 1
 			},
-			"source": {
-				"value": "Custom Enemy"
+			"publication": {
+				"title": "Custom Enemy"
 			}
 		},
 		"resources": {
@@ -128,13 +125,14 @@ const DEFAULT: Dictionary = {
 				]
 			},
 			"rarity": "common",
-			"senses": {
-				"value": ""
-			},
 			"size": {
 				"value": "medium"
 			},
 			"value": []
+		},
+		"perception": {
+			"mod": 0,
+			"senses": []
 		}
 	},
 	"type": "npc"
@@ -188,6 +186,7 @@ const ABILITY_TEMPLATE: Dictionary = {
 
 const SPELLCASTING_TEMPLATE: Dictionary = {
 	"name": "Arcane Prepared Spells",
+	"_id": "",
 	"type": "spellcastingEntry",
 	"system": {
 		"spelldc": {

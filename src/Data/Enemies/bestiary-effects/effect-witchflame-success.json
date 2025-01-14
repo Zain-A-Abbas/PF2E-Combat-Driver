@@ -1,0 +1,43 @@
+{
+    "_id": "NHwmrSyF0e8HUE3m",
+    "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+    "name": "Effect: Witchflame (Success)",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains weakness 5 to fire.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 2"
+        },
+        "rules": [
+            {
+                "key": "Weakness",
+                "type": "fire",
+                "value": 5
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -1,0 +1,56 @@
+{
+    "_id": "XBf4Uz3n0AwSmpXx",
+    "img": "systems/pf2e/icons/pathfinder-society/pfs-glyph.webp",
+    "name": "Adversary Lore",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "pfsboon",
+        "description": {
+            "value": "<p><strong>Cost</strong>: 4 AcP</p><hr /><p>It doesn't matter how powerful your weapons are if you don't know where to strike. You have taken the time to study a certain category of creatures, making it easier to recall their capabilities later. When you purchase this boon, either select one creature type from List 1 below, or choose two creature types from List 2. You gain a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.Recall Knowledge] about creatures of the selected type(s). If your Reputation tier with the Vigilant Seal is Revered, this bonus increases to +2.</p>\n<p><strong>List 1:</strong> aberration, animal, beast, construct, dragon, elemental, fiend, undead.</p>\n<p><strong>List 2:</strong> astral, celestial, ethereal, fey, fungus, giant, monitor, ooze, plant.</p><hr /><p>Special: You can apply this boon multiple times to the same character. However, the character must focus their training on one set of creatures before each adventure, and cannot benefit from multiple copies of the Boon at the same time.</p>"
+        },
+        "level": {
+            "value": 0
+        },
+        "prerequisites": {
+            "value": [
+                {
+                    "value": "Liked by Vigilant Seal"
+                }
+            ]
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": ""
+        },
+        "rules": [
+            {
+                "domain": "all",
+                "key": "RollOption",
+                "option": "adversary-lore",
+                "toggleable": true
+            },
+            {
+                "hideIfDisabled": true,
+                "key": "FlatModifier",
+                "predicate": [
+                    "adversary-lore",
+                    "action:recall-knowledge"
+                ],
+                "selector": "skill-check",
+                "type": "circumstance",
+                "value": "ternary(gte(@actor.system.pfs.reputation.VS,120), 2, 1)"
+            }
+        ],
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "feat"
+}

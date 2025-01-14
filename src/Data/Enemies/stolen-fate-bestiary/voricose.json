@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,34 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
-                    "value": false
-                },
-                "showUnpreparedSpells": {
                     "value": false
                 },
                 "slots": {
                     "slot0": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot4": {
                         "max": 4,
-                        "prepared": [],
                         "value": 4
                     },
                     "slot5": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot7": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 36,
                     "item": 0,
@@ -109,42 +63,26 @@
         },
         {
             "_id": "UfBKE3kSwmoFv59s",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.2Vkd1IxylPceUAAF"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.2Vkd1IxylPceUAAF"
             },
-            "img": "systems/pf2e/icons/spells/regeneration.webp",
+            "img": "icons/magic/life/cross-beam-green.webp",
             "name": "Regenerate",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>An infusion of positive energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its @UUID[Compendium.pf2e.conditionitems.Item.Dying] condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its @UUID[Compendium.pf2e.conditionitems.Item.Wounded] value becomes 4 or higher, it stays @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Regenerate]</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>"
+                    "value": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its @UUID[Compendium.pf2e.conditionitems.Item.Dying] condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its @UUID[Compendium.pf2e.conditionitems.Item.Wounded] value becomes 4 or higher, it stays @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Regenerate]</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 7
@@ -153,57 +91,34 @@
                     "heightenedLevel": 7,
                     "value": "Zxd709xPY5MAZhIj"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "regenerate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing living creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "healing",
-                        "positive",
-                        "necromancy"
+                        "manipulate",
+                        "vitality"
                     ]
                 }
             },
@@ -211,51 +126,37 @@
         },
         {
             "_id": "UDXoBQjc0tyY3qtw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Hnc7eGi7vyZenAIm"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Hnc7eGi7vyZenAIm"
             },
-            "img": "systems/pf2e/icons/spells/breath-of-life.webp",
+            "img": "icons/magic/life/heart-shadow-red.webp",
             "name": "Breath of Life",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "healing"
-                            },
-                            "value": "4d8"
-                        }
+                    "0": {
+                        "applyMod": true,
+                        "category": null,
+                        "formula": "4d8",
+                        "kinds": [
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from @UUID[Compendium.pf2e.conditionitems.Item.Dying] and restore Hit Points to the target equal to 4d8 plus your spellcasting ability modifier. You can't use breath of life if the triggering effect was disintegrate or a death effect.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -263,56 +164,32 @@
                 "location": {
                     "value": "Zxd709xPY5MAZhIj"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "60 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "breath-of-life",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "the triggering creature"
                 },
                 "time": {
                     "value": "reaction"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
+                        "concentrate",
                         "healing",
-                        "positive",
-                        "necromancy"
+                        "vitality"
                     ]
                 }
             },
@@ -320,42 +197,26 @@
         },
         {
             "_id": "T8XEZJYgHmvL38pa",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr"
             },
-            "img": "systems/pf2e/icons/spells/restoration.webp",
+            "img": "icons/magic/life/heart-cross-strong-green.webp",
             "name": "Restoration",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's @UUID[Compendium.pf2e.conditionitems.Item.Clumsy], @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled], or @UUID[Compendium.pf2e.conditionitems.Item.Stupefied] condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add @UUID[Compendium.pf2e.conditionitems.Item.Drained] to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's @UUID[Compendium.pf2e.conditionitems.Item.Doomed] value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-level restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>"
+                    "value": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's @UUID[Compendium.pf2e.conditionitems.Item.Clumsy], @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled], or @UUID[Compendium.pf2e.conditionitems.Item.Stupefied] condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add @UUID[Compendium.pf2e.conditionitems.Item.Drained] to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's @UUID[Compendium.pf2e.conditionitems.Item.Doomed] value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -368,57 +229,34 @@
                     },
                     "value": "Zxd709xPY5MAZhIj"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "restoration",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "1 minute"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "healing",
-                        "necromancy"
+                        "manipulate"
                     ]
                 }
             },
@@ -426,51 +264,43 @@
         },
         {
             "_id": "T15eZTknkbdcVEDH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
             },
-            "img": "systems/pf2e/icons/spells/heal.webp",
+            "img": "icons/magic/life/cross-worn-green.webp",
             "name": "Heal",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "value": "positive"
-                            },
-                            "value": "1d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage",
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "vitality"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, somatic, verbal)</strong> You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+                    "value": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -490,9 +320,6 @@
                     },
                     "value": "Zxd709xPY5MAZhIj"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "37gy7l19tik74o4s": {
                         "_id": "37gy7l19tik74o4s",
@@ -500,17 +327,15 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "value": "1d8+8"
-                                    }
+                                "0": {
+                                    "formula": "1d8+8",
+                                    "kinds": [
+                                        "healing"
+                                    ]
                                 }
                             },
+                            "defense": null,
                             "heightening": {
                                 "damage": {
                                     "0": "1d8+8"
@@ -519,12 +344,16 @@
                             "range": {
                                 "value": "30 feet"
                             },
-                            "save": {
-                                "basic": "",
-                                "value": ""
-                            },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     },
@@ -533,9 +362,6 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true
-                            },
                             "range": {
                                 "value": "touch"
                             },
@@ -553,11 +379,6 @@
                                 "type": "emanation",
                                 "value": 30
                             },
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "range": {
                                 "value": ""
                             },
@@ -566,6 +387,14 @@
                             },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     },
@@ -575,74 +404,60 @@
                         "overlayType": "override",
                         "sort": 3,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
+                            "damage": {
+                                "0": {
+                                    "kinds": [
+                                        "damage"
+                                    ]
+                                }
                             },
                             "range": {
                                 "value": "30 feet"
-                            },
-                            "spellType": {
-                                "value": "save"
                             },
                             "target": {
                                 "value": "1 undead"
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "heal",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing living creature or 1 undead"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "healing",
-                        "positive",
-                        "necromancy"
+                        "manipulate",
+                        "vitality"
                     ]
                 }
             },
@@ -650,42 +465,26 @@
         },
         {
             "_id": "Ve6gsftWONByJQPc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg"
             },
-            "img": "systems/pf2e/icons/spells/stabelize.webp",
+            "img": "icons/magic/control/debuff-energy-hold-yellow.webp",
             "name": "Stabilize",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>Positive energy shuts death's door. The target loses the @UUID[Compendium.pf2e.conditionitems.Item.Dying] condition, though it remains @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] at 0 Hit Points.</p>"
+                    "value": "<p>Vitality energy shuts death's door. The target loses the @UUID[Compendium.pf2e.conditionitems.Item.Dying] condition, though it remains @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] at 0 Hit Points.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -693,59 +492,35 @@
                 "location": {
                     "value": "Zxd709xPY5MAZhIj"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "stabilize",
-                "source": {
-                    "value": ""
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 dying creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
-                        "positive",
-                        "healing",
                         "cantrip",
-                        "necromancy"
+                        "concentrate",
+                        "healing",
+                        "manipulate",
+                        "vitality"
                     ]
                 }
             },
@@ -753,24 +528,22 @@
         },
         {
             "_id": "IbClby77MQKpAzp1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.f1gwoTkf3Nn0v3PN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.f1gwoTkf3Nn0v3PN"
             },
             "img": "systems/pf2e/icons/equipment/weapons/whip.webp",
             "name": "Whip",
             "sort": 700000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "whip",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -787,9 +560,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "flail",
                 "hardness": 0,
                 "hp": {
@@ -799,34 +569,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 3
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": "greaterFrost"
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -834,17 +589,17 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 3,
+                    "property": [
+                        "greaterFrost"
+                    ],
+                    "striking": 2
+                },
                 "size": "lg",
                 "slug": "whip",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -858,9 +613,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
@@ -894,18 +646,21 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "deadly-2d10",
                         "evil",
                         "magical",
-                        "reach-10"
+                        "reach-10",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -947,11 +702,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "disarm",
@@ -959,7 +716,8 @@
                         "magical",
                         "nonlethal",
                         "reach-15",
-                        "trip"
+                        "trip",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -970,10 +728,8 @@
         },
         {
             "_id": "dkgK1et0DFUYLpwT",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Greater Darkvision",
@@ -989,23 +745,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1026,26 +775,18 @@
                 "description": {
                     "value": "<p>A velstrac automatically knows whether a creature it sees has any of the @UUID[Compendium.pf2e.conditionitems.Item.Doomed], @UUID[Compendium.pf2e.conditionitems.Item.Dying], and @UUID[Compendium.pf2e.conditionitems.Item.Wounded] conditions, as well as the value of those conditions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1066,8 +807,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1089,31 +832,20 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "fFFM3BNDIa0yq0lg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Regeneration 20 (Deactivated by Good or Silver)",
+            "name": "Regeneration 20 (Deactivated by Holy or Silver)",
             "sort": 1300000,
             "system": {
                 "actionType": {
@@ -1127,13 +859,15 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
                         "deactivatedBy": [
-                            "good",
+                            "holy",
                             "silver"
                         ],
                         "key": "FastHealing",
@@ -1142,28 +876,17 @@
                     }
                 ],
                 "slug": "regeneration",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "QD2iwjozawGYYqOf",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
@@ -1179,23 +902,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1214,10 +930,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<p>When a creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor's form. The creature must succeed at a @Check[type:will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
+                    "value": "<p>30 feet. When a creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor's form. The creature must succeed at a @Check[will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1225,9 +943,7 @@
                         "radius": 30,
                         "slug": "glimpse-of-stolen-flesh",
                         "traits": [
-                            "aura",
                             "divine",
-                            "enchantment",
                             "fear",
                             "mental",
                             "visual"
@@ -1235,25 +951,15 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
                         "divine",
-                        "enchantment",
                         "fear",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1274,30 +980,22 @@
                 "description": {
                     "value": "<p>The interlocutor stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against glimpse of stolen flesh. In addition, if the creature was already @UUID[Compendium.pf2e.conditionitems.Item.Stunned], on a failed save, it feels its internal organs twist and writhe, and is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} for 1 minute.</p>\n<p>After attempting this save, the creature is then temporarily immune until the start of the interlocutor's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "enchantment",
                         "fear",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1318,8 +1016,10 @@
                 "description": {
                     "value": "<p>This functions as the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Rend] ability, dealing claw damage. In addition, if the target is a living creature with organs and muscle, the interlocutor opens a precise wound. Until the creature is restored to its maximum Hit Points, thus closing the wound, Strikes against the creature deal 1d6 extra precision damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Surgical Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1333,172 +1033,35 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "RlsP5ktPTyvyZkSe",
+            "_id": "66MMiNkLuWiSgRer",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
+            "name": "Brewing Lore",
             "sort": 1800000,
             "system": {
                 "description": {
                     "value": ""
                 },
                 "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "66MMiNkLuWiSgRer",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Brewing Lore",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
                     "value": 24
                 },
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "XIeSqagI3L9jCuKJ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "predicate": [
-                            "scuplt-flesh"
-                        ],
-                        "selector": "crafting",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+28 scuplting flesh",
-                        "options": "scuplt-flesh"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "9d1RMtRliHt291Va",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "pmVRgeXdJOLus1Hh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6Hao8ywGrro8ZLfe",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1506,7 +1069,7 @@
             "_id": "dmYyiqu2DVxTAvbq",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Torture Lore",
-            "sort": 2400000,
+            "sort": 1900000,
             "system": {
                 "description": {
                     "value": ""
@@ -1517,11 +1080,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1557,7 +1122,7 @@
                 "value": "+1 status to all saves vs. magic"
             },
             "hp": {
-                "details": "regeneration 20 (deactivated by good or silver)",
+                "details": "regeneration 20 (deactivated by holy or silver)",
                 "max": 275,
                 "temp": 0,
                 "value": 275
@@ -1567,19 +1132,13 @@
                     "type": "cold"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 28
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 40
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 15
                 },
                 {
@@ -1589,19 +1148,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "Male variant velstrac interlocutor",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "diabolic",
+                    "jotun",
+                    "shadowtongue"
+                ]
+            },
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "<p>Interlocutors are the most talented surgeon-sculptors of the velstracs, carving away flesh and replacing it with new body parts of muscle, sinew, and metal. Each interlocutor structures their individual appearance carefully, but all are towering, multi-limbed amalgamations of the strongest limbs, densest bone, and sharpest metal they can find. They continually search for new material to graft to their forms, and their slain foes are rarely found intact, as little is more valuable to interlocutors than a powerful opponent's legs, eyes, or even brain. Interlocutors average 9 feet tall and weigh approximately 800 pounds.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
-            "source": {
-                "value": "Pathfinder #191: The Destiny War"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #191: The Destiny War"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "painsight",
+            "mod": 28,
+            "senses": [
+                {
+                    "type": "greater-darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1623,29 +1201,42 @@
                 "value": 28
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 31
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "infernal",
-                    "jotun",
-                    "shadowtongue"
+            "crafting": {
+                "base": 24,
+                "special": [
+                    {
+                        "base": 28,
+                        "label": "scuplting flesh",
+                        "predicate": [
+                            "scuplt-flesh"
+                        ]
+                    }
                 ]
             },
-            "rarity": "unique",
-            "senses": {
-                "value": "greater darkvision, painsight"
+            "intimidation": {
+                "base": 28
             },
+            "medicine": {
+                "base": 30
+            },
+            "religion": {
+                "base": 24
+            }
+        },
+        "traits": {
+            "rarity": "unique",
             "size": {
                 "value": "lg"
             },
             "value": [
+                "evil",
                 "fiend",
+                "lawful",
+                "unholy",
                 "velstrac"
             ]
         }

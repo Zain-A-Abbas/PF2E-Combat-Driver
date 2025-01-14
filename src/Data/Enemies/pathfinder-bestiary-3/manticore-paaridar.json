@@ -14,86 +14,20 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "focus"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 24,
                     "value": 16
@@ -106,50 +40,36 @@
         },
         {
             "_id": "a2yR0jzspRdwAKia",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.qJZZdYBdNaWRJFER"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.qJZZdYBdNaWRJFER"
             },
             "img": "systems/pf2e/icons/spells/wholeness-of-body.webp",
             "name": "Wholeness of Body",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": true,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "healing"
-                            },
-                            "value": "8"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "8",
+                        "kinds": [
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>You heal yourself in one of the following ways, chosen by you when you cast the spell.</p>\n<ul>\n<li>You regain 8 Hit Points.</li>\n<li>You attempt to cure one poison or disease afflicting you; attempt to counteract the affliction.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> If you choose to regain Hit Points, the Hit Points regained increase by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": true
                 },
                 "heightening": {
                     "damage": {
@@ -164,55 +84,32 @@
                 "location": {
                     "value": "aVCE3zDK0cQohDQM"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "wholeness-of-body",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
+                        "concentrate",
+                        "focus",
                         "healing",
                         "monk",
-                        "positive",
-                        "necromancy"
+                        "vitality"
                     ]
                 }
             },
@@ -220,42 +117,26 @@
         },
         {
             "_id": "mPatSnuRWStpVxCd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8"
             },
             "img": "systems/pf2e/icons/spells/ki-rush.webp",
             "name": "Ki Rush",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Accelerated by your ki, you move with such speed you become a blur. Move two times: two Strides, two Steps, or one Stride and one Step (in either order).</p>\n<p>You gain the @UUID[Compendium.pf2e.conditionitems.Item.Concealed] condition during this movement and until the start of your next turn.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -263,53 +144,30 @@
                 "location": {
                     "value": "aVCE3zDK0cQohDQM"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ki-rush",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
-                        "monk",
-                        "transmutation"
+                        "concentrate",
+                        "focus",
+                        "monk"
                     ]
                 }
             },
@@ -317,52 +175,37 @@
         },
         {
             "_id": "TZgQQXZDUV4KuODk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG"
             },
             "img": "systems/pf2e/icons/spells/ki-strike.webp",
             "name": "Ki Strike",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "untyped"
-                            },
-                            "value": "1d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You focus your ki into magical attacks. Make an unarmed Strike or Flurry of Blows (this doesn't change the limit on using only one flourish per turn).</p>\n<p>You gain a +1 status bonus to your attack rolls with the Strikes, and the Strikes deal 1d6 extra damage. This damage can be any of the following types of your choice, chosen each time you Strike: force, lawful (only if you're lawful), negative, or positive.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ki Strike]</p>\n<hr />\n<p><strong>Heightened (+4)</strong> The extra damage increases by 1d6.</p>"
+                    "value": "<p>You focus your ki into magical attacks. Make an unarmed Strike or Flurry of Blows (this doesn't change the limit on using only one flourish per turn).</p>\n<p>You gain a +1 status bonus to your attack rolls with the Strikes, and the Strikes deal 1d6 extra damage. This damage can be any of the following types of your choice, chosen each time you Strike: force, lawful (only if you're lawful), negative, or positive.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Inner Upheaval]{Spell Effect: Ki Strike}</p>\n<hr />\n<p><strong>Heightened (+4)</strong> The extra damage increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -377,53 +220,30 @@
                 "location": {
                     "value": "aVCE3zDK0cQohDQM"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ki-strike",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
-                        "monk",
-                        "transmutation"
+                        "concentrate",
+                        "focus",
+                        "monk"
                     ]
                 }
             },
@@ -431,23 +251,21 @@
         },
         {
             "_id": "wA8VVomLPk1zjrds",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
             },
-            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/handwraps-of-mighty-blows.webp",
+            "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
             "name": "Handwraps of Mighty Blows",
             "sort": 500000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 1
                 },
                 "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
                     "value": 0
                 },
                 "category": "unarmed",
@@ -466,9 +284,6 @@
                     "inSlot": true,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "brawling",
                 "hardness": 0,
                 "hp": {
@@ -478,34 +293,19 @@
                 "level": {
                     "value": 2
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 35
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -513,36 +313,29 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "handwraps-of-mighty-blows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": null
                 },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "evocation",
                         "finesse",
                         "invested",
                         "magical",
                         "nonlethal",
-                        "transmutation",
                         "unarmed"
                     ]
                 },
                 "usage": {
                     "value": "worngloves"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
@@ -572,11 +365,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -614,11 +409,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -657,11 +454,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -676,94 +475,10 @@
             "type": "melee"
         },
         {
-            "_id": "lK75Yi29CDBjFNYu",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 900000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "1RfKpuWxU1cMc4p7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 1000000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "7wxTRall7vLvrVdI",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Sharp Riposte",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -775,23 +490,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> An adjacent creature targets the paaridar with a melee attack</p>\n<hr />\n<p><strong>Effect</strong> The paaridar blocks the attack with their claws. The paaridar gains resistance 5 to physical damage from the attack, and if the attack hits, the attacker takes @Damage[(1d8+4)[slashing]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -800,7 +508,7 @@
             "_id": "vcbazPs6B9bMeBpm",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Flurry of Blows",
-            "sort": 1200000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -812,23 +520,21 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The paaridar makes two unarmed Strikes or two spike Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -837,7 +543,7 @@
             "_id": "gk6ccJsfW8SnQ1XT",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Limited Flight",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -849,23 +555,16 @@
                 "description": {
                     "value": "<p>The manticore paaridar's wings are small and weak, insufficient to keep them in the air. If the paaridar Flies using their wings, they fall at the end of their turn if they haven't landed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -874,7 +573,7 @@
             "_id": "5h2xMj0CQYOauzxy",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Monk Ki Spells",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -884,103 +583,27 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The Paaridar's ki flow is unnaturally disrupted, causing them to take @Damage[1d6[negative]] damage each time they cast a ki spell.</p>"
+                    "value": "<p>The Paaridar's ki flow is unnaturally disrupted, causing them to take @Damage[1d6[void]] damage each time they cast a ki spell.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "g94D4TYCTOWDCIEO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "HflV1TFgeWnLeBrp",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7SfbslXOflLik7mc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "Ran96W84fw5Bh3Y3",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Manticore Lore",
-            "sort": 1800000,
+            "sort": 1300000,
             "system": {
                 "description": {
                     "value": ""
@@ -991,34 +614,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7DXMzTpQML4Bmkw9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1059,12 +661,6 @@
                 "temp": 0,
                 "value": 110
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 18
-            },
             "speed": {
                 "details": "limited flight",
                 "otherSpeeds": [
@@ -1077,19 +673,40 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 7
             },
             "privateNotes": "",
             "publicNotes": "<p>Monks dissatisfied with the limits of their humanoid forms and yearning for a shortcut can steal the might from other creatures. These monks become paaridars, amalgamations that blend the features of their former ancestry with the form of another creature. The transformation challenges the limits of the paaridar's body and soul, demanding continual discipline to maintain control.</p>\n<p>The rituals to make this transformation were developed by Paaridus, namesake of this loose monastic order. The process requires a captive creature-a victim to draw powers from. Over days of intense rituals, the monk displaces their own chakras with those of the victim. This unnatural process transforms the ki, and thereby the body. The lower chakras are considered \"safer\" to replace. Most Paaridars stop at the root, sacral, and navel chakras. To go farther risks losing control of one's emotions and intellect entirely, a fate Paaridus himself succumbed to. Paaridars consider this his sacrifice and lesson, but other monks recognize that even one step on this path is profane. The creature victimized by the ritual remains-still alive, but only a husk, as the transformed chakras within leave it weak and removed from its nature.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 18,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1111,24 +728,30 @@
                 "value": 16
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 16
+            },
+            "athletics": {
+                "base": 19
+            },
+            "intimidation": {
+                "base": 11
+            },
+            "occultism": {
+                "base": 10
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "beast",
+                "evil",
                 "humanoid",
+                "lawful",
                 "paaridar"
             ]
         }

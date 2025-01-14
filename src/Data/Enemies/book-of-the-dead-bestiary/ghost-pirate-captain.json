@@ -21,17 +21,19 @@
                 "damageRolls": {
                     "RzVQWulJYEW02MiQ": {
                         "damage": "2d6+11",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -65,17 +67,19 @@
                 "damageRolls": {
                     "Ps9TMMOWLRSQPIRK": {
                         "damage": "2d6+8",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -90,101 +94,10 @@
             "type": "melee"
         },
         {
-            "_id": "Y4U4NccPky46RHKa",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "0AkVpzKeetsxnaM0",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "4zbcbp0ersjqi242",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Curse Ye Scallywags!",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -195,40 +108,33 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When the ghost pirate captain is reduced to 0 HP, all creatures within 60 feet are subjected to a @Check[type:will|dc:25] <em>@UUID[Compendium.pf2e.spells-srd.Item.Mariner's Curse]</em> spell. The locations of those that critically fail are known to the ghost until the curse is removed. This curse ends if the ghost is permanently destroyed.</p>"
+                    "value": "<p>When the ghost pirate captain is reduced to 0 HP, all creatures within 60 feet are subjected to a @Check[will|dc:25] @UUID[Compendium.pf2e.spells-srd.Item.Mariner's Curse] spell. The locations of those that critically fail are known to the ghost until the curse is removed. This curse ends if the ghost is permanently destroyed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "SeDr8IsuA0cd6pKi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rejuvenation",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -241,26 +147,18 @@
                 "description": {
                     "value": "<p>When the ghost pirate captain is destroyed, they re-form after [[/br 2d4 #Rejuvenation]]{2d4 days} within the ship or location they're bound to, fully healed. They can be permanently destroyed if their desires are fulfilled, which could involve being defeated in a great battle or ensuring their treasure has been hidden.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-rejuvenation",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -269,7 +167,7 @@
             "_id": "u5q8d8r0yfjwcdoj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ship Bound",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -281,20 +179,56 @@
                 "description": {
                     "value": "<p>The ghost is typically bound to a vessel, even one damaged beyond repair. They can't venture more than 120 feet away from the ship or site of its wreckage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "0AkVpzKeetsxnaM0",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -303,7 +237,7 @@
             "_id": "oc46s540bthxaecp",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Combat Current",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -313,22 +247,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The ghost makes a Strike with its cutlass or hand crossbow, then Flies up to half their Speed and makes a Strike with the other attack. If they moved through an enemy when they Flew, that enemy is @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] against the second Strike.</p>"
+                    "value": "<p>The ghost makes a Strike with its cutlass or hand crossbow, then Flies up to half their Speed and makes a Strike with the other attack. If they moved through an enemy when they Flew, that enemy is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against the second Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -337,7 +267,7 @@
             "_id": "dz1w9j5ipev8z1v8",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Savvy Joinin' Me Crew?",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -347,103 +277,29 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> The ghost reduces a living creature to 0 Hit Points with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The creature attempts a @Check[type:fortitude|dc:25] save. If the creature fails its save, it remains conscious but is controlled by the ghost until it loses its dying condition. It continues to attempt recovery checks as normal for the dying condition. The effect ends if the creature loses the dying condition. If the creature dies while under this effect, it joins the ghost's undead crew in [[/r 1d4 #days]]{1d4 days}. If the ghost is destroyed before the creature dies, the creature is spared this terrible fate.</p>"
+                    "value": "<p><strong>Trigger</strong> The ghost reduces a living creature to 0 Hit Points with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The creature attempts a @Check[fortitude|dc:25] save. If the creature fails its save, it remains conscious but is controlled by the ghost until it loses its dying condition. It continues to attempt recovery checks as normal for the dying condition. The effect ends if the creature loses the dying condition. If the creature dies while under this effect, it joins the ghost's undead crew in [[/gmr 1d4 #days]]{1d4 days}. If the ghost is destroyed before the creature dies, the creature is spared this terrible fate.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "85xrfn97gummxpo9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "roe9xnd4bugbroyy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "hjasdf9r8xnghggq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "zh8ndbyu6spjabea",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Sailing Lore",
-            "sort": 1300000,
+            "sort": 900000,
             "system": {
                 "description": {
                     "value": ""
@@ -454,11 +310,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -490,11 +348,12 @@
                 "details": "",
                 "value": 26
             },
+            "adjustment": null,
             "allSaves": {
                 "value": ""
             },
             "hp": {
-                "details": "negative healing, rejuvenation",
+                "details": "void healing, rejuvenation",
                 "max": 100,
                 "temp": 0,
                 "value": 100
@@ -519,12 +378,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 17
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -533,7 +386,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 10
@@ -551,19 +404,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "<p>Undead prowling the ocean on derelict ships have long been threats sailors keep an eye out for. Other than corporeal undead, some undead pirates take on an incorporeal form, especially if their bodies have been lost to the fishes. Captains of crews in particular are likely to return from the dead, perhaps on account of their strong personalities.</p>\n<hr />\n<p>Tethered to the world after death by powerful emotions that haven't been resolved, ghosts haunt the living as sad echoes of their former selves.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 17,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -580,27 +450,30 @@
                 "value": 15
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 18
+            },
+            "diplomacy": {
+                "base": 15
+            },
+            "intimidation": {
+                "base": 17
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "ghost",
                 "incorporeal",
                 "spirit",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

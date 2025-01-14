@@ -37,12 +37,8 @@ signal sheet_created(file_address: String, editing: bool, source: String)
 
 @onready var skills_vbox: VBoxContainer = %SkillsVbox
 
-@onready var spell_list_box: OptionButton = %SpellListBox
-@onready var casting_type_box: OptionButton = %CastingTypeBox
-@onready var spell_dc_field: LabelDataField = %SpellDCField
-@onready var spell_attack_field: LabelDataField = %SpellAttackField
-@onready var cantrips_field: LabelDataField = %CantripsField
-@onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
+@onready var casting_entry_tabs: TabContainer = %CastingEntryTabs
+
 '@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
 @onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
 @onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
@@ -53,7 +49,6 @@ signal sheet_created(file_address: String, editing: bool, source: String)
 @onready var _8_th_rank_field: LabelDataField = %"8thRankField"
 @onready var _9_th_rank_field: LabelDataField = %"9thRankField"
 @onready var _10_th_rank_field: LabelDataField = %"10thRankField"'
-@onready var constant_spells_field: LabelDataField = %ConstantSpellsField
 
 const CUSTOM_ENEMIES_LOCATION: String = "user://Enemies/custom-enemies/"
 const EnemySheetExample = preload("res://EnemySheet/EnemySheetExample.gd")
@@ -87,10 +82,10 @@ func create_enemy(editing: bool = false):
 	
 	if source_field.get_value().strip_edges() == "":
 		source_field.set_value("Custom Enemy")
-	system["details"]["source"]["value"] = source_field.get_value()
+	system["details"]["publication"]["title"] = source_field.get_value()
 	new_enemy_sheet["name"] = name_field.get_value()
 	details["level"]["value"] = int(level_field.get_value())
-	attributes["perception"]["value"] = int(perception_field.get_value())
+	system["perception"]["mod"] = int(perception_field.get_value())
 	traits["senses"]["value"] = senses_field.get_value()
 	new_enemy_sheet["notes"] = notes_text_edit.text
 	
@@ -202,7 +197,60 @@ func create_enemy(editing: bool = false):
 	#region Spellcasting
 	
 	var i: int = 0
-	if spell_list_box.selected != 0:
+	var spell_entries: Array[String] = []
+	for child in casting_entry_tabs.get_children():
+		var casting_entry: CastingEntry
+		if child is CastingEntry:
+			casting_entry = child
+		else:
+			continue
+		
+		var casting_entry_name: String = casting_entry.entry_name_field.get_value()
+		if spell_entries.has(casting_entry_name):
+			EventBus.error_popup.emit("Casting entries must have unique names.")
+			return
+		
+		if casting_entry_name != "":
+			spell_entries.append(casting_entry_name)
+		var spells_found: bool = false
+		var spell_field_value: String = ""
+		for spell_field in casting_entry.spell_fields_container.get_children():
+			if spell_field is LabelDataField:
+				spell_field_value = spell_field.get_value()
+				if spell_field_value != "":
+					spells_found = true
+					add_spell_entry(
+						i,
+						spell_field_value,
+						new_enemy_sheet["items"],
+						casting_entry_name,
+						spell_field == casting_entry.constant_spells_field
+					)
+		
+		if spells_found && casting_entry_name == "":
+			EventBus.error_popup.emit("Casting entry with spells must have name.")
+			return
+		
+		if !spells_found:
+			continue
+		
+		var new_casting_entry: Dictionary = EnemySheetExample.SPELLCASTING_TEMPLATE.duplicate(true)
+		new_casting_entry["name"] = casting_entry_name
+		new_casting_entry["_id"] = casting_entry_name
+		new_casting_entry["system"]["spelldc"]["dc"] = int(casting_entry.spell_dc_field.get_value())
+		new_casting_entry["system"]["spelldc"]["value"] = int(casting_entry.spell_attack_field.get_value())
+		for tradition in ["arcane", "divine", "occult", "primal"]:
+			if casting_entry_name.to_lower().contains(tradition):
+				new_casting_entry["system"]["tradition"]["value"] = tradition # = spell_list_box.get_item_text(spell_list_box.selected).to_lower()
+		new_casting_entry["system"]["prepared"]["value"]# = casting_type_box.get_item_text(casting_type_box.selected).to_lower()
+		for type in ["prepared", "spontaneous", "innate "]:
+			if casting_entry_name.to_lower().contains(type):
+				new_casting_entry["system"]["prepared"]["value"] = type 
+		
+		new_enemy_sheet["items"].append(new_casting_entry)
+	
+	
+	'if spell_list_box.selected != 0:
 		var spells_found: bool = false
 		var spell_field_value: String = ""
 		for spell_field in spell_fields_container.get_children():
@@ -221,7 +269,7 @@ func create_enemy(editing: bool = false):
 			new_casting_entry["system"]["spelldc"]["value"] = int(spell_attack_field.get_value())
 			new_casting_entry["system"]["tradition"]["value"] = spell_list_box.get_item_text(spell_list_box.selected).to_lower()
 			new_casting_entry["system"]["prepared"]["value"] = casting_type_box.get_item_text(casting_type_box.selected).to_lower()
-			new_enemy_sheet["items"].append(new_casting_entry)
+			new_enemy_sheet["items"].append(new_casting_entry)'
 	
 	
 	#endregion
@@ -241,7 +289,7 @@ func create_enemy(editing: bool = false):
 	var new_file = FileAccess.open(file_address, FileAccess.WRITE)
 	new_file.store_line(JSON.stringify(new_enemy_sheet, "\t"))
 	new_file.close()
-	sheet_created.emit(file_address, editing, system["details"]["source"]["value"])
+	sheet_created.emit(file_address, editing, system["details"]["publication"]["title"])
 
 # If defense is false, then offense
 func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: bool = true):
@@ -276,7 +324,7 @@ func ability_formatter(ability_nodes: Array[Node], items_array: Array, defense: 
 			
 			items_array.append(new_ability)
 
-func add_spell_entry(spell_level: int, spell_field_value: String, items_array: Array, constant: bool = false):
+func add_spell_entry(spell_level: int, spell_field_value: String, items_array: Array, id: String, constant: bool = false):
 	spell_field_value = spell_field_value.replace(", ", ",")
 	var spells: PackedStringArray = spell_field_value.split(",", false)
 	for spell in spells:
@@ -287,6 +335,8 @@ func add_spell_entry(spell_level: int, spell_field_value: String, items_array: A
 		new_spell_entry["system"]["level"]["value"] = spell_level
 		if spell_level == 0:
 			new_spell_entry["system"]["traits"]["value"].append("cantrip")
+		
+		new_spell_entry["system"]["location"]["value"] = id
 		items_array.append(new_spell_entry)
 
 func has_file_name(file_name: String, folder: DirAccess):

@@ -1,0 +1,44 @@
+{
+    "_id": "IfUod2VxNmZMGGPq",
+    "img": "icons/equipment/shield/heater-wooden-steel-boss.webp",
+    "name": "Effect: Bodyguard's Defense",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains a +2 circumstance bonus to AC.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Gamemastery Guide"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "ac",
+                "type": "circumstance",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

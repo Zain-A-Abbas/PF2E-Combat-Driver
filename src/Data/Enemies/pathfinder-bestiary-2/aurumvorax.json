@@ -28,11 +28,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -69,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -87,99 +91,13 @@
             "type": "melee"
         },
         {
-            "_id": "uKp0N4KDIGVFsJ1T",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "pu67MUMU2zgOU5zE",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "iTVvlmvMKiOcRmTQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Ferocity",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -190,25 +108,18 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its @UUID[Compendium.pf2e.conditionitems.Item.Wounded]{wounded} value increases by 1. When it is @UUID[Compendium.pf2e.conditionitems.Item.Wounded]{wounded 3}, it can no longer use this ability</p>"
+                    "value": "<p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its @UUID[Compendium.pf2e.conditionitems.Item.Wounded] value increases by 1. When it is @UUID[Compendium.pf2e.conditionitems.Item.Wounded]{wounded 3}, it can no longer use this ability</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ferocity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -217,7 +128,7 @@
             "_id": "xdv7JO5TXVfEGxJr",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tenacious Stance",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -229,23 +140,34 @@
                 "description": {
                     "value": "<p>An aurumvorax gains a +4 circumstance bonus to its Fortitude or Reflex DC against @UUID[Compendium.pf2e.actionspf2e.Item.Shove] and @UUID[Compendium.pf2e.actionspf2e.Item.Trip] attempts, and to its Athletics DC against attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] its Grab.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "action:shove",
+                                    "action:trip"
+                                ]
+                            }
+                        ],
+                        "selector": [
+                            "fortitude-dc",
+                            "reflex-dc"
+                        ],
+                        "type": "circumstance",
+                        "value": 4
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -254,7 +176,7 @@
             "_id": "RZEi7CewQZtkaHnE",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Bleeding Critical",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -266,8 +188,10 @@
                 "description": {
                     "value": "<p>When an aurumvorax scores a critical hit, the target takes @Damage[1d6[bleed]].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -276,22 +200,13 @@
                         "diceNumber": 1,
                         "dieSize": "d6",
                         "key": "DamageDice",
-                        "selector": "damage"
+                        "selector": "strike-damage"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -300,7 +215,7 @@
             "_id": "bQyms0FzVu1O5MrR",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Gnaw Metal",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -312,23 +227,16 @@
                 "description": {
                     "value": "<p>The aurumvorax makes a jaws Strike against a creature it has grabbed. If the attack hits, the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone] if it is Medium or smaller. In addition, if the target is wearing armor with Hardness 10 or lower, the armor becomes @UUID[Compendium.pf2e.conditionitems.Item.Broken]. If this Strike breaks a creature's armor or damages a creature that is unarmored or wearing broken armor, the target also takes @Damage[1d6[bleed]]. This Strike doesn't further damage armor that's already broken.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -337,7 +245,7 @@
             "_id": "NCoI7vXSD3LDfPTM",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Rapid Rake",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -349,37 +257,28 @@
                 "description": {
                     "value": "<p>The aurumvorax makes four claw Strikes against a creature it has grabbed. Each attack counts toward the aurumvorax's multiple attack penalty, and the multiple attack penalty increases with each attack.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "VFprYdFvs654DtJ6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -391,88 +290,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "Sv1H3JJKwu64RfI1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Swim",
-                        "predicate": [
-                            "action:swim"
-                        ],
-                        "selector": "athletics",
-                        "value": -14
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+6 to swim",
-                        "options": "action:swim"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "q7SXK8Lwlo8EWOcz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Aurumvorax",
@@ -511,12 +341,6 @@
                 "temp": 0,
                 "value": 170
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 18
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -528,19 +352,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "<p>Aurumvoraxes are highly aggressive and territorial predators that sprint on eight legs, using their terrific strength and iron-hard claws to dig through solid stone. A typical aurumvorax is only 3 feet long but weighs more than 200 pounds, for its thick, sturdy bones are densely packed with muscle, making the creature very strong but a notoriously poor swimmer. Its fur is golden, sometimes with a silvery or russet tone depending on the metals it has ingested, and its claws are always the shiny black of seasoned iron.</p>\n<p>Aurumvorax adults claim hunting territories spanning a mile or more, driving out other predators and leading solitary lives except when they mate. They are irascible creatures, impossible to train as adults, but daring trainers can rear aurumvorax pups as deadly guard beasts, which they sell for hundreds of gold pieces to discriminating buyers. Aurumvorax pups are usually single births, and their mothers are fiercely protective, making their acquisition a dangerous proposition. Even when trained, the creatures are prone to dangerous bursts of rage.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 18,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -557,19 +400,25 @@
                 "value": 16
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 20,
+                "special": [
+                    {
+                        "base": 6,
+                        "label": "to swim",
+                        "predicate": [
+                            "action:swim"
+                        ]
+                    }
+                ]
+            },
+            "stealth": {
+                "base": 18
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "sm"
             },

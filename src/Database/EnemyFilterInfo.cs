@@ -27,7 +27,7 @@ public partial class EnemyFilterInfo : Node
     Godot.Collections.Dictionary resistances;
     Godot.Collections.Dictionary weaknesses;
 
-    string alignment;
+    string alignment = "";
     string rarity;
     string size;
 
@@ -36,18 +36,21 @@ public partial class EnemyFilterInfo : Node
     public EnemyFilterInfo(JObject enemyData, string fileLocation)
     {
         fileReference = fileLocation;
-        source = (string)enemyData["system"]["details"]["source"]["value"];
-        if (!sources.Contains(source))
-        {
-            sources.Add(source);
-        }
-
         // Adds the system for easier data retrieval here
         JObject enemySystemData = (JObject)enemyData["system"]["attributes"];
         JObject enemyTraits = (JObject)enemyData["system"]["traits"];
         JObject enemySpeed = (JObject)enemySystemData["speed"];
 
-
+        JObject details = (JObject)enemyData["system"]["details"];
+        if (details.ContainsKey("source")) {
+            source = (string)details["source"]["value"];
+        } else {
+            source = (string)details["publication"]["title"];
+        }
+        if (!sources.Contains(source))
+        {
+            sources.Add(source);
+        }
         enemyName = (string)enemyData["name"];
         level = (int)enemyData["system"]["details"]["level"]["value"];
         hp = (int)enemySystemData["hp"]["max"];
@@ -70,7 +73,11 @@ public partial class EnemyFilterInfo : Node
         };
         savingThrows = JObjectToDictionary(jObjectSavingThrows);
 
-        perception = (int)enemyData["system"]["attributes"]["perception"]["value"];
+        if (enemySystemData.ContainsKey("perception")) {
+            perception = (int)enemyData["system"]["attributes"]["perception"]["value"];
+        } else {
+            perception = (int)enemyData["system"]["perception"]["mod"];
+        }
 
         JObject jObjectSpeed = new JObject
         {
@@ -125,8 +132,10 @@ public partial class EnemyFilterInfo : Node
         }
         resistances = JObjectToDictionary(jObjectResistances);
 
-
-        alignment = (string)enemyData["system"]["details"]["alignment"]["value"];
+        if (details.ContainsKey("alignment")) {
+            alignment = (string)details["alignment"]["value"];
+        }
+        
         rarity = (string)enemyTraits["rarity"];
 
         string traitSize = (string)enemyTraits["size"]["value"];

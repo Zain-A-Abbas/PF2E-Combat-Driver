@@ -1,6 +1,5 @@
 {
     "_id": "dMcQ1v7uuNpH4cMy",
-    "folder": "g3lhiqVSkZq3BzkU",
     "img": "systems/pf2e/icons/default-icons/hazard.svg",
     "items": [
         {
@@ -17,21 +16,17 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage ([[/r 10[bludgeoning]]] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.Grab an Edge] reaction to avoid falling.</p>"
+                    "value": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]|options:fall-damage] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.Grab an Edge] reaction to avoid falling.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -69,17 +64,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep. Knives are arrayed at the bottom of the trap, impaling anyone who falls on them.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (trained) to remove the trapdoor</p>",
+            "disable": "<p>@Check[thievery|dc:18] (trained) to remove the trapdoor</p>",
             "isComplex": false,
             "level": {
                 "value": 2
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: A Few Flowers More"
+            },
             "reset": "<p>Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become @UUID[Compendium.pf2e.conditionitems.Item.Hidden] again.</p>",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Adventure: A Few Flowers More"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

@@ -8,9 +8,6 @@
             "name": "Wooden Sickle",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
@@ -18,8 +15,11 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0
+                },
                 "category": "simple",
-                "containerId": "null",
+                "containerId": null,
                 "damage": {
                     "damageType": "slashing",
                     "dice": 1,
@@ -33,9 +33,6 @@
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": null,
                 "hardness": 0,
                 "hp": {
@@ -45,32 +42,17 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 2,
                 "range": null,
@@ -78,17 +60,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -100,9 +80,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
@@ -136,11 +113,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -156,52 +135,10 @@
             "type": "melee"
         },
         {
-            "_id": "dHjLu0FT6W2dW3CX",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "5DBN87hpFj2XZAQ6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Critical Vulnerability",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -213,23 +150,16 @@
                 "description": {
                     "value": "<p>A critical hit damages the construct's controls, making it @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} until repaired. Additional critical hits increase this value, up to @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 4}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -238,7 +168,7 @@
             "_id": "osmMe7CjPJ5aSchj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ridden Construct",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -248,25 +178,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Leaf Leshy] who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+                    "value": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Leaf Leshy] who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -275,7 +198,7 @@
             "_id": "Vanay4ZCKF6BnhJx",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Menacing Sickles",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -285,10 +208,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The construct deals an additional 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] or @UUID[Compendium.pf2e.conditionitems.Item.Prone] creatures.</p>"
+                    "value": "<p>The construct deals an additional 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] or @UUID[Compendium.pf2e.conditionitems.Item.Prone] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -299,7 +224,7 @@
                         "predicate": [
                             {
                                 "or": [
-                                    "target:condition:flat-footed",
+                                    "target:condition:off-guard",
                                     "target:condition:prone"
                                 ]
                             }
@@ -308,84 +233,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "qdhiANOcFCkiF4Vn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bVXPIPV5kAA1PEbd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Trip",
-                        "predicate": [
-                            "action:trip"
-                        ],
-                        "selector": "athletics",
-                        "type": "untyped",
-                        "value": 1
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+6 to trip",
-                        "options": "action:trip"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sicklehand Construct",
@@ -425,12 +278,6 @@
                 "value": 15
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
@@ -443,19 +290,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 0
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #169: Kindled Magic"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #169: Kindled Magic"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -472,16 +333,25 @@
                 "value": 4
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 7
+            },
+            "athletics": {
+                "base": 5,
+                "special": [
+                    {
+                        "base": 6,
+                        "label": "to trip",
+                        "predicate": [
+                            "action:trip"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "med"
             },

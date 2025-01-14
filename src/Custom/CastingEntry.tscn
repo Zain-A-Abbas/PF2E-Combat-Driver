@@ -1,0 +1,215 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyso54l1koj0t"]
+
+[ext_resource type="Script" path="res://Custom/CastingEntry.gd" id="1_c7e22"]
+[ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="1_o8m8n"]
+[ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="2_4dgqn"]
+
+[node name="CastingEntry" type="MarginContainer"]
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+script = ExtResource("1_c7e22")
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EntryNameField" parent="VBoxContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Casting Entry"
+minimum_character_width = 20
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="SpellDCField" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Spell DC"
+numbers_only = true
+
+[node name="SpellAttackField" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Spell Attack"
+numbers_only = true
+
+[node name="SpellFieldsPanel" type="PanelContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_4dgqn")
+
+[node name="SpellFieldsContainer" type="VBoxContainer" parent="VBoxContainer/SpellFieldsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CantripsField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Cantrips"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField" index="0"]
+text = "Cantrips"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="1stRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "1st"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "1st"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="2ndRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "2nd"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "2nd"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="3rdRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "3rd"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "3rd"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="4thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "4th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "4th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="5thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "5th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "5th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="6thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "6th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "6th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="7thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "7th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "7th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="8thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "8th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "8th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="9thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "9th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "9th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="10thRankField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "10th"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "10th"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[node name="ConstantSpellsField" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer" instance=ExtResource("1_o8m8n")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Constant"
+minimum_character_width = 24
+
+[node name="Label" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField" index="0"]
+custom_minimum_size = Vector2(32, 0)
+text = "Constant"
+
+[node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField" index="1"]
+theme_override_constants/minimum_character_width = 24
+
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/3rdRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/4thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/5thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/6thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/7thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/8thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/9thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/10thRankField"]
+[editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField"]

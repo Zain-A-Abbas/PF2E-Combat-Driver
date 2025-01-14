@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 30,
                     "mod": 0,
@@ -107,42 +44,31 @@
         },
         {
             "_id": "yyBoNiTIfir3v6ch",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD"
             },
             "img": "systems/pf2e/icons/spells/feeblemind.webp",
             "name": "Feeblemind",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through remove curse or another effect that targets curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 4} with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as -5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 6
@@ -151,57 +77,34 @@
                     "heightenedLevel": 6,
                     "value": "pxo58rpWswvZtQUs"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "feeblemind",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "curse",
-                        "enchantment",
                         "incapacitation",
+                        "manipulate",
                         "mental"
                     ]
                 }
@@ -210,52 +113,37 @@
         },
         {
             "_id": "RCIZETLYwodRL8zC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG"
             },
-            "img": "systems/pf2e/icons/spells/shadow-blast.webp",
+            "img": "icons/magic/unholy/beam-impact-purple.webp",
             "name": "Shadow Blast",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "untyped"
-                            },
-                            "value": "5d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "5d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a @Template[type:cone|distance:30], a @Template[type:burst|distance:15] within 120 feet, or a @Template[type:line|distance:50]. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
+                    "value": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a @Template[cone|distance:30], a @Template[burst|distance:15] within 120 feet, or a @Template[line|distance:50]. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -271,9 +159,6 @@
                     "heightenedLevel": 6,
                     "value": "pxo58rpWswvZtQUs"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "UTMlHk0o5FXLlwwM": {
                         "_id": "UTMlHk0o5FXLlwwM",
@@ -281,8 +166,11 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "save": {
-                                "value": "will"
+                            "defense": {
+                                "save": {
+                                    "basic": false,
+                                    "statistic": "will"
+                                }
                             }
                         }
                     },
@@ -292,58 +180,41 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "save": {
-                                "value": "reflex"
+                            "defense": {
+                                "save": {
+                                    "basic": false,
+                                    "statistic": "reflex"
+                                }
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "shadow-blast",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
-                        "evocation",
+                        "concentrate",
+                        "manipulate",
                         "shadow"
                     ]
                 }
@@ -352,42 +223,26 @@
         },
         {
             "_id": "qqMPnhkqfp4uSfDm",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
             },
             "img": "systems/pf2e/icons/spells/tongues.webp",
             "name": "Tongues (Constant)",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -396,56 +251,33 @@
                     "heightenedLevel": 5,
                     "value": "pxo58rpWswvZtQUs"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "tongues",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
+                    ],
                     "value": [
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -453,42 +285,26 @@
         },
         {
             "_id": "Q1s2CvsD8QLksHU5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4"
             },
             "img": "systems/pf2e/icons/spells/haste.webp",
             "name": "Haste",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Magic empowers the target to act faster. It gains the @UUID[Compendium.pf2e.conditionitems.Item.Quickened] condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -507,56 +323,33 @@
                     "heightenedLevel": 6,
                     "value": "pxo58rpWswvZtQUs"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "haste",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -564,42 +357,26 @@
         },
         {
             "_id": "mWvXOFAFwyFMxnwS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb"
             },
             "img": "systems/pf2e/icons/spells/false-life.webp",
             "name": "False Life",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You create a reservoir of vitality from necromantic energy, gaining a number of temporary Hit Points equal to 6 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The temporary Hit Points increase by 3.</p>"
+                    "value": "<p>You create a reservoir of vitality from necromantic energy, gaining a number of temporary Hit Points equal to 6 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The temporary Hit Points increase by 3.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: False Vitality]{Spell Effect: False Life}</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "8 hours"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -608,55 +385,32 @@
                     "heightenedLevel": 6,
                     "value": "pxo58rpWswvZtQUs"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "false-life",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "necromancy"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -690,11 +444,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -711,57 +467,13 @@
             "type": "melee"
         },
         {
-            "_id": "PfPUM4KKIsoFKMxV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "I3IBzx4155jNdX79",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.GgmLWLBLGaFvunTS"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.GgmLWLBLGaFvunTS"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Thoughtsense 100 feet",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -773,38 +485,31 @@
                 "description": {
                     "value": "<p>Taviah senses non-mindless creatures within 100 feet as a precise sense.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-vetalarana-basic-thoughtsense-100-feet",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "BHMFrv9DRVacWw7j",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -816,37 +521,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "42LlXmqaBOnT8ReR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Fast Healing 10",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -858,8 +554,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -869,67 +567,9 @@
                     }
                 ],
                 "slug": "fast-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "2uBOm2j5cGaxr2cN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 1200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -938,7 +578,7 @@
             "_id": "i8WqztrmqL8eHOTi",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Magaambya Scar",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -950,34 +590,28 @@
                 "description": {
                     "value": "<p>A physical attack on Taviah that scores a critical hit exacerbates the injury in her wounded leg; in addition to the other effects of the critical hit, Taviah is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XlOilQx1kVU4hWjH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.268Q7HdtylwpznvG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.268Q7HdtylwpznvG"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Mental Rebirth",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -988,42 +622,35 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>Unlike most other undead, a vetalarana isn't destroyed when they reach 0 HP. Instead, their body is destroyed, crumbling to ash, and their mind is immediately transferred into a creature they rendered comatose through Drain Thoughts. This creature must be within 1 mile; if no such creature is in range, the vetalarana is destroyed. The creature becomes controlled by the vetalarana and loses the stupefied and @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] conditions. If the creature controlled by a vetalarana in this way is killed, the vetalarana's mind transfers to another creature within 1 mile who they rendered comatose through Drain Thoughts.</p>\n<p>Taviah has no comatose creatures to transfer her consciousness to.</p>\n<p>After [[/r 1d6 #Days]]{1d6 days} of being controlled, the controlled creature dies, and its body transforms into that of the vetalarana who rendered it comatose.</p>"
+                    "value": "<p>Unlike most other undead, a vetalarana isn't destroyed when they reach 0 HP. Instead, their body is destroyed, crumbling to ash, and their mind is immediately transferred into a creature they rendered comatose through Drain Thoughts. This creature must be within 1 mile; if no such creature is in range, the vetalarana is destroyed. The creature becomes controlled by the vetalarana and loses the stupefied and @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] conditions. If the creature controlled by a vetalarana in this way is killed, the vetalarana's mind transfers to another creature within 1 mile who they rendered comatose through Drain Thoughts.</p>\n<p>Taviah has no comatose creatures to transfer her consciousness to.</p>\n<p>After [[/gmr 1d6 #Days]]{1d6 days} of being controlled, the controlled creature dies, and its body transforms into that of the vetalarana who rendered it comatose.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-vetalarana-basic-mental-rebirth",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
                         "incapacitation",
                         "mental",
-                        "necromancy",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "SHGUwZ4U82CZ7QS6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.rwEFqSLw4yIscGrO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.rwEFqSLw4yIscGrO"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Vetalarana Vulnerabilities",
-            "sort": 1500000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1033,22 +660,78 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>All vetalaranas possess the following weaknesses.</p>\n<ul>\n<li><strong>Barred Senses</strong> A vetalarana can't see or sense through force effects or cold iron, and their mind can't penetrate force effects or cold iron. Such barriers can prevent the transference of a vetalarana's mind through Mental Rebirth.</li>\n<li><strong>Revulsion</strong> A vetalarana delights in consuming memories and secrets, and is disgusted by those who share such sensitive tidbits openly. A vetalarana can't voluntarily come within 10 feet of a creature loudly voicing their intimate personal secrets or most cherished memories aloud. Speaking such information aloud with conviction is a single action that has the auditory, concentrate, and linguistic traits, and protects the creature until the start of its next turn. A vetalarana that involuntarily comes within 10 feet of a creature sharing such information gains the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition until they're 10 feet or farther from the creature. After 1 round of being exposed to the secrets of a creature, a vetalarana can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Vulnerable to Brain Destruction</strong> A vetalarana whose brain has been destroyed, or is reduced to 0 HP while unable to take mental actions, can't use Mental Rebirth.</li>\n</ul>"
+                    "value": "<p>All vetalaranas possess the following weaknesses.</p>\n<ul>\n<li><strong>Barred Senses</strong> A vetalarana can't see or sense through force effects or cold iron, and their mind can't penetrate force effects or cold iron. Such barriers can prevent the transference of a vetalarana's mind through Mental Rebirth.</li>\n<li><strong>Revulsion</strong> A vetalarana delights in consuming memories and secrets, and is disgusted by those who share such sensitive tidbits openly. A vetalarana can't voluntarily come within 10 feet of a creature loudly voicing their intimate personal secrets or most cherished memories aloud. Speaking such information aloud with conviction is a single action that has the auditory, concentrate, and linguistic traits, and protects the creature until the start of its next turn. A vetalarana that involuntarily comes within 10 feet of a creature sharing such information gains the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition until they're 10 feet or farther from the creature. After 1 round of being exposed to the secrets of a creature, a vetalarana can attempt a @Check[will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/gmr 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Vulnerable to Brain Destruction</strong> A vetalarana whose brain has been destroyed, or is reduced to 0 HP while unable to take mental actions, can't use Mental Rebirth.</li>\n</ul>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "exceptions": [
+                            {
+                                "definition": [
+                                    "damage:type:bludgeoning",
+                                    {
+                                        "or": [
+                                            "damage:material:cold-iron",
+                                            "damage:material:sovereign-steel"
+                                        ]
+                                    }
+                                ],
+                                "label": "PF2E.IWR.Custom.ColdIronBludgeoning"
+                            }
+                        ],
+                        "key": "Resistance",
+                        "type": "physical",
+                        "value": 10
+                    }
+                ],
                 "slug": "vampire-vetalarana-basic-vetalarana-vulnerabilities",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "2uBOm2j5cGaxr2cN",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 1400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -1057,7 +740,7 @@
             "_id": "lvjyAr09tNp3BfPF",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Bonds of Iron",
-            "sort": 1600000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1069,8 +752,15 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Taviah can cause a cage built of cold-iron fingernails to spring from nothingness around a target at a range of up to 30 feet, attempting an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] against the target's Fortitude DC. If the target has a weakness to cold iron, Taviah gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Taviah doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature escapes (DC 29), causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it; it has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1090,33 +780,24 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack",
-                        "conjuration",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "tUur14bXK0CP1S6Y",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.EpDyZ0mG9beLkBna"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.EpDyZ0mG9beLkBna"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Drain Thoughts",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1126,40 +807,33 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], @UUID[Compendium.pf2e.conditionitems.Item.Restrained], @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], or willing creature is within Taviah's reach</p>\n<hr />\n<p><strong>Effect</strong> Taviah seizes a creature and consumes its memories. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} if Taviah's Athletics check is a critical success), and Taviah regains [[/r 18 #Healing]] Hit Points, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to Taviah but increases the victim's stupefied value by 1. Additionally, Taviah views one of the victim's memories, and can choose to alter, enhance, or erase the memory she views as a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Modify Memory]</em> spell. A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 5} in this way is rendered comatose until Taviah is destroyed, becoming permanently unconscious. While unconscious, its stupefied condition doesn't decrease.</p>"
+                    "value": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], @UUID[Compendium.pf2e.conditionitems.Item.Restrained], @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], or willing creature is within Taviah's reach</p>\n<hr />\n<p><strong>Effect</strong> Taviah seizes a creature and consumes its memories. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} if Taviah's Athletics check is a critical success), and Taviah regains @Damage[18[healing]] Hit Points, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to Taviah but increases the victim's stupefied value by 1. Additionally, Taviah views one of the victim's memories, and can choose to alter, enhance, or erase the memory she views as a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.Rewrite Memory] spell. A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 5} in this way is rendered comatose until Taviah is destroyed, becoming permanently unconscious. While unconscious, its stupefied condition doesn't decrease.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-vetalarana-basic-drain-thoughts",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "oNEcLYST1r5V2Ts9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.yfNDFjz7VBvvLwee"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.yfNDFjz7VBvvLwee"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Paralyzing Claws",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1169,40 +843,33 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Any living creature hit by Taviah's claw Strike must succeed at a @Check[type:fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. The target can attempt a new save at the end of each of its turns to end the effect, and the DC cumulatively decreases by 1 on each such save.</p>"
+                    "value": "<p>Any living creature hit by Taviah's claw Strike must succeed at a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. The target can attempt a new save at the end of each of its turns to end the effect, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Book of the Dead"
                 },
                 "rules": [],
                 "slug": "vampire-vetalarana-manipulator-paralyzing-claws",
-                "source": {
-                    "value": "Pathfinder Book of the Dead"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation",
-                        "necromancy",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "bpogTlDeNIcDPRhi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Rend (Claw)",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1214,37 +881,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "rend",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "EpLcb6aeTkuZpYrL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 2000000,
+            "sort": 1900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1256,226 +914,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "tmSbRXHnbQvXikqF",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Arcana",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "cuPF6nTQTHSvNMH5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Grapple",
-                        "predicate": [
-                            "action:grapple"
-                        ],
-                        "selector": "athletics",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+25 to Grapple",
-                        "options": "action:grapple"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "FNCIvDcQckYWNh1m",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "uODkEoz44V0CegMf",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "PfDvKshGIBF02idl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "fb08T23IBn2quDPe",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "qE5edGKa5P9e1FxH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "URDpmNHBKuncOP0d",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Vampire Taviah",
@@ -1509,7 +960,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "fast healing 10, negative healing",
+                "details": "fast healing 10, void healing",
                 "max": 180,
                 "temp": 0,
                 "value": 180
@@ -1531,23 +982,9 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 23
-            },
             "resistances": [
                 {
                     "type": "mental",
-                    "value": 10
-                },
-                {
-                    "exceptions": [
-                        "cold-iron",
-                        "bludgeoning"
-                    ],
-                    "type": "physical",
                     "value": 10
                 }
             ],
@@ -1562,19 +999,44 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Female vetalarana vampire annis hag",
-            "creatureType": "",
+            "languages": {
+                "details": "tongues",
+                "value": [
+                    "aklo",
+                    "common",
+                    "jotun",
+                    "mwangi",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #183: Field of Maidens"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #183: Field of Maidens"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 23,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 100,
+                    "type": "thoughtsense"
+                },
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1591,27 +1053,50 @@
                 "value": 22
             }
         },
-        "traits": {
-            "languages": {
-                "custom": "Tongues",
-                "selected": [],
-                "value": [
-                    "aklo",
-                    "common",
-                    "jotun",
-                    "mwangi",
-                    "necril"
+        "skills": {
+            "arcana": {
+                "base": 21
+            },
+            "athletics": {
+                "base": 23,
+                "special": [
+                    {
+                        "base": 25,
+                        "label": "to Grapple",
+                        "predicate": [
+                            "action:grapple"
+                        ]
+                    }
                 ]
             },
-            "rarity": "unique",
-            "senses": {
-                "value": "darkvision, thoughtsense"
+            "crafting": {
+                "base": 21
             },
+            "deception": {
+                "base": 21
+            },
+            "intimidation": {
+                "base": 23
+            },
+            "occultism": {
+                "base": 21
+            },
+            "religion": {
+                "base": 19
+            },
+            "stealth": {
+                "base": 21
+            }
+        },
+        "traits": {
+            "rarity": "unique",
             "size": {
                 "value": "lg"
             },
             "value": [
+                "evil",
                 "undead",
+                "unholy",
                 "vampire"
             ]
         }

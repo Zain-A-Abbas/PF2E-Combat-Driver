@@ -18,20 +18,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A living creature other than a wendigo gains the @UUID[Compendium.pf2e.conditionitems.Item.Frightened] condition while within 100 feet of the way station</p>\n<hr />\n<p><strong>Effect</strong> The haunt rolls for initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -54,17 +50,19 @@
                 "damageRolls": {
                     "p9qpohxaaga0ym0mofgp": {
                         "damage": "3d6+5",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -119,7 +117,7 @@
                         "fire",
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 20
@@ -133,17 +131,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>The shadows of four xulgaths endlessly relive their deaths at the hands of the wendigos and their clutchmates.</p>",
-            "disable": "<p>@Check[type:religion|dc:42|name:Calm a Spirit|traits:haunt] (master) or @Check[type:occultism|dc:42|name:Calm a Spirit|traits:haunt] (master) to calm each of the four spirits. On a character's first successful check, the character also learns that xulgath funerary rites typically involve cremation, which hints that fire is a viable way to put them to rest.</p>",
+            "disable": "<p>@Check[religion|dc:42|name:Calm a Spirit|traits:haunt] (master) or @Check[occultism|dc:42|name:Calm a Spirit|traits:haunt] (master) to calm each of the four spirits. On a character's first successful check, the character also learns that xulgath funerary rites typically involve cremation, which hints that fire is a viable way to put them to rest.</p>",
             "isComplex": true,
             "level": {
                 "value": 16
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #156: The Apocalypse Prophet"
+            },
             "reset": "<p>The haunt is deactivated and resets 1 minute after all non-wendigo creatures leave the area.</p>",
-            "routine": "<p>(4 actions) Each active spirit chooses a living non-wendigo creature within 120 feet and attempts to devour it, targeting different creatures if possible. Each calmed spirit reduces the hazard's actions by 1</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #156: The Apocalypse Prophet"
-            }
+            "routine": "<p>(4 actions) Each active spirit chooses a living non-wendigo creature within 120 feet and attempts to devour it, targeting different creatures if possible. Each calmed spirit reduces the hazard's actions by 1</p>"
         },
         "saves": {
             "fortitude": {

@@ -1,0 +1,48 @@
+{
+    "_id": "ekpt4mFw1kJkZ2pK",
+    "img": "icons/magic/fire/flame-burning-campfire-rocks.webp",
+    "name": "Effect: Tenacious Flames",
+    "system": {
+        "description": {
+            "value": "<p>Creatures in the emanation cannot recover from persistent fire damage.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 2"
+        },
+        "rules": [
+            {
+                "adjustment": {
+                    "criticalSuccess": "to-failure",
+                    "success": "to-failure"
+                },
+                "key": "AdjustDegreeOfSuccess",
+                "predicate": [
+                    "item:damage:type:fire"
+                ],
+                "selector": "pd-recovery-check"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

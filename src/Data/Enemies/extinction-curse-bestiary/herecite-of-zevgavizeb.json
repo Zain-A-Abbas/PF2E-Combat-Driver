@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,34 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
                     "slot1": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot2": {
                         "max": 3,
-                        "prepared": [],
                         "value": 3
                     },
                     "slot3": {
                         "max": 3,
-                        "prepared": [],
                         "value": 3
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot5": {
                         "max": 1,
-                        "prepared": [],
                         "value": 1
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 28,
                     "mod": 0,
@@ -118,7 +72,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "focus"
@@ -126,79 +79,23 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
                     "slot1": {
                         "max": 2,
-                        "prepared": [],
                         "value": 2
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     },
                     "slot4": {
                         "max": 2,
-                        "prepared": [],
                         "value": 2
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 28,
                     "mod": 0,
@@ -212,42 +109,31 @@
         },
         {
             "_id": "y4FzMRUJzi32QlMi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.VDWIZuLOJqwBthHc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VDWIZuLOJqwBthHc"
             },
-            "img": "systems/pf2e/icons/spells/ravening-maw.webp",
+            "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
             "name": "Ravening Maw",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You evoke Zevgavizeb's unceasing hunger and inflict it upon your target. The target becomes overwhelmed with cannibalistic hunger and can restore its vitality by feasting on the flesh of the fallen. On its turn, the target can use 2 actions (these actions have the manipulate trait) to cannibalize an adjacent @UUID[Compendium.pf2e.conditionitems.Item.Dying] or dead creature. If the cannibalized creature is Dying, it dies. If the cannibalized creature is an ally of the target, the target regains 5d8 HP; otherwise, the target regains 5d4 HP. Certain monsters (such as those whose blood is acidic or magical) might inflict additional effects on those who cannibalize them at the GM's discretion. Once cannibalized, a particular creature's body doesn't have enough meat to cannibalize again. During any round that there's a Dying or dead creature within 30 feet of the target, if the target can't or doesn't cannibalize a creature, the target takes 5d4 mental damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of HP restored by cannibalizing a creature increases by 1d8 for eating an ally and 1d4 otherwise, and the mental damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "3 rounds"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -256,59 +142,35 @@
                     "heightenedLevel": 5,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #153: Life's Long Shadows"
                 },
                 "range": {
                     "value": "60 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ravening-maw",
-                "source": {
-                    "value": "Pathfinder #153: Life's Long Shadows"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "one living creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
+                    ],
                     "value": [
+                        "concentrate",
                         "evil",
                         "healing",
-                        "necromancy"
+                        "manipulate"
                     ]
                 }
             },
@@ -316,42 +178,26 @@
         },
         {
             "_id": "KrtEaB90Y09xK7CE",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.eG1fBodYwolaXK98"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.eG1fBodYwolaXK98"
             },
             "img": "systems/pf2e/icons/spells/enduring-might.webp",
             "name": "Enduring Might",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p><strong>Trigger</strong> An attack or effect would deal damage to you.</p>\n<hr />\n<p>Your own might mingles with divine power to protect you. You gain resistance equal to 8 plus your Strength modifier against all damage from the triggering attack or effect.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Enduring Might]</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The resistance increases by 2.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {}
@@ -362,54 +208,30 @@
                 "location": {
                     "value": "Fkch2WMm3nRHukfN"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "enduring-might",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "reaction"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
-                        "divine",
-                        "abjuration"
+                        "focus",
+                        "manipulate"
                     ]
                 }
             },
@@ -417,52 +239,37 @@
         },
         {
             "_id": "7i3V9wwStai63E2H",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.vSSKyUdrHu86E5Gk"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.vSSKyUdrHu86E5Gk"
             },
             "img": "systems/pf2e/icons/spells/natures-bounty.webp",
             "name": "Nature's Bounty",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "positive"
-                            },
-                            "value": "3d10+12"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d10+12",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "vitality"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>A palm-sized raw fruit or vegetable appears in your open hand. You choose the specific type of food. A creature can consume the food with an Interact action to regain 3d10+12 Hit Points and be nourished as if it had eaten a meal. If uneaten, the food rots and crumbles to dust after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The Hit Points restored increase by 6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -477,56 +284,32 @@
                 "location": {
                     "value": "Fkch2WMm3nRHukfN"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "natures-bounty",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
-                        "divine",
+                        "focus",
+                        "manipulate",
                         "plant",
-                        "positive",
-                        "conjuration"
+                        "vitality"
                     ]
                 }
             },
@@ -534,50 +317,41 @@
         },
         {
             "_id": "n04kXQMfSPvOrlKb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa"
             },
-            "img": "systems/pf2e/icons/spells/crisis-of-faith.webp",
+            "img": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
             "name": "Crisis of Faith",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "mental"
-                            },
-                            "value": "6d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "6d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "mental"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
                     }
                 },
                 "description": {
                     "value": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -593,55 +367,32 @@
                     "heightenedLevel": 3,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "crisis-of-faith",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "mental",
-                        "enchantment"
+                        "concentrate",
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -649,42 +400,26 @@
         },
         {
             "_id": "gmWHXJaWjVC3zovq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P"
             },
-            "img": "systems/pf2e/icons/spells/meld-into-stone.webp",
+            "img": "icons/magic/earth/strike-fist-stone-light.webp",
             "name": "Meld into Stone",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You merge with an adjacent block of stone with enough volume to fit you and your worn and held possessions. You must touch the stone when you Cast the Spell. You can hear, but not see, what's going on outside the stone, and you can cast spells while in the stone as long as they don't require line of effect beyond the stone.</p>\n<p>Significant physical damage to the stone while you are inside it expels you and deals 10d6 damage to you. Passwall expels you without dealing damage and ends meld into stone. You can Dismiss this spell.</p>"
+                    "value": "<p>You merge with an adjacent block of stone with enough volume to fit you and your worn and held possessions. You must touch the stone when you Cast the Spell. You can hear, but not see, what's going on outside the stone, and you can cast spells while in the stone as long as they don't require line of effect beyond the stone.</p>\n<p>Significant physical damage to the stone while you are inside it expels you and deals 10d6 damage to you. Passwall expels you without dealing damage and ends <em>one with stone</em>. You can Dismiss this spell.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 3
@@ -693,56 +428,33 @@
                     "heightenedLevel": 3,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "meld-into-stone",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "earth",
-                        "transmutation"
+                        "manipulate"
                     ]
                 }
             },
@@ -750,45 +462,29 @@
         },
         {
             "_id": "ijjCadEM1uIMqSia",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN"
             },
-            "img": "systems/pf2e/icons/spells/consecrate.webp",
+            "img": "icons/magic/holy/chalice-glowing-gold-water.webp",
             "name": "Consecrate",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 40
                 },
-                "category": {
-                    "value": "ritual"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
-                    "value": "rare incense and offerings worth a total value of 20 gp × the spell level"
+                    "value": "rare incense and offerings worth a total value of 20 gp × the spell rank"
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for @UUID[Compendium.pf2e.deities.Item.Pharasma] or @UUID[Compendium.pf2e.deities.Item.Sarenrae]) take a -1 status penalty to those checks. Attacks made by worshippers of your deity within the area deal 1 damage of one of your deity's alignment types (your choice); if your deity is true neutral, you don't gain this benefit.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.Dimensional Lock]</em> spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell level.</p>"
+                    "value": "<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for @UUID[Compendium.pf2e.deities.Item.Pharasma] or @UUID[Compendium.pf2e.deities.Item.Sarenrae]) take a -1 status penalty to those checks. Attacks made by worshippers of your deity within the area deal 1 damage of one of your deity's alignment types (your choice); if your deity is true neutral, you don't gain this benefit.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Planar Seal] spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 year"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -796,54 +492,37 @@
                 "location": {
                     "value": null
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": "Religion"
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "40 feet"
                 },
+                "requirements": "",
+                "ritual": {
+                    "primary": {
+                        "check": "Religion"
+                    },
+                    "secondary": {
+                        "casters": 0,
+                        "checks": "Crafting, Performance"
+                    }
+                },
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": "2, must be worshippers of your religion"
-                },
-                "secondarycheck": {
-                    "value": "Crafting, Performance"
-                },
                 "slug": "consecrate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3 days"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
-                        "consecration",
-                        "evocation"
+                        "consecration"
                     ]
                 }
             },
@@ -851,45 +530,29 @@
         },
         {
             "_id": "ZOnVGJriwQLDAsWo",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c"
             },
             "img": "systems/pf2e/icons/spells/darkness.webp",
             "name": "Darkness",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's level or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.Concealed].</p>"
+                    "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.Concealed].</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -902,58 +565,35 @@
                     },
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "darkness",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "darkness",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -961,42 +601,26 @@
         },
         {
             "_id": "7PaVXiDCwao2ZHou",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI"
             },
-            "img": "systems/pf2e/icons/spells/athletic-rush.webp",
+            "img": "icons/magic/control/buff-strength-muscle-damage.webp",
             "name": "Athletic Rush",
             "sort": 1000000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Your body fills with physical power and skill.</p>\n<p>You gain a +10-foot status bonus to Speed and a +2 status bonus to Athletics checks. As a part of Casting this Spell, you can use a Stride, Leap, Climb, or Swim action. The spell's bonuses apply during that action.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Athletic Rush]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 round"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1004,54 +628,30 @@
                 "location": {
                     "value": "Fkch2WMm3nRHukfN"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "athletic-rush",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
-                        "divine",
-                        "transmutation"
+                        "focus",
+                        "manipulate"
                     ]
                 }
             },
@@ -1059,45 +659,29 @@
         },
         {
             "_id": "0uWgmxpffv5a1h3J",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv"
             },
             "img": "systems/pf2e/icons/spells/detect-alignment.webp",
             "name": "Detect Alignment (Constant) (Good Only)",
             "sort": 1100000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1106,57 +690,33 @@
                     "heightenedLevel": 5,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "detect-alignment",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "uncommon",
-                    "value": [
-                        "detection",
+                    "traditions": [
                         "divine",
-                        "divination"
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "detection",
+                        "manipulate"
                     ]
                 }
             },
@@ -1164,51 +724,43 @@
         },
         {
             "_id": "JNfFOPN58ILPiAjU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
             },
             "img": "systems/pf2e/icons/spells/harm.webp",
             "name": "Harm (At-Will)",
             "sort": 1200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage",
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, verbal, somatic)</strong> You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+                    "value": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1224,9 +776,6 @@
                     "heightenedLevel": 3,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "4gyp3qlsv5ywdyjq": {
                         "_id": "4gyp3qlsv5ywdyjq",
@@ -1234,17 +783,15 @@
                         "overlayType": "override",
                         "sort": 3,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "value": "1d8+8"
-                                    }
+                                "0": {
+                                    "formula": "1d8+8",
+                                    "kinds": [
+                                        "healing"
+                                    ]
                                 }
                             },
+                            "defense": null,
                             "heightening": {
                                 "damage": {
                                     "0": "1d8+8"
@@ -1253,18 +800,18 @@
                             "range": {
                                 "value": "30 feet"
                             },
-                            "save": {
-                                "basic": "",
-                                "value": ""
-                            },
-                            "spellType": {
-                                "value": "heal"
-                            },
                             "target": {
                                 "value": "1 willing undead creature"
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1273,9 +820,6 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true
-                            },
                             "range": {
                                 "value": "touch"
                             },
@@ -1293,11 +837,6 @@
                                 "type": "emanation",
                                 "value": 30
                             },
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "range": {
                                 "value": ""
                             },
@@ -1306,6 +845,13 @@
                             },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1315,9 +861,12 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
+                            "damage": {
+                                "0": {
+                                    "kinds": [
+                                        "damage"
+                                    ]
+                                }
                             },
                             "range": {
                                 "value": "30 feet"
@@ -1327,56 +876,42 @@
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "harm",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature or 1 willing undead creature"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -1384,42 +919,31 @@
         },
         {
             "_id": "o7TxXZaeJHdK7MFO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc"
             },
             "img": "systems/pf2e/icons/spells/ray-of-enfeeblement.webp",
             "name": "Ray of Enfeeblement",
             "sort": 1300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
+                    }
                 },
                 "description": {
                     "value": "<p>A ray that saps a foe's strength flashes from your hand. Attempt a ranged spell attack against the target. If you succeed, that creature attempts a Fortitude save to determine the spell's effect. If your attack roll is a critical success, use the outcome for one degree of success worse than the result of its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1}.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2}.</p>\n<p><strong>Critical Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3}.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1428,57 +952,34 @@
                     "heightenedLevel": 1,
                     "value": "2oeiSTDdWeqdi1Ew"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ray-of-enfeeblement",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "attack",
-                        "necromancy"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -1486,42 +987,26 @@
         },
         {
             "_id": "rpnplFZ5J97TnD2D",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.nnSipUPNd3sm5vYL"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.nnSipUPNd3sm5vYL"
             },
-            "img": "systems/pf2e/icons/spells/vibrant-thorns.webp",
+            "img": "icons/magic/nature/thorns-hand-glow-green.webp",
             "name": "Vibrant Thorns",
             "sort": 1400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>Your body sprouts a coat of brambly thorns that harm those that strike you and thrive on life magic. Adjacent creatures that hit you with a melee attack, as well as creatures that hit you with unarmed attacks, take 1 piercing damage each time they do. Anytime you cast a positive spell, the damage from your thorns increases to 1d6 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1, or 1d6 after you cast a positive spell.</p>"
+                    "value": "<p>Your body sprouts a coat of brambly thorns that thrive on life magic. Adjacent creatures that hit you with a melee attack, as well as creatures that hit you with unarmed attacks, take @Damage[(@item.rank)[piercing]] damage each time they do. Anytime you cast a vitality spell, the thorns' damage increases to @Damage[(@item.rank)d6[piercing]] until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1, or 1d6 after you cast a vitality spell.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1529,55 +1014,33 @@
                 "location": {
                     "value": "Fkch2WMm3nRHukfN"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "vibrant-thorns",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
+                        "focus",
+                        "manipulate",
                         "morph",
                         "plant",
-                        "transmutation"
+                        "wood"
                     ]
                 }
             },
@@ -1585,24 +1048,22 @@
         },
         {
             "_id": "teoYBsXeF4ePoNS9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.YFfG2fMyaIAXkmtr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.YFfG2fMyaIAXkmtr"
             },
             "img": "systems/pf2e/icons/equipment/weapons/spiked-gauntlet.webp",
             "name": "Spiked Gauntlet",
             "sort": 1500000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "spiked-gauntlet",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -1619,9 +1080,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "brawling",
                 "hardness": 0,
                 "hp": {
@@ -1631,34 +1089,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 3
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1666,32 +1109,26 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "spiked-gauntlet",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "evocation",
                         "free-hand",
                         "magical"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
@@ -1723,22 +1160,25 @@
                     },
                     "ysv7t0pn6qtvx9r4zkuw": {
                         "damage": "1d6",
-                        "damageType": "evil"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "free-hand"
+                        "free-hand",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -1748,52 +1188,10 @@
             "type": "melee"
         },
         {
-            "_id": "k0Pbu3xoSfQc9iEi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "oKvWxPQ1VdadXlOL",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Cabal",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1805,8 +1203,10 @@
                 "description": {
                     "value": "<p>Multiple herecites can form a cabal to gain increased magical abilities and defenses. A cabal consists of two to five herecites. The ritual to form a cabal (or to welcome new herecites into an existing cabal) requires 24 hours of worship, prayer, and vile sacrifice, after which point the herecites become magically bound to one another. All herecites in a cabal gain the cleric domain spells granted by each individual herecite's deity, and each herecite's focus pool increases to 3 Focus Points. As long as the cabal exists, herecites in the cabal gain a +2 status bonus to Perception checks and fast healing 10. These benefits persist as long as the cabal consists of two or more herecites that remain within 1 mile of one another.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1814,16 +1214,6 @@
                         "key": "RollOption",
                         "option": "in-a-cabal",
                         "toggleable": true
-                    },
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "upgrade",
-                        "path": "system.resources.focus.max",
-                        "predicate": [
-                            "in-a-cabal"
-                        ],
-                        "priority": 51,
-                        "value": 3
                     },
                     {
                         "key": "FastHealing",
@@ -1841,34 +1231,12 @@
                         "selector": "perception",
                         "type": "status",
                         "value": 2
-                    },
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "downgrade",
-                        "path": "system.resources.focus.max",
-                        "predicate": [
-                            {
-                                "nor": [
-                                    "in-a-cabal"
-                                ]
-                            }
-                        ],
-                        "value": 2
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1877,7 +1245,7 @@
             "_id": "iBalLMYNzfQfwcHn",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Herecite Deity",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1889,79 +1257,28 @@
                 "description": {
                     "value": "<p>A herecite is associated with one evil god and is always of the same alignment as that god. Whenever it wields its deity's favored weapon, that weapon gains the unholy rune. The herecite's creators select two domains from their deity; the herecite can cast the domain spells and the advanced domain spells from those domains as cleric focus spells. The herecite can cast the deity's other granted cleric spells as divine innate spells. Most herecites have 2 Focus Points in their focus pool. The herecite presented here is a herecite of Zevgavizeb.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "nyPjPPwEThfAJoow",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 2000000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "7jb5XLgHQFBJzvra",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 2100000,
+            "sort": 1900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1973,37 +1290,62 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "HAq5bDyta4z3yz98",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Perverse Prayer",
+            "sort": 2000000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p><strong>Trigger</strong> A creature within 30 feet uses the Sustain a Spell action to sustain a divine spell or the Cast a Spell action to cast a divine spell with a verbal component</p>\n<hr />\n<p><strong>Effect</strong> The herecite warps the caster's prayers into a sacrilegious echo praising the evils of its own deity. The triggering caster must succeed at a @Check[will|dc:29] saving throw or their spell is disrupted and their action wasted.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "auditory",
+                        "divine",
+                        "evil"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "gi1EHeu40BAEjrvS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 2200000,
+            "name": "Void Healing",
+            "sort": 2100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -2015,8 +1357,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -2027,59 +1371,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "HAq5bDyta4z3yz98",
-            "img": "systems/pf2e/icons/actions/Reaction.webp",
-            "name": "Perverse Prayer",
-            "sort": 2300000,
-            "system": {
-                "actionType": {
-                    "value": "reaction"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p><strong>Trigger</strong> A creature within 30 feet uses the Sustain a Spell action to sustain a divine spell or the Cast a Spell action to cast a divine spell with a verbal component</p>\n<hr />\n<p><strong>Effect</strong> The herecite warps the caster's prayers into a sacrilegious echo praising the evils of its own deity. The triggering caster must succeed at a @Check[type:will|dc:29] saving throw or their spell is disrupted and their action wasted.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "auditory",
-                        "divine",
-                        "evil"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -2088,7 +1382,7 @@
             "_id": "nN899egloBXvGHGV",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Assault the Soul",
-            "sort": 2400000,
+            "sort": 2200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -2098,30 +1392,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The herecite is in a cabal of three or more members, two of which are within 60 feet and have used Cabal Communion within the last round</p>\n<hr />\n<p><strong>Effect</strong> The herecite casts <em>@UUID[Compendium.pf2e.spells-srd.Item.Bind Soul]</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Spirit Blast]</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.Spiritual Epidemic]</em> (DC 31). Once a herecite has used this ability (whether or not it was successful), the cabal must wait 24 hours before one of its members can use Assault the Soul again.</p>"
+                    "value": "<p><strong>Requirements</strong> The herecite is in a cabal of three or more members, two of which are within 60 feet and have used Cabal Communion within the last round</p>\n<hr />\n<p><strong>Effect</strong> The herecite casts @UUID[Compendium.pf2e.spells-srd.Item.Seize Soul], @UUID[Compendium.pf2e.spells-srd.Item.Spirit Blast], or @UUID[Compendium.pf2e.spells-srd.Item.Spiritual Epidemic] (DC 31). Once a herecite has used this ability (whether or not it was successful), the cabal must wait 24 hours before one of its members can use Assault the Soul again.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "evil",
-                        "necromancy"
+                        "evil"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -2130,7 +1416,7 @@
             "_id": "PQ4Thk0ntFSWU7Gz",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Cabal Communion",
-            "sort": 2500000,
+            "sort": 2300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -2142,26 +1428,19 @@
                 "description": {
                     "value": "<p>With murmurs and chants, the herecite casts its consciousness toward the other members of its cabal. For 1 round, it senses what other members are sensing, knows their thoughts, and knows their exact location.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "concentrate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -2170,7 +1449,7 @@
             "_id": "luzb0P0GAIgFEHxS",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Curse of Defiled Idols",
-            "sort": 2600000,
+            "sort": 2400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -2180,16 +1459,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Recalling the cruelty of the foul ritual that birthed it, the herecite curses an enemy with a fragment of its blasphemy. The herecite targets one creature within 30 feet, which must attempt a @Check[type:will|dc:29] save. On a failure, the creature is cursed. As long as the creature is cursed, any art object, symbol, or implement of religious significance in the creature's possession-such as a divine spellcasting focus, holy text, fetish, or rendering of a deity-becomes physically corrupted in a way that debases the deity's tenets (a depiction of Shelyn's songbird, for example, might lose its beautiful plumage to reveal a hideous skeletal form beneath). While these items continue to function normally, the cursed creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupified 2} as long as it possesses an object corrupted in this fashion. The creature can cast off its corrupted objects to remove the stupefied condition, but any new religious objects it takes into its possession become similarly corrupted. The curse can be lifted by a remove curse spell or by an atone ritual. After a creature is targeted with this ability, regardless of whether it was affected, it becomes immune to herecites' Curse of Defiled Idols for 1 day.</p>"
+                    "value": "<p>Recalling the cruelty of the foul ritual that birthed it, the herecite curses an enemy with a fragment of its blasphemy. The herecite targets one creature within 30 feet, which must attempt a @Check[will|dc:29] save. On a failure, the creature is cursed. As long as the creature is cursed, any art object, symbol, or implement of religious significance in the creature's possession-such as a divine spellcasting focus, holy text, fetish, or rendering of a deity-becomes physically corrupted in a way that debases the deity's tenets (a depiction of Shelyn's songbird, for example, might lose its beautiful plumage to reveal a hideous skeletal form beneath). While these items continue to function normally, the cursed creature is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupified 2} as long as it possesses an object corrupted in this fashion. The creature can cast off its corrupted objects to remove the stupefied condition, but any new religious objects it takes into its possession become similarly corrupted. The curse can be lifted by a remove curse spell or by an atone ritual. After a creature is targeted with this ability, regardless of whether it was affected, it becomes immune to herecites' Curse of Defiled Idols for 1 day.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2197,90 +1475,15 @@
                         "divine",
                         "evil"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "4AFLHeG3wSuQ2giO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "iZRZWlngbbYp7FPB",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "oubEQ2b45AxAQp9c",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "tp9ORpYsDj2Yd3XE",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Zevgavizeb Lore",
-            "sort": 3000000,
+            "sort": 2500000,
             "system": {
                 "description": {
                     "value": ""
@@ -2291,11 +1494,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -2336,37 +1541,49 @@
                 "temp": 0,
                 "value": 200
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 20
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 10
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "diabolic",
+                    "draconic"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Secreted away in the dark corners of unnamed libraries, necromancer's dens, and heretical scriptoriums, obscure texts describe a horrifying ritual that combines sacrifice and suffering to create a powerful undead being known as a herecite. These monsters, stripped of personal will or desire, are born into the service of an evil god whom they worship unerringly and untiringly, often in spite of any opposing religious leanings they may have had in life. Every herecite harbors an unquenchable self-hatred because it was defiled by such a foul resurrection-a rage it turns outward in an attempt to rob others of their faith and lives.</p>\n<p>Herecites often outlast the cults that create them. Stranded herecites are drawn to others of their kind, even if they are dedicated to different evil deities, and when brought together they perform rites to magically bind themselves in a group known as a cabal. While cabal members share enhanced magic and defenses, induction into a cabal appears to hold even deeper significance for herecites. The presence of others of their kind with whom they can pray-in verses warped to venerate wicked gods-seems the only solace these tormented beings can find in undeath. Such a fellowship of sorrow is nigh unbreakable, as many an overzealous crusader has discovered far too late.</p>\n<p>Customarily found within heavily modified temples to the pantheon of gods they collectively worship, herecites act in service to their creators or as protectors of unholy ground. High priests of different evil gods may even trade herecites among themselves, allowing their minions to form cabals strengthened by their varied faiths. A lone herecite cut off from its creators-often because it is the sole remnant of a destroyed temple or its master has perished-may wander far and wide in search of a cabal to join. Other times, the herecite seeks out a place sacred to the deity it worshipped in life. Whether motivated by a desire for contrition or vengeance, the end result of this baleful pilgrimage is always the desecration of the holy site and the slaughter of its congregants, who may in turn rise as lesser forms of undead.</p>",
-            "source": {
-                "value": "Pathfinder #153: Life's Long Shadows"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #153: Life's Long Shadows"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "detect alignment (good only)",
+            "mod": 20,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -2388,30 +1605,32 @@
                 "value": 22
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 20
+            },
+            "intimidation": {
+                "base": 23
+            },
+            "religion": {
+                "base": 22
+            }
+        },
         "spellcasting": {
             "rituals": {
                 "dc": 28
             }
         },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "draconic",
-                    "infernal"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, detect alignment (good only)"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

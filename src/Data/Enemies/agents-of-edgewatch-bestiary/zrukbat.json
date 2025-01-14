@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
@@ -68,11 +70,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": [],
@@ -85,52 +89,10 @@
             "type": "melee"
         },
         {
-            "_id": "FMCAwZcfOhS476dW",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "glyWTuwYyEk8AaC1",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Dubious Shifting",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -142,29 +104,21 @@
                 "description": {
                     "value": "<p>The zrukbat assumes the shape of any Small object or ornamentation, although the zrukbat's mimicked objects usually have unrealistic or suspicious quirks.</p>\n<p>This doesn't change the zrukbat's size but can alter their coloration and visual appearance.</p>\n<p>They have an automatic result of 23 on Deception checks and DCs to pass as the mimicked object.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": [],
                     "value": [
                         "concentrate",
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -173,7 +127,7 @@
             "_id": "ekdPtlR0pjDVDM4T",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Go for the Eyes",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -183,120 +137,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The zrukbat flies up to its Speed and makes a claw Strike at the end of its move.</p>\n<p>If the claw attack hits, the target must succeed on a @Check[type:fortitude|dc:15] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round (or blinded for 1 minute on a critical failure). If the Strike was a critical hit, the target's save result is one degree of success worse.</p>"
+                    "value": "<p>The zrukbat flies up to its Speed and makes a claw Strike at the end of its move.</p>\n<p>If the claw attack hits, the target must succeed on a @Check[fortitude|dc:15] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round (or blinded for 1 minute on a critical failure). If the Strike was a critical hit, the target's save result is one degree of success worse.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "0BaYiM0QVSPdLoIA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ugFNypQgtvXoArRK",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "SazfQVNS4lYLpm6r",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "zzgflbyrN1tv2BS3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zrukbat",
@@ -340,12 +195,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -367,19 +216,36 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "fey"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #157: Devil at the Dreaming Palace"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #157: Devil at the Dreaming Palace"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -396,26 +262,27 @@
                 "value": 5
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 10
+            },
+            "athletics": {
+                "base": 9
+            },
+            "deception": {
+                "base": 5
+            },
+            "stealth": {
+                "base": 10
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "sylvan"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
+                "chaotic",
                 "fey"
             ]
         }

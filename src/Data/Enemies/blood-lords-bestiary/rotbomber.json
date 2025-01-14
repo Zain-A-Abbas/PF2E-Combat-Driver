@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "FppZ0tiZaoYeGAUX",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -66,11 +66,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -105,11 +107,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -147,19 +151,21 @@
                     }
                 },
                 "description": {
-                    "value": "<p>Deals bludgeoning and negative damage.</p>"
+                    "value": "<p>Deals bludgeoning and void damage.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "negative",
                         "range-increment-60",
-                        "splash"
+                        "splash",
+                        "void"
                     ]
                 },
                 "weaponType": {
@@ -169,52 +175,10 @@
             "type": "melee"
         },
         {
-            "_id": "0zvi2WwhuX8XbQyd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "H6hMLXf28bLOOjsy",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -226,33 +190,57 @@
                 "description": {
                     "value": "<p>A rotbomber is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "q5DQX31tD4pldcTg",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Pressurized Pustules",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>When a rotbomber takes acid, fire, physical or sonic damage, there is a chance a prematurely developed pustule bursts open, determined by a @Check[flat|dc:11]. All creatures in a @Template[emanation|distance:10] must succeed at @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}. A creature that gets a critical failure becomes @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 3}. Any creature who attempts this save becomes temporarily immune to pressurized pustules for 24 hours.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "qJyRY2becImO8jLp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 700000,
             "system": {
                 "actionType": {
@@ -265,8 +253,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -277,52 +267,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "q5DQX31tD4pldcTg",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Pressurized Pustules",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>When a rotbomber takes acid, fire, physical or sonic damage, there is a chance a prematurely developed pustule bursts open, determined by a @Check[type:flat|dc:11]. All creatures in a @Template[type:emanation|distance:10] must succeed at @Check[type:fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}. A creature that gets a critical failure becomes @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 3}. Any creature who attempts this save becomes temporarily immune to pressurized pustules for 24 hours.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -331,7 +278,7 @@
             "_id": "06qMU7kYZDHHRKSo",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Gaseous Smash",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -343,8 +290,15 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The rotbomber pulls two necrotic pustules from its body, one in each hand, and leaps into the air in an attempt to detonate them simultaneously on a hapless victim. The rotbomber Leaps up to 15 feet horizontally and 10 feet vertically to land in a square adjacent to a target creature and makes a necrotic pustule Strike against the target. If the Strike hits, it deals an additional @Damage[4d6[bludgeoning]] damage to the target. This counts as two attacks for the purposes of determining the rotbomber's multiple attack penalty, but the penalty does not increase until after the Gaseous Smash.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -365,15 +319,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -382,7 +330,7 @@
             "_id": "4aM9vFLoPyyxbgSF",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Necrotic Rot",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -392,26 +340,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Necrotic rot withers and corrupts living tissue at an alarming rate. An infected creature can't heal damage it takes from necrotic rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Stage 1</strong> @Damage[2d6[negative]] damage (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1}</p>\n<p><strong>Stage 3</strong> @Damage[3d6[negative]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2}</p>\n<p><strong>Stage 4</strong> dead, rising as a rotbomber immediately</p>"
+                    "value": "<p>Necrotic rot withers and corrupts living tissue at an alarming rate. An infected creature can't heal damage it takes from necrotic rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<hr />\n<p><strong>Stage 1</strong> @Damage[2d6[void]] damage (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1}</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2}</p>\n<p><strong>Stage 4</strong> dead, rising as a rotbomber immediately</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease",
-                        "necromancy",
-                        "negative"
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -420,7 +363,7 @@
             "_id": "5KPDnYNQ8pvieHTT",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Propulsive Pestilence",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -432,69 +375,19 @@
                 "description": {
                     "value": "<p>The pressurized necrotic gases within the rotbomber's pustules make them explode far more dramatically than most alchemists' bombs. The rotbomber's necrotic pustules deal splash damage to every creature within 15 feet of the target.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "J4a5x19JICnohE4x",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "KmKmQ2PDa4BAzOuw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Rotbomber",
@@ -528,7 +421,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 250,
                 "temp": 0,
                 "value": 250
@@ -550,12 +443,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -567,7 +454,7 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -577,19 +464,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "<p>Disgusting and dangerous, rotbombers bound around on all four limbs, ripping off the pressurized and explosive necrotic pustules that grow out of their backs to lob them toward their enemies. When they explode, the pustules emit concussive blasts of force and deadly pestilence that can infect a victim. Though slow and overburdened by the intense weight of the pustules, rotbombers can move with a surprising speed when they need to hunt down their quarry.</p>",
-            "source": {
-                "value": "Pathfinder #184: The Ghouls Hunger"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #184: The Ghouls Hunger"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -606,22 +507,25 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 25
+            },
+            "athletics": {
+                "base": 25
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "mindless",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

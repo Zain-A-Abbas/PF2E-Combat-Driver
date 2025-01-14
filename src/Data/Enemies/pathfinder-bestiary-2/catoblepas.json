@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -68,11 +70,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -110,11 +114,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -128,14 +134,9 @@
             "type": "melee"
         },
         {
-            "_id": "uD7Sv3Sf3fTDECXG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
+            "_id": "x8pzzu8VRuRa5sdg",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Stench",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -146,47 +147,12 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>30 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as itʼs sickened on a critical failure).</p>\n<p>While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "x8pzzu8VRuRa5sdg",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Stench",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as itʼs sickened on a critical failure).</p>\n<p>While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -194,43 +160,31 @@
                         "radius": 30,
                         "slug": "stench",
                         "traits": [
-                            "aura",
                             "olfactory",
                             "disease"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "olfactory",
-                        "disease"
+                        "disease",
+                        "olfactory"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XucZtbvC1QhYV0HW",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Ferocity",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -239,26 +193,20 @@
                     "value": null
                 },
                 "category": "defensive",
+                "deathNote": true,
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Ferocity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ferocity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -267,7 +215,7 @@
             "_id": "VDW4W2k1N88INhBp",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Breath Weapon",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -277,43 +225,33 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The catoblepas breathes a @Template[type:cone|distance:60] of horrid fumes, dealing @Damage[13d6[poison]] damage (@Check[type:fortitude|dc:32|basic:true] save). The area of this cone is reduced to 30 feet underwater. Targets that fail their saving throw also become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} on a critical failure).</p>\n<p>The catoblepas can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "value": "<p>The catoblepas breathes a @Template[cone|distance:60] of horrid fumes, dealing @Damage[13d6[poison]] damage (@Check[fortitude|dc:32|basic] save). The area of this cone is reduced to 30 feet underwater. Targets that fail their saving throw also become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} on a critical failure).</p>\n<p>The catoblepas can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "necromancy",
                         "poison",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "lPlAVVeLD4qqvZ8q",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
             },
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Trample",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -323,135 +261,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Medium or smaller, hoof, @Check[type:reflex|dc:32|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "value": "<p>Medium or smaller, hoof, @Check[reflex|dc:32|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "trample",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "n1h3WbQIKj2qkLO1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "MsMFrTVX1n1oLXOA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "w2BCKUoJdnaAE7ty",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "predicate": [
-                            "terrain:swamp"
-                        ],
-                        "selector": "stealth",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+24 in swamps",
-                        "options": "terrain:swamp"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Rs4rgNWepnTWtlzl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Catoblepas",
@@ -501,12 +325,6 @@
                     "type": "olfactory"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 22
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -518,19 +336,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Beast",
+            "languages": {
+                "details": "",
+                "value": [
+                    "aklo"
+                ]
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "<p>The catoblepas is an aggressive beast at the best of times. Though it prefers swamps, the catoblepas has been know to forage in plains and forests for short periods, leaving behind hunting grounds tainted by its foul breath and noxious waste that other predators and prey alike avoid for days or even weeks thereafter. The catoblepas bullies those creatures it believes are a match for it, and eats everything weaker.</p>\n<p>A catoblepas is 15 feet long and weighs 2,200 pounds.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 22,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -547,26 +381,38 @@
                 "value": 22
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 25
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "aklo"
+            "intimidation": {
+                "base": 20
+            },
+            "stealth": {
+                "base": 22,
+                "special": [
+                    {
+                        "base": 24,
+                        "label": "in swamps",
+                        "predicate": [
+                            "terrain:swamp"
+                        ]
+                    }
                 ]
             },
+            "survival": {
+                "base": 20
+            }
+        },
+        "traits": {
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
-                "beast"
+                "beast",
+                "chaotic",
+                "evil"
             ]
         }
     },

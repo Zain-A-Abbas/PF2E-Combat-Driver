@@ -1,0 +1,47 @@
+{
+    "_id": "Il7YN8zlu3dfw3IE",
+    "img": "icons/weapons/swords/shortsword-guard-silver.webp",
+    "name": "Effect: Pinpoint Weakness",
+    "system": {
+        "description": {
+            "value": "<p>Tsimaan points out a weakness of a creature within 30 feet. Tsimaan and all allies that can see and hear her gain a +1 status bonus to their attack and damage rolls against that creature until the beginning of her next turn.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": ""
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "label": "Pinpoint Weakness",
+                "selector": [
+                    "attack",
+                    "damage"
+                ],
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

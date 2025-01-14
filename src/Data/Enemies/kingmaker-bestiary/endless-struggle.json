@@ -4,13 +4,11 @@
     "items": [
         {
             "_id": "XfUDUv0iccZ8hNjg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 0,
             "system": {
                 "actionType": {
@@ -23,8 +21,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -35,18 +35,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -65,22 +56,18 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> More than three Small or larger living creatures are in area <strong>B7</strong> at the end of a turn.</p>\n<hr />\n<p><strong>Effect</strong> Spectral figures of the bandits and owlbears manifest in a sudden and overwhelming battle of endless violence. All living creatures in area <strong>B7</strong> must make a successful @Check[type:will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>"
+                    "value": "<p><strong>Trigger</strong> More than three Small or larger living creatures are in area <strong>B7</strong> at the end of a turn.</p>\n<hr />\n<p><strong>Effect</strong> Spectral figures of the bandits and owlbears manifest in a sudden and overwhelming battle of endless violence. All living creatures in area <strong>B7</strong> must make a successful @Check[will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} on a critical failure).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -103,7 +90,7 @@
                 "damageRolls": {
                     "0": {
                         "damage": "2d10+7",
-                        "damageType": "negative"
+                        "damageType": "void"
                     },
                     "1": {
                         "damage": "1d6",
@@ -113,11 +100,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -138,7 +127,7 @@
             "emitsSound": "encounter",
             "hardness": 0,
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 66,
                 "temp": 0,
                 "value": 66
@@ -159,7 +148,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 10
@@ -171,7 +160,7 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 }
             ]
@@ -179,17 +168,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Vicious spirits of the two owlbears, Eirikk, and the rest of the bandits rise and resume their final battle.</p>",
-            "disable": "<p>@Check[type:nature|dc:24] (expert) three times to empathize with the bestial spirits that comprise the haunt and to calm them, or @Check[type:religion|dc:28] (expert) two times to exorcise the haunt and disperse its energy.</p>",
+            "disable": "<p>@Check[nature|dc:24] (expert) three times to empathize with the bestial spirits that comprise the haunt and to calm them, or @Check[religion|dc:28] (expert) two times to exorcise the haunt and disperse its energy.</p>",
             "isComplex": true,
             "level": {
                 "value": 8
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
+            },
             "reset": "<p>The haunt resets after 24 hours; it can be permanently destroyed if it is either disabled or destroyed after the Beast itself has been slain.</p>",
-            "routine": "<p>(3 actions; emotion, fear, mental) The spectral violence churns and flashes through the room, targeting three separate creatures with ghostly claws, beaks, swords, and arrows. At the end of the haunt's turn, it takes its Spectral Uprising reaction.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Kingmaker"
-            }
+            "routine": "<p>(3 actions; emotion, fear, mental) The spectral violence churns and flashes through the room, targeting three separate creatures with ghostly claws, beaks, swords, and arrows. At the end of the haunt's turn, it takes its Spectral Uprising reaction.</p>"
         },
         "saves": {
             "fortitude": {
@@ -212,9 +202,9 @@
                 "value": "med"
             },
             "value": [
-                "haunt",
                 "chaotic",
-                "evil"
+                "evil",
+                "haunt"
             ]
         }
     },

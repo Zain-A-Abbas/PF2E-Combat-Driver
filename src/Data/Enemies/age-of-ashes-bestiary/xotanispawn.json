@@ -34,11 +34,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -80,11 +82,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -99,57 +103,13 @@
             "type": "melee"
         },
         {
-            "_id": "bFgmfCe3rBGAWZK1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "jVPlrYrdfUoKsCFZ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Tremorsense",
-            "sort": 400000,
+            "name": "Tremorsense 60 feet",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -161,37 +121,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "pYNPdghXNuSzUUUS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Light Blindness",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -203,23 +154,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LightBlindness]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "light-blindness",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -228,7 +172,7 @@
             "_id": "qi5FtOzBWTiiCStB",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Explosion",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -239,41 +183,32 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When a Xotanispawn dies, it explodes, dealing @Damage[15d8[fire]] damage to creatures in a @Template[type:emanation|distance:30] (@Check[type:reflex|dc:39|basic:true] save).</p>"
+                    "value": "<p>When a Xotanispawn dies, it explodes, dealing @Damage[15d8[fire]] damage to creatures in a @Template[emanation|distance:30] (@Check[reflex|dc:39|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "fire"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XqfuKJG5gZuzeCDr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Frightful Presence",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -283,10 +218,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura] @Check[type:will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "value": "<p>60 feet. @Check[will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -294,7 +231,6 @@
                         "radius": 60,
                         "slug": "frightful-presence",
                         "traits": [
-                            "aura",
                             "emotion",
                             "fear",
                             "mental"
@@ -302,9 +238,6 @@
                     }
                 ],
                 "slug": "frightful-presence",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -313,12 +246,6 @@
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -327,7 +254,7 @@
             "_id": "nf1iMpVleTsR2jEV",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Internal Furnace",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -337,27 +264,20 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature adjacent to the Xotanispawn touches it or hits it with a physical attack</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes [[/r 5d8[persistent,fire]]] damage (@Check[type:reflex|dc:37|traits:damaging-effect] save to negate).</p>"
+                    "value": "<p><strong>Trigger</strong> A creature adjacent to the Xotanispawn touches it or hits it with a physical attack</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes @Damage[5d8[persistent,fire]] damage (@Check[reflex|dc:37|traits:damaging-effect] save to negate).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "fire"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -366,7 +286,7 @@
             "_id": "D1apG8hCM6fFYauw",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Breath Weapon",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -376,29 +296,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals @Damage[10d10[fire]] damage and [[/r 2d6[persistent,fire]]] damage to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "value": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[reflex|dc:39|basic] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "evocation",
                         "fire"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -407,7 +319,7 @@
             "_id": "5MhFpMwgTDRkEcvj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Heat Surge",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -417,40 +329,31 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to [[/r 10d8[persistent,fire]]] damage until the start of its next turn.</p>"
+                    "value": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to @Damage[10d8[persistent,fire]] damage until the start of its next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "2mthLx7yReK93i3n",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -462,95 +365,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "9O9NG98fy5Fr1UU0",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 34
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "MksDCpoxyCKINDOo",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "NRcezlDbcGXPTcAk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Xotanispawn",
@@ -591,21 +418,9 @@
             },
             "immunities": [
                 {
-                    "type": "chaotic"
-                },
-                {
-                    "type": "evil"
-                },
-                {
                     "type": "fire"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 29
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -627,19 +442,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 17
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #149: Against the Scarlet Triad"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #149: Against the Scarlet Triad"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 29,
+            "senses": [
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "tremorsense"
+                },
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -656,22 +490,28 @@
                 "value": 23
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 34
+            },
+            "stealth": {
+                "base": 31
+            },
+            "survival": {
+                "base": 29
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision; tremorsense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "animal",
-                "fire"
+                "chaotic",
+                "evil",
+                "fire",
+                "unholy"
             ]
         }
     },

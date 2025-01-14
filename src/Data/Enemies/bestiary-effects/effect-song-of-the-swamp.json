@@ -1,0 +1,53 @@
+{
+    "_id": "hftFxE8JGJGzXAtU",
+    "img": "systems/pf2e/icons/spells/soothing-words.webp",
+    "name": "Effect: Song of the Swamp",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains a +2 status bonus to damage rolls and saves against fear.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 3"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "damage",
+                "type": "status",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "fear"
+                ],
+                "selector": "saving-throw",
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

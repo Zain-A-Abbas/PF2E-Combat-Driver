@@ -1,0 +1,50 @@
+{
+    "_id": "UxNq9uo1GpDYTi5Z",
+    "img": "icons/magic/water/wave-water-blue.webp",
+    "name": "Effect: Waterlogged",
+    "system": {
+        "description": {
+            "value": "<p>While waterlogged, the berberoka can use Spray Water, their size grows to Gargantuan, and their Speed is reduced to 15 feet.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #166: Despair on Danger Island"
+        },
+        "rules": [
+            {
+                "key": "CreatureSize",
+                "value": "gargantuan"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": [
+                    "swim-speed",
+                    "land-speed"
+                ],
+                "value": -15
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

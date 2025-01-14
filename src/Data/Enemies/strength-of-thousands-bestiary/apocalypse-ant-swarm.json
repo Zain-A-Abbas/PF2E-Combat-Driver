@@ -3,94 +3,10 @@
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
-            "_id": "5Bn4BbJqsSjduzZq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "peQc5mbWWHgnzWZq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "js6y1tz0yizjubtu",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Cling",
-            "sort": 300000,
+            "sort": 100000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -100,22 +16,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm loses [[/r 2d8 #Hit Points]] HP as ants cling to the creature and continue biting, dealing [[/r 7d8[persistent,piercing]]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
+                    "value": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm loses [[/r 2d8]]{2d8 HP} as ants cling to the creature and continue biting, dealing @Damage[7d8[persistent,piercing]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -124,7 +36,7 @@
             "_id": "uc4njwket4raq8i9",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Inexorable",
-            "sort": 400000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -136,20 +48,16 @@
                 "description": {
                     "value": "<p>The apocalypse ant swarm recovers from the slowed and stunned conditions at the end of its turn. It's immune to penalties to its Speeds and ignores difficult terrain and greater difficult terrain.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -158,7 +66,7 @@
             "_id": "e2sotcu0vxd8kydj",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swarming Bites",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -168,48 +76,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]] damage (@Check[type:fortitude|dc:39|basic:true]). A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 round (1 minute on a critical failure). If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>"
+                    "value": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]] damage (@Check[fortitude|dc:39|basic]). A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 round (1 minute on a critical failure). If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "x854nturxaly9fpw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Apocalypse Ant Swarm",
@@ -256,12 +137,6 @@
                     "type": "swarm-mind"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 30
-            },
             "resistances": [
                 {
                     "type": "bludgeoning",
@@ -304,19 +179,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant army ant swarm",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #174: Shadows of the Ancients"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #174: Shadows of the Ancients"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 30,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -333,16 +227,13 @@
                 "value": 27
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "grg"
             },

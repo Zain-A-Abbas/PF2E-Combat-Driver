@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "Aqvww3vhm599IMIr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 30 feet",
@@ -23,33 +21,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "S20QXnhHvj6lx4Ua",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Lifesense 30 feet",
@@ -65,37 +54,58 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "9o47ekgkdc945ugj",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Stifle",
+            "sort": 300000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p><strong>Trigger</strong> A creature in the swarm's space attempts to Cast a Spell with a verbal component or attempts an action with the linguistic or vocal traits</p><hr />\n<p><strong>Effect</strong> The swarming hands clamp over the triggering creature's mouth, preventing it from vocalizing. The affected creature must succeed at a @Check[reflex|dc:22] save or the triggering action is disrupted.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "LTWhq5mRyrBnyisE",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 300000,
+            "name": "Void Healing",
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -107,8 +117,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -119,52 +131,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "9o47ekgkdc945ugj",
-            "img": "systems/pf2e/icons/actions/Reaction.webp",
-            "name": "Stifle",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "reaction"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p><strong>Trigger</strong> A creature in the swarm's space attempts to Cast a Spell with a verbal component or attempts an action with the linguistic or vocal traits</p><hr />\n<p><strong>Effect</strong> The swarming hands clamp over the triggering creature's mouth, preventing it from vocalizing. The affected creature must succeed at a @Check[type:reflex|dc:22] save or the triggering action is disrupted.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -183,71 +152,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the swarm's space takes @Damage[3d6[slashing]] damage (@Check[type:reflex|dc:20|basic:true]). A creature that fails its save against Pummeling Grasp is also knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
+                    "value": "<p>Each enemy in the swarm's space takes @Damage[3d6[slashing]] damage (@Check[reflex|dc:20|basic]). A creature that fails its save against Pummeling Grasp is also knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "8x017shsgmw4vm13",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "dea2ewe462ugkx16",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Crawling Hand Swarm",
@@ -281,7 +200,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 60,
                 "temp": 0,
                 "value": 60
@@ -312,12 +231,6 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 11
-            },
             "resistances": [
                 {
                     "type": "bludgeoning",
@@ -354,19 +267,43 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "can't speak any language",
+                "value": [
+                    "common",
+                    "hallit"
+                ]
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #176: Lost Mammoth Valley"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #176: Lost Mammoth Valley"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 11,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 30,
+                    "type": "lifesense"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -383,25 +320,24 @@
                 "value": 9
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "Can't speak any language",
-                "selected": [],
-                "value": [
-                    "common",
-                    "hallit"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "lifesense 30 feet, tremorsense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "evil",
                 "swarm",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

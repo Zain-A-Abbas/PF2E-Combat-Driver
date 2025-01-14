@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "dlnxrb7nx34kyy9k",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -66,11 +66,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #177: Burning Tundra"
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": "Pathfinder #177: Burning Tundra"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -82,57 +84,13 @@
             "type": "melee"
         },
         {
-            "_id": "bWgtKQ7uLwPpyWtD",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "1pqhFkZ8nmJYjQvd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -144,8 +102,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -156,18 +116,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -176,7 +127,7 @@
             "_id": "Ok79ZJu55tWVMXEr",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Flammable",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -188,8 +139,10 @@
                 "description": {
                     "value": "<p>A tar zombie requires a successful DC 20 flat check to recover from persistent fire damage. This DC isn't reduced for assisted recovery.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -204,15 +157,9 @@
                     }
                 ],
                 "slug": "flammable",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -221,6 +168,36 @@
             "_id": "TxsfYv3ekpuyd4Dw",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Tar-Splattered Charge",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The tar zombie predator lurches at its foe. It Strides twice and makes a claw Strike, or strides once and makes two claw Strikes. Both Strikes count toward its multiple attack penalty as normal. It can't make a Tar-Spattered Charge again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #177: Burning Tundra"
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "oWRHeQlKpU13eZfQ",
+            "img": "systems/pf2e/icons/actions/TwoActions.webp",
+            "name": "Vomit Tar",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -231,73 +208,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The tar zombie predator lurches at its foe. It Strides twice and makes a claw Strike, or strides once and makes two claw Strikes. Both Strikes count toward its multiple attack penalty as normal. It can't make a Tar-Spattered Charge again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "value": "<p>The tar zombie vomits a gout of sticky tar in a @Template[cone|distance:15] that deals @Damage[6d6[bludgeoning]] damage ((@Check[reflex|dc:25|basic]) save). Creatures that fail the save are @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for [[/gmr 1d4 #Recharge Vomit Tar]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Vomit Tar]</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": "Pathfinder #177: Burning Tundra"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "oWRHeQlKpU13eZfQ",
-            "img": "systems/pf2e/icons/actions/TwoActions.webp",
-            "name": "Vomit Tar",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 2
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>The tar zombie vomits a gout of sticky tar in a @Template[type:cone|distance:15] that deals @Damage[6d6[bludgeoning]] damage ((@Check[type:reflex|dc:25|basic:true]) save). Creatures that fail the save are @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for [[/br 1d4 #Recharge Vomit Tar]]{1d4 rounds}.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #177: Burning Tundra"
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": "Pathfinder #177: Burning Tundra"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "evocation",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "xX7Ai9SXKRW9Mnhz",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -309,88 +245,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "3M3jeDSr9Xukje5l",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "FIbJXOg1vkueDi2o",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.TarPit",
-                        "predicate": [
-                            "terrain:tar-pit"
-                        ],
-                        "selector": "stealth",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+15 in tar pits",
-                        "options": "terrain:tar-pit"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Tar Zombie Predator",
@@ -424,7 +291,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "Negative healing",
+                "details": "void healing",
                 "max": 180,
                 "temp": 0,
                 "value": 180
@@ -446,12 +313,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 15
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -467,7 +328,7 @@
                     "value": 10
                 },
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -477,19 +338,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 7
             },
             "privateNotes": "<p>Slow A tar zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #177: Burning Tundra"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #177: Burning Tundra"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 15,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -506,22 +381,33 @@
                 "value": 15
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 17
+            },
+            "stealth": {
+                "base": 11,
+                "special": [
+                    {
+                        "base": 15,
+                        "label": "in tar pits",
+                        "predicate": [
+                            "terrain:tar-pit"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "Darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "evil",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,17 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": true
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 39,
                     "mod": 0,
@@ -108,45 +45,34 @@
         },
         {
             "_id": "hiFUoFVT8TdwctYT",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN"
             },
-            "img": "systems/pf2e/icons/spells/chrusing-dispair.webp",
+            "img": "icons/creatures/slimes/slime-face-teeth-purple.webp",
             "name": "Crushing Despair",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 or more rounds"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -171,57 +97,34 @@
                     },
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "crushing-despair",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -229,42 +132,26 @@
         },
         {
             "_id": "KOtaGptbhDnaFa4U",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
             },
-            "img": "systems/pf2e/icons/spells/air-walk.webp",
+            "img": "icons/magic/water/wave-water-teal.webp",
             "name": "Air Walk (Constant)",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "5 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -273,56 +160,33 @@
                     "heightenedLevel": 4,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "air-walk",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "air",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -330,45 +194,34 @@
         },
         {
             "_id": "qLjogmwZzW2UEq03",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.jJphHQlENHFlSElH"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.jJphHQlENHFlSElH"
             },
             "img": "systems/pf2e/icons/spells/captivating-adoration.webp",
             "name": "Captivating Adoration (At Will)",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 15
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You become intensely entrancing, and creatures are distracted by you as long as they remain within the area. You can exclude any creatures you choose from the effects. When a creature enters the area for the first time, it must attempt a Will saving throw. If a creature leaves and reenters, it uses the results of its original save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] with you for its next action, then is temporarily immune for 1 hour.</p>\n<p><strong>Failure</strong> The creature is Fascinated with you.</p>\n<p><strong>Critical Failure</strong> The creature is Fascinated with you, and its attitude toward you improves by one step.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the size of the emanation by 15 feet.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -377,56 +230,33 @@
                     "heightenedLevel": 8,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "captivating-adoration",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
+                        "concentrate",
                         "emotion",
+                        "manipulate",
                         "mental",
-                        "visual",
-                        "enchantment"
+                        "visual"
                     ]
                 }
             },
@@ -434,42 +264,31 @@
         },
         {
             "_id": "aEgcIWUuEAn6TaqB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.J8pL8yTshga8QOk8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.J8pL8yTshga8QOk8"
             },
             "img": "systems/pf2e/icons/spells/delusional-pride.webp",
             "name": "Delusional Pride (At Will)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>You make the target overconfident, leading it to ascribe failure to external factors. If the target fails at an attack roll or skill check, it takes a -1 status penalty to attack rolls and skill checks until the end of its turn (or the end of its next turn, if it attempted the roll outside its turn). If the creature fails a second time while taking this penalty, the penalty increases to -2. The duration depends on the target's Will save. After attempting its save, the creature becomes temporarily immune for 24 hours.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The duration is 1 round.</p>\n<p><strong>Failure</strong> The duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The duration is 24 hours.</p>"
+                    "value": "<p>You make the target overconfident, leading it to ascribe failure to external factors. If the target fails at an attack roll or skill check, it takes a -1 status penalty to attack rolls and skill checks until the end of its turn (or the end of its next turn, if it attempted the roll outside its turn). If the creature fails a second time while taking this penalty, the penalty increases to -2. The duration depends on the target's Will save. After attempting its save, the creature becomes temporarily immune for 24 hours.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The duration is 1 round.</p>\n<p><strong>Failure</strong> The duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The duration is 24 hours.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -478,55 +297,32 @@
                     "heightenedLevel": 8,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "delusional-pride",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
+                        "concentrate",
                         "emotion",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -534,42 +330,31 @@
         },
         {
             "_id": "qQX1nhQV5V0TsTem",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv"
             },
             "img": "systems/pf2e/icons/spells/hideous-laughter.webp",
             "name": "Hideous Laughter",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is plagued with uncontrollable laugher. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and can't use actions or reactions for 1 round. It then suffers the failure effects.</p>"
+                    "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and can't use actions or reactions for 1 round. It then suffers the failure effects.</p>"
                 },
                 "duration": {
-                    "value": "sustained"
-                },
-                "hasCounteractCheck": {
-                    "value": false
+                    "sustained": true,
+                    "value": ""
                 },
                 "level": {
                     "value": 2
@@ -578,57 +363,34 @@
                     "heightenedLevel": 2,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "hideous-laughter",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -636,42 +398,31 @@
         },
         {
             "_id": "PKOuAKr4I81uIS3W",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Dj44lViYKvOJ8a53"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Dj44lViYKvOJ8a53"
             },
             "img": "systems/pf2e/icons/spells/blind-ambition.webp",
             "name": "Blind Ambition (At Will)",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>You strengthen a target's ambition, increase its resentment of allies, and make its allegiances more susceptible to change. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a -1 status penalty to its saving throws and other defenses against attempts to Coerce it, Request something of it, or use mental effects to convince it to do something (such as a <em>@UUID[Compendium.pf2e.spells-srd.Item.Suggestion]</em> spell). This penalty applies only if the target is being encouraged to advance its own ambitions.</p>\n<p><strong>Failure</strong> As success, but the penalty is -2.</p>\n<p><strong>Critical Failure</strong> The target is overcome with ambition, taking whatever actions would advance its own agenda over those of anyone else, even without attempts to convince it.</p>"
+                    "value": "<p>You strengthen a target's ambition, increase its resentment of allies, and make its allegiances more susceptible to change. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a -1 status penalty to its saving throws and other defenses against attempts to Coerce it, Request something of it, or use mental effects to convince it to do something (such as a @UUID[Compendium.pf2e.spells-srd.Item.Suggestion] spell). This penalty applies only if the target is being encouraged to advance its own ambitions.</p>\n<p><strong>Failure</strong> As success, but the penalty is -2.</p>\n<p><strong>Critical Failure</strong> The target is overcome with ambition, taking whatever actions would advance its own agenda over those of anyone else, even without attempts to convince it.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -680,55 +431,32 @@
                     "heightenedLevel": 8,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "60 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "blind-ambition",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
+                        "concentrate",
                         "emotion",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -736,42 +464,31 @@
         },
         {
             "_id": "3zTnlxQMlpnNM9jU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear (At Will)",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -790,60 +507,37 @@
                     "heightenedLevel": 3,
                     "value": "vdYowEKgmhYMzYaA"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "fear",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -874,11 +568,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -895,10 +591,8 @@
         },
         {
             "_id": "7MCn4tFozydZTxeL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 60 feet",
@@ -914,33 +608,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "FkFTivkiFFdzjwbO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Telepathy 100 feet",
@@ -956,83 +641,31 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "telepathy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "divination",
                         "magical"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "rMKHbVkOcGipVlzt",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "DDA6tlj5qsfP9Xb2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1044,37 +677,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "UQ7yTknJYCFghTF4",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+2 to Will Saves vs. Emotion",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1086,8 +710,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1101,18 +727,9 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1121,7 +738,7 @@
             "_id": "TuTut6BPwHgd3Xp7",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Emotional Focus",
-            "sort": 1500000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1131,25 +748,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The quelaunt can cast the following cleric domain spells as 8th-level occult innate spells at will without spending Focus Points: <em>@UUID[Compendium.pf2e.spells-srd.Item.Blind Ambition]</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Captivating Adoration]</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.Delusional Pride]</em>.</p>"
+                    "value": "<p>The quelaunt can cast the following cleric domain spells as 8th-rank occult innate spells at will without spending Focus Points: @UUID[Compendium.pf2e.spells-srd.Item.Ignite Ambition], @UUID[Compendium.pf2e.spells-srd.Item.Captivating Adoration], and @UUID[Compendium.pf2e.spells-srd.Item.Delusional Pride].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1158,7 +768,7 @@
             "_id": "ady0G6RCsUbZ7gev",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Emotional Frenzy",
-            "sort": 1600000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1170,23 +780,16 @@
                 "description": {
                     "value": "<p>The quelaunt casts up to three spells chosen from its at-will innate spells and its emotional focus spells.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1195,7 +798,7 @@
             "_id": "AjYmWzjrt54sexgk",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Feed on Emotion",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1205,16 +808,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The quelaunt feeds on the emotional unrest of a single creature within 30 feet that's under a harmful emotion effect. The target must succeed at a @Check[type:will|dc:37|traits:damaging-effect] save or take @Damage[4d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round. If the target fails its saving throw, the quelaunt regains the same number of Hit Points and Feed on Emotion does not cost the quelaunt an action, allowing it to use another action this turn.</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The quelaunt feeds on the emotional unrest of a single creature within 30 feet that's under a harmful emotion effect. The target must succeed at a @Check[will|dc:37|traits:damaging-effect] save or take @Damage[4d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round. If the target fails its saving throw, the quelaunt regains the same number of Hit Points and Feed on Emotion does not cost the quelaunt an action, allowing it to use another action this turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1223,12 +830,6 @@
                         "incapacitation",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1237,7 +838,7 @@
             "_id": "XIYonpEs96Js86vZ",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Rapid Strikes",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1249,25 +850,18 @@
                 "description": {
                     "value": "<p>The quelaunt makes three melee Strikes, each against a different target within reach. The multiple attack penalty applies to each attack, but increases only after all the attacks have been made.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1276,7 +870,7 @@
             "_id": "p90CXzyif81DD51u",
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Spiral of Despair",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -1288,98 +882,22 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature fails a saving throw to resist one of the quelaunt's innate spells or emotional focus spells.</p>\n<hr />\n<p><strong>Effect</strong> As the quelaunt invades the triggering creature's mind and plants the seeds of negative emotions, it also strips away the target's feelings of hope or positivity. The quelaunt can immediately end a single emotion effect from which the triggering creature is benefiting.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "emotion",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "e4djxU6TlebRFhGq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "194D0AyTzQZOWeVU",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "QiWQWBSaKpIvBvyI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Quelaunt",
@@ -1418,12 +936,6 @@
                 "temp": 0,
                 "value": 305
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 29
-            },
             "resistances": [
                 {
                     "type": "mental",
@@ -1437,19 +949,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Aberration",
+            "languages": {
+                "details": "(can't speak any language), telepathy 100 feet",
+                "value": [
+                    "aklo"
+                ]
+            },
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "<p>This three-armed, three-legged monster has no discernible eyes, nose, ears, or mouth or no visible means of ingesting food. Its limbs are distributed so evenly across its body that it is all but impossible to tell which way the creature is oriented at any given time. Few who witness the quelaunt linger on its alien looks for long though, as the most pressing concern quickly becomes the invasion of their minds, as the quelaunt sows doubt, sorrow, and rage. This monstrosity not only delights in the negative emotions of its prey, but feeds on them, gaining strength and sustenance from their dismay. For the quelaunt, no act is too terrible or cruel to inflict on its victims, since the more a creature suffers, the more the quelaunt feasts.</p>\n<p>Quelaunts are known to associate with other aberrant horrors, including brain collectors and other creatures associated with the Dominion of the Black. However, the more prevalent theory paints them as more alien-perhaps invasive beings from another dimension of pure thought and feeling-and claims that in their natural state they have no physical bodies at all. Few dare speculate further; the only known autopsy of a quelaunt resulted in the researcher's suicide just days afterward and all the notes were mysteriously destroyed. Whatever secrets there are to be unlocked in the anatomy of these bizarre monsters are apparently important enough to warrant great protection from quelaunts, even after death.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 29,
+            "senses": [
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1471,23 +1001,26 @@
                 "value": 31
             }
         },
+        "skills": {
+            "deception": {
+                "base": 30
+            },
+            "intimidation": {
+                "base": 30
+            },
+            "occultism": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(Can't Speak Any Language), Telepathy 100 feet",
-                "selected": [],
-                "value": [
-                    "aklo"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "tremorsense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
-                "aberration"
+                "aberration",
+                "chaotic",
+                "evil"
             ]
         }
     },

@@ -1,0 +1,282 @@
+{
+    "_id": "Rn1aE4uvq30iiH0Y",
+    "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+    "name": "Effect: Regression",
+    "system": {
+        "description": {
+            "value": "<p>The creature shrinks one size and all of the target's proficiencies of expert and better are reduced to trained.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 24
+        },
+        "level": {
+            "value": 11
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 3"
+        },
+        "rules": [
+            {
+                "key": "CreatureSize",
+                "value": -1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.acrobatics.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:acrobatics:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.arcana.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:arcana:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.athletics.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:athletics:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.crafting.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.deception.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:deception:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.diplomacy.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:diplomacy:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.intimidation.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:intimidation:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.medicine.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:medicine:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.nature.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:nature:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.occultism.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:occultism:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.performance.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:performance:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.religion.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:religion:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.society.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:society:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.stealth.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:stealth:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.survival.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:survival:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.skills.thievery.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    {
+                        "gte": [
+                            "skill:thievery:rank",
+                            1
+                        ]
+                    }
+                ],
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

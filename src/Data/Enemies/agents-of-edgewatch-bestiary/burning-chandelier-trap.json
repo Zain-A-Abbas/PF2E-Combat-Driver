@@ -18,26 +18,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature touches the cage door, the closet door, or any wooden stand</p>\n<hr />\n<p><strong>Effect</strong> Both double doors leading out of the room shut and lock; while the trap is active, the key doesn't work to open these doors (although their locks can be picked normally). The chandeliers drop several feet on elongated chains, allowing them to swing around the room. The closest chandelier to the triggering creature makes a swinging chandelier Strike against it. The trap then rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "occult",
-                        "transmutation"
+                        "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -72,11 +64,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -117,11 +111,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -159,24 +155,25 @@
                 }
             ],
             "stealth": {
-                "details": "<p>(master) or @Check[type:perception|dc:38|traits:action:seek] (master) to spot the trap's control panel</p>",
+                "details": "<p>(master) or @Check[perception|dc:38|traits:action:seek] (master) to spot the trap's control panel</p>",
                 "value": 26
             }
         },
         "creatureType": "",
         "details": {
             "description": "<p>Four large flaming chandeliers swing wildly around the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:36|name:Disable a Chandelier|traits:action:disable-a-device] (master) to disable a chandelier or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (8th level; counteract DC 33) to permanently drain the magic from a chandelier. Any amount of cold damage that overcomes a chandelier's cold resistance extinguishes its flames and removes its persistent fire damage and flame dart attack. @Check[type:thievery|dc:41|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (legendary) to disable the entire trap from the hidden control panel in the southeast corner of the room.</p>",
+            "disable": "<p>@Check[thievery|dc:36|name:Disable a Chandelier|traits:action:disable-a-device] (master) to disable a chandelier or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (8th level; counteract DC 33) to permanently drain the magic from a chandelier. Any amount of cold damage that overcomes a chandelier's cold resistance extinguishes its flames and removes its persistent fire damage and flame dart attack. @Check[thievery|dc:41|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (legendary) to disable the entire trap from the hidden control panel in the southeast corner of the room.</p>",
             "isComplex": true,
             "level": {
                 "value": 15
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #160: Assault on Hunting Lodge Seven"
+            },
             "reset": "<p>The trap deactivates and resets 1 minute after there are no living creatures remaining in the room.</p>",
-            "routine": "<p>(4 actions) For every chandelier disabled, the trap's actions are reduced by 1. For each of the trap's actions, a different chandelier attacks a random creature in the room. A chandelier uses its swinging chandelier attack if it can, but it can't make melee attacks against creatures in the cage, the closet, or the gap between the two double doors leading into the vault. Against a creature it can't reach with a melee attack, it uses a flame dart attack instead. The trap doesn't take multiple attack penalties.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #160: Assault on Hunting Lodge Seven"
-            }
+            "routine": "<p>(4 actions) For every chandelier disabled, the trap's actions are reduced by 1. For each of the trap's actions, a different chandelier attacks a random creature in the room. A chandelier uses its swinging chandelier attack if it can, but it can't make melee attacks against creatures in the cage, the closet, or the gap between the two double doors leading into the vault. Against a creature it can't reach with a melee attack, it uses a flame dart attack instead. The trap doesn't take multiple attack penalties.</p>"
         },
         "saves": {
             "fortitude": {

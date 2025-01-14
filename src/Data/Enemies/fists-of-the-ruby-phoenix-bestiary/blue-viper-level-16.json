@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "PBUfX3wQpH209Pyh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.7tKkkF8eZ4iCLJtp"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.7tKkkF8eZ4iCLJtp"
             },
-            "img": "systems/pf2e/icons/equipment/weapons/shortsword.webp",
+            "img": "icons/weapons/swords/sword-guard-purple.webp",
             "name": "Shortsword",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "shortsword",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "sword",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 9
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,17 +65,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "med",
                 "slug": "shortsword",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -107,27 +85,19 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "PoVyC6Mvi2YZOhJA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/acid-flask.webp",
             "name": "Acid Flask (Greater) (Infused)",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 2
@@ -135,23 +105,28 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "martial",
                 "containerId": null,
                 "damage": {
                     "damageType": "acid",
                     "dice": 1,
-                    "die": ""
+                    "die": "",
+                    "persistent": {
+                        "faces": 6,
+                        "number": 3,
+                        "type": "acid"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -162,69 +137,35 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 250
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "range": 20,
                 "reload": {
                     "value": "-"
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.criticalSuccess"
-                    }
-                ],
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "acid-flask-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 3
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -233,32 +174,25 @@
                         "alchemical",
                         "bomb",
                         "consumable",
+                        "infused",
                         "splash"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "fTsBxUREuesIMRlU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/alchemists-fire.webp",
             "name": "Alchemist's Fire (Greater) (Infused)",
             "sort": 300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 2
@@ -266,23 +200,28 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "martial",
                 "containerId": null,
                 "damage": {
                     "damageType": "fire",
                     "dice": 3,
-                    "die": "d8"
+                    "die": "d8",
+                    "persistent": {
+                        "faces": null,
+                        "number": 3,
+                        "type": "fire"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -293,69 +232,35 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 250
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 4,
                 "range": 20,
                 "reload": {
                     "value": "-"
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Greater.criticalSuccess"
-                    }
-                ],
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "alchemists-fire-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 3
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -364,38 +269,34 @@
                         "bomb",
                         "consumable",
                         "fire",
+                        "infused",
                         "splash"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "08jMyPI4COfk5aeG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/bottled-lightning.webp",
             "name": "Bottled Lightning (Greater) (Infused)",
             "sort": 400000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 2
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -405,15 +306,12 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 3d6 electricity damage and 3 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] until the start of your next turn. You gain a +2 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 3d6 electricity damage and 3 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -424,34 +322,19 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 250
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 4,
                 "range": 20,
@@ -465,17 +348,15 @@
                         "text": "PF2E.BombNotes.BottledLightning.Greater.success"
                     }
                 ],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "bottled-lightning-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 3
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -484,38 +365,34 @@
                         "bomb",
                         "consumable",
                         "electricity",
+                        "infused",
                         "splash"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "LoWGiUUAz2T4nR7R",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/frost-vial.webp",
             "name": "Frost Vial (Greater) (Infused)",
             "sort": 500000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 2
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -525,15 +402,12 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Frost Vial (Greater)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Frost Vial (Greater)]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -544,34 +418,19 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 250
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "range": 20,
@@ -585,17 +444,15 @@
                         "text": "PF2E.BombNotes.FrostVial.Greater.success"
                     }
                 ],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "frost-vial-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 3
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -604,45 +461,42 @@
                         "bomb",
                         "cold",
                         "consumable",
+                        "infused",
                         "splash"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "vqJxIQL873yU5LDb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/clothes-explorers.webp",
-            "name": "+2 Resilient Clothing (Explorer's)",
+            "img": "icons/equipment/chest/shirt-collared-pink.webp",
+            "name": "Explorer's Clothing",
             "sort": 600000,
             "system": {
                 "acBonus": 0,
                 "baseItem": "explorers-clothing",
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "unarmored",
-                "checkPenalty": null,
+                "checkPenalty": 0,
                 "containerId": null,
                 "description": {
-                    "value": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                    "value": "<p>Adventurers who don't wear armor travel in durable clothing. Though it's not armor and uses your unarmored defense proficiency, it still has a Dex Cap and can grant an item bonus to AC if etched with potency runes.</p>"
                 },
                 "dexCap": 5,
                 "equipped": {
                     "carryType": "worn",
-                    "inSlot": false,
+                    "handsHeld": 0,
+                    "inSlot": true,
                     "invested": false
-                },
-                "equippedBulk": {
-                    "value": "L"
                 },
                 "group": "cloth",
                 "hardness": 0,
@@ -651,100 +505,64 @@
                     "value": 0
                 },
                 "level": {
-                    "value": 11
+                    "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
-                        "gp": 1400
+                        "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": "resilient"
-                },
                 "rules": [],
-                "size": "med",
-                "slug": "clothing-explorers",
-                "source": {
-                    "value": ""
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "resilient": 1
                 },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "size": "med",
+                "slug": "explorers-clothing",
+                "speedPenalty": 0,
                 "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "comfort"
                     ]
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "cHwG6EKTlyMwi7RS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/blightburn-resin.webp",
+            "img": "icons/commodities/stone/geode-raw-teal.webp",
             "name": "Blightburn Resin (Infused)",
             "sort": 700000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>This tacky, hardened sap is harvested from trees infected by fungal blights and exposed to open flames.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[15d6[poison]] damage (1 round)</p>"
+                    "value": "<p>This tacky, hardened sap is harvested from trees infected by fungal blights and exposed to open flames.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[15d6[poison]] damage (1 round)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -754,81 +572,67 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 225
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 6,
                 "rules": [],
                 "size": "med",
                 "slug": "blightburn-resin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
                         "contact",
+                        "infused",
                         "poison"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "KuE0S4ZyiqHbSfvx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/deathcap-powder.webp",
+            "img": "icons/tools/laboratory/bowl-powder-purple.webp",
             "name": "Deathcap Powder (Infused)",
             "sort": 800000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[13d6[poison]] damage (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[17d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[20d6[poison]] damage and sickened 3 (1 minute)</p>"
+                    "value": "<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[13d6[poison]] damage (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[17d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[20d6[poison]] damage and sickened 3 (1 minute)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -838,33 +642,30 @@
                 "level": {
                     "value": 13
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 450
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "deathcap-powder",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
+                        "infused",
                         "ingested",
                         "poison"
                     ]
@@ -872,47 +673,40 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "9EsRCYx3AFtCZRrY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/elixir-of-life.webp",
             "name": "Elixir of Life (Greater) (Infused)",
             "sort": 900000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "elixir"
-                },
-                "consume": {
-                    "value": "7d6+18"
-                },
+                "category": "elixir",
                 "containerId": null,
+                "damage": {
+                    "formula": "7d6+18",
+                    "kind": "healing",
+                    "type": "untyped"
+                },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(7d6+18)[healing]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life (Greater)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(7d6+18)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -922,81 +716,67 @@
                 "level": {
                     "value": 13
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 600
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 4,
                 "rules": [],
                 "size": "med",
                 "slug": "elixir-of-life-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
                         "elixir",
-                        "healing"
+                        "healing",
+                        "infused"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "QaC0GPWy0uvhg0Fi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/malyass-root-paste.webp",
             "name": "Malyass Root Paste (Infused)",
             "sort": 1000000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>Malyass root paste sees use to impede opponents in athletic competitions, in addition to espionage and tracking.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and -10-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 2</strong> clumsy 2 and -20-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 3</strong> clumsy 3, @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed], and -30-foot status penalty to all Speeds</p>"
+                    "value": "<p>Malyass root paste sees use to impede opponents in athletic competitions, in addition to espionage and tracking.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and -10-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 2</strong> clumsy 2 and -20-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 3</strong> clumsy 3, @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard], and -30-foot status penalty to all Speeds</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1006,81 +786,67 @@
                 "level": {
                     "value": 7
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 55
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "malyass-root-paste",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
                         "contact",
+                        "infused",
                         "poison"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "hvEbv5Fc39YQvjbA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/purple-worm-venom.webp",
+            "img": "icons/consumables/potions/bottle-conical-corked-purple.webp",
             "name": "Purple Worm Venom (Infused)",
             "sort": 1100000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>Venom from enormous purple worms leaves a victim weakened.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage and enfeebled 2 (1 round)</p>"
+                    "value": "<p>Venom from enormous purple worms leaves a victim weakened.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage and enfeebled 2 (1 round)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1090,33 +856,30 @@
                 "level": {
                     "value": 13
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 500
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 9,
                 "rules": [],
                 "size": "med",
                 "slug": "purple-worm-venom",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
+                        "infused",
                         "injury",
                         "poison"
                     ]
@@ -1124,47 +887,36 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "JDcm0nA7FnWLcc3u",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/shadow-essence.webp",
+            "img": "icons/consumables/potions/bottle-bulb-empty-glass.webp",
             "name": "Shadow Essence (Infused)",
             "sort": 1200000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[negative]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[negative]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[negative]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 round)</p>"
+                    "value": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 round)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1174,82 +926,68 @@
                 "level": {
                     "value": 10
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 160
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 6,
                 "rules": [],
                 "size": "med",
                 "slug": "shadow-essence",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
+                        "infused",
                         "injury",
-                        "negative",
-                        "poison"
+                        "poison",
+                        "void"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "iK0TuuqSgMqAGl3j",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/spider-root.webp",
+            "img": "icons/commodities/materials/slime-purple.webp",
             "name": "Spider Root (Infused)",
             "sort": 1300000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[9d6[poison]] damage and clumsy 2 (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[10d6[poison]] damage and clumsy 3 (1 minute)</p>"
+                    "value": "<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[9d6[poison]] damage and clumsy 2 (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[10d6[poison]] damage and clumsy 3 (1 minute)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1259,81 +997,67 @@
                 "level": {
                     "value": 9
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 110
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "spider-root",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
                         "contact",
+                        "infused",
                         "poison"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "0wpoSMlbDUIz1ugC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.6swrLimere2nZtz9"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.6swrLimere2nZtz9"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/dragon-bile.webp",
+            "img": "icons/commodities/materials/glass-orb-marble-green.webp",
             "name": "Dragon Bile (applied to body)",
             "sort": 1400000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "poison"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "poison",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p>A mix of digestive juices and green dragon poison glands nauseates the victim as its flesh is digested from within.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage and sickened 3 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage and sickened 4 (1 round)</p>"
+                    "value": "<p>A mix of digestive juices and green dragon poison glands nauseates the victim as its flesh is digested from within.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage and sickened 3 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage and sickened 4 (1 round)</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1343,28 +1067,24 @@
                 "level": {
                     "value": 15
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 925
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "dragon-bile",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1377,8 +1097,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -1412,11 +1134,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1453,36 +1177,31 @@
                     "value": 31
                 },
                 "damageRolls": {
-                    "ny8z7zpu73ykq876hbhl": {
+                    "0": {
                         "damage": "1",
+                        "damageType": "acid"
+                    },
+                    "1": {
+                        "category": "persistent",
+                        "damage": "3d6",
+                        "damageType": "acid"
+                    },
+                    "2": {
+                        "category": "splash",
+                        "damage": "3",
                         "damageType": "acid"
                     }
                 },
                 "description": {
                     "value": ""
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.criticalSuccess"
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
+                "rules": [],
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1521,36 +1240,31 @@
                     "value": 31
                 },
                 "damageRolls": {
-                    "ahs98hd1sewwxvit0bwt": {
+                    "0": {
                         "damage": "3d8",
+                        "damageType": "fire"
+                    },
+                    "1": {
+                        "category": "persistent",
+                        "damage": "3",
+                        "damageType": "fire"
+                    },
+                    "2": {
+                        "category": "splash",
+                        "damage": "3",
                         "damageType": "fire"
                     }
                 },
                 "description": {
                     "value": ""
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AlchemistsFire.Greater.criticalSuccess"
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
+                "rules": [],
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1589,13 +1303,23 @@
                     "value": 31
                 },
                 "damageRolls": {
-                    "r4ouxj94sglxbhsou18r": {
+                    "0": {
                         "damage": "3d6",
+                        "damageType": "electricity"
+                    },
+                    "1": {
+                        "category": "splash",
+                        "damage": "3",
                         "damageType": "electricity"
                     }
                 },
                 "description": {
                     "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1605,9 +1329,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1646,13 +1367,23 @@
                     "value": 31
                 },
                 "damageRolls": {
-                    "km8h3frtekpegm6thepi": {
+                    "0": {
                         "damage": "3d6",
+                        "damageType": "cold"
+                    },
+                    "1": {
+                        "category": "splash",
+                        "damage": "3",
                         "damageType": "cold"
                     }
                 },
                 "description": {
                     "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1662,9 +1393,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1683,14 +1411,9 @@
             "type": "melee"
         },
         {
-            "_id": "YJSYffNSRUb4P2Cw",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
+            "_id": "LF5gi4818bCXaIHR",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
+            "name": "Infused Items",
             "sort": 2000000,
             "system": {
                 "actionType": {
@@ -1701,62 +1424,18 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+                    "value": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.Acid Flask (Greater)], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Alchemist's Fire (Greater)], 6 @UUID[Compendium.pf2e.equipment-srd.Item.Blightburn Resin], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Bottled Lightning (Greater)], 3 @UUID[Compendium.pf2e.equipment-srd.Item.Deathcap Powder], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Elixir of Life (Greater)], 2 @UUID[Compendium.pf2e.equipment-srd.Item.Frost Vial (Greater)], 3 @UUID[Compendium.pf2e.equipment-srd.Item.Tangle Root Toxin]{Malyass Root Paste}, 9 @UUID[Compendium.pf2e.equipment-srd.Item.Cave Worm Venom]{Purple Worm Venom}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Nethershade]{Shadow Essence}, and 3 @UUID[Compendium.pf2e.equipment-srd.Item.Spider Root]. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "LF5gi4818bCXaIHR",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Infused Items",
-            "sort": 2100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.Acid Flask (Greater)], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Alchemist's Fire (Greater)], 6 @UUID[Compendium.pf2e.equipment-srd.Item.Blightburn Resin], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Bottled Lightning (Greater)], 3 @UUID[Compendium.pf2e.equipment-srd.Item.Deathcap Powder], 4 @UUID[Compendium.pf2e.equipment-srd.Item.Elixir of Life (Greater)], 2 @UUID[Compendium.pf2e.equipment-srd.Item.Frost Vial (Greater)], 3 @UUID[Compendium.pf2e.equipment-srd.Item.Malyass Root Paste], 9 @UUID[Compendium.pf2e.equipment-srd.Item.Purple Worm Venom], 6 @UUID[Compendium.pf2e.equipment-srd.Item.Shadow Essence], and 3 @UUID[Compendium.pf2e.equipment-srd.Item.Spider Root]. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1765,7 +1444,7 @@
             "_id": "aT1K6zkwI73D4tJ8",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Poisoned Coat",
-            "sort": 2200000,
+            "sort": 2100000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -1777,23 +1456,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature adjacent to Blue Viper hits him with a melee unarmed Strike.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is exposed to @UUID[Compendium.pf2e.equipment-srd.Item.Dragon Bile]. This consumes the poison, and Blue Viper can't use Poisoned Coat again until he spends 10 minutes applying one dose of contact or injury poison to his clothing.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1802,7 +1474,7 @@
             "_id": "G1wu8KW1gALb7KbD",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Pinpoint Poisoner",
-            "sort": 2300000,
+            "sort": 2200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1812,25 +1484,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When Blue Viper successfully Strikes a @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] creature with a poisoned weapon or exposes a flat-footed creature to an inhaled poison, the creature takes a -2 circumstance penalty to its initial save against that poison.</p>"
+                    "value": "<p>When Blue Viper successfully Strikes an @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creature with a poisoned weapon or exposes an off-guard creature to an inhaled poison, the creature takes a -2 circumstance penalty to its initial save against that poison.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1839,7 +1504,7 @@
             "_id": "Tt37ijMg1fiX7fGx",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Poison Spray",
-            "sort": 2400000,
+            "sort": 2300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1849,25 +1514,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> Blue Viper is holding a contact or injury poison.</p>\n<hr />\n<p><strong>Effect</strong> Blue Viper swigs the poison and sprays it out of his mouth, affecting a @Template[type:cone|distance:15]. Blue Viper isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison and each creature must attempt a Fortitude save against the poison.</p>"
+                    "value": "<p><strong>Requirements</strong> Blue Viper is holding a contact or injury poison.</p>\n<hr />\n<p><strong>Effect</strong> Blue Viper swigs the poison and sprays it out of his mouth, affecting a @Template[cone|distance:15]. Blue Viper isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison and each creature must attempt a Fortitude save against the poison.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1876,7 +1534,7 @@
             "_id": "rbtSqixbTXvvcmJc",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Potent Poisoner",
-            "sort": 2500000,
+            "sort": 2400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1888,23 +1546,16 @@
                 "description": {
                     "value": "<p>Blue Viper's infused poisons have a DC of 37.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1913,7 +1564,7 @@
             "_id": "UUgL7mamcQM9PkU0",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Quick Application",
-            "sort": 2600000,
+            "sort": 2500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1925,23 +1576,16 @@
                 "description": {
                     "value": "<p>Blue Viper Interacts to draw an injury poison and applies it to a weapon he is holding.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1950,7 +1594,7 @@
             "_id": "KNsjthb0m0ASdoMo",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Toxic Escape",
-            "sort": 2700000,
+            "sort": 2600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1960,166 +1604,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Blue Viper Interacts to draw an inhaled poison, deploys the poison in a smoke cloud that provides concealment in a @Template[type:emanation|distance:5], then @UUID[Compendium.pf2e.actionspf2e.Item.Sneak]{Sneaks} up to his Speed. He is not exposed to the inhaled poison.</p>"
+                    "value": "<p>Blue Viper Interacts to draw an inhaled poison, deploys the poison in a smoke cloud that provides concealment in a @Template[emanation|distance:5], then @UUID[Compendium.pf2e.actionspf2e.Item.Sneak]{Sneaks} up to his Speed. He is not exposed to the inhaled poison.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "cYwHJLklnfYYtD2C",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "uAWxaz4iqF9y7jjl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "CgDKp9WN9hlUIZPr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 3000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "s8g2JphAlnaDDTtR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 3100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "KRBLNlkQW3Yd11iu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 3200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nXfe95qCZxv3he29",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Thievery",
-            "sort": 3300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Blue Viper (Level 16)",
@@ -2161,31 +1660,44 @@
                 "temp": 0,
                 "value": 300
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 30
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Male ysoki poisoner",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "goblin",
+                    "taldane",
+                    "tien",
+                    "ysoki"
+                ]
+            },
             "level": {
                 "value": 16
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #167: Ready? Fight!"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #167: Ready? Fight!"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 30,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -2202,28 +1714,33 @@
                 "value": 24
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 31
+            },
+            "athletics": {
+                "base": 18
+            },
+            "deception": {
+                "base": 25
+            },
+            "diplomacy": {
+                "base": 23
+            },
+            "stealth": {
+                "base": 29
+            },
+            "thievery": {
+                "base": 27
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "goblin",
-                    "taldane",
-                    "tien",
-                    "ysoki"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
+                "evil",
                 "humanoid",
                 "ratfolk"
             ]

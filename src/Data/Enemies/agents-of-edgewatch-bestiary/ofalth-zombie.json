@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "ehIOLNoRHDuhN3yR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -66,11 +66,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -110,11 +112,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -128,101 +132,10 @@
             "type": "melee"
         },
         {
-            "_id": "E85UiB4OeqzsCKWf",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "HxSPrzqufbKb8gOo",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "pxtdz9Cb1KUHXsrM",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Corpse Wallow",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -234,8 +147,10 @@
                 "description": {
                     "value": "<p>The ofalth zombie gains fast healing 2 as long as it is in the Catacombs or another area with a high concentration of dead.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -253,18 +168,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -273,7 +179,7 @@
             "_id": "Tbf45tR5JDVDyJCc",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rotting Aura",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -283,10 +189,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>The zombie emits an aura of rot and disease that causes wounds to fester and turn sour. Any living creature that starts its turn within 10 feet of the Ofalth Zombie and is not at full Hit Points takes [[/r 1d6]] damage as its wounds fester.</p>\n<p>Creatures that take a critical hit from the Ofalth Zombie also take this damage immediately.</p>\n<hr />\n<p><em>Note: This ability lists a DC 24 in the source, but the glossary ability lacks a save to make.</em></p>"
+                    "value": "<p>10 feet. The zombie emits an aura of rot and disease that causes wounds to fester and turn sour. Any living creature that starts its turn within 10 feet of the Ofalth Zombie and is not at full Hit Points takes @Damage[2d6[untyped]] damage as its wounds fester.</p>\n<p>Creatures that take a critical hit from the Ofalth Zombie also take this damage immediately.</p>\n<hr />\n<p><em>Note: This ability lists a DC 24 in the source, but the glossary ability lacks a save to make.</em></p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -294,29 +202,25 @@
                         "radius": 10,
                         "slug": "rotting-aura",
                         "traits": [
-                            "aura",
-                            "disease",
-                            "necromancy"
+                            "disease"
                         ]
+                    },
+                    {
+                        "critical": true,
+                        "damageType": "untyped",
+                        "diceNumber": 2,
+                        "dieSize": "d6",
+                        "key": "DamageDice",
+                        "selector": "strike-damage"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "disease",
-                        "necromancy"
+                        "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -325,7 +229,7 @@
             "_id": "4T0hd15HFgEoLTEv",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -337,23 +241,56 @@
                 "description": {
                     "value": "<p>The ofalth zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "HxSPrzqufbKb8gOo",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -362,7 +299,7 @@
             "_id": "9dxZ2UN0t2f32r0f",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Bury in Offal",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -372,25 +309,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The ofalth zombie makes a fling offal Strike and compares the attack roll result to the AC of any foes within the area of a @Template[type:cone|distance:15] emanating from the ofalth zombie. This counts as two attacks for the ofalth zombie's multiple attack penalty.</p>\n<p>The ofalth zombie can't use Bury in Offal again until it moves at least 10 feet to a different space.</p>"
+                    "value": "<p>The ofalth zombie makes a fling offal Strike and compares the attack roll result to the AC of any foes within the area of a @Template[cone|distance:15] emanating from the ofalth zombie. This counts as two attacks for the ofalth zombie's multiple attack penalty.</p>\n<p>The ofalth zombie can't use Bury in Offal again until it moves at least 10 feet to a different space.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -399,7 +329,7 @@
             "_id": "lmVllcsiFHe8ybRy",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Wretched Weeps",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -409,53 +339,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 day)</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "wretched-weeps",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "8V2Z2GRynfRJyT7O",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Ofalth Zombie",
@@ -489,7 +389,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 190,
                 "temp": 0,
                 "value": 190
@@ -505,25 +405,19 @@
                     "type": "paralyzed"
                 },
                 {
-                    "type": "positive"
+                    "type": "poison"
                 },
                 {
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 15
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -533,19 +427,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 7
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #158: Sixty Feet Under"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #158: Sixty Feet Under"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 15,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -562,26 +470,22 @@
                 "value": 13
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 20
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "aberration",
+                "evil",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

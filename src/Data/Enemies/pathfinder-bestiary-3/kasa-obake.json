@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -61,23 +63,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature damages the kasa-obake, and the kasa-obake is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> The kasa-obake fades from view and becomes @UUID[Compendium.pf2e.conditionitems.Item.Concealed] to the triggering creature until the end of that creature's turn; if the kasa-obake was already concealed to the triggering creature due to the light level, they become @UUID[Compendium.pf2e.conditionitems.Item.Hidden] instead.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -96,16 +91,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>If a kasa-obake successfully @UUID[Compendium.pf2e.actionspf2e.Item.Demoralize]{Demoralizes} a creature and they were @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to the creature before the attempt to Demoralize, the creature must succeed at a @Check[type:will|dc:21] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round.</p>"
+                    "value": "<p>If a kasa-obake successfully @UUID[Compendium.pf2e.actionspf2e.Item.Demoralize]{Demoralizes} a creature and they were @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to the creature before the attempt to Demoralize, the creature must succeed at a @Check[will|dc:21] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -114,153 +108,9 @@
                         "incapacitation",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "Moq7nf5aHr0ww2Nj",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "rWGULkQhHT0U15BZ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "EfPR9tCzRioNGGYf",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nrjL2pbFvtbVB5zM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "IpTNABZIhpzcbTXs",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "sf0n2vqzhGSy52OT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Kasa-Obake",
@@ -331,31 +181,37 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "NG"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>The jerky stomping outside in the middle of the night belongs to the kasa-obake. Though their appearances vary, most kasa-obake resemble an umbrella with a humanoid leg or two protruding where one might expect a handle. It has one or two eyes and can have up to two arms, or no arms at all. Kasa-obake adore wordplay and puns and delight in learning new ones, especially as language evolves over time. Though they enjoy giving living creatures the occasional scare, kasa-obake rarely, if ever, attack.</p>\n<hr />\n<p>Tsukumogami are intelligent, mobile objects formed from the union between a 100-year-old object and a kami. Tsukumogami range from harmless to malicious, each individual personality a result of how the object was treated before its awakening. Well-cared-for objects tend to birth helpful, friendly tsukumogami, while mistreated or abandoned objects twist into malevolent and violent beings.Most tsukumogami are, by nature, mischievous, and oftentimes want nothing more than to occupy the attention of living creatures.</p>\n<p>Tsukumogami can commonly be found in areas with a strong cultural belief in the value of caring for objects, which helps items survive long enough to become tsukumogami. Towns and villages with large tsukumogami populations are referred to as \"sleepless towns\" due to the nightly tsukumogami celebrations, which can become so raucous that they prevent the living residents from sleeping peacefully.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -372,25 +228,33 @@
                 "value": 13
             }
         },
+        "skills": {
+            "diplomacy": {
+                "base": 11
+            },
+            "intimidation": {
+                "base": 11
+            },
+            "occultism": {
+                "base": 11
+            },
+            "religion": {
+                "base": 11
+            },
+            "society": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "good",
                 "kami"
             ]
         }

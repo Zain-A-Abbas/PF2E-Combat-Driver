@@ -18,7 +18,7 @@
                     ]
                 },
                 "bonus": {
-                    "value": 8
+                    "value": 6
                 },
                 "damageRolls": {
                     "tdj2ivxg9xkm8xxn1eb3": {
@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -48,52 +50,10 @@
             "type": "melee"
         },
         {
-            "_id": "5e9xpAPgJWQxMqDB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "YIHoSZN2nTp139Dg",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Slink",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -105,23 +65,16 @@
                 "description": {
                     "value": "<p>If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to Stride, @UUID[Compendium.pf2e.actionspf2e.Item.Climb], or @UUID[Compendium.pf2e.actionspf2e.Item.Swim] up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -130,7 +83,7 @@
             "_id": "TnaXi3v3iBDjotwd",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Viper Venom",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -140,138 +93,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A target damaged by the viper's fangs must succeed at a @Check[type:fortitude|dc:16] save or take @Damage[1d10[poison]] damage.</p>"
+                    "value": "<p>A target damaged by the viper's fangs must succeed at a @Check[fortitude|dc:16] save or take @Damage[1d10[poison]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "viper-venom",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "MTtwRcI2WTxC37Ze",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "XiR8kBhdXvv7AE8L",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 1
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Climb",
-                        "predicate": [
-                            "action:climb"
-                        ],
-                        "selector": "athletics",
-                        "value": 3
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+4 to Climb",
-                        "options": "action:climb"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Mi43Uzzjoe6pHeQ3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "8HalHuYoon8cDD7y",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 3
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Viper (BB)",
@@ -302,7 +140,7 @@
         "attributes": {
             "ac": {
                 "details": "",
-                "value": 15
+                "value": 14
             },
             "allSaves": {
                 "value": ""
@@ -312,12 +150,6 @@
                 "max": 8,
                 "temp": 0,
                 "value": 8
-            },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 5
             },
             "speed": {
                 "otherSpeeds": [
@@ -334,19 +166,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": -1
             },
             "privateNotes": "",
-            "publicNotes": "<p>Each member of this family of venomous snakes has long, hinged fangs that inject potent venom in their prey. Different vipers inject different types of venom, which might result in paralysis, extreme pain and swelling, blood clotting, or even the sudden stopping of the victim's heart.</p>\n<p>Though far less of an imposing physical threat than a giant viper, a common viper poses far more danger than its size would suggest. A viper mainly hunts small mammals or lizards but will attack a humanoid it perceives as a threat.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publicNotes": "<p>Each member of this family of venomous snakes has long, hinged fangs that inject potent venom into their prey. Different vipers inject different types of venom, which might result in paralysis, extreme pain and swelling, blood clotting, or even the sudden stopping of the victim's heart.</p>\n<p>Though far less of an imposing physical threat than a giant viper, a common viper poses far more danger than its size would suggest. A viper mainly hunts small mammals or lizards but will attack a humanoid it perceives as a threat.</p>",
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 5,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -363,16 +209,31 @@
                 "value": 5
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 5
+            },
+            "athletics": {
+                "base": 1,
+                "special": [
+                    {
+                        "base": 4,
+                        "label": "to Climb",
+                        "predicate": [
+                            "action:climb"
+                        ]
+                    }
+                ]
+            },
+            "stealth": {
+                "base": 5
+            },
+            "survival": {
+                "base": 3
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "tiny"
             },

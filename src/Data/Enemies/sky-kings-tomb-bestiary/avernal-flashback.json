@@ -1,6 +1,5 @@
 {
     "_id": "cDkbVQSh0U7e7xtv",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/hazard.svg",
     "items": [
         {
@@ -17,21 +16,17 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Zogototaru breathes fire across Guldrege. Even from a distance, this makes the area blisteringly hot, dealing @Damage[3d6[fire]] damage to all creatures (@Check[type:fortitude|dc:22|basic:true] save).</p>"
+                    "value": "<p>Zogototaru breathes fire across Guldrege. Even from a distance, this makes the area blisteringly hot, dealing @Damage[3d6[fire]] damage to all creatures (@Check[fortitude|dc:22|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -50,21 +45,17 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Zogototaru's thrashing appears to crack the roof, dropping debris on a random creature in the area. This deals @Damage[4d6[bludgeoning]] damage (@Check[type:reflex|dc:22|basic:true] save).</p>"
+                    "value": "<p>Zogototaru's thrashing appears to crack the roof, dropping debris on a random creature in the area. This deals @Damage[4d6[bludgeoning]] damage (@Check[reflex|dc:22|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -83,21 +74,17 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Zogototaru's thrashing shakes the ground, knocking creatures @UUID[Compendium.pf2e.conditionitems.Item.Prone] in the area unless they succeed at a @Check[type:reflex|dc:20] save.</p>"
+                    "value": "<p>Zogototaru's thrashing shakes the ground, knocking creatures @UUID[Compendium.pf2e.conditionitems.Item.Prone] in the area unless they succeed at a @Check[reflex|dc:20] save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -155,7 +142,7 @@
                 },
                 {
                     "exceptions": [],
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 5
                 }
             ]
@@ -163,17 +150,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A phantasmal crimson worm appears to rampage outside the workshop, afflicting the area with phantom tremors, blistering heat, and cave-ins.</p>",
-            "disable": "<p>@Check[type:athletics|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22]; it takes three successful checks to weaken the haunt or erect supports that brace the ceiling. A PC who speaks Dwarven can attempt @Check[type:diplomacy|dc:22] (trained) checks to calm the phantasmal cave worm.</p>",
+            "disable": "<p>@Check[athletics|dc:22], @Check[occultism|dc:22], or @Check[religion|dc:22]; it takes three successful checks to weaken the haunt or erect supports that brace the ceiling. A PC who speaks Dwarven can attempt @Check[diplomacy|dc:22] (trained) checks to calm the phantasmal cave worm.</p>",
             "isComplex": true,
             "level": {
                 "value": 4
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
+            },
             "reset": "",
-            "routine": "<p>(2 actions) Zogototaru uses 1 action to create a Tremor. With her other action, she either Exudes Heat or makes Rocks Fall, alternating between the two each round.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #193: Mantle of Gold"
-            }
+            "routine": "<p>(2 actions) Zogototaru uses 1 action to create a Tremor. With her other action, she either Exudes Heat or makes Rocks Fall, alternating between the two each round.</p>"
         },
         "saves": {
             "fortitude": {

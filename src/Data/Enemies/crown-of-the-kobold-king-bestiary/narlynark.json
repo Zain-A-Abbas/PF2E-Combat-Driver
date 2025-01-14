@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "prepared"
@@ -22,119 +21,71 @@
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
                     "slot0": {
                         "max": 4,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "jvomHgJMmLE9HmmK"
                             },
-                            "1": {
+                            {
                                 "id": "Z2HmXah2YDl9YLMh"
                             },
-                            "2": {
+                            {
                                 "id": "irzexgx9AfLntcWH"
                             },
-                            "3": {
+                            {
                                 "id": "r4aLD7LWmVunBaqh"
                             }
-                        },
-                        "value": 0
+                        ]
                     },
                     "slot1": {
                         "max": 3,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "BtmJwzK9mcLOqlO5"
                             },
-                            "1": {
+                            {
                                 "id": "nFIdte3BVERYJPZQ"
                             },
-                            "2": {
+                            {
                                 "id": "FJiRSCX2hMDFi3I7"
                             }
-                        },
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
+                        ]
                     },
                     "slot2": {
                         "max": 3,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "aQAgiMJWLyGpcvjQ"
                             },
-                            "1": {
+                            {
                                 "id": "VS74qisq2oxZqhfg"
                             },
-                            "2": {
+                            {
                                 "id": "nFIdte3BVERYJPZQ"
                             }
-                        },
-                        "value": 0
+                        ]
                     },
                     "slot3": {
                         "max": 2,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "Bhdtzwhldilha2BA"
                             },
-                            "1": {
+                            {
                                 "id": "4S9ED9N4zgfiSVey"
                             }
-                        },
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
+                        ]
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 22,
                     "value": 14
@@ -147,55 +98,45 @@
         },
         {
             "_id": "Bhdtzwhldilha2BA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
             },
-            "img": "systems/pf2e/icons/spells/fireball.webp",
+            "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
             "name": "Fireball",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "fire"
-                            },
-                            "value": "6d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "6d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -210,56 +151,33 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "500 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fireball",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -267,55 +185,45 @@
         },
         {
             "_id": "4S9ED9N4zgfiSVey",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2"
             },
-            "img": "systems/pf2e/icons/spells/lightning-bolt.webp",
+            "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
             "name": "Lightning Bolt",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "line",
                     "value": 120
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "electricity"
-                            },
-                            "value": "4d12"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "4d12",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "electricity"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -330,56 +238,33 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "lightning-bolt",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "electricity",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -387,42 +272,26 @@
         },
         {
             "_id": "VS74qisq2oxZqhfg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq"
             },
             "img": "systems/pf2e/icons/spells/create-food.webp",
             "name": "Create Food",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You create enough food to feed six Medium creatures for a day. This food is bland and unappealing, but it is nourishing. After 1 day, if no one has eaten the food, it decays and becomes inedible. Most Small creatures eat one-quarter as much as a Medium creature (one-sixteenth as much for most Tiny creatures), and most Large creatures eat 10 times as much (100 times as much for Huge creatures and so on).</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can feed 12 Medium creatures.</p>\n<p><strong>Heightened (6th)</strong> You can feed 50 Medium creatures.</p>\n<p><strong>Heightened (8th)</strong> You can feed 200 Medium creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -430,56 +299,33 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "create-food",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 hour"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "conjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -487,157 +333,119 @@
         },
         {
             "_id": "jvomHgJMmLE9HmmK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt"
             },
-            "img": "systems/pf2e/icons/spells/acid-splash.webp",
+            "img": "icons/magic/acid/projectile-smoke-glowing.webp",
             "name": "Acid Splash",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "acid"
-                            },
-                            "value": "1d6"
-                        },
-                        "gcovwqxwitqchoin": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "splash",
-                                "value": "acid"
-                            },
-                            "value": "1"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "acid"
+                    },
+                    "gcovwqxwitqchoin": {
+                        "applyMod": false,
+                        "category": "splash",
+                        "formula": "1",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "acid"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus [[/r (1[splash])[acid]]]{1 splash acid damage}. On a critical success, the target also takes [[/r 1[persistent,acid]]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage] increases to [[/r 2[persistent,acid]]].</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the Persistent Damage increases to [[/r 3[persistent,acid]]], and the splash damage increases to [[/r (2[splash])[acid]]].</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the Persistent Damage increases to [[/r 4[persistent,acid]]], and the splash damage increases to [[/r (3[splash])[acid]]].</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the Persistent Damage increases to [[/r 5[persistent,acid]]], and the splash damage increases to [[/r (4[splash])[acid]]].</p>"
+                    "value": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes @Damage[(ceil(@item.level/2))[persistent,acid]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 2d6, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 3d6, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 4d6, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 5d6, the persistent damage increases to 5, and the splash damage increases to 4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
                         "3": {
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "applyMod": true,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "",
-                                            "value": "acid"
-                                        },
-                                        "value": "1d6"
-                                    },
-                                    "gcovwqxwitqchoin": {
-                                        "applyMod": false,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "splash",
-                                            "value": "acid"
-                                        },
-                                        "value": "1"
-                                    }
+                                "0": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "2d6",
+                                    "materials": [],
+                                    "type": "acid"
+                                },
+                                "gcovwqxwitqchoin": {
+                                    "applyMod": false,
+                                    "category": "splash",
+                                    "formula": "1",
+                                    "materials": [],
+                                    "type": "acid"
                                 }
                             }
                         },
                         "5": {
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "applyMod": true,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "",
-                                            "value": "acid"
-                                        },
-                                        "value": "2d6"
-                                    },
-                                    "gcovwqxwitqchoin": {
-                                        "applyMod": false,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "splash",
-                                            "value": "acid"
-                                        },
-                                        "value": "2"
-                                    }
+                                "0": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "3d6",
+                                    "materials": [],
+                                    "type": "acid"
+                                },
+                                "gcovwqxwitqchoin": {
+                                    "applyMod": false,
+                                    "category": "splash",
+                                    "formula": "2",
+                                    "materials": [],
+                                    "type": "acid"
                                 }
                             }
                         },
                         "7": {
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "applyMod": true,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "",
-                                            "value": "acid"
-                                        },
-                                        "value": "3d6"
-                                    },
-                                    "gcovwqxwitqchoin": {
-                                        "applyMod": false,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "splash",
-                                            "value": "acid"
-                                        },
-                                        "value": "3"
-                                    }
+                                "0": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "4d6",
+                                    "materials": [],
+                                    "type": "acid"
+                                },
+                                "gcovwqxwitqchoin": {
+                                    "applyMod": false,
+                                    "category": "splash",
+                                    "formula": "3",
+                                    "materials": [],
+                                    "type": "acid"
                                 }
                             }
                         },
                         "9": {
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "applyMod": true,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "",
-                                            "value": "acid"
-                                        },
-                                        "value": "4d6"
-                                    },
-                                    "gcovwqxwitqchoin": {
-                                        "applyMod": false,
-                                        "type": {
-                                            "categories": [],
-                                            "subtype": "splash",
-                                            "value": "acid"
-                                        },
-                                        "value": "4"
-                                    }
+                                "0": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "5d6",
+                                    "materials": [],
+                                    "type": "acid"
+                                },
+                                "gcovwqxwitqchoin": {
+                                    "applyMod": false,
+                                    "category": "splash",
+                                    "formula": "4",
+                                    "materials": [],
+                                    "type": "acid"
                                 }
                             }
                         }
@@ -650,59 +458,35 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "acid-splash",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
-                        "attack",
                         "acid",
+                        "attack",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -710,53 +494,44 @@
         },
         {
             "_id": "aQAgiMJWLyGpcvjQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
             },
             "img": "systems/pf2e/icons/spells/burning-hands.webp",
             "name": "Burning Hands",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 15
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "fire"
-                            },
-                            "value": "2d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "2d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -771,56 +546,33 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "burning-hands",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -828,42 +580,26 @@
         },
         {
             "_id": "BtmJwzK9mcLOqlO5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC"
             },
             "img": "systems/pf2e/icons/spells/create-water.webp",
             "name": "Create Water",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>As you cup your hands, water begins to flow forth from them. You create 2 gallons of water. If no one drinks it, it evaporates after 1 day.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -871,57 +607,34 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "0 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "create-water",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "water",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "water"
                     ]
                 }
             },
@@ -929,51 +642,42 @@
         },
         {
             "_id": "Z2HmXah2YDl9YLMh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf"
             },
-            "img": "systems/pf2e/icons/spells/electric-arc.webp",
+            "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
             "name": "Electric Arc",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "electricity"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": true,
+                        "category": null,
+                        "formula": "1d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "electricity"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>An arc of lightning leaps from one target to another. You deal electricity damage equal to 1d4 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -988,58 +692,34 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "electric-arc",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 or 2 creatures"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
-                        "electricity",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "electricity",
+                        "manipulate"
                     ]
                 }
             },
@@ -1047,51 +727,43 @@
         },
         {
             "_id": "nFIdte3BVERYJPZQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
             },
-            "img": "systems/pf2e/icons/spells/heal.webp",
+            "img": "icons/magic/life/cross-worn-green.webp",
             "name": "Heal",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "value": "positive"
-                            },
-                            "value": "1d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage",
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "vitality"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, somatic, verbal)</strong> You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+                    "value": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1106,9 +778,6 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "37gy7l19tik74o4s": {
                         "_id": "37gy7l19tik74o4s",
@@ -1116,17 +785,15 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "value": "1d8+8"
-                                    }
+                                "0": {
+                                    "formula": "1d8+8",
+                                    "kinds": [
+                                        "healing"
+                                    ]
                                 }
                             },
+                            "defense": null,
                             "heightening": {
                                 "damage": {
                                     "0": "1d8+8"
@@ -1135,12 +802,16 @@
                             "range": {
                                 "value": "30 feet"
                             },
-                            "save": {
-                                "basic": "",
-                                "value": ""
-                            },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     },
@@ -1149,9 +820,6 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true
-                            },
                             "range": {
                                 "value": "touch"
                             },
@@ -1169,11 +837,6 @@
                                 "type": "emanation",
                                 "value": 30
                             },
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "range": {
                                 "value": ""
                             },
@@ -1182,6 +845,14 @@
                             },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     },
@@ -1191,74 +862,60 @@
                         "overlayType": "override",
                         "sort": 3,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
+                            "damage": {
+                                "0": {
+                                    "kinds": [
+                                        "damage"
+                                    ]
+                                }
                             },
                             "range": {
                                 "value": "30 feet"
-                            },
-                            "spellType": {
-                                "value": "save"
                             },
                             "target": {
                                 "value": "1 undead"
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "healing",
+                                    "manipulate",
+                                    "vitality"
+                                ]
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "heal",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing living creature or 1 undead"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "healing",
-                        "positive",
-                        "necromancy"
+                        "manipulate",
+                        "vitality"
                     ]
                 }
             },
@@ -1266,51 +923,37 @@
         },
         {
             "_id": "irzexgx9AfLntcWH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe"
             },
-            "img": "systems/pf2e/icons/spells/produce-flame.webp",
+            "img": "icons/magic/fire/flame-burning-earth-orange.webp",
             "name": "Produce Flame",
             "sort": 1000000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "fire"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 1d4 fire damage plus your spellcasting ability modifier. On a critical success, the target takes double damage and [[/r 1d4[persistent,fire]]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage] on a critical hit by 1d4.</p>"
+                    "value": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1325,59 +968,35 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "produce-flame",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "attack",
-                        "fire",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "fire",
+                        "manipulate"
                     ]
                 }
             },
@@ -1385,51 +1004,37 @@
         },
         {
             "_id": "r4aLD7LWmVunBaqh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
             },
-            "img": "systems/pf2e/icons/spells/ray-of-frost.webp",
+            "img": "icons/magic/movement/trail-streak-impact-blue.webp",
             "name": "Ray of Frost",
             "sort": 1100000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "cold"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "cold"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals cold damage equal to 1d4 + your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1444,59 +1049,35 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ray-of-frost",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "attack",
-                        "cold",
                         "cantrip",
-                        "evocation"
+                        "cold",
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -1504,50 +1085,42 @@
         },
         {
             "_id": "FJiRSCX2hMDFi3I7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw"
             },
-            "img": "systems/pf2e/icons/spells/spider-sting.webp",
+            "img": "icons/creatures/invertebrates/tick-cross-glowing-purple.webp",
             "name": "Spider Sting",
             "sort": 1200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "poison"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "piercing"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You magically duplicate a spider's venomous sting. You deal 1d4 piercing damage to the touched creature and afflict it with spider venom. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 1d4 poison damage.</p>\n<p><strong>Failure</strong> The target is afflicted with spider venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with spider venom at stage 2.</p>\n<hr />\n<p><strong>Spider Venom</strong> (poison)</p>\n<p><strong>Level 1;</strong></p>\n<p><strong>Maximum Duration</strong> 4 rounds.</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round).</p>"
+                    "value": "<p>You magically duplicate a spider's venomous sting. You deal 1d4 piercing damage to the touched creature and afflict it with spider venom. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[1d4[poison]] damage.</p>\n<p><strong>Failure</strong> The target is afflicted with spider venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with spider venom at stage 2.</p>\n<hr />\n<p><strong>Spider Venom</strong> (poison)</p>\n<p><strong>Level</strong> 1</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> 1d4 poison damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 poison damage and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} (1 round)</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1555,56 +1128,33 @@
                 "location": {
                     "value": "uysIhfRCEFgAi1d2"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "spider-sting",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
-                        "poison",
-                        "necromancy"
+                        "concentrate",
+                        "manipulate",
+                        "poison"
                     ]
                 }
             },
@@ -1612,24 +1162,22 @@
         },
         {
             "_id": "xsYNTgZvjalFAfyi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.ynnBwzkzsR6B73iO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ynnBwzkzsR6B73iO"
             },
             "img": "systems/pf2e/icons/equipment/weapons/sickle.webp",
             "name": "Sickle",
             "sort": 1300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "sickle",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -1639,15 +1187,12 @@
                     "die": "d4"
                 },
                 "description": {
-                    "value": "<p>Originally a farming tool used for reaping grain, this one‑handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
+                    "value": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
                 },
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "knife",
                 "hardness": 0,
@@ -1658,34 +1203,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1693,17 +1223,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "sickle",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -1715,26 +1243,24 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "gzxjxEQGIx5AGtTB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 1400000,
             "system": {
                 "acBonus": 1,
                 "baseItem": "leather-armor",
+                "bulk": {
+                    "value": 1
+                },
                 "category": "light",
                 "checkPenalty": -1,
                 "containerId": null,
@@ -1748,9 +1274,6 @@
                     "inSlot": true,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": "1"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -1760,96 +1283,59 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "speedPenalty": 0,
                 "strength": 0,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "u6I0KExYw7kZTyj3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD"
             },
             "img": "systems/pf2e/icons/equipment/wands/magic-wands/magic-wand.webp",
             "name": "Wand of Spider Climb (Level 2)",
             "sort": 1500000,
             "system": {
-                "autoDestroy": {
-                    "value": false
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "wand"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "wand",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p><em>@UUID[Compendium.pf2e.spells-srd.Item.Spider Climb]</em></p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "value": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Gecko Grip]</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "equipped": {
                     "carryType": "worn"
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1859,65 +1345,48 @@
                 "level": {
                     "value": 5
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 160
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "magic-wand-2nd-level-spell",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "spell": {
-                    "_id": null,
+                    "_id": "Oz6qXPCmbZl3IjNR",
                     "flags": {
                         "core": {
                             "sourceId": "Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl"
                         }
                     },
-                    "img": "systems/pf2e/icons/spells/spider-climb.webp",
+                    "img": "icons/creatures/invertebrates/spider-striped-web-red.webp",
                     "name": "Spider Climb",
                     "sort": 0,
                     "system": {
-                        "ability": {
-                            "value": ""
-                        },
                         "area": null,
-                        "category": {
-                            "value": "spell"
-                        },
-                        "components": {
-                            "focus": false,
-                            "material": false,
-                            "somatic": true,
-                            "verbal": true
-                        },
                         "cost": {
                             "value": ""
                         },
-                        "damage": {
-                            "value": {}
-                        },
+                        "counteraction": false,
+                        "damage": {},
+                        "defense": null,
                         "description": {
                             "value": "<p>Tiny clinging hairs sprout across the creature's hands and feet, offering purchase on nearly any surface. The target gains a climb Speed equal to its Speed.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The duration increases to 1 hour.</p>"
                         },
                         "duration": {
+                            "sustained": false,
                             "value": "10 minutes"
-                        },
-                        "hasCounteractCheck": {
-                            "value": false
                         },
                         "level": {
                             "value": 2
@@ -1926,75 +1395,53 @@
                             "heightenedLevel": 2,
                             "value": ""
                         },
-                        "materials": {
-                            "value": ""
-                        },
-                        "prepared": {
-                            "value": ""
-                        },
-                        "primarycheck": {
-                            "value": ""
+                        "publication": {
+                            "license": "OGL",
+                            "remaster": false,
+                            "title": "Pathfinder Core Rulebook"
                         },
                         "range": {
                             "value": "touch"
                         },
+                        "requirements": "",
                         "rules": [],
-                        "save": {
-                            "basic": "",
-                            "value": ""
-                        },
-                        "secondarycasters": {
-                            "value": ""
-                        },
-                        "secondarycheck": {
-                            "value": ""
-                        },
                         "slug": "spider-climb",
-                        "source": {
-                            "value": "Pathfinder Core Rulebook"
-                        },
-                        "spellType": {
-                            "value": "utility"
-                        },
-                        "sustained": {
-                            "value": false
-                        },
                         "target": {
                             "value": "1 creature"
                         },
                         "time": {
                             "value": "2"
                         },
-                        "traditions": {
-                            "value": [
-                                "arcane",
-                                "primal"
-                            ]
-                        },
                         "traits": {
                             "rarity": "common",
+                            "traditions": [
+                                "arcane",
+                                "primal"
+                            ],
                             "value": [
-                                "transmutation"
+                                "concentrate",
+                                "manipulate"
                             ]
                         }
                     },
                     "type": "spell"
                 },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "magical",
-                        "wand",
                         "arcane",
-                        "primal"
+                        "magical",
+                        "primal",
+                        "wand"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": false,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -2028,11 +1475,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2061,144 +1510,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Narlynark is adjacent to at least one enemy;</p>\n<hr />\n<p><strong>Effect</strong> Narlynark shrieks in terror, a sound that quickly transitions from a kobold cry to the shrill cry of a bird. A pair of feathery wings grows from his back and his feet turn into bird talons. As he leaps into the air to flee, his talons lash out-one adjacent enemy of Narlynark's choice takes [[/r (3d6 + 6)[slashing]]] damage (@Check[type:reflex|dc:22|basic:true]). Narlynark can then fly up to 35 feet away. He must end his movement in a space that isn't adjacent to any enemies, and if he doesn't end the movement on the ground, he falls to the ground as his wings vanish and his feet return to normal.</p>"
+                    "value": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Narlynark is adjacent to at least one enemy;</p>\n<hr />\n<p><strong>Effect</strong> Narlynark shrieks in terror, a sound that quickly transitions from a kobold cry to the shrill cry of a bird. A pair of feathery wings grows from his back and his feet turn into bird talons. As he leaps into the air to flee, his talons lash out-one adjacent enemy of Narlynark's choice takes @Damage[(3d6 + 6)[slashing]] damage (@Check[reflex|dc:22|basic]). Narlynark can then fly up to 35 feet away. He must end his movement in a space that isn't adjacent to any enemies, and if he doesn't end the movement on the ground, he falls to the ground as his wings vanish and his feet return to normal.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "PT1H"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "MZZlyMdAr0HUno0s",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "wiie2UDuqpNa0L4l",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4oKxeuUIeWYLqTgr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "edOdRAnrbr6QDYSj",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "AoxVdYV8IGrWyd7U",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Narlynark",
@@ -2237,12 +1570,6 @@
                 "temp": 0,
                 "value": 75
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "resistances": [
                 {
                     "type": "electricity",
@@ -2259,19 +1586,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Male kobold druid",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "draconic",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Adventure: Crown of the Kobold King"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: Crown of the Kobold King"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -2288,24 +1633,30 @@
                 "value": 13
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 12
+            },
+            "deception": {
+                "base": 11
+            },
+            "nature": {
+                "base": 13
+            },
+            "stealth": {
+                "base": 12
+            },
+            "survival": {
+                "base": 13
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "draconic",
-                    "undercommon"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
+                "evil",
                 "humanoid",
                 "kobold"
             ]

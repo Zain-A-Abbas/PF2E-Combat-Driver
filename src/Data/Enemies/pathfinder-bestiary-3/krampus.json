@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 42,
                     "value": 34
@@ -106,42 +43,31 @@
         },
         {
             "_id": "loJZrVYKhiK9HRde",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe"
             },
-            "img": "systems/pf2e/icons/spells/baleful-polymorph.webp",
+            "img": "icons/creatures/amphibians/frog-confused-green-blue.webp",
             "name": "Baleful Polymorph",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
+                    }
                 },
                 "description": {
                     "value": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}. When it recovers from the Sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 6
@@ -154,57 +80,34 @@
                     },
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "baleful-polymorph",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "incapacitation",
-                        "polymorph",
-                        "transmutation"
+                        "manipulate",
+                        "polymorph"
                     ]
                 }
             },
@@ -212,53 +115,44 @@
         },
         {
             "_id": "wMBSLAvlAKkzGuY2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k"
             },
-            "img": "systems/pf2e/icons/spells/cone-of-cold.webp",
+            "img": "icons/magic/water/vortex-water-whirlpool.webp",
             "name": "Cone of Cold",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 60
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "cold"
-                            },
-                            "value": "12d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "12d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "cold"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -278,56 +172,33 @@
                     },
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "cone-of-cold",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "cold",
-                        "evocation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -335,42 +206,26 @@
         },
         {
             "_id": "6ruimm3IigTOGGP3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
             },
             "img": "systems/pf2e/icons/spells/tongues.webp",
             "name": "Tongues (Constant)",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -379,57 +234,34 @@
                     "heightenedLevel": 9,
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "tongues",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
                     "value": [
-                        "primal",
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -437,50 +269,36 @@
         },
         {
             "_id": "JPpinHcSJP68BYIn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.R5FHRv7VqyRnxg2t"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.R5FHRv7VqyRnxg2t"
             },
-            "img": "systems/pf2e/icons/spells/wall-of-ice.webp",
+            "img": "icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp",
             "name": "Wall of Ice",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "cold"
-                            },
-                            "value": "2d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "2d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "cold"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -496,57 +314,34 @@
                     "heightenedLevel": 9,
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "wall-of-ice",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "cold",
-                        "water",
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "water"
                     ]
                 }
             },
@@ -554,42 +349,26 @@
         },
         {
             "_id": "vOU0EcH2WqzHGtgl",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
             },
-            "img": "systems/pf2e/icons/spells/air-walk.webp",
+            "img": "icons/magic/water/wave-water-teal.webp",
             "name": "Air Walk (Constant)",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "5 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -598,57 +377,33 @@
                     "heightenedLevel": 9,
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "air-walk",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "air",
-                        "primal",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -656,42 +411,26 @@
         },
         {
             "_id": "U9ViaHzmhkqzKJ3Q",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
             },
             "img": "systems/pf2e/icons/spells/see-invisibility.webp",
             "name": "See Invisibility (Constant)",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You can see @UUID[Compendium.pf2e.conditionitems.Item.Invisible] creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: See Invisibility]</p>"
+                    "value": "<p>You can see @UUID[Compendium.pf2e.conditionitems.Item.Invisible] creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: See the Unseen]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -700,58 +439,35 @@
                     "heightenedLevel": 9,
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "see-invisibility",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
                     "value": [
-                        "primal",
-                        "revelation",
-                        "divination"
+                        "concentrate",
+                        "manipulate",
+                        "revelation"
                     ]
                 }
             },
@@ -759,42 +475,26 @@
         },
         {
             "_id": "QwC3PRtXqLd0utLI",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.kl2q6JvBZwed4B6v"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.kl2q6JvBZwed4B6v"
             },
             "img": "systems/pf2e/icons/spells/dancing-lights.webp",
             "name": "Dancing Lights",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
                 },
                 "duration": {
-                    "value": "sustained"
-                },
-                "hasCounteractCheck": {
-                    "value": false
+                    "sustained": true,
+                    "value": ""
                 },
                 "level": {
                     "value": 1
@@ -802,59 +502,35 @@
                 "location": {
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "dancing-lights",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": true
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "light",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "light",
+                        "manipulate"
                     ]
                 }
             },
@@ -862,51 +538,37 @@
         },
         {
             "_id": "b1HlWye2vd8xnnGO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
             },
-            "img": "systems/pf2e/icons/spells/ray-of-frost.webp",
+            "img": "icons/magic/movement/trail-streak-impact-blue.webp",
             "name": "Ray of Frost",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "cold"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "cold"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals cold damage equal to 1d4 + your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -921,59 +583,35 @@
                 "location": {
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ray-of-frost",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "attack",
-                        "cold",
                         "cantrip",
-                        "evocation"
+                        "cold",
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -981,42 +619,26 @@
         },
         {
             "_id": "mxIMoi09VMQSumXb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.AUctDF2fqPZN2w4W"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.AUctDF2fqPZN2w4W"
             },
             "img": "systems/pf2e/icons/spells/sigil.webp",
             "name": "Sigil",
             "sort": 1000000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "unlimited"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1024,59 +646,35 @@
                 "location": {
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "sigil",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature or object"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -1084,42 +682,26 @@
         },
         {
             "_id": "kGIZB5X0CF38In9p",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr"
             },
-            "img": "systems/pf2e/icons/spells/tanglefoot.webp",
+            "img": "icons/magic/nature/root-vine-entangled-hand.webp",
             "name": "Tanglefoot",
             "sort": 1100000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Tanglefoot]</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>"
+                    "value": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Tangle Vine]</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1127,59 +709,35 @@
                 "location": {
                     "value": "HYkzxImoz15eP5c0"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "tanglefoot",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
                         "attack",
                         "cantrip",
-                        "plant",
-                        "conjuration"
+                        "concentrate",
+                        "manipulate",
+                        "plant"
                     ]
                 }
             },
@@ -1187,24 +745,22 @@
         },
         {
             "_id": "l5mWQVGm4hAXrFYp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO"
             },
             "img": "systems/pf2e/icons/equipment/weapons/spiked-chain.webp",
             "name": "Spiked Chain",
             "sort": 1200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "spiked-chain",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -1214,15 +770,12 @@
                     "die": "d8"
                 },
                 "description": {
-                    "value": "<p>This 4‑foot‑long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>"
+                    "value": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>"
                 },
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 2,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "flail",
                 "hardness": 0,
@@ -1233,34 +786,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 3
-                },
-                "preciousMaterial": {
-                    "value": "cold-iron"
-                },
-                "preciousMaterialGrade": {
-                    "value": "high"
+                "material": {
+                    "grade": "high",
+                    "type": "cold-iron"
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1268,23 +806,20 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 3,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "lg",
                 "slug": "spiked-chain",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
                         "disarm",
-                        "evocation",
                         "finesse",
                         "magical",
                         "trip"
@@ -1292,9 +827,6 @@
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
@@ -1331,11 +863,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1344,7 +878,8 @@
                         "finesse",
                         "magical",
                         "reach-60",
-                        "trip"
+                        "trip",
+                        "unholy"
                     ]
                 },
                 "weaponType": {
@@ -1380,11 +915,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1424,11 +961,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1442,52 +981,10 @@
             "type": "melee"
         },
         {
-            "_id": "lmUd66np5PVIvPFr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 60 feet",
-            "sort": 1600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "XPllxNneASW7mX3o",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Blizzard Sight",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1499,37 +996,28 @@
                 "description": {
                     "value": "<p>Krampus ignores circumstance penalties to visual Perception checks due to ice or snow, as well as @UUID[Compendium.pf2e.conditionitems.Item.Concealed]{Concealment} due to ice or snow.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "vct7Th4oUyktL8WO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1541,37 +1029,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "4j8tGzWuHcBuRSsZ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Frightful Presence",
-            "sort": 1900000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1581,10 +1060,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:120]{120 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura] @Check[type:will|dc:42]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "value": "<p>120 feet. @Check[will|dc:42]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -1592,7 +1073,6 @@
                         "radius": 120,
                         "slug": "frightful-presence",
                         "traits": [
-                            "aura",
                             "emotion",
                             "fear",
                             "mental"
@@ -1600,9 +1080,6 @@
                     }
                 ],
                 "slug": "frightful-presence",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1611,12 +1088,6 @@
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1625,7 +1096,7 @@
             "_id": "fg1os9FHkiVGPkuh",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Limited Immortality",
-            "sort": 2000000,
+            "sort": 1900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1637,23 +1108,16 @@
                 "description": {
                     "value": "<p>Though Krampus still needs to eat, drink, and sleep, he doesn't age and can't die of old age. If Krampus is killed, a new Krampus forms elsewhere in the world after a year's time.</p>\n<p>The new Krampus retains the memories of the previous iteration and likely holds a grudge against whoever killed him the year before. If a method to disrupt this cycle exists, it has yet to be discovered by mortals.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1662,6 +1126,38 @@
             "_id": "B8Uf7QHdJ2D0Fs74",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Capture",
+            "sort": 2000000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Requirements</strong> Krampus has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> Krampus attempts to stuff the grabbed creature into his basket, attempting an @Check[athletics|traits:action:shove|defense:reflex] check against the target's Reflex DC. If he succeeds, the creature is shoved into Krampus's basket and Krampus's spiked chain or claw is freed for future Strikes.</p>\n<p>The captured creature is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}, and subjected to Krampus's regression ability at the start of each round it is captured.</p>\n<p>If the victim @UUID[Compendium.pf2e.actionspf2e.Item.Escape]{Escapes} (DC 48), it climbs out of the basket. A captured creature can attack the interior of the basket, but only with unarmed attacks or weapons of light Bulk or less, against an AC of 40. If the captured creature deals 40 slashing or piercing damage, the basket is broken and all the creatures inside spill out. A creature that gets free by either Escaping or by someone breaking the basket is deposited in a square of their choosing adjacent to Krampus.</p>\n<p>The basket is an extradimensional space, so the weight of the creatures within doesn't count against Krampus's Bulk limit. Up to four Small creatures or two Medium creatures can fit in the basket at one time.</p>\n<p>Krampus can @UUID[Compendium.pf2e.actionspf2e.Item.Repair] the basket as a 2-action activity that doesn't require tools. If the basket is lost or destroyed, Krampus can create a new one with 1 hour of work. The basket functions as a normal sack if used by anyone other than Krampus.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "attack"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "wJFd0snSm32sHDWx",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Punish the Naughty",
             "sort": 2100000,
             "system": {
                 "actionType": {
@@ -1672,49 +1168,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> Krampus has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> Krampus attempts to stuff the grabbed creature into his basket, attempting an @Check[type:athletics|traits:action:shove] check against the target's Reflex DC. If he succeeds, the creature is shoved into Krampus's basket and Krampus's spiked chain or claw is freed for future Strikes.</p>\n<p>The captured creature is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}, and subjected to Krampus's regression ability at the start of each round it is captured.</p>\n<p>If the victim @UUID[Compendium.pf2e.actionspf2e.Item.Escape]{Escapes} (DC 48), it climbs out of the basket. A captured creature can attack the interior of the basket, but only with unarmed attacks or weapons of light Bulk or less, against an AC of 40. If the captured creature deals 40 slashing or piercing damage, the basket is broken and all the creatures inside spill out. A creature that gets free by either Escaping or by someone breaking the basket is deposited in a square of their choosing adjacent to Krampus.</p>\n<p>The basket is an extradimensional space, so the weight of the creatures within doesn't count against Krampus's Bulk limit. Up to four Small creatures or two Medium creatures can fit in the basket at one time.</p>\n<p>Krampus can @UUID[Compendium.pf2e.actionspf2e.Item.Repair] the basket as a 2-action activity that doesn't require tools. If the basket is lost or destroyed, Krampus can create a new one with 1 hour of work. The basket functions as a normal sack if used by anyone other than Krampus.</p>"
+                    "value": "<p>Krampus designates a single target he can see as \"naughty.\" He gains a +2 circumstance bonus to Perception checks when he @UUID[Compendium.pf2e.actionspf2e.Item.Seek]{Seeks} the naughty target and a +2 circumstance bonus to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.Track] the naughty target.</p>\n<p>On melee attacks against the naughty target, Krampus's spiked chain gains the agile trait. In addition, when Krampus @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]{Grabs} the naughty target, he can attempt to Capture them as a free action. Krampus can have only one naughty target at a time.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "attack"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "wJFd0snSm32sHDWx",
-            "img": "systems/pf2e/icons/actions/OneAction.webp",
-            "name": "Punish the Naughty",
-            "sort": 2200000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 1
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Krampus designates a single target he can see as “naughty.” He gains a +2 circumstance bonus to Perception checks when he @UUID[Compendium.pf2e.actionspf2e.Item.Seek]{Seeks} the naughty target and a +2 circumstance bonus to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.Track] the naughty target.</p>\n<p>On melee attacks against the naughty target, Krampus's spiked chain gains the agile trait. In addition, when Krampus @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]{Grabs} the naughty target, he can attempt to Capture them as a free action. Krampus can have only one naughty target at a time.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1746,20 +1205,11 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1768,7 +1218,7 @@
             "_id": "S3r2AvwbHmmhBwB3",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Regression",
-            "sort": 2300000,
+            "sort": 2200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1778,30 +1228,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A creature that starts their turn Captured in Krampus's basket must attempt a @Check[type:fortitude|dc:44] save or be regressed back to their childhood.</p>\n<p>The target shrinks one size. In addition, all of the target's proficiencies of expert and better are reduced to trained, which might restrict the use of certain feats.</p>\n<p>The effect persists for 24 hours, after which the target regains their normal size and their proficiencies return to normal. A creature currently under the effects of regression can't be further affected by this ability.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Regression]</p>"
+                    "value": "<p>A creature that starts their turn Captured in Krampus's basket must attempt a @Check[fortitude|dc:44] save or be regressed back to their childhood.</p>\n<p>The target shrinks one size. In addition, all of the target's proficiencies of expert and better are reduced to trained, which might restrict the use of certain feats.</p>\n<p>The effect persists for 24 hours, after which the target regains their normal size and their proficiencies return to normal. A creature currently under the effects of regression can't be further affected by this ability.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Regression]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1810,7 +1252,7 @@
             "_id": "GPxeevqqNhveOB8u",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Snowstep",
-            "sort": 2400000,
+            "sort": 2300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1822,37 +1264,28 @@
                 "description": {
                     "value": "<p>Krampus ignores difficult terrain and greater difficult terrain caused by snow and ice, and he leaves no tracks when moving through areas of snow or ice.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "j67aVe855G3FeDEO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
-            "sort": 2500000,
+            "sort": 2400000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -1864,78 +1297,25 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "41PEzI5wWgOIcoYN",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 36
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Q3kyn7joI63sgyMQ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 39
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "erx9pGmKEEP0jCHW",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Festival Lore",
-            "sort": 2800000,
+            "sort": 2500000,
             "system": {
                 "description": {
                     "value": ""
@@ -1946,103 +1326,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6S4hGSS1DPBrTs6O",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 42
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "oteLj9k8JOcXB2eR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 3000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "hBkPIPZHIoqYK5at",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 3100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 39
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "BPQHAhJP5xxuvXaN",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 3200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 38
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -2091,12 +1381,6 @@
                     "type": "death-effects"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 38
-            },
             "resistances": [
                 {
                     "type": "physical",
@@ -2110,25 +1394,46 @@
             },
             "weaknesses": [
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 15
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "tongues",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 21
             },
             "privateNotes": "",
             "publicNotes": "<p>Krampus is a tall, goatlike humanoid with a pointed nose, swept-back horns, and hooved feet. His long, greasy tongue continually flickers out from his mouth, occasionally licking droplets of spittle from his dark brown fur. He wields a set of iron chains that act as an extension of his will. Krampus is never seen without a wicker basket draped over one shoulder, its bottom often stained with the blood of his victims. Krampus stands a little over 14 feet tall and weighs nearly 1,000 pounds.</p>\n<p>Krampus's origin is unknown; residents of the small towns and villages he terrorizes in northern Irrisen believe the creature has always existed, coming forth once a year to punish those he deems wicked. While many legends have been told about Krampus's beginning, the most popular of them starts with a handful of mountain towns under the protection of a circle of druids. After a series of harsh winters that the townsfolk barely survived, they began to doubt the power of the druids and their rituals. As the villagers grew more resentful, the druid circle took drastic action. Under the light of a blue moon, the druids opened an imperfect portal to the primal realm of the fey and called forth the most powerful spiritual essence they could, and a new creature was born-Krampus. However, unknown to the druids, the portal had been corrupted by the villagers' bitter resentment and doubt. Instead of a central figure to lead them in winter celebrations, as they had hoped, the druids had spawned a monster who sought to punish those who had behaved selfishly during lean times.</p>\n<p>Recognizing their error, the druids sought to banish their creation. They tracked Krampus down as he slept and shackled him in cold iron chains, hoping to subdue him and force him back to the First World. But Krampus was no fey, and cold iron held no power over him. When he awoke, he ripped the chains free, claimed them as his own, and tracked down the druids who had dared try to capture him. After their betrayal, Krampus can see no good in any mortal and longs only to punish the wicked for their selfish misdeeds.</p>\n<p>To this day, Krampus takes vicious delight in transforming his victims into the petulant children before killing them, and no manner of sacrifice can appease him. Luckily for any nearby villages, Krampus stalks their streets but once a year.</p>\n<p>Locals believe that Krampus makes his lair among the deep crevasses of ice somewhere within the Winterwall Glacier, which lines Avistan's northernmost reaches. No adventurer has yet braved the treacherous expanse to find and defeat him.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "blizzard sight",
+            "mod": 38,
+            "senses": [
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "scent"
+                },
+                {
+                    "type": "see-invisibility"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -2150,26 +1455,35 @@
                 "value": 35
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 36
+            },
+            "athletics": {
+                "base": 39
+            },
+            "intimidation": {
+                "base": 42
+            },
+            "society": {
+                "base": 35
+            },
+            "stealth": {
+                "base": 39
+            },
+            "survival": {
+                "base": 38
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "Tongues",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "blizzard sight, scent (imprecise) 60 feet, see invisibility"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
-                "humanoid"
+                "evil",
+                "humanoid",
+                "unholy"
             ]
         }
     },

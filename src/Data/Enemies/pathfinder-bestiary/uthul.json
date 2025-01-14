@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -69,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -87,52 +91,10 @@
             "type": "melee"
         },
         {
-            "_id": "wgSeXMtV7TUrqAqJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "f52Whk1lgUmI3JmT",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "High Winds",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -142,10 +104,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:40]{40 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>Air in the aura is difficult terrain for Flying creatures without the air trait.</p>"
+                    "value": "<p>40 feet. Air in the aura is difficult terrain for Flying creatures without the air trait.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -153,27 +117,17 @@
                         "radius": 40,
                         "slug": "high-winds",
                         "traits": [
-                            "air",
-                            "aura"
+                            "air"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "air",
                         "aura"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -182,7 +136,7 @@
             "_id": "9KbMP0mPbueRMViR",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Lightning Crash",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -192,16 +146,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The uthul unleashes a powerful bolt of lightning and a stunning thunderclap. The bolt deals @Damage[6d12[electricity]] damage to all creatures in a @Template[type:line|distance:30], with a @Check[type:reflex|dc:34|basic:true] save, and every creature in a @Template[type:emanation|distance:20] must attempt a @Check[type:fortitude|dc:34] save.</p>\n<p>The uthul can't use Lightning Crash again for [[/br 1d4 #Recharge Lightning Crash]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "value": "<p>The uthul unleashes a powerful bolt of lightning and a stunning thunderclap. The bolt deals @Damage[6d12[electricity]] damage to all creatures in a @Template[line|distance:30], with a @Check[reflex|dc:34|basic] save, and every creature in a @Template[emanation|distance:20] must attempt a @Check[fortitude|dc:34] save.</p>\n<p>The uthul can't use Lightning Crash again for [[/gmr 1d4 #Recharge Lightning Crash]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -209,12 +162,6 @@
                         "incapacitation",
                         "sonic"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -223,7 +170,7 @@
             "_id": "vJoGCQ4Ay2Cdm85A",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Swiftness",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -235,23 +182,16 @@
                 "description": {
                     "value": "<p>An uthul's movement doesn't trigger reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -260,7 +200,7 @@
             "_id": "nHfBhYOOHdy8Wx7p",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Whirlwind Form",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -270,122 +210,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The uthul transforms itself into a swirling vortex of storm and fury 10 feet wide and up to 40 feet tall. It stays in this form for 3 rounds or until it Dismisses the effect. While in this form, the uthul gains resistance 10 to physical damage and can move through other creatures.</p>\n<p>Its aura remains active, but it can't make debris Strikes nor use Lightning Crash. Instead, any creature the uthul moves through takes @Damage[4d6[bludgeoning]] damage and @Damage[2d12[electricity]] damage. A creature can take this damage only once per round. A Large or smaller creature must also succeed at a @Check[type:reflex|dc:32] save or be picked up and held suspended within the vortex. Suspended creatures move with the uthul. A creature can attempt to escape by spending an action to attempt a @Check[type:reflex|dc:32] save (or a <span data-pf2-action=\"maneuverInFlight\" data-pf2-dc=\"32\" data-pf2-label=\"Whirlwind Form DC\" data-pf2-glyph=\"A\" data-pf2-show-dc=\"gm\">Acrobatics</span> check to maneuver in flight if it has a fly Speed). Upon escaping, or when the uthul transforms back into its storm cloud form, a suspended creature is hurled [[/br 1d4*10]]{1d4 x 10 feet} in a random direction, then falls unless it can fly or otherwise remain aloft.</p>\n<p>After returning to its normal form, the uthul must wait 1 minute before it can use Whirlwind Form again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Whirlwind Form]</p>"
+                    "value": "<p>The uthul transforms itself into a swirling vortex of storm and fury 10 feet wide and up to 40 feet tall. It stays in this form for 3 rounds or until it Dismisses the effect. While in this form, the uthul gains resistance 10 to physical damage and can move through other creatures.</p>\n<p>Its aura remains active, but it can't make debris Strikes nor use Lightning Crash. Instead, any creature the uthul moves through takes @Damage[4d6[bludgeoning],2d12[electricity]] damage. A creature can take this damage only once per round. A Large or smaller creature must also succeed at a @Check[reflex|dc:32] save or be picked up and held suspended within the vortex. Suspended creatures move with the uthul. A creature can attempt to escape by spending an action to attempt a @Check[reflex|dc:32] save (or a <span data-pf2-action=\"maneuverInFlight\" data-pf2-dc=\"32\" data-pf2-label=\"Whirlwind Form DC\" data-pf2-glyph=\"A\" data-pf2-show-dc=\"gm\">Acrobatics</span> check to maneuver in flight if it has a fly Speed). Upon escaping, or when the uthul transforms back into its storm cloud form, a suspended creature is hurled [[/gmr 1d4*10]]{1d4 x 10 feet} in a random direction, then falls unless it can fly or otherwise remain aloft.</p>\n<p>After returning to its normal form, the uthul must wait 1 minute before it can use Whirlwind Form again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Whirlwind Form]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "eO1QaISfs9QAC16T",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "hbFiIKyp3zzvPIeo",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "dRohmROwe06DMtaO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7c0OZ3smARZeYmJy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Uthul",
@@ -438,12 +279,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 20
-            },
             "speed": {
                 "details": "swiftness",
                 "otherSpeeds": [
@@ -456,19 +291,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Elemental",
+            "languages": {
+                "details": "",
+                "value": [
+                    "sussuran"
+                ]
+            },
             "level": {
                 "value": 14
             },
             "privateNotes": "",
             "publicNotes": "<p>An uthul most often appears to be a dark, swirling cloud filled with flying debris and streaked with sudden flashes of lightning. Although they are clearly elemental in nature, uthuls are nearly always found on the Material Plane, where they hide among natural cloud formations, especially thunderstorms.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 20,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -485,24 +336,30 @@
                 "value": 22
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 29
+            },
+            "athletics": {
+                "base": 27
+            },
+            "intimidation": {
+                "base": 23
+            },
+            "stealth": {
+                "base": 25
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "auran"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "huge"
             },
             "value": [
                 "air",
-                "elemental"
+                "chaotic",
+                "elemental",
+                "evil"
             ]
         }
     },

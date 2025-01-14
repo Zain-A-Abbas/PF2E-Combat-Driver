@@ -1,0 +1,43 @@
+{
+    "_id": "n96DB8vpPr1Fu6GZ",
+    "img": "icons/skills/wounds/bone-broken-knee-beam.webp",
+    "name": "Effect: Smash Kneecaps",
+    "system": {
+        "description": {
+            "value": "<p>The creature's Speed is reduced by 10 feet.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Kingmaker"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "land-speed",
+                "value": -10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

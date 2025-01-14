@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "E2fxalmPlTUvLMI8",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw"
             },
             "img": "systems/pf2e/icons/conditions/fatigued.webp",
             "name": "Fatigued",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -44,9 +47,6 @@
                     }
                 ],
                 "slug": "fatigued",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "value": {
                     "isValued": false,
                     "value": null
@@ -78,11 +78,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -97,10 +99,8 @@
         },
         {
             "_id": "MfVHl3j1UyN4VFks",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
@@ -116,23 +116,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -153,8 +146,10 @@
                 "description": {
                     "value": "<p>Terrion gains a +2 circumstance bonus on attack and damage rolls as long as he is adjacent to at least two other allies.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -178,64 +173,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "vUvvlUnU45TOlbMh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "0w3YQGNz6QHeoXoU",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Terrion Numesti",
@@ -274,31 +217,37 @@
                 "temp": 0,
                 "value": 155
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 18
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "NG"
-            },
             "blurb": "Male human soldier",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "<p>Terrion's statistics represent his statistics when the PCs rescue him from the prison, while he is unarmed, @UUID[Compendium.pf2e.conditionitems.Item.Fatigued], and clad in prisoner's clothing. His personal gear is long gone along with other tributes sent to Irovetti and Armag, but if rescued he attempts to arm and armor himself with gear taken from a Drelev guard. In this case, you can treat his stats instead as an elite Drelev guard.</p>",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 18,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -315,22 +264,21 @@
                 "value": 18
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 20
+            },
+            "intimidation": {
+                "base": 18
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "good",
                 "human",
                 "humanoid"
             ]

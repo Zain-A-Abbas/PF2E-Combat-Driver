@@ -4,16 +4,17 @@
     "items": [
         {
             "_id": "5NA0R3T7psDwquS5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.y34yjumCFakrbtdw"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.y34yjumCFakrbtdw"
             },
             "img": "systems/pf2e/icons/equipment/adventuring-gear/artisan-tools.webp",
             "name": "Artisan's Tools",
             "sort": 100000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 2
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools.</p>"
@@ -21,9 +22,6 @@
                 "equipped": {
                     "carryType": "worn",
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -33,37 +31,30 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 4
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "lg",
                 "slug": "artisans-tools",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "equipment"
@@ -100,11 +91,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -140,11 +133,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -189,11 +184,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -208,14 +205,9 @@
             "type": "melee"
         },
         {
-            "_id": "JGSUP9GpkQinyXNh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
+            "_id": "gPaWa8Zkt9jBAg2K",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Forge Jewelry",
             "sort": 500000,
             "system": {
                 "actionType": {
@@ -224,35 +216,31 @@
                 "actions": {
                     "value": null
                 },
-                "category": "interaction",
+                "category": "offensive",
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>The jeweler beast creates imitation jewelry within its own digestive system. This takes about 4 hours.</p>\n<p>Determining the jewelry is fake works like detecting a forgery, using either @Check[perception|dc:25] or @Check[crafting|dc:25] instead of Perception or Society, with a DC of 25.</p>\n<p>The process of creating fake jewelry also places an enchantment inside the item. Anyone who dons the imitation jewelry is targeted with a @Check[will|dc:24|traits:incapacitation,linguistic,mental] @UUID[Compendium.pf2e.spells-srd.Item.Suggestion] spell with a duration of 1 hour on a failure or 24 hours on a critical failure. A creature that fails learns the location where the fake jewelry was created and is compelled to collect their valuable belongings and bring them to that location. Removing the imitation jewelry ends the spell immediately, but the wearer can't take it off voluntarily.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
+                "slug": null,
                 "traits": {
                     "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
+                    "value": [
+                        "arcane",
+                        "exploration"
+                    ]
                 }
             },
             "type": "action"
         },
         {
-            "_id": "gPaWa8Zkt9jBAg2K",
+            "_id": "0Iag5l05kpRuaYEj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Forge Jewelry",
+            "name": "Philanthropic Bile",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -263,184 +251,27 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The jeweler beast creates imitation jewelry within its own digestive system. This takes about 4 hours.</p>\n<p>Determining the jewelry is fake works like detecting a forgery, using either @Check[type:perception|dc:25] or @Check[type:crafting|dc:25] instead of Perception or Society, with a DC of 25.</p>\n<p>The process of creating fake jewelry also places an enchantment inside the item. Anyone who dons the imitation jewelry is targeted with a @Check[type:will|dc:24|traits:incapacitation,linguistic,mental] <em>@UUID[Compendium.pf2e.spells-srd.Item.Suggestion]</em> spell with a duration of 1 hour on a failure or 24 hours on a critical failure. A creature that fails learns the location where the fake jewelry was created and is compelled to collect their valuable belongings and bring them to that location. Removing the imitation jewelry ends the spell immediately, but the wearer can't take it off voluntarily.</p>"
+                    "value": "<p>Exposure to the bauble beast's magical stomach fluids enchants the mind.</p>\n<p>A creature critically hit by the beast's jaws or bile Strike is subject to a @UUID[Compendium.pf2e.spells-srd.Item.Charitable Urge] spell (@Check[will|dc:23|traits:magical,enchantment,incapacitation,mental|overrideTraits:true]).</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "arcane",
-                        "enchantment",
-                        "exploration"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "0Iag5l05kpRuaYEj",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Philanthropic Bile",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Exposure to the bauble beast's magical stomach fluids enchants the mind.</p>\n<p>A creature critically hit by the beast's jaws or bile Strike is subject to a <em>@UUID[Compendium.pf2e.spells-srd.Item.Charitable Urge]</em> spell (@Check[type:will|dc:23|traits:magical,enchantment,incapacitation,mental|overrideTraits:true]).</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "philanthropic-bile",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "m9JGQEzsW8GzsKPp",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "inTqnHZGNmB3Nv4k",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.CraftJewelry",
-                        "predicate": [
-                            "action:craft",
-                            "jewelry"
-                        ],
-                        "selector": "crafting",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+17 to Craft jewelry",
-                        "options": "action:craft,jewelry"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "DO2H9iAudCe6Wcdm",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "GaCIeT3bvFzjc1S9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         },
         {
             "_id": "hGcK7acpYirlNAXQ",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Jewelry Lore",
-            "sort": 1200000,
+            "sort": 700000,
             "system": {
                 "description": {
                     "value": ""
@@ -451,80 +282,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Y3HZ0zJFW6UZA09R",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "5zd2FO3TGCeumQzj",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "jNHDNChkVtJE7JwQ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Thievery",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -565,12 +329,6 @@
                 "temp": 0,
                 "value": 100
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -582,19 +340,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "dwarven",
+                    "petran",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>The reclusive and deceptive creatures called bauble beasts create false jewelry as a byproduct of their extremely bizarre magical digestive systems. Two natural skin conditions provide the raw materials for this process: scaly patches of thin layers of metal, and warts that resemble gemstones. By chewing loose these patches and swallowing them, a bauble beast magically constructs the jewelry in its guts. After passing the forgery, it polishes and reshapes the item to make it more convincing. The beast then sneaks into a settlement to place the jewelry somewhere it can be found. A creature who dons this false jewelry is compelled to fetch their real valuables and deliver them to the beast, which it happily collects. Some bauble beasts simply send the confused victim on their way, but other more evil bauble beasts slay them to avoid being found out.</p>\n<p>This imitation jewelry fools laypeople, but it's infamous among merchants. Merchant training usually includes a brief course on detecting bauble beast jewelry's subtle but distinctive sweet odor.</p>\n<p>Though largely solitary, bauble beasts occasionally socialize with others who share their limited interests, primarily merchants, jewelers, earth elementals, and other bauble beasts. Xorns have a particular fondness for bauble beasts-or at least their gems. Though these aren't as nourishing as real gems, xorns find the flavor decadent and eat them as a sort of junk food.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -611,24 +388,41 @@
                 "value": 15
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 14
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "dwarven",
-                    "terran",
-                    "undercommon"
+            "crafting": {
+                "base": 13,
+                "special": [
+                    {
+                        "base": 17,
+                        "label": "to Craft jewelry",
+                        "predicate": [
+                            "action:craft",
+                            "jewelry"
+                        ]
+                    }
                 ]
             },
-            "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
+            "deception": {
+                "base": 14
             },
+            "diplomacy": {
+                "base": 12
+            },
+            "society": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 14
+            },
+            "thievery": {
+                "base": 14
+            }
+        },
+        "traits": {
+            "rarity": "uncommon",
             "size": {
                 "value": "lg"
             },

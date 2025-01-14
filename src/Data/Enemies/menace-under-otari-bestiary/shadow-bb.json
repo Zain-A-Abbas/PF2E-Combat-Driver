@@ -21,17 +21,19 @@
                 "damageRolls": {
                     "0": {
                         "damage": "2d6+3",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,52 +48,10 @@
             "type": "melee"
         },
         {
-            "_id": "20wHQZMjGAPl30DH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "tS9Kv6K4kwYFjHCT",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Incorporeal",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -103,20 +63,16 @@
                 "description": {
                     "value": "<p>A shadow has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] and @UUID[Compendium.pf2e.actionspf2e.Item.Shove], don't work against a shadow, and a shadow can't use them.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -125,7 +81,7 @@
             "_id": "ACHlnYzXVxizzqPw",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Light Vulnerability",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -135,25 +91,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A weapon with a <em>@UUID[Compendium.pf2e.spells-srd.Item.Light]</em> spell cast on it gains the magical trait when used to attack the shadow.</p>"
+                    "value": "<p>Attacks against the shadow are treated as magical if the shadow or the weapon being used is in light.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -162,7 +111,7 @@
             "_id": "0Qt9ULbGzJV8ZG3W",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Shadow Spawn",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -172,25 +121,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Shadow]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
+                    "value": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Shadow Spawn] under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -199,7 +141,7 @@
             "_id": "0QWVJ7Of8cQNKp0N",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slink in Shadows",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -211,23 +153,16 @@
                 "description": {
                     "value": "<p>The shadow can @UUID[Compendium.pf2e.actionspf2e.Item.Hide] or end its @UUID[Compendium.pf2e.actionspf2e.Item.Sneak] in a creature's or object's shadow.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -236,7 +171,7 @@
             "_id": "Kjifw1jgDvfmrEGU",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Steal Shadow",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -248,75 +183,21 @@
                 "description": {
                     "value": "<p>If the shadow hit a living creature with a Strike on its previous action, it can use this action to pull at the target's shadow, imposing a -1 status penalty to Athletics and to attack rolls and damage rolls that use Strength. The penalty increases each time a shadow uses this ability to a maximum of -4. The penalty decreases by 1 every hour.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "MN0vvAiaLlor6r9T",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vJe05g3F9QTjJFzu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Shadow (BB)",
@@ -360,18 +241,22 @@
             },
             "immunities": [
                 {
+                    "exceptions": [],
                     "type": "poison"
                 },
                 {
+                    "exceptions": [],
                     "type": "unconscious"
+                },
+                {
+                    "exceptions": [],
+                    "type": "bleed"
+                },
+                {
+                    "exceptions": [],
+                    "type": "void"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 10
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -380,7 +265,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -397,19 +282,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Undead",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>Undead shadows feed on those who stray from the light.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 10,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -426,25 +325,23 @@
                 "value": 12
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 14
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "incorporeal",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

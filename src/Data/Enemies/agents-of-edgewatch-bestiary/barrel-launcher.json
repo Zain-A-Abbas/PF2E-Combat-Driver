@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -74,11 +76,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -121,11 +125,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -140,10 +146,8 @@
         },
         {
             "_id": "7m8XF9B86oB7by1T",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
@@ -159,23 +163,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -197,23 +194,16 @@
                 "description": {
                     "value": "<p>A projectile launcher is integrated into a clockwork assassin's systems, containing 10 spinning blades and five smoke bombs. When the assassin is destroyed, the launcher and its ammunition are also destroyed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -234,23 +224,16 @@
                 "description": {
                     "value": "<p>The clockwork assassin ignores the concealed condition from smoke.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -269,25 +252,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>For the clockwork assassin to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again.The assassin can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).A creature can attempt a @Check[type:thievery|dc:33|name:Wind Down|traits:manipulate,action:disable-a-device] check to Disable a Device to wind the assassin down. For each success, the assassin loses 1 hour of operational time. This can be done even if the assassin is in standby mode.</p>"
+                    "value": "<p>For the clockwork assassin to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again.The assassin can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).A creature can attempt a @Check[thievery|dc:33|name:Wind Down|traits:manipulate,action:disable-a-device] check to Disable a Device to wind the assassin down. For each success, the assassin loses 1 hour of operational time. This can be done even if the assassin is in standby mode.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -306,27 +282,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 round).</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} (1 round).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "poison-ink",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -347,25 +316,18 @@
                 "description": {
                     "value": "<p>The clockwork assassin spends 1 hour of its operational time to repair itself, regaining 25 Hit Points and refilling its integrated projectile launcher with 4 spinning blades (to a maximum of 10) and 2 smoke bombs (to a maximum of 5).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "manipulate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -384,37 +346,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The clockwork assassin launches a smoke bomb. A screen of thick, opaque smoke fills a @Template[type:burst|distance:10] within 60 feet of the clockwork assassin. Creatures within the area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>"
+                    "value": "<p>The clockwork assassin launches a smoke bomb. A screen of thick, opaque smoke fills a @Template[burst|distance:10] within 60 feet of the clockwork assassin. Creatures within the area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "manipulate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "Y7P7UpMZajGcxNz4",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
@@ -428,10 +381,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The clockwork assassin's Strikes deal an additional 3d6+4 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>The clockwork assassin's Strikes deal an additional 3d6+4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -440,21 +395,7 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
@@ -462,21 +403,7 @@
                         "damageCategory": "precision",
                         "key": "FlatModifier",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage",
                         "value": 4
@@ -484,24 +411,15 @@
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -520,97 +438,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Creatures hit by the clockwork assassin's rapier hand Strike are @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] until the start of the clockwork assassin's next turn.</p>"
+                    "value": "<p>Creatures hit by the clockwork assassin's rapier hand Strike are @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of the clockwork assassin's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "unbalancing-blow",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "h0FMcEvFU8MKqXkw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "NxAI3iTvt54Qv1CN",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ZLMhdhhuybBkqv6i",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Barrel Launcher",
@@ -651,12 +493,6 @@
                 "value": 270
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -668,19 +504,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Elite clockwork assassin",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 14
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #161: Belly of the Black Whale"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #161: Belly of the Black Whale"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "smoke vision",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -697,16 +547,19 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 29
+            },
+            "athletics": {
+                "base": 25
+            },
+            "stealth": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, smoke vision"
-            },
             "size": {
                 "value": "med"
             },

@@ -31,11 +31,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -74,11 +76,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -93,57 +97,13 @@
             "type": "melee"
         },
         {
-            "_id": "FyrrgVjaMyZCtRfk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "uzLf2ezYP1JPXfrQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity (Jaws Only)",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -155,23 +115,16 @@
                 "description": {
                     "value": "<p>Jaws Only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -180,7 +133,7 @@
             "_id": "PmLhjqOQdj9Bkm2j",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Drink Oil",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -190,10 +143,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> The rokurokubi is the target of an alchemical bomb Strike</p>\n<p><strong>Requirements</strong> The rokurokubi is aware of the attack, not @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] against it, and doesn't have a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] with their jaws</p>\n<hr />\n<p><strong>Effect</strong> The rokurokubi attempts to catch the flung bomb in their mouth. They gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, they catch the bomb in their mouth and harmlessly drink its contents down, regaining Hit Points equal to the bomb's item level.</p>"
+                    "value": "<p><strong>Trigger</strong> The rokurokubi is the target of an alchemical bomb Strike</p>\n<p><strong>Requirements</strong> The rokurokubi is aware of the attack, not @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against it, and doesn't have a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] with their jaws</p>\n<hr />\n<p><strong>Effect</strong> The rokurokubi attempts to catch the flung bomb in their mouth. They gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, they catch the bomb in their mouth and harmlessly drink its contents down, regaining Hit Points equal to the bomb's item level.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -213,18 +168,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -233,7 +179,7 @@
             "_id": "GhM8SkeNK34K4KuM",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Extend Neck",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -245,23 +191,16 @@
                 "description": {
                     "value": "<p>The rokurokubi extends their neck, increasing the reach of their jaws Strike from 10 feet to 20 feet until the end of their next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -270,7 +209,7 @@
             "_id": "jw9ImZmmbzTSmeX5",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Threatening Lunge",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -282,8 +221,10 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The rokurokubi's neck is not currently extended</p>\n<hr />\n<p><strong>Effect</strong> The rokurokubi's head comes within an inch of their target's face before striking. They Extend their Neck, attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Demoralize] one opponent within 20 feet, and then make a jaws Strike against that opponent.</p>\n<p>Their Demoralize check is a visual rather than auditory effect, and they don't take a penalty if the target doesn't understand their language.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -294,176 +235,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "XjDv6vyW7AJaSHiz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "lcBes8BbsKg7LxTw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "D6I4USfggnjgVzju",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "WDHTK76R7cwm5ZSc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.DemoralizeThreateningLunge",
-                        "predicate": [
-                            "action:demoralize",
-                            "threatening-lunge"
-                        ],
-                        "selector": "intimidation",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+10 to Demoralize with Threatening Lunge",
-                        "options": "action:demoralize,threatening-lunge"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "R27fpXVt7mUr8A7f",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "87H4vaMZ3IK2nhi5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Rokurokubi",
@@ -507,31 +284,41 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Rokurokubi come into being when mortals are cursed for some misdeed, though often the one who bears the curse is not the one who committed the offense, but instead their child or spouse. The curse slowly transforms the individual into a rokurokubi as they sleep. At first, their neck extends, or even detaches altogether, to let their head roam freely and engage in simple mischief like scaring neighbors or animals. The sleeper may awaken the next morning from a hazy dream of drinking the oil from nearby lanterns, only to find them indeed empty.</p>\n<p>Over time, the bizarre acts progress to increasingly mischievous or even violent crimes. There's only a brief period during which the nascent rokurokubi might still be saved by dispelling the curse, but before long, they are fully consumed, never to sleep again.</p>\n<p>Most rokurokubi despair at their state, seeking to drown their sorrows in drink or simply stay out of sight. A nefarious few rokurokubi embrace their fate and seek to enhance their power by completely giving in to the curse. This grants them the ability to cast potent occult spells but inevitably twists them even more toward evil.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -548,21 +335,38 @@
                 "value": 9
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 7
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
+            "deception": {
+                "base": 8
+            },
+            "diplomacy": {
+                "base": 8
+            },
+            "intimidation": {
+                "base": 8,
+                "special": [
+                    {
+                        "base": 10,
+                        "label": "to Demoralize with Threatening Lunge",
+                        "predicate": [
+                            "action:demoralize",
+                            "threatening-lunge"
+                        ]
+                    }
                 ]
             },
-            "rarity": "common",
-            "senses": {
-                "value": "darkvision"
+            "society": {
+                "base": 6
             },
+            "stealth": {
+                "base": 8
+            }
+        },
+        "traits": {
+            "rarity": "common",
             "size": {
                 "value": "med"
             },

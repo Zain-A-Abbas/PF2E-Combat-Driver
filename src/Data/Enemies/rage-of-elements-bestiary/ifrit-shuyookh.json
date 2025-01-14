@@ -1,0 +1,1371 @@
+{
+    "_id": "XL7B63sTgdDJPbVQ",
+    "img": "systems/pf2e/icons/default-icons/npc.svg",
+    "items": [
+        {
+            "_id": "KAUVTBbk7Y8gBC4e",
+            "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+            "name": "Arcane Innate Spells",
+            "sort": 100000,
+            "system": {
+                "autoHeightenLevel": {
+                    "value": null
+                },
+                "description": {
+                    "value": ""
+                },
+                "prepared": {
+                    "value": "innate"
+                },
+                "proficiency": {
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "showSlotlessLevels": {
+                    "value": false
+                },
+                "slots": {},
+                "slug": null,
+                "spelldc": {
+                    "dc": 35,
+                    "value": 27
+                },
+                "tradition": {
+                    "value": "arcane"
+                }
+            },
+            "type": "spellcastingEntry"
+        },
+        {
+            "_id": "NEZZfBdJW7SV9Fgw",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.nRINcQb81Wt4KeFu"
+            },
+            "img": "icons/magic/lightning/bolt-strike-explosion-purple.webp",
+            "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)",
+            "sort": 200000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 7
+                },
+                "location": {
+                    "heightenedLevel": 7,
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "5 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "interplanar-teleport",
+                "target": {
+                    "value": "up to 8 willing creatures"
+                },
+                "time": {
+                    "value": "10 minutes"
+                },
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "OtcYfE1EqRty7O4Z",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv"
+            },
+            "img": "systems/pf2e/icons/spells/volcanic-eruption.webp",
+            "name": "Volcanic Eruption",
+            "sort": 300000,
+            "system": {
+                "area": {
+                    "type": "cylinder",
+                    "value": 5
+                },
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "14d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
+                    }
+                },
+                "description": {
+                    "value": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take @Damage[(@item.rank -4)d6[fire]] damage from the intense heat, regardless of the results of their saving throws.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Volcanic Eruption]</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "damage": {
+                        "0": "2d6"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 7
+                },
+                "location": {
+                    "heightenedLevel": 7,
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "volcanic-eruption",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "fire",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "R4zq2o98NVMcaVMB",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.nnYxDWU3Vzg9WenB"
+            },
+            "img": "systems/pf2e/icons/spells/fires-pathway.webp",
+            "name": "Fire's Pathway",
+            "sort": 400000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You step into a blazing fire that's big enough for you to fit inside and instantly teleport to any other fire within 5 miles that also has a sufficiently large size. Once you enter the first fire, you instantly know the rough locations of other sufficiently large fires within range and can exit from the original fire, if you prefer. You can't carry extradimensional spaces with you; if you attempt to do so, the spell fails.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The fire you exit can be up to 50 miles away.</p>\n<p><strong>Heightened (8th)</strong> The fire you exit can be up to 500 miles away.</p>\n<p><strong>Heightened (9th)</strong> The fire you exit can be anywhere on the same planet.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 5
+                },
+                "location": {
+                    "heightenedLevel": 5,
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": true,
+                    "title": "Pathfinder Rage of Elements"
+                },
+                "range": {
+                    "value": ""
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "fires-pathway",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "1 minute"
+                },
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "fire",
+                        "manipulate",
+                        "teleportation"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "HvqvVSxQlmsCTaaq",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
+            },
+            "img": "systems/pf2e/icons/spells/tongues.webp",
+            "name": "Truespeech (Constant)",
+            "sort": 500000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "1 hour"
+                },
+                "level": {
+                    "value": 5
+                },
+                "location": {
+                    "heightenedLevel": 5,
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "touch"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "truespeech",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "EDmn3dH2ScDK1ZV2",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
+            },
+            "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
+            "name": "Fireball (At Will)",
+            "sort": 600000,
+            "system": {
+                "area": {
+                    "type": "burst",
+                    "value": 20
+                },
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "6d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
+                    }
+                },
+                "description": {
+                    "value": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "damage": {
+                        "0": "2d6"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 3
+                },
+                "location": {
+                    "heightenedLevel": 5,
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "500 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "fireball",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "fire",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "Ckb7DtzUTX1P1lPa",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
+            },
+            "img": "icons/creatures/magical/construct-stone-earth-gray.webp",
+            "name": "Invisibility",
+            "sort": 700000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>Cloaked in illusion, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Invisible]. This makes it @UUID[Compendium.pf2e.conditionitems.Item.Undetected] to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "10 minutes"
+                },
+                "level": {
+                    "value": 2
+                },
+                "location": {
+                    "heightenedLevel": 2,
+                    "uses": {
+                        "max": 2,
+                        "value": 2
+                    },
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "touch"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "invisibility",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "illusion",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "qPMVvJdy32nu8Met",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
+            },
+            "img": "systems/pf2e/icons/spells/detect-magic.webp",
+            "name": "Detect Magic",
+            "sort": 800000,
+            "system": {
+                "area": {
+                    "type": "emanation",
+                    "value": 30
+                },
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an @UUID[Compendium.pf2e.equipment-srd.Item.Invisibility Potion]) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 1
+                },
+                "location": {
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": ""
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "detect-magic",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
+                    "value": [
+                        "cantrip",
+                        "concentrate",
+                        "detection",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "oBEtmI30n3kSCumU",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq"
+            },
+            "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+            "name": "Ignition",
+            "sort": 900000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {
+                    "cQDyW0QpjJ38MlSi": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": null,
+                "description": {
+                    "value": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>@Damage[(@item.rank)d4[persistent,fire]]{Scaling Persistent Fire Damage}</p>\n<p>@Damage[(@item.rank)d6[persistent,fire]]{Scaling Persistent Fire Damage (Melee)}</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "damage": {
+                        "cQDyW0QpjJ38MlSi": "1d4"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 1
+                },
+                "location": {
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "overlays": {
+                    "eOCNn2ohYAvsYZjn": {
+                        "_id": "eOCNn2ohYAvsYZjn",
+                        "overlayType": "override",
+                        "sort": 1,
+                        "system": {
+                            "defense": null
+                        }
+                    },
+                    "xYyA7CV1GaFTRjBQ": {
+                        "_id": "xYyA7CV1GaFTRjBQ",
+                        "name": "Ignition (Melee)",
+                        "overlayType": "override",
+                        "sort": 2,
+                        "system": {
+                            "damage": {
+                                "cQDyW0QpjJ38MlSi": {
+                                    "formula": "2d6"
+                                }
+                            },
+                            "defense": null,
+                            "heightening": {
+                                "damage": {
+                                    "cQDyW0QpjJ38MlSi": "1d6"
+                                }
+                            },
+                            "range": {
+                                "value": "touch"
+                            }
+                        }
+                    }
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "ignition",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "attack",
+                        "cantrip",
+                        "concentrate",
+                        "fire",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "azaIS25OUTtxVI9s",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.qCkxBOLMCCXEjBWo"
+            },
+            "img": "icons/sundries/lights/candle-lit-yellow.webp",
+            "name": "Illuminate",
+            "sort": 1000000,
+            "system": {
+                "area": {
+                    "type": "emanation",
+                    "value": 30
+                },
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
+                    }
+                },
+                "description": {
+                    "value": "<p>You light all non-magical light sources in the area that use fire to provide their light—such as candles, lamps, and sconces. You can choose to make the emanation smaller than its maximum, to any distance of your choice. If a light source is attended by an unwilling creature, that creature can attempt a Reflex save to snuff the light out before it becomes noticeable.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The maximum area increases by 10 feet.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 1
+                },
+                "location": {
+                    "value": "KAUVTBbk7Y8gBC4e"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": true,
+                    "title": "Pathfinder Rage of Elements"
+                },
+                "range": {
+                    "value": ""
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "illuminate",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "1"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult",
+                        "primal"
+                    ],
+                    "value": [
+                        "cantrip",
+                        "fire",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "cSRwYXgyjISkBkLT",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn"
+            },
+            "img": "systems/pf2e/icons/equipment/weapons/scimitar.webp",
+            "name": "Scimitar",
+            "sort": 1100000,
+            "system": {
+                "baseItem": "scimitar",
+                "bonus": {
+                    "value": 0
+                },
+                "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
+                    "value": 1
+                },
+                "category": "martial",
+                "containerId": null,
+                "damage": {
+                    "damageType": "slashing",
+                    "dice": 1,
+                    "die": "d6"
+                },
+                "description": {
+                    "value": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "handsHeld": 0,
+                    "invested": null
+                },
+                "group": "sword",
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 0
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "gp": 1
+                    }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "quantity": 1,
+                "range": null,
+                "reload": {
+                    "value": ""
+                },
+                "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 1
+                },
+                "size": "lg",
+                "slug": "scimitar",
+                "splashDamage": {
+                    "value": 0
+                },
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "forceful",
+                        "sweep"
+                    ]
+                },
+                "usage": {
+                    "value": "held-in-one-hand"
+                }
+            },
+            "type": "weapon"
+        },
+        {
+            "_id": "A8MvUD43sSdf8gMr",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk"
+            },
+            "img": "icons/equipment/chest/breastplate-collared-steel.webp",
+            "name": "Breastplate",
+            "sort": 1200000,
+            "system": {
+                "acBonus": 4,
+                "baseItem": "breastplate",
+                "bulk": {
+                    "value": 2
+                },
+                "category": "medium",
+                "checkPenalty": -2,
+                "containerId": null,
+                "description": {
+                    "value": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "dexCap": 1,
+                "equipped": {
+                    "carryType": "worn",
+                    "handsHeld": 0,
+                    "inSlot": true,
+                    "invested": null
+                },
+                "group": "plate",
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 0
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "gp": 8
+                    }
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "quantity": 1,
+                "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "resilient": 1
+                },
+                "size": "lg",
+                "slug": "breastplate",
+                "speedPenalty": -5,
+                "strength": 3,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "armor"
+        },
+        {
+            "_id": "IyLkgspJR2ZcxSBL",
+            "flags": {
+                "pf2e": {
+                    "linkedWeapon": "cSRwYXgyjISkBkLT"
+                }
+            },
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Scimitar",
+            "sort": 1300000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 31
+                },
+                "damageRolls": {
+                    "qEtAqSh1F35MNjYG": {
+                        "damage": "2d6+16",
+                        "damageType": "slashing"
+                    },
+                    "zDlg66aJRdxAz2J3": {
+                        "damage": "4d6",
+                        "damageType": "fire"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "fire",
+                        "forceful",
+                        "magical",
+                        "reach-10",
+                        "sweep"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "PRi2BSz6wZXIMsap",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Fist",
+            "sort": 1400000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 29
+                },
+                "damageRolls": {
+                    "2xDdcttvPRIG5b2G": {
+                        "damage": "1d4+16",
+                        "damageType": "bludgeoning"
+                    },
+                    "rcBv6Q6DCjoVSSj7": {
+                        "damage": "4d6",
+                        "damageType": "fire"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "magical",
+                        "reach-10"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "D5Lbd3VMUkvO8k8F",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Constant Spells",
+            "sort": 1500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "constant-spells",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "QziuCiW6YG0yD2jV",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Exploit Regret",
+            "sort": 1600000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p><strong>Trigger</strong> A creature fails an attack against the shuyookh</p>\n<hr />\n<p><strong>Effect</strong> The shuyookh asks the triggering creature if it wishes it had hit. If the creature indicates yes, the shuyookh takes damage as if the attack had hit and the expression of regret makes the shuyookh @UUID[Compendium.pf2e.conditionitems.Item.Quickened] for [[/gmr 1d4 #Quickened Rounds]]{1d4 rounds}; they can use their extra action to Fly, Stride, or Strike.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "arcane",
+                        "auditory",
+                        "fortune",
+                        "linguistic"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "AV1SDBG8bpRtadhP",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Heat of Blazing Wings",
+            "sort": 1700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>5 feet, @Damage[4d6[fire]] damage (@Check[reflex|dc:31|basic])</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 5,
+                        "slug": "heat-of-blazing-wings",
+                        "traits": [
+                            "arcane",
+                            "fire"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "arcane",
+                        "aura",
+                        "fire"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "zboHPmJ0UHd9nqct",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Burning Grasp",
+            "sort": 1800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>When the ifrit Grabs or restrains a creature, that creature takes @Damage[4d6[fire]] damage, and takes 4d6 fire damage at the end of each of its turns until freed.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "fire"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "p8kYDP6KG4i8v38G",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Change Shape",
+            "sort": 1900000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The shuyookh transforms into a Small or Medium fire elemental or reptile, such as a snake. This doesn't affect the shuyookh's statistics, but it could change the damage type of their Strikes.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "change-shape",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "arcane",
+                        "concentrate",
+                        "polymorph"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "okz4rvTmkyXJJ5uw",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Combat Grab",
+            "sort": 2000000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Requirements</strong> The ifrit shuyookh has a hand free</p>\n<hr />\n<p><strong>Effect</strong> The shuyookh makes a melee Strike. If the Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] in the shuyookh's free hand.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "b0rrE9XpFDx7VSvk",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Pedantic Wish",
+            "sort": 2100000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Frequency</strong> three times per year</p>\n<hr />\n<p><strong>Effect</strong> The shuyookh conducts a wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a @Check[flat|dc:5] or a failure if not. The shuyookh subverts the wish-maker's true intentions, twisting the phrasing to maximize suffering.</p>"
+                },
+                "frequency": {
+                    "max": 3,
+                    "per": "P1Y"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "downtime"
+                    ]
+                }
+            },
+            "type": "action"
+        }
+    ],
+    "name": "Ifrit Shuyookh",
+    "system": {
+        "abilities": {
+            "cha": {
+                "mod": 5
+            },
+            "con": {
+                "mod": 5
+            },
+            "dex": {
+                "mod": 4
+            },
+            "int": {
+                "mod": 3
+            },
+            "str": {
+                "mod": 8
+            },
+            "wis": {
+                "mod": 3
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 36
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "",
+                "max": 300,
+                "temp": 0,
+                "value": 300
+            },
+            "immunities": [
+                {
+                    "exceptions": [],
+                    "type": "fire"
+                }
+            ],
+            "speed": {
+                "otherSpeeds": [
+                    {
+                        "type": "fly",
+                        "value": 35
+                    }
+                ],
+                "value": 25
+            },
+            "weaknesses": [
+                {
+                    "exceptions": [],
+                    "type": "cold",
+                    "value": 15
+                },
+                {
+                    "exceptions": [],
+                    "type": "water",
+                    "value": 15
+                }
+            ]
+        },
+        "details": {
+            "blurb": "",
+            "languages": {
+                "details": "truespeech",
+                "value": [
+                    "common",
+                    "pyric"
+                ]
+            },
+            "level": {
+                "value": 14
+            },
+            "privateNotes": "",
+            "publicNotes": "<p>The leaders and luminaries of ifrits come from the wise but cruel shuyookhs. These spiteful manipulators lord their might over other genies and twist mortal greed into grief. Ifrit shuyookhs guide the Dominion of Flame with their vicious whims and unwavering belief in ifrit supremacy.</p>\n<h2>Hot Gossip</h2>\n<p>Scion of the noble but disgraced Mishalq family, the ifrit information broker Qalkami Mishalq emerged from exile and returned to the Dominion of Flame following the death of Sultan Suleiman XXII. Qalkami used contacts in the Pathfinder Society to eliminate her rivals in the Cinderfury family and step into a power vacuum of her own creation, expanding her control and influence among the great nobility of Medina Mudii'a.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
+        },
+        "resources": {},
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 26
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 23
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 27
+            }
+        },
+        "skills": {
+            "arcana": {
+                "base": 25
+            },
+            "athletics": {
+                "base": 28
+            },
+            "crafting": {
+                "base": 23
+            },
+            "deception": {
+                "base": 25
+            },
+            "diplomacy": {
+                "base": 24
+            },
+            "intimidation": {
+                "base": 26
+            },
+            "society": {
+                "base": 23
+            }
+        },
+        "traits": {
+            "rarity": "rare",
+            "size": {
+                "value": "lg"
+            },
+            "value": [
+                "elemental",
+                "fire",
+                "genie"
+            ]
+        }
+    },
+    "type": "npc"
+}

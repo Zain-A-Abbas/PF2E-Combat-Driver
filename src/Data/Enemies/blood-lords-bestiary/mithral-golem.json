@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "gm13winmstas1ock",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl"
             },
             "img": "systems/pf2e/icons/conditions/quickened.webp",
             "name": "Quickened",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "quickened",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": false,
                     "value": null
@@ -64,11 +64,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -107,11 +109,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -127,52 +131,10 @@
             "type": "melee"
         },
         {
-            "_id": "Y4jOGsg9U0NdL52x",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "ooPhbtvdtMFxysJe",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Evasion",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -184,8 +146,10 @@
                 "description": {
                     "value": "<p>When the mithral golem rolls a success on a Reflex save, it gets a critical success instead.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -193,37 +157,25 @@
                             "success": "one-degree-better"
                         },
                         "key": "AdjustDegreeOfSuccess",
-                        "selector": "reflex",
-                        "type": "save"
+                        "selector": "reflex"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "jgB5xsEwGDphGPM7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Golem Antimagic",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -233,25 +185,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>harmed by cold and water ([[/r {8d10}]]{8d10 damage}, [[/r {2d10}]]{2d10 damage} from areas or persistent damage); healed by transmutation (area @Damage[2d10[healing]] Hit Points); slowed by electricity</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
+                    "value": "<p>Harmed by cold and water (@Damage[8d10[untyped]], @Damage[2d10[untyped]] from areas or persistent damage); healed by transmutation (area @Damage[2d10[healing]] HP); slowed by electricity</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GolemAntimagic]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "golem-golem-antimagic",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -260,7 +205,7 @@
             "_id": "5PRYxLiEoiOScKcc",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Swift Steps",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -272,23 +217,16 @@
                 "description": {
                     "value": "<p>A mithral golem is permanently @UUID[Compendium.pf2e.conditionitems.Item.Quickened], and it can use the extra action only to Step or Stride.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -297,7 +235,7 @@
             "_id": "Y2DLiZGrL1Rc9uJZ",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Vulnerable to Slow",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -307,25 +245,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A mithral golem is not healed by a <em>@UUID[Compendium.pf2e.spells-srd.Item.Slow]</em> spell, and such spells affect them normally. A <em>@UUID[Compendium.pf2e.spells-srd.Item.Haste]</em> spell reverses the effects of a <em>slow</em> spell immediately.</p>"
+                    "value": "<p>A mithral golem is not healed by a @UUID[Compendium.pf2e.spells-srd.Item.Slow] spell, and such spells affect them normally. A @UUID[Compendium.pf2e.spells-srd.Item.Haste] spell reverses the effects of a <em>slow</em> spell immediately.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -334,7 +265,7 @@
             "_id": "ILOl1dY50IaR6WPN",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Liquefy",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -346,8 +277,10 @@
                 "description": {
                     "value": "<p>The mithral golem becomes fully liquid and amorphous. It gains immunity to precision damage, but it takes double damage from cold and water magic (see golem antimagic). The only actions it can use while Liquefied are move actions, Spike Storm, and spike Strikes. It can resume its normal form by taking this action again.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -366,18 +299,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -386,7 +310,7 @@
             "_id": "rjVHVaa9BN3ZAiKL",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Spike Storm",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -398,72 +322,19 @@
                 "description": {
                     "value": "<p>The mithral golem makes a spike Strike against each target within its reach. These attacks count toward the mithral golem's multiple attack penalty, but its multiple attack penalty doesn't increase until after all the attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "VJwdwPAmJ06BjMxI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "rCtpv1auRXjaHSm0",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Mithral Golem",
@@ -503,12 +374,6 @@
                 "value": 220
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 26
-            },
             "resistances": [
                 {
                     "exceptions": [
@@ -529,19 +394,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 16
             },
             "privateNotes": "",
-            "publicNotes": "<p>Mithral golems are gorgeously crafted, silvery humanoids made from colossal amounts of the purest mithral. While massive in construction, they possess amazing speed and grace through literal fluidity. Unpredictable and flexible, they can melt into liquid form and reform into a solid shape in mere seconds, allowing them to shape their limbs into sharp spikes or heavy fists as needed.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
-            "source": {
-                "value": "Pathfinder #186: Ghost King's Rage"
+            "publicNotes": "<p>Mithral golems are gorgeously crafted, silvery humanoids made from colossal amounts of the purest dawnsilver. While massive in construction, they possess amazing speed and grace through literal fluidity. Unpredictable and flexible, they can melt into liquid form and reform into a solid shape in mere seconds, allowing them to shape their limbs into sharp spikes or heavy fists as needed.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #186: Ghost King's Rage"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 26,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -558,19 +437,16 @@
                 "value": 24
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 30
+            },
+            "athletics": {
+                "base": 33
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

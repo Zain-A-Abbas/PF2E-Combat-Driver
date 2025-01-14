@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 40,
                     "value": 32
@@ -106,52 +43,37 @@
         },
         {
             "_id": "uQ8995bWIrQuwlBs",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.XS7Wyh5YC0NWeWyB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.XS7Wyh5YC0NWeWyB"
             },
-            "img": "systems/pf2e/icons/spells/fiery-body.webp",
+            "img": "icons/magic/fire/elemental-fire-humanoid.webp",
             "name": "Fiery Body",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "fire"
-                            },
-                            "value": "3d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
                     }
                 },
+                "defense": null,
                 "description": {
                     "value": "<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes 3d6 fire damage. Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast produce flame as an innate spell; the casting is reduced from 2 actions to 1. In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Fiery Body]</p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take 4d6 fire damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Fiery Body (9th Level)]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 7
@@ -160,57 +82,34 @@
                     "heightenedLevel": 9,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fiery-body",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "polymorph",
-                        "transmutation"
+                        "manipulate",
+                        "polymorph"
                     ]
                 }
             },
@@ -218,52 +117,45 @@
         },
         {
             "_id": "vS22gHtvZulVqtiv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv"
             },
             "img": "systems/pf2e/icons/spells/volcanic-eruption.webp",
             "name": "Volcanic Eruption",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
-                "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
+                "area": {
+                    "type": "cylinder",
+                    "value": 5
                 },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "fire"
-                            },
-                            "value": "14d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "14d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
-                    "value": "<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take 3d6 fire damage from the intense heat, regardless of the results of their saving throws.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr /><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6."
+                    "value": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take @Damage[(@item.rank -4)d6[fire]] damage from the intense heat, regardless of the results of their saving throws.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Volcanic Eruption]</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -279,55 +171,32 @@
                     "heightenedLevel": 9,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "volcanic-eruption",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -335,42 +204,26 @@
         },
         {
             "_id": "EG5IRmS1Fs3bcMMx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
             },
-            "img": "systems/pf2e/icons/spells/air-walk.webp",
+            "img": "icons/magic/water/wave-water-teal.webp",
             "name": "Air Walk",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "5 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -379,56 +232,33 @@
                     "heightenedLevel": 4,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "air-walk",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "air",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -436,42 +266,26 @@
         },
         {
             "_id": "7e908l7OkfXJHtHN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.1HfusQ8NDWutGvMx"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.1HfusQ8NDWutGvMx"
             },
-            "img": "systems/pf2e/icons/spells/animal-vision.webp",
+            "img": "icons/creatures/mammals/dog-husky-white-blue.webp",
             "name": "Animal Vision (At Will) (Dinosaurs Only)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You tap into the target's senses, allowing you to see, hear, and otherwise sense whatever it senses for the spell's duration. If the target wishes to prevent you from doing so, it can attempt a Will save, negating the spell on a success, but most animals don't bother to do so. While tapping into the target's senses, you can't use your own body's senses, but you can change back and forth from your body's senses to the target's senses using a single action, which has the concentrate trait.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 3
@@ -480,55 +294,32 @@
                     "heightenedLevel": 3,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "animal-vision",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 animal"
                 },
                 "time": {
                     "value": "1 minute"
                 },
-                "traditions": {
-                    "value": [
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
                     "value": [
-                        "mental",
-                        "divination"
+                        "concentrate",
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -536,42 +327,26 @@
         },
         {
             "_id": "f99shCCrYVpdRA60",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.yhz9fF69uwRhnHix"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.yhz9fF69uwRhnHix"
             },
-            "img": "systems/pf2e/icons/spells/animal-messenger.webp",
+            "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
             "name": "Animal Messenger",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You offer food, and an ordinary Tiny animal within range approaches to eat it. You imprint the image, direction, and distance of an obvious place or landmark well known to you within the animal. You can also attach a small object or note up to light Bulk to it. The animal does its best to reach the destination; if it makes it there, it waits nearby and allows nonhostile creatures to approach and remove the attached object. The spell ends after the message is delivered or after 24 hours, whichever comes first.</p>\n<p>If there are no Tiny wild animals in range, the spell is lost.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "see text"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -580,55 +355,32 @@
                     "heightenedLevel": 2,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "animal-messenger",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 minute"
                 },
-                "traditions": {
-                    "value": [
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
                     "value": [
-                        "mental",
-                        "enchantment"
+                        "concentrate",
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -636,42 +388,26 @@
         },
         {
             "_id": "kNNjjTC0b0ZPTnII",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C"
             },
-            "img": "systems/pf2e/icons/spells/speak-with-animals.webp",
+            "img": "icons/creatures/mammals/ox-buffalo-horned-green.webp",
             "name": "Speak with Animals (Constant)",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -680,54 +416,31 @@
                     "heightenedLevel": 2,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "speak-with-animals",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "primal"
+                    ],
                     "value": [
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -735,42 +448,26 @@
         },
         {
             "_id": "3pFc3GsLQcSTVkLk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu"
             },
             "img": "systems/pf2e/icons/spells/summon-animal.webp",
             "name": "Summon Animal (Dinosaurs Only)",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You conjure an animal to fight for you. You summon a common creature that has the animal trait and whose level is -1, such as those found in Pathfinder Bestiary volumes. Heightening the spell increases the maximum level of creature you can summon.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> Level 1</p>\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>"
                 },
                 "duration": {
-                    "value": "sustained up to 1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
+                    "sustained": true,
+                    "value": "1 minute"
                 },
                 "level": {
                     "value": 1
@@ -779,55 +476,32 @@
                     "heightenedLevel": 9,
                     "value": "IbgOSKVasX4WGvhx"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "summon-animal",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
                     "value": [
-                        "conjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -835,24 +509,22 @@
         },
         {
             "_id": "RA7a8DvNLuj5MKzB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.JNt7GmLCCVz5BiEI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.JNt7GmLCCVz5BiEI"
             },
             "img": "systems/pf2e/icons/equipment/weapons/javelin.webp",
             "name": "Javelin",
             "sort": 900000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "javelin",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -869,9 +541,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "dart",
                 "hardness": 0,
                 "hp": {
@@ -881,34 +550,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "range": 30,
@@ -916,17 +570,15 @@
                     "value": "-"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "huge",
                 "slug": "javelin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -936,33 +588,28 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "sPi3ZAYG2vpg9HAv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.NufKswitJjxDCX8f"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.NufKswitJjxDCX8f"
             },
             "img": "systems/pf2e/icons/equipment/weapons/naginata.webp",
             "name": "Naginata",
             "sort": 1000000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "naginata",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 2
                 },
                 "category": "martial",
                 "containerId": null,
@@ -979,9 +626,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "polearm",
                 "hardness": 0,
                 "hp": {
@@ -991,34 +635,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Lost Omens: Gods & Magic"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1026,17 +655,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "huge",
                 "slug": "naginata",
-                "source": {
-                    "value": "Pathfinder Lost Omens: Gods & Magic"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -1048,9 +675,6 @@
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "weapon"
@@ -1087,11 +711,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1131,11 +757,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1177,11 +805,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1221,11 +851,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1271,11 +903,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1289,99 +923,13 @@
             "type": "melee"
         },
         {
-            "_id": "QqLiKxNQA0ywz1hJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "7Z7WDMHFDrNJcL7D",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "8arXWMYazzSvR5im",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 1800000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1393,23 +941,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1418,7 +959,7 @@
             "_id": "GJq1pfArAB262GZd",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Raptor Jaw Disarm",
-            "sort": 1900000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -1430,20 +971,21 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A creature makes a melee Strike against the worldwatcher but misses</p>\n<hr />\n<p><strong>Effect</strong> The worldwatcher breaks the triggering creature's limb or weapon. If the triggering Strike was an unarmed attack, the triggering creature takes @Damage[6d6[bludgeoning]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} until the limb is reset (an Interact action with the manipulate trait). If the triggering Strike was a weapon Strike, the weapon takes @Damage[6d6[bludgeoning]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1452,7 +994,7 @@
             "_id": "pPAfuiRx3hQmyGuJ",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Boneshaking Roar",
-            "sort": 2000000,
+            "sort": 1800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1462,25 +1004,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[type:emanation|distance:30]{30 feet} take @Damage[10d6[sonic]] damage (@Check[type:fortitude|dc:38|basic:true] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.Stunned] [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/br 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
+                    "value": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]] damage (@Check[fortitude|dc:38|basic] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.Stunned] [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation",
                         "sonic"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1489,7 +1027,7 @@
             "_id": "5utWutqAL3Pfpee3",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Stunning Blow",
-            "sort": 2100000,
+            "sort": 1900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1499,188 +1037,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Whenever the worldwatcher hits a creature with their fist or naginata Strike, that creature must succeed at a @Check[type:fortitude|dc:39] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 3} on a critical hit).</p>"
+                    "value": "<p>Whenever the worldwatcher hits a creature with their fist or naginata Strike, that creature must succeed at a @Check[fortitude|dc:39] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 3} on a critical hit).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "stunning-blow",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "dLgLvLdIyZUc9faE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "0LdR4uTQ3bxsyWYK",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "0x9kae4Iw4ckDbqx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 32
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "SH0mVeD0uZ8CBBvH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 32
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "5rVCunEuQ58VAARl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Nature",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 34
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "1BRl9MJNjIWF63Bx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "J3bsjEThWnOUDFEW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 34
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Saurian Worldwatcher",
@@ -1719,12 +1092,6 @@
                 "temp": 0,
                 "value": 330
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 34
-            },
             "resistances": [
                 {
                     "type": "fire",
@@ -1737,19 +1104,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "speak with animals",
+                "value": [
+                    "common",
+                    "fey",
+                    "pyric"
+                ]
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "<p>The longest-lived saurians favor introspection and take the long view of things-though this thoughtfulness should not be mistaken for weakness. Other saurians defer to worldwatchers' experience.</p>\n<hr />\n<p>Enormous tyrannosaurus-humanoids, saurians are ancient beings who predate the rise of humans and dwell in the world's primeval jungles. While the saurians presented here are evil, saurians of all alignments exist.</p>",
-            "source": {
-                "value": "Pathfinder #156: The Apocalypse Prophet"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #156: The Apocalypse Prophet"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 34,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1766,25 +1151,37 @@
                 "value": 32
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 35
+            },
+            "athletics": {
+                "base": 33
+            },
+            "diplomacy": {
+                "base": 32
+            },
+            "intimidation": {
+                "base": 32
+            },
+            "nature": {
+                "base": 34
+            },
+            "stealth": {
+                "base": 35
+            },
+            "survival": {
+                "base": 34
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "Speak with Animals",
-                "selected": [],
-                "value": [
-                    "common",
-                    "ignan",
-                    "sylvan"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "huge"
             },
             "value": [
                 "dinosaur",
+                "evil",
                 "humanoid"
             ]
         }

@@ -28,11 +28,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -67,11 +69,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -85,57 +89,13 @@
             "type": "melee"
         },
         {
-            "_id": "eX9GmQ5kPOaJk2yM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "6SbGSgbpCYxPYfsS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Lifesense (Imprecise) 60 feet",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -147,37 +107,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "ICQ6LdZTOXIh61jG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 500000,
+            "name": "Void Healing",
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -189,8 +140,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -201,18 +154,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -221,7 +165,7 @@
             "_id": "7C6yRhAx3CPR1NFc",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Whip Vulnerability",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -231,25 +175,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A lion visitant takes [[/r 7[slashing]]]{7} additional damage from whips.</p>"
+                    "value": "<p>A lion visitant takes @Damage[7[slashing]]{7} additional damage from whips.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -258,7 +195,7 @@
             "_id": "x8zvyv0LEKpl4zb1",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Pack Attack",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -268,14 +205,16 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The visitant deals an extra [[/r {1d4}]]{1d4 damage} to any creature that's within reach of at least two of the visitant's allies.</p>"
+                    "value": "<p>The visitant deals an extra 1d4 damage to any creature that's within reach of at least two of the visitant's allies.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "pack-attack",
                         "toggleable": true
@@ -291,18 +230,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -311,7 +241,7 @@
             "_id": "MvMDJ7fMPk4NO6bP",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Pounce",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -323,37 +253,28 @@
                 "description": {
                     "value": "<p>The visitant Strides and makes a Strike at the end of that movement. If the visitant began this action @UUID[Compendium.pf2e.conditionitems.Item.Hidden], it remains hidden until after the ability's Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "oZzczpHFxrH5IUJq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.vOocS1EiRCXPtbgB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.vOocS1EiRCXPtbgB"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Roar",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -363,44 +284,37 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The visitant lets out a loud and horrifying roar. Each creature within @Template[type:emanation|distance:100]{100 feet} must attempt at a @Check[type:will|dc:19] save.</p>\n<p>No matter the result, affected creatures are then temporarily immune to the effect for 1 minute.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3}.</p>"
+                    "value": "<p>The visitant lets out a loud and horrifying roar. Each creature within @Template[emanation|distance:100]{100 feet} must attempt at a @Check[will|dc:19] save.</p>\n<p>No matter the result, affected creatures are then temporarily immune to the effect for 1 minute.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #152: Legacy of the Lost God"
                 },
                 "rules": [],
                 "slug": "visitant-roar",
-                "source": {
-                    "value": "Pathfinder #152: Legacy of the Lost God"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "auditory",
                         "concentrate",
                         "emotion",
-                        "enchantment",
                         "fear",
                         "mental",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "jBd2Z17zgzpxyvDF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -410,10 +324,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The visitant deals an extra 1d8 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>The visitant deals an extra 1d8 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -422,59 +338,34 @@
                         "dieSize": "d8",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "hz1IPPAcQC4UoSnA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -486,95 +377,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "lnBhM16ZvfsaoSu1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "CGjoLcZ8Q3bm80BW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Dm0VEQ9kn5z8s7Pr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Lion Visitant",
@@ -608,7 +423,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 95,
                 "temp": 0,
                 "value": 95
@@ -630,37 +445,50 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 7
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
-            "publicNotes": "<p>Scars and other marks of obvious mistreatment are the clearest indicators that an undead animal is no mere zombie.</p>\n<hr />\n<p>Although the wild creatures seen at traveling circuses can entertain and amaze, the lives of such animals and beasts are sometimes sad and cruel. Circus owners who mistreat their animals through harsh discipline or overtraining see little wrong with their mercilessness, even going so far as to slaughter their entertainers-supposedly \"by accident\"-via neglect or abuse. The victims of such cruelty who cannot move onto the afterlife-either because they somehow become infused with negative energy or their spirits cannot rest without first enacting revenge on their assailants-occasionally rise from the dead as visitants.</p>\n<p>These undead monsters haunt the sites of their demise and search out the masters who made their lives so hellish with only one goal in mind: vengeance. When they can't locate their particular abuser, or if they are still unable to rest even after confronting their aggressor, visitants seek out similarly evil harmers of animals, becoming torturers of torturers. However, visitants are for the most part unable to distinguish between individual members of a species; thus, if a visitant was abused by a human trainer, any human that crosses its path may become a target of its rage.</p>\n<p>A visitant resembles a zombified animal, but it retains a spark of the animal intelligence it had in life, making it all the more dangerous as a result. Visitants' bodies are marred by the horrors of their brutal existences: Their mouths are furrowed in a constant snarl, with a black ichor dripping from their cracked, rotten lips. Whip scars from their hours of \"training\" glow with an unnatural purple light. And perhaps above all, their eyes mark them as touched by undeath-sunken horribly deep into their skull, leaking blood or other fluid, and glowing with an aura of dread and palpable anger.</p>",
-            "source": {
-                "value": "Pathfinder #152: Legacy of the Lost God"
+            "publicNotes": "<p>Scars and other marks of obvious mistreatment are the clearest indicators that an undead animal is no mere zombie.</p>\n<hr />\n<p>Although the wild creatures seen at traveling circuses can entertain and amaze, the lives of such animals and beasts are sometimes sad and cruel. Circus owners who mistreat their animals through harsh discipline or overtraining see little wrong with their mercilessness, even going so far as to slaughter their entertainers-supposedly \"by accident\"-via neglect or abuse. The victims of such cruelty who cannot move onto the afterlife-either because they somehow become infused with void energy or their spirits cannot rest without first enacting revenge on their assailants-occasionally rise from the dead as visitants.</p>\n<p>These undead monsters haunt the sites of their demise and search out the masters who made their lives so hellish with only one goal in mind: vengeance. When they can't locate their particular abuser, or if they are still unable to rest even after confronting their aggressor, visitants seek out similarly evil harmers of animals, becoming torturers of torturers. However, visitants are for the most part unable to distinguish between individual members of a species; thus, if a visitant was abused by a human trainer, any human that crosses its path may become a target of its rage.</p>\n<p>A visitant resembles a zombified animal, but it retains a spark of the animal intelligence it had in life, making it all the more dangerous as a result. Visitants' bodies are marred by the horrors of their brutal existences: Their mouths are furrowed in a constant snarl, with a black ichor dripping from their cracked, rotten lips. Whip scars from their hours of \"training\" glow with an unnatural purple light. And perhaps above all, their eyes mark them as touched by undeath-sunken horribly deep into their skull, leaking blood or other fluid, and glowing with an aura of dread and palpable anger.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #152: Legacy of the Lost God"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "lifesense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -677,22 +505,27 @@
                 "value": 15
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "athletics": {
+                "base": 13
+            },
+            "stealth": {
+                "base": 13
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, lifesense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "animal",
-                "undead"
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

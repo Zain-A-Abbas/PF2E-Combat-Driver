@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -59,133 +61,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ikeshti squirts blood from one of their eyes at a target within 30 feet. The target must attempt a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} on a critical failure).</p>"
+                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ikeshti squirts blood from one of their eyes at a target within 30 feet. The target must attempt a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2} on a critical failure).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "uanexann0idcnwdx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "v3x02vz2tzctgetw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bhvy9ifzyeq1v6sq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "y282xyyq3cc35ikw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Deserts",
-                        "predicate": [
-                            "terrain:desert"
-                        ],
-                        "selector": "survival",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+9 in deserts",
-                        "options": "terrain:desert"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Ikeshti Brood-Minder",
@@ -224,12 +119,6 @@
                 "temp": 0,
                 "value": 30
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "resistances": [
                 {
                     "type": "cold",
@@ -246,19 +135,32 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "akitonian",
+                    "ikeshti"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Ikeshti young are near-mindless carnivores. They are watched over by brood-minders, male ikeshtis with a talent for influencing the ravenous spawn, who protect the tiny creatures until they grow into responsible adults.</p>\n<hr />\n<p>Ikeshtis are reptilian humanoids native to Akiton's wastelands. Smaller than Golarion's iruxi, ikeshtis organize around distinct societal roles.</p>",
-            "source": {
-                "value": "Pathfinder #173: Doorway to the Red Star"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #173: Doorway to the Red Star"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -275,19 +177,31 @@
                 "value": 5
             }
         },
-        "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "akitonian",
-                    "ikeshti"
+        "skills": {
+            "athletics": {
+                "base": 7
+            },
+            "diplomacy": {
+                "base": 6
+            },
+            "medicine": {
+                "base": 7
+            },
+            "survival": {
+                "base": 7,
+                "special": [
+                    {
+                        "base": 9,
+                        "label": "in deserts",
+                        "predicate": [
+                            "terrain:desert"
+                        ]
+                    }
                 ]
-            },
+            }
+        },
+        "traits": {
             "rarity": "common",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "sm"
             },

@@ -18,24 +18,17 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The lathe is jostled or damaged, or its trigger is remotely pulled.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a sharpened fragment Strike against a random target in area <strong>A1</strong>, then rolls for initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -67,11 +60,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
@@ -99,24 +94,17 @@
                 "description": {
                     "value": "<p>The sharpened fragments deal @Damage[1d8[bleed]] on a critical hit.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "persistent-bleed-critical",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -146,24 +134,25 @@
                 }
             ],
             "stealth": {
-                "details": "<p>(expert); @Check[type:perception|dc:29|name:Notice the Line of Cord|traits:complex,mechanical,trap,hazard] to notice the line of cord running from the lathe's trigger toward the door to area <strong>A2</strong>.</p>",
+                "details": "<p>(expert); @Check[perception|dc:29|name:Notice the Line of Cord|traits:complex,mechanical,trap,hazard] to notice the line of cord running from the lathe's trigger toward the door to area <strong>A2</strong>.</p>",
                 "value": 19
             }
         },
         "creatureType": "",
         "details": {
             "description": "<p>The powered lathe's springs have been critically overwound so that when jostled or triggered, the lathe unwinds violently, hurling blades, gears, and sharp shards of metal around the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:31|name:Release the Spring Tension|traits:complex,mechanical,trap,hazard] (expert) on the lathe releases the tension on its springs without unleashing its blades and gears.</p>",
+            "disable": "<p>@Check[thievery|dc:31|name:Release the Spring Tension|traits:complex,mechanical,trap,hazard] (expert) on the lathe releases the tension on its springs without unleashing its blades and gears.</p>",
             "isComplex": true,
             "level": {
                 "value": 10
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #147: Tomorrow Must Burn"
+            },
             "reset": "",
-            "routine": "<p>(4 actions) The lathe attempts four sharpened fragment attacks against creatures in the room, selecting a target randomly from all available targets in area A1. The trap does not take multiple attack penalties for any of its attacks. The trap loses 1 action each turn as its springs wind down, and becomes disabled when it has 0 actions.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #147: Tomorrow Must Burn"
-            }
+            "routine": "<p>(4 actions) The lathe attempts four sharpened fragment attacks against creatures in the room, selecting a target randomly from all available targets in area A1. The trap does not take multiple attack penalties for any of its attacks. The trap loses 1 action each turn as its springs wind down, and becomes disabled when it has 0 actions.</p>"
         },
         "saves": {
             "fortitude": {

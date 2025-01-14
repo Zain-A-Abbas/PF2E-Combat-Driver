@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -69,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -88,52 +92,10 @@
             "type": "melee"
         },
         {
-            "_id": "26ThdaGsoVpIHebG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "eb08k6r7dwsmypra",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Death Roll",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -145,13 +107,22 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> Old Thrasher must have a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> Old Thrasher tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.Prone]. If it fails, it releases the creature.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
+                        "domain": "attack-roll",
+                        "key": "RollOption",
+                        "option": "death-roll",
+                        "toggleable": true
+                    },
+                    {
                         "key": "FlatModifier",
                         "predicate": [
+                            "death-roll",
                             "target:condition:grabbed"
                         ],
                         "selector": "jaws-attack",
@@ -160,20 +131,11 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -182,7 +144,7 @@
             "_id": "qf09eu3mnq3exeor",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Deep Breath",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -194,23 +156,16 @@
                 "description": {
                     "value": "<p>Old Thrasher can hold its breath for about 4 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -219,7 +174,7 @@
             "_id": "kqwu7xlfj3pscfmw",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Into the Deep",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -231,23 +186,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> Old Thrasher must have a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> Old Thrasher Swims, bringing its victim along with it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -256,7 +204,7 @@
             "_id": "wqv2jc5np1swyru2",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Thunderous Tail",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -266,39 +214,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Old Thrasher makes up to three tail Strikes against different targets. Any target hit must succeed at a @Check[type:fortitude|dc:25|name:animal]{Fortitude (success)}(@Check[type:fortitude|dc:30|name:animal]{Fortitude (critical success)}) save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
+                    "value": "<p>Old Thrasher makes up to three tail Strikes against different targets. Any target hit must succeed at a @Check[fortitude|dc:25|traits:animal]{Fortitude (success)} (@Check[fortitude|dc:30|traits:animal]{Fortitude (critical success)}) save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "9rqxm2guajXrbSwh",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -310,89 +249,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "rkfgan6lr8szrg73",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "9aunx2j80s8xmrrp",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Water",
-                        "predicate": [
-                            "terrain:water"
-                        ],
-                        "selector": "stealth",
-                        "type": "untyped",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+20 in water",
-                        "options": "terrain:water"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Old Thrasher",
@@ -437,12 +306,6 @@
                 "temp": 0,
                 "value": 140
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 16
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -454,19 +317,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #170: Spoken on the Song Wind"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #170: Spoken on the Song Wind"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 16,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -483,16 +360,25 @@
                 "value": 15
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 18
+            },
+            "stealth": {
+                "base": 16,
+                "special": [
+                    {
+                        "base": 20,
+                        "label": "in water",
+                        "predicate": [
+                            "terrain:water"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "lg"
             },

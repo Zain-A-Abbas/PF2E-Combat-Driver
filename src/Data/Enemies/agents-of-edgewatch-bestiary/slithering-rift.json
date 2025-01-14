@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -50,10 +52,8 @@
         },
         {
             "_id": "yyZMl8O8UfRO0cwF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 120 feet",
@@ -69,23 +69,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -104,25 +97,18 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>A slithering rift is so clear that it's difficult to spot. A successful @Check[type:perception|dc:48] check is required to notice a stationary slithering rift, and a creature must be @UUID[Compendium.pf2e.actionspf2e.Item.Search]{Searching} to attempt this check.</p>\n<p>A creature that walks into the rift's space might fall into any pit currently in effect due to Dimensional Pit.</p>"
+                    "value": "<p>A slithering rift is so clear that it's difficult to spot. A successful @Check[perception|dc:48] check is required to notice a stationary slithering rift, and a creature must be @UUID[Compendium.pf2e.actionspf2e.Item.Search]{Searching} to attempt this check.</p>\n<p>A creature that walks into the rift's space might fall into any pit currently in effect due to Dimensional Pit.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -143,23 +129,16 @@
                 "description": {
                     "value": "<p>Ingesting an extradimensional space like that found in a <em>bag of holding</em> deals @Damage[12d8[force]] damage to the slithering rift and its occupants.</p>\n<p>The slithering rift then immediately uses Out You Go.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -178,10 +157,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The slithering rift opens an extradimensional, 20-foot-deep pit that covers its own space and all adjacent squares unless they are walls or similarly blocking terrain.</p>\n<p>Any other creature occupying spaces in the pit must succeed at a @Check[type:reflex|dc:40|traits:damaging-effect] save or fall into the pit, taking damage from the fall (typically [[/r 10[bludgeoning]]] damage). Any creature grabbed by the ooze is released from the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Improved Grab]{Grab} and falls in, even if it was outside the pit squares.</p>\n<p>While the pit is open, the slithering rift is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and can't be forced to move. It can make pseudopod Strikes originating from the walls of the pit. A creature that starts its turn at the bottom of the pit takes @Damage[5d6[acid]] damage.</p>\n<p>Creatures can climb the walls with a @Check[type:athletics|dc:40|name:Climb Out of the Rift|traits:action:climb] check. When the slithering rift dies, the pit closes and creatures inside are ejected, as Out you Go.</p>"
+                    "value": "<p>The slithering rift opens an extradimensional, 20-foot-deep pit that covers its own space and all adjacent squares unless they are walls or similarly blocking terrain.</p>\n<p>Any other creature occupying spaces in the pit must succeed at a @Check[reflex|dc:40|traits:damaging-effect] save or fall into the pit, taking damage from the fall (typically @Damage[10[bludgeoning]|options:fall-damage] damage). Any creature grabbed by the ooze is released from the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Improved Grab]{Grab} and falls in, even if it was outside the pit squares.</p>\n<p>While the pit is open, the slithering rift is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and can't be forced to move. It can make pseudopod Strikes originating from the walls of the pit. A creature that starts its turn at the bottom of the pit takes @Damage[5d6[acid]] damage.</p>\n<p>Creatures can climb the walls with a @Check[athletics|dc:40|name:Climb Out of the Rift|traits:action:climb] check. When the slithering rift dies, the pit closes and creatures inside are ejected, as Out you Go.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -202,21 +183,11 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "conjuration",
                         "extradimensional"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -237,23 +208,16 @@
                 "description": {
                     "value": "<p>The slithering rift makes a single pseudopod Strike against each target within range it hasn't already @UUID[Compendium.pf2e.conditionitems.Item.Grabbed].</p>\n<p>These attacks count toward the slithering rift's multiple attack penalty, but this penalty doesn't increase until after all of these attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -272,35 +236,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The slithering rift closes all pit spaces it created using Dimensional Pit, ejecting all its occupants onto the ground into random free spaces where the opening of the pit was.</p>\n<p>Each occupant takes @Damage[9d6[bludgeoning]] damage (@Check[type:reflex|dc:40|basic:true] save).</p>"
+                    "value": "<p>The slithering rift closes all pit spaces it created using Dimensional Pit, ejecting all its occupants onto the ground into random free spaces where the opening of the pit was.</p>\n<p>Each occupant takes @Damage[9d6[bludgeoning]] damage (@Check[reflex|dc:40|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "HhajioTT4qQe67v3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
@@ -316,72 +271,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "LZOXsjkgq3FE18x6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ebbiTBQcD7UcRipG",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 38
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Slithering Rift",
@@ -440,12 +342,6 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 30
-            },
             "resistances": [
                 {
                     "type": "bludgeoning",
@@ -458,20 +354,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "",
-            "sidebarText": "",
-            "source": {
-                "value": "Pathfinder #162: Ruins of the Radiant Siege"
-            }
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #162: Ruins of the Radiant Siege"
+            },
+            "sidebarText": ""
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 30,
+            "senses": [
+                {
+                    "acuity": "imprecise",
+                    "range": 120,
+                    "type": "tremorsense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -488,16 +401,16 @@
                 "value": 26
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 35
+            },
+            "stealth": {
+                "base": 38
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "no vision, tremorsense (imprecise) 120 feet"
-            },
             "size": {
                 "value": "huge"
             },

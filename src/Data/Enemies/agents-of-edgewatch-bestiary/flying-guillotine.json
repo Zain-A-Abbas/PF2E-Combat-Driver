@@ -18,27 +18,19 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A living creature enters the room</p>\n<hr />\n<p><strong>Effect</strong> One round after a creature enters the room, the door to the room slams shut and locks (two <span data-pf2-action=\"pickALock\" data-pf2-dc=\"20\" data-pf2-glyph=\"D\" data-pf2-show-dc=\"gm\">Thievery</span> checks to pick), and the guillotine blade detaches from its housing and begins flying around the room as the trap rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "arcane",
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -59,23 +51,16 @@
                 "description": {
                     "value": "<p>fly 20 feet</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -105,11 +90,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -145,24 +132,25 @@
                 }
             ],
             "stealth": {
-                "details": "<p>(trained) or @Check[type:perception|dc:23|traits:action:seek] (expert) to spot the glyph</p>",
+                "details": "<p>(trained) or @Check[perception|dc:23|traits:action:seek] (expert) to spot the glyph</p>",
                 "value": 10
             }
         },
         "creatureType": "",
         "details": {
             "description": "<p>An invisible magical glyph on the guillotine's blade detects living creatures in the room, which causes the guillotine to fly off its hinges and attack.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20|name:Erase Glyph|traits:action:disable-a-device] (trained) to erase the glyph (which requires a successful unarmed attack roll if the blade is already active) or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (3rd level; counteract DC 20) to counteract it. The trap has a secret bypass known only to Ralso and Pratchett: as long as the guillotine can see a creature in the room touching thumb and pinky together with an empty hand, it remains dormant.</p>",
+            "disable": "<p>@Check[thievery|dc:20|name:Erase Glyph|traits:action:disable-a-device] (trained) to erase the glyph (which requires a successful unarmed attack roll if the blade is already active) or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (3rd level; counteract DC 20) to counteract it. The trap has a secret bypass known only to Ralso and Pratchett: as long as the guillotine can see a creature in the room touching thumb and pinky together with an empty hand, it remains dormant.</p>",
             "isComplex": true,
             "level": {
                 "value": 5
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #157: Devil at the Dreaming Palace"
+            },
             "reset": "<p>After 1 minute, the trap deactivates, though the door remains locked. The trap rearms itself each day at dawn.</p>",
-            "routine": "<p>(1 action) The blade @UUID[Compendium.pf2e.actionspf2e.Item.Fly]{Flies} up to 20 feet and Strikes any creatures whose squares it passes through. It cannot target the same creature more than once per round. The blade cannot be grappled and doesn't take a multiple attack penalty.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #157: Devil at the Dreaming Palace"
-            }
+            "routine": "<p>(1 action) The blade @UUID[Compendium.pf2e.actionspf2e.Item.Fly]{Flies} up to 20 feet and Strikes any creatures whose squares it passes through. It cannot target the same creature more than once per round. The blade cannot be grappled and doesn't take a multiple attack penalty.</p>"
         },
         "saves": {
             "fortitude": {

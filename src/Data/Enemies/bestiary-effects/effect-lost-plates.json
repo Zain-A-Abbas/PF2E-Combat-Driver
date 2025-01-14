@@ -1,0 +1,48 @@
+{
+    "_id": "lt2t24E4hiByHhi3",
+    "img": "systems/pf2e/icons/equipment/consumables/other-consumables/ablative-shield-plating.webp",
+    "name": "Effect: Lost Plates",
+    "system": {
+        "badge": {
+            "type": "counter",
+            "value": 1
+        },
+        "description": {
+            "value": "<p>The creature takes a status penalty to AC equal to the number of lost plates.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 3"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "ac",
+                "type": "status",
+                "value": "@item.badge.value*-1"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

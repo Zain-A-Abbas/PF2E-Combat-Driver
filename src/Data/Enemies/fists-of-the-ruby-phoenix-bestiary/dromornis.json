@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -75,11 +77,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -93,94 +97,10 @@
             "type": "melee"
         },
         {
-            "_id": "yoCyQ8hKhH9Vf9xB",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "2ahCptrlPPU2hlfy",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "FBTWvsZTjynInvCc",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Pack Ambush",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -192,23 +112,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> Another dromornis within 10 feet Strides.</p>\n<hr />\n<p><strong>Effect</strong> The dromornis Strides up to half its Speed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -217,7 +130,7 @@
             "_id": "FKn1hN8LerlfFOmh",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Pack Attack",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -227,14 +140,16 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Dromornises fight best while among their fellows. A dromornis deals [[/r 1d8]] extra damage to any creature that's within reach of at least two of the dromornis's allies.</p>"
+                    "value": "<p>Dromornises fight best while among their fellows. A dromornis deals 1d8 extra damage to any creature that's within reach of at least two of the dromornis's allies.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "pack-attack",
                         "toggleable": true
@@ -250,18 +165,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -270,7 +176,7 @@
             "_id": "TjBA9hok8Ij2mLzV",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Rushing Attack",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -282,37 +188,44 @@
                 "description": {
                     "value": "<p>The dromornis suddenly Strides and makes a Strike at the end of its movement. During the Stride, it gains a +10-foot circumstance bonus to its Speed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "rushing-attack",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "rushing-attack"
+                        ],
+                        "selector": "land-speed",
+                        "type": "circumstance",
+                        "value": 10
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "HFEPOplpcEvYuYcg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
             },
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Trample",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -322,120 +235,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Medium or smaller, talon, @Check[type:reflex|dc:26|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "value": "<p>Medium or smaller, talon, @Check[reflex|dc:26|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "trample",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "72OrQCny3D6SYfcw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "qH4mnWVRVucRxcl2",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "AduXOGQ1pQwLyFVn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "3sFFh6GnbRcBdFnd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Dromornis",
@@ -474,31 +288,44 @@
                 "temp": 0,
                 "value": 150
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 19
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Dromornises are large, flightless, carnivorous birds that travel in packs to ambush prey. Their short, stubby wings may give them a comical appearance, but anyone who's been on the receiving end of the beast's powerful beak finds the experience less than amusing. Dromornis use their beaks to easily tear flesh and sinew from prey's bones, quickly dispatching sizable mammals like deer, tapirs, and primates. Particularly hungry or aggressive dromornises have even been known to attack humanoids. The bird's strong legs sport sharp talons that, while secondary in combat to its beak, can nonetheless trample and shred smaller creatures like rodents and amphibians caught underfoot.</p>\n<p>While a lone dromornis is dangerous enough, a pack of dromornises can take down a den of bears or village of humanoids. A dromornis pack typically consists of three or four adults and up to five juveniles, all of whom work in tandem to overpower larger prey. Packs lie in wait for something like an anaconda, boar, buffalo or, in cases of desperation, a dinosaur to emerge, then move as one for a surprise strike. Dromornises aren't particularly intelligent, but they have been known to use an ingenious (if hazardous) decoy tactic, luring in massive prey by putting one of their own fledglings at risk.</p>\n<p>Dromornises most often live in tropical jungles far from the reaches of civilization, though they sometimes make their homes in mountainside caves or along rocky coastlines. While most onlookers would be hard-pressed to tell one dromornis from another, dromornises maintain tight familial structures based on pheromones and scent glands, so it's obvious when a straggler from another family is trying to encroach on a pack's den. Such disputes over breeding grounds are common; a particularly prized dromornis den might change hands several times in the course of a year. Fights between dromornis packs are chaotic and swift, marked with the sounds of terrifying screeches and sprays of blood.</p>",
-            "source": {
-                "value": "Pathfinder #166: Despair on Danger Island"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #166: Despair on Danger Island"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 19,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -515,19 +342,22 @@
                 "value": 17
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 18
+            },
+            "athletics": {
+                "base": 22
+            },
+            "deception": {
+                "base": 14
+            },
+            "stealth": {
+                "base": 20
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "low-light vision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },

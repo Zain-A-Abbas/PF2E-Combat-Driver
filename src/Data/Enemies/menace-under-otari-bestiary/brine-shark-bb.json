@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -45,52 +47,10 @@
             "type": "melee"
         },
         {
-            "_id": "ksGHYkwsnnxc2Vmk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "Fc10tuSKXi4OAWw6",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Deep Plunge",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -102,37 +62,28 @@
                 "description": {
                     "value": "<p>The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]{Grabbing} a creature.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "2d3ZGRIXERcjqnmJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -142,97 +93,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] condition until the end of its next turn.</p>"
+                    "value": "<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] the target. This Grapple doesn't apply or count toward the shark's multiple attack penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "N8RaoZ6IeU5TovlO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "fg3RTEikAdx8jmmC",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "F0m1cdMw6jv4aZwk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Brine Shark (BB)",
@@ -285,12 +160,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "resistances": [
                 {
                     "type": "fire",
@@ -308,19 +177,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Elemental",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
-            "publicNotes": "<p>Water elementals roam the endless oceans of the Plane of Water. They can be brought to the world with summoning magic or through natural disasters like floods or hurricanes. Though water elementals can be very destructive, they aren't always malicious. Just as water can bring life to those in need, its waves can pound shores and its rains flood cities. Water elementals are similarly difficult to predict.</p>\n<p>Brine sharks, fierce but among the weaker water elementals, take forms resembling sharks made entirely of water. When encountered, they're usually on their own or following the commands of a spellcaster who summoned them to this plane.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publicNotes": "<p>Water elementals roam the endless oceans of the Plane of Water. They can be brought to the world with summoning magic or through natural disasters like floods or hurricanes. Though water elementals can be very destructive, they aren't always malicious. Just as water can bring life to those in need, its waves can pound shores and its rains flood cities. Water elementals are similarly difficult to predict.</p>\n<p>Brine sharks take forms resembling sharks made entirely of water and are fierce, but among the weaker water elementals. They often slip into mortal oceans, competing with natural predators or even joining schools of flesh and blood sharks.</p>",
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -337,16 +220,19 @@
                 "value": 6
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 11
+            },
+            "survival": {
+                "base": 8
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

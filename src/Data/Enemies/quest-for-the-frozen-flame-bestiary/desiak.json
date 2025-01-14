@@ -4,32 +4,30 @@
     "items": [
         {
             "_id": "5TX9M7STOswSWmWv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk"
             },
-            "img": "systems/pf2e/icons/equipment/armor/breastplate.webp",
-            "name": "+1 Breastplate",
+            "img": "icons/equipment/chest/breastplate-collared-steel.webp",
+            "name": "Breastplate",
             "sort": 100000,
             "system": {
                 "acBonus": 4,
                 "baseItem": "breastplate",
+                "bulk": {
+                    "value": 2
+                },
                 "category": "medium",
                 "checkPenalty": -2,
                 "containerId": null,
                 "description": {
-                    "value": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half‑plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                    "value": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
                 "dexCap": 1,
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
-                    "inSlot": false,
+                    "inSlot": true,
                     "invested": false
-                },
-                "equippedBulk": {
-                    "value": "2"
                 },
                 "group": "plate",
                 "hardness": 0,
@@ -38,76 +36,53 @@
                     "value": 0
                 },
                 "level": {
-                    "value": 5
+                    "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
-                        "gp": 160
+                        "gp": 8
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "med",
                 "slug": "breastplate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
-                "stackGroup": null,
                 "strength": 3,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "3"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "wv9kJVMA8gYczUQO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-symbol-wooden.webp",
+            "img": "icons/commodities/treasure/broach-jeweled-green.webp",
             "name": "Bone Religious Symbol (Venexus)",
             "sort": 200000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0.1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>This piece of bone is emblazoned with an image representing Venexus. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -118,9 +93,6 @@
                     "inSlot": false,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "hardness": 0,
                 "hp": {
                     "max": 0,
@@ -129,75 +101,55 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "religious-symbol-wooden",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "equipment"
         },
         {
             "_id": "VG1gXcBPbXE2Kag3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.p070A88bOm8gi0sS"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.p070A88bOm8gi0sS"
             },
             "img": "systems/pf2e/icons/equipment/held-items/dreamstone.webp",
             "name": "Runescribed Disk",
             "sort": 300000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 0,
+                "bulk": {
                     "value": 0
                 },
-                "consumableType": {
-                    "value": "talisman"
-                },
-                "consume": {
-                    "value": ""
-                },
-                "containerId": "null",
+                "category": "talisman",
+                "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">f</span> envision</p>\n<p><strong>Trigger</strong> You use an action with the move trait</p>\n<p><strong>Requirements</strong> You're an expert in Acrobatics.</p>\n<hr />\n<p>This decorative silver disk is inscribed with magical runes, similar in appearance to a miniature teleportation circle but with the runes indicating movement encircled by runes associated with time. When you activate the disk, you flicker out of sight, seeming to teleport directly to your destination as you accelerate your flow of time dramatically for the duration of your move action. Your movement doesn't trigger reactions.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision</p>\n<p><strong>Trigger</strong> You use an action with the move trait</p>\n<p><strong>Requirements</strong> You're an expert in Acrobatics.</p>\n<hr />\n<p>This decorative silver disk is inscribed with magical runes, similar in appearance to a miniature teleportation circle but with the runes indicating movement encircled by runes associated with time. When you activate the disk, you flicker out of sight, seeming to teleport directly to your destination as you accelerate your flow of time dramatically for the duration of your move action. Your movement doesn't trigger reactions.</p>"
                 },
                 "equipped": {
                     "carryType": "worn"
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -207,41 +159,38 @@
                 "level": {
                     "value": 8
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 100
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #176: Lost Mammoth Valley"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "runescribed-disk",
-                "source": {
-                    "value": "Pathfinder #176: Lost Mammoth Valley"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
                         "magical",
-                        "talisman",
-                        "transmutation"
+                        "talisman"
                     ]
                 },
                 "usage": {
                     "value": "affixed-to-armor"
                 },
-                "weight": {
-                    "value": "-"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -269,17 +218,19 @@
                     },
                     "lfihhu4xfd0gujqyx6sg": {
                         "damage": "1d10",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -315,11 +266,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -355,17 +308,19 @@
                     },
                     "ophticj7gw97srtundn7": {
                         "damage": "1d10",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -379,57 +334,13 @@
             "type": "melee"
         },
         {
-            "_id": "0qc3HJL8r6yUaqHC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "uP8cy0HAno7CGoRL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT"
-                }
+            "_id": "pmcWL2CccDASnpnL",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -439,22 +350,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -463,7 +370,7 @@
             "_id": "3xg068wlhuoipqli",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Dual Assault",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -475,20 +382,21 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Desiak makes either two claw Strikes or a bone spur Strike and a claw Strike. Both Strikes are against the same target and are made with his current multiple attack penalty. This counts as two attacks when calculating Desiak's multiple attack penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -497,7 +405,7 @@
             "_id": "xqr2q4vv17hbipvu",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Erupt Bone Spur",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -509,115 +417,19 @@
                 "description": {
                     "value": "<p>Desiak forces his bones to erupt from or retract back into his flesh. While his bones protrude from his flesh, he can use a bone spur Strike. On a critical hit with a bone spur, Desiak can drain his target's vital energy to restore a number of Hit Points equal to half the damage dealt.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "j6t5hump65bzgtja",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "s41wrmpgu4hm6so8",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bttb8hollhoieoep",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "pz4t741rav9b7agv",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Desiak",
@@ -656,15 +468,9 @@
                 "temp": 0,
                 "value": 135
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 16
-            },
             "resistances": [
                 {
-                    "type": "negative",
+                    "type": "void",
                     "value": 4
                 }
             ],
@@ -675,19 +481,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "Male fleshwarp warrior",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "hallit",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #176: Lost Mammoth Valley"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #176: Lost Mammoth Valley"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 16,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -704,26 +528,30 @@
                 "value": 13
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 18
+            },
+            "athletics": {
+                "base": 16
+            },
+            "intimidation": {
+                "base": 12
+            },
+            "stealth": {
+                "base": 14
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "hallit",
-                    "necril"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low‑light vision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "aberration",
-                "humanoid"
+                "evil",
+                "humanoid",
+                "lawful"
             ]
         }
     },

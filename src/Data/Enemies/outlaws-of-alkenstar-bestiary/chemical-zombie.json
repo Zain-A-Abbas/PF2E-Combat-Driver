@@ -4,10 +4,8 @@
     "items": [
         {
             "_id": "M4xncUZ8R1uVxhIp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -21,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -29,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -71,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -87,52 +89,10 @@
             "type": "melee"
         },
         {
-            "_id": "3bqSjZ8OFBahcmGk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "td3gay0LzawYp5Ff",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Quenchable Death Throes",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -143,38 +103,59 @@
                 "category": "interaction",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When a chemical zombie dies, its body explodes in a @Template[type:burst|distance:30] of fire and debris that deals [[/r {2d10[bludgeoning],2d10[fire]}]]{2d10 bludgeoning and 2d10 fire damage} to each creature in the area (@Check[type:reflex|dc:21|basic:true]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like <em>@UUID[Compendium.pf2e.spells-srd.Item.Hydraulic Push]</em>), the chemicals are neutralized and this ability doesn't trigger.</p>"
+                    "value": "<p>When a chemical zombie dies, its body explodes in a @Template[burst|distance:30] of fire and debris that deals @Damage[2d10[bludgeoning],2d10[fire]]{2d10 bludgeoning and 2d10 fire damage} to each creature in the area (@Check[reflex|dc:21|basic]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like @UUID[Compendium.pf2e.spells-srd.Item.Hydraulic Push]), the chemicals are neutralized and this ability doesn't trigger.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "iFKv7PFNKtSVy9XA",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Slow",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>A sulfur zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "OVXjqkURq28dcMFO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 500000,
             "system": {
                 "actionType": {
@@ -187,8 +168,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -199,55 +182,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "iFKv7PFNKtSVy9XA",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Slow",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>A sulfur zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -256,7 +193,7 @@
             "_id": "0eyOInV05vjoOU3X",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Blinding Sulfur",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -266,76 +203,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A sulfur zombie burns with putrid inner fire. A creature hit by a sulfur zombie's fist Strike must attempt a @Check[type:fortitude|dc:22] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round, or for 1 minute on a critical failure.</p>"
+                    "value": "<p>A sulfur zombie burns with putrid inner fire. A creature hit by a sulfur zombie's fist Strike must attempt a @Check[fortitude|dc:22] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round, or for 1 minute on a critical failure.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "incapacitation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "2rMyh0aoCjphUh3d",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6oi4RTC4SsG0FGyA",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Chemical Zombie",
@@ -369,7 +253,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 125,
                 "temp": 0,
                 "value": 125
@@ -394,19 +278,13 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 5
                 },
                 {
@@ -416,19 +294,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant sulfur zombies",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together.</p>\n<hr />\n<p>Glowing with a dull amber light, these odious creatures spawn from a combination of necromancy and fire. These destructive creations sow chaos and demolish fortifications, making them the bane of besieged cities.</p>",
-            "source": {
-                "value": "Pathfinder #180: The Smoking Gun"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #180: The Smoking Gun"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -445,26 +337,25 @@
                 "value": 10
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 15
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "fire",
                 "mindless",
                 "undead",
+                "unholy",
                 "zombie"
             ]
         }

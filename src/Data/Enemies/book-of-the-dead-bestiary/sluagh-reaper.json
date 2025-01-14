@@ -14,86 +14,32 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
-                    "value": false
-                },
-                "showUnpreparedSpells": {
                     "value": false
                 },
                 "slots": {
                     "slot0": {
                         "max": 1,
-                        "prepared": {},
                         "value": 1
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     },
                     "slot2": {
                         "max": 1,
-                        "prepared": {},
                         "value": 1
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 26,
                     "item": 0,
@@ -107,10 +53,150 @@
             "type": "spellcastingEntry"
         },
         {
+            "_id": "l2N2BFiObhG02Ufx",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
+            },
+            "img": "icons/creatures/magical/construct-stone-earth-gray.webp",
+            "name": "Invisibility",
+            "sort": 200000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>Illusions bend light around the target, rendering it @UUID[Compendium.pf2e.conditionitems.Item.Invisible]. This makes it @UUID[Compendium.pf2e.conditionitems.Item.Undetected] to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "10 minutes"
+                },
+                "level": {
+                    "value": 2
+                },
+                "location": {
+                    "heightenedLevel": 2,
+                    "value": "o6I8Uh0qPM5ozyMW"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "touch"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "invisibility",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "illusion",
+                        "manipulate",
+                        "subtle"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "KxEundYUE0XoiXJp",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a"
+            },
+            "img": "systems/pf2e/icons/spells/ghost-sound.webp",
+            "name": "Ghost Sound",
+            "sort": 300000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet.</p>"
+                },
+                "duration": {
+                    "sustained": true,
+                    "value": ""
+                },
+                "heightening": {
+                    "levels": {
+                        "3": {
+                            "range": {
+                                "value": "60 feet"
+                            }
+                        },
+                        "5": {
+                            "range": {
+                                "value": "120 feet"
+                            }
+                        }
+                    },
+                    "type": "fixed"
+                },
+                "level": {
+                    "value": 1
+                },
+                "location": {
+                    "value": "o6I8Uh0qPM5ozyMW"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "ghost-sound",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "auditory",
+                        "cantrip",
+                        "concentrate",
+                        "illusion",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
             "_id": "ga6hycubofuo1zyf",
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Claw",
-            "sort": 200000,
+            "sort": 400000,
             "system": {
                 "attack": {
                     "value": ""
@@ -131,11 +217,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -151,14 +239,12 @@
         },
         {
             "_id": "VqcQnwyahELeDBwK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Greater Darkvision",
-            "sort": 300000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -170,86 +256,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "FzDSsJ65EnkMhwSx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "x9iTyqF9YiSbKaz7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Frightful Presence",
-            "sort": 500000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -259,10 +287,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura] @Check[type:will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "value": "<p>30 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -270,7 +300,6 @@
                         "radius": 30,
                         "slug": "frightful-presence",
                         "traits": [
-                            "aura",
                             "emotion",
                             "fear",
                             "mental"
@@ -278,9 +307,6 @@
                     }
                 ],
                 "slug": "frightful-presence",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -289,12 +315,6 @@
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -303,7 +323,7 @@
             "_id": "sbw8eejalnwiv9pt",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Soulscent (Imprecise) 100 feet",
-            "sort": 600000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -315,23 +335,58 @@
                 "description": {
                     "value": "<p>The sluagh is aware of all @UUID[Compendium.pf2e.conditionitems.Item.Doomed] creatures, @UUID[Compendium.pf2e.conditionitems.Item.Dying] creatures, and creatures that died within the last hour within the listed range.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "occult"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "FzDSsJ65EnkMhwSx",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
@@ -340,7 +395,7 @@
             "_id": "ars8cn2115cvrmwo",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Ghostly Swoop",
-            "sort": 700000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -350,10 +405,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or positive); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
+                    "value": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/gmr 1d4 #Recharge]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -366,7 +423,7 @@
                         "exceptions": [
                             "force",
                             "ghost-touch",
-                            "positive"
+                            "vitality"
                         ],
                         "key": "Resistance",
                         "predicate": [
@@ -377,29 +434,21 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "D0GXxbH8jAosuw4k",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
-            "sort": 800000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -409,10 +458,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The sluagh reaper deals an additional 3d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>The sluagh reaper deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -421,45 +472,22 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:flat-footed",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
                     {
                         "domain": "all",
                         "key": "RollOption",
-                        "label": "PF2E.SpecificRule.TOTMToggle.FlatFooted",
-                        "option": "target:condition:flat-footed",
+                        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+                        "option": "target:condition:off-guard",
                         "toggleable": "totm"
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -468,7 +496,7 @@
             "_id": "6tism8ur5hq61x7v",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Steal Soul",
-            "sort": 900000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -478,120 +506,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The sluagh reaper touches a dying creature or a creature that died within the past 1 hour. If the target is a dying creature, it must attempt a @Check[type:fortitude|dc:28] save-on a failure, its dying value increases by 1 (2 on a critical failure). If the target is dead, it receives no save and the sluagh imprisons its soul in a small, grimy sack that keeps stolen souls fresh.</p>\n<p>The sack is magically locked. Any sluagh can open it without difficulty, but any others must @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick the Lock} (@Check[type:thievery|dc:35|traits:action:pick-a-lock]) or use <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (5th level; counteract DC 32). A creature can Interact to empty an unlocked sack, which frees the souls but doesn't return them to life. While a soul is imprisoned, it can't be brought back to life by any means short of a <em>@UUID[Compendium.pf2e.spells-srd.Item.Wish]</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.Miracle]</em>. The sack can hold 12 souls at a time. Sluagh reapers typically attempt to return the souls to a queen so she can devour them.</p>"
+                    "value": "<p>The sluagh reaper touches a dying creature or a creature that died within the past 1 hour. If the target is a dying creature, it must attempt a @Check[fortitude|dc:28] save-on a failure, its dying value increases by 1 (2 on a critical failure). If the target is dead, it receives no save and the sluagh imprisons its soul in a small, grimy sack that keeps stolen souls fresh.</p>\n<p>The sack is magically locked. Any sluagh can open it without difficulty, but any others must @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick the Lock} (@Check[thievery|dc:35|traits:action:pick-a-lock]) or use @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (5th level; counteract DC 32). A creature can Interact to empty an unlocked sack, which frees the souls but doesn't return them to life. While a soul is imprisoned, it can't be brought back to life by any means short of a @UUID[Compendium.pf2e.spells-srd.Item.Wish] or @UUID[Compendium.pf2e.spells-srd.Item.Miracle]. The sack can hold 12 souls at a time. Sluagh reapers typically attempt to return the souls to a queen so she can devour them.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "necromancy",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "n9bnyegks4g5sgdu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "2iz2i3hvnokuv0yz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "pxgmcuzyz8mizqce",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "7e06u4fy5b22daut",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sluagh Reaper",
@@ -625,7 +556,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 175,
                 "temp": 0,
                 "value": 175
@@ -647,12 +578,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 21
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -671,19 +596,42 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "fey",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
-            "publicNotes": "<p>Most sluagh are reapers: powerful killers subservient to their queen. After they collect souls on a hunt, they dutifully return their plunder to the queen. Though quite clever, they're inscrutable, lacking the whimsy and sociability that characterize many living fey. They do show merriment on occasion though, giggling as their claws draw closer to their quarry's throat.</p>\n<hr />\n<p>A soul about to leave its physical body gives off a peculiar scent, usually unnoticed by mortal creatures. But the undead fey called sluagh can smell and track down its location with frightening ease. Unlike most fey, sluagh are undead, possessing strong connections to negative energy and mortal souls. Sluagh collect the souls of those close to death and bring them to feed their queen.</p>\n<p>Most sluagh appear bald-headed, with rounded ears, sharp teeth, glossy black eyes, and scrawny bodies. Their rib cages show through their skin, which is translucent and soft as velvet.</p>\n<p>Sluagh can become ghostly and incorporeal for brief periods. They use this power to stalk their prey to great effect. Sometimes the glimpse of a sluagh is mistaken for a ghost sighting.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publicNotes": "<p>Most sluagh are reapers: powerful killers subservient to their queen. After they collect souls on a hunt, they dutifully return their plunder to the queen. Though quite clever, they're inscrutable, lacking the whimsy and sociability that characterize many living fey. They do show merriment on occasion though, giggling as their claws draw closer to their quarry's throat.</p>\n<hr />\n<p>A soul about to leave its physical body gives off a peculiar scent, usually unnoticed by mortal creatures. But the undead fey called sluagh can smell and track down its location with frightening ease. Unlike most fey, sluagh are undead, possessing strong connections to void energy and mortal souls. Sluagh collect the souls of those close to death and bring them to feed their queen.</p>\n<p>Most sluagh appear bald-headed, with rounded ears, sharp teeth, glossy black eyes, and scrawny bodies. Their rib cages show through their skin, which is translucent and soft as velvet.</p>\n<p>Sluagh can become ghostly and incorporeal for brief periods. They use this power to stalk their prey to great effect. Sometimes the glimpse of a sluagh is mistaken for a ghost sighting.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 21,
+            "senses": [
+                {
+                    "type": "greater-darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 100,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -700,26 +648,30 @@
                 "value": 19
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 21
+            },
+            "intimidation": {
+                "base": 16
+            },
+            "stealth": {
+                "base": 23
+            },
+            "survival": {
+                "base": 21
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril",
-                    "sylvan"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "greater darkvision, soulscent (imprecise) 100 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "fey",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

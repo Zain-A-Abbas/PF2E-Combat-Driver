@@ -1,0 +1,47 @@
+{
+    "_id": "wHQZO70bSECtSUZn",
+    "img": "icons/environment/people/group.webp",
+    "name": "Effect: Ancestral Journey",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains a +1 status bonus to Will saving throws and all skill checks.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "days",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #176: Lost Mammoth Valley"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": [
+                    "skill-check",
+                    "will"
+                ],
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

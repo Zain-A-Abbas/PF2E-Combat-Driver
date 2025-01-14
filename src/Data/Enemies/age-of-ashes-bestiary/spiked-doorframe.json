@@ -18,25 +18,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The door is opened.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes an attack against the creature that opened the door.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -65,11 +58,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
@@ -113,17 +108,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Spikes lance out of the doorframe to skewer anyone who attempts to open the door.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20|name:Deactivate Trigger|traits:hazard,mechanical,trap,action:disable-a-device] (trained) to deactivate a trigger built into the door's handle</p>",
+            "disable": "<p>@Check[thievery|dc:20|name:Deactivate Trigger|traits:hazard,mechanical,trap,action:disable-a-device] (trained) to deactivate a trigger built into the door's handle</p>",
             "isComplex": false,
             "level": {
                 "value": 4
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #145: Hellknight Hill"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #145: Hellknight Hill"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

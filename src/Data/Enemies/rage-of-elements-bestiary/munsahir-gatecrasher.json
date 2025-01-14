@@ -1,0 +1,475 @@
+{
+    "_id": "h6oWKFSqpXHnOg5h",
+    "img": "systems/pf2e/icons/default-icons/npc.svg",
+    "items": [
+        {
+            "_id": "FvX3ZmNOtTABMaAA",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3mmS3Y291h6Ckgin"
+            },
+            "img": "icons/equipment/chest/breastplate-layered-steel-green.webp",
+            "name": "Gatecrasher Armor",
+            "sort": 100000,
+            "system": {
+                "acBonus": 6,
+                "baseItem": "full-plate",
+                "bulk": {
+                    "value": 4
+                },
+                "category": "heavy",
+                "checkPenalty": -3,
+                "containerId": null,
+                "description": {
+                    "value": ""
+                },
+                "dexCap": 0,
+                "equipped": {
+                    "carryType": "worn",
+                    "handsHeld": 0,
+                    "inSlot": false,
+                    "invested": null
+                },
+                "group": "plate",
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 7
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "gp": 360
+                    }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Treasure Vault"
+                },
+                "quantity": 1,
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
+                "size": "med",
+                "slug": "powered-full-plate",
+                "speedPenalty": -10,
+                "strength": 4,
+                "traits": {
+                    "rarity": "rare",
+                    "value": [
+                        "alchemical",
+                        "bulwark"
+                    ]
+                }
+            },
+            "type": "armor"
+        },
+        {
+            "_id": "LkNDJT5FPLvWx2HF",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Hammer Gauntlet",
+            "sort": 200000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 12
+                },
+                "damageRolls": {
+                    "gBcsqNxepjmsvI8Y": {
+                        "damage": "1d12+6",
+                        "damageType": "bludgeoning"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "free-hand",
+                        "shove"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "1uDDZwQOsH9tBUsO",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Flame Jet",
+            "sort": 300000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 12
+                },
+                "damageRolls": {
+                    "l7fB5V7tCNNTi7ex": {
+                        "category": "persistent",
+                        "damage": "1d6",
+                        "damageType": "fire"
+                    },
+                    "xu6rOIvMXYqtgqSz": {
+                        "damage": "1d6",
+                        "damageType": "fire"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "brutal",
+                        "fire",
+                        "range-increment-20"
+                    ]
+                },
+                "weaponType": {
+                    "value": "ranged"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "NCKi4E87WbMTQF29",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Heat of the Forge",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>10 feet. An munsahir's skin radiates heat like a forge's fire. A creature that starts its turn in the area must succeed at a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] while it remains in the area. Creatures immune to environmental heat effects or with any fire resistance are immune.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 10,
+                        "slug": "heat-of-the-forge",
+                        "traits": [
+                            "fire"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "aura",
+                        "fire"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "fEeaznyEsmyRdWGo",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Self-Destruct",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "deathNote": true,
+                "description": {
+                    "value": "<p>When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing @Damage[5d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:19|basic]).</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "zUDsQayKIEHHh3Nz",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Blazing Rush",
+            "sort": 600000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The gatecrasher Strides up to double their Speed in a straight line. They can pass through enemy spaces and make a hammer gauntlet Strike against each creature they move through. Blazing Rush can't be used again for [[/gmr 1d4 #Recharge Blazing Rush]]{1d4 rounds}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "3eljJtZ3IPeQd7kL",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Burning Touch",
+            "sort": 700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] or @UUID[Compendium.pf2e.actionspf2e.Item.Shove] action, they also deal @Damage[1d6[fire]] damage to their target.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "damageType": "fire",
+                        "diceNumber": 1,
+                        "dieSize": "d6",
+                        "key": "DamageDice",
+                        "selector": "strike-damage"
+                    },
+                    {
+                        "key": "Note",
+                        "outcome": [
+                            "criticalSuccess",
+                            "success"
+                        ],
+                        "predicate": [
+                            {
+                                "or": [
+                                    "action:grapple",
+                                    "action:shove"
+                                ]
+                            }
+                        ],
+                        "selector": "athletics",
+                        "text": "{item|system.description.value}",
+                        "title": "{item|name}",
+                        "visibility": "owner"
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "fire",
+                        "primal"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "NYd0tuzyiTuMeHqw",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Plane of Fire Lore",
+            "sort": 800000,
+            "system": {
+                "description": {
+                    "value": ""
+                },
+                "mod": {
+                    "value": 10
+                },
+                "proficient": {
+                    "value": 0
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null
+            },
+            "type": "lore"
+        }
+    ],
+    "name": "Munsahir Gatecrasher",
+    "system": {
+        "abilities": {
+            "cha": {
+                "mod": -1
+            },
+            "con": {
+                "mod": 4
+            },
+            "dex": {
+                "mod": 0
+            },
+            "int": {
+                "mod": 4
+            },
+            "str": {
+                "mod": 2
+            },
+            "wis": {
+                "mod": 3
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 22
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "",
+                "max": 65,
+                "temp": 0,
+                "value": 65
+            },
+            "immunities": [
+                {
+                    "exceptions": [],
+                    "type": "fire"
+                }
+            ],
+            "speed": {
+                "otherSpeeds": [],
+                "value": 20
+            },
+            "weaknesses": [
+                {
+                    "exceptions": [],
+                    "type": "cold",
+                    "value": 5
+                }
+            ]
+        },
+        "details": {
+            "blurb": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "pyric"
+                ]
+            },
+            "level": {
+                "value": 4
+            },
+            "privateNotes": "",
+            "publicNotes": "<p>Typically members of the nobility, gatecrashers wear advanced power armor.</p>\n<hr />\n<p>Munsahirs build militaristic, traditional societies.</p>\n<h2>Munsahir Hierarchy</h2>\n<p>The three strata of munsahir society can be observed in the kilts worn by all members. Nobles, the unimpeachable rulers, wear elaborate brass kilts. In the middle of society are businesspeople and traders bedecked in bronze. Raw copper adorns those in the working class, who do most of the building and hard labor for munsahir society. Officially speaking, there is no class mobility; horrible crimes might cause a brass noble to be sent to prison but can't cause them to lose their station.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 11,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
+        },
+        "resources": {},
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 14
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 6
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 11
+            }
+        },
+        "skills": {
+            "athletics": {
+                "base": 10
+            },
+            "crafting": {
+                "base": 12
+            }
+        },
+        "traits": {
+            "rarity": "common",
+            "size": {
+                "value": "med"
+            },
+            "value": [
+                "elemental",
+                "fire",
+                "humanoid"
+            ]
+        }
+    },
+    "type": "npc"
+}

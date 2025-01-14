@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -47,52 +49,10 @@
             "type": "melee"
         },
         {
-            "_id": "jzVssayBq4mzMU9u",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "KXuuj04cishnGNpk",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Trapdoor Lunge",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -104,20 +64,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature comes within 25 feet of the spider's lair while the spider is positioned just under the ajar trapdoor and the spider notices the creature</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled</p>\n<p><strong>Effect</strong> The spider Strides or Climbs before it rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -126,7 +82,7 @@
             "_id": "v65HAbd7O3gZv2VP",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Eerie Flexibility",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -138,23 +94,16 @@
                 "description": {
                     "value": "<p>A trapdoor ogre spider can fit through tight spaces as if it were a Large creature. While @UUID[Compendium.pf2e.actionspf2e.Item.Squeeze]{Squeezing}, it can move at its full speed.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -163,7 +112,7 @@
             "_id": "6qaFJjq9JjlhZbaw",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ogre Spider Venom",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -173,99 +122,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, clumsy 1, and flat-footed (1 round)</p>\n<p><strong>Stage 4</strong> 2d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] (1 round).</p>"
+                    "value": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, clumsy 1, and off-guard (1 round)</p>\n<p><strong>Stage 4</strong> 2d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] (1 round).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "Zlp080daUckORMZd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "BQmLlekhOx0gF2aD",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "EOaJ1W1obNpytsuw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Trapdoor Ogre Spider",
@@ -304,12 +177,6 @@
                 "temp": 0,
                 "value": 70
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -321,19 +188,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant Ogre spider",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "<p>These terrifying creatures grow as large as elephants. The placement of their eyes above their wide mandibles evokes the grimacing visage of an ogre's leer. Ogres themselves find the appearance of ogre spider faces simultaneously amusing and adorable, but in most cases, ogres' attempts to keep these spiders as pets result in dead ogres and well-fed spiders.</p>",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -350,19 +231,19 @@
                 "value": 9
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "athletics": {
+                "base": 13
+            },
+            "stealth": {
+                "base": 13
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "huge"
             },

@@ -14,86 +14,20 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "focus"
                 },
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": true
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 24,
                     "mod": 0,
@@ -107,55 +41,45 @@
         },
         {
             "_id": "wWq7ugtLA6Ce3ARn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.oo7YcRC2gcez81PV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.oo7YcRC2gcez81PV"
             },
             "img": "systems/pf2e/icons/spells/ki-blast.webp",
             "name": "Ki Blast",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 15
                 },
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "force"
-                            },
-                            "value": "2d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "force"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You unleash your ki as a powerful blast of force that deals 2d6 force damage.</p>\n<p>If you use 2 actions to cast ki blast, increase the size of the cone to @Template[type:cone|distance:30]{30 feet} and the damage to @Damage[3d6[force]]{3d6}.</p>\n<p>If you use 3 actions to cast ki blast, increase the size of the cone to @Template[type:cone|distance:60]{60 feet} and the damage to @Damage[4d6[force]]{4d6}.</p>\n<p>Each creature in the area must attempt a Fortitude saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6, or by [[/r 2d6]] if you use 2 or 3 actions.</p>"
+                    "value": "<p>You unleash your ki as a powerful blast of force that deals 2d6 force damage.</p>\n<p>If you use 2 actions to cast ki blast, increase the size of the cone to @Template[cone|distance:30]{30 feet} and the damage to @Damage[3d6[force]]{3d6}.</p>\n<p>If you use 3 actions to cast ki blast, increase the size of the cone to @Template[cone|distance:60]{60 feet} and the damage to @Damage[4d6[force]]{4d6}.</p>\n<p>Each creature in the area must attempt a Fortitude saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6, or by [[/r 2d6]] if you use 2 or 3 actions.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -170,54 +94,32 @@
                 "location": {
                     "value": "JwTHNda4LwzqStWL"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ki-blast",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
+                        "concentrate",
+                        "focus",
                         "force",
-                        "monk",
-                        "evocation"
+                        "manipulate",
+                        "monk"
                     ]
                 }
             },
@@ -225,52 +127,37 @@
         },
         {
             "_id": "Uu2I5xP3gn9WtnBd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG"
             },
             "img": "systems/pf2e/icons/spells/ki-strike.webp",
             "name": "Ki Strike",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "untyped"
-                            },
-                            "value": "1d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "untyped"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You focus your ki into magical attacks. Make an unarmed Strike or Flurry of Blows (this doesn't change the limit on using only one flourish per turn).</p>\n<p>You gain a +1 status bonus to your attack rolls with the Strikes, and the Strikes deal 1d6 extra damage. This damage can be any of the following types of your choice, chosen each time you Strike: force, lawful (only if you're lawful), negative, or positive.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ki Strike]</p>\n<hr />\n<p><strong>Heightened (+4)</strong> The extra damage increases by 1d6.</p>"
+                    "value": "<p>You focus your ki into magical attacks. Make an unarmed Strike or Flurry of Blows (this doesn't change the limit on using only one flourish per turn).</p>\n<p>You gain a +1 status bonus to your attack rolls with the Strikes, and the Strikes deal 1d6 extra damage. This damage can be any of the following types of your choice, chosen each time you Strike: force, lawful (only if you're lawful), negative, or positive.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Inner Upheaval]{Spell Effect: Ki Strike}</p>\n<hr />\n<p><strong>Heightened (+4)</strong> The extra damage increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -285,53 +172,30 @@
                 "location": {
                     "value": "JwTHNda4LwzqStWL"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "ki-strike",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
-                        "monk",
-                        "transmutation"
+                        "concentrate",
+                        "focus",
+                        "monk"
                     ]
                 }
             },
@@ -339,57 +203,26 @@
         },
         {
             "_id": "3TgnxTHSbzmsRKBu",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS"
             },
             "img": "systems/pf2e/icons/spells/lay-on-hands.webp",
             "name": "Lay on Hands",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "positive"
-                            },
-                            "value": "6"
-                        }
-                    }
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>Your hands become infused with positive energy, healing a living creature or damaging an undead creature with a touch.</p>\n<p>If you use lay on hands on a willing living target, you restore 6 Hit Points; if the target is one of your allies, they also gain a +2 status bonus to AC for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Lay on Hands]</p>\n<p>Against an undead target, you deal 1d6 damage and it must attempt a basic Fortitude save; if it fails, it also takes a -2 status penalty to AC for 1 round.</p>\n<p><em>@UUID[Compendium.pf2e.spells-srd.Item.Lay on Hands (Vs. Undead)]</em></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>"
+                    "value": "<p>Your hands become infused with vitality energy, healing a living creature or damaging an undead creature with a touch.</p>\n<p>If you use lay on hands on a willing living target, you restore 6 Hit Points; if the target is one of your allies, they also gain a +2 status bonus to AC for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Lay on Hands]</p>\n<p>Against an undead target, you deal 1d6 damage and it must attempt a basic Fortitude save; if it fails, it also takes a -2 status penalty to AC for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
-                },
-                "heightening": {
-                    "damage": {
-                        "0": "6"
-                    },
-                    "interval": 1,
-                    "type": "interval"
                 },
                 "level": {
                     "value": 1
@@ -397,55 +230,92 @@
                 "location": {
                     "value": "JwTHNda4LwzqStWL"
                 },
-                "materials": {
-                    "value": ""
+                "overlays": {
+                    "a33QUFoKgoOprovO": {
+                        "name": "Lay on Hands (Vs. Undead)",
+                        "overlayType": "override",
+                        "sort": 2,
+                        "system": {
+                            "damage": {
+                                "37YW4ZGhxx7Y2mdI": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "1d6",
+                                    "kinds": [
+                                        "damage"
+                                    ],
+                                    "materials": [],
+                                    "type": "vitality"
+                                }
+                            },
+                            "defense": {
+                                "save": {
+                                    "basic": true,
+                                    "statistic": "fortitude"
+                                }
+                            },
+                            "heightening": {
+                                "damage": {
+                                    "37YW4ZGhxx7Y2mdI": "1d6"
+                                },
+                                "interval": 1,
+                                "type": "interval"
+                            }
+                        }
+                    },
+                    "uLuOg62dVyxvbW66": {
+                        "name": "Lay on Hands (Healing)",
+                        "overlayType": "override",
+                        "sort": 1,
+                        "system": {
+                            "damage": {
+                                "b39tbePoPlJSzLku": {
+                                    "applyMod": false,
+                                    "category": null,
+                                    "formula": "6",
+                                    "kinds": [
+                                        "healing"
+                                    ],
+                                    "materials": [],
+                                    "type": "vitality"
+                                }
+                            },
+                            "heightening": {
+                                "damage": {
+                                    "b39tbePoPlJSzLku": "6"
+                                },
+                                "interval": 1,
+                                "type": "interval"
+                            }
+                        }
+                    }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "lay-on-hands",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "heal"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 willing living creature or 1 undead creature"
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "champion",
+                        "focus",
                         "healing",
-                        "positive",
-                        "necromancy"
+                        "manipulate",
+                        "vitality"
                     ]
                 }
             },
@@ -453,24 +323,22 @@
         },
         {
             "_id": "HxcA5bb0pw4MLCP6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU"
             },
             "img": "systems/pf2e/icons/equipment/weapons/temple-sword.webp",
             "name": "Temple Sword",
             "sort": 500000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "temple-sword",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -480,15 +348,12 @@
                     "die": "d8"
                 },
                 "description": {
-                    "value": "<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent‑shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
+                    "value": "<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent-shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "sword",
                 "hardness": 0,
@@ -499,34 +364,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": "flaming"
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "range": null,
@@ -534,17 +384,17 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [
+                        "flaming"
+                    ],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "temple-sword",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -555,32 +405,27 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "kyKFywK2AZ5Hgz4n",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO"
             },
-            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/handwraps-of-mighty-blows.webp",
+            "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
             "name": "+2 Greater Striking Handwraps of Mighty Blows",
             "sort": 600000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 1
                 },
                 "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
                     "value": 0
                 },
                 "category": "unarmed",
@@ -599,9 +444,6 @@
                     "inSlot": false,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "brawling",
                 "hardness": 0,
                 "hp": {
@@ -611,34 +453,19 @@
                 "level": {
                     "value": 2
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 35
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -646,17 +473,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "med",
                 "slug": "handwraps-of-mighty-blows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -666,46 +491,41 @@
                         "invested",
                         "magical",
                         "nonlethal",
-                        "transmutation",
                         "unarmed"
                     ]
                 },
                 "usage": {
                     "value": "worngloves"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "bUsIg74aMMuMt5gH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/clothes-explorers.webp",
-            "name": "+1 Resilient Clothing (Explorer's)",
+            "img": "icons/equipment/chest/shirt-collared-pink.webp",
+            "name": "Explorer's Clothing",
             "sort": 700000,
             "system": {
                 "acBonus": 0,
                 "baseItem": "explorers-clothing",
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "unarmored",
-                "checkPenalty": null,
+                "checkPenalty": 0,
                 "containerId": null,
                 "description": {
-                    "value": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                    "value": "<p>Adventurers who don't wear armor travel in durable clothing. Though it's not armor and uses your unarmored defense proficiency, it still has a Dex Cap and can grant an item bonus to AC if etched with potency runes.</p>"
                 },
                 "dexCap": 5,
                 "equipped": {
                     "carryType": "worn",
-                    "inSlot": false,
+                    "handsHeld": 0,
+                    "inSlot": true,
                     "invested": false
-                },
-                "equippedBulk": {
-                    "value": "L"
                 },
                 "group": "cloth",
                 "hardness": 0,
@@ -714,61 +534,38 @@
                     "value": 0
                 },
                 "level": {
-                    "value": 8
+                    "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
-                        "gp": 500
+                        "sp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": "resilient"
-                },
                 "rules": [],
-                "size": "med",
-                "slug": "clothing-explorers",
-                "source": {
-                    "value": ""
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "resilient": 1
                 },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "size": "med",
+                "slug": "explorers-clothing",
+                "speedPenalty": 0,
                 "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "comfort"
                     ]
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "armor"
@@ -797,11 +594,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -851,11 +650,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -884,8 +685,10 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -899,18 +702,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -931,23 +725,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> Tino used Retributive Strike on a creature since the start of his previous turn, attempted the Strike it permitted, and didn't critically miss</p>\n<hr />\n<p><strong>Effect</strong> Tino throws his whole body into a powerful push. He moves the target 5 feet in any direction and can then attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Trip] that creature. This is forced movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -966,25 +753,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>If Tino hits with his Retributive Strike, the target takes [[/r 3[persistent,good damage]]] damage.</p>"
+                    "value": "<p>If Tino hits with his Retributive Strike, the target takes @Damage[3[persistent,spirit]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1005,25 +785,18 @@
                 "description": {
                     "value": "<p>Tino makes two Strikes with his fist or with a monk weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "flourish"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1044,23 +817,16 @@
                 "description": {
                     "value": "<p>Tino's fist Strikes don't take penalties when making lethal attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1079,103 +845,45 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> An enemy damages your ally, and both are within 15 feet of you</p>\n<hr />\n<p>You protect your ally and strike your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. If the foe is within reach, make a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes [[/r 3[persistent,good]]] damage.</p>\n<p>If Tino's Retributive Strike against the triggering creature doesn't critically miss, that creature meets the requirements for Tino to use Defiant Shove until the end of his next turn.</p>"
+                    "value": "<p><strong>Trigger</strong> An enemy damages your ally, and both are within 15 feet of you</p>\n<hr />\n<p>You protect your ally and strike your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. If the foe is within reach, make a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes @Damage[3[persistent,spirit]] damage.</p>\n<p>If Tino's Retributive Strike against the triggering creature doesn't critically miss, that creature meets the requirements for Tino to use Defiant Shove until the end of his next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "domain": "damage",
+                        "key": "RollOption",
+                        "option": "retributive-strike",
+                        "toggleable": true
+                    },
+                    {
+                        "damageCategory": "persistent",
+                        "damageType": "spirit",
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "melee",
+                            "retributive-strike"
+                        ],
+                        "selector": "strike-damage",
+                        "value": 3
+                    }
+                ],
                 "slug": "retributive-strike",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "qRklux0MTvZ0uDKE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 26
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "53odJLu35CpsWYet",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "50uLyc3km0YN3KPg",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "T4nEUVeNILhnok6G",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Irori Lore",
-            "sort": 1900000,
+            "sort": 1600000,
             "system": {
                 "description": {
                     "value": ""
@@ -1186,34 +894,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "VMLC2z1C6ylquyUm",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1257,31 +944,40 @@
                 "temp": 0,
                 "value": 240
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 23
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 45
             }
         },
         "details": {
-            "alignment": {
-                "value": "LG"
-            },
             "blurb": "Male Tian-Shu paladin of Irori",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "nagaji",
+                    "taldane",
+                    "tengu",
+                    "tien"
+                ]
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #167: Ready? Fight!"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #167: Ready? Fight!"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 23,
+            "senses": []
         },
         "resources": {
             "focus": {
@@ -1303,30 +999,30 @@
                 "value": 20
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 26
+            },
+            "athletics": {
+                "base": 25
+            },
+            "diplomacy": {
+                "base": 22
+            },
+            "medicine": {
+                "base": 20
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "nagaji",
-                    "taldane",
-                    "tengu",
-                    "tien"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "good",
                 "human",
-                "humanoid"
+                "humanoid",
+                "lawful"
             ]
         }
     },

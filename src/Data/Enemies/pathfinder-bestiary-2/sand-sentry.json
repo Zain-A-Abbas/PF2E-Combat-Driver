@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -45,57 +47,13 @@
             "type": "melee"
         },
         {
-            "_id": "bIfz2rvBHXjIjmyK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "2MrVVGinZvjfZN22",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Tremorsense",
-            "sort": 300000,
+            "name": "Tremorsense 60 feet",
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -107,23 +65,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -132,7 +83,7 @@
             "_id": "O5P2324cJfYLLpmm",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Glass Armor",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -144,8 +95,10 @@
                 "description": {
                     "value": "<p>When the sand sentry takes fire or lightning damage, its outer layer of sand fuses into sheets of hardened glass for 1 minute. This increases the sand sentry's AC to 26 and grants it resistance 5 to acid, cold, electricity, fire, force, piercing, and slashing damage. A sand sentry can't use earth glide while glass armor is active.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -180,18 +133,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -200,7 +144,7 @@
             "_id": "6NgDd3kvRPxleBuE",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Blinding Sand",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -212,23 +156,16 @@
                 "description": {
                     "value": "<p>When the sand sentry critically hits with a fist Strike, the target is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "blinding-sand",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -237,7 +174,7 @@
             "_id": "XHjNDrJBXaCEsi2i",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Earth Glide",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -249,88 +186,19 @@
                 "description": {
                     "value": "<p>A sand sentry can @UUID[Compendium.pf2e.actionspf2e.Item.Burrow] through earthen matter, including rock. When it does so, it moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "k1W45MkufYejTTye",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "3IKSOIIWyaxP7Xbh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Sand",
-                        "predicate": [
-                            "terrain:sand"
-                        ],
-                        "selector": "stealth",
-                        "value": 3
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+17 in sand",
-                        "options": "terrain:sand"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sand Sentry",
@@ -383,12 +251,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 14
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -400,19 +262,40 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Elemental",
+            "languages": {
+                "details": "",
+                "value": [
+                    "petran"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Shifting back and forth between a detailed likeness of a human and a muted and featureless bipedal form, this creature of pure sand moves with an eerie grace. The sand sentry is often called upon by spellcasters to stand guard over an area of great importance-these elementals are patient participants in such roles, making them well suited for long-term service.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 14,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 60,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -429,21 +312,25 @@
                 "value": 14
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "acrobatics": {
+                "base": 14
             },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "terran"
+            "stealth": {
+                "base": 14,
+                "special": [
+                    {
+                        "base": 17,
+                        "label": "in sand",
+                        "predicate": [
+                            "terrain:sand"
+                        ]
+                    }
                 ]
-            },
+            }
+        },
+        "traits": {
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, tremorsense (imprecise) 60 feet"
-            },
             "size": {
                 "value": "med"
             },

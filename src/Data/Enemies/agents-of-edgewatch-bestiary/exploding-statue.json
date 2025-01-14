@@ -16,26 +16,19 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature opens the northern door without first disabling the trip wire</p>\n<hr />\n<p><strong>Effect</strong> The statue explodes, spraying shrapnel to the west in a @Template[type:cone|distance:5] and dealing @Damage[(1d10+7)[piercing]] and @Damage[1d10[fire]] damage to all creatures in the affected area (@Check[type:reflex|dc:18|basic:true] save).</p>"
+                    "value": "<p><strong>Trigger</strong> A creature opens the northern door without first disabling the trip wire</p>\n<hr />\n<p><strong>Effect</strong> The statue explodes, spraying shrapnel to the west in a @Template[cone|distance:5] and dealing @Damage[(1d10+7)[piercing],1d10[fire]]{1d10+7 piercing and 1d10 fire} damage to all creatures in the affected area (@Check[reflex|dc:18|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -72,17 +65,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A hollow statue filled with explosives is connected to a trip wire running along the adjacent door.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21|name:Safely Cut Wire|traits:action:disable-a-device] (trained) to safely cut the wire</p>",
+            "disable": "<p>@Check[thievery|dc:21|name:Safely Cut Wire|traits:action:disable-a-device] (trained) to safely cut the wire</p>",
             "isComplex": false,
             "level": {
                 "value": 2
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #157: Devil at the Dreaming Palace"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #157: Devil at the Dreaming Palace"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

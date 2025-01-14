@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 27,
                     "mod": 0,
@@ -107,42 +44,26 @@
         },
         {
             "_id": "O8s3jEaNQdpXOMhY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH"
             },
-            "img": "systems/pf2e/icons/spells/freedom-of-movement.webp",
+            "img": "icons/equipment/feet/boots-leather-laced-brown.webp",
             "name": "Freedom of Movement",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] an effect that has them @UUID[Compendium.pf2e.conditionitems.Item.Immobilized], @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], or @UUID[Compendium.pf2e.conditionitems.Item.Restrained], they automatically succeed unless the effect is magical and of a higher level than the freedom of movement spell.</p>"
+                    "value": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Escape] an effect that has them @UUID[Compendium.pf2e.conditionitems.Item.Immobilized], @UUID[Compendium.pf2e.conditionitems.Item.Grabbed], or @UUID[Compendium.pf2e.conditionitems.Item.Restrained], they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Unfettered Movement]{Spell Effect: Freedom of Movement}</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -151,56 +72,33 @@
                     "heightenedLevel": 4,
                     "value": "Fgyso5whxxzTMpVE"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "freedom-of-movement",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature touched"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "abjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -208,42 +106,26 @@
         },
         {
             "_id": "S4PgZUaXxcFIs4Zv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4"
             },
             "img": "systems/pf2e/icons/spells/haste.webp",
             "name": "Haste",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Magic empowers the target to act faster. It gains the @UUID[Compendium.pf2e.conditionitems.Item.Quickened] condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -262,56 +144,33 @@
                     "heightenedLevel": 3,
                     "value": "Fgyso5whxxzTMpVE"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "haste",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -319,42 +178,26 @@
         },
         {
             "_id": "AKQGoByNr9mzFAMZ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
             },
             "img": "systems/pf2e/icons/spells/see-invisibility.webp",
             "name": "See Invisibility",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You can see @UUID[Compendium.pf2e.conditionitems.Item.Invisible] creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 2
@@ -367,57 +210,34 @@
                     },
                     "value": "Fgyso5whxxzTMpVE"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "see-invisibility",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "revelation",
-                        "divination"
+                        "concentrate",
+                        "manipulate",
+                        "revelation"
                     ]
                 }
             },
@@ -425,42 +245,26 @@
         },
         {
             "_id": "ELpuKrFNyvwzCapj",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh"
             },
-            "img": "systems/pf2e/icons/spells/true-strike.webp",
+            "img": "icons/skills/melee/strike-blade-scimitar-gray-red.webp",
             "name": "True Strike (At Will)",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.Concealed] or @UUID[Compendium.pf2e.conditionitems.Item.Hidden].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: True Strike]</p>"
+                    "value": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.Concealed] or @UUID[Compendium.pf2e.conditionitems.Item.Hidden].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Sure Strike]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "until the end of your turn"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -469,56 +273,32 @@
                     "heightenedLevel": 1,
                     "value": "Fgyso5whxxzTMpVE"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "true-strike",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "fortune",
-                        "divination"
+                        "concentrate",
+                        "fortune"
                     ]
                 }
             },
@@ -526,24 +306,22 @@
         },
         {
             "_id": "EKw1H7sHPZrfrDL9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.dUC8Fsa6FZtVikS3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.dUC8Fsa6FZtVikS3"
             },
             "img": "systems/pf2e/icons/equipment/weapons/composite-longbow.webp",
             "name": "Composite Longbow",
             "sort": 600000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "composite-longbow",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 2
                 },
                 "category": "martial",
                 "containerId": null,
@@ -560,9 +338,6 @@
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "bow",
                 "hardness": 0,
                 "hp": {
@@ -572,34 +347,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 20
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": 100,
@@ -607,17 +367,15 @@
                     "value": "0"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "striking": 1
+                },
                 "size": "med",
                 "slug": "composite-longbow",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "striking"
                 },
                 "traits": {
                     "rarity": "common",
@@ -629,48 +387,32 @@
                 },
                 "usage": {
                     "value": "held-in-one-plus-hands"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "pN8AXUsCz6thkCVd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g"
             },
             "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
             "name": "Arrows",
             "sort": 700000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 0,
-                    "value": 0
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "ammo"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "ammo",
                 "containerId": null,
+                "damage": null,
                 "description": {
                     "value": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -680,14 +422,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -695,13 +432,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 100,
                 "rules": [],
                 "size": "med",
                 "slug": "arrows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "arrows",
                 "traits": {
                     "rarity": "common",
@@ -710,8 +449,10 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -737,23 +478,26 @@
                         "damage": "2d10+7",
                         "damageType": "piercing"
                     },
-                    "a7asfzhj1yrwdtp62lmo": {
+                    "1": {
                         "damage": "1d6",
-                        "damageType": "good"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "finesse"
+                        "finesse",
+                        "holy"
                     ]
                 },
                 "weaponType": {
@@ -783,24 +527,27 @@
                         "damage": "2d8+7",
                         "damageType": "slashing"
                     },
-                    "0y139w00hqwf4yjpc9f1": {
+                    "1": {
                         "damage": "1d6",
-                        "damageType": "good"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "finesse"
+                        "finesse",
+                        "holy"
                     ]
                 },
                 "weaponType": {
@@ -835,27 +582,26 @@
                         "damage": "2d8+5",
                         "damageType": "piercing"
                     },
-                    "pkevwnr5b6hbnx7p5srv": {
+                    "1": {
                         "damage": "1d6",
-                        "damageType": "electricity"
-                    },
-                    "nspjraathxi57ktdqaz3": {
-                        "damage": "1d6",
-                        "damageType": "good"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "deadly-d10",
+                        "holy",
                         "magical",
                         "range-increment-100",
                         "reload-0",
@@ -869,94 +615,10 @@
             "type": "melee"
         },
         {
-            "_id": "8EzoTBKzzz2kcPsk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1100000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "ee90NjJ1Ze4Ghwsk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "At-Will Spells",
-            "sort": 1200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "at-will-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "RTMzhRViOSVhuoXI",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Electric Projectiles",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -966,39 +628,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Any arrow the garuda fires gains the effects of a @UUID[Compendium.pf2e.equipment-srd.Item.Shock] rune.</p>"
+                    "value": "<p>Any arrow the garuda fires gains the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.Shock]</em> rune.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
+                        "definition": [
+                            "item:group:bow"
                         ],
-                        "selector": "shock-composite-longbow-attack",
-                        "text": "PF2E.WeaponPropertyRune.shock.Note.criticalSuccess",
-                        "title": "{item|name}",
-                        "visibility": "gm"
+                        "key": "AdjustStrike",
+                        "mode": "add",
+                        "property": "property-runes",
+                        "value": "shock"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "arcane",
-                        "evocation"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1007,7 +660,7 @@
             "_id": "ceUAQwTriMohyVjk",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Swooping Dive",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1019,23 +672,16 @@
                 "description": {
                     "value": "<p>The garuda flies up to their Speed in a straight line, descending at least 10 feet, and then makes two talon Strikes.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1044,7 +690,7 @@
             "_id": "CjNF1hyzoK7u7txT",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Wind Blast",
-            "sort": 1500000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1054,169 +700,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The garuda flaps their wings with intense force. This has the same effect as <em>@UUID[Compendium.pf2e.spells-srd.Item.Gust of Wind]</em> (@Check[type:fortitude|dc:27]) but in a @Template[type:cone|distance:30].</p>\n<p>In an area with loose debris (at the GM's discretion), the gusts from the garuda's wings create a cloud that obscures vision, making any creature in the area @UUID[Compendium.pf2e.conditionitems.Item.Concealed], and creatures outside the area are concealed to those within the area.</p>"
+                    "value": "<p>The garuda flaps their wings with intense force. This has the same effect as @UUID[Compendium.pf2e.spells-srd.Item.Gust of Wind] (@Check[fortitude|dc:27]) but in a @Template[cone|distance:30].</p>\n<p>In an area with loose debris (at the GM's discretion), the gusts from the garuda's wings create a cloud that obscures vision, making any creature in the area @UUID[Compendium.pf2e.conditionitems.Item.Concealed], and creatures outside the area are concealed to those within the area.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "air",
-                        "evocation"
+                        "air"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "1VgHmzNKPX463SlR",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "x6Qwyv3lFBWZzLwE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "IoIDQvepm4tCmkWS",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "L2h4MWk1ryDlNqbk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "sFlsibqjqAjKlOHr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "1z8YMFZvS2RqYR0m",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Garuda",
@@ -1255,12 +755,6 @@
                 "temp": 0,
                 "value": 135
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 20
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -1272,19 +766,37 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CG"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "empyrean",
+                    "vudrani"
+                ]
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "<p>Garudas are noble, birdlike beings descended from the gods. They were born under the cerulean skies of the Outer Plane of Elysium but have since spread to the Material Plane, and it is here that they primarily reside. On Golarion,the largest garuda populations live in the rugged hills and mountains of Vudra, though some have spread to the Impossible Kingdom of Jalmeray and even to the eastern mountains of Garund.</p>\n<p>Garudas usually roost in isolated aeries but spend much of their time gliding on the wind. Many garudas are nomadic or migratory, yearning to travel and soar above new landscapes. While they remain detached from humanoid societies, they are impetuous and gallant, frequently serving as protectors of communities near the cliffs and peaks where they roost. Some garudas instead combine their wanderlust and goodhearted nature by serving as messengers and emissaries between remote settlements, though most who take up this work abandon it after a few years when the same terrain becomes boring. Wandering garudas are no less compassionate, and many a tale tells of a garuda who came to the aid of a lost traveler or carried an endangered soul to safety.</p>\n<p>Though they hold most living creatures in high regard, garudas loathe ophidian creatures-nagas in particular. Rarely do they come into contact without fighting, and a garuda will go out of their way to hunt down a naga if they hear even the tiniest hint of a rumor suggesting the presence of one.</p>\n<p>A garuda's feathering and coloration range widely depending on the terrain they favor. Garudas in temperate woodlands might resemble jays or falcons, while tropical garudas sport bright plumage.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 20,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1306,25 +818,36 @@
                 "value": 16
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 21
+            },
+            "athletics": {
+                "base": 17
+            },
+            "intimidation": {
+                "base": 19
+            },
+            "religion": {
+                "base": 16
+            },
+            "stealth": {
+                "base": 19
+            },
+            "survival": {
+                "base": 16
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "celestial",
-                    "common",
-                    "vudrani"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
-                "celestial"
+                "celestial",
+                "chaotic",
+                "good",
+                "holy"
             ]
         }
     },

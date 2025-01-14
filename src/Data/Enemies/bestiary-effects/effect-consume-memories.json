@@ -1,0 +1,44 @@
+{
+    "_id": "0jAT2TJoqC1z6NCf",
+    "img": "icons/commodities/biological/organ-brain-pink.webp",
+    "name": "Effect: Consume Memories",
+    "system": {
+        "description": {
+            "value": "<p>Vordakai gains a +1 status bonus to all skill checks for 1 minute as a result of the consumed memories.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Kingmaker"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "skill-check",
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

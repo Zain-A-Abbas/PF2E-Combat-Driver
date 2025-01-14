@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -65,11 +67,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -108,11 +112,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -127,94 +133,10 @@
             "type": "melee"
         },
         {
-            "_id": "nSgOSBLM92y28WsS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "ymt7FhkmnZp7ABEM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "VzMnFSYbgzk4CXes",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Trackless",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -226,37 +148,28 @@
                 "description": {
                     "value": "<p>A hodag sweeps the ground behind it with its tail as it moves, obscuring its tracks. The DCs of checks to @UUID[Compendium.pf2e.actionspf2e.Item.Track] a hodag are increased by 10.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "IRXDgrccWGdvA4YK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Ferocity",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -265,26 +178,20 @@
                     "value": null
                 },
                 "category": "defensive",
+                "deathNote": true,
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Ferocity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ferocity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -293,7 +200,7 @@
             "_id": "Od1YX31hXRHCzHS3",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Rip and Tear",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -305,23 +212,16 @@
                 "description": {
                     "value": "<p>The hodag makes two claw Strikes and one jaws Strike in any order.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -330,7 +230,7 @@
             "_id": "x3sRV0Fub8ixWfBV",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Toss",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -340,39 +240,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The hodag Strides, then makes a Strike against a target in reach. If it moves at least 20 feet and succeeds at its Strike, the hodag deals damage normally and then attempts an Athletics check against the creature's Fortitude DC to toss the enemy into the air.</p>\n<p>On a success, the tossed creature is thrown 10 feet in a straight line in the direction of the hodag's choice and then lands @UUID[Compendium.pf2e.conditionitems.Item.Prone]. If the creature is knocked into a solid object, it takes @Damage[1d6[bludgeoning]] damage as well before landing prone. The hodag can instead toss a creature straight up in the air. The creature lands in the same square where it started, takes @Damage[1d6[bludgeoning]] damage, and lands prone.</p>"
+                    "value": "<p>The hodag Strides, then makes a Strike against a target in reach. If it moves at least 20 feet and succeeds at its Strike, the hodag deals damage normally and then attempts an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC to toss the enemy into the air.</p>\n<p>On a success, the tossed creature is thrown 10 feet in a straight line in the direction of the hodag's choice and then lands @UUID[Compendium.pf2e.conditionitems.Item.Prone]. If the creature is knocked into a solid object, it takes @Damage[1d6[bludgeoning]] damage as well before landing prone. The hodag can instead toss a creature straight up in the air. The creature lands in the same square where it started, takes @Damage[1d6[bludgeoning]] damage, and lands prone.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "CwNuoWOgc2U8qCLd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -384,111 +275,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "IqJWeigyORBMo2Go",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "LTW5DHnhGB6HMte6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Forests",
-                        "predicate": [
-                            "terrain:forest"
-                        ],
-                        "selector": "stealth",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+16 in forests",
-                        "options": "terrain:forest"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "amq39bdeRIubOxNa",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Hodag",
@@ -527,12 +326,6 @@
                 "temp": 0,
                 "value": 90
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 14
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -544,19 +337,40 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Beast",
+            "languages": {
+                "details": "(can't speak any language)",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Because they are often described only in drunken retellings of loggers' or miners' tales, hodags are considered by many to exist only in the local folklore of remote areas. However, some individuals have actually encountered these dangerous beasts firsthand, and even fewer have lived to tell their tales.</p>\n<p>Hodags are reptilian creatures the size of bulls. These vicious predators' long claws can tear creatures apart in seconds. Their backs sport dozens of long spines that run from their snouts all the way down the length of their powerful tails. Their wide mouths are full of sharp and twisted rows of teeth not unlike those of a shark. The hodags' rough, scaly hides carry hues of green and brown, allowing them to blend into their forest surroundings where they ambush prey. Only their glowing red eyes reveal their presence, though hodags have learned to use this to their advantage by drawing attention to their eyes in one area, then closing their eyes and stealthily moving to another area to cause their prey to misconstrue their location.</p>\n<p>In the wintertime, when snow and ice blankets a region, hodags grow a foul-smelling coat of greasy, dark-brown fur that sprouts in tufts from between their scales. A typical hodag measures over 10 feet long from snout to tail and weighs upward of 700 pounds.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 14,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -573,21 +387,28 @@
                 "value": 12
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 15
             },
-            "languages": {
-                "custom": "(Can't Speak Any Language)",
-                "selected": [],
-                "value": [
-                    "common"
+            "stealth": {
+                "base": 14,
+                "special": [
+                    {
+                        "base": 16,
+                        "label": "in forests",
+                        "predicate": [
+                            "terrain:forest"
+                        ]
+                    }
                 ]
             },
+            "survival": {
+                "base": 12
+            }
+        },
+        "traits": {
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },

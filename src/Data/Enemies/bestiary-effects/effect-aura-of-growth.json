@@ -1,0 +1,41 @@
+{
+    "_id": "PR0YzItS9R60X3Zc",
+    "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+    "name": "Effect: Aura of Growth",
+    "system": {
+        "description": {
+            "value": "<p>Other plant creatures gain fast healing 20 while in the area.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #172: Secrets of the Temple-City"
+        },
+        "rules": [
+            {
+                "key": "FastHealing",
+                "value": 20
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

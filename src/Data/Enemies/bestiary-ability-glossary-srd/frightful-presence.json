@@ -1,0 +1,44 @@
+{
+    "_id": "etMnv73EIdEZrYYu",
+    "img": "systems/pf2e/icons/actions/Passive.webp",
+    "name": "Frightful Presence",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "defensive",
+        "description": {
+            "value": "<p>0 feet @Check[will|dc:]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Monster Core"
+        },
+        "rules": [
+            {
+                "key": "Aura",
+                "radius": 0,
+                "slug": "frightful-presence",
+                "traits": [
+                    "emotion",
+                    "fear",
+                    "mental"
+                ]
+            }
+        ],
+        "traits": {
+            "rarity": "common",
+            "value": [
+                "aura",
+                "emotion",
+                "fear",
+                "mental"
+            ]
+        }
+    },
+    "type": "action"
+}

@@ -1,14 +1,11 @@
 {
     "_id": "sUSrjcHVQATWVNeV",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
             "_id": "xe58zyk07wl19azb",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
             },
             "img": "systems/pf2e/icons/conditions/slowed.webp",
             "name": "Slowed",
@@ -22,6 +19,11 @@
                 },
                 "group": null,
                 "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "references": {
                     "children": [],
                     "immunityFrom": [],
@@ -30,9 +32,6 @@
                 },
                 "rules": [],
                 "slug": "slowed",
-                "source": {
-                    "value": ""
-                },
                 "value": {
                     "isValued": true,
                     "value": 1
@@ -68,11 +67,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -84,52 +85,10 @@
             "type": "melee"
         },
         {
-            "_id": "fTPjypXzhscP42dn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "LQKnZF3cyrC7NBCh",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Headless",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -141,19 +100,15 @@
                 "description": {
                     "value": "<p>A headless spore sheep can't make Jaws attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -162,7 +117,7 @@
             "_id": "a2pZeef5wn9y5xAA",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Slow",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -174,37 +129,28 @@
                 "description": {
                     "value": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "Jcl5rz38QkHYDfHx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 600000,
+            "name": "Void Healing",
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -216,8 +162,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -228,18 +176,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -248,7 +187,7 @@
             "_id": "nmDPHHCkZ2hUiKOg",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Wasting Wheeze",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -259,23 +198,19 @@
                 "category": "offensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per [[/br 1d4 #rounds]]{1d4 rounds}</p>\n<p><strong>Trigger</strong> The headless spore sheep takes a critical hit or is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The headless spore sheep exhales a cloud of spores through its neck. Adjacent living creatures take @Damage[1d6[poison]] damage and are @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} unless they succeed at a @Check[type:fortitude|dc:18] save.</p>"
+                    "value": "<p><strong>Frequency</strong> once per [[/gmr 1d4 #Recharge Wasting Wheeze]] rounds</p>\n<p><strong>Trigger</strong> The headless spore sheep takes a critical hit or is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The headless spore sheep exhales a cloud of spores through its neck. Adjacent living creatures take @Damage[1d6[poison]] damage and are @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} unless they succeed at a @Check[fortitude|dc:18] save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -284,7 +219,7 @@
             "_id": "RhGXKyPEo0bWS5D1",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Zombie Rot",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -294,42 +229,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as a plague zombie immediately</p>"
+                    "value": "<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as a plague zombie immediately</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "zombie-rot",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "disease",
-                        "necromancy"
+                        "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "MRMj6jc7E8e5c7UF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -341,49 +266,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "oHfpeGrwDyT2otQO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sporeborn Sheep",
@@ -417,7 +312,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 50,
                 "temp": 0,
                 "value": 50
@@ -439,19 +334,13 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 3
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 },
                 {
@@ -461,19 +350,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant Plague Zombie",
-            "creatureType": "Undead",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>Plague zombies are infested with hideous contagions.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
-            "source": {
-                "value": "Pathfinder #193: Mantle of Gold"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 3,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -490,26 +393,22 @@
                 "value": 4
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 7
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "elemental",
+                "evil",
                 "plant",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

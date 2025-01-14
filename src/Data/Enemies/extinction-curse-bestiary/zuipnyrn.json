@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -45,10 +47,8 @@
         },
         {
             "_id": "cca2HxwcLz1pklgq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Greater Darkvision",
@@ -64,23 +64,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -99,10 +92,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:will|dc:22] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] with the zuipnyrn for 1 minute. Once the fascination ends, the creature is temporarily immune to this ability for 1 hour.</p>\n<p>The zuipnyrn can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>"
+                    "value": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[will|dc:22] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] with the zuipnyrn for 1 minute. Once the fascination ends, the creature is temporarily immune to this ability for 1 hour.</p>\n<p>The zuipnyrn can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -113,7 +108,6 @@
                         "radius": 30,
                         "slug": "alluring-aspect",
                         "traits": [
-                            "aura",
                             "occult",
                             "visual"
                         ]
@@ -127,9 +121,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -137,12 +128,6 @@
                         "occult",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -161,28 +146,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The zuipnyrn attempts to charm a creature within 30 feet that is currently @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] by the zuipnyrn. The target must attempt a @Check[type:will|dc:22] save. Whether it succeeds or fails the save, the target is temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is no longer fascinated.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Helpful] toward the zuipnyrn for 1 hour.</p>\n<p><strong>Critical Failure</strong> The creature is helpful toward the zuipnyrn for 1 day and will actively attempt to defend the zuipnyrn and even risk its life for it.</p>"
+                    "value": "<p>The zuipnyrn attempts to charm a creature within 30 feet that is currently @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] by the zuipnyrn. The target must attempt a @Check[will|dc:22] save. Whether it succeeds or fails the save, the target is temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is no longer fascinated.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Helpful] toward the zuipnyrn for 1 hour.</p>\n<p><strong>Critical Failure</strong> The creature is helpful toward the zuipnyrn for 1 day and will actively attempt to defend the zuipnyrn and even risk its life for it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "occult",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -201,54 +179,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The zuipnyrn's eye produces a bright flash of light. Each creature in a @Template[type:cone|distance:30] must attempt a @Check[type:fortitude|dc:22] save. The zuipnyrn can't use Blinding Flare again for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 minute.</p>"
+                    "value": "<p>The zuipnyrn's eye produces a bright flash of light. Each creature in a @Template[cone|distance:30] must attempt a @Check[fortitude|dc:22] save. The zuipnyrn can't use Blinding Flare again for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "occult",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "9IOZskNqCdb6CimC",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Zuipnyrn",
@@ -287,12 +235,6 @@
                 "temp": 0,
                 "value": 35
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "resistances": [
                 {
                     "type": "bludgeoning",
@@ -310,19 +252,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "(can't speak any language)",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "<p>This spectacularly odd creature appears every now and again in various traveling circuses around the Inner Sea. Although carnival barkers make any number of claims about this strange being's origins, the so-called \"moon mole\" is in fact an alien creature called a zuipnyrn, hailing from a distant planet beyond Golarion's star system.</p>\n<p>In their infancy, zuipnyrns are spherical and furry, with few features other than a single eye stalk and a round, toothless feeding hole. A zuipnyrn's body is particularly soft and malleable, allowing it to withstand falls and other hazards. Its eye stalk has the ability to produce a blinding burst of light as a defensive measure, which allows a zuipnyrn just enough time to escape in times of danger. Even more incredibly, a zuipnyrn can emit a hypnotic aura from its eye to entrance those around it-an ability it uses to avoid conflict and to persuade bystanders into helping it escape perilous situations. As they age and grow, zuipnyrns adapt to their environment by growing additional limbs, sprouting additional sensory organs, developing gills, or otherwise altering their anatomy to suit the area.</p>",
-            "source": {
-                "value": "Pathfinder #152: Legacy of the Lost God"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #152: Legacy of the Lost God"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "greater-darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -339,18 +297,13 @@
                 "value": 7
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 11
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(can't speak any language)",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "greater darkvision"
-            },
             "size": {
                 "value": "sm"
             },

@@ -4,33 +4,27 @@
     "items": [
         {
             "_id": "3H8pDmacBIpb0wBp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB"
             },
-            "img": "systems/pf2e/icons/equipment/shields/steel-shield.webp",
+            "img": "icons/equipment/shield/heater-steel-boss-red.webp",
             "name": "Steel Shield",
             "sort": 100000,
             "system": {
                 "acBonus": 2,
-                "baseItem": null,
-                "category": "shield",
-                "checkPenalty": null,
+                "baseItem": "steel-shield",
+                "bulk": {
+                    "value": 1
+                },
                 "containerId": null,
                 "description": {
-                    "value": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+                    "value": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "dexCap": 0,
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
-                "group": null,
                 "hardness": 5,
                 "hp": {
                     "max": 20,
@@ -39,68 +33,40 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "reinforcing": 0
+                },
                 "size": "grg",
                 "slug": "steel-shield",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
-                "stackGroup": null,
-                "strength": null,
+                "speedPenalty": 0,
                 "traits": {
+                    "integrated": null,
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
-            "type": "armor"
+            "type": "shield"
         },
         {
             "_id": "SlKd6WmjF0C4lXGp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Form Up",
@@ -116,33 +82,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FormUp]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "form-up",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "YfW3hmqsouC0M5an",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity",
@@ -158,33 +115,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "ncklibzh6Dfp2LTc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Shield Block",
@@ -200,33 +148,24 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "shield-block",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "BlH8W4GE6xpZoZM2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Troop Defenses",
@@ -242,23 +181,16 @@
                 "description": {
                     "value": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "troop-defenses",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -277,25 +209,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The troop launches a ranged attack in the form of a @Template[type:burst|distance:10] within 100 feet that deals [[/r (3d8+11)[piercing]]] damage (@Check[type:reflex|dc:25|basic:true] save). When the garrison is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "value": "<p>The troop launches a ranged attack in the form of a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+11)[piercing]] damage (@Check[reflex|dc:25|basic] save). When the garrison is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -316,23 +241,16 @@
                 "description": {
                     "value": "<p>The troop raises steel shields, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.Raise a Shield].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -351,25 +269,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><span class=\"pf2-icon\">A</span> to <span class=\"pf2-icon\">T</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[type:reflex|dc:30|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">A</span> @Damage[2d8[slashing]] damage.</p>\n<p><span class=\"pf2-icon\">D</span> [[/r (3d8+10)[slashing]]] damage.</p>\n<p><span class=\"pf2-icon\">T</span> [[/r (4d8+13)[slashing]]] damage.</p>"
+                    "value": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">A</span> @Damage[2d8[slashing]] damage.</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+10)[slashing]] damage.</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+13)[slashing]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -390,72 +306,19 @@
                 "description": {
                     "value": "<p>Whenever a troop Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "uuvp6INqZBeLCBFF",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 26
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "tGDDOf1mOypxK17s",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Terra-Cotta Garrison",
@@ -495,12 +358,6 @@
                 "value": 240
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 22
-            },
             "speed": {
                 "details": "troop movement",
                 "otherSpeeds": [],
@@ -522,19 +379,31 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "(can't speak any language)",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "<p>These constructed warriors can work together as a trained group to repel intruders.</p>\n<hr />\n<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 22,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -551,21 +420,16 @@
                 "value": 20
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 26
+            },
+            "intimidation": {
+                "base": 23
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "(Can't Speak Any Language)",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "grg"
             },

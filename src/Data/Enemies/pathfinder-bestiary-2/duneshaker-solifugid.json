@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -67,11 +69,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -86,57 +90,13 @@
             "type": "melee"
         },
         {
-            "_id": "O4cx0ZHztve08mHY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "5QMBo1Vy2JZTTsNV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Tremorsense",
-            "sort": 400000,
+            "name": "Tremorsense 30 feet",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -148,23 +108,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -173,7 +126,7 @@
             "_id": "xKGmyTmllHIjiYO0",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Earth Shaker",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -183,27 +136,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each turn, the first time the duneshaker solifugid is adjacent to a Large or smaller creature during a move action it's using, that creature must succeed at a @Check[type:reflex|dc:39] save or fall @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
+                    "value": "<p>Each turn, the first time the duneshaker solifugid is adjacent to a Large or smaller creature during a move action it's using, that creature must succeed at a @Check[reflex|dc:39] save or fall @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -212,7 +158,7 @@
             "_id": "qwrA1CcDM9QaJlc5",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Pounce",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -224,37 +170,28 @@
                 "description": {
                     "value": "<p>The duneshaker solifugid Strides and makes a Strike at the end of that movement. If the duneshaker solifugid began this action @UUID[Compendium.pf2e.conditionitems.Item.Hidden], it remains hidden until after this ability's Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "KkNlymsNYCYGKgtS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Rend",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -266,23 +203,16 @@
                 "description": {
                     "value": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "rend",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -291,7 +221,7 @@
             "_id": "dUfRUEqARe3yHUZM",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Venom Spray",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -301,99 +231,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The duneshaker solifugid spews toxic barbs at all creatures in a @Template[type:cone|distance:30]. Each creature within the area takes @Damage[10d6[poison]] damage (@Check[type:fortitude|dc:39|basic:true] save). A creature that fails its saving throw is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for [[/br 1d6 #rounds]]{1d6 rounds} (or permanently on a critical failure).</p>\n<p>The duneshaker solifugid can't use Venom Spray again for [[/br 1d4 #Recharge Venom Spray]]{1d4 rounds}.</p>"
+                    "value": "<p>The duneshaker solifugid spews toxic barbs at all creatures in a @Template[cone|distance:30]. Each creature within the area takes @Damage[10d6[poison]] damage (@Check[fortitude|dc:39|basic] save). A creature that fails its saving throw is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for [[/gmr 1d6 #rounds]]{1d6 rounds} (or permanently on a critical failure).</p>\n<p>The duneshaker solifugid can't use Venom Spray again for [[/gmr 1d4 #Recharge Venom Spray]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "wm9ceEqUa4Ii0iPn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6WsnV1GvmcbcEZT4",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "riXFy1Pv58M1KCDb",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Duneshaker Solifugid",
@@ -432,12 +286,6 @@
                 "temp": 0,
                 "value": 340
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 30
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -453,19 +301,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "<p>The largest solifugids, duneshakers, are so immense that their movements make the terrain around them tremble. They can prey on creatures the size of mammoths or even larger.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 30,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -482,19 +349,19 @@
                 "value": 28
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 33
+            },
+            "athletics": {
+                "base": 35
+            },
+            "stealth": {
+                "base": 33
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, tremorsense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "grg"
             },

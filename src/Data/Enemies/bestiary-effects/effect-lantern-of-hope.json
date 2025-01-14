@@ -1,0 +1,54 @@
+{
+    "_id": "37wbBpPBi5eBtNqM",
+    "img": "systems/pf2e/icons/spells/moonlight-bridge.webp",
+    "name": "Effect: Lantern of Hope",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains a +1 status bonus to damage rolls and to saving throws against @UUID[Compendium.pf2e.spells-srd.Item.Wave of Despair].</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "damage",
+                "type": "status",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "label": "Lantern of Hope (vs Wave of Despair)",
+                "predicate": [
+                    "crushing-despair"
+                ],
+                "selector": "saving-throw",
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -80,7 +80,7 @@ func remove_unnecessary(ability_text: String) -> String:
 ## Turns bursts, cones, etc. into a readable format
 func area_parser(ability_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@Template\\[type:(\\w+)\\|distance:(\\w+)(\\|traits:(.*?))?](?:{([^}]*)})?")
+	regex.compile("@Template\\[(?:type:)?(\\w+)\\|distance:(\\w+)(\\|traits:(.*?))?](?:{([^}]*)})?")
 	if regex.search(ability_text) == null:
 		return ability_text
 	var area_text = regex.search(ability_text).strings
@@ -168,7 +168,7 @@ func srd_parser(description_text: String, srd_text: String) -> String:
 ## Get saves from @Check[type:X|dc:Y|Z]
 func save_parser(description_text: String) -> String:
 	var regex = RegEx.new()
-	regex.compile("@Check\\[type:(.*?)\\|dc:([0-9]+)(?: *\\|(.+?))?]")
+	regex.compile("@Check\\[(?:type:)?(.*?)\\|dc:([0-9]+)(?: *\\|(.+?))?]")
 	var save_strings = regex.search(description_text)
 	if regex.search(description_text) == null:
 		return description_text

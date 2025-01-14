@@ -29,6 +29,8 @@ var enemy_system: Dictionary = {}
 var enemy_abilities: Array = []
 var enemy_attributes: Dictionary = {}
 
+var old_sheet: bool = false
+
 # For zooming during runtime
 static var sheet_theme: Theme = load("res://Themes/EnemySheetContext.tres")
 
@@ -43,6 +45,8 @@ func setup(enemy_file, conditions = {}):
 	enemy_abilities = enemy_data["items"]
 	enemy_attributes = enemy_system["attributes"]
 	
+	old_sheet = enemy_system["details"].has("source")
+	
 	# Set up name and level
 	if !conditions.has("custom_name"):
 		enemy_name.text = enemy_data["name"]
@@ -55,7 +59,12 @@ func setup(enemy_file, conditions = {}):
 	# Set up traits
 	setup_traits()
 	# Enemy Source
-	enemy_source.text = "[b]Source[/b] [i]" + enemy_system["details"]["source"]["value"] + "[/i]"
+	var source: String
+	if old_sheet:
+		source = enemy_system["details"]["source"]["value"]
+	else:
+		source = enemy_system["details"]["publication"]["title"]
+	enemy_source.text = "[b]Source[/b] [i]" + source + "[/i]"
 	
 	# Enemy Senses
 	setup_senses()
@@ -128,21 +137,39 @@ func insert_trait(trait_name: String):
 	new_trait.trait_name = trait_name
 
 func setup_senses():
-	senses.text = ""
-	var perception = "[b]Perception[/b] " + "+" + get_d20_meta(enemy_system["attributes"]["perception"]["value"], "Perception")
-	
-	var enemy_senses: Array[String]
-	if enemy_system["traits"]["senses"] is Array:
-		enemy_senses.assign(enemy_system["traits"]["senses"])
-	else:
-		enemy_senses.assign(enemy_system["traits"]["senses"]["value"].split(","))
 	var i: int = 0
-	if !enemy_senses.is_empty(): 
-		if enemy_senses[0] != "":
-			for sense in enemy_senses:
-				if sense[0] == " ":
-					enemy_senses[i] = sense.substr(1)
-				i += 1
+	senses.text = ""
+	var perception_value: int
+	if old_sheet:
+		perception_value = enemy_system["attributes"]["perception"]["value"]
+	else:
+		perception_value = enemy_system["perception"]["mod"]
+	var perception: String = "[b]Perception[/b] " + "+" + get_d20_meta(perception_value, "Perception")
+	
+	var enemy_senses: Array[String] = []
+	
+	if !old_sheet:
+		var senses_array: Array = enemy_system["perception"]["senses"]
+		for sense in senses_array:
+			var sense_text: String = sense["type"]
+			sense_text.replace("-", " ")
+			if sense.has("acuity"):
+				sense_text += " (" + sense["acuity"] + ")"
+			if sense.has("range"):
+				sense_text += " " + str(sense["range"])
+			enemy_senses.append(sense_text)
+	else:
+		if enemy_system["traits"]["senses"] is Array:
+			enemy_senses.assign(enemy_system["traits"]["senses"])
+		else:
+			enemy_senses.assign(enemy_system["traits"]["senses"]["value"].split(","))
+		
+		if !enemy_senses.is_empty():
+			if enemy_senses[0] != "":
+				for sense in enemy_senses:
+					if sense[0] == " ":
+						enemy_senses[i] = sense.substr(1)
+					i += 1
 	
 	senses.text += perception
 	if !enemy_senses.is_empty():
@@ -162,12 +189,17 @@ func setup_senses():
 		i += 1
 
 func setup_languages():
-	if enemy_system["traits"]["languages"]["value"].is_empty():
+	var languages_array: Array
+	if old_sheet:
+		languages_array = enemy_system["traits"]["languages"]["value"]
+	else:
+		languages_array = enemy_system["details"]["languages"]["value"]
+	if languages_array.is_empty():
 		languages.visible = false
 		return
 	languages.visible = true
 	languages.text = "[b]Languages[/b] "
-	var monster_languages: Array = enemy_system["traits"]["languages"]["value"]
+	var monster_languages: Array = languages_array
 	var i: int = 0
 	for language in monster_languages:
 		languages.text += "[i]" + language.capitalize() + "[/i]"
@@ -582,6 +614,10 @@ func setup_spells():
 	for ability in enemy_abilities:
 		if ability["type"] == "spellcastingEntry" && !ability["name"].to_lower().contains("staff"):
 			has_spells = true
+			if !ability.has("_id"):
+				ability["_id"] = ""
+			if ability["_id"] == "":
+				ability["_id"] = ability["name"]
 			spellcasting_entries.append(ability)
 	
 	if !has_spells:
@@ -592,7 +628,7 @@ func setup_spells():
 		setup_casting_entry(casting_entry)
 	
  
-func setup_casting_entry(ability):
+func setup_casting_entry(casting_entry):
 	var spell_tradition_name: String = ""
 	var dc: int = 0
 	var attack_roll: int = 0
@@ -600,18 +636,18 @@ func setup_casting_entry(ability):
 	# Whether or not the spells are focus spells
 	var is_focus: bool = false
 	
-	if ability["system"]["prepared"]["value"] == "focus":
+	if casting_entry["system"]["prepared"]["value"] == "focus":
 		is_focus = true
 		
-	spell_tradition_name = ability["name"]
+	spell_tradition_name = casting_entry["name"]
 	if dc is int:
 		pass
 	else:
 		print("WHO THE FUCK ARE YOU")
 		print(enemy_data["name"])
 		print("AAA")
-	dc = int(ability["system"]["spelldc"]["dc"])
-	attack_roll = ability["system"]["spelldc"]["value"]
+	dc = int(casting_entry["system"]["spelldc"]["dc"])
+	attack_roll = casting_entry["system"]["spelldc"]["value"]
 	var tradition_title: String = "[b]" + spell_tradition_name + "[/b] "
 	var dc_text: String = "DC " + str(dc) + ", "
 	# Holds either tradition attack roll or its focus points
@@ -625,8 +661,9 @@ func setup_casting_entry(ability):
 			# Doesn't add cantrips to the list
 			if focus_spell["type"] != "spell":
 				continue
-			if focus_spell["system"]["category"]["value"] != "focus":
-				continue
+			if focus_spell["system"].has("category"):
+				if focus_spell["system"]["category"]["value"] != "focus":
+					continue
 			
 			focus_spell_names.append(focus_spell["name"])
 			focus_spell_count += 1
@@ -642,11 +679,8 @@ func setup_casting_entry(ability):
 	spell_list.text = tradition_title + dc_text + attack_roll_focus_points_text
 	attacks.add_child(spell_list)
 	
-	
-	
 	if !is_focus:
 		# Find spells then sort by level
-		
 		spell_list.text += "[ul bullet=•]"
 		
 		var has_normal_spells: bool = false
@@ -659,8 +693,13 @@ func setup_casting_entry(ability):
 			# Doesn't add cantrips to the list
 			if spell["type"] != "spell":
 				continue
-			if (spell["system"]["category"]["value"] != "spell" && !is_focus):
+			if spell["system"]["location"]["value"] == "":
+				spell["system"]["location"]["value"] = casting_entry["_id"]
+			if spell["system"]["location"]["value"] != casting_entry["_id"]:
 				continue
+			if spell["system"].has("category"):
+				if (spell["system"]["category"]["value"] != "spell" && !is_focus):
+					continue
 			if spell["name"].to_lower().contains("(constant)"):
 				has_constant_spells = true
 				continue
@@ -686,8 +725,9 @@ func setup_casting_entry(ability):
 				for spell in enemy_abilities:
 					if spell["type"] != "spell":
 						continue
-					if spell["system"]["category"]["value"] != "spell":
-						continue
+					if spell["system"].has("category"):
+						if spell["system"]["category"]["value"] != "spell":
+							continue
 					if spell["system"]["traits"]["value"].has("cantrip") || spell["name"].contains("(Constant)"):
 						continue
 					# Adds the post-heightening level; the databse uses both of these to heighten. IDK why.
@@ -745,9 +785,15 @@ func setup_casting_entry(ability):
 			spell_list.text += constant_text
 		spell_list.text += "[/ul]"
 	else:
-		for focus_spell in focus_spell_names:
-			spell_list.text += focus_spell
-			if focus_spell != focus_spell_names[-1]:
+		for focus_spell in enemy_abilities:
+			if focus_spell["type"] != "spell":
+				continue
+			if focus_spell["system"]["location"]["value"] == "":
+				focus_spell["system"]["location"]["value"] = casting_entry["_id"]
+			if focus_spell["system"]["location"]["value"] != casting_entry["_id"]:
+				continue
+			spell_list.text += focus_spell["name"]
+			if focus_spell["name"] != focus_spell_names[-1]:
 				spell_list.text += ", "
 		
 

@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -71,7 +73,7 @@
                     },
                     "1": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     },
                     "2": {
                         "damage": "1d6",
@@ -81,11 +83,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -127,17 +131,19 @@
                     },
                     "1": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -176,17 +182,19 @@
                     },
                     "1": {
                         "damage": "1d6",
-                        "damageType": "chaotic"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -202,52 +210,10 @@
             "type": "melee"
         },
         {
-            "_id": "LveVTPzs4hEN09k6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "1HjWqCIXUjmknlZE",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Adamantine Strikes",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -257,25 +223,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Chaos Gulgamodh's body— including the appendages it uses to make melee Strikes—is made of adamantine.</p>"
+                    "value": "<p>Chaos Gulgamodh's body—including the appendages it uses to make melee Strikes—is made of adamantine.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -284,7 +243,7 @@
             "_id": "268BBCle1rCc1g1d",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Cannon Fusillade",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -294,39 +253,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Chaos Gulgamodh unleashes a salvo of explosive blasts in a @Template[type:cone|distance:30]. Creatures in the area take @Damage[(10d10+20)[fire]] damage (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p>On a failed save, a creature is subjected to a @RollTable[cBHMpmeIhoBdUyQT]{Warpwave} effect. On a critically failed save, a creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p>Chaos Gulgamodh can't use Cannon Fusillade again for [[/br 1d4 #Recharge Cannon Fusillade]]{1d4 rounds}.</p>"
+                    "value": "<p>Chaos Gulgamodh unleashes a salvo of explosive blasts in a @Template[cone|distance:30]. Creatures in the area take @Damage[(10d10+20)[fire]] damage (@Check[reflex|dc:43|basic] save).</p>\n<p>On a failed save, a creature is subjected to a @UUID[Compendium.pf2e.rollable-tables.RollTable.Warpwaves]{Warpwave} effect. On a critically failed save, a creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p>Chaos Gulgamodh can't use Cannon Fusillade again for [[/gmr 1d4 #Recharge Cannon Fusillade]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "FsASThbyptq4QfWi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
             },
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Trample",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -336,39 +286,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Huge or smaller, foot, @Check[type:reflex|dc:43|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "value": "<p>Huge or smaller, foot, @Check[reflex|dc:43|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "trample",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "VSaPPvdgJDTYrZHJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -380,49 +321,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "rd3OhTbRKyxAIFmj",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 40
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Chaos Gulgamodh",
@@ -462,12 +373,6 @@
                 "value": 400
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 35
-            },
             "resistances": [
                 {
                     "type": "cold",
@@ -495,20 +400,34 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 21
             },
             "privateNotes": "",
             "publicNotes": "",
-            "sidebarText": "",
-            "source": {
-                "value": "Pathfinder #162: Ruins of the Radiant Siege"
-            }
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #162: Ruins of the Radiant Siege"
+            },
+            "sidebarText": ""
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 35,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -525,20 +444,18 @@
                 "value": 29
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 40
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "grg"
             },
             "value": [
+                "chaotic",
                 "construct",
                 "mindless"
             ]

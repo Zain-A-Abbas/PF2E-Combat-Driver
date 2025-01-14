@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "innate"
@@ -22,79 +21,17 @@
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": true
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 22,
                     "mod": 0,
@@ -108,42 +45,26 @@
         },
         {
             "_id": "KB4brBbS0ZcWZlbu",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ"
             },
             "img": "systems/pf2e/icons/spells/sanctuary.webp",
             "name": "Sanctuary",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You ward a creature with protective energy that deters enemy attacks. Creatures attempting to attack the target must attempt a Will save each time. If the target uses a hostile action, the spell ends.</p>\n<hr /><strong>Critical Success</strong> Sanctuary ends.\n<p><strong>Success</strong> The creature can attempt its attack and any other attacks against the target this turn.</p>\n<p><strong>Failure</strong> The creature can't attack the target and wastes the action. It can't attempt further attacks against the target this turn.</p>\n<p><strong>Critical Failure</strong> The creature wastes the action and can't attempt to attack the target for the rest of sanctuary's duration.</p>"
+                    "value": "<p>You ward a creature with protective energy that deters enemy attacks. Creatures attempting to attack the target must attempt a Will save each time. If the target uses a hostile action, the spell ends.</p>\n<hr /><p><strong>Critical Success</strong> Sanctuary ends.</p>\n<p><strong>Success</strong> The creature can attempt its attack and any other attacks against the target this turn.</p>\n<p><strong>Failure</strong> The creature can't attack the target and wastes the action. It can't attempt further attacks against the target this turn.</p>\n<p><strong>Critical Failure</strong> The creature wastes the action and can't attempt to attack the target for the rest of sanctuary's duration.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -156,55 +77,32 @@
                     },
                     "value": "ZxhVi8fOhMJEQmwJ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "sanctuary",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
-                        "abjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -212,42 +110,26 @@
         },
         {
             "_id": "Ww8c4c8SPRaa0uGt",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.AUctDF2fqPZN2w4W"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.AUctDF2fqPZN2w4W"
             },
             "img": "systems/pf2e/icons/spells/sigil.webp",
             "name": "Sigil",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "unlimited"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -255,59 +137,35 @@
                 "location": {
                     "value": "ZxhVi8fOhMJEQmwJ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "sigil",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature or object"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -315,42 +173,26 @@
         },
         {
             "_id": "m6RfVpJ846whzfQI",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh"
             },
-            "img": "systems/pf2e/icons/spells/true-strike.webp",
+            "img": "icons/skills/melee/strike-blade-scimitar-gray-red.webp",
             "name": "True Strike",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.Concealed] or @UUID[Compendium.pf2e.conditionitems.Item.Hidden].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: True Strike]</p>"
+                    "value": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.Concealed] or @UUID[Compendium.pf2e.conditionitems.Item.Hidden].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Sure Strike]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "until the end of your turn"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -359,56 +201,32 @@
                     "heightenedLevel": 1,
                     "value": "ZxhVi8fOhMJEQmwJ"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "true-strike",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": [
-                        "arcane",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
                     "value": [
-                        "fortune",
-                        "divination"
+                        "concentrate",
+                        "fortune"
                     ]
                 }
             },
@@ -416,24 +234,22 @@
         },
         {
             "_id": "4hnaQuQPsurqLe89",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn"
             },
             "img": "systems/pf2e/icons/equipment/weapons/scimitar.webp",
             "name": "Scimitar",
             "sort": 500000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "scimitar",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -450,9 +266,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "sword",
                 "hardness": 0,
                 "hp": {
@@ -462,34 +275,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "range": null,
@@ -497,17 +295,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "scimitar",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -518,9 +314,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
@@ -554,11 +347,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -600,11 +395,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -619,52 +416,10 @@
             "type": "melee"
         },
         {
-            "_id": "p4Awv6RK9exOA2R6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 800000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "cVAkDeIchCHYhkI1",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Acidic Pustules",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -674,22 +429,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>The marauder's skin is covered with necrotic boils that burst when struck. Whenever a creature deals slashing or piercing damage to the marauder, each creature within 5 feet takes @Damage[2d6[acid]] damage (@Check[type:reflex|dc:22|basic:true]). On a critically failed save, a creature also takes [[/r 1d4[persistent,acid]]] damage.</p>"
+                    "value": "<p>The marauder's skin is covered with necrotic boils that burst when struck. Whenever a creature deals slashing or piercing damage to the marauder, each creature within 5 feet takes @Damage[2d6[acid]] damage (@Check[reflex|dc:22|basic]). On a critically failed save, a creature also takes @Damage[1d4[persistent,acid]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -698,7 +449,7 @@
             "_id": "FjFQMqRbP2xkC1Tt",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Runic Resistance",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -710,23 +461,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The marauder takes damage from a Strike or spell effect</p>\n<hr />\n<p><strong>Effect</strong> The marauder's protective runic tattoos glow, granting them resistance 5 to one damage type dealt by the triggering attack.</p>\n<p>This resistance applies against the triggering effect and lasts for 1 minute or until the marauder uses this ability again, whichever comes first. If the triggering effect deals multiple damage types, the marauder chooses which type to resist.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Runic Resistance]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -735,7 +481,7 @@
             "_id": "QHUI4nGnDGztWn93",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Mana Fever",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -745,24 +491,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} (1 day)</p>\n<p><strong>Stage 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} (1 day)</p>\n<p><strong>Stage 3</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 3} (1 day)</p>\n<p><strong>Stage 4</strong> gain immunity to mana fever and become a Mana Wastes mutant</p>"
+                    "value": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} (1 day)</p>\n<p><strong>Stage 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} (1 day)</p>\n<p><strong>Stage 3</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 3} (1 day)</p>\n<p><strong>Stage 4</strong> gain immunity to mana fever and become a Mana Wastes mutant</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -771,7 +513,7 @@
             "_id": "aldN7PSx9c6LpICR",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Paired Strike",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -783,20 +525,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The maftet is wielding two scimitars</p>\n<hr />\n<p><strong>Effect</strong> The maftet makes two Strikes against the same target, one with each of their scimitars. The maftet combines the damage of any attacks that hit and applies resistances and weaknesses only once. This counts as one attack when calculating the maftet's multiple attack penalty.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -805,7 +543,7 @@
             "_id": "NXkCu7s0sSHvbLhV",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Powerful Scimitars",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -817,23 +555,18 @@
                 "description": {
                     "value": "<p>Any non-magical scimitar becomes a +1 striking scimitar while a spellscar sky marauder wields it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "arcane",
-                        "evocation"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -842,7 +575,7 @@
             "_id": "l71pmKWcKQhw7ufW",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Raptor Dive",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -854,121 +587,25 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The marauder is flying at least 10 feet above the target</p>\n<hr />\n<p><strong>Effect</strong> The marauder Flies up to twice their fly Speed and makes a Paired Strike at the end of the movement. If both Strikes hit, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "FKpOeQZj7YbGMzSI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Q7ZpDF7XjGF3WQ5h",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Arcana",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "X1OKke6G2IjNY6OL",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "hlQ4uqrNotjSkVI6",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "RVaEXmGMGqqTEZIN",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Spellscar Desert Lore",
-            "sort": 1900000,
+            "sort": 1400000,
             "system": {
                 "description": {
                     "value": ""
@@ -979,34 +616,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "53f5JRaUVkunMAcO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1052,12 +668,6 @@
                     "type": "disease"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "resistances": [
                 {
                     "type": "acid",
@@ -1075,19 +685,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Mana Wastes mutant maftet bandits",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "sphinx"
+                ]
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #179: Cradle of Quartz"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #179: Cradle of Quartz"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1104,23 +731,31 @@
                 "value": 10
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 13
+            },
+            "arcana": {
+                "base": 11
+            },
+            "athletics": {
+                "base": 13
+            },
+            "intimidation": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 13
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "sphinx"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "humanoid",
                 "mutant"
             ]

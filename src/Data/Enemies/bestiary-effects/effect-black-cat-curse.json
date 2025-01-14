@@ -1,0 +1,47 @@
+{
+    "_id": "8z4Q84UlS8cMYVWu",
+    "img": "systems/pf2e/icons/spells/fey-disapperance.webp",
+    "name": "Effect: Black Cat Curse",
+    "system": {
+        "description": {
+            "value": "<p>Whenever you attempt an attack roll or saving throw, you must roll twice and use the lower result.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #152: Legacy of the Lost God"
+        },
+        "rules": [
+            {
+                "keep": "lower",
+                "key": "RollTwice",
+                "removeAfterRoll": false,
+                "selector": [
+                    "attack",
+                    "saving-throw"
+                ]
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

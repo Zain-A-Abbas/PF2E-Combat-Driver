@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "DaZZxEyWzJCNV7ul",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.YLb6XnT7OxAVGL5m"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.YLb6XnT7OxAVGL5m"
             },
             "img": "systems/pf2e/icons/equipment/weapons/khopesh.webp",
             "name": "Khopesh",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "khopesh",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "sword",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Lost Omens: Gods & Magic"
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,17 +65,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "med",
                 "slug": "khopesh",
-                "source": {
-                    "value": "Pathfinder Lost Omens: Gods & Magic"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -105,42 +83,33 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "0uX79pH6GrXhtMzc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.BWQzaHbGVqlBuMww"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.BWQzaHbGVqlBuMww"
             },
             "img": "systems/pf2e/icons/equipment/shields/specific-shields/sturdy-shield.webp",
             "name": "Sturdy Shield (Major)",
             "sort": 200000,
             "system": {
                 "acBonus": 2,
-                "baseItem": null,
-                "category": "shield",
-                "checkPenalty": null,
+                "baseItem": "steel-shield",
+                "bulk": {
+                    "value": 1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 17, HP 136, and BT 68.</p>"
                 },
-                "dexCap": 0,
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
-                "group": null,
                 "hardness": 17,
                 "hp": {
                     "max": 136,
@@ -149,63 +118,47 @@
                 "level": {
                     "value": 16
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 10000
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "reinforcing": 0
+                },
                 "size": "med",
                 "slug": "sturdy-shield-major",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
+                "specific": {
+                    "integrated": null,
+                    "material": {
+                        "grade": null,
+                        "type": null
+                    },
+                    "runes": {
+                        "reinforcing": 0
+                    }
                 },
-                "speedPenalty": null,
-                "stackGroup": null,
-                "strength": null,
+                "speedPenalty": 0,
                 "traits": {
+                    "integrated": null,
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "magical"
                     ]
-                },
-                "usage": {
-                    "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
-            "type": "armor"
+            "type": "shield"
         },
         {
             "_id": "db4a8twis4uo38dc",
@@ -235,11 +188,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -280,11 +235,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -299,99 +256,13 @@
             "type": "melee"
         },
         {
-            "_id": "PvAn8UQ7KqdnbVxq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "M33n99OweZJao7Yk",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "7bXHQaXSm1wkcS7B",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.iAXHLkxuuCUOwqkN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.iAXHLkxuuCUOwqkN"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Insect Empathy",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -403,26 +274,18 @@
                 "description": {
                     "value": "<p>The wereant can communicate with insects.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "werecreature-animal-empathy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -431,7 +294,7 @@
             "_id": "fbpp6y4ku57wjrze",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Gnawing Retort",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -443,20 +306,16 @@
                 "description": {
                     "value": "<p>[reaction] As wereant disciple.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -465,7 +324,7 @@
             "_id": "cOgYZNoEqQ0Ni017",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Hive Mind",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -477,8 +336,10 @@
                 "description": {
                     "value": "<p>Wereants operate with a shared hive intelligence. While within telepathic range of at least one other wereant, a wereant disciple gains a +2 circumstance bonus to initiative checks, Perception checks, and saving throws against mental effects. If one wereant is aware of a combatant, all members of the hive mind within telepathic range are aware of it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -517,18 +378,11 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -537,7 +391,7 @@
             "_id": "op6gd7hr0h7gibpz",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Retributive Strike",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -549,34 +403,28 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> An enemy damages the wereant sentinel's ally, and both are within 15 feet of the wereant sentinel</p><hr /><p><strong>Effect</strong> The ally gains resistance 20 against the triggering damage. If the foe is within reach, the wereant sentinel makes a melee Strike against it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "retributive-strike",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "Sp7WWm2pGV4gIgKP",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -588,42 +436,32 @@
                 "description": {
                     "value": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "NH2R71O3tCpg4TAc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.ICnpftxZEilrYjn0"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.ICnpftxZEilrYjn0"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Curse of the Wereant",
-            "sort": 1200000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -633,29 +471,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:34].</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a wereant until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] until dawn.</p>"
+                    "value": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:34].</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a wereant until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] until dawn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "werecreature-curse-of-the-werecreature",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
-                        "necromancy",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -664,7 +494,7 @@
             "_id": "an140aq05sh8og4u",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Hasty Reposition",
-            "sort": 1300000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -676,34 +506,33 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The wereant sentinel Steps, moving up to 15 feet.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "DulMJOAyRjcak9tj",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Moon Frenzy",
-            "sort": 1400000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -715,27 +544,19 @@
                 "description": {
                     "value": "<p>When a full moon appears in the night sky, the wereant must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of their mandibles Strike by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Moon Frenzy]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "werecreature-moon-frenzy",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -744,7 +565,7 @@
             "_id": "5oy93mlwu2qa2pxi",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Sentinel's Focus",
-            "sort": 1500000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -756,8 +577,10 @@
                 "description": {
                     "value": "<p>The wereant sentinel plants its feet in defiance of those who would move it. It gains a +2 circumstance bonus to defenses against being Shoved or Tripped, and its melee Strikes deal an additional @Damage[2d8[mental]] damage. These effects end when it moves from its square using anything other than Hasty Reposition.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -793,29 +616,21 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "UK0maAtOCLiXqpzy",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 1600000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -827,95 +642,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "6yzeq7i0u4fhk5nz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 37
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "weh4ejwqa6egd9mx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 33
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "gqkkz3t50joepqvf",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Wereant Sentinel",
@@ -954,12 +693,6 @@
                 "temp": 0,
                 "value": 400
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 32
-            },
             "shield": {
                 "ac": 2,
                 "brokenThreshold": 0,
@@ -980,19 +713,40 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "insect empathy, telepathy 120 feet",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 19
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #174: Shadows of the Ancients"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #174: Shadows of the Ancients"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 32,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1009,25 +763,28 @@
                 "value": 32
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 37
+            },
+            "intimidation": {
+                "base": 33
+            },
+            "society": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "insect empathy, telepathy 120 feet",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "beast",
+                "evil",
                 "human",
                 "humanoid",
+                "lawful",
                 "werecreature"
             ]
         }

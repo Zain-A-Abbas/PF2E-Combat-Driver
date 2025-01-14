@@ -1,0 +1,47 @@
+{
+    "_id": "wHWWHkjDXmJl4Ia6",
+    "img": "icons/commodities/bones/bones-fish-white.webp",
+    "name": "Effect: Adverse Subsist Situation",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.pf2e.actionspf2e.Item.Subsist]</p>\n<p>You take a –2 circumstance penalty to checks to Subsist.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "days",
+            "value": 7
+        },
+        "level": {
+            "value": 0
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "action:subsist"
+                ],
+                "selector": "skill-check",
+                "type": "circumstance",
+                "value": -2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

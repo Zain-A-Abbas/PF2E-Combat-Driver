@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,15 +48,43 @@
             "type": "melee"
         },
         {
-            "_id": "5Hk5r8bi7Nulj5pY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            "_id": "933yJ4bfZhr9zTIX",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Collapse",
+            "sort": 200000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p><strong>Trigger</strong> The Iroran skeleton is critically hit</p>\n<hr />\n<p><strong>Effect</strong> The Iroran skeleton collapses into a pile of bones and the attack deals damage for a hit, rather than a critical hit.</p>\n<p>The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard].</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
+            "type": "action"
+        },
+        {
+            "_id": "5Hk5r8bi7Nulj5pY",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 200000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -66,8 +96,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -78,55 +110,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "933yJ4bfZhr9zTIX",
-            "img": "systems/pf2e/icons/actions/Reaction.webp",
-            "name": "Collapse",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "reaction"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p><strong>Trigger</strong> The Iroran skeleton is critically hit</p>\n<hr />\n<p><strong>Effect</strong> The Iroran skeleton collapses into a pile of bones and the attack deals damage for a hit, rather than a critical hit.</p>\n<p>The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed].</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -147,25 +133,18 @@
                 "description": {
                     "value": "<p>The Iroran skeleton makes two claw Strikes. If both hit the same creature, the damage is combined for the purpose of resistances and weaknesses.</p>\n<p>The multiple attack penalty applies to the Strikes as normal.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "flourish"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -186,23 +165,16 @@
                 "description": {
                     "value": "<p>The Iroran skeleton can Stride along vertical surfaces, such as walls, as long as it begins and ends its movement on a horizontal surface.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -223,23 +195,16 @@
                 "description": {
                     "value": "<p>The Iroran skeleton can Stride across liquid surfaces. If it ends its movement on a liquid surface, it falls in as normal.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -260,95 +225,19 @@
                 "description": {
                     "value": "<p>The Iroran skeleton makes a single Strike and compares the result to the AC of all creatures within its reach, dealing damage to each creature hit.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "3F3TCvYik0pJ0Byj",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "EJx2ndvuqyi9wAl1",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "AYycTUn3Z4wSWrxl",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Iroran Skeleton",
@@ -382,7 +271,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 210,
                 "temp": 0,
                 "value": 210
@@ -404,12 +293,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 18
-            },
             "resistances": [
                 {
                     "type": "cold",
@@ -438,19 +321,29 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 11
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #159: All or Nothing"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #159: All or Nothing"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 18,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -467,26 +360,28 @@
                 "value": 17
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 24
+            },
+            "athletics": {
+                "base": 21
+            },
+            "intimidation": {
+                "base": 20
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": ""
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "mindless",
                 "skeleton",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

@@ -1,0 +1,51 @@
+{
+    "_id": "EBE2Oid75GC4n5vG",
+    "img": "icons/sundries/gaming/playing-cards-brown.webp",
+    "name": "Effect: Class Might",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.pf2e.journals.JournalEntry.BSp4LUSaOmUyjBko.JournalEntryPage.a68Phr1qsqVRPMVp]{Class Might}</p>\n<p>You gain a +2 status bonus to checks based on the key attribute of your class.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Hero Point Deck"
+        },
+        "rules": [
+            {
+                "choices": {
+                    "config": "abilities"
+                },
+                "flag": "attribute",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Attribute"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "{actor|class.system.keyAbility.attribute}-based",
+                "type": "status",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

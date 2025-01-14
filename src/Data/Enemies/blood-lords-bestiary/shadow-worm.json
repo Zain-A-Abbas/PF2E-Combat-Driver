@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -71,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -89,57 +93,13 @@
             "type": "melee"
         },
         {
-            "_id": "qx1XRTD2eaH94mWA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "GMS9b8N0V1JhG5Ck",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Tremorsense (Imprecise) 100 feet",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -151,23 +111,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "tremorsense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -176,7 +129,7 @@
             "_id": "XSa2fjzbP3OVWgIy",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Inexorable",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -188,20 +141,21 @@
                 "description": {
                     "value": "<p>The shadow worm recovers from the @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed], @UUID[Compendium.pf2e.conditionitems.Item.Slowed], and @UUID[Compendium.pf2e.conditionitems.Item.Stunned] conditions at the end of its turn. It's also immune to penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] condition, and it ignores difficult terrain and greater difficult terrain.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "Immunity",
+                        "type": "immobilized"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -210,7 +164,7 @@
             "_id": "d3WA0s0O9v9khS93",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Shadow Healing",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -222,20 +176,16 @@
                 "description": {
                     "value": "<p>As long as a shadow worm is in an area of dim light or darkness, it gains fast healing 20. When affected by a magical shadow effect from anything other than itself, a shadow worm becomes @UUID[Compendium.pf2e.conditionitems.Item.Quickened] 1 for 1 round.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -244,7 +194,7 @@
             "_id": "HE98Ku359W87UKZT",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Shrink from the Light",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -256,8 +206,10 @@
                 "description": {
                     "value": "<p>A shadow worm takes an additional 20 damage from any spell or ability with the light trait and uses the outcome one degree worse for saving throws made against a spell or ability with the light trait.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -268,22 +220,15 @@
                         },
                         "key": "AdjustDegreeOfSuccess",
                         "predicate": [
-                            "light"
+                            "item:trait:light"
                         ],
-                        "selector": "saving-throw",
-                        "type": "saves"
+                        "selector": "saving-throw"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -292,7 +237,7 @@
             "_id": "8NaZvJ0qWl2L1Iny",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Breath Weapon",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -302,28 +247,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The shadow worm exhales a blast of clinging shadow, dealing [[/r {11d6[cold],10d6[negative]}]]{11d6 cold damage and 10d6 negative damage} to creatures in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:42|basic:true]). If the cone passes through an area of magical light or targets a creature affected by magical light, Breath Weapon attempts to counteract the light ([[/br 1d20+34 #Counteract]]{+34} counteract modifier). The shadow worm can't use Breath Weapon again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "value": "<p>The shadow worm exhales a blast of clinging shadow, dealing @Damage[11d6[cold],10d6[void]]{11d6 cold damage and 10d6 void damage} to creatures in a @Template[cone|distance:60] (@Check[reflex|dc:42|basic]). If the cone passes through an area of magical light or targets a creature affected by magical light, Breath Weapon attempts to counteract the light ([[/br 1d20+34 #Counteract]]{+34} counteract modifier). The shadow worm can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "cold",
-                        "evocation",
-                        "negative",
                         "occult",
-                        "shadow"
+                        "shadow",
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -332,7 +272,7 @@
             "_id": "KBBl3TjXFlMDvrSH",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Fast Swallow",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -344,20 +284,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The shadow worm Grabs a creature</p>\n<hr />\n<p><strong>Effect</strong> The worm uses Swallow Whole.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "fast-swallow",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -366,7 +302,7 @@
             "_id": "9vuH8rOTjPJDczqQ",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rock Tunneler",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -378,34 +314,28 @@
                 "description": {
                     "value": "<p>A shadow worm can burrow through solid stone at a Speed of 20 feet. It can leave a tunnel if it desires, and it usually does.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "IQO5rByWMQazmS0o",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swallow Whole",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -417,25 +347,18 @@
                 "description": {
                     "value": "<p>Huge, @Damage[(3d10+15)[bludgeoning]], Rupture 42</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "swallow-whole",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -444,7 +367,7 @@
             "_id": "1C9t97QNnXidFZsj",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Thrash",
-            "sort": 1200000,
+            "sort": 1100000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -456,34 +379,28 @@
                 "description": {
                     "value": "<p>The worm makes a Strike once against each creature in its reach. It can Strike up to once with its jaws and any number of times with its body. Each attack counts toward the worm's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all the attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "ILn7NeyUxioWPWpN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
-            "sort": 1300000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -495,93 +412,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "hDFxBjz6ZCsy9vD5",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 41
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "avByQ87fokjFJrlH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 32
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.DimLightOrDarkness",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "lighting:darkness",
-                                    "lighting:dim-light"
-                                ]
-                            }
-                        ],
-                        "selector": "stealth",
-                        "value": 5
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+37 in Dim Light or Darkness",
-                        "options": "lighting:dim-light,lighting:darkness"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Shadow Worm",
@@ -620,19 +463,13 @@
                 "temp": 0,
                 "value": 450
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 33
-            },
             "resistances": [
                 {
                     "type": "cold",
                     "value": 20
                 },
                 {
-                    "type": "negative",
+                    "type": "void",
                     "value": 20
                 }
             ],
@@ -653,19 +490,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 20
             },
             "privateNotes": "",
             "publicNotes": "<p>Shadow worms are monstrous cave worms that dwell on the Shadow Plane. Larger and more cunning than most cave worms, shadow worms are fearsome predators that leave swaths of devastation in their wake. Most have glossy, black-armored hide, but those that burrow near velstrac lands are streaked with dark red, for the blood the velstracs spill has soaked into the very stones these shadow worms consume.</p>",
-            "source": {
-                "value": "Pathfinder #186: Ghost King's Rage"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #186: Ghost King's Rage"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 33,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 100,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -682,16 +538,30 @@
                 "value": 30
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 41
+            },
+            "stealth": {
+                "base": 32,
+                "special": [
+                    {
+                        "base": 37,
+                        "label": "in Dim Light or Darkness",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "lighting:darkness",
+                                    "lighting:dim-light"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, tremorsense (imprecise) 100 feet"
-            },
             "size": {
                 "value": "grg"
             },

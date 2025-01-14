@@ -1,0 +1,43 @@
+{
+    "_id": "C9nb9XbnQgbnXpTq",
+    "img": "icons/magic/water/tendrils-ice-growth.webp",
+    "name": "Effect: Crystalline Dust Form",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains a fly Speed of 40 feet.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 8
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Monster Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "fly",
+                "value": 40
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

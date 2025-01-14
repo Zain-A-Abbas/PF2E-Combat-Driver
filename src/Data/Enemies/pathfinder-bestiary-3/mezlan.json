@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -68,11 +70,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -86,52 +90,10 @@
             "type": "melee"
         },
         {
-            "_id": "KluTBobaNmcJwryy",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "m2xn36z0bizgQRSl",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Polyglot",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -143,37 +105,28 @@
                 "description": {
                     "value": "<p>A mezlan can speak and understand any language they hear spoken after listening to the language for 1 minute. These languages fade from their mind after 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "At4UFNUZDqPnIhl7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+1 Status to All Saves vs. Magic",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -185,22 +138,16 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
                         "key": "FlatModifier",
                         "predicate": [
-                            {
-                                "or": [
-                                    "magical",
-                                    "arcane",
-                                    "divine",
-                                    "primal",
-                                    "occult"
-                                ]
-                            }
+                            "item:magical"
                         ],
                         "selector": "saving-throw",
                         "type": "status",
@@ -208,32 +155,21 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "jB6DPG2ZqtuA1Z3r",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Regeneration 15 (Deactivated by Acid)",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -246,8 +182,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -260,18 +198,9 @@
                     }
                 ],
                 "slug": "regeneration",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -280,7 +209,7 @@
             "_id": "VZVdci43sd9eSYaO",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Absorb Spell",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -292,23 +221,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The mezlan succeeds at a saving throw against a single-target spell</p>\n<hr />\n<p><strong>Effect</strong> The mezlan absorbs the spell, nullifying its effect and storing it for later. They can Cast the Spell using the original caster's spell attack modifier and DC. They can store only one spell at a time, but they can absorb a new spell to replace the spell they currently have stored.</p>\n<p>A willing caster can allow the mezlan to Absorb a Spell without requiring a save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -317,7 +239,7 @@
             "_id": "HX5VU8Xvb5yPZ2aH",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Discorporate",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -330,37 +252,28 @@
                 "description": {
                     "value": "<p>When the mezlan is reduced to 0 Hit Points, their body dissolves into colorless slime and begins seeping into nearby cracks or porous surfaces.</p>\n<p>If this material is not immediately contained or destroyed, the mezlan will eventually re-form, though they may lie dormant for years or even decades before doing so.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "0yTcCw02hLLf5qMi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -372,27 +285,19 @@
                 "description": {
                     "value": "<p>The mezlan assumes the form of any Medium or Small creature, excluding those with the elemental, incorporeal, or swarm traits but including specific individuals whose appearance they've seen. This doesn't change the mezlan's Speed or their attack and damage bonus with their Strikes, but the damage type dealt by their Strikes might change based on their new form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
-                        "polymorph",
-                        "transmutation"
+                        "polymorph"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -401,7 +306,7 @@
             "_id": "LfpK0azkldAisbCY",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Extend Limb",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -413,23 +318,16 @@
                 "description": {
                     "value": "<p>The mezlan extends one of their limbs, granting themself a reach of 20 feet with their polymorphic appendages until the end of their next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -438,7 +336,7 @@
             "_id": "VPwJArBSwEFYQLmI",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Viscous Trap",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -450,134 +348,19 @@
                 "description": {
                     "value": "<p>A creature hit by the mezlan's ooze globule takes a -15-foot circumstance penalty to all Speeds for 1 minute. On a critical hit, a target standing on a solid surface also becomes @UUID[Compendium.pf2e.conditionitems.Item.Immobilized], while a target Flying via wings falls to the ground and becomes unable to Fly.</p>\n<p>A target can end all effects by @UUID[Compendium.pf2e.actionspf2e.Item.Escape]{Escaping} (DC 32) or spending a total of 3 Interact actions to free itself.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Viscous Trap]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "viscous-trap",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "DyyeMB58jc4js7Zu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "a9pJTuCtvZCUpnCc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Impersonate",
-                        "predicate": [
-                            "action:impersonate"
-                        ],
-                        "selector": "deception",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+31 to Impersonate",
-                        "options": "action:impersonate"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "z2VdkSe9B7frggjy",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "2tv1ASDA6d0CoMsT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Mezlan",
@@ -627,12 +410,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
@@ -645,19 +422,36 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "polyglot",
+                "value": [
+                    "aklo",
+                    "azlanti"
+                ]
+            },
             "level": {
                 "value": 14
             },
             "privateNotes": "",
             "publicNotes": "<p>The bizarre shapeshifters known as mezlans were created ages ago as spies and infiltrators by a long-forgotten ritual infusing a magically constructed ooze with the soul of an exceptional sapient being. Having long since outlasted their creators, mezlans most often dwell alone amongst the ruins of the ancient civilizations they served as mortals.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -674,22 +468,31 @@
                 "value": 23
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
+        "skills": {
+            "athletics": {
+                "base": 28
             },
-            "languages": {
-                "custom": "Polyglot",
-                "selected": [],
-                "value": [
-                    "aklo",
-                    "azlanti"
+            "deception": {
+                "base": 27,
+                "special": [
+                    {
+                        "base": 31,
+                        "label": "to Impersonate",
+                        "predicate": [
+                            "action:impersonate"
+                        ]
+                    }
                 ]
             },
-            "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
+            "occultism": {
+                "base": 24
             },
+            "stealth": {
+                "base": 28
+            }
+        },
+        "traits": {
+            "rarity": "rare",
             "size": {
                 "value": "med"
             },

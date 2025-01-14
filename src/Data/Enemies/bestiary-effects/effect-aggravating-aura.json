@@ -1,0 +1,57 @@
+{
+    "_id": "WQsMv2KlURI9OKQQ",
+    "img": "icons/magic/acid/dissolve-pool-bubbles.webp",
+    "name": "Effect: Aggravating Aura",
+    "system": {
+        "description": {
+            "value": "<p>The creature gains weakness to all damage.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder #203: Shepherd of Decay"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.Check.Result.Degree.Check.failure",
+                        "value": 3
+                    },
+                    {
+                        "label": "PF2E.Check.Result.Degree.Check.criticalFailure",
+                        "value": 5
+                    }
+                ],
+                "flag": "weakness",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.DegreeOfSuccess"
+            },
+            {
+                "key": "Weakness",
+                "type": "all-damage",
+                "value": "{item|flags.pf2e.rulesSelections.weakness}"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

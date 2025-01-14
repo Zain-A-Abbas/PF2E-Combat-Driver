@@ -1,0 +1,73 @@
+{
+    "_id": "ucAwSIZsGrpBLg6G",
+    "img": "icons/weapons/crossbows/handcrossbow-green.webp",
+    "name": "Effect: Alchemical Crossbow",
+    "system": {
+        "badge": {
+            "max": 3,
+            "type": "counter",
+            "value": 3
+        },
+        "description": {
+            "value": "<p>The Alchemical Crossbow deals an additional 1d6 damage of the type dealt by the bomb used.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: The Fall of Plaguestone"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.TraitAcid",
+                        "value": "acid"
+                    },
+                    {
+                        "label": "PF2E.TraitCold",
+                        "value": "cold"
+                    },
+                    {
+                        "label": "PF2E.TraitElectricity",
+                        "value": "electricity"
+                    },
+                    {
+                        "label": "PF2E.TraitFire",
+                        "value": "fire"
+                    }
+                ],
+                "flag": "damage",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Alchemist.AlchemicalCrossbow.Prompt"
+            },
+            {
+                "damageType": "{item|flags.pf2e.rulesSelections.damage}",
+                "diceNumber": 1,
+                "dieSize": "d6",
+                "key": "DamageDice",
+                "selector": "alchemical-crossbow-damage"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": false
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

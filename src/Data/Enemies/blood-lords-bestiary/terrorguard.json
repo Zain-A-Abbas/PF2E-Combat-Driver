@@ -29,19 +29,21 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "deadly-d10",
                         "magical",
-                        "negative",
                         "reach-10",
-                        "trip"
+                        "trip",
+                        "void"
                     ]
                 },
                 "weaponType": {
@@ -74,11 +76,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -90,52 +94,10 @@
             "type": "melee"
         },
         {
-            "_id": "bzg3guMPW3o4KLm6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "3GMuYwRCpwabX2Jv",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Breath of Phantasms",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -145,16 +107,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The terrorguard's ram-skull head opens at the jaw, allowing a horde of swirling phantasms to escape from its maw in a @Template[type:cone|distance:30]. Each creature in the area is subjected to a 5th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Phantasmal Killer]</em> spell (@Check[type:will|dc:31], @Check[type:fortitude|dc:31|traits:incapacitation]).</p>"
+                    "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The terrorguard's ram-skull head opens at the jaw, allowing a horde of swirling phantasms to escape from its maw in a @Template[cone|distance:30]. Each creature in the area is subjected to a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.Phantasmal Killer] spell (@Check[will|dc:31], @Check[fortitude|dc:31|traits:incapacitation]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -165,9 +131,6 @@
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -176,7 +139,7 @@
             "_id": "TI32SCeXh4AwiTF3",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Draw the Line",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -186,16 +149,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A terrorguard plunges its dreamscythe into the ground and rends a glowing line across the surface that reverberates with the essence of the Dimension of Dreams. Chose up to four unoccupied squares which are adjacent to one another and adjacent to the terrorguard. For [[/br 1d4 #Rounds]]{1d4 rounds}, any creature besides the terrorguard who enters such a square must succeed at a @Check[type:will|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 4} as they behold grotesque visions from the nightmare realm. A creature that succeeds at this save is temporarily immune to the effect for 24 hours.</p>"
+                    "value": "<p>A terrorguard plunges its dreamscythe into the ground and rends a glowing line across the surface that reverberates with the essence of the Dimension of Dreams. Chose up to four unoccupied squares which are adjacent to one another and adjacent to the terrorguard. For [[/gmr 1d4 #Rounds]]{1d4 rounds}, any creature besides the terrorguard who enters such a square must succeed at a @Check[will|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 4} as they behold grotesque visions from the nightmare realm. A creature that succeeds at this save is temporarily immune to the effect for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -205,9 +167,6 @@
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -216,7 +175,7 @@
             "_id": "ZCE0MMUew9kQ0v3t",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Nightmare Essence",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -226,16 +185,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A creature damaged by a terrorguard's dreamscythe hallucinates that the environment and creatures around them have transformed into a hellscape reminiscent of their most horrifying dreams. A creature hit with a dreamscythe Strike must succeed at a @Check[type:will|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 round. A creature who succeeds at this save is temporarily immune for 24 hours.</p>"
+                    "value": "<p>A creature damaged by a terrorguard's dreamscythe hallucinates that the environment and creatures around them have transformed into a hellscape reminiscent of their most horrifying dreams. A creature hit with a dreamscythe Strike must succeed at a @Check[will|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 round. A creature who succeeds at this save is temporarily immune for 24 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -245,9 +203,6 @@
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -256,7 +211,7 @@
             "_id": "6Ku9JLx9tFrA39RI",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Skull Charge",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -268,8 +223,10 @@
                 "description": {
                     "value": "<p>The terrorguard Strides twice in a straight line and then makes a horn Strike with a +1 circumstance bonus to its attack roll.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -289,41 +246,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "xHAKwca7GTx5MNSo",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Terrorguard",
@@ -363,31 +291,39 @@
                 "value": 255
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 14
             },
             "privateNotes": "",
             "publicNotes": "<p>Spellcasters who harness the power of the Dimension of Dreams may use it to fuel vicious servitors known as terrorguards-hulking terrors adorned with frames made of an Abysium alloy. Terrorguards come in many forms; creators often design the constructs' frames to mimic grotesque aberrations by mixing-and-matching parts.</p>",
-            "source": {
-                "value": "Pathfinder #184: The Ghouls Hunger"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #184: The Ghouls Hunger"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -404,16 +340,13 @@
                 "value": 22
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 28
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

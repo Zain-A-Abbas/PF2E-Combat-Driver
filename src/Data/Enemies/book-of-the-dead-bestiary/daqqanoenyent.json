@@ -27,17 +27,19 @@
                     },
                     "bb5wrc4nqofzqdvvhaqk": {
                         "damage": "1d4",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -73,17 +75,19 @@
                     },
                     "w6rj22jy1b8dyo7piet9": {
                         "damage": "1d4",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -97,57 +101,13 @@
             "type": "melee"
         },
         {
-            "_id": "nltFl2TPZ3VCCV0z",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "05F3xO5TlXZ9n8cg",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -159,8 +119,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -171,18 +133,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -191,7 +144,7 @@
             "_id": "z4v0g409xiuvao4u",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Baleful Gaze",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -201,16 +154,15 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The daqqanoenyent's face twists into an expression of unbridled rage. Each creature within @Template[type:emanation|distance:30]{30 feet} that can see the daqqanoenyent must attempt a @Check[type:will|dc:28] save. The creature is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3}.</p>"
+                    "value": "<p>The daqqanoenyent's face twists into an expression of unbridled rage. Each creature within @Template[emanation|distance:30]{30 feet} that can see the daqqanoenyent must attempt a @Check[will|dc:28] save. The creature is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -220,9 +172,6 @@
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -231,7 +180,7 @@
             "_id": "sg28ok3v73dn8dvi",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Snatch",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -243,34 +192,28 @@
                 "description": {
                     "value": "<p>A daqqanoenyent can Fly at half Speed while they have a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained] in their talons, carrying that creature along with them.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "nYA9w4d89kX8zkyS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swallow Whole",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -282,39 +225,30 @@
                 "description": {
                     "value": "<p>Medium, @Damage[(2d8+9)[bludgeoning]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "swallow-whole",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "AnBTVVvzCtNwFDSJ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -326,128 +260,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "rotlnf6iwle4td73",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.ManeuverInFlight",
-                        "predicate": [
-                            "action:maneuver-in-flight"
-                        ],
-                        "selector": "acrobatics",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+21 to Maneuver in Flight",
-                        "options": "action:maneuver-in-flight"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "kmfwhk7m6v0d49yt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "abi4luruyxmz1ht3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 17
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.TrackCreator",
-                        "predicate": [
-                            "involved-in-creation",
-                            "action:track"
-                        ],
-                        "selector": "survival",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+21 to track anyone involved in the desecration that created them",
-                        "options": "involved-in-creation,action:track"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Daqqanoenyent",
@@ -481,7 +306,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 170,
                 "temp": 0,
                 "value": 170
@@ -503,12 +328,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 17
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -525,25 +344,42 @@
                     "value": 10
                 },
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 5
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "plus any one language spoken in life; (can't speak any language)",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "<p>A daqqanoenyent is a horrific monstrosity arising from a terrible crime against the dead, obsessed with exacting retribution. The creature manifests as an enormous, disembodied head, 10 feet in height and covered in coarse black hair, with bat-like wings and vicious fangs and talons. Daqqanoenyents are naturally conflicted creatures. As the product of the tortured wills of numerous victims, daqqanoenyents sometimes exhibit strange or contradictory behavior as various individual wills struggle for control. Their conflicting desires make daqqanoenyents relatively easy to trick or deceive, and the creatures are vulnerable to fire. One story of a daqqanoenyent encounter describes the creature attempting to eat an old woman, only to be tricked by the woman into devouring a live coal. Their mouth aflame, the daqqanoenyent fled into the wilderness, never to be seen again.</p>\n<hr />\n<p>Beheaded are disembodied floating heads transformed into undead. They are natural candidates for a necromancer's \"project minion,\" due to the inexpensive cost of creation and endlessly customizable nature. In any lair occupied for long by practicing necromancers, it isn't uncommon to find a handful of floating heads roaming about, each exhibiting completely different characteristics and even degrees of expertise in their creation.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 17,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -560,24 +396,45 @@
                 "value": 15
             }
         },
-        "traits": {
-            "languages": {
-                "custom": "plus any one language spoken in life, (can't speak any language)",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
+        "skills": {
+            "acrobatics": {
+                "base": 17,
+                "special": [
+                    {
+                        "base": 21,
+                        "label": "to Maneuver in Flight",
+                        "predicate": [
+                            "action:maneuver-in-flight"
+                        ]
+                    }
                 ]
             },
-            "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
+            "athletics": {
+                "base": 21
             },
+            "survival": {
+                "base": 17,
+                "special": [
+                    {
+                        "base": 21,
+                        "label": "to track anyone involved in the desecration that created them",
+                        "predicate": [
+                            "involved-in-creation",
+                            "action:track"
+                        ]
+                    }
+                ]
+            }
+        },
+        "traits": {
+            "rarity": "rare",
             "size": {
                 "value": "lg"
             },
             "value": [
-                "undead"
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

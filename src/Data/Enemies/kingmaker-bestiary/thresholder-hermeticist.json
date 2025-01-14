@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "0NDexqBHwunzi360",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z"
             },
             "img": "systems/pf2e/icons/equipment/weapons/dagger.webp",
             "name": "Dagger",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "dagger",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "simple",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "knife",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,23 +65,20 @@
                     "value": "-"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "striking": 2
+                },
                 "size": "med",
                 "slug": "dagger",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": "greaterStriking"
                 },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "evocation",
                         "finesse",
                         "magical",
                         "thrown-10",
@@ -110,27 +87,19 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "cG10UmeLEy9eANOc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/acid-flask.webp",
             "name": "Acid Flask (Greater) (Infused)",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 2
@@ -138,23 +107,28 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0.1
+                },
                 "category": "martial",
                 "containerId": null,
                 "damage": {
                     "damageType": "acid",
                     "dice": 1,
-                    "die": ""
+                    "die": "",
+                    "persistent": {
+                        "faces": 6,
+                        "number": 3,
+                        "type": "acid"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "group": "bomb",
                 "hardness": 0,
@@ -165,67 +139,35 @@
                 "level": {
                     "value": 11
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
-                    "value": {}
+                    "value": {
+                        "gp": 250
+                    }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 14,
                 "range": 20,
                 "reload": {
                     "value": "-"
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.criticalSuccess"
-                    }
-                ],
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "acid-flask-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 3
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": null
                 },
                 "traits": {
                     "rarity": "common",
@@ -234,31 +176,30 @@
                         "alchemical",
                         "bomb",
                         "consumable",
+                        "infused",
                         "splash"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "1bZpLXmtzfGcJX8S",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
             },
-            "img": "systems/pf2e/icons/equipment/armor/studded-leather-armor.webp",
-            "name": "+2 Resilient Studded Leather Armor",
+            "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
+            "name": "Studded Leather Armor",
             "sort": 300000,
             "system": {
                 "acBonus": 2,
                 "baseItem": "studded-leather-armor",
+                "bulk": {
+                    "value": 1
+                },
                 "category": "light",
                 "checkPenalty": -1,
                 "containerId": null,
@@ -269,11 +210,8 @@
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
-                    "inSlot": false,
+                    "inSlot": true,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": "1"
                 },
                 "group": "leather",
                 "hardness": 0,
@@ -282,80 +220,53 @@
                     "value": 0
                 },
                 "level": {
-                    "value": 11
+                    "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
-                        "gp": 1400
+                        "gp": 3
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": "resilient"
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 2,
+                    "property": [],
+                    "resilient": 1
+                },
                 "size": "med",
                 "slug": "studded-leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "speedPenalty": 0,
                 "strength": 1,
                 "traits": {
                     "rarity": "common",
-                    "value": [
-                        "abjuration",
-                        "invested",
-                        "magical"
-                    ]
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "2"
+                    "value": []
                 }
             },
             "type": "armor"
         },
         {
             "_id": "uK2UsNjZ0EK48Nwq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/alchemists-tools.webp",
+            "img": "icons/tools/laboratory/vials-blue-pink.webp",
             "name": "Alchemist's Tools",
             "sort": 400000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
@@ -363,9 +274,6 @@
                 "equipped": {
                     "carryType": "worn",
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -375,53 +283,47 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "alchemists-tools",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "1"
                 }
             },
             "type": "equipment"
         },
         {
             "_id": "wd4WShZlAcAc3dLe",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-symbol-wooden.webp",
+            "img": "icons/commodities/treasure/broach-jeweled-green.webp",
             "name": "Religious Symbol of Yog-Sothoth",
             "sort": 500000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0.1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -431,9 +333,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "hardness": 0,
                 "hp": {
                     "max": 0,
@@ -442,19 +341,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -467,58 +366,38 @@
                 ],
                 "size": "med",
                 "slug": "religious-symbol-wooden",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "equipment"
         },
         {
             "_id": "30bEZtUno1F0FNqQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.ANzB9WzlGQXDn76G"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ANzB9WzlGQXDn76G"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/antidote.webp",
             "name": "Antidote (Major)",
             "sort": 600000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "elixir"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "elixir",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours, and when you drink the antidote, you can immediately attempt a saving throw against one poison of 14th level or lower affecting you. If you succeed, the poison is neutralized.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Antidote (Major)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours, and when you drink the antidote, you can immediately attempt a saving throw against one poison of 14th level or lower affecting you. If you succeed, the poison is neutralized.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Antidote]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -528,28 +407,24 @@
                 "level": {
                     "value": 14
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 675
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "antidote-major",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -562,47 +437,36 @@
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "HplaolUyjv0ldmah",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.kicNrnZz1KjJYRVI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.kicNrnZz1KjJYRVI"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/eagle-eyes-elixir.webp",
             "name": "Eagle Eye Elixir (Major) (Infused)",
             "sort": 700000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "elixir"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "elixir",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>After you drink this elixir, you notice subtle visual details. For the next hour, you gain a +3 item bonus to Perception checks, or +4 when attempting to find secret doors and traps.</p>\n<p>Each time you pass within 10 feet of a secret door or trap, the GM automatically rolls a secret check for you to find it.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Eagle Eye Elixir (Major)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>After you drink this elixir, you notice subtle visual details. For the next hour, you gain a +3 item bonus to Perception checks, or +4 when attempting to find secret doors and traps.</p>\n<p>Each time you pass within 10 feet of a secret door or trap, the GM automatically rolls a secret check for you to find it.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Eagle Eye Elixir (Major)]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -612,78 +476,68 @@
                 "level": {
                     "value": 16
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "eagle-eye-elixir-major",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
-                        "elixir"
+                        "elixir",
+                        "infused"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "TgxTGQ9ZPvKuOKzP",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W"
             },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/elixir-of-life.webp",
             "name": "Elixir of Life (Major) (Infused)",
             "sort": 800000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "elixir"
-                },
-                "consume": {
-                    "value": "8d6+21"
-                },
+                "category": "elixir",
                 "containerId": null,
+                "damage": {
+                    "formula": "8d6+21",
+                    "kind": "healing",
+                    "type": "untyped"
+                },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]]{8d6+21 Hit Points} and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life (Major)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]] Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -693,79 +547,65 @@
                 "level": {
                     "value": 15
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "elixir-of-life-major",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "alchemical",
                         "consumable",
                         "elixir",
-                        "healing"
+                        "healing",
+                        "infused"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
         },
         {
             "_id": "0bbJhjr4XkyXm2cv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.04giYigfDL5geu5f"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.04giYigfDL5geu5f"
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/mistform-elixir.webp",
+            "img": "icons/consumables/potions/bottle-conical-corked-blue.webp",
             "name": "Mistform Elixir (Greater) (Infused)",
             "sort": 900000,
             "system": {
-                "autoDestroy": {
-                    "value": true
-                },
                 "baseItem": null,
-                "charges": {
-                    "max": 1,
-                    "value": 1
+                "bulk": {
+                    "value": 0.1
                 },
-                "consumableType": {
-                    "value": "elixir"
-                },
-                "consume": {
-                    "value": ""
-                },
+                "category": "elixir",
                 "containerId": null,
+                "damage": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>A faint mist emanates from your skin, making you @UUID[Compendium.pf2e.conditionitems.Item.Concealed] for 5 minutes.</p>\n<p>As usual being concealed when your position is still obvious, you can't use this concealment to @UUID[Compendium.pf2e.actionspf2e.Item.Hide] or @UUID[Compendium.pf2e.actionspf2e.Item.Sneak].</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>A faint mist emanates from your skin, making you @UUID[Compendium.pf2e.conditionitems.Item.Concealed] for 5 minutes.</p>\n<p>As usual being concealed when your position is still obvious, you can't use this concealment to @UUID[Compendium.pf2e.actionspf2e.Item.Hide] or @UUID[Compendium.pf2e.actionspf2e.Item.Sneak].</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -775,26 +615,22 @@
                 "level": {
                     "value": 10
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "mistform-elixir-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -802,14 +638,17 @@
                         "consumable",
                         "elixir",
                         "illusion",
+                        "infused",
                         "visual"
                     ]
                 },
                 "usage": {
                     "value": "held-in-one-hand"
                 },
-                "weight": {
-                    "value": "L"
+                "uses": {
+                    "autoDestroy": true,
+                    "max": 1,
+                    "value": 1
                 }
             },
             "type": "consumable"
@@ -829,7 +668,10 @@
                     "value": ""
                 },
                 "attackEffects": {
-                    "value": []
+                    "custom": "",
+                    "value": [
+                        "cruel-anatomist"
+                    ]
                 },
                 "bonus": {
                     "value": 31
@@ -843,11 +685,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -884,36 +728,31 @@
                     "value": 31
                 },
                 "damageRolls": {
-                    "pKqJRHLW2J4bwD9V": {
+                    "0": {
                         "damage": "1",
+                        "damageType": "acid"
+                    },
+                    "1": {
+                        "category": "persistent",
+                        "damage": "3d6",
+                        "damageType": "acid"
+                    },
+                    "2": {
+                        "category": "splash",
+                        "damage": "3",
                         "damageType": "acid"
                     }
                 },
                 "description": {
                     "value": "<p>10 foot splash</p>"
                 },
-                "rules": [
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "success"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.success"
-                    },
-                    {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
-                        ],
-                        "selector": "{item|_id}-damage",
-                        "text": "PF2E.BombNotes.AcidFlask.Greater.criticalSuccess"
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
+                "rules": [],
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -943,20 +782,16 @@
                 "description": {
                     "value": "<p>A Thresholder Hermeticist carries the following infused items, which last for 24 hours or until the next time the Thresholder Hermeticist makes their daily preparations: infused @UUID[Compendium.pf2e.equipment-srd.Item.Acid Flask (Greater)] (14), infused @UUID[Compendium.pf2e.equipment-srd.Item.Eagle Eye Elixir (Major)] (2), infused @UUID[Compendium.pf2e.equipment-srd.Item.Elixir of Life (Major)] (3), infused @UUID[Compendium.pf2e.equipment-srd.Item.Mistform Elixir (Greater)] (2).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -975,22 +810,18 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>The removal of the eyes symbolized a Thresholder's abandonment of all they had seen before, and with the ritual's completion they gain something greater than mere vision: they gain the Unseen Sight. This is a precise sense that mimics darkvision yet functions even if the eye sockets themselves are covered. More importantly, the unseen sight allows a Thresholder to see the truth of the world, granting them the ability to see things as they actually are as if they were under the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.True Seeing]</em>, provided they are located within a region under the influence of Yog- Sothoth.</p>"
+                    "value": "<p>The removal of the eyes symbolized a Thresholder's abandonment of all they had seen before, and with the ritual's completion they gain something greater than mere vision: they gain the Unseen Sight. This is a precise sense that mimics darkvision yet functions even if the eye sockets themselves are covered. More importantly, the unseen sight allows a Thresholder to see the truth of the world, granting them the ability to see things as they actually are as if they were under the effects of @UUID[Compendium.pf2e.spells-srd.Item.Truesight], provided they are located within a region under the influence of Yog- Sothoth.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1011,8 +842,10 @@
                 "description": {
                     "value": "<p>When the Thresholder Hermeticist rolls a success on a Fortitude save, they get a critical success instead.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1035,15 +868,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1064,20 +891,16 @@
                 "description": {
                     "value": "<p>The Thresholder Hermeticist exists outside of time; they don't age, don't need food or drink to survive, and can't be @UUID[Compendium.pf2e.conditionitems.Item.Quickened] or @UUID[Compendium.pf2e.conditionitems.Item.Slowed] unless they choose to be.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1098,20 +921,16 @@
                 "description": {
                     "value": "<p>When throwing an alchemical bomb with the splash trait, the Thresholder Hermeticist can deal splash damage to only their primary target instead of the usual splash area.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1130,22 +949,29 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The Thresholder Hermeticist deals an additional @Damage[2d8[bleed]] damage with melee Strikes. A creature who bleeds for 2 rounds from this becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for as long as it continues bleeding.</p>"
+                    "value": "<p>The Thresholder Hermeticist deals an additional 2d8 bleed damage with melee Strikes. A creature who bleeds for 2 rounds from this becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for as long as it continues bleeding.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "damageType": "bleed",
+                        "diceNumber": 2,
+                        "dieSize": "d8",
+                        "key": "DamageDice",
+                        "predicate": [
+                            "melee"
+                        ],
+                        "selector": "strike-damage"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1166,205 +992,42 @@
                 "description": {
                     "value": "<p>The Thresholder Hermeticist Interacts to draw an alchemical bomb, then Strikes with it.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "5H4wxvpkB1cnnXNj",
+            "_id": "ypEVZiKiaV4PXVPe",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
+            "name": "Yog-Sothoth Lore",
             "sort": 1900000,
             "system": {
                 "description": {
                     "value": ""
                 },
                 "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "3ny62MDHFxZvqFAt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Crafting",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
                     "value": 31
                 },
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "z6R5CdjLLD1tod62",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 25
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "13cNDWf9TZYlKzPd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6q1mV4tpL28TMZFx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
-            "sort": 2300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "fidzhfnPUyUE1guO",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "zkNmG28Q7RzIQwkq",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 2500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "ypEVZiKiaV4PXVPe",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Yog-Sothoth Lore",
-            "sort": 2600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1405,12 +1068,6 @@
                 "temp": 0,
                 "value": 290
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 29
-            },
             "resistances": [
                 {
                     "type": "mental",
@@ -1423,19 +1080,32 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Human occult researcher",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "aklo",
+                    "hallit"
+                ]
+            },
             "level": {
                 "value": 16
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "unseen sight",
+            "mod": 29,
+            "senses": []
         },
         "resources": {},
         "saves": {
@@ -1452,23 +1122,37 @@
                 "value": 26
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 29
+            },
+            "crafting": {
+                "base": 31
+            },
+            "intimidation": {
+                "base": 25
+            },
+            "medicine": {
+                "base": 27
+            },
+            "occultism": {
+                "base": 31
+            },
+            "stealth": {
+                "base": 27
+            },
+            "survival": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "aklo",
-                    "hallit"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "unseen sight"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "human",
                 "humanoid"
             ]

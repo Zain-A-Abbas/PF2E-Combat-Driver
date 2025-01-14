@@ -1,0 +1,1347 @@
+{
+    "_id": "m6lUcyekHwJxTLzo",
+    "img": "systems/pf2e/icons/default-icons/npc.svg",
+    "items": [
+        {
+            "_id": "yiIvzLhqLKQBotmB",
+            "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+            "name": "Arcane Innate Spells",
+            "sort": 100000,
+            "system": {
+                "autoHeightenLevel": {
+                    "value": null
+                },
+                "description": {
+                    "value": ""
+                },
+                "prepared": {
+                    "value": "innate"
+                },
+                "proficiency": {
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "showSlotlessLevels": {
+                    "value": false
+                },
+                "slots": {},
+                "slug": null,
+                "spelldc": {
+                    "dc": 34,
+                    "value": 26
+                },
+                "tradition": {
+                    "value": "arcane"
+                }
+            },
+            "type": "spellcastingEntry"
+        },
+        {
+            "_id": "zsUOtZm1tFocVEm2",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA"
+            },
+            "img": "icons/magic/defensive/armor-stone-skin.webp",
+            "name": "Petrify",
+            "sort": 200000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
+                    }
+                },
+                "description": {
+                    "value": "<p>The target's body slowly turns into a stone statue. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round as stone begins to form on their body.</p>\n<p><strong>Failure</strong> The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure) as stone growths creep across their body. A successful save reduces the slowed condition by 1. When a creature becomes fully unable to act due to the slowed condition from petrify, the spell then ends in a flash of gray light, leaving the target @UUID[Compendium.pf2e.conditionitems.Item.Petrified] permanently as they become a statue. The spell also ends if the slowed condition is removed, which causes the stone to break off harmlessly.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2}.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "varies"
+                },
+                "level": {
+                    "value": 6
+                },
+                "location": {
+                    "heightenedLevel": 7,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "petrify",
+                "target": {
+                    "value": "1 creature made of organic material"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "earth",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "tLZYrQvlF29bK0lM",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj"
+            },
+            "img": "systems/pf2e/icons/spells/scrying.webp",
+            "name": "Scrying",
+            "sort": 300000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
+                },
+                "description": {
+                    "value": "<p>You magically spy on a creature of your choice. Scrying works like @UUID[Compendium.pf2e.spells-srd.Item.Clairvoyance], except that the image you receive is less precise, insufficient for teleport and similar spells. Instead of creating an eye in a set location within 500 feet, you instead create an eye that manifests just above the target. You can choose a target either by name or by touching one of its possessions or a piece of its body. If you haven't met the target in person, scrying's DC is 2 lower, and if you are unaware of the target's identity (perhaps because you found an unknown creature's fang at a crime scene), the DC is instead 10 lower. The effect of scrying depends on the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The spell fails and the target is temporarily immune for 1 week. The target also gains a glimpse of you and learns its rough distance and direction from you.</p>\n<p><strong>Success</strong> The spell fails and the target is temporarily immune for 1 day.</p>\n<p><strong>Failure</strong> The spell succeeds.</p>\n<p><strong>Critical Failure</strong> The spell succeeds, and the eye follows the target if it moves, traveling up to 60 feet per round.</p>"
+                },
+                "duration": {
+                    "sustained": true,
+                    "value": "10 minutes"
+                },
+                "level": {
+                    "value": 6
+                },
+                "location": {
+                    "heightenedLevel": 6,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "planetary"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "scrying",
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "10 minutes"
+                },
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "scrying"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "rcgB2Ykf6tDxkNOt",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.nH3Rgzzv0b6IeKdd"
+            },
+            "img": "icons/commodities/stone/stone-porous-blue.webp",
+            "name": "Speak With Stones (At Will)",
+            "sort": 400000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You can ask questions of and receive answers from natural or worked stone. While stone is not intelligent, you speak with the natural spirits of the stone, which have a personality colored by the type of stone, as well as by the type of structure the stone is part of, for worked stone. A stone's perspective, perception, and knowledge give it a worldview different enough from a human's that it doesn't consider the same details important. Stones can mostly answer questions about creatures that touched them in the past and what is concealed beneath or behind them.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is 8 hours.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "1 hour"
+                },
+                "level": {
+                    "value": 5
+                },
+                "location": {
+                    "heightenedLevel": 6,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": ""
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "speak-with-stones",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "earth",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "HTs7v9QRhiIrOOCL",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.kOa055FIrO9Smnya"
+            },
+            "img": "icons/commodities/stone/paver-brick-brown.webp",
+            "name": "Wall of Stone",
+            "sort": 500000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You shape a wall of solid stone. You create a 1-inch-thick wall of stone up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 5
+                },
+                "location": {
+                    "heightenedLevel": 7,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "wall-of-stone",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "3"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "earth",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "Em4jd3xK4FQ0fls4",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.McnPlLFvKtQVXNcG"
+            },
+            "img": "systems/pf2e/icons/spells/shape-stone.webp",
+            "name": "Shape Stone (At Will)",
+            "sort": 600000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "reflex"
+                    }
+                },
+                "description": {
+                    "value": "<p>You shape the stone into a rough shape of your choice. The shaping process is too crude to produce intricate parts, fine details, moving pieces, or the like. Any creatures standing atop the stone when you reshape it must each attempt a Reflex save or Acrobatics check.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] atop the stone.</p>\n<p><strong>Critical Failure</strong> The creature falls off the stone (if applicable) and lands Prone.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "level": {
+                    "value": 4
+                },
+                "location": {
+                    "heightenedLevel": 4,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "touch"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "shape-stone",
+                "target": {
+                    "value": "cube of stone 10 feet across or smaller"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "earth",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "tKerU8e1XU9wgzQR",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
+            },
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+            "name": "Translocate",
+            "sort": 700000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "levels": {
+                        "5": {
+                            "range": {
+                                "value": "1 mile"
+                            }
+                        }
+                    },
+                    "type": "fixed"
+                },
+                "level": {
+                    "value": 4
+                },
+                "location": {
+                    "heightenedLevel": 5,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "translocate",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "v8zUMxOIJPWB2LcR",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8"
+            },
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+            "name": "Translocate (At Will)",
+            "sort": 800000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "levels": {
+                        "5": {
+                            "range": {
+                                "value": "1 mile"
+                            }
+                        }
+                    },
+                    "type": "fixed"
+                },
+                "level": {
+                    "value": 4
+                },
+                "location": {
+                    "heightenedLevel": 4,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "translocate",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "teleportation"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "W2LbzU9KT53XjJAc",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H"
+            },
+            "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+            "name": "Earthbind (At Will)",
+            "sort": 900000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
+                    }
+                },
+                "description": {
+                    "value": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "varies"
+                },
+                "level": {
+                    "value": 3
+                },
+                "location": {
+                    "heightenedLevel": 4,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "120 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "earthbind",
+                "target": {
+                    "value": "1 flying creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "DkfjGy5iD8Dmyjb7",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9"
+            },
+            "img": "icons/skills/melee/shield-damaged-broken-gold.webp",
+            "name": "Shatter (At Will)",
+            "sort": 1000000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "sonic"
+                    }
+                },
+                "defense": null,
+                "description": {
+                    "value": "<p>A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the Hardness the spell ignores increases by 2.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "damage": {
+                        "0": "1d10"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 2
+                },
+                "location": {
+                    "heightenedLevel": 5,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "shatter",
+                "target": {
+                    "value": "1 unattended object"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "occult",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "sonic"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "CD1UTMgJKRUfoSpV",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj"
+            },
+            "img": "systems/pf2e/icons/spells/summon-elemental.webp",
+            "name": "Summon Elemental (Earth Only)",
+            "sort": 1100000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You conjure an elemental to fight for you. This works like @UUID[Compendium.pf2e.spells-srd.Item.Summon Animal], except you summon a common creature that has the elemental trait and whose level is 1 or lower.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>"
+                },
+                "duration": {
+                    "sustained": true,
+                    "value": "1 minute"
+                },
+                "level": {
+                    "value": 2
+                },
+                "location": {
+                    "heightenedLevel": 7,
+                    "value": "yiIvzLhqLKQBotmB"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "summon-elemental",
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "3"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "primal"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "manipulate"
+                    ]
+                }
+            },
+            "type": "spell"
+        },
+        {
+            "_id": "6Z5As0Vk0ZFyn7yE",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Claw",
+            "sort": 1200000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "custom": "",
+                    "value": [
+                        "constraining-crystal"
+                    ]
+                },
+                "bonus": {
+                    "value": 28
+                },
+                "damageRolls": {
+                    "pyX5u713YdVEBMke": {
+                        "damage": "3d10+10",
+                        "damageType": "slashing"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "finesse",
+                        "magical"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "6wSSM9Kc0yzOsFx8",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Crystal Wand",
+            "sort": 1300000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 28
+                },
+                "damageRolls": {
+                    "BJdayUJB8imA9OA6": {
+                        "damage": "3d4+10",
+                        "damageType": "piercing"
+                    },
+                    "XdlLgFOUOy0lqdUm": {
+                        "damage": "4d6",
+                        "damageType": "poison"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "finesse",
+                        "magical",
+                        "radiation"
+                    ]
+                },
+                "weaponType": {
+                    "value": "melee"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "N6CPYKKItLvvcxLC",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Crystal Shard",
+            "sort": 1400000,
+            "system": {
+                "attack": {
+                    "value": ""
+                },
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 28
+                },
+                "damageRolls": {
+                    "c9sQE01p4Y2v8MaT": {
+                        "damage": "5d6+6",
+                        "damageType": "piercing"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "earth",
+                        "magical",
+                        "range-increment-100"
+                    ]
+                },
+                "weaponType": {
+                    "value": "ranged"
+                }
+            },
+            "type": "melee"
+        },
+        {
+            "_id": "UrE3kHdNPQpWWXvj",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Tremorsense (Imprecise) 120 feet",
+            "sort": 1500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "tremorsense",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "gBajDLrXq7pHDmg3",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Telepathy 300 feet",
+            "sort": 1600000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "telepathy",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "aura",
+                        "magical"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "tRKUVrYpL8vpibQP",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "+2 Status to Recall Knowledge About Earth",
+            "sort": 1700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "action:recall-knowledge",
+                            "earth"
+                        ],
+                        "selector": "skill-check",
+                        "type": "status",
+                        "value": 2
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "ffFiHpJiGqW1RE6q",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Craft Crystal Wand",
+            "sort": 1800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> The vault keeper spends 10 minutes creating a magic wand out of radioactive green crystal, containing any 5th-rank or lower earth spell of their choice. The wand can be used by other creatures, but it crumbles to sand at the end of the day and has no monetary value.</p>"
+                },
+                "frequency": {
+                    "max": 2,
+                    "per": "day"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "exploration"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "xLxAr9O3KpGR6Les",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Item Caster",
+            "sort": 1900000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>The vault keeper can Cast a Spell from any item (such as a staff or wand) as though it were on their spell list.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "3I2wnIEzRXgtx8Zb",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
+            },
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Attack of Opportunity",
+            "sort": 2000000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "attack-of-opportunity",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "D1MoXz1bpt97hDAJ",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Constraining Crystal",
+            "sort": 2100000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>When the vault keeper deals damage with a claw Strike, glowing green crystals cluster at the site of the attack. The target must succeed at a @Check[fortitude|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 hour (or @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} on a critical failure). If the creature is already clumsy due to constraining crystal, additional failures increase that clumsy value instead, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 4}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "earth",
+                        "magical"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "jLxHgJbqySWEesMi",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Crystal Burst",
+            "sort": 2200000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>An explosion of razor-sharp splinters deals @Damage[15d6[piercing]|traits:item:frequency:limited] damage in a @Template[burst|distance:30] within 120 feet, with a @Check[reflex|dc:35|basic] save. The vault keeper can't use Crystal Burst again for [[/gmr 1d4 #Recharge Crystal Burst]]{1d4 rounds}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "arcane",
+                        "earth"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "2cB0ySa762HhhhQE",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Slashing Surge",
+            "sort": 2300000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The vault keeper Strides or Climbs and makes two claw Strikes at any point during that movement. Each Strike must target a different creature. The multiple attack penalty doesn't increase until after both attacks.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "aHiw0SbpAUfBDBPl",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Planar Lore",
+            "sort": 2400000,
+            "system": {
+                "description": {
+                    "value": ""
+                },
+                "mod": {
+                    "value": 28
+                },
+                "proficient": {
+                    "value": 0
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null
+            },
+            "type": "lore"
+        }
+    ],
+    "name": "Vault Keeper",
+    "system": {
+        "abilities": {
+            "cha": {
+                "mod": 6
+            },
+            "con": {
+                "mod": 6
+            },
+            "dex": {
+                "mod": 8
+            },
+            "int": {
+                "mod": 8
+            },
+            "str": {
+                "mod": 4
+            },
+            "wis": {
+                "mod": 4
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 36
+            },
+            "adjustment": null,
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "",
+                "max": 200,
+                "temp": 0,
+                "value": 200
+            },
+            "immunities": [
+                {
+                    "exceptions": [],
+                    "type": "bleed"
+                },
+                {
+                    "exceptions": [],
+                    "type": "paralyzed"
+                },
+                {
+                    "exceptions": [],
+                    "type": "poison"
+                },
+                {
+                    "exceptions": [],
+                    "type": "sleep"
+                },
+                {
+                    "exceptions": [],
+                    "type": "radiation"
+                }
+            ],
+            "resistances": [
+                {
+                    "doubleVs": [],
+                    "exceptions": [
+                        "adamantine"
+                    ],
+                    "type": "physical",
+                    "value": 15
+                }
+            ],
+            "speed": {
+                "otherSpeeds": [
+                    {
+                        "type": "climb",
+                        "value": 35
+                    }
+                ],
+                "value": 35
+            }
+        },
+        "details": {
+            "blurb": "",
+            "languages": {
+                "details": "telepathy 300 feet",
+                "value": [
+                    "orvian",
+                    "petran"
+                ]
+            },
+            "level": {
+                "value": 14
+            },
+            "privateNotes": "",
+            "publicNotes": "<p>The vault keepers lost Sairazul's spark and have life spans of two to three millennia. They maintain and protect the xiomorns' many experiments.</p>\n<hr />\n<p>When Sairazul created xiomorns, they were immortal. She created 65,536, all in her own image, and all imbued with a piece of her divine spark. During her imprisonment, Ayrzul used visions of a future extinction to manipulate them into sacrificing their power to him. This sacrifice split xiomorns into two classes: 32,768 vault builders who kept Sairazul's essence and 32,768 vault keepers who would live forever no longer. For millennia, xiomorns built a vast, magical civilization across the Plane of Earth, and when there was no space left to build, they left. On each new world, xiomorns build their vaults and conduct their experiments, endlessly searching for clues to help them avoid their extinction.</p>\n<h2>Vault Seeds</h2>\n<p>Xiomorns create magical underground caverns using vault seeds, ancient magical tools bequeathed to their species by Ayrzul as a reward for their sacrifice. The vault seeds were used to create the Vaults of Orv in Golarion's Darklands, and an accident involving an out-of-control vault seed created the mysterious Emerald Spire.</p>\n<h2>Crystal Crafters</h2>\n<p>Xiomorns have mastered the creation of numerous magic items made of crystal beyond generation stones and vault seeds. These include pillars of black stone called whisperstones that allow xiomorns to communicate telepathically across vaults, orvgates that use weblike funnels of green crystal to allow teleportation between Darklands vaults, and a vortex in Orv called the Crystal Womb that connects to a crucial stronghold on the Plane of Earth.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 26,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 120,
+                    "type": "tremorsense"
+                }
+            ]
+        },
+        "resources": {},
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 24
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 28
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 22
+            }
+        },
+        "skills": {
+            "acrobatics": {
+                "base": 26
+            },
+            "arcana": {
+                "base": 26
+            },
+            "athletics": {
+                "base": 26
+            },
+            "crafting": {
+                "base": 26
+            },
+            "nature": {
+                "base": 24
+            },
+            "thievery": {
+                "base": 24
+            }
+        },
+        "traits": {
+            "rarity": "rare",
+            "size": {
+                "value": "med"
+            },
+            "value": [
+                "earth",
+                "elemental"
+            ]
+        }
+    },
+    "type": "npc"
+}

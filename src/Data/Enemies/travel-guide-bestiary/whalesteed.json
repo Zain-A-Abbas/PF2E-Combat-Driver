@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -65,11 +67,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -81,52 +85,10 @@
             "type": "melee"
         },
         {
-            "_id": "I1cXiDVfmHepyrXf",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "TBp1tYUPtYoOEonO",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Aquatic Echolocation",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -138,23 +100,16 @@
                 "description": {
                     "value": "<p>A whalesteed can use its hearing as a precise sense at the listed range, but only underwater.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -163,7 +118,7 @@
             "_id": "khgGPSxgTQcgev3o",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Deep Breath",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -175,23 +130,16 @@
                 "description": {
                     "value": "<p>A whalesteed can hold its breath for 2 hours.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -200,7 +148,7 @@
             "_id": "jN9qLXiQfaOBlFfC",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Ramming Speed",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -210,10 +158,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The whalesteed @UUID[Compendium.pf2e.actionspf2e.Item.Swim]{Swims} twice and then makes a snout Strike. As long as it moved at least 20 feet, it gains a +1 circumstance bonus to its attack roll. A Large or smaller creature hit by this attack must succeed at a @Check[type:fortitude|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>"
+                    "value": "<p>The whalesteed @UUID[Compendium.pf2e.actionspf2e.Item.Swim]{Swims} twice and then makes a snout Strike. As long as it moved at least 20 feet, it gains a +1 circumstance bonus to its attack roll. A Large or smaller creature hit by this attack must succeed at a @Check[fortitude|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -233,44 +183,12 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "xjNf8MOjxVW67PMg",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Whalesteed",
@@ -309,12 +227,6 @@
                 "temp": 0,
                 "value": 16
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -326,19 +238,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant bottlenose dolphin",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 0
             },
             "privateNotes": "",
             "publicNotes": "<p>Whalesteeds were first tamed in the Shackles as part of an ambush between rival pirate captains. Whalesteed riders are still an unusual sight, as learning to master the skill takes years of training.</p>",
-            "source": {
-                "value": "Pathfinder Lost Omens: Travel Guide"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Lost Omens: Travel Guide"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 120,
+                    "type": "echolocation"
+                },
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -355,19 +286,13 @@
                 "value": 5
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 6
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "aquatic echolocation 120 feet, low-light vision"
-            },
             "size": {
                 "value": "lg"
             },

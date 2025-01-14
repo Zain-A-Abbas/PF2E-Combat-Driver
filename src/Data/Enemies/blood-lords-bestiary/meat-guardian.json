@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 20,
                     "mod": 0,
@@ -117,86 +54,20 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "focus"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 20,
                     "mod": 0,
@@ -210,51 +81,37 @@
         },
         {
             "_id": "qCJ66BHweOu4d2aO",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.qwZBXN6zBoB9BHXE"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.qwZBXN6zBoB9BHXE"
             },
             "img": "systems/pf2e/icons/spells/divine-lance.webp",
             "name": "Divine Lance",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "untyped"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "spirit"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You unleash a beam of divine energy. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or if your deity is true neutral. Make a ranged spell attack roll against the target's AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4 + your spellcasting ability modifier (double damage on a critical hit). The spell gains the trait of the alignment you chose.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                    "value": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -269,56 +126,35 @@
                 "location": {
                     "value": "6mcuch5miksS88N3"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "overlays": {},
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "divine-lance",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
                         "attack",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "sanctified"
                     ]
                 }
             },
@@ -326,42 +162,31 @@
         },
         {
             "_id": "kMPVxLb8NsA6KdZ9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.mFHQ2u4LWiejqKQG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.mFHQ2u4LWiejqKQG"
             },
-            "img": "systems/pf2e/icons/spells/overstuff.webp",
+            "img": "icons/magic/acid/dissolve-vomit-green-brown.webp",
             "name": "Overstuff",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
+                    }
                 },
                 "description": {
                     "value": "<p>Huge amounts of food and drink fill the target. It receives a full meal's worth of nourishment and must attempt a Fortitude save. A target @UUID[Compendium.pf2e.conditionitems.Item.Sickened] by this spell takes a -10-foot status penalty to its Speed until it's no longer Sickened.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}, but if it spends an action to end the condition, it succeeds automatically.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -369,53 +194,31 @@
                 "location": {
                     "value": "mVR4VRFVAEwUof36"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "overstuff",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
-                        "transmutation"
+                        "concentrate",
+                        "focus",
+                        "manipulate"
                     ]
                 }
             },
@@ -423,50 +226,41 @@
         },
         {
             "_id": "moZcaMlFqbGBUTZ7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.GYI4xloAgkm6tTrT"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.GYI4xloAgkm6tTrT"
             },
             "img": "systems/pf2e/icons/spells/touch-of-undeath.webp",
             "name": "Touch of Undeath",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "focus"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d6"
-                        }
+                    "0": {
+                        "category": null,
+                        "formula": "1d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You attack the target's life force with undeath, dealing 1d6 negative damage. The target must attempt a Fortitude save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and positive effects heal it only half as much as normal for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, and positive effects heal it only half as much as normal for 1 minute.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 1d6."
+                    "value": "<p>You attack the target's life force with undeath, dealing 1d6 void damage. The target must attempt a Fortitude save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and vitality effects heal it only half as much as normal for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, and vitality effects heal it only half as much as normal for 1 minute.</p>\n<hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -481,54 +275,31 @@
                 "location": {
                     "value": "mVR4VRFVAEwUof36"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "touch-of-undeath",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature"
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": []
-                },
                 "traits": {
                     "rarity": "uncommon",
+                    "traditions": [],
                     "value": [
                         "cleric",
-                        "negative",
-                        "necromancy"
+                        "focus",
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -561,11 +332,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -605,11 +378,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -647,11 +422,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -667,57 +444,13 @@
             "type": "melee"
         },
         {
-            "_id": "U291oOsn8aI5u9Za",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 900000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "zvdJqSyO972cDcqm",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Divine Destruction",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -728,43 +461,33 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing @Damage[5d6[negative]] damage. Each creature in the area must attempt a @Check[type:will|dc:20|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2}.</p>"
+                    "value": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[5d6[void]] damage. Each creature in the area must attempt a @Check[will|dc:20|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "divine-warden-divine-destruction",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "necromancy",
-                        "negative"
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "jc8sf181cpfZ0al3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Faith Bound",
-            "sort": 1100000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -776,26 +499,18 @@
                 "description": {
                     "value": "<p>A divine warden can't attack a creature that openly wears or displays the religious symbol of the divine warden's patron deity unless that creature uses a hostile action against the divine warden first. If the divine warden is intelligent, it can also attack a creature it believes isn't faithful to its deity or who wears the religious symbol as a ruse (typically after succeeding at a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.Sense Motive]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "divine-warden-faith-bound",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -804,6 +519,36 @@
             "_id": "OEYNgSplNvqswLPK",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Golem Antimagic",
+            "sort": 1100000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>Harmed by fire (@Damage[4d6[untyped]], @Damage[1d8[untyped]] from areas or persistent damage); healed by electricity (area @Damage[1d6[healing]] HP); slowed by cold</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GolemAntimagic]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "hswGSODfM3HdK8zC",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stench",
             "sort": 1200000,
             "system": {
                 "actionType": {
@@ -814,33 +559,40 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>harmed by fire ([[/r 4d6]], [[/r 1d8]] from areas or persistent damage); healed by electricity (area [[/r 1d6]] HP); slowed by cold</p>\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as “cold and water”), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
+                    "value": "<p>40 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 40,
+                        "slug": "stench",
+                        "traits": [
+                            "olfactory",
+                            "disease"
+                        ]
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
+                    "value": [
+                        "aura",
+                        "disease",
+                        "olfactory"
+                    ]
                 }
             },
             "type": "action"
         },
         {
-            "_id": "hswGSODfM3HdK8zC",
+            "_id": "AldxbbHYC1u6qB4A",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Stench",
+            "name": "Vulnerable to Gentle Repose",
             "sort": 1300000,
             "system": {
                 "actionType": {
@@ -851,91 +603,30 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:40]{40 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+                    "value": "<p>Casting a @UUID[Compendium.pf2e.spells-srd.Item.Peaceful Rest] spell on a meat guardian causes it to grow stiff. The golem attempts a @Check[fortitude|dc:20] save. It's unaffected on a critical success, @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds} on a success, and on a failure is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and slowed for 1d4 rounds.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "Aura",
-                        "radius": 40,
-                        "slug": "stench",
-                        "traits": [
-                            "aura",
-                            "olfactory",
-                            "disease"
-                        ]
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "aura",
-                        "olfactory",
-                        "disease"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "AldxbbHYC1u6qB4A",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Vulnerable to Gentle Repose",
-            "sort": 1400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>Casting a <em>@UUID[Compendium.pf2e.spells-srd.Item.Gentle Repose]</em> spell on a meat guardian causes it to grow stiff. The golem attempts a @Check[type:fortitude|dc:20] save. It's unaffected on a critical success, @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for [[/br 1d4 #Rounds]]{1d4 rounds} on a success, and on a failure is @UUID[Compendium.pf2e.conditionitems.Item.Immobilized] and slowed for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "NaBFsQf6B2AYHQGS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.UlKGxPaKtRGWuq3V"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.UlKGxPaKtRGWuq3V"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Faithful Weapon",
-            "sort": 1500000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -947,23 +638,16 @@
                 "description": {
                     "value": "<p>Scythe</p>\n<hr />\n<p>A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.Striking]</em> rune while the divine warden wields it; at 12th level, these effects are of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.Striking (Greater)]{Greater Striking}</em> rune, and at 19th level, they're instead of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.Striking (Major)]{Major Striking}</em> rune.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "divine-warden-faithful-weapon",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -972,6 +656,41 @@
             "_id": "k2d7PB0MeYOIfjcj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Filth Fever",
+            "sort": 1500000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.Sickened] and @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] conditions from filth fever can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/gmr 1d4 #hours]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as long as it remains sickened (1 day)</p>\n<p><strong>Stage 4</strong> unconscious (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "disease"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "wDbMi1lnQxhLpIxn",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.L80gn6WOWi9roJW3"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Instrument of Faith",
             "sort": 1600000,
             "system": {
                 "actionType": {
@@ -982,95 +701,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.Sickened] and @UUID[Compendium.pf2e.conditionitems.Item.Unconscious] conditions from filth fever can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/br 1d4 #hours]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as long as it remains sickened (1 day)</p>\n<p><strong>Stage 4</strong> unconscious (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+                    "value": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a @UUID[Compendium.pf2e.spells-srd.Item.Heal] spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "disease"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "wDbMi1lnQxhLpIxn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.L80gn6WOWi9roJW3"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Instrument of Faith",
-            "sort": 1700000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a <em>@UUID[Compendium.pf2e.spells-srd.Item.Heal]</em> spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "divine-warden-instrument-of-faith",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "3Cj87sD6ahks4syM",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 15
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Meat Guardian",
@@ -1117,12 +762,6 @@
                     "type": "magic"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "resistances": [
                 {
                     "exceptions": [
@@ -1139,19 +778,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Divine warden carrion golem",
-            "creatureType": "Construct",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #182: Graveclaw"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #182: Graveclaw"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -1173,25 +826,20 @@
                 "value": 11
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 15
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "construct",
                 "divine",
+                "evil",
                 "golem",
                 "mindless"
             ]

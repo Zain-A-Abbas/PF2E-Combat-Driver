@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -45,52 +47,10 @@
             "type": "melee"
         },
         {
-            "_id": "l6oPZE6Gcn9lJVoU",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "0lvwb1cNAaOUc6Be",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "End the Charade",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -100,39 +60,30 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>When the doppelganger is transformed with Change Shape and another creature moves adjacent to them or uses a Strike or another hostile action against them, the doppelganger can use its reaction to revert to its natural form and make a Strike against that creature.</p>\n<p>If the creature was unaware the doppelganger was in disguise, that creature has the @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] condition against this Strike.</p>"
+                    "value": "<p>When the doppelganger is transformed with Change Shape and another creature moves adjacent to them or uses a Strike or another hostile action against them, the doppelganger can use its reaction to revert to its natural form and make a Strike against that creature.</p>\n<p>If the creature was unaware the doppelganger was in disguise, that creature has the @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] condition against this Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "LJKNy957UOv4LqE5",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -144,28 +95,20 @@
                 "description": {
                     "value": "<p>The doppelganger takes on the specific appearance of any Small or Medium humanoid it has seen. This doesn't change the doppelganger's Stride speed or their attack and damage bonuses with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
                         "concentrate",
-                        "polymorph",
-                        "transmutation"
+                        "polymorph"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -174,7 +117,7 @@
             "_id": "fIAhNhYo8hJML5xU",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Mind Reading",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -184,120 +127,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The doppelganger attempts to read the surface thoughts of one creature within 30 feet. The target resists if it succeeds at a @Check[type:will|dc:21] save.</p>"
+                    "value": "<p>The doppelganger attempts to read the surface thoughts of one creature within 30 feet. The target resists if it succeeds at a @Check[will|dc:21] save.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
                         "manipulate"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "ywiK91DFfEjmHLF8",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "26h2QW6N7Qc8lyEu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Tzavp3hjzoCQlYZJ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Society",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "I2uNuhoVdr1VC6bN",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Doppelganger (BB)",
@@ -339,31 +186,39 @@
                 "temp": 0,
                 "value": 50
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 7
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 25
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Humanoid",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "<p>Doppelgangers can transform into perfect copies of other creatures but have indeterminate forms in their natural states.</p>",
-            "source": {
-                "value": "Pathfinder Beginner Box"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Beginner Box"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 7,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {
             "focus": {
@@ -385,16 +240,22 @@
                 "value": 11
             }
         },
+        "skills": {
+            "deception": {
+                "base": 11
+            },
+            "diplomacy": {
+                "base": 11
+            },
+            "society": {
+                "base": 8
+            },
+            "stealth": {
+                "base": 8
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -68,11 +70,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -87,94 +91,10 @@
             "type": "melee"
         },
         {
-            "_id": "Eqk7JKBf2mGkZbCf",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "jXl0E4vOdMPzQ3Hi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "Hsh9yw0IW6kN2n8t",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Electrified Blood",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -186,25 +106,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the sea drake</p>\n<hr />\n<p><strong>Effect</strong> An arc of electricity courses through the sea drake's blood. The triggering creature takes @Damage[1d6[electricity]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "electricity"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -213,7 +126,7 @@
             "_id": "hTuKXeGWvUSUobx7",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Ball Lightning Breath",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -223,29 +136,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing @Damage[7d6[electricity]] damage (@Check[type:reflex|dc:24|basic:true] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[type:reflex|dc:22|basic:true] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/br 1d6 #Recharge Ball Lightning Breath]]{1d6 rounds}.</p>"
+                    "value": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing @Damage[7d6[electricity]] damage (@Check[reflex|dc:24|basic] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[reflex|dc:22|basic] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/gmr 1d6 #Recharge Ball Lightning Breath]]{1d6 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "electricity",
-                        "evocation"
+                        "electricity"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -254,7 +159,7 @@
             "_id": "iWYCpNJjdadjk8JX",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Briny Wound",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -264,25 +169,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A sea drake's saliva carries a large quantity of salt, making its bite wounds even more painful. When a creature takes damage from a sea drake's jaws Strike, the creature must attempt a @Check[type:fortitude|dc:24] save; the creature is then temporarily immune to briny wound for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as long as it's sickened.</p>"
+                    "value": "<p>A sea drake's saliva carries a large quantity of salt, making its bite wounds even more painful. When a creature takes damage from a sea drake's jaws Strike, the creature must attempt a @Check[fortitude|dc:24] save; the creature is then temporarily immune to briny wound for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} as long as it's sickened.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "briny-wound",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -291,7 +189,7 @@
             "_id": "uhW4OwaKUkyMz6W3",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Capsize",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -303,25 +201,18 @@
                 "description": {
                     "value": "<p>The drake tries to capsize an adjacent aquatic vessel of its size or smaller. The drake must succeed at an Athletics check with a DC of 25 (reduced by 5 for each size smaller the vessel is than the drake) or the pilot's Sailing Lore DC, whichever is higher.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -330,7 +221,7 @@
             "_id": "gBFFibeJFk4MB72C",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Draconic Frenzy",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -342,23 +233,16 @@
                 "description": {
                     "value": "<p>The sea drake makes one jaws Strike and two tail Strikes in any order.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -367,7 +251,7 @@
             "_id": "AbCU1QPQN43QSP6d",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Speed Surge",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -379,95 +263,24 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The sea drake Strides, Flies, or Swims twice.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 3,
+                    "per": "day",
+                    "value": 3
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "QkxKVhRYX9ktobSh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vDIcLSAxxtZB8LNd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 16
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "o66NLnnBm2IvMXpc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sea Drake",
@@ -517,12 +330,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 14
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -538,19 +345,40 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "Dragon",
+            "languages": {
+                "details": "",
+                "value": [
+                    "draconic"
+                ]
+            },
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Long and slender, sea drakes have fins down the length of their backs and webbing between their talons, making them just as adapted for gliding through ocean waves as the skies above. More solitary than most drakes, they hunt and live alone. Although most sea drakes make their roosts high on ocean-facing cliffs, it isn't unheard of for them to dwell in underwater caves, living entirely aquatic lives.</p>\n<hr />\n<p>Distant cousins to dragons, drakes menace and terrorize settlements.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 2"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 2"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 14,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -567,27 +395,26 @@
                 "value": 12
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 14
+            },
+            "athletics": {
+                "base": 16
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "draconic"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
                 "amphibious",
                 "dragon",
+                "evil",
                 "water"
             ]
         }

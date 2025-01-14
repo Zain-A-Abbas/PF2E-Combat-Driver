@@ -33,11 +33,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -64,20 +66,16 @@
                 "description": {
                     "value": "<p>A crawling slurry can sense nearby motion through vibration and air movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -96,32 +94,26 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> The crawling slurry takes bludgeoning damage from a creature it can sense within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> The crawling slurry ejects a splash of acid onto the creature, dealing acid damage equal to the bludgeoning damage dealt to the crawling slurry (@Check[type:reflex|dc:37|basic:true]).</p>"
+                    "value": "<p><strong>Trigger</strong> The crawling slurry takes bludgeoning damage from a creature it can sense within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> The crawling slurry ejects a splash of acid onto the creature, dealing acid damage equal to the bludgeoning damage dealt to the crawling slurry (@Check[reflex|dc:37|basic]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "BHcnRv87o75fQh7z",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Constrict",
@@ -135,25 +127,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>[[/r {(2d10+3)[bludgeoning],2d8[acid]}]]{2d10+3 bludgeoning damage plus 2d8 acid}, @Check[type:fortitude|dc:37|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "value": "<p>@Damage[(2d10+3)[bludgeoning],2d8[acid]]{2d10+3 bludgeoning damage plus 2d8 acid}, @Check[fortitude|dc:37|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -174,30 +159,24 @@
                 "description": {
                     "value": "<p>A crawling slurry's acid damages metals and organic materials but not stone.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "Hnu8sQjkICIDsSGc",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy"
             },
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Engulf",
@@ -211,35 +190,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Check[type:reflex|dc:37] save, @Damage[5d10[acid]] damage, @UUID[Compendium.pf2e.actionspf2e.Item.Escape] DC 37, Rupture 20. A crawling slurry regains 30 Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "value": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, @UUID[Compendium.pf2e.actionspf2e.Item.Escape] DC 37, Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "engulf",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "NJVwxKvOEFa9GACF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
@@ -255,88 +225,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "8g3z3risxnfvs0ql",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "wfwvtgwxsem2j3gk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.AcidicEnvironment",
-                        "predicate": [
-                            "terrain:acidic"
-                        ],
-                        "selector": "stealth",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+34 in Acidic Surroundings",
-                        "options": "terrain:acidic"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Crawling Slurry",
@@ -395,12 +296,6 @@
                     "type": "visual"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 26
-            },
             "shield": {
                 "ac": 2,
                 "brokenThreshold": 0,
@@ -420,19 +315,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 16
             },
             "privateNotes": "",
             "publicNotes": "<p>Acid damage can scar stone and reduce flesh to pitted chunks, but some organic compounds are resistant to acid and respond by combining into a mass of roiling, living slurry. These scarred clumps hunger to consume anything they can sense. They move with quick, darting contractions that surprise those used to facing slow-moving oozes.</p>",
-            "source": {
-                "value": "Pathfinder #174: Shadows of the Ancients"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #174: Shadows of the Ancients"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 26,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "motion-sense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -449,16 +361,25 @@
                 "value": 20
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 35
+            },
+            "stealth": {
+                "base": 30,
+                "special": [
+                    {
+                        "base": 34,
+                        "label": "in Acidic Surroundings",
+                        "predicate": [
+                            "terrain:acidic"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "motion sense 60 feet, no vision"
-            },
             "size": {
                 "value": "med"
             },

@@ -1,0 +1,44 @@
+{
+    "_id": "itVZwwvaXYN2zOR8",
+    "img": "systems/pf2e/icons/equipment/weapons/rapier.webp",
+    "name": "Effect: Parry Dance",
+    "system": {
+        "description": {
+            "value": "<p>The rake gains a +2 circumstance bonus to AC until the end of their next turn.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 4
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Book of the Dead"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "ac",
+                "type": "circumstance",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

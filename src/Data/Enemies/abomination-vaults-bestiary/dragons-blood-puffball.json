@@ -31,11 +31,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -71,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -90,10 +94,8 @@
         },
         {
             "_id": "xCCM8tyhLkWqYUpL",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.CG9ZpebqEUsftFgn"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.CG9ZpebqEUsftFgn"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Motion Sense 60 feet",
@@ -109,23 +111,16 @@
                 "description": {
                     "value": "<p>The monster senses motion through vibrations and air movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -145,51 +140,21 @@
                 "category": "defensive",
                 "deathNote": true,
                 "description": {
-                    "value": "<p>When the dragon's blood puffball dies, it explodes, dealing @Damage[7d8[poison]] damage to each creature in a @Template[type:emanation|distance:20] (@Check[type:fortitude|dc:26|basic:true] save).</p>"
+                    "value": "<p>When the dragon's blood puffball dies, it explodes, dealing @Damage[7d8[poison]] damage to each creature in a @Template[emanation|distance:20] (@Check[fortitude|dc:26|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "PMnbJnMP7fP2Ajvr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Dragon's Blood Puffball",
@@ -245,12 +210,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 10
@@ -263,19 +222,36 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "<p>This bulbous, deep red fungus looks like an enormous, decaying rose.</p>\n<hr />\n<p>Many benign puffball fungi cling to the detritus of forest floors in Darklands caverns. These fungi's giant versions are more mobile and dangerous.</p>",
-            "source": {
-                "value": "Pathfinder #165: Eyes of Empty Death"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #165: Eyes of Empty Death"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "motion-sense"
+                }
+            ],
+            "vision": false
         },
         "resources": {},
         "saves": {
@@ -292,16 +268,13 @@
                 "value": 12
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 14
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "motion sense 60 feet, no vision"
-            },
             "size": {
                 "value": "lg"
             },

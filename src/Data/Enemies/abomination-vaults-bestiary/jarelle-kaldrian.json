@@ -20,17 +20,19 @@
                 "damageRolls": {
                     "te1hjafookmiutlzo55n": {
                         "damage": "3d8",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,57 +48,13 @@
             "type": "melee"
         },
         {
-            "_id": "8nidqgL5pawfDVZa",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "HtINDVVIov9yMEhV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.BcSlVpaN72LoQ5BV"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Site Bound",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -108,86 +66,28 @@
                 "description": {
                     "value": "<p>Area <strong>C13</strong></p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-site-bound",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "P7RUoae9G01AaAHd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "ActiveEffectLike",
-                        "mode": "override",
-                        "path": "system.attributes.hp.negativeHealing",
-                        "value": true
-                    }
-                ],
-                "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XNJnpNGQCkQD00v3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Rejuvenation",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -200,39 +100,104 @@
                 "description": {
                     "value": "<p>Removing this room's tables and tools allows Jarelle to move on to the afterlife.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "ghost-rejuvenation",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "P7RUoae9G01AaAHd",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
                 }
             },
             "type": "action"
         },
         {
             "_id": "J1YjLfTIk9vqgvRy",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.iwLj14liESK5OBN8"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.iwLj14liESK5OBN8"
             },
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Malevolent Possession",
+            "sort": 500000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>Jarelle attempts to possess an adjacent corporeal creature. This has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.Possession] spell (with a spell DC of 22), except since Jarelle doesn't have a physical body, she is unaffected by that restriction of the spell.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
+                "rules": [],
+                "slug": "ghost-malevolent-possession",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "divine",
+                        "incapacitation",
+                        "mental",
+                        "possession"
+                    ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "DSrUNlWJjUN1fnWL",
+            "img": "systems/pf2e/icons/actions/TwoActions.webp",
+            "name": "Poisoned Breath",
             "sort": 600000,
             "system": {
                 "actionType": {
@@ -243,72 +208,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Jarelle attempts to possess an adjacent corporeal creature. This has the same effect as the <em>@UUID[Compendium.pf2e.spells-srd.Item.Possession]</em> spell (with a spell DC of 22), except since Jarelle doesn't have a physical body, she is unaffected by that restriction of the spell.</p>"
+                    "value": "<p>Jarelle exhales a @Template[cone|distance:15] of toxic mist that deals @Damage[5d6[poison]] damage (@Check[fortitude|dc:22|basic] save; on a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 24 hours).</p>\n<p>She then can't use Poisoned Breath again for [[/gmr 1d4 #Recharge Poisoned Breath]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "ghost-malevolent-possession",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "divine",
-                        "incapacitation",
-                        "mental",
-                        "necromancy",
-                        "possession"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "DSrUNlWJjUN1fnWL",
-            "img": "systems/pf2e/icons/actions/TwoActions.webp",
-            "name": "Poisoned Breath",
-            "sort": 700000,
-            "system": {
-                "actionType": {
-                    "value": "action"
-                },
-                "actions": {
-                    "value": 2
-                },
-                "category": "offensive",
-                "description": {
-                    "value": "<p>Jarelle exhales a @Template[type:cone|distance:15] of toxic mist that deals @Damage[5d6[poison]] damage (@Check[type:fortitude|dc:22|basic:true] save; on a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 24 hours).</p>\n<p>She then can't use Poisoned Breath again for [[/br 1d4 #Recharge Poisoned Breath]]{1d4 rounds}.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "necromancy",
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -317,7 +231,7 @@
             "_id": "pIZQ59XrVNVhyiJY",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Library Lore",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "description": {
                     "value": ""
@@ -328,11 +242,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -340,7 +256,7 @@
             "_id": "Iif4AgPk3mZlhi6z",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Library Lore",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "description": {
                     "value": ""
@@ -351,34 +267,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "gNxY2gg5j1lF9JkY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -414,7 +309,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing, rejuvenation",
+                "details": "void healing, rejuvenation",
                 "max": 48,
                 "temp": 0,
                 "value": 48
@@ -439,12 +334,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -453,7 +342,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -470,19 +359,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "Female human ghost librarian",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "aklo",
+                    "common",
+                    "necril",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #163: Ruins of Gauntlight"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #163: Ruins of Gauntlight"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -499,29 +407,24 @@
                 "value": 12
             }
         },
+        "skills": {
+            "stealth": {
+                "base": 14
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "aklo",
-                    "common",
-                    "necril",
-                    "undercommon"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "evil",
                 "ghost",
                 "incorporeal",
+                "lawful",
                 "spirit",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

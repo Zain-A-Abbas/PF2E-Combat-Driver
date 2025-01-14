@@ -16,26 +16,19 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> 4 rounds pass after the agents' arrival without anyone smothering them</p>\n<hr />\n<p><strong>Effect</strong> The barrels explode, dealing @Damage[(3d6+8)[fire]] damage to everything within a 20-foot radius (@Check[type:reflex|dc:20|basic:true|traits:fire] save).</p>"
+                    "value": "<p><strong>Trigger</strong> 4 rounds pass after the agents' arrival without anyone smothering them</p>\n<hr />\n<p><strong>Effect</strong> The barrels explode, dealing @Damage[(3d6+8)[fire]] damage to everything within a 20-foot radius (@Check[reflex|dc:20|basic|traits:fire] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "selected": {},
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -69,17 +62,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Wooden barrels marked with an oil-drop symbol catch fire and explode.</p>",
-            "disable": "<p>@Check[type:survival|dc:20|name:Smother the Flames] to smother the flames without rupturing the barrels</p>",
+            "disable": "<p>@Check[survival|dc:20|name:Smother the Flames] to smother the flames without rupturing the barrels</p>",
             "isComplex": false,
             "level": {
                 "value": 2
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #157: Devil at the Dreaming Palace"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #157: Devil at the Dreaming Palace"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {
@@ -102,8 +96,8 @@
                 "value": "med"
             },
             "value": [
-                "fire",
-                "environmental"
+                "environmental",
+                "fire"
             ]
         }
     },

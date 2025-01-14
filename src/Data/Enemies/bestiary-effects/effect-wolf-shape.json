@@ -1,0 +1,53 @@
+{
+    "_id": "o6ZI01zZBQDASuaw",
+    "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+    "name": "Effect: Wolf Shape",
+    "system": {
+        "description": {
+            "value": "<p>The barghest gains Speed 40 and its jaws gain @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Knockdown].</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "land",
+                "value": 40
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Knockdown"
+            },
+            {
+                "key": "Note",
+                "selector": "jaws-attack",
+                "text": "PF2E.NPC.Abilities.Glossary.Knockdown",
+                "title": "<span class=\"action-glyph\">1</span> @Localize[PF2E.AttackEffectKnockdown] ({item|name})"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -69,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -111,11 +115,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -130,52 +136,10 @@
             "type": "melee"
         },
         {
-            "_id": "H925aaHFfAyXeLkl",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "vCZP7eeVSKKUB4y7",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Caustic Fog",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -185,10 +149,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>Whenever a gutrager is within another xulgath's stench aura, a fog appears around the gutrager; creatures in the fog (including the gutrager) can see as normal, but they are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] from creatures outside the fog. Non-xulgaths that begin their turn in the fog take @Damage[2d6[acid]] damage. Strong winds suppress this ability.</p>"
+                    "value": "<p>10 feet. Whenever a gutrager is within another xulgath's stench aura, a fog appears around the gutrager; creatures in the fog (including the gutrager) can see as normal, but they are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] from creatures outside the fog. Non-xulgaths that begin their turn in the fog take @Damage[2d6[acid]] damage. Strong winds suppress this ability.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -196,27 +162,17 @@
                         "radius": 10,
                         "slug": "caustic-fog",
                         "traits": [
-                            "acid",
-                            "aura"
+                            "acid"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "acid",
                         "aura"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -225,7 +181,7 @@
             "_id": "yKLg0f7z9z5rM6iA",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Self-Detonate",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -235,27 +191,20 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The gutrager has 45 or fewer HP</p>\n<hr />\n<p><strong>Effect</strong> The gutrager compresses its gut and explodes in a burst of viscera, dying instantly and dealing @Damage[8d8[acid]] damage to creatures and unattended objects in a @Template[type:emanation|distance:20] centered on the gutrager (@Check[type:reflex|dc:31|basic:true] save).</p>"
+                    "value": "<p><strong>Requirements</strong> The gutrager has 45 or fewer HP</p>\n<hr />\n<p><strong>Effect</strong> The gutrager compresses its gut and explodes in a burst of viscera, dying instantly and dealing @Damage[8d8[acid]] damage to creatures and unattended objects in a @Template[emanation|distance:20] centered on the gutrager (@Check[reflex|dc:31|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "acid"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -264,7 +213,7 @@
             "_id": "PVSV062yywdBQCMh",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Corrosive Kiss",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -274,99 +223,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The gutrager propels its esophagus out of its body to deliver an acidic blow. It makes an unarmed Strike against a creature or unattended object within 30 feet with a [[/r 1d20+23 #Attack Roll]]{+23} attack bonus.</p>\n<p>On a hit, the target takes @Damage[(2d6+8)[bludgeoning]] damage plus @Damage[4d6[acid]] damage.</p>\n<p>On a critical hit, the target also takes [[/r 2d6[persistent,acid]]] damage.</p>\n<p>The gutrager is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 round as it re-coils its esophagus.</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The gutrager propels its esophagus out of its body to deliver an acidic blow. It makes an unarmed Strike against a creature or unattended object within 30 feet with a [[/r 1d20+23 #Attack Roll]]{+23} attack bonus.</p>\n<p>On a hit, the target takes @Damage[(2d6+8)[bludgeoning]] damage plus @Damage[4d6[acid]] damage.</p>\n<p>On a critical hit, the target also takes @Damage[2d6[persistent,acid]] damage.</p>\n<p>The gutrager is @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 round as it re-coils its esophagus.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "acid"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "BIVZgHhHyJaFSEaI",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Bh7CIfDnX11kEN8v",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 22
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bUJcBXNiI8FYmEmt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Xulgath Gutrager",
@@ -405,12 +283,6 @@
                 "temp": 0,
                 "value": 190
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 19
-            },
             "resistances": [
                 {
                     "type": "acid",
@@ -423,19 +295,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Humanoid",
+            "languages": {
+                "details": "",
+                "value": [
+                    "draconic",
+                    "sakvroth"
+                ]
+            },
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Xulgath gutragers exhibit more extreme developments along the same physiological path as their bilebearer cousins (<em>Pathfinder Adventure Path #151: The Show Must Go On</em>). They are stockier and faster, with necks and limbs corded with muscle. They are also denser, with multiple stomachs full of fluids even more caustic than those of the bilebearer. Like the bilebearer, gutragers lack the distinctive stench typical of most xulgaths.</p>\n<p>A gutrager's torso conceals its most disturbing feature-a densely coiled esophagus. Pressurized bladders and a muscular throat allow the gutrager to propel its esophagus outward in an explosion of yellow flesh and acidic bile; caustic stomach acid coating the esophagus makes even brief physical contact with the organ dangerous. As a last resort, the gutrager can intentionally accelerate the corrosion in its esophagus, releasing vile acid in a burst that also ends its life.</p>",
-            "source": {
-                "value": "Pathfinder #154: Siege of the Dinosaurs"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #154: Siege of the Dinosaurs"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 19,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -452,23 +341,25 @@
                 "value": 17
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 22
+            },
+            "athletics": {
+                "base": 22
+            },
+            "stealth": {
+                "base": 20
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "draconic",
-                    "undercommon"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "humanoid",
                 "xulgath"
             ]

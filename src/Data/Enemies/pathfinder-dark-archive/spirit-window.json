@@ -1,0 +1,100 @@
+{
+    "_id": "eX1vJnbUagKPdSbU",
+    "img": "systems/pf2e/icons/default-icons/hazard.svg",
+    "items": [
+        {
+            "_id": "2WfGqYcBTEQfIJje",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Siphon Soul",
+            "sort": 0,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": null,
+                "description": {
+                    "value": "<p><strong>Trigger</strong> A creature touches the window</p><hr /><p><strong>Effect</strong> The triggering creature takes @Damage[(8d10 + 44)[void]] damage (@Check[will|dc:42|basic]) as the window attempts to steal their soul. If this damage would kill the target, its soul is trapped inside the window with the effects of @UUID[Compendium.pf2e.spells-srd.Item.Seize Soul].</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "occult",
+                        "void"
+                    ]
+                }
+            },
+            "type": "action"
+        }
+    ],
+    "name": "Spirit Window",
+    "system": {
+        "attributes": {
+            "ac": {
+                "value": 45
+            },
+            "emitsSound": "encounter",
+            "hardness": 35,
+            "hp": {
+                "details": "",
+                "max": 132,
+                "temp": 0,
+                "value": 132
+            },
+            "stealth": {
+                "details": "",
+                "value": 41
+            }
+        },
+        "creatureType": "",
+        "details": {
+            "description": "<p>Spirits trapped inside a haunted window harm those who touch the window.</p>",
+            "disable": "<p>@Check[occultism|dc:48|name:Free the Spirits] (legendary) to free the spirits from the mirror, or @Check[religion|dc:48|name:Banish the Spirits] (legendary) to banish the spirits</p>",
+            "isComplex": false,
+            "level": {
+                "value": 20
+            },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Dark Archive"
+            },
+            "reset": "<p>1 round</p>",
+            "routine": ""
+        },
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 36
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 30
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 0
+            }
+        },
+        "statusEffects": [],
+        "traits": {
+            "rarity": "common",
+            "size": {
+                "value": "med"
+            },
+            "value": [
+                "haunt"
+            ]
+        }
+    },
+    "type": "hazard"
+}

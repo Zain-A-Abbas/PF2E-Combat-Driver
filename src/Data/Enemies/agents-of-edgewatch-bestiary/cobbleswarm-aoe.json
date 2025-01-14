@@ -18,23 +18,16 @@
                 "description": {
                     "value": "<p>The cobbleswarm's tremorsense is a precise sense out to 40 feet and an imprecise sense out to 80 feet. The cobbleswarm can't sense anything beyond the range of its tremorsense.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -55,23 +48,16 @@
                 "description": {
                     "value": "<p>The cobbleswarm's space is difficult terrain.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -90,27 +76,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The cobbleswarm attempts an Athletics check and compares the result to the Fortitude DC of all creatures in its space.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and takes @Damage[1d6[bludgeoning]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] by the cobbleswarm until the end of the cobbleswarm's next turn.</p>\n<p><strong>Success</strong> The creature falls prone, and is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by the cobbleswarm until the creature until the end of the cobbleswarm's next turn.</p>"
+                    "value": "<p>The cobbleswarm attempts an @Check[athletics] check and compares the result to the Fortitude DC of all creatures in its space.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and takes @Damage[1d6[bludgeoning]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] by the cobbleswarm until the end of the cobbleswarm's next turn.</p>\n<p><strong>Success</strong> The creature falls prone, and is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by the cobbleswarm until the creature until the end of the cobbleswarm's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -129,74 +108,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the cobbleswarm's space takes @Damage[2d4[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>"
+                    "value": "<p>Each enemy in the cobbleswarm's space takes @Damage[2d4[bludgeoning]] damage (@Check[reflex|dc:17|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "2Y5qtOiekEFFI1nE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "VAYGMDNlHcE0Qapd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Cobbleswarm (AoE)",
@@ -243,12 +169,6 @@
                     "type": "swarm-mind"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "resistances": [
                 {
                     "type": "piercing",
@@ -280,19 +200,35 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #157: Devil at the Dreaming Palace"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #157: Devil at the Dreaming Palace"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "acuity": "precise",
+                    "range": 40,
+                    "type": "tremorsense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -309,19 +245,16 @@
                 "value": 7
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 13
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "tremorsense (precise) 40 feet"
-            },
             "size": {
                 "value": "lg"
             },

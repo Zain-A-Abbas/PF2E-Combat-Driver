@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -68,11 +70,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -84,52 +88,10 @@
             "type": "melee"
         },
         {
-            "_id": "oeenNOAvMw2BAQWV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "bc9ZTQWLulMjdnJ5",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Haywire",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -139,97 +101,21 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A severely damaged mechanical carny has a chance of malfunctioning. If a mechanical carny has 15 or fewer Hit Points at the start of its turn, it must succeed at a @Check[type:flat|dc:5] check or go haywire. A haywire mechanical carny wildly attacks the nearest living creature, or the nearest object if no creatures are nearby. It takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Knockdown]. This effect lasts 10 minutes or until the mechanical carny is destroyed.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Haywire]</p>"
+                    "value": "<p>A severely damaged mechanical carny has a chance of malfunctioning. If a mechanical carny has 15 or fewer Hit Points at the start of its turn, it must succeed at a @Check[flat|dc:5] check or go haywire. A haywire mechanical carny wildly attacks the nearest living creature, or the nearest object if no creatures are nearby. It takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Knockdown]. This effect lasts 10 minutes or until the mechanical carny is destroyed.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Haywire]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "PWTxcdHODcnJsPUN",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 7
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "eZGxBbkI3cszi88v",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "fmmFRHkYLbftfjce",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Performance",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Mechanical Carny",
@@ -269,12 +155,6 @@
                 "value": 33
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "resistances": [
                 {
                     "exceptions": [
@@ -296,19 +176,35 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Construct",
+            "languages": {
+                "details": "(can speak pre-recorded phrases only)",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Mechanical carnies are constructs manufactured to serve as entertainers, cleaners, and guards at carnivals and circuses. The first of these constructs was created by a gnome inventor who yearned for a tireless companion who could make her laugh and smile. Her invention was so successful that it has spawned countless imitations and knockoffs throughout the Inner Sea, and mechanical carnies of some form or another are a staple throughout metropolitan lands in both Avistan and Garund.</p>",
-            "source": {
-                "value": "Pathfinder #151: The Show Must Go On"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #151: The Show Must Go On"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -325,18 +221,19 @@
                 "value": 4
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 7
+            },
+            "athletics": {
+                "base": 9
+            },
+            "performance": {
+                "base": 6
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(Can Speak Pre-Recorded Phrases Only)",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "med"
             },

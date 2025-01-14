@@ -1,0 +1,48 @@
+{
+    "_id": "i4S6h5c1KK4FLq6w",
+    "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+    "name": "Effect: Feed",
+    "system": {
+        "badge": {
+            "type": "counter",
+            "value": 1
+        },
+        "description": {
+            "value": "<p>The creature gains a status bonus to its checks and DCs depending on how often it used the Feed ability.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 4
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "all",
+                "type": "status",
+                "value": "@item.badge.value"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

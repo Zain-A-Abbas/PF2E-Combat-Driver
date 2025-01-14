@@ -16,26 +16,21 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature touches the strongbox directly or with a held tool</p>\n<hr />\n<p><strong>Effect</strong> The trap deals @Damage[(4d8+10)[acid]] damage in a @Template[type:cone|distance:15] in the direction of the triggering creature (@Check[type:reflex|dc:21|basic:true]).</p>"
+                    "value": "<p><strong>Trigger</strong> A creature touches the strongbox directly or with a held tool</p>\n<hr />\n<p><strong>Effect</strong> The trap deals @Damage[(4d8+10)[acid]] damage in a @Template[cone|distance:15] in the direction of the triggering creature (@Check[reflex|dc:21|basic]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "acid",
-                        "arcane",
-                        "evocation"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -63,17 +58,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>An invisible magic field around the strongbox releases a spray of acid when disturbed.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22|name:Bleed Away the Magical Field|traits:acid,evocation,magical,trap,hazard] (expert) to harmlessly bleed away the magical field or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (2nd level; counteract DC 20) to dispel it.</p>",
+            "disable": "<p>@Check[thievery|dc:22|name:Bleed Away the Magical Field|traits:acid,evocation,magical,trap,hazard] (expert) to harmlessly bleed away the magical field or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (2nd level; counteract DC 20) to dispel it.</p>",
             "isComplex": false,
             "level": {
                 "value": 4
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #175: Broken Tusk Moon"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #175: Broken Tusk Moon"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {
@@ -97,7 +93,6 @@
             },
             "value": [
                 "acid",
-                "evocation",
                 "magical",
                 "trap"
             ]

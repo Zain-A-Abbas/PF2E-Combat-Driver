@@ -16,22 +16,18 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Effect</strong> The stairs attempt a @Check[type:flat|dc:8] (if a Small creature triggered the hazard) or a @Check[type:flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take [[/r (2d6 + 3)[bludgeoning]]] damage from the collapsing rubble (@Check[type:reflex|dc:16|basic:true]).</p>"
+                    "value": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Effect</strong> The stairs attempt a @Check[flat|dc:8] (if a Small creature triggered the hazard) or a @Check[flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take @Damage[(2d6 + 3)[bludgeoning]] damage from the collapsing rubble (@Check[reflex|dc:16|basic]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -59,17 +55,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>The rickety stairs groan and strain alarmingly if a Small or larger creature ascends them.</p>",
-            "disable": "<p>@Check[type:crafting|dc:16] to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
+            "disable": "<p>@Check[crafting|dc:16] to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
             "isComplex": false,
             "level": {
                 "value": 0
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: Crown of the Kobold King"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Adventure: Crown of the Kobold King"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

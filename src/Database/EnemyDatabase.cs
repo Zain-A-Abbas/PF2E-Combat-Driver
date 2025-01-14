@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 public partial class EnemyDatabase : Godot.Node
 {
 
+int test = 0;
+
 static readonly string ENEMY_DATABASE = "res://Data/Enemies/";
 static readonly string CUSTOM_ENEMIES = "user://Enemies/custom-enemies";
 
@@ -39,10 +41,15 @@ static readonly string CUSTOM_ENEMIES = "user://Enemies/custom-enemies";
     }
 
 private void processEnemy(string file, Godot.Collections.Array<Node> array) {
-    string json = File.ReadAllText(file);
-    if (!file.Contains(".json")) {
+    if (!file.Contains(".json") || file.Contains("_folders")) {
         return;
     }
+    string json = File.ReadAllText(file);
+
+    test += 1;
+    //if (test > 2250) {
+      //  GD.Print(file);
+    //}
     JObject enemyData = JObject.Parse(json);
 
     string enemyType = (string)enemyData["type"];

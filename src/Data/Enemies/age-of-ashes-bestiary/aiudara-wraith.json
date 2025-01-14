@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -49,57 +51,13 @@
             "type": "melee"
         },
         {
-            "_id": "BvK09Yczybu8kLG6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "XDuhN8g49cd7hcxi",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Lifesense 60 feet",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -111,23 +69,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -136,7 +87,7 @@
             "_id": "nPeylmjWQ7slkCXr",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Teleportation Attachment",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -148,26 +99,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature within 60 feet uses a teleportation effect</p>\n<hr />\n<p><strong>Effect</strong> The aiudara wraith teleports with the creature, arriving in an empty space of its choice adjacent to the triggering creature's destination. If the triggering effect targets multiple creatures, the aiudara wraith chooses which creature it arrives beside.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "conjuration",
                         "teleportation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -176,7 +119,7 @@
             "_id": "xMoISwQsrQGkhK7q",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Dimensional Shunt",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -186,29 +129,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The aiudara wraith's touch displaces creatures and flings them through space. The creature must attempt a @Check[type:fortitude|dc:40] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to dimensional shunt for 1 minute.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet in a random direction.</p>\n<p><strong>Failure</strong> The creature is teleported 20 feet in a direction of the aiudara wraith's choice.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>"
+                    "value": "<p>The aiudara wraith's touch displaces creatures and flings them through space. The creature must attempt a @Check[fortitude|dc:40] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to dimensional shunt for 1 minute.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet in a random direction.</p>\n<p><strong>Failure</strong> The creature is teleported 20 feet in a direction of the aiudara wraith's choice.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "dimensional-shunt",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "conjuration",
                         "teleportation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -217,7 +152,7 @@
             "_id": "3T41i9CjiNKKumzp",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Drain Life",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -227,28 +162,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>When an aiudara wraith damages a living creature with its spectral hand Strike, the aiudara wraith gains 18 temporary Hit Points and the target must succeed at a @Check[type:fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} as long as it is drained. Further damage dealt by the aiudara wraith's spectral hand Strikes increases the value of the drained and stupefied conditions by 1 each on a failed save, to a maximum of 10 for both.</p>"
+                    "value": "<p>When an aiudara wraith damages a living creature with its spectral hand Strike, the aiudara wraith gains 18 temporary Hit Points and the target must succeed at a @Check[fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} as long as it is drained. Further damage dealt by the aiudara wraith's spectral hand Strikes increases the value of the drained and stupefied conditions by 1 each on a failed save, to a maximum of 10 for both.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "drain-life",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "arcane",
-                        "necromancy"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -257,7 +184,7 @@
             "_id": "n32H8SDG3hQfZVNB",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Instantaneous Movement",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -269,99 +196,22 @@
                 "description": {
                     "value": "<p>An aiudara wraith moves by means of localized teleportation. An aiudara wraith's Stride does not have the move trait. When an aiudara wraith Strides, it reaches its destination within the range of its Speed immediately.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "conjuration",
                         "teleportation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "5pNUeVlUltDjoXV2",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "E978BYMNy61kAJaV",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Arcana",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "KhjAZR6iQ7bnwt02",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 35
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Aiudara Wraith",
@@ -420,12 +270,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 33
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -434,7 +278,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 15
@@ -452,19 +296,42 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "Undead",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "elven",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 18
             },
             "privateNotes": "",
             "publicNotes": "<p>Dahak's influence in Alseta's Landing created a soul-draining effect that slays unprotected creatures within, transforming them into ghostly creatures known as aiudara wraiths, but these rare undead can rise within modern aiudara portals as well. Each time an individual travels through an aiudara, there's a chance their passage could leave a faint imprint of their subconscious in the network. Normally this imprint simply fades away, but when an aiudara is damaged or the individual is suffering from necromantic contagions, these imprints can accumulate and, in time, coalesce on the Astral Plane or within Alseta's Landing as a full-fledged aiudara wraith. The wraith is forced to live with an incomplete sense of self, always seeking its own memories and swiftly growing violent and vengeful as its quest to reclaim these ephemeral notions constantly meets with failure.</p>",
-            "source": {
-                "value": "Pathfinder #150: Broken Promises"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #150: Broken Promises"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 33,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "lifesense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -481,27 +348,28 @@
                 "value": 33
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 35
+            },
+            "arcana": {
+                "base": 31
+            },
+            "stealth": {
+                "base": 35
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "elven",
-                    "necril"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, lifesense 60 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "astral",
+                "evil",
                 "incorporeal",
                 "undead",
+                "unholy",
                 "wraith"
             ]
         }

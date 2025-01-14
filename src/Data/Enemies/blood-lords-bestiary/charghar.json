@@ -23,17 +23,19 @@
                 "damageRolls": {
                     "t8u20ze2cbpetbna4630": {
                         "damage": "3d6",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -48,57 +50,13 @@
             "type": "melee"
         },
         {
-            "_id": "LhF5c6p8nbBj4EHK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "DMGAbSO3WnGvqtGP",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Lifesense 60 Feet",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -110,36 +68,73 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "lifesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "jSYDiFX6EjzvYaVs",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Malevolent Mishaps",
+            "sort": 300000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p>10 feet. The charghar causes clumsiness and uncertainty in those nearby. Each creature that starts its turn in the aura must attempt a @Check[will|dc:21] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Malevolent Mishaps for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the start of its next turn. If the creature is living, the charghar Imparts Fears.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 10,
+                        "slug": "malevolent-mishaps",
+                        "traits": [
+                            "emotion",
+                            "mental",
+                            "occult"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "aura",
+                        "emotion",
+                        "mental",
+                        "occult"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "Y6NnCtJP7mXoLBrC",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -152,8 +147,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -164,71 +161,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "jSYDiFX6EjzvYaVs",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Malevolent Mishaps",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Template[type:emanation|distance:10] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<p>The charghar causes clumsiness and uncertainty in those nearby. Each creature that starts its turn in the aura must attempt a @Check[type:will|dc:21] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Malevolent Mishaps for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the start of its next turn. If the creature is living, the charghar Imparts Fears.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2}.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "Aura",
-                        "radius": 10,
-                        "slug": "malevolent-mishaps",
-                        "traits": [
-                            "aura",
-                            "emotion",
-                            "enchantment",
-                            "mental",
-                            "occult"
-                        ]
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "aura",
-                        "emotion",
-                        "enchantment",
-                        "mental",
-                        "occult"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -237,7 +172,7 @@
             "_id": "qCZ93XZdw1VOY0cY",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Create Spawn",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -249,23 +184,18 @@
                 "description": {
                     "value": "<p>Any humanoid creature killed by a charghar and left unburied in the vicinity of a stove, oven, cauldron, or similar object rises as a free-willed charghar at the next dawn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -274,7 +204,7 @@
             "_id": "HHdOAo37LMBn63w4",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Impart Fears",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -284,26 +214,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A living creature that is struck by a charghar's ghostly cookware Strike or fails a saving throw against the charghar's malevolent mishaps must attempt a @Check[type:will|dc:21] save. A creature affected by Impart Fears can attempt a new saving throw each day to remove the effect.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Impart Fears for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1} each time it ingests anything or takes an action to prepare any food or drink.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}, and the creature can't reduce its frightened condition below 1.</p>"
+                    "value": "<p>A living creature that is struck by a charghar's ghostly cookware Strike or fails a saving throw against the charghar's malevolent mishaps must attempt a @Check[will|dc:21] save. A creature affected by Impart Fears can attempt a new saving throw each day to remove the effect.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Impart Fears for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1} each time it ingests anything or takes an action to prepare any food or drink.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}, and the creature can't reduce its frightened condition below 1.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "curse",
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -312,7 +237,7 @@
             "_id": "bkFEZF8oJt6rVmBL",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Cooking Lore",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "description": {
                     "value": ""
@@ -323,57 +248,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Hggr9tX7aCf3VrTW",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 11
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bnKIw40NIDODRImY",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -409,7 +290,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 35,
                 "temp": 0,
                 "value": 35
@@ -434,12 +315,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -448,7 +323,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -465,19 +340,41 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>Common urban legends in Geb warn of the vengeful spirits of those who've been cooked alive, collectively called charghars. While many Gebbites eat people in ways that don't involve cooking, there are some undead who've grown bored after centuries of the same diet. There are also some living people in the nation who've resorted to cannibalism: either downtrodden folks who cook and eat their neighbors and kin out of necessity, or socialites who dine on such fare because it's fashionable. Regardless of the reason for cooking people, these efforts can create vengeful undead creatures who lurk wherever meals are being prepared, luring cooks into making careless or deadly mistakes.</p>\n<p>Charghars have spectral humanoid forms, while their physical manifestations appear much as they did after they were cooked-as charred remains, gory corpses bearing disembodied butchered chunks that float nearby, or loose assemblages of boiled bones.</p>",
-            "source": {
-                "value": "Pathfinder #181: Zombie Feast"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #181: Zombie Feast"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "lifesense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -494,26 +391,26 @@
                 "value": 10
             }
         },
+        "skills": {
+            "intimidation": {
+                "base": 11
+            },
+            "stealth": {
+                "base": 12
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, lifesense 60 feet"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "incorporeal",
                 "spirit",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

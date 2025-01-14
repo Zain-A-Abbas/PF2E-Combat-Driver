@@ -3,14 +3,9 @@
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
-            "_id": "FZSw4o3rZCgCEFcW",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
+            "_id": "coep2DirH6k49uz3",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
+            "name": "Flea Fever",
             "sort": 100000,
             "system": {
                 "actionType": {
@@ -19,108 +14,22 @@
                 "actions": {
                     "value": null
                 },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "xyO3M6BDrtYA6yRv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "coep2DirH6k49uz3",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Flea Fever",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} ([[/r 1d4]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} and sickened 1 (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 3} and sickened 1 (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+                    "value": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} ([[/r 1d4]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 2} and sickened 1 (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 3} and sickened 1 (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "disease"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -129,7 +38,7 @@
             "_id": "O3GuY1OWhHhmq9FW",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Suck Blood",
-            "sort": 400000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -139,25 +48,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The flea swarm's last action was Swarming Bites, and it dealt damage to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The flea swarm drinks the creatures' blood. Each victim becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and the swarm regains [[/r 3]]{3 HP} for each victim drained.</p>"
+                    "value": "<p><strong>Requirements</strong> The flea swarm's last action was Swarming Bites, and it dealt damage to at least one enemy</p><hr /><p><strong>Effect</strong> The flea swarm drinks the creatures' blood. Each victim becomes @UUID[Compendium.pf2e.conditionitems.Item.Drained]{Drained 1} and the swarm regains @Damage[3[healing]] HP for each victim drained.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -166,7 +68,7 @@
             "_id": "ZmpXD5Zs0PQBXPU3",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swarming Bites",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -176,95 +78,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Each enemy in the swarm's space takes @Damage[(2d4+7)[piercing]] damage and must attempt a @Check[type:reflex|dc:22|basic:true] save. A creature that fails its save is exposed to flea fever.</p>"
+                    "value": "<p>Each enemy in the swarm's space takes @Damage[(2d4+7)[piercing]] damage and must attempt a @Check[reflex|dc:22|basic] save. A creature that fails its save is exposed to flea fever.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "1yHBrXyc4vDEdiRw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 14
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "JlpJ89IL7ZyHUWgp",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.HighJumpOrLongJump",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "action:high-jump",
-                                    "action:long-jump"
-                                ]
-                            }
-                        ],
-                        "selector": "athletics",
-                        "value": 4
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+13 to Jump",
-                        "options": "action:high-jump,action:long-jump"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Flea Swarm",
@@ -314,12 +142,6 @@
                     "type": "swarm-mind"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 13
-            },
             "resistances": [
                 {
                     "exceptions": [
@@ -345,19 +167,38 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "Animal",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 5
             },
             "privateNotes": "",
             "publicNotes": "<p>Flea swarms roil across city streets and rural hinterlands in a hissing, scraping scrabble, draining blood from any creatures unfortunate enough to cross their path.</p>\n<hr />\n<p>Fleas are little more than a nuisance in most circumstances, but can be lethal when they grow to monstrous proportions or gather in enormous swarms.</p>",
-            "source": {
-                "value": "Pathfinder #151: The Show Must Go On"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #151: The Show Must Go On"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 13,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -374,16 +215,30 @@
                 "value": 6
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 14
+            },
+            "athletics": {
+                "base": 9,
+                "special": [
+                    {
+                        "base": 13,
+                        "label": "to Jump",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "action:high-jump",
+                                    "action:long-jump"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "lg"
             },

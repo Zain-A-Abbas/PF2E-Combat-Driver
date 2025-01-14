@@ -23,17 +23,19 @@
                 "damageRolls": {
                     "txwshee6PlWJ1waT": {
                         "damage": "2d10+12",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -50,57 +52,13 @@
             "type": "melee"
         },
         {
-            "_id": "r9tJVChsQaE6jEtS",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "32Oayck2ePyYYgli",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 300000,
+            "name": "Void Healing",
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -112,8 +70,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -124,18 +84,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -144,7 +95,7 @@
             "_id": "7at7cp1369l1wlf5",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Warrior's Mask",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -154,10 +105,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>A grappling spirit wears a mask that allows them to abandon their original form and become a warrior focused solely on combat. This mask is quasi-corporeal, allowing it to be manipulated by both corporeal and incorporeal creatures. A creature who has the grappling spirit @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained] can remove the mask as an Interact action by succeeding at an @Check[type:athletics|dc:29] check against the grappling spirit's Fortitude DC. Removing a grappling spirit's mask causes the spirit to fly into a frenzy. The grappling spirit becomes @UUID[Compendium.pf2e.conditionitems.Item.Quickened] and can use their extra action to Fly, @UUID[Compendium.pf2e.actionspf2e.Item.Grapple], or Strike. They also gain a +4 status bonus to damage rolls, and they take a -4 status penalty to AC and Reflex saving throws. If the mask is put back on, the grappling spirit ends their frenzy.</p>"
+                    "value": "<p>A grappling spirit wears a mask that allows them to abandon their original form and become a warrior focused solely on combat. This mask is quasi-corporeal, allowing it to be manipulated by both corporeal and incorporeal creatures. A creature who has the grappling spirit @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained] can remove the mask as an Interact action by succeeding at an @Check[athletics|dc:29] check against the grappling spirit's Fortitude DC. Removing a grappling spirit's mask causes the spirit to fly into a frenzy. The grappling spirit becomes @UUID[Compendium.pf2e.conditionitems.Item.Quickened] and can use their extra action to Fly, @UUID[Compendium.pf2e.actionspf2e.Item.Grapple], or Strike. They also gain a +4 status bonus to damage rolls, and they take a -4 status penalty to AC and Reflex saving throws. If the mask is put back on, the grappling spirit ends their frenzy.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -199,15 +152,9 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -216,7 +163,7 @@
             "_id": "a34aowwyzlmdtpg4",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ghostly Grasp",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -228,20 +175,16 @@
                 "description": {
                     "value": "<p>A grappling spirit can @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] corporeal creatures despite being incorporeal. The grappling spirit uses their Athletics check to Grapple as normal but can't use Athletics for other actions that require corporeal contact, like @UUID[Compendium.pf2e.actionspf2e.Item.Force Open] or @UUID[Compendium.pf2e.actionspf2e.Item.Trip].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -250,7 +193,7 @@
             "_id": "ukiq9bqccfjpoc72",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Submission Lock",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -260,24 +203,20 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The grappling spirit has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> The spirit saps their opponent's strength with a supernatural grip. The grappling spirit attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] a creature they have grabbed or restrained, also adding @Damage[(4d10+12)[negative]] damage, depending on the result.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes double damage. If it's already enfeebled, it falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If not, it is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} until the end of its next turn and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 minute.</p>\n<p><strong>Success</strong> The creature takes full damage and is enfeebled 1 until the end of its next turn.</p>"
+                    "value": "<p><strong>Requirements</strong> The grappling spirit has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> The spirit saps their opponent's strength with a supernatural grip. The grappling spirit attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Grapple] a creature they have grabbed or restrained, also adding @Damage[(4d10+12)[void]] damage, depending on the result.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes double damage. If it's already enfeebled, it falls @UUID[Compendium.pf2e.conditionitems.Item.Unconscious]. If not, it is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} until the end of its next turn and @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 minute.</p>\n<p><strong>Success</strong> The creature takes full damage and is enfeebled 1 until the end of its next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "nonlethal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -286,7 +225,7 @@
             "_id": "rt3cft7ln3rvinzi",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Teleporting Clothesline",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -298,24 +237,19 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The grappling spirit has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> The grappling spirit pushes the creature 15 feet in a straight line. The spirit immediately teleports 20 feet to intercept. They make a ghostly hand Strike against the creature. On a hit, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone], and on a critical hit, it also takes an additional @Damage[2d6[bludgeoning]] damage as it's driven to the ground.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "conjuration",
                         "occult",
                         "teleportation"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -324,7 +258,7 @@
             "_id": "mkg6oo3hwvllmvw3",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Victory Celebration",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -334,36 +268,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>If a spirit knocks a creature @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], each creature within @Template[type:emanation|distance:60]{60 feet} that witnesses the victory is targeted with a @Check[type:will|dc:26|traits:mental,emotion,occult] <em>@UUID[Compendium.pf2e.spells-srd.Item.Roaring Applause]</em> spell. The spirit must spend all their actions until the end of the turn celebrating, and a new medal or belt appears on the spirit.</p>"
+                    "value": "<p>If a spirit knocks a creature @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], each creature within @Template[emanation|distance:60]{60 feet} that witnesses the victory is targeted with a @Check[will|dc:26|traits:mental,emotion,occult] @UUID[Compendium.pf2e.spells-srd.Item.Roaring Applause] spell. The spirit must spend all their actions until the end of the turn celebrating, and a new medal or belt appears on the spirit.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "sgrD5tLKLJMdGbYH",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
             },
             "img": "systems/pf2e/icons/actions/FreeAction.webp",
             "name": "Improved Grab",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "free"
@@ -375,101 +303,25 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "2l34935kn9s76nun",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "mzi2vv3jcf8kisws",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 21
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "guxmyde9f4lvve8b",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 18
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "fc9jut8qh45m7eoj",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Gladiatorial Lore",
-            "sort": 1300000,
+            "sort": 900000,
             "system": {
                 "description": {
                     "value": ""
@@ -480,57 +332,13 @@
                 "proficient": {
                     "value": 0
                 },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "vjipmudih0a68yn3",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "kgw27gdqgkcomxgk",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Performance",
-            "sort": 1500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 20
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -566,7 +374,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 125,
                 "temp": 0,
                 "value": 125
@@ -591,12 +399,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 17
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -605,7 +407,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 10
@@ -622,19 +424,35 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LN"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "<p>When a great gladiator or wrestler meets their demise, their soul can sometimes linger out of a love for combat and sport. Every grappling spirit manifests a mask that represents the legacy of the warrior they were during their life.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 17,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -651,23 +469,31 @@
                 "value": 15
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 19
+            },
+            "athletics": {
+                "base": 21
+            },
+            "diplomacy": {
+                "base": 18
+            },
+            "intimidation": {
+                "base": 20
+            },
+            "performance": {
+                "base": 20
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },
             "value": [
                 "incorporeal",
+                "lawful",
                 "spirit",
                 "undead"
             ]

@@ -1,0 +1,47 @@
+{
+    "_id": "wcNGbhwn3AuamtsX",
+    "img": "icons/magic/sonic/bell-alarm-red-purple.webp",
+    "name": "Effect: Scraping Clamor",
+    "system": {
+        "description": {
+            "value": "<p>You gain a +1 circumstance bonus to any saves to resist auditory spells or abilities.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #159: All or Nothing"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "auditory"
+                ],
+                "selector": "saving-throw",
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

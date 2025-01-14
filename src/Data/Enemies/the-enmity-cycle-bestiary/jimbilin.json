@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "flexible": false,
                     "value": "prepared"
@@ -22,112 +21,60 @@
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
                     "slot0": {
                         "max": 4,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "i5bCnDGQd9cEJ9aM"
                             },
-                            "1": {
+                            {
                                 "id": "H243t9NZeZXLp6m6"
                             },
-                            "2": {
+                            {
                                 "id": "QzcvXFjeXVxS78dx"
                             },
-                            "3": {
+                            {
                                 "id": "D3KQ9sQL07pfJJm0"
                             }
-                        },
-                        "value": 0
+                        ]
                     },
                     "slot1": {
                         "max": 3,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "k86E7CzckMXqiW12"
                             },
-                            "1": {
+                            {
                                 "id": "484JLkKSdCLeqg6c"
                             },
-                            "2": {
+                            {
                                 "id": "shccHgjjuQwSuxY3"
                             }
-                        },
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
+                        ]
                     },
                     "slot2": {
                         "max": 3,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "7cNnakuEyntfGSfI"
                             },
-                            "1": {
+                            {
                                 "id": "sD34GfX2rYfXlUJY"
                             },
-                            "2": {
+                            {
                                 "id": "shccHgjjuQwSuxY3"
                             }
-                        },
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
+                        ]
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 21,
                     "value": 13
@@ -140,52 +87,42 @@
         },
         {
             "_id": "7cNnakuEyntfGSfI",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.zdNUbHqqZzjA07oM"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.zdNUbHqqZzjA07oM"
             },
-            "img": "systems/pf2e/icons/spells/boneshaker.webp",
+            "img": "icons/skills/wounds/bone-broken-marrow-red.webp",
             "name": "Boneshaker",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "ohmjnqzezb9q8i8x": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "bludgeoning"
-                            },
-                            "value": "3d8"
-                        }
+                    "ohmjnqzezb9q8i8x": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "3d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "bludgeoning"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You reach out a hand and seize a creature's skeleton from afar, harming their body and potentially wrenching them by the bones to move them against their will. The number of actions you spend when Casting this Spell determines the spell's effects. Regardless of the number of actions spent to Cast this Spell, the target must attempt a Fortitude save.</p>\n<p><span class=\"pf2-icon\">2</span> (somatic, verbal) You clench your fist, painfully compressing the target's bones and dealing 3d8 bludgeoning damage.</p>\n<p><span class=\"pf2-icon\">3</span> (material, somatic, verbal) As the 2-action version, plus you pull the target's body by their bones, moving them around like an awkward marionette. This movement follows the rules for forced movement.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. If you cast the 3-action version, you can move the target up to 5 feet; it can choose to fall @UUID[Compendium.pf2e.conditionitems.Item.Prone] to avoid moving.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1}. If you cast the 3-action version, you can move the target up to 15 feet; it can fall prone to avoid moving.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2}. If you cast the 3-action version, you can move the target up to 25 feet, then knock the target prone; if you attempt to move the target to a hazardous location, such as into a pool of acid or off a cliff, it can fall prone to avoid moving.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 3d8.</p>"
+                    "value": "<p>You reach out a hand and seize a creature's skeleton from afar, harming their body and potentially wrenching them by the bones to move them against their will. The number of actions you spend when Casting this Spell determines the spell's effects. Regardless of the number of actions spent to Cast this Spell, the target must attempt a Fortitude save.</p>\n<p><span class=\"action-glyph\">2</span> (somatic, verbal) You clench your fist, painfully compressing the target's bones and dealing 3d8 bludgeoning damage.</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) As the 2-action version, plus you pull the target's body by their bones, moving them around like an awkward marionette. This movement follows the rules for forced movement.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. If you cast the 3-action version, you can move the target up to 5 feet; it can choose to fall @UUID[Compendium.pf2e.conditionitems.Item.Prone] to avoid moving.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1}. If you cast the 3-action version, you can move the target up to 15 feet; it can fall prone to avoid moving.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2}. If you cast the 3-action version, you can move the target up to 25 feet, then knock the target prone; if you attempt to move the target to a hazardous location, such as into a pool of acid or off a cliff, it can fall prone to avoid moving.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 3d8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -200,22 +137,20 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "rgpytku9yox1yddh": {
                         "_id": "rgpytku9yox1yddh",
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate"
+                                ]
                             }
                         }
                     },
@@ -224,95 +159,69 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate"
+                                ]
                             }
                         }
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #176: Lost Mammoth Valley"
+                },
                 "range": {
                     "value": "100 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
                 "slug": "boneshaker",
-                "source": {
-                    "value": "Pathfinder #176: Lost Mammoth Valley"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature with a skeleton"
                 },
                 "time": {
                     "value": "2 or 3"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
-                    "value": [
-                        "necromancy"
-                    ]
+                    ],
+                    "value": []
                 }
             },
             "type": "spell"
         },
         {
             "_id": "sD34GfX2rYfXlUJY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV"
             },
             "img": "systems/pf2e/icons/spells/darkvision.webp",
             "name": "Darkvision",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You grant yourself supernatural sight in areas of darkness. You gain Darkvision.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Darkvision]</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Darkvision (24 hours)]</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range is touch and it targets 1 willing creature.</p>\n<p><strong>Heightened (5th)</strong> The spell's range is touch and it targets 1 willing creature. The duration is until the next time you make your daily preparations.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -333,57 +242,34 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -391,45 +277,34 @@
         },
         {
             "_id": "k86E7CzckMXqiW12",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx"
             },
             "img": "systems/pf2e/icons/spells/bane.webp",
             "name": "Bane",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 5
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": true,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
-                    "value": "<p>You fill the minds of your enemies with doubt.</p>\n<p>Enemies in the area must succeed at a Will save or take a -1 status penalty to attack rolls as long as they are in the area.</p>\n<p>Once per turn, starting the turn after you cast bane, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract <em>@UUID[Compendium.pf2e.spells-srd.Item.Bless]</em>.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Bane]</p>"
+                    "value": "<p>You fill the minds of your enemies with doubt.</p>\n<p>Enemies in the area must succeed at a Will save or take a -1 status penalty to attack rolls as long as they are in the area.</p>\n<p>Once per turn, starting the turn after you cast bane, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract @UUID[Compendium.pf2e.spells-srd.Item.Bless].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Bane]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": true
                 },
                 "level": {
                     "value": 1
@@ -437,56 +312,33 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "bane",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "enemies in the area"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
-                        "mental",
-                        "enchantment"
+                        "concentrate",
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -494,51 +346,42 @@
         },
         {
             "_id": "i5bCnDGQd9cEJ9aM",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
             },
             "img": "systems/pf2e/icons/spells/chill-touch.webp",
             "name": "Chill Touch",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": true,
+                        "category": null,
+                        "formula": "1d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>Siphoning negative energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals negative damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Flat-Footed] for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The negative damage to living creatures increases by 1d4.</p>"
+                    "value": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -553,58 +396,35 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "chill-touch",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living or undead creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "negative",
-                        "necromancy"
+                        "concentrate",
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -612,52 +432,37 @@
         },
         {
             "_id": "H243t9NZeZXLp6m6",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.qwZBXN6zBoB9BHXE"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.qwZBXN6zBoB9BHXE"
             },
             "img": "systems/pf2e/icons/spells/divine-lance.webp",
             "name": "Divine Lance",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "untyped"
-                            },
-                            "value": "1d4"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "spirit"
                     }
                 },
+                "defense": null,
                 "description": {
-                    "value": "<p>You unleash a beam of divine energy. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or if your deity is true neutral. Make a ranged spell attack roll against the target's AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4 + your spellcasting ability modifier (double damage on a critical hit). The spell gains the trait of the alignment you chose.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                    "value": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -672,154 +477,35 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "overlays": {
-                    "1v6yi847ElANU2Ia": {
-                        "_id": "1v6yi847ElANU2Ia",
-                        "name": "Divine Lance (Chaotic)",
-                        "overlayType": "override",
-                        "sort": 1,
-                        "system": {
-                            "damage": {
-                                "value": {
-                                    "0": {
-                                        "type": {
-                                            "value": "chaotic"
-                                        }
-                                    }
-                                }
-                            },
-                            "traits": {
-                                "value": [
-                                    "attack",
-                                    "cantrip",
-                                    "chaotic"
-                                ]
-                            }
-                        }
-                    },
-                    "7mtAXSD4Zqbb7tiL": {
-                        "_id": "7mtAXSD4Zqbb7tiL",
-                        "name": "Divine Lance (Lawful)",
-                        "overlayType": "override",
-                        "sort": 4,
-                        "system": {
-                            "damage": {
-                                "value": {
-                                    "0": {
-                                        "type": {
-                                            "value": "lawful"
-                                        }
-                                    }
-                                }
-                            },
-                            "traits": {
-                                "value": [
-                                    "attack",
-                                    "cantrip",
-                                    "lawful"
-                                ]
-                            }
-                        }
-                    },
-                    "dssJKKcOoERlChM7": {
-                        "_id": "dssJKKcOoERlChM7",
-                        "name": "Divine Lance (Evil)",
-                        "overlayType": "override",
-                        "sort": 2,
-                        "system": {
-                            "damage": {
-                                "value": {
-                                    "0": {
-                                        "type": {
-                                            "value": "evil"
-                                        }
-                                    }
-                                }
-                            },
-                            "traits": {
-                                "value": [
-                                    "attack",
-                                    "cantrip",
-                                    "evil"
-                                ]
-                            }
-                        }
-                    },
-                    "m8s40UP1KhhWkUSc": {
-                        "_id": "m8s40UP1KhhWkUSc",
-                        "name": "Divine Lance (Good)",
-                        "overlayType": "override",
-                        "sort": 3,
-                        "system": {
-                            "damage": {
-                                "value": {
-                                    "0": {
-                                        "type": {
-                                            "value": "good"
-                                        }
-                                    }
-                                }
-                            },
-                            "traits": {
-                                "value": [
-                                    "attack",
-                                    "cantrip",
-                                    "good"
-                                ]
-                            }
-                        }
-                    }
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "overlays": {},
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "divine-lance",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "attack"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
                         "attack",
                         "cantrip",
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "sanctified"
                     ]
                 }
             },
@@ -827,42 +513,31 @@
         },
         {
             "_id": "484JLkKSdCLeqg6c",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D"
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "levels": {
@@ -880,60 +555,37 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "fear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "fear",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -941,51 +593,43 @@
         },
         {
             "_id": "shccHgjjuQwSuxY3",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
             },
             "img": "systems/pf2e/icons/spells/harm.webp",
             "name": "Harm",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": false
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "value": "negative"
-                            },
-                            "value": "1d8"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage",
+                            "healing"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, verbal, somatic)</strong> You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+                    "value": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1000,9 +644,6 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
                 "overlays": {
                     "4gyp3qlsv5ywdyjq": {
                         "_id": "4gyp3qlsv5ywdyjq",
@@ -1010,17 +651,15 @@
                         "overlayType": "override",
                         "sort": 3,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "damage": {
-                                "value": {
-                                    "0": {
-                                        "value": "1d8+8"
-                                    }
+                                "0": {
+                                    "formula": "1d8+8",
+                                    "kinds": [
+                                        "healing"
+                                    ]
                                 }
                             },
+                            "defense": null,
                             "heightening": {
                                 "damage": {
                                     "0": "1d8+8"
@@ -1029,18 +668,18 @@
                             "range": {
                                 "value": "30 feet"
                             },
-                            "save": {
-                                "basic": "",
-                                "value": ""
-                            },
-                            "spellType": {
-                                "value": "heal"
-                            },
                             "target": {
                                 "value": "1 willing undead creature"
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1049,9 +688,6 @@
                         "overlayType": "override",
                         "sort": 1,
                         "system": {
-                            "components": {
-                                "somatic": true
-                            },
                             "range": {
                                 "value": "touch"
                             },
@@ -1069,11 +705,6 @@
                                 "type": "emanation",
                                 "value": 30
                             },
-                            "components": {
-                                "material": true,
-                                "somatic": true,
-                                "verbal": true
-                            },
                             "range": {
                                 "value": ""
                             },
@@ -1082,6 +713,13 @@
                             },
                             "time": {
                                 "value": "3"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     },
@@ -1091,9 +729,12 @@
                         "overlayType": "override",
                         "sort": 2,
                         "system": {
-                            "components": {
-                                "somatic": true,
-                                "verbal": true
+                            "damage": {
+                                "0": {
+                                    "kinds": [
+                                        "damage"
+                                    ]
+                                }
                             },
                             "range": {
                                 "value": "30 feet"
@@ -1103,56 +744,42 @@
                             },
                             "time": {
                                 "value": "2"
+                            },
+                            "traits": {
+                                "value": [
+                                    "concentrate",
+                                    "manipulate",
+                                    "void"
+                                ]
                             }
                         }
                     }
                 },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "varies"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "harm",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 living creature or 1 willing undead creature"
                 },
                 "time": {
                     "value": "1 to 3"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "negative",
-                        "necromancy"
+                        "manipulate",
+                        "void"
                     ]
                 }
             },
@@ -1160,60 +787,49 @@
         },
         {
             "_id": "QzcvXFjeXVxS78dx",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.b5BQbwmuBhgPXTyi"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5BQbwmuBhgPXTyi"
             },
-            "img": "systems/pf2e/icons/spells/haunting-hymn.webp",
+            "img": "icons/commodities/tech/antenna-powered-purple.webp",
             "name": "Haunting Hymn",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "cone",
                     "value": 15
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "applyMod": true,
-                    "value": {
-                        "0": {
-                            "applyMod": true,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "sonic"
-                            },
-                            "value": ""
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "1d8",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "sonic"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You echo a jarring hymn that only creatures in the area can hear. The hymn deals sonic damage equal to your spellcasting ability modifier, with a basic Fortitude save. If a target critically fails the save, it's also @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
+                    "value": "<p>You echo a jarring hymn that only creatures in the area can hear. The hymn deals 1d8 sonic damage, with a basic Fortitude save. If a target critically fails the save, it's also @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
-                        "0": "1d6"
+                        "0": "1d8"
                     },
                     "interval": 2,
                     "type": "interval"
@@ -1224,47 +840,35 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Secrets of Magic"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "fortitude"
-                },
                 "slug": "haunting-hymn",
-                "source": {
-                    "value": "Pathfinder Secrets of Magic"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "custom": "",
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
                         "auditory",
                         "cantrip",
-                        "sonic",
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "sonic"
                     ]
                 }
             },
@@ -1272,42 +876,26 @@
         },
         {
             "_id": "D3KQ9sQL07pfJJm0",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
             },
             "img": "systems/pf2e/icons/spells/shield.webp",
             "name": "Shield",
             "sort": 1000000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": false,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the @UUID[Compendium.pf2e.feats-srd.Item.Shield Block] reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the <em>@UUID[Compendium.pf2e.spells-srd.Item.Magic Missile]</em> spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Shield]</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Effect: Shield Immunity]</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+                    "value": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the @UUID[Compendium.pf2e.feats-srd.Item.Shield Block] reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the @UUID[Compendium.pf2e.spells-srd.Item.Force Barrage] spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Shield]</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Effect: Shield Immunity]</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "until the start of your next turn"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -1315,58 +903,34 @@
                 "location": {
                     "value": "JVC3rz8wBQBMMDnb"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "shield",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
-                        "force",
-                        "abjuration"
+                        "concentrate",
+                        "force"
                     ]
                 }
             },
@@ -1374,24 +938,22 @@
         },
         {
             "_id": "7mmGD8tHpblliO5T",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.UXjKXqsfWYiayeMD"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UXjKXqsfWYiayeMD"
             },
             "img": "systems/pf2e/icons/equipment/weapons/scorpion-whip.webp",
             "name": "Scorpion Whip",
             "sort": 1100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "scorpion-whip",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
                 },
                 "category": "martial",
                 "containerId": null,
@@ -1408,9 +970,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "flail",
                 "hardness": 0,
                 "hp": {
@@ -1420,34 +979,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 5
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #151: The Show Must Go On"
                 },
                 "quantity": 1,
                 "range": null,
@@ -1455,17 +999,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "scorpion-whip",
-                "source": {
-                    "value": "Pathfinder #151: The Show Must Go On"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -1478,26 +1020,24 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "KQBjGIBw6d7Y19H2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.Kf4eJEXnFPuAsseP"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Kf4eJEXnFPuAsseP"
             },
             "img": "systems/pf2e/icons/equipment/armor/chainmail.webp",
-            "name": "+1 Chain Mail",
+            "name": "Chain Mail",
             "sort": 1200000,
             "system": {
                 "acBonus": 4,
                 "baseItem": "chain-mail",
+                "bulk": {
+                    "value": 2
+                },
                 "category": "medium",
                 "checkPenalty": -2,
                 "containerId": null,
@@ -1508,11 +1048,8 @@
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
-                    "inSlot": false,
+                    "inSlot": true,
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": "2"
                 },
                 "group": "chain",
                 "hardness": 0,
@@ -1521,50 +1058,32 @@
                     "value": 0
                 },
                 "level": {
-                    "value": 5
+                    "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
-                        "gp": 160
+                        "gp": 6
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": null
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 1,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "med",
                 "slug": "chain-mail",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
-                "stackGroup": null,
                 "strength": 3,
                 "traits": {
                     "rarity": "common",
@@ -1572,28 +1091,23 @@
                         "flexible",
                         "noisy"
                     ]
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "3"
                 }
             },
             "type": "armor"
         },
         {
             "_id": "47MzNPDRPjNVXyj1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-symbol-wooden.webp",
+            "img": "icons/commodities/treasure/broach-jeweled-green.webp",
             "name": "Religious Symbol (Wooden)",
             "sort": 1300000,
             "system": {
                 "baseItem": null,
+                "bulk": {
+                    "value": 0.1
+                },
                 "containerId": null,
                 "description": {
                     "value": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -1601,9 +1115,6 @@
                 "equipped": {
                     "carryType": "worn",
                     "invested": null
-                },
-                "equippedBulk": {
-                    "value": ""
                 },
                 "hardness": 0,
                 "hp": {
@@ -1613,19 +1124,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -1638,19 +1149,12 @@
                 ],
                 "size": "med",
                 "slug": "religious-symbol-wooden",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "L"
                 }
             },
             "type": "equipment"
@@ -1684,11 +1188,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -1699,52 +1205,10 @@
             "type": "melee"
         },
         {
-            "_id": "awxCINVrmjbhQKb1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 1500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "giy28Fg04joyCqnc",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Prayer of Oblivion",
-            "sort": 1600000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1754,143 +1218,29 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The priest chants a prayer to his deity that invokes the forces of nothingness.</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> All enemies within @Template[type:emanation|distance:30]{30 feet} take @Damage[5d6[negative]] damage (@Check[type:will|dc:21|basic:true] save).</p>"
+                    "value": "<p>The priest chants a prayer to his deity that invokes the forces of nothingness.</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> All enemies within @Template[emanation|distance:30]{30 feet} take @Damage[5d6[void]] damage (@Check[will|dc:21|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "day",
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "divine",
                         "evil",
-                        "negative"
+                        "void"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "9p7kAlyNcHDl5S06",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "r0Rvdf7lI96LIBlc",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 1800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "nAn87hrnvHpmYf9m",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Medicine",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "csGfg0hG9nYKIjBt",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "GJd4twexQ9kUK1hQ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Jimbilin",
@@ -1929,31 +1279,41 @@
                 "temp": 0,
                 "value": 62
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 12
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 20
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Male halfling priest of Ahriman",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Adventure: The Enmity Cycle"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: The Enmity Cycle"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 12,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1970,22 +1330,30 @@
                 "value": 14
             }
         },
+        "skills": {
+            "deception": {
+                "base": 12
+            },
+            "diplomacy": {
+                "base": 12
+            },
+            "medicine": {
+                "base": 10
+            },
+            "religion": {
+                "base": 10
+            },
+            "stealth": {
+                "base": 8
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "unique",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "sm"
             },
             "value": [
+                "evil",
                 "halfling",
                 "humanoid"
             ]

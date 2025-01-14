@@ -29,11 +29,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -75,11 +77,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -93,57 +97,13 @@
             "type": "melee"
         },
         {
-            "_id": "yDL9dCxIvK4jRqc7",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "yw7bRJOAMVdTnVkG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -155,8 +115,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -167,18 +129,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -187,7 +140,7 @@
             "_id": "UIRxk8ZQIc88MUzh",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Overwhelming Ectoplasm",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -197,22 +150,25 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>An ectoplasmic amalgam's Strikes affect incorporeal creatures with the effects of a ghost touch property rune. A creature damaged by an ectoplasmic amalgam's Strikes is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} unless they succeed at a @Check[type:fortitude|dc:36] save, as the thoughts and emotions of the amalgam's constituent souls invade their mind.</p>"
+                    "value": "<p>An ectoplasmic amalgam's Strikes affect incorporeal creatures with the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.Ghost Touch]</em> property rune. A creature damaged by an ectoplasmic amalgam's Strikes is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} unless they succeed at a @Check[fortitude|dc:36] save, as the thoughts and emotions of the amalgam's constituent souls invade their mind.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "AdjustStrike",
+                        "mode": "add",
+                        "property": "property-runes",
+                        "value": "ghost-touch"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -221,7 +177,7 @@
             "_id": "6PugTFezx0IQVLSv",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Pummeling Barrage",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -233,20 +189,16 @@
                 "description": {
                     "value": "<p>The ectoplasmic amalgam attempts a melee Strike against each enemy within the amalgam's melee reach. Each attack counts toward the amalgam's multiple attack penalty but don't increase the amalgam's penalty until it has made all its attacks.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -255,7 +207,7 @@
             "_id": "KuQ5KZzju8qEC4Is",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Spew Ectoplasm",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -265,97 +217,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The ectoplasmic amalgam releases a burst of ectoplasm that deals @Damage[16d6[bludgeoning]] damage in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:36|basic:true]). On a failed save, a creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2} on a critical failure). Spew Ectoplasm functions as a force effect for the purposes of affecting incorporeal creatures. The ectoplasmic amalgam can't use Spew Ectoplasm again for [[/r 1d4 #Recharge Spew Ectoplasm]]{1d4 rounds}.</p>"
+                    "value": "<p>The ectoplasmic amalgam releases a burst of ectoplasm that deals @Damage[16d6[bludgeoning]] damage in a @Template[cone|distance:60] (@Check[reflex|dc:36|basic]). On a failed save, a creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2} on a critical failure). Spew Ectoplasm functions as a force effect for the purposes of affecting incorporeal creatures. The ectoplasmic amalgam can't use Spew Ectoplasm again for [[/gmr 1d4 #Recharge Spew Ectoplasm]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "evocation"
+                        "divine"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "NDDjPOYm7PoDdm4b",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "17IPQ3GUGTDJPsQw",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "H49JNROReOjYVZCn",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Ectoplasmic Amalgam",
@@ -389,7 +267,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 320,
                 "temp": 0,
                 "value": 320
@@ -414,12 +292,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 25
-            },
             "resistances": [
                 {
                     "type": "physical",
@@ -432,25 +304,41 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 10
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "(can't speak any language)",
+                "value": [
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #186: Ghost King's Rage"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #186: Ghost King's Rage"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 25,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -467,23 +355,27 @@
                 "value": 23
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 27
+            },
+            "athletics": {
+                "base": 29
+            },
+            "stealth": {
+                "base": 27
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "(Can't Speak Any Language)",
-                "selected": [],
-                "value": [
-                    "necril"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

@@ -1,6 +1,5 @@
 {
     "_id": "YZAlF4mBzvVB4WBU",
-    "folder": "uqr0DQxK8mNW5xpA",
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
@@ -32,11 +31,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -74,11 +75,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -94,14 +97,9 @@
             "type": "melee"
         },
         {
-            "_id": "CsRpTNQIfspNNH9f",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
+            "_id": "IzAYt0TOGDn03Iuj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
+            "name": "Spore Explosion",
             "sort": 300000,
             "system": {
                 "actionType": {
@@ -110,41 +108,64 @@
                 "actions": {
                     "value": null
                 },
-                "category": "interaction",
+                "category": "defensive",
+                "deathNote": true,
                 "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                    "value": "<p>When destroyed, a sporeborn skull explodes in a blast of bone and toxic spores that deals @Damage[1d6[piercing],1d6[poison]]{1d6 piercing damage plus 1d6 poison} damage to each adjacent creature (@Check[reflex|dc:18|basic] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "gDBk1Q1oftHpXGM2",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Stir the Spores",
+            "sort": 400000,
+            "system": {
+                "actionType": {
+                    "value": "reaction"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
                 },
-                "weapon": {
-                    "value": ""
+                "category": "defensive",
+                "description": {
+                    "value": "<p><strong>Frequency</strong> once per [[/gmr 1d4 #Recharge Stir the Spores]] rounds</p>\n<p><strong>Trigger</strong> The sporeborn skull takes bludgeoning, piercing, or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The impact scatters spores onto all creatures within 5 feet, making them @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@Check[fortitude|dc:18] negates).</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "poison"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "sIWC4aZPyNtODaFY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
-            "sort": 400000,
+            "name": "Void Healing",
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -156,8 +177,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -168,139 +191,15 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "IzAYt0TOGDn03Iuj",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Spore Explosion",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "deathNote": true,
-                "description": {
-                    "value": "<p>When destroyed, a sporeborn skull explodes in a blast of bone and toxic spores that deals @Damage[1d6[piercing],1d6[poison]]{1d6 piercing damage plus 1d6 poison} damage to each adjacent creature (@Check[type:reflex|dc:18|basic:true] save).</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "gDBk1Q1oftHpXGM2",
-            "img": "systems/pf2e/icons/default-icons/action.svg",
-            "name": "Stir the Spores",
-            "sort": 600000,
-            "system": {
-                "actionType": {
-                    "value": "reaction"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p><strong>Frequency</strong> once per [[/br 1d4 #rounds]]{1d4 rounds};</p>\n<p><strong>Trigger</strong> The sporeborn skull takes bludgeoning, piercing, or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The impact scatters spores onto all creatures within 5 feet, making them @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (@Check[type:fortitude|dc:18] negates).</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "value": [
-                        "poison"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "LOMkNEBVrbQNC9tu",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.ManeuverInFlight",
-                        "predicate": [
-                            "action:maneuver-in-flight"
-                        ],
-                        "selector": "acrobatics",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+10 to Maneuver in Flight",
-                        "options": "action:maneuver-in-flight"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Sporeborn Skull",
-    "prototypeToken": {
-        "name": "Flaming Skull"
-    },
     "system": {
         "abilities": {
             "cha": {
@@ -331,7 +230,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 30,
                 "temp": 0,
                 "value": 30
@@ -347,10 +246,6 @@
                 },
                 {
                     "exceptions": [],
-                    "type": "fire"
-                },
-                {
-                    "exceptions": [],
                     "type": "paralyzed"
                 },
                 {
@@ -359,19 +254,9 @@
                 },
                 {
                     "exceptions": [],
-                    "type": "unconscious"
-                },
-                {
-                    "exceptions": [],
                     "type": "acid"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 9
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -383,25 +268,41 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 3
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant Flaming Skull",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "necril"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>More dangerous than simple severed heads, these skulls are wreathed in unearthly flames.</p>\n<hr />\n<p>Beheaded are the reanimated heads of decapitation victims. These mindless undead fly through the air or roll around to attack their prey.</p>",
-            "source": {
-                "value": "Pathfinder #193: Mantle of Gold"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #193: Mantle of Gold"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 9,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -418,29 +319,31 @@
                 "value": 7
             }
         },
-        "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "necril"
+        "skills": {
+            "acrobatics": {
+                "base": 8,
+                "special": [
+                    {
+                        "base": 10,
+                        "label": "to Maneuver in Flight",
+                        "predicate": [
+                            "action:maneuver-in-flight"
+                        ]
+                    }
                 ]
-            },
+            }
+        },
+        "traits": {
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "tiny"
             },
             "value": [
+                "evil",
                 "fungus",
                 "mindless",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

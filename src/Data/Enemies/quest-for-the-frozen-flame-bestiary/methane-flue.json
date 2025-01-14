@@ -16,22 +16,18 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature moves within 5 feet of the flue</p><hr />\n<p><strong>Effect</strong> A fiery geyser of flaming gas explodes from the ground. Creatures within 5 feet of the flue take @Damage[4d10[fire]] damage (@Check[type:reflex|dc:30|basic:true]); creatures that fail the save also take [[/r 4d10[persistent,fire]]] damage.</p>"
+                    "value": "<p><strong>Trigger</strong> A creature moves within 5 feet of the flue</p><hr />\n<p><strong>Effect</strong> A fiery geyser of flaming gas explodes from the ground. Creatures within 5 feet of the flue take @Damage[4d10[fire]] damage (@Check[reflex|dc:30|basic]); creatures that fail the save also take @Damage[4d10[persistent,fire]] damage.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -59,17 +55,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
-            "disable": "<p>@Check[type:survival|dc:28|name:Diffuse the Flames|traits:environmental,hazard] to dig around the vent in a way that diffuses the fumes</p>",
+            "disable": "<p>@Check[survival|dc:28|name:Diffuse the Flames|traits:environmental,hazard] to dig around the vent in a way that diffuses the fumes</p>",
             "isComplex": false,
             "level": {
                 "value": 8
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #177: Burning Tundra"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #177: Burning Tundra"
-            }
+            "routine": ""
         },
         "flavourText": "",
         "recallKnowledgeText": "",

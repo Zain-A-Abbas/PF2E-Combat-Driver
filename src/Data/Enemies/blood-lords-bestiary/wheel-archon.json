@@ -14,86 +14,23 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "value": "innate"
                 },
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
                 },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
-                "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot4": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": [],
-                        "value": 0
-                    }
-                },
+                "slots": {},
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 37,
                     "mod": 0,
@@ -107,46 +44,30 @@
         },
         {
             "_id": "HtLGbPLrKtiqh7fA",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.My7FvAoLYgGDDBzy"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.My7FvAoLYgGDDBzy"
             },
             "img": "systems/pf2e/icons/spells/antimagic-field.webp",
             "name": "Antimagic Field",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "details": "10-foot emanation which affects you.",
                     "type": "emanation",
                     "value": 10
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
-                    "value": "<p>You repel all magic from the target area, preventing spells and other magic from functioning. Spells can't penetrate the area, magic items cease to function within it, and no one inside can cast spells or use magic abilities, including yourself. Likewise, spells - such as <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> - can't affect the field itself unless they are of a higher level. Magic effects resume the moment they pass outside the field. For example, a ray fired from one side of the field could target a creature on the other side (as long as caster and target are both outside the field). A summoned creature winks out of existence but reappears if the field moves or ends. Invested magic items cease to function, but they remain invested and resume functioning when they exit the field; the ability boost from an apex item isn't suppressed within the field. Spells of a higher level than the <em>antimagic field</em> overcome its effects, and can even be cast by a creature within the field.</p>\n<p>The field disrupts only magic, so a <em>+3 longsword</em> still functions as a longsword. Magically created creatures (such as golems) function normally within an <em>antimagic field</em>.</p>"
+                    "value": "<p>You repel all magic from the target area, preventing spells and other magic from functioning. Spells can't penetrate the area, magic items cease to function within it, and no one inside can cast spells or use magic abilities, including yourself. Likewise, spells - such as @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] - can't affect the field itself unless they are of a higher level. Magic effects resume the moment they pass outside the field. For example, a ray fired from one side of the field could target a creature on the other side (as long as caster and target are both outside the field). A summoned creature winks out of existence but reappears if the field moves or ends. Invested magic items cease to function, but they remain invested and resume functioning when they exit the field; the ability boost from an apex item isn't suppressed within the field. Spells of a higher level than the <em>antimagic field</em> overcome its effects, and can even be cast by a creature within the field.</p>\n<p>The field disrupts only magic, so a <em>+3 longsword</em> still functions as a longsword. Magically created creatures (such as golems) function normally within an <em>antimagic field</em>.</p>"
                 },
                 "duration": {
-                    "value": "sustained up to 1 minute"
-                },
-                "hasCounteractCheck": {
-                    "value": false
+                    "sustained": true,
+                    "value": "1 minute"
                 },
                 "level": {
                     "value": 8
@@ -155,56 +76,33 @@
                     "heightenedLevel": 8,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "antimagic-field",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "3"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "rare",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "rare",
+                    ],
                     "value": [
-                        "abjuration"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -212,55 +110,52 @@
         },
         {
             "_id": "KQF4i5So14QcF8nY",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C"
             },
-            "img": "systems/pf2e/icons/spells/divine-decree.webp",
+            "img": "icons/sundries/documents/document-sealed-signatures-red.webp",
             "name": "Divine Decree",
             "sort": 300000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "emanation",
                     "value": 40
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "untyped"
-                            },
-                            "value": "7d10"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "7d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "spirit"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You utter a potent litany from your faith, a mandate that harms those who oppose your ideals. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or your deity is true neutral. This spell gains the trait of the alignment you chose. You deal 7d10 damage to creatures in the area; each creature must attempt a Fortitude save. Creatures with an alignment that matches the one you chose are unaffected by the spell. Those that neither match nor oppose it treat the result of their saving throw as one degree better and don't suffer effects other than damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute. On your home plane, a creature that critically fails is banished with the effect of a failed <em>@UUID[Compendium.pf2e.spells-srd.Item.Banishment]</em> save. A 10th-level creature or lower must attempt a Will save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] for 1 minute; on a critical failure, it dies.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the level of creatures that must attempt a second save on a critical failure increases by 2.</p>"
+                    "value": "<p>You utter a potent litany from your faith, a mandate that harms those who oppose your ideals. You deal 7d10 spirit damage to your enemies in the area; each enemy must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is enfeebled 2 for 1 minute. If you're on your home plane and the creature is not, the creature is sent back to its home plane. A creature of 10th level or lower must also succeed at a Will save or be @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] for 1 minute; if it critically fails, it dies (this is a death effect).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the level of creatures that must attempt a second save on a critical failure increases by 2.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "varies"
                 },
-                "hasCounteractCheck": {
-                    "value": false
+                "heightening": {
+                    "damage": {
+                        "0": "1d10"
+                    },
+                    "interval": 1,
+                    "type": "interval"
                 },
                 "level": {
                     "value": 7
@@ -269,54 +164,32 @@
                     "heightenedLevel": 7,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "40 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "divine-decree",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "sanctified"
                     ]
                 }
             },
@@ -324,42 +197,26 @@
         },
         {
             "_id": "C51bmvnDjDInPgH9",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki"
             },
             "img": "systems/pf2e/icons/spells/true-seeing.webp",
             "name": "True Seeing (Constant)",
             "sort": 400000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": true,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": true
                 },
                 "level": {
                     "value": 6
@@ -368,58 +225,35 @@
                     "heightenedLevel": 8,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "true-seeing",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "revelation",
-                        "divination"
+                        "concentrate",
+                        "manipulate",
+                        "revelation"
                     ]
                 }
             },
@@ -427,42 +261,26 @@
         },
         {
             "_id": "H20NN5ziBmScbMIr",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.GYD0XZ4t3tQq6shc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.GYD0XZ4t3tQq6shc"
             },
             "img": "systems/pf2e/icons/spells/zealous-conviction.webp",
             "name": "Zealous Conviction",
             "sort": 500000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You bypass your targets' rational minds, instilling them with unshakable conviction and zeal. The targets each gain 12 temporary Hit Points and a +2 status bonus to Will saves against mental effects, as their faith overrides the signals from their own bodies and minds. If you tell a target to do something, it must comply with your request, though if it would normally find the task repugnant, it can attempt a Will save at the end of its turn each round due to the cognitive dissonance. On a success, it ends the spell's effects on itself entirely.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Zealous Conviction]</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 6
@@ -471,57 +289,34 @@
                     "heightenedLevel": 6,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "zealous-conviction",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "up to 10 willing creatures"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "occult"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "occult"
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -529,56 +324,46 @@
         },
         {
             "_id": "atzpR8CHhaUp1O81",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.E3X2RbzWHCdz7gsk"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.E3X2RbzWHCdz7gsk"
             },
-            "img": "systems/pf2e/icons/spells/rain-of-fire.webp",
+            "img": "icons/magic/fire/explosion-embers-orange.webp",
             "name": "Flame Strike",
             "sort": 600000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "details": "10-foot radius, 40-foot-tall cylinder",
                     "type": "burst",
                     "value": 10
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "applyMod": false,
-                            "type": {
-                                "categories": [],
-                                "subtype": "",
-                                "value": "fire"
-                            },
-                            "value": "8d6"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "8d6",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "fire"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "reflex"
                     }
                 },
                 "description": {
                     "value": "<p><strong>Area:</strong> 10-foot radius, 40-foot-tall cylinder</p>\n<hr />\n<p>You call a rain of divine fire that plummets down from above, dealing 8d6 fire damage. Because the flame is infused with divine energy, creatures in the area apply only half their usual fire resistance. Creatures that are immune to fire, instead of gaining the usual benefit of immunity, treat the results of their saving throws as one degree of success better.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -594,55 +379,32 @@
                     "heightenedLevel": 7,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "basic",
-                    "value": "reflex"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "flame-strike",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
+                        "concentrate",
                         "fire",
-                        "evocation"
+                        "manipulate"
                     ]
                 }
             },
@@ -650,42 +412,26 @@
         },
         {
             "_id": "25WAoGrRRnw3WUXq",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21"
             },
             "img": "systems/pf2e/icons/spells/prying-eye.webp",
             "name": "Prying Eye",
             "sort": 700000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": true,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You create an @UUID[Compendium.pf2e.conditionitems.Item.Invisible], floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you. The first time you Sustain the Spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>"
                 },
                 "duration": {
-                    "value": "sustained"
-                },
-                "hasCounteractCheck": {
-                    "value": false
+                    "sustained": true,
+                    "value": ""
                 },
                 "level": {
                     "value": 5
@@ -694,57 +440,34 @@
                     "heightenedLevel": 7,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "see text"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "prying-eye",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "1 minute"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
-                        "scrying",
-                        "divination"
+                        "concentrate",
+                        "manipulate",
+                        "scrying"
                     ]
                 }
             },
@@ -752,42 +475,26 @@
         },
         {
             "_id": "9dZuXJblaIkWqW1x",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
             },
             "img": "systems/pf2e/icons/spells/tongues.webp",
             "name": "Tongues (Constant)",
             "sort": 800000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 5
@@ -796,56 +503,33 @@
                     "heightenedLevel": 8,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "tongues",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
+                    ],
                     "value": [
-                        "divination"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
@@ -853,42 +537,26 @@
         },
         {
             "_id": "GdtzYQ9k1YCRdkTT",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.uNsliWpl8Q1JdFcM"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.uNsliWpl8Q1JdFcM"
             },
             "img": "systems/pf2e/icons/spells/discern-lies.webp",
             "name": "Discern Lies (Constant)",
             "sort": 900000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>Falsehoods ring in your ears like discordant notes. You gain a +4 status bonus to Perception checks when someone Lies.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "10 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -897,58 +565,35 @@
                     "heightenedLevel": 8,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "discern-lies",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "uncommon",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult"
-                    ]
-                },
-                "traits": {
-                    "rarity": "uncommon",
+                    ],
                     "value": [
+                        "concentrate",
+                        "manipulate",
                         "mental",
-                        "revelation",
-                        "divination"
+                        "revelation"
                     ]
                 }
             },
@@ -956,53 +601,45 @@
         },
         {
             "_id": "D0g7X2BtJJQCKCFN",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.hVU9msO9yGkxKZ3J"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.hVU9msO9yGkxKZ3J"
             },
-            "img": "systems/pf2e/icons/spells/divine-wrath.webp",
+            "img": "icons/magic/light/projectile-beam-yellow.webp",
             "name": "Divine Wrath",
             "sort": 1000000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": {
                     "type": "burst",
                     "value": 20
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
+                "counteraction": false,
                 "damage": {
-                    "value": {
-                        "0": {
-                            "type": {
-                                "categories": [],
-                                "value": "untyped"
-                            },
-                            "value": "4d10"
-                        }
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "4d10",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "spirit"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "fortitude"
                     }
                 },
                 "description": {
-                    "value": "<p>You can channel the fury of your deity against foes of opposed alignment. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or your deity is true neutral. This spell gains the trait of the alignment you chose. You deal 4d10 damage of the alignment you chose; each creature in the area must attempt a Fortitude save. Creatures that match the alignment you chose are unaffected. Those that neither match nor oppose it treat the result of their saving throw as one degree better.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}; while it is sickened, it is also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>"
+                    "value": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}; while it's sickened, it's also @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "heightening": {
                     "damage": {
@@ -1018,54 +655,33 @@
                     "heightenedLevel": 8,
                     "value": "kDogI9KtrI66DwNf"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "overlays": {},
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "120 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "fortitude"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "divine-wrath",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine"
+                    ],
                     "value": [
-                        "evocation"
+                        "concentrate",
+                        "manipulate",
+                        "sanctified"
                     ]
                 }
             },
@@ -1093,21 +709,24 @@
                     },
                     "vZx0JDAodYpPx5fZ": {
                         "damage": "1d6",
-                        "damageType": "good"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "good",
+                        "holy",
                         "magical"
                     ]
                 },
@@ -1139,22 +758,25 @@
                     },
                     "ummpKp8fk9UvIC7o": {
                         "damage": "1d6",
-                        "damageType": "good"
+                        "damageType": "spirit"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "fire",
                         "good",
+                        "holy",
                         "magical",
                         "range-30"
                     ]
@@ -1166,57 +788,13 @@
             "type": "melee"
         },
         {
-            "_id": "UWQ5EdDm7Y2WlhsZ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 1300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "Le02eHQ1ZlJ9JV2Z",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 1400000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1228,36 +806,67 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "5N85punRSLnEN6T1",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "+1 Status to All Saves vs. Magic",
+            "sort": 1400000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "item:magical"
+                        ],
+                        "selector": "saving-throw",
+                        "type": "status",
+                        "value": 1
+                    }
+                ],
+                "slug": "1-status-to-all-saves-vs-magic",
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "Y7hvS4ZYdpmVnEKM",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "All-Knowing Eyes",
             "sort": 1500000,
             "system": {
                 "actionType": {
@@ -1268,65 +877,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": ""
+                    "value": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[will|dc:34] save. If the creature fails, any Deception check it attempts until the end of its next turn has its result reduced by one degree of success. On a failed saving throw, a creature that is currently disguised or in a shape other than its true form also becomes @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the end of its next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "magical",
-                                    "arcane",
-                                    "divine",
-                                    "primal",
-                                    "occult"
-                                ]
-                            }
-                        ],
-                        "selector": "saving-throw",
-                        "type": "status",
-                        "value": 1
-                    }
-                ],
-                "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "Y7hvS4ZYdpmVnEKM",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "All-Knowing Eyes",
-            "sort": 1600000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:will|dc:34] save. If the creature fails, any Deception check it attempts until the end of its next turn has its result reduced by one degree of success. On a failed saving throw, a creature that is currently disguised or in a shape other than its true form also becomes @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the end of its next turn.</p>"
-                },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [
                     {
@@ -1334,8 +890,6 @@
                         "radius": 30,
                         "slug": "all-knowing-eyes",
                         "traits": [
-                            "aura",
-                            "divination",
                             "divine",
                             "mental",
                             "visual"
@@ -1343,21 +897,14 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
-                        "divination",
                         "divine",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1366,7 +913,7 @@
             "_id": "bQ9KwlZyFYWXB95l",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Fiery Spokes",
-            "sort": 1700000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1376,27 +923,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The wheel archon spins furiously, emitting a rain of divine fire. All creatures in a @Template[type:emanation|distance:60] take [[/r {12d6[fire],5d6[good]}]]{12d6 fire damage and 5d6 good damage} (@Check[type:reflex|dc:37|basic:true]). The wheel archon can't use Fiery Spokes for [[/br 1d4 #Recharge Fiery Spokes]]{1d4 rounds}.</p>"
+                    "value": "<p>The wheel archon spins furiously, emitting a rain of divine fire. All creatures in a @Template[emanation|distance:60] take @Damage[12d6[fire],5d6[spirit]]{12d6 fire damage and 5d6 spirit damage} (@Check[reflex|dc:37|basic]). The wheel archon can't use Fiery Spokes for [[/gmr 1d4 #Recharge Fiery Spokes]]{1d4 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "evocation",
                         "fire",
-                        "good"
+                        "good",
+                        "holy"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -1405,7 +948,7 @@
             "_id": "fVHRATRLRiaVwvEi",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Focus Gaze",
-            "sort": 1800000,
+            "sort": 1700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1415,129 +958,32 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The wheel archon fixes its gaze on a creature they can see within 30 feet. The target must immediately attempt a @Check[type:will|dc:37] save against the wheel archon's all-knowing eyes. If the creature is under any magical effect that disguises it or has altered its shape, the wheel archon attempts to counter that magical disguise effect (counteract [[/r 1d20+29]]{+29}, 8th level). After attempting its save, the creature is then temporarily immune until the start of the wheel archon's next turn.</p>"
+                    "value": "<p>The wheel archon fixes its gaze on a creature they can see within 30 feet. The target must immediately attempt a @Check[will|dc:37] save against the wheel archon's all-knowing eyes. If the creature is under any magical effect that disguises it or has altered its shape, the wheel archon attempts to counter that magical disguise effect (counteract [[/r 1d20+29]]{+29}, 8th level). After attempting its save, the creature is then temporarily immune until the start of the wheel archon's next turn.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
-                        "divination",
                         "divine",
                         "mental",
                         "visual"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "K5JSOtpGSwYtA3H8",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 31
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "PwwXO5RLyIqzVuSU",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 2000000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 30
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "Jh5kUCUZQHp9RDWJ",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 2100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 29
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "FYxbYEpzan2sLrKF",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 2200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 28
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "sLXBqpRvWsK2VW3e",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Warfare Lore",
-            "sort": 2300000,
+            "sort": 1800000,
             "system": {
                 "description": {
                     "value": ""
@@ -1548,11 +994,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1593,12 +1041,6 @@
                 "temp": 0,
                 "value": 230
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 28
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -1610,25 +1052,48 @@
             },
             "weaknesses": [
                 {
-                    "type": "evil",
+                    "type": "unholy",
                     "value": 15
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "LG"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "tongues",
+                "value": [
+                    "diabolic",
+                    "draconic",
+                    "empyrean"
+                ]
+            },
             "level": {
                 "value": 16
             },
             "privateNotes": "",
             "publicNotes": "<p>Among the most terrifying archons to behold, and easily the most difficult for mortals to comprehend, is the wheel archon, so named for its appearance as a flying, armor-plated wheel of fire with eyes on each spoke. Wheel archons often serve as messengers or harbingers for the armies of heaven, as their stubborn, indomitable natures make them ill-suited for missions requiring diplomacy or tact. Indeed, they have a legendary intolerance and single-mindedness in the pursuit of the punishment of evil.</p>\n<p>Wheel archons can't tolerate deceit and easily see through lies. The sensation of this celestial being's divine eyes all fixing upon a single target is usually enough to encourage honesty, but when a wheel archon detects a falsehood, their righteous wrath takes over and they mete out punishment to sinners without quarter.</p>",
-            "source": {
-                "value": "Pathfinder #183: Field of Maidens"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #183: Field of Maidens"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "discern lies",
+            "mod": 28,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "precise",
+                    "range": 60,
+                    "type": "truesight"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -1645,26 +1110,31 @@
                 "value": 28
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 31
+            },
+            "athletics": {
+                "base": 30
+            },
+            "intimidation": {
+                "base": 29
+            },
+            "religion": {
+                "base": 28
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "Tongues",
-                "selected": [],
-                "value": [
-                    "celestial",
-                    "draconic",
-                    "infernal"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision, discern lies, true seeing"
-            },
             "size": {
                 "value": "huge"
             },
             "value": [
                 "archon",
-                "celestial"
+                "celestial",
+                "good",
+                "holy",
+                "lawful"
             ]
         }
     },

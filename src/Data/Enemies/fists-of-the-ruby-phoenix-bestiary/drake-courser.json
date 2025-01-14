@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -72,11 +74,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -90,94 +94,10 @@
             "type": "melee"
         },
         {
-            "_id": "EfygazVhHMDdIFfm",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "Vd5YH5g8xQrR87Mv",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "7XIYM7XKRyeIRUn6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Snow Vision",
-            "sort": 500000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -189,37 +109,28 @@
                 "description": {
                     "value": "<p>Snow doesn't impair a drake courser's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.Concealed]{concealment} from snowfall.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "eYsmsN7yBlG4NrOK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O"
             },
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Attack of Opportunity (Special)",
-            "sort": 600000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -231,23 +142,16 @@
                 "description": {
                     "value": "<p>Tail only. On a critical hit, the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]; if the target was using a move action, its movement ends.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -256,7 +160,7 @@
             "_id": "JX4uHtluMzx2RYc4",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Battle Dance",
-            "sort": 700000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -268,23 +172,16 @@
                 "description": {
                     "value": "<p>The drake courser makes two fangs Strikes and one tail Strike in any order. It can replace any of these Strikes with @UUID[Compendium.pf2e.actionspf2e.Item.Demoralize] or @UUID[Compendium.pf2e.actionspf2e.Item.Step].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -293,7 +190,7 @@
             "_id": "2tMf0hI5hRH03C4s",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Buffeting Surge",
-            "sort": 800000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -305,25 +202,23 @@
                 "description": {
                     "value": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The drake courser moves up to twice its Speed. It can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Trip] with its tail once at any point during its movement.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 3,
+                    "per": "day",
+                    "value": 3
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -332,7 +227,7 @@
             "_id": "GcJJKFDfrv0jW0K3",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Freezing Mist Breath",
-            "sort": 900000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -342,29 +237,21 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The drake spits a ball of liquid up to 60 feet that explodes into a @Template[type:burst|distance:20] of freezing mist. Those in the burst take @Damage[13d6[cold]] damage (@Check[type:reflex|dc:31|basic:true] save). The mist cakes all surfaces in the area with a sheet of slippery ice that turns the area into difficult terrain for [[/br 2d4 #rounds]]{2d4 rounds}. It can't use Freezing Mist Breath again for [[/br 1d6 #Recharge Freezing Mist Breath]]{1d6 rounds}.</p>"
+                    "value": "<p>The drake spits a ball of liquid up to 60 feet that explodes into a @Template[burst|distance:20] of freezing mist. Those in the burst take @Damage[13d6[cold]] damage (@Check[reflex|dc:31|basic] save). The mist cakes all surfaces in the area with a sheet of slippery ice that turns the area into difficult terrain for [[/br 2d4 #rounds]]{2d4 rounds}. It can't use Freezing Mist Breath again for [[/gmr 1d6 #Recharge Freezing Mist Breath]]{1d6 rounds}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "cold",
-                        "evocation"
+                        "cold"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -373,7 +260,7 @@
             "_id": "dRF3nPzB91HYIbXx",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ice Climb (35 feet)",
-            "sort": 1000000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -385,37 +272,28 @@
                 "description": {
                     "value": "<p>A drake courser can climb on ice as though it had the listed climb Speed. It ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "RCAHf4ajzslat95H",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Knockdown",
-            "sort": 1100000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -427,95 +305,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "knockdown",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "ZQkGohHkdxfjpDtx",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 27
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "s4n3WpXPve37sUYE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 23
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "56vxwJYg0FuvZlPH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1400000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 19
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Drake Courser",
@@ -565,12 +367,6 @@
                     "type": "unconscious"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 22
-            },
             "speed": {
                 "details": "Ice Climb",
                 "otherSpeeds": [
@@ -597,19 +393,41 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "Variant frost drakes",
-            "creatureType": "Dragon",
+            "languages": {
+                "details": "",
+                "value": [
+                    "draconic",
+                    "tien"
+                ]
+            },
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #167: Ready? Fight!"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #167: Ready? Fight!"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "snow vision",
+            "mod": 22,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -626,23 +444,24 @@
                 "value": 18
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 27
+            },
+            "athletics": {
+                "base": 23
+            },
+            "intimidation": {
+                "base": 19
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "draconic",
-                    "tien"
-                ]
-            },
             "rarity": "uncommon",
-            "senses": {
-                "value": "darkvision, scent (imprecise) 30 feet, snow vision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "chaotic",
                 "cold",
                 "dragon"
             ]

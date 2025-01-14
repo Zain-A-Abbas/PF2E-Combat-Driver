@@ -4,24 +4,22 @@
     "items": [
         {
             "_id": "9YL8nBbbHZl7eqG2",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x"
             },
-            "img": "systems/pf2e/icons/equipment/weapons/greataxe.webp",
+            "img": "icons/weapons/axes/axe-double-engraved.webp",
             "name": "Greataxe",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "greataxe",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
                     "value": 0
+                },
+                "bulk": {
+                    "value": 2
                 },
                 "category": "martial",
                 "containerId": null,
@@ -38,9 +36,6 @@
                     "handsHeld": 2,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "axe",
                 "hardness": 0,
                 "hp": {
@@ -50,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "range": null,
@@ -85,17 +65,15 @@
                     "value": ""
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "lg",
                 "slug": "greataxe",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -105,26 +83,24 @@
                 },
                 "usage": {
                     "value": "held-in-two-hands"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "weapon"
         },
         {
             "_id": "D61AbK6V7sJ1Zixd",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 200000,
             "system": {
                 "acBonus": 1,
                 "baseItem": "leather-armor",
+                "bulk": {
+                    "value": 1
+                },
                 "category": "light",
                 "checkPenalty": -1,
                 "containerId": null,
@@ -137,9 +113,6 @@
                     "inSlot": true,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": "1"
-                },
                 "group": "leather",
                 "hardness": 0,
                 "hp": {
@@ -149,58 +122,34 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
                 "size": "lg",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
-                "stackGroup": null,
+                "speedPenalty": 0,
                 "strength": 0,
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "usage": {
-                    "value": "wornarmor"
-                },
-                "weight": {
-                    "value": "2"
                 }
             },
             "type": "armor"
@@ -235,11 +184,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -281,11 +232,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -297,52 +250,10 @@
             "type": "melee"
         },
         {
-            "_id": "k45QQ0xBwRtwJCeF",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "SzfxfFohnnwRyEeK",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Glutton's Feast",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -354,23 +265,16 @@
                 "description": {
                     "value": "<p>If the ogre glutton damages a living creature with their jaws Strike, they gain [[/r 1d4 #Temporary Hit Points]]{1d4 temporary Hit Points} for 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -379,7 +283,7 @@
             "_id": "DvjFG8xZGQmhN7AK",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Glutton's Rush",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -391,37 +295,28 @@
                 "description": {
                     "value": "<p>The ogre glutton Strides twice and makes a jaws Strike. If they damage a living creature with this Strike, the temporary Hit Points they receive from Glutton's Feast is increased to [[/r 2d4 #Temporary Hit Points]]{2d4}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "OQICdYHqGHNlnuut",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Swallow Whole",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -433,25 +328,18 @@
                 "description": {
                     "value": "<p>Small, @Damage[(2d4+4)[bludgeoning]] damage, Rupture 14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "swallow-whole",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -460,7 +348,7 @@
             "_id": "wKAjiKv43WQtPPz5",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Throw Powder Keg",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -470,36 +358,30 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing [[/r {3d8[fire],3d8[bludgeoning]}]]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[type:burst|distance:15] (@Check[type:reflex|dc:20|basic:true]).</p>"
+                    "value": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing @Damage[3d8[fire],3d8[bludgeoning]]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[burst|distance:15] (@Check[reflex|dc:20|basic]).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "iw0W5WgXZN9Y21ul",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -511,95 +393,19 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "AXGJyynxRNHte8qz",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "bJdkiFBSApedyZKG",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "hGh36AM2J7CwsFv7",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 1300000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Ogre Slug",
@@ -639,31 +445,41 @@
                 "temp": 0,
                 "value": 85
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 30
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Variant elite ogre gluttons",
-            "creatureType": "Giant",
+            "languages": {
+                "details": "",
+                "value": [
+                    "jotun"
+                ]
+            },
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>Ogre gluttons take the act of feeding to a horrific extreme, capable of extending their already cavernous mouths wide enough to gulp down a halfling. Stories of ogre gluttons being tricked into eating razor-edged shields or barrels filled with poisoned meat are common, but such tales are of little consolation to those who have been gobbled down whole by these ravenous giants. In addition to their sadistic table manners, ogre gluttons have a disturbing knack for coming up with violent \"games\" that are little more than drawn-out torments, yet those who somehow manage to beat a glutton at the rules of its own game can often enrage and frustrate the ogre enough that the resulting tantrum is more than enough distraction to afford a last-ditch escape from doom.</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity.</p>",
-            "source": {
-                "value": "Pathfinder #180: The Smoking Gun"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #180: The Smoking Gun"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -680,22 +496,25 @@
                 "value": 6
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 12
+            },
+            "intimidation": {
+                "base": 10
+            },
+            "survival": {
+                "base": 6
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "jotun"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "lg"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "giant",
                 "humanoid"
             ]

@@ -18,20 +18,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature moves past the bend in the middle of the hall</p>\n<p><strong>Effect</strong> A pair of @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Derghodaemon] rise up from the floor to the north and southeast near the stairs; the daemons roll for initiative using Stealth, and fight to the death but do not pursue foes out of this area.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -59,17 +55,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Obscure magical runes hidden within the runes of the 16 named warriors bind a pair of derghodaemons into the walls of this hallway.</p>",
-            "disable": "<p>@Check[type:thievery|dc:37] (expert) to remove a set of runes linked to one bound derghodaemon, or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (7th level, counteract DC 31) to counteract the trap's magic.</p>",
+            "disable": "<p>@Check[thievery|dc:37] (expert) to remove a set of runes linked to one bound derghodaemon, or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (7th level, counteract DC 31) to counteract the trap's magic.</p>",
             "isComplex": false,
             "level": {
                 "value": 13
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
+            },
             "reset": "<p>If at least one of the @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Derghodaemon]{Derghodaemons} survives, the trap resets after 1 hour, causing the surviving derghodaemons to be completely restored to full health and to merge with the floors.</p>",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Kingmaker"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

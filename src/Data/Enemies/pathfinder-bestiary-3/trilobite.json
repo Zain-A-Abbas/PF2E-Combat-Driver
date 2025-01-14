@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,57 +48,13 @@
             "type": "melee"
         },
         {
-            "_id": "6ThLzzOnr19ZeVm4",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "X4QNdoSZgj2ri5we",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.VdSMQ6yRZ3YXNXHL"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.VdSMQ6yRZ3YXNXHL"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Wavesense (Imprecise) 30 feet",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -108,23 +66,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Wavesense]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "wavesense",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -133,7 +84,7 @@
             "_id": "TQhgfFteEWb6zzlT",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Curl Up",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -145,23 +96,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The trilobite takes damage</p>\n<hr />\n<p><strong>Effect</strong> The trilobite gains a +2 circumstance bonus to AC until the start of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Curl Up]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -170,7 +114,7 @@
             "_id": "M3azf7Pp6YDlxgN3",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Quick Escape",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -182,95 +126,19 @@
                 "description": {
                     "value": "<p>The trilobite swims up to double its Speed and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Hide].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "MN7LX4VUi62SIOTX",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 4
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "cnSa4yDWiJwbiWvh",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "z47d1dvfQBrjqzJd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 4
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Trilobite",
@@ -309,12 +177,6 @@
                 "temp": 0,
                 "value": 7
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 8
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -326,19 +188,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": -1
             },
             "privateNotes": "",
             "publicNotes": "<p>Trilobites have segmented, chitinous bodies that armor them but provide enough flexibility for them to roll up and protect their vulnerable undersides from attack. Instead of jaws, trilobites have specialized structures called gnathobases at the base of some of their legs. These serrated and jagged structures grind and masticate any prey the trilobite latches onto, enabling the creatures to feed on anything from hard-shelled clams to soft-bodied creatures. While not particularly fast on their own, they can employ scuttling bursts of speed to dart into ocean silt or seaweed beds to escape predators.</p>\n<p>Oceanic wizards of many types employ trilobites as familiars. In addition to trilobites' durability, their ubiquity means they make capable spies for their masters as they travel unnoticed throughout the depths.</p>\n<hr />\n<p>Often overlooked as little more than water-dwelling pests, trilobites are a varied species of arthropods found throughout the seas and oceans of Golarion. So ancient and widespread are these critters that trilobite fossils are as commonly found as living specimens.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": [
+                {
+                    "type": "darkvision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "wavesense"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -355,19 +236,19 @@
                 "value": 4
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 4
+            },
+            "stealth": {
+                "base": 5
+            },
+            "survival": {
+                "base": 4
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, wavesense (imprecise) 30 feet"
-            },
             "size": {
                 "value": "tiny"
             },

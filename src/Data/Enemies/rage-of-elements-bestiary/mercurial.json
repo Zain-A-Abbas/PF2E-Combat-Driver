@@ -1,27 +1,24 @@
 {
     "_id": "BKHoKKSWvc7rQoyz",
-    "folder": "0XuVKERriemeh5sU",
     "img": "systems/pf2e/icons/default-icons/npc.svg",
     "items": [
         {
             "_id": "p8byE3TncBIR5zbG",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.fjkwYZ0hRmBztwBG"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fjkwYZ0hRmBztwBG"
             },
             "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
             "name": "Shuriken",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "shuriken",
                 "bonus": {
                     "value": 0
                 },
                 "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
                     "value": 0
                 },
                 "category": "martial",
@@ -39,9 +36,6 @@
                     "handsHeld": 0,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": "dart",
                 "hardness": 0,
                 "hp": {
@@ -51,34 +45,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 5,
                 "range": 20,
@@ -86,17 +65,15 @@
                     "value": "0"
                 },
                 "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
                 "size": "med",
                 "slug": "shuriken",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": null
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "uncommon",
@@ -108,9 +85,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
@@ -139,11 +113,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -185,11 +161,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -203,57 +181,13 @@
             "type": "melee"
         },
         {
-            "_id": "54kkZIO70kzu60ug",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 400000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "TQOFvvkbdgLIFkFV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Change Shape",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -265,28 +199,20 @@
                 "description": {
                     "value": "<p>The mercurial takes on the appearance of any Small or Medium humanoid. This transformation allows for significant detail and can reproduce the features of a specific individual, but the mercurial retains a shiny, liquid-metal appearance that renders the transformation unsuitable as a disguise unless they're impersonating another mercurial. It doesn't change the mercurial's Speed or the attack and damage bonuses of their Strikes, but it does allow them to transform their limbs into metal tools or melee weapons, potentially changing the damage type dealt by their Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -295,7 +221,7 @@
             "_id": "fSIe6udFqMT1qsJF",
             "img": "systems/pf2e/icons/default-icons/action.svg",
             "name": "Metallurgic Adaptation",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -307,100 +233,27 @@
                 "description": {
                     "value": "<p>The mercurial transmutes their liquid metal body into cold iron, copper, gold, iron, silver, or steel. Their unarmed melee Strikes are made of that material until they use Metallurgic Adaptation again.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "polymorph",
                         "primal"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
-            "_id": "2ABloUOSCJCtgere",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "OIrMTSGqsy24GveP",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Deception",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 10
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "UlO0bTjDHhrC8566",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Diplomacy",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
             "_id": "6sbPl4oJyKflDKyB",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Plane of Metal Lore",
-            "sort": 1000000,
+            "sort": 600000,
             "system": {
                 "description": {
                     "value": ""
@@ -411,11 +264,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -474,12 +329,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 6
-            },
             "resistances": [
                 {
                     "doubleVs": [],
@@ -494,19 +343,36 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "talican"
+                ]
+            },
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>Some of the most populous denizens of the Plane of Metal, mercurials are weird creatures of liquid metal known for changing their features, chemical compositions, and temperaments with equal frequency. Excitable, curious, and friendly, mercurials are quick to offer assistance to extraplanar beings, but their volatile personalities can make them unreliable allies.</p>\n<hr />\n<p>Metal elementals can manifest in a wide variety of different forms, from shapeless amalgams of different metals to humanoid and beast-like monstrosities.</p>\n<h2>Metal Forms</h2>\n<p>Though metal elementals are made almost entirely of metal, most are composed of layers of different metals in tiny fragments, as complex as a body of flesh or plant matter. Many of these metals are rusted or decayed from the natural, slow entropy of the Plane of Metal.</p>\n<h2>Many Faces, Many Names</h2>\n<p>As immortal beings with comparatively short attention spans, mercurials invariably become bored with their current identities sooner or later and seek a change by adopting a new face and persona. To avoid confusion among friends and acquaintances, a mercurial's name typically consists not only of their current moniker, but a list of the last few names used, presented in chronological order as far back as the mercurial can remember.</p>",
-            "source": {
-                "value": "Pathfinder Rage of Elements"
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 6,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -523,19 +389,19 @@
                 "value": 8
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 8
+            },
+            "deception": {
+                "base": 10
+            },
+            "diplomacy": {
+                "base": 8
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common",
-                    "talican"
-                ]
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "med"
             },

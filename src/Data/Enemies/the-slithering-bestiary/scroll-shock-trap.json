@@ -18,23 +18,16 @@
                 "description": {
                     "value": "<p><strong>Hardness</strong> 16</p>\n<p><strong>HP</strong> 64 (BT 32)</p>\n<p><strong>Resistances</strong> Electricity 15</p>\n<p><strong>Immunities</strong> Critical Hits, Object Immunities, Precision Damage</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -55,23 +48,16 @@
                 "description": {
                     "value": "<p><strong>Hardness</strong> 18</p>\n<p><strong>HP</strong> 72 (BT 36)</p>\n<p><strong>Resistances</strong> Electricity 15</p>\n<p><strong>Immunities</strong> Critical Hits, Object Immunities, Precision Damage</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -90,28 +76,20 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A creature without an Aspis Consortium badge approaches within 5 feet of a slab</p>\n<hr />\n<p><strong>Effect</strong> Both double doors leading out of the room shut and lock. While the trap is active, the doors must be battered open (Hardness 18; Panel HP 72 [BT 36]; @Check[type:athletics|dc:29|name:Batter Down Doors|traits:action:force-open] to @UUID[Compendium.pf2e.actionspf2e.Item.Force Open]). The closest symbol to the triggering creature shoots an electricity bolt attack at it. The trap then rolls initiative.</p>"
+                    "value": "<p><strong>Trigger</strong> A creature without an Aspis Consortium badge approaches within 5 feet of a slab</p>\n<hr />\n<p><strong>Effect</strong> Both double doors leading out of the room shut and lock. While the trap is active, the doors must be battered open (Hardness 18; Panel HP 72 [BT 36]; @Check[athletics|dc:29|name:Batter Down Doors|traits:action:force-open] to @UUID[Compendium.pf2e.actionspf2e.Item.Force Open]). The closest symbol to the triggering creature shoots an electricity bolt attack at it. The trap then rolls initiative.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "arcane",
-                        "evocation"
+                        "arcane"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -132,23 +110,16 @@
                 "description": {
                     "value": ""
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -169,28 +140,26 @@
                     "value": 21
                 },
                 "damageRolls": {
-                    "kz4wjza1vdnr4bny3gibi": {
+                    "0": {
                         "damage": "1d6+2",
+                        "damageType": "electricity"
+                    },
+                    "1": {
+                        "category": "persistent",
+                        "damage": "1d6",
                         "damageType": "electricity"
                     }
                 },
                 "description": {
-                    "value": "<p>Plus 1d6 persistent electricity damage</p>"
-                },
-                "rules": [
-                    {
-                        "category": "persistent",
-                        "damageType": "electricity",
-                        "diceNumber": 1,
-                        "dieSize": "d6",
-                        "key": "DamageDice",
-                        "selector": "{item|_id}-damage"
-                    }
-                ],
-                "slug": null,
-                "source": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -235,24 +204,25 @@
                 }
             ],
             "stealth": {
-                "details": "<p>(expert) or @Check[type:perception|dc:29|traits:action:seek] (expert) to spot the control panel</p>",
+                "details": "<p>(expert) or @Check[perception|dc:29|traits:action:seek] (expert) to spot the control panel</p>",
                 "value": 17
             }
         },
         "creatureType": "",
         "details": {
             "description": "<p>Five scroll symbols shoot electricity bolts around the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:25|name:Counteract Magic|traits:action:disable-a-device] (expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic]</em> (3rd level; counteract DC 24)</p>\n<p>@Check[type:thievery|dc:29|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (master) to disable the entire trap from the hidden control panel beneath the central slab.</p>",
+            "disable": "<p>@Check[thievery|dc:25|name:Counteract Magic|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] (3rd level; counteract DC 24)</p>\n<p>@Check[thievery|dc:29|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (master) to disable the entire trap from the hidden control panel beneath the central slab.</p>",
             "isComplex": true,
             "level": {
                 "value": 9
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: The Slithering"
+            },
             "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
-            "routine": "<p>(5 actions) Each disabled symbol reduces the trap's number of actions by 1.</p>\n<p>For each of its actions, a different symbol shoots an electricity bolt at a random creature in the room. The trap doesn't take multiple attack penalties.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Adventure: The Slithering"
-            }
+            "routine": "<p>(5 actions) Each disabled symbol reduces the trap's number of actions by 1.</p>\n<p>For each of its actions, a different symbol shoots an electricity bolt at a random creature in the room. The trap doesn't take multiple attack penalties.</p>"
         },
         "saves": {
             "fortitude": {

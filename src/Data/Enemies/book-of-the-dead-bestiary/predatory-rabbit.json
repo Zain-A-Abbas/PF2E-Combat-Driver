@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -46,52 +48,10 @@
             "type": "melee"
         },
         {
-            "_id": "DHn9EnlQKZ1hypSV",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "p1j4vk8x9pqsovd6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sense Companion",
-            "sort": 300000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -103,37 +63,72 @@
                 "description": {
                     "value": "<p>A predatory rabbit knows the direction of its past owner or family (as long as they're both on the same plane), but not the distance.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "detection",
-                        "divination",
                         "occult"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "dqeg5ywheav84nwd",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stench",
+            "sort": 300000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
                 },
-                "trigger": {
-                    "value": ""
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:13] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 10,
+                        "slug": "stench",
+                        "traits": [
+                            "olfactory"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "aura",
+                        "olfactory"
+                    ]
                 }
             },
             "type": "action"
         },
         {
             "_id": "i45nUr4U6ijZvV0X",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Negative Healing",
+            "name": "Void Healing",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -146,8 +141,10 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
                 },
                 "rules": [
                     {
@@ -158,65 +155,9 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "dqeg5ywheav84nwd",
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Stench",
-            "sort": 500000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "defensive",
-                "description": {
-                    "value": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<p>A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:13] save or become @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [
-                    {
-                        "key": "Aura",
-                        "radius": 10,
-                        "slug": "stench",
-                        "traits": [
-                            "aura",
-                            "olfactory"
-                        ]
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "aura",
-                        "olfactory"
-                    ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -225,7 +166,7 @@
             "_id": "vW68sTmazYmk9G6Q",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Feral Leap",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -237,115 +178,21 @@
                 "description": {
                     "value": "<p>The predatory rabbit jumps with a maximum height and distance each equal to half its Speed. This movement doesn't trigger reactions. At any point, the predatory rabbit attempts a jaws Strike.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "move"
                     ]
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "03seyra33l1m2qe7",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Acrobatics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "yfqqqxd6hvhoxdj9",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 800000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 2
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.HighJumpOrLongJump",
-                        "predicate": [
-                            {
-                                "or": [
-                                    "action:long-jump",
-                                    "action:high-jump"
-                                ]
-                            }
-                        ],
-                        "selector": "athletics",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+4 when jumping",
-                        "options": "action:high-jump, action:long-jump"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "l94p8im8owmarzwv",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 900000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 6
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Predatory Rabbit",
@@ -379,7 +226,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 6,
                 "temp": 0,
                 "value": 6
@@ -401,12 +248,6 @@
                     "type": "sleep"
                 }
             ],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 5
-            },
             "speed": {
                 "otherSpeeds": [],
                 "special": "",
@@ -414,19 +255,33 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": -1
             },
             "privateNotes": "",
-            "publicNotes": "<p>Skittish in life, predatory rabbits are fast and nimble predators in unassuming forms. They most enjoy hunting birds, squirrels, cats, and other rabbits.</p>\n<hr />\n<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath— fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publicNotes": "<p>Skittish in life, predatory rabbits are fast and nimble predators in unassuming forms. They most enjoy hunting birds, squirrels, cats, and other rabbits.</p>\n<hr />\n<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath—fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "sense companion",
+            "mod": 5,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -443,21 +298,41 @@
                 "value": 3
             }
         },
+        "skills": {
+            "acrobatics": {
+                "base": 6
+            },
+            "athletics": {
+                "base": 2,
+                "special": [
+                    {
+                        "base": 4,
+                        "label": "when jumping",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "action:long-jump",
+                                    "action:high-jump"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "stealth": {
+                "base": 6
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "darkvision, sense companion"
-            },
             "size": {
                 "value": "tiny"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

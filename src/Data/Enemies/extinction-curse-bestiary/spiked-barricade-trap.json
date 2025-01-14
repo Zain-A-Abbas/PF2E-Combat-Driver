@@ -26,11 +26,13 @@
                 "description": {
                     "value": "<p>No Multiple Attack Penalty</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -59,25 +61,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature enters the area adjacent to a barrier</p>\n<hr />\n<p><strong>Effect</strong> Wedges of sharpened stone extend from the barricade in all directions and attack all creatures within 10 feet.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "attack"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -121,17 +116,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>Spring-loaded wedges of sharpened stone pop out of the wooden barricade.</p>",
-            "disable": "<p>@Check[type:thievery|dc:33|name:Supress Spring Mechanism|traits:action:disable-a-device] (expert) to suppress the spring mechanism for one 5-foot segment of the barricade</p>",
+            "disable": "<p>@Check[thievery|dc:33|name:Supress Spring Mechanism|traits:action:disable-a-device] (expert) to suppress the spring mechanism for one 5-foot segment of the barricade</p>",
             "isComplex": false,
             "level": {
                 "value": 13
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #154: Siege of the Dinosaurs"
+            },
             "reset": "<p>The trap must be manually reset by pushing the wedges back into place.</p>",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #154: Siege of the Dinosaurs"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

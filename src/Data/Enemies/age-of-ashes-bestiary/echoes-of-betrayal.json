@@ -16,16 +16,15 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Trigger</strong> At least three creatures enter area <strong>H10</strong>.</p>\n<hr />\n<p><strong>Effect</strong> The haunt takes control of all creatures in the prison, affecting them with <em>@UUID[Compendium.pf2e.spells-srd.Item.Confusion]</em> (8th level, @Check[type:will|dc:37] save).</p>"
+                    "value": "<p><strong>Trigger</strong> At least three creatures enter area <strong>H10</strong>.</p>\n<hr />\n<p><strong>Effect</strong> The haunt takes control of all creatures in the prison, affecting them with @UUID[Compendium.pf2e.spells-srd.Item.Confusion] (8th level, @Check[will|dc:37] save).</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -35,12 +34,6 @@
                         "mental",
                         "occult"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -68,13 +61,15 @@
                     }
                 },
                 "description": {
-                    "value": "<p>On hit the creature must attempt a new @Check[type:will|dc:37|name:Spectral Fist Confusion] save against <em>@UUID[Compendium.pf2e.spells-srd.Item.Confusion]</em> if it's not already @UUID[Compendium.pf2e.conditionitems.Item.Confused].</p>"
+                    "value": "<p>On hit the creature must attempt a new @Check[will|dc:37|name:Spectral Fist Confusion] save against @UUID[Compendium.pf2e.spells-srd.Item.Confusion] if it's not already @UUID[Compendium.pf2e.conditionitems.Item.Confused].</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -113,17 +108,18 @@
         "customModifiers": {},
         "details": {
             "description": "<p>Malevolent spirits led by a ghostly image of Ludika rise and begin a deadly brawl. These spirits attempt to overwhelm living creatures, forcing them to join the battle.</p>",
-            "disable": "<p>@Check[type:religion|dc:35|name:Exorcise|traits:haunt,complex] (master) three times to exorcise the spirits or @Check[type:diplomacy|dc:39|name:Talk Down|traits:haunt,complex] (expert) three times to talk them down.</p>",
+            "disable": "<p>@Check[religion|dc:35|name:Exorcise|traits:haunt,complex] (master) three times to exorcise the spirits or @Check[diplomacy|dc:39|name:Talk Down|traits:haunt,complex] (expert) three times to talk them down.</p>",
             "isComplex": true,
             "level": {
                 "value": 16
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #148: Fires of the Haunted City"
+            },
             "reset": "<p>After 24 hours, the haunt returns. The spirits are permanently put to rest only if a lawfully appointed judge from Saggorak (or Kovlar) comes into the prison, takes damage from the haunt, and survives the attack.</p>",
-            "routine": "<p>(1 action) As 1 action, the haunt causes a barrage of ghostly fists to lash from the walls, floors, and ceiling. The haunt attempts a spectral fist Strike against each creature in area <strong>H10</strong>.</p>",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #148: Fires of the Haunted City"
-            }
+            "routine": "<p>(1 action) As 1 action, the haunt causes a barrage of ghostly fists to lash from the walls, floors, and ceiling. The haunt attempts a spectral fist Strike against each creature in area <strong>H10</strong>.</p>"
         },
         "saves": {
             "fortitude": {

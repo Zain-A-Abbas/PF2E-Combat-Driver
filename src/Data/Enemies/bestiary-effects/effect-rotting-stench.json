@@ -1,0 +1,52 @@
+{
+    "_id": "xXfzzNaBOqDUbYBD",
+    "img": "icons/magic/acid/dissolve-bone-skull.webp",
+    "name": "Effect: Rotting Stench",
+    "system": {
+        "description": {
+            "value": "<p>While within the aura, creatures also take a -2 circumstance penalty to saves against fear and to recover from the sickened condition.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Kingmaker"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "fear"
+                ],
+                "selector": "saving-throw",
+                "type": "circumstance",
+                "value": -2
+            },
+            {
+                "key": "Note",
+                "selector": "fortitude",
+                "text": "<p>While within the aura, creatures take a -2 circumstance penalty to recover from the sickened condition.</p>"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

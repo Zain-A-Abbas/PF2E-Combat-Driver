@@ -30,11 +30,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -61,25 +63,18 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The trip wire is touched</p>\n<hr />\n<p><strong>Effect</strong> The trap's poisoned thorns attack the creature or object touching the trip wire.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "poison"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -116,17 +111,18 @@
         "creatureType": "",
         "details": {
             "description": "<p>A trip wire strung 4 feet above the ground releases a branch studded with envenomed thorns.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18|name:Remove Trip Wire] (trained) to remove the trip wire.</p>",
+            "disable": "<p>@Check[thievery|dc:18|name:Remove Trip Wire] (trained) to remove the trip wire.</p>",
             "isComplex": false,
             "level": {
                 "value": 2
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #151: The Show Must Go On"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder #151: The Show Must Go On"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

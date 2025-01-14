@@ -8,9 +8,6 @@
             "name": "Wooden Maul",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
@@ -18,8 +15,11 @@
                 "bonusDamage": {
                     "value": 0
                 },
+                "bulk": {
+                    "value": 0
+                },
                 "category": "simple",
-                "containerId": "null",
+                "containerId": null,
                 "damage": {
                     "damageType": "bludgeoning",
                     "dice": 1,
@@ -33,9 +33,6 @@
                     "handsHeld": 1,
                     "invested": null
                 },
-                "equippedBulk": {
-                    "value": ""
-                },
                 "group": null,
                 "hardness": 0,
                 "hp": {
@@ -45,32 +42,17 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "range": null,
@@ -78,17 +60,15 @@
                     "value": ""
                 },
                 "rules": [],
-                "size": "med",
-                "slug": null,
-                "source": {
-                    "value": ""
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
                 },
+                "size": "lg",
+                "slug": null,
                 "splashDamage": {
                     "value": 0
-                },
-                "stackGroup": null,
-                "strikingRune": {
-                    "value": ""
                 },
                 "traits": {
                     "rarity": "common",
@@ -100,9 +80,6 @@
                 },
                 "usage": {
                     "value": "held-in-one-hand"
-                },
-                "weight": {
-                    "value": "-"
                 }
             },
             "type": "weapon"
@@ -136,11 +113,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -156,52 +135,10 @@
             "type": "melee"
         },
         {
-            "_id": "dHjLu0FT6W2dW3CX",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "5DBN87hpFj2XZAQ6",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Critical Vulnerability",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -213,23 +150,16 @@
                 "description": {
                     "value": "<p>A critical hit damages the construct's controls, making it @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} until repaired. Additional critical hits increase this value, up to @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 4}.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -238,7 +168,7 @@
             "_id": "osmMe7CjPJ5aSchj",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ridden Construct",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -248,25 +178,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Leaf Leshy] who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+                    "value": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Leaf Leshy] who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -275,7 +198,7 @@
             "_id": "2Rw2yr5Pl2cYjGaO",
             "img": "systems/pf2e/icons/actions/Reaction.webp",
             "name": "Hammer Block",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "reaction"
@@ -287,66 +210,19 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> An ally within the bramble champion's reach is targeted by an attack, and the bramble champion can see the attacker</p>\n<hr />\n<p><strong>Effect</strong> The bramble champion interposes with its hammer, giving the ally a +2 circumstance bonus to AC against the triggering attack.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "bVXPIPV5kAA1PEbd",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 9
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Shove",
-                        "predicate": [
-                            "action:shove"
-                        ],
-                        "selector": "athletics",
-                        "type": "untyped",
-                        "value": 1
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+10 to shove",
-                        "options": "action:shove"
-                    }
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Bramblehand Champion Construct",
@@ -386,12 +262,6 @@
                 "value": 45
             },
             "immunities": [],
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 10
-            },
             "speed": {
                 "otherSpeeds": [],
                 "value": 20
@@ -404,19 +274,33 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #169: Kindled Magic"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #169: Kindled Magic"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 10,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -433,16 +317,22 @@
                 "value": 8
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 9,
+                "special": [
+                    {
+                        "base": 10,
+                        "label": "to shove",
+                        "predicate": [
+                            "action:shove"
+                        ]
+                    }
+                ]
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "low-light vision"
-            },
             "size": {
                 "value": "lg"
             },

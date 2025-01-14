@@ -14,7 +14,6 @@
                 "description": {
                     "value": ""
                 },
-                "displayLevels": {},
                 "prepared": {
                     "label": "Spellcasting Type",
                     "type": "String",
@@ -23,83 +22,24 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "showSlotlessLevels": {
-                    "value": true
-                },
-                "showUnpreparedSpells": {
-                    "value": false
-                },
                 "slots": {
-                    "slot0": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot1": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot10": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot11": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot2": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot3": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
                     "slot4": {
                         "max": 1,
-                        "prepared": {
-                            "0": {
+                        "prepared": [
+                            {
                                 "id": "cDuq3xUdZfwU4KxR"
                             }
-                        },
+                        ],
                         "value": 1
-                    },
-                    "slot5": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot6": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot7": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot8": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
-                    },
-                    "slot9": {
-                        "max": 0,
-                        "prepared": {},
-                        "value": 0
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 30,
                     "item": 0,
@@ -116,42 +56,26 @@
         },
         {
             "_id": "cDuq3xUdZfwU4KxR",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
             },
-            "img": "systems/pf2e/icons/spells/air-walk.webp",
+            "img": "icons/magic/water/wave-water-teal.webp",
             "name": "Air Walk (Constant)",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "5 minutes"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 4
@@ -159,113 +83,46 @@
                 "location": {
                     "value": "df9KMhoPt82MvuLg"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "touch"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "air-walk",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
-                        "divine",
-                        "primal"
-                    ]
-                },
                 "traits": {
                     "rarity": "common",
+                    "traditions": [
+                        "divine",
+                        "primal"
+                    ],
                     "value": [
                         "air",
-                        "transmutation"
+                        "concentrate",
+                        "manipulate"
                     ]
                 }
             },
             "type": "spell"
         },
         {
-            "_id": "tyEDz9GjxWix8RQe",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Darkvision",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "mMrlbvLOQOqINOfQ",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Form Up",
-            "sort": 400000,
+            "sort": 300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -277,37 +134,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FormUp]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "form-up",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "OGVGgJtBl8Is1Tip",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kakyXBG5WA8c6Zfd"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Constant Spells",
-            "sort": 500000,
+            "sort": 400000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -319,37 +167,28 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ConstantSpells]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "constant-spells",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "jcJUrWNHanAlUtcK",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Frightful Presence",
-            "sort": 600000,
+            "sort": 500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -359,10 +198,12 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura] @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "value": "<p>60 feet. @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [
                     {
@@ -370,7 +211,6 @@
                         "radius": 60,
                         "slug": "frightful-presence",
                         "traits": [
-                            "aura",
                             "emotion",
                             "fear",
                             "mental"
@@ -378,9 +218,6 @@
                     }
                 ],
                 "slug": "frightful-presence",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -389,26 +226,18 @@
                         "fear",
                         "mental"
                     ]
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
         },
         {
             "_id": "XfjKXtBfHER2We17",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A"
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Troop Defenses",
-            "sort": 700000,
+            "sort": 600000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -420,23 +249,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
                 },
                 "rules": [],
                 "slug": "troop-defenses",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -445,7 +267,7 @@
             "_id": "0ttw26ibf97lzwbw",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Cosmic Explosion",
-            "sort": 800000,
+            "sort": 700000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -455,22 +277,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The soul swarm unleashes a blast of burning sunlight or moonlight, dealing @Damage[(4d8+6)[fire]] damage to creatures in a @Template[type:burst|distance:10] within 20 feet (@Check[type:reflex|dc:30|basic:true|traits:fire] save). When the soul swarm is reduced to 8 or fewer squares, this decreases to a @Template[type:burst|distance:5].</p>"
+                    "value": "<p>The soul swarm unleashes a blast of burning sunlight or moonlight, dealing @Damage[(4d8+6)[fire]] damage to creatures in a @Template[burst|distance:10] within 20 feet (@Check[reflex|dc:30|basic|traits:fire] save). When the soul swarm is reduced to 8 or fewer squares, this decreases to a @Template[burst|distance:5].</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -479,7 +297,7 @@
             "_id": "omu5mgrezrjn0d71",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Soul Grasp",
-            "sort": 900000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -489,22 +307,54 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">3</span> actions</p>\n<strong>Frequency</strong> once per round\n<hr />\n<p><strong>Effect</strong> The soul swarm reaches out and tries to tear at the spiritual energy of enemies within 5 feet (@Check[type:reflex|dc:32|basic:true] save). The soul swarm can choose to deal slashing damage as it cuts away at a creature, fire damage as it burns other souls away, or negative damage as it attempts to unmake a soul. The damage depends on the number of actions.</p>\n<hr />\n<p><span class=\"pf2-icon\">1</span> 2d6+1 damage: @Damage[(2d6+1)[slashing]]{slashing}, @Damage[(2d6+1)[fire]]{fire}, @Damage[(2d6+1)[negative]]{negative}</p>\n<p><span class=\"pf2-icon\">2</span> 4d6+11 damage: @Damage[(4d6+11)[slashing]]{slashing}, @Damage[(4d6+11)[fire]]{fire}, @Damage[(4d6+11)[negative]]{negative}</p>\n<p><span class=\"pf2-icon\">3</span> 6d6+11 damage: @Damage[(6d6+11)[slashing]]{slashing}, @Damage[(6d6+11)[fire]]{fire}, @Damage[(6d6+11)[negative]]{negative}</p>"
+                    "value": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span> actions</p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The soul swarm reaches out and tries to tear at the spiritual energy of enemies within 5 feet (@Check[reflex|dc:32|basic] save). The soul swarm can choose to deal slashing damage as it cuts away at a creature, fire damage as it burns other souls away, or void damage as it attempts to unmake a soul. The damage depends on the number of actions.</p><hr /><p><span class=\"action-glyph\">1</span> @Damage[(2d6+1)[untyped]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+11)[untyped]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d6+11)[untyped]] damage</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "frequency": {
+                    "max": 1,
+                    "per": "round",
+                    "value": 1
                 },
-                "rules": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "alwaysActive": true,
+                        "domain": "damage",
+                        "key": "RollOption",
+                        "option": "soul-grasp",
+                        "suboptions": [
+                            {
+                                "label": "PF2E.TraitSlashing",
+                                "value": "slashing"
+                            },
+                            {
+                                "label": "PF2E.TraitFire",
+                                "value": "fire"
+                            },
+                            {
+                                "label": "PF2E.TraitVoid",
+                                "value": "void"
+                            }
+                        ],
+                        "toggleable": true
+                    },
+                    {
+                        "key": "DamageAlteration",
+                        "mode": "override",
+                        "property": "damage-type",
+                        "selectors": [
+                            "{item|id}-inline-damage"
+                        ],
+                        "value": "{item|flags.pf2e.rulesSelections.soulGrasp}"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
@@ -513,7 +363,7 @@
             "_id": "dyjvvrlselw9y3ha",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Troop Movement",
-            "sort": 1000000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -525,69 +375,19 @@
                 "description": {
                     "value": "<p>Whenever the soul swarm Strides, the soul swarm first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves. This works just like a Gargantuan creature moving; for instance, if any square of the soul swarm enters difficult terrain, the extra movement cost applies to the whole soul swarm.</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "kp4ut4kqqkbimi6y",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Religion",
-            "sort": 1100000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 26
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "6vsy1wz82e6fq21b",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 24
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Soul Swarm",
@@ -632,12 +432,6 @@
                 "temp": 0,
                 "value": 234
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 24
-            },
             "resistances": [
                 {
                     "doubleVs": [
@@ -646,7 +440,7 @@
                     "exceptions": [
                         "force",
                         "ghost-touch",
-                        "positive"
+                        "vitality"
                     ],
                     "type": "all-damage",
                     "value": 5
@@ -662,7 +456,7 @@
                     "value": 15
                 },
                 {
-                    "type": "good",
+                    "type": "holy",
                     "value": 15
                 },
                 {
@@ -672,19 +466,35 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common"
+                ]
+            },
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #172: Secrets of the Temple-City"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #172: Secrets of the Temple-City"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 24,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -701,27 +511,27 @@
                 "value": 23
             }
         },
+        "skills": {
+            "religion": {
+                "base": 26
+            },
+            "stealth": {
+                "base": 24
+            }
+        },
         "traits": {
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": [
-                    "common"
-                ]
-            },
             "rarity": "rare",
-            "senses": {
-                "value": "darkvision"
-            },
             "size": {
                 "value": "grg"
             },
             "value": [
+                "evil",
                 "ghost",
                 "incorporeal",
                 "spirit",
                 "troop",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -43,99 +45,13 @@
             "type": "melee"
         },
         {
-            "_id": "6QzeJqibXMpIAXDj",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Low-Light Vision",
-            "sort": 200000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
-            "_id": "90h9CZlrzmq29yPp",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
-                }
-            },
-            "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Scent (Imprecise) 30 feet",
-            "sort": 300000,
-            "system": {
-                "actionType": {
-                    "value": "passive"
-                },
-                "actions": {
-                    "value": null
-                },
-                "category": "interaction",
-                "description": {
-                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
-                },
-                "requirements": {
-                    "value": ""
-                },
-                "rules": [],
-                "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
-                }
-            },
-            "type": "action"
-        },
-        {
             "_id": "qm3E8aZeyjHSz3i8",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
-                }
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1"
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Rend",
-            "sort": 400000,
+            "sort": 200000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -147,133 +63,19 @@
                 "description": {
                     "value": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 },
-                "requirements": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "rules": [],
                 "slug": "rend",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
-                },
-                "trigger": {
-                    "value": ""
-                },
-                "weapon": {
-                    "value": ""
                 }
             },
             "type": "action"
-        },
-        {
-            "_id": "yUtAKhKRZtc1R8LE",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
-            "sort": 500000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.Climb",
-                        "predicate": [
-                            "action:climb"
-                        ],
-                        "selector": "athletics",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+7 to Climb",
-                        "options": "action:climb"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "4uqNBCMxlug85vdT",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 5
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [
-                    {
-                        "key": "FlatModifier",
-                        "label": "PF2E.SkillVariant.HideSneakTree",
-                        "predicate": [
-                            "terrain:tree",
-                            {
-                                "or": [
-                                    "action:hide",
-                                    "action:sneak"
-                                ]
-                            }
-                        ],
-                        "selector": "stealth",
-                        "value": 2
-                    }
-                ],
-                "slug": null,
-                "source": {
-                    "value": ""
-                },
-                "variants": {
-                    "0": {
-                        "label": "+7 to Hide and Sneak while in a tree",
-                        "options": "action:hide,action:sneak,terrain:tree"
-                    }
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "YVkUHI9daawkOKec",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Survival",
-            "sort": 700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 4
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
         }
     ],
     "name": "Three-Toed Sloth",
@@ -312,12 +114,6 @@
                 "temp": 0,
                 "value": 10
             },
-            "initiative": {
-                "statistic": "perception"
-            },
-            "perception": {
-                "value": 5
-            },
             "speed": {
                 "otherSpeeds": [
                     {
@@ -329,19 +125,38 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
+            "languages": {
+                "details": "",
+                "value": []
+            },
             "level": {
                 "value": -1
             },
             "privateNotes": "",
             "publicNotes": "<p>The diminutive three-toed sloth is a solitary, tree-dwelling creature. Possessing a gentle nature and unassuming countenance, it has little to defend itself with other than its surprisingly fearsome climbing claws. These sloths are sometimes used as lookouts by secretive druid enclaves, as the symbiotic algae in their fur makes them difficult to spot in tree canopies, though their slow speed leaves them vulnerable on the ground.</p>\n<hr />\n<p>Despite their long, hooked claws being one of their most distinctive features, sloths are herbivorous creatures. Smaller sloths use their claws to climb from tree to tree, seeking fruits and young leaves among the canopy. Larger species can reach up to 20 feet tall and weigh more than 10,000 pounds.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 5,
+            "senses": [
+                {
+                    "type": "low-light-vision"
+                },
+                {
+                    "acuity": "imprecise",
+                    "range": 30,
+                    "type": "scent"
+                }
+            ]
         },
         "resources": {},
         "saves": {
@@ -358,19 +173,43 @@
                 "value": 3
             }
         },
+        "skills": {
+            "athletics": {
+                "base": 5,
+                "special": [
+                    {
+                        "base": 7,
+                        "label": "to Climb",
+                        "predicate": [
+                            "action:climb"
+                        ]
+                    }
+                ]
+            },
+            "stealth": {
+                "base": 5,
+                "special": [
+                    {
+                        "base": 7,
+                        "label": "to Hide and Sneak while in a tree",
+                        "predicate": [
+                            "terrain:tree",
+                            {
+                                "or": [
+                                    "action:hide",
+                                    "action:sneak"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "survival": {
+                "base": 4
+            }
+        },
         "traits": {
-            "attitude": {
-                "value": "hostile"
-            },
-            "languages": {
-                "custom": "",
-                "selected": [],
-                "value": []
-            },
             "rarity": "common",
-            "senses": {
-                "value": "low-light vision, scent (imprecise) 30 feet"
-            },
             "size": {
                 "value": "tiny"
             },
