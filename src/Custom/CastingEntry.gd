@@ -7,3 +7,7 @@ class_name CastingEntry
 @onready var spell_fields_container: VBoxContainer = %SpellFieldsContainer
 
 @onready var constant_spells_field: LabelDataField = %ConstantSpellsField
+
+
+func _on_line_edit_text_changed(new_text: String) -> void:
+	name = new_text

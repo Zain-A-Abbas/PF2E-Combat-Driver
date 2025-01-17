@@ -1,4 +1,4 @@
-extends Label
+extends RichTextLabel
 @onready var d_2_button: Button = %d2Button
 @onready var d_4_button: Button = %d4Button
 @onready var d_6_button: Button = %d6Button
@@ -49,7 +49,7 @@ func sheet_roll(roll_data: Dictionary, enemy_name: String):
 	if enemy_name != last_enemy && enemy_name != "":
 		if text != "":
 			text += "\n"
-		roll_text += enemy_name + ":"
+		roll_text += "[b]" + enemy_name + "[/b]" + ":"
 	last_enemy = enemy_name
 	if roll_data["type"] == "d20":
 		roll_text += "\n"

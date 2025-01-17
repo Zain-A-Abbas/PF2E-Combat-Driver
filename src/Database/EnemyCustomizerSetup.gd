@@ -376,6 +376,7 @@ func customize_current_enemy(editing: bool):
 			continue
 		var new_casting_entry: CastingEntry = CASTING_ENTRY.instantiate()
 		casting_entry_tabs.add_child(new_casting_entry)
+		new_casting_entry.name = ability["name"]
 		new_casting_entry.entry_name_field.set_value(ability["name"])
 		new_casting_entry.spell_dc_field.set_value_num(ability["system"]["spelldc"]["dc"])
 		new_casting_entry.spell_attack_field.set_value_num(ability["system"]["spelldc"]["value"])

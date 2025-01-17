@@ -33,21 +33,7 @@ extends Node
 @onready var strikes_vbox: VBoxContainer = %StrikesVbox
 @onready var offensive_abilities_v_box: VBoxContainer = %OffensiveAbilitiesVBox
 
-@onready var spell_list_box: OptionButton = %SpellListBox
-@onready var casting_type_box: OptionButton = %CastingTypeBox
-@onready var spell_dc_field: LabelDataField = %SpellDCField
-@onready var spell_attack_field: LabelDataField = %SpellAttackField
-@onready var cantrips_field: LabelDataField = %CantripsField
-'@onready var _1_st_rank_field: LabelDataField = %"1stRankField"
-@onready var _2_nd_rank_field: LabelDataField = %"2ndRankField"
-@onready var _3_rd_rank_field: LabelDataField = %"3rdRankField"
-@onready var _4_th_rank_field: LabelDataField = %"4thRankField"
-@onready var _5_th_rank_field: LabelDataField = %"5thRankField"
-@onready var _6_th_rank_field: LabelDataField = %"6thRankField"
-@onready var _7_th_rank_field: LabelDataField = %"7thRankField"
-@onready var _8_th_rank_field: LabelDataField = %"8thRankField"
-@onready var _9_th_rank_field: LabelDataField = %"9thRankField"
-@onready var _10_th_rank_field: LabelDataField = %"10thRankField"'
+@onready var casting_entry_tabs: TabContainer = %CastingEntryTabs
 
 @onready var attacks: VBoxContainer = %Attacks
 @onready var spells: VBoxContainer = %Spells
@@ -71,6 +57,7 @@ const SPELL_D_CS: String					 = "res://Custom/Roadmap Tables/Spell DCs.csv"
 const STRIKE_ATTACK_BONUS: String			 = "res://Custom/Roadmap Tables/Strike Attack Bonus.csv"
 const STRIKE_DAMAGE: String					 = "res://Custom/Roadmap Tables/Strike Damage.csv"
 
+const CASTING_ENTRY = preload("res://Custom/CastingEntry.tscn")
 
 var ability_modifier_table: Array = []		# extreme - high - moderate - low
 var ac_table: Array = []					# extreme - high - moderate - low
@@ -171,12 +158,13 @@ func fill_magical_striker(level: int):
 		get_table_value_by_level(strike_attack_table, level, 1), get_table_value_by_level(strike_damage_table, level, 1)
 	)
 	
-	if spell_list_box.selected == 0:
-		spell_list_box.select(1) 
-	spells._on_spell_list_box_item_selected(spell_list_box.selected)
+	var new_casting_entry: CastingEntry = CASTING_ENTRY.instantiate()
+	casting_entry_tabs.add_child(new_casting_entry)
+	new_casting_entry.name = "Roadmap Spells"
+	new_casting_entry.entry_name_field.set_value("Roadmap Spells")
+	new_casting_entry.spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 1))
+	new_casting_entry.spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 1))
 	
-	spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 1))
-	spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 1))
 
 
 func fill_skill_paragon(level: int):
@@ -292,9 +280,10 @@ func fill_spellcaster(level: int):
 		get_table_value_by_level(strike_attack_table, level, 3), get_table_value_by_level(strike_damage_table, level, 3)
 	)
 	
-	if spell_list_box.selected == 0:
-		spell_list_box.select(1) 
-	spells._on_spell_list_box_item_selected(spell_list_box.selected)
 	
-	spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 0))
-	spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 0))
+	var new_casting_entry: CastingEntry = CASTING_ENTRY.instantiate()
+	casting_entry_tabs.add_child(new_casting_entry)
+	new_casting_entry.name = "Roadmap Spells"
+	new_casting_entry.entry_name_field.set_value("Roadmap Spells")
+	new_casting_entry.spell_dc_field.set_value(get_table_value_by_level(spell_dcs_table, level, 0))
+	new_casting_entry.spell_attack_field.set_value(get_table_value_by_level(spell_attack_table, level, 0))

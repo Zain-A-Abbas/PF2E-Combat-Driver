@@ -167,15 +167,18 @@ theme_override_constants/margin_bottom = 2
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer"]
 layout_mode = 2
 
-[node name="Results" type="Label" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/ScrollContainer"]
+[node name="Results" type="RichTextLabel" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling/MarginContainer/ScrollContainer"]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
-autowrap_mode = 3
+theme_override_font_sizes/bold_italics_font_size = 16
+theme_override_font_sizes/italics_font_size = 16
+theme_override_font_sizes/mono_font_size = 16
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/bold_font_size = 16
+bbcode_enabled = true
 script = ExtResource("1_m0fvx")
 
 [node name="DiceButtons" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Panel/InitiativeRolling/PanelContainer2/Rolling"]

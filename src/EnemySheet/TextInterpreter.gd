@@ -17,9 +17,11 @@ func ability_parser(ability_text: String) -> String:
 	parsed_description = damage_parser3(parsed_description)
 	parsed_description = srd_parser(parsed_description, "spells-srd")
 	parsed_description = srd_parser(parsed_description, "equipment-srd")
+	parsed_description = srd_parser(parsed_description, "feats-srd")
 	parsed_description = save_parser(parsed_description)
 	parsed_description = recharge_parser(parsed_description)
 	parsed_description = action_parser(parsed_description)
+	parsed_description = macro_parser(parsed_description)
 	parsed_description = enemy_name_parser(parsed_description)
 	parsed_description = act_parser(parsed_description)
 	parsed_description = bold_parser(parsed_description)
@@ -199,6 +201,24 @@ func action_parser(description_text: String) -> String:
 		return action_parser(regex.sub(description_text, action_name))
 	
 	regex.compile("@UUID\\[Compendium\\.pf2e\\.actionspf2e\\.Item\\.(.*?)\\]")
+	action_strings = regex.search(description_text)
+	if action_strings != null:
+		action_name = action_strings.strings[1]
+		return action_parser(regex.sub(description_text, action_name))
+	
+	return description_text
+
+## Parses "macros" such as disarming (I suppose this is sub-actions of skills?)
+func macro_parser(description_text: String) -> String:
+	var regex = RegEx.new()
+	regex.compile("@UUID\\[Compendium\\.pf2e\\.action-macros\\.Macro\\.(.*?)\\]\\{(.*?)}")
+	var action_strings = regex.search(description_text)
+	var action_name: String
+	if action_strings != null:
+		action_name = action_strings.strings[2]
+		return action_parser(regex.sub(description_text, action_name))
+	
+	regex.compile("@UUID\\[Compendium\\.pf2e\\.action-macros\\.Macro\\.(.*?)\\]")
 	action_strings = regex.search(description_text)
 	if action_strings != null:
 		action_name = action_strings.strings[1]

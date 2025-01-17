@@ -86,7 +86,9 @@ func create_enemy(editing: bool = false):
 	new_enemy_sheet["name"] = name_field.get_value()
 	details["level"]["value"] = int(level_field.get_value())
 	system["perception"]["mod"] = int(perception_field.get_value())
-	traits["senses"]["value"] = senses_field.get_value()
+	system["perception"]["senses"] = []
+	for sense in senses_field.get_value().split(","):
+		system["perception"]["senses"].append({"type": sense})
 	new_enemy_sheet["notes"] = notes_text_edit.text
 	
 	traits["rarity"] = rarity_button.get_item_text(rarity_button.selected).to_lower()
@@ -95,7 +97,7 @@ func create_enemy(editing: bool = false):
 	var languages_string: String = languages_field.get_value().replace(", ", ",")
 	var languages_array: PackedStringArray = languages_string.split(",", false)
 	for language in languages_array:
-		traits["languages"]["value"].append(language)
+		details["languages"]["value"].append(language)
 	
 	# Traits
 	var traits_string: String = traits_text_edit.text.replace(", ", ",")
@@ -214,6 +216,7 @@ func create_enemy(editing: bool = false):
 			spell_entries.append(casting_entry_name)
 		var spells_found: bool = false
 		var spell_field_value: String = ""
+		i = 0
 		for spell_field in casting_entry.spell_fields_container.get_children():
 			if spell_field is LabelDataField:
 				spell_field_value = spell_field.get_value()
@@ -226,6 +229,7 @@ func create_enemy(editing: bool = false):
 						casting_entry_name,
 						spell_field == casting_entry.constant_spells_field
 					)
+			i += 1
 		
 		if spells_found && casting_entry_name == "":
 			EventBus.error_popup.emit("Casting entry with spells must have name.")

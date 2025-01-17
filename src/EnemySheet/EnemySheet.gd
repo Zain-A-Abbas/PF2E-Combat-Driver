@@ -535,7 +535,9 @@ func setup_attacks():
 
 func get_damage_text(ability: Dictionary) -> String:
 	var system: Dictionary = ability["system"]
-	var damage_text: String = "[b]Damage[/b] "
+	const BASE_DAMAGE_TEXT: String = "[b]Damage[/b] "
+	const BASE_EFFECT_TEXT: String = "[b]EFfect[/b] "
+	var damage_text: String = ""
 	
 	var i: int = 0
 	for damage_roll in system["damageRolls"].keys():
@@ -545,6 +547,11 @@ func get_damage_text(ability: Dictionary) -> String:
 		i += 1
 	if system.has("oneLineDamageRoll"):
 		damage_text += system["oneLineDamageRoll"]
+	
+	if damage_text == "":
+		damage_text = BASE_EFFECT_TEXT
+	
+	damage_text += get_damage_extra_effects(system, damage_text == "")
 	
 	damage_text = get_damage_roll_meta(damage_text)
 	
@@ -573,7 +580,8 @@ func get_damage_text(ability: Dictionary) -> String:
 	
 	damage_text += extra_text
 	
-	return damage_text
+	
+	return BASE_DAMAGE_TEXT + damage_text
 
 func evaluate_damage_rule(rule: Dictionary) -> String:
 	if !rule.has("dieSize"):
@@ -604,6 +612,21 @@ func evaluate_damage_rule(rule: Dictionary) -> String:
 	
 	return condition_text
 
+func get_damage_extra_effects(ability_system: Dictionary, empty_damage: bool = false) -> String:
+	if ability_system["attackEffects"]["value"].size() == 0:
+		return ""
+	
+	var effects: String = ""
+	if !empty_damage:
+		effects += " plus "
+	
+	for n in ability_system["attackEffects"]["value"].size():
+		if n > 0:
+			effects += " and "
+		effects += ability_system["attackEffects"]["value"][n].replace("-", " ")
+	
+	return effects
+
 func setup_spells():
 	var has_spells: bool = false
 	
@@ -625,177 +648,111 @@ func setup_spells():
 	attacks.visible = true
 	
 	for casting_entry in spellcasting_entries:
-		setup_casting_entry(casting_entry)
-	
- 
-func setup_casting_entry(casting_entry):
-	var spell_tradition_name: String = ""
-	var dc: int = 0
-	var attack_roll: int = 0
-	
+		new_casting_entry(casting_entry)
+
+func new_casting_entry(casting_entry: Dictionary):
+	var casting_type: String = casting_entry["system"]["prepared"]["value"]
 	# Whether or not the spells are focus spells
-	var is_focus: bool = false
+	var is_focus: bool = casting_type == "focus"
+	var id: String = casting_entry["_id"]
+	var spell_tradition_name: String = casting_entry["name"]
+	var dc: int = int(casting_entry["system"]["spelldc"]["dc"])
+	var attack_roll: int = int(casting_entry["system"]["spelldc"]["value"])
+	var cantrip_focus_level: int = clampi(ceili(enemy_system["details"]["level"]["value"] / 2), 1, 10)
 	
-	if casting_entry["system"]["prepared"]["value"] == "focus":
-		is_focus = true
-		
-	spell_tradition_name = casting_entry["name"]
-	if dc is int:
-		pass
-	else:
-		print("WHO THE FUCK ARE YOU")
-		print(enemy_data["name"])
-		print("AAA")
-	dc = int(casting_entry["system"]["spelldc"]["dc"])
-	attack_roll = casting_entry["system"]["spelldc"]["value"]
-	var tradition_title: String = "[b]" + spell_tradition_name + "[/b] "
 	var dc_text: String = "DC " + str(dc) + ", "
 	# Holds either tradition attack roll or its focus points
-	var attack_roll_focus_points_text: String = ""
-	
-	var focus_spell_names: Array[String] = []
-	var focus_spell_count: int = 0
-	if is_focus:
-		# Gets the focus spells; done beforehand to count focus point number
-		for focus_spell in enemy_abilities:
-			# Doesn't add cantrips to the list
-			if focus_spell["type"] != "spell":
-				continue
-			if focus_spell["system"].has("category"):
-				if focus_spell["system"]["category"]["value"] != "focus":
-					continue
-			
-			focus_spell_names.append(focus_spell["name"])
-			focus_spell_count += 1
-		focus_spell_count = clamp(focus_spell_count, 1, 3)
-	
-	if !is_focus:
-		attack_roll_focus_points_text = "attack +" + get_d20_meta(attack_roll, "Focus") +  "; "
-	else:
-		attack_roll_focus_points_text = str(focus_spell_count) + " Focus Points; [b]" + ordinal_numbers(int(ceili(enemy_system["details"]["level"]["value"] / 2))) + "[/b] "
 	
 	# Initialize spell_list
-	var spell_list = create_sheet_content()
-	spell_list.text = tradition_title + dc_text + attack_roll_focus_points_text
+	var spell_list: SheetContent = create_sheet_content()
 	attacks.add_child(spell_list)
 	
+	spell_list.text = "[b]" + spell_tradition_name + "[/b] "
+	spell_list.text += dc_text
 	if !is_focus:
-		# Find spells then sort by level
-		spell_list.text += "[ul bullet=•]"
+		var level_spell_text: Array[String] = ["", "", "", "", "", "", "", "", "", ""]
+		var cantrip_text: String = ""
+		var constant_spell_text: String = ""
 		
-		var has_normal_spells: bool = false
-		var has_cantrips: bool = false
-		var has_constant_spells: bool = false
-		
-		
-		var spell_levels: Array[int] = []
 		for spell in enemy_abilities:
-			# Doesn't add cantrips to the list
+			var is_constant: bool = false
+			var is_cantrip: bool = false
 			if spell["type"] != "spell":
 				continue
 			if spell["system"]["location"]["value"] == "":
-				spell["system"]["location"]["value"] = casting_entry["_id"]
-			if spell["system"]["location"]["value"] != casting_entry["_id"]:
+				spell["system"]["location"]["value"] = id
+			if spell["system"]["location"]["value"] != id:
 				continue
-			if spell["system"].has("category"):
-				if (spell["system"]["category"]["value"] != "spell" && !is_focus):
-					continue
 			if spell["name"].to_lower().contains("(constant)"):
-				has_constant_spells = true
-				continue
+				is_constant = true
 			if spell["system"]["traits"]["value"].has("cantrip"):
-				has_cantrips = true 
-				continue
-			has_normal_spells = true
+				is_cantrip = true 
+			
+			
 			var spell_level: int
 			if spell["system"]["location"].has("heightenedLevel"):
 				spell_level = spell["system"]["location"]["heightenedLevel"]
 			else:
 				spell_level = spell["system"]["level"]["value"]
-				
-			if !spell_levels.has(spell_level):
-				spell_levels.append(spell_level)
-		spell_levels.sort()
-		spell_levels.reverse()
-		
-		# Add non-cantrip and non-constant spells to the spell list
-		if has_normal_spells:
-			for spell_level in spell_levels:
-				var spell_level_text: String = "[b]" + ordinal_numbers(spell_level) + "[/b] "
-				for spell in enemy_abilities:
-					if spell["type"] != "spell":
-						continue
-					if spell["system"].has("category"):
-						if spell["system"]["category"]["value"] != "spell":
-							continue
-					if spell["system"]["traits"]["value"].has("cantrip") || spell["name"].contains("(Constant)"):
-						continue
-					# Adds the post-heightening level; the databse uses both of these to heighten. IDK why.
-					var this_spell_level: int
-					if spell["system"]["location"].has("heightenedLevel"):
-						this_spell_level = spell["system"]["location"]["heightenedLevel"]
-					else:
-						this_spell_level = spell["system"]["level"]["value"]
-						
-					
-					if this_spell_level == spell_level:
-						spell_level_text += "[i]" + spell["name"].to_lower() + "[/i]"
-					else:
-						continue
-					
-					# Adds uses if a spell has multiple
+			
+			if !is_cantrip && !is_constant:
+				var spell_array_index: int = 10 - spell_level
+				if level_spell_text[spell_array_index] == "":
+					level_spell_text[spell_array_index] = "[b]" + ordinal_numbers(spell_level) + "[/b] "
+				else:
+					level_spell_text[spell_array_index] += ", "
+			
+				level_spell_text[spell_array_index] += "[i]" + spell["name"] + "[/i]"
+				if casting_type == "prepared":
 					if spell["system"]["location"].has("uses"):
-						spell_level_text += " [b](" + str(spell["system"]["location"]["uses"]["value"]) + "x)[/b]"
-					
-					spell_level_text += ", "
-				# Makes the last spell end with "; " instead of ", "
-				spell_level_text[-2] = ";"
-				spell_list.text += " " + spell_level_text + "\n"
-
-		# Add cantrips to the spell list
-		if has_cantrips:
-			var cantrip_level: int
-			if !spell_levels.is_empty():
-				cantrip_level = spell_levels[0]
-			else:
-				cantrip_level = int(ceil(enemy_system["details"]["level"]["value"] / 2))
-			var cantrips_text: String = "[b]Cantrips (" + ordinal_numbers(cantrip_level) + ")[/b] "
-			for spell in enemy_abilities:
-				if spell["type"] != "spell":
-					continue
-				if spell["system"]["traits"]["value"].has("cantrip"):
-					cantrips_text += "[i]" + spell["name"].to_lower() + "[/i], "
-			cantrips_text[-2] = ""
-			spell_list.text += cantrips_text + "\n"
+						level_spell_text[spell_array_index] += " (x%s)" % spell["location"]["uses"]
+			elif is_cantrip:
+				if cantrip_text == "":
+					cantrip_text = "[b]Cantrips (%s) [/b] " % ordinal_numbers(cantrip_focus_level)
+				else:
+					cantrip_text += ", "
+				cantrip_text += "[i]" + spell["name"] + "[/i]"
+			elif is_constant:
+				if constant_spell_text == "":
+					constant_spell_text = "[b]Constant (%s) [/b] " % ordinal_numbers(cantrip_focus_level)
+				else:
+					constant_spell_text += ", "
+				constant_spell_text += "[i]" + spell["name"] + "[/i]"
 		
-		# Add constant spells to the spell list
-		if has_constant_spells:
-			var constant_text: String = "[b]Constant[/b] "
-			for spell in enemy_abilities:
-				if spell["type"] != "spell":
-					continue
-				if spell["name"].contains("(Constant)"):
-					var this_spell_level: int
-					if spell["system"]["location"].has("heightenedLevel"):
-						this_spell_level = spell["system"]["location"]["heightenedLevel"]
-					else:
-						this_spell_level = spell["system"]["level"]["value"]
-					constant_text += "[i]" + spell["name"].replace(" (Constant)", "") + "[/i] (" + ordinal_numbers(this_spell_level) + "), "
-			constant_text[-2] = ""
-			spell_list.text += constant_text
-		spell_list.text += "[/ul]"
+		var spell_list_text: String = "[ul bullet=•]"
+		for level in level_spell_text:
+			if level == "":
+				continue 
+			spell_list_text += " " + level + "\n"
+		if cantrip_text != "":
+			spell_list_text += " " + cantrip_text + "\n"
+		if constant_spell_text != "":
+			spell_list_text += " " + constant_spell_text + "\n"
+		
+		spell_list.text += "attack +" + get_d20_meta(attack_roll, "Spell Attack")
+		spell_list.text += spell_list_text
 	else:
+		var focus_spells_text: String = ""
+		var focus_spell_count: int = 0
 		for focus_spell in enemy_abilities:
+			# Doesn't add cantrips to the list
 			if focus_spell["type"] != "spell":
 				continue
-			if focus_spell["system"]["location"]["value"] == "":
-				focus_spell["system"]["location"]["value"] = casting_entry["_id"]
-			if focus_spell["system"]["location"]["value"] != casting_entry["_id"]:
+			if focus_spell["system"]["location"]["value"] != id:
 				continue
-			spell_list.text += focus_spell["name"]
-			if focus_spell["name"] != focus_spell_names[-1]:
-				spell_list.text += ", "
+			
+			if focus_spell_count > 0:
+				focus_spells_text += ", "
+			focus_spells_text += focus_spell["name"]
+			focus_spell_count += 1
+		focus_spell_count = clamp(focus_spell_count, 1, 3)
 		
+		if focus_spell_count > 1:
+			spell_list.text += str(focus_spell_count) + " Focus Points; "
+		else:
+			spell_list.text += str(focus_spell_count) + " Focus Point; "
+		spell_list.text += "[b]" + ordinal_numbers(cantrip_focus_level) + "[/b] "
+		spell_list.text += focus_spells_text
 
 # Converts 1, 2, etc. to 1st, 2nd
 func ordinal_numbers(number: int) -> String:

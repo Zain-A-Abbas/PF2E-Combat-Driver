@@ -8,6 +8,8 @@ extends VBoxContainer
 const CASTING_ENTRY = preload("res://Custom/CastingEntry.tscn")
 
 func _on_new_casting_entry_button_pressed() -> void:
+	var new_casting_entry: CastingEntry = CASTING_ENTRY.instantiate()
+	new_casting_entry.name = "New Entry"
 	casting_entry_tabs.add_child(CASTING_ENTRY.instantiate())
 
 func _on_delete_casting_entry_button_pressed() -> void:

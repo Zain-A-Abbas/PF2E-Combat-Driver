@@ -22,6 +22,12 @@ layout_mode = 2
 label_text = "Casting Entry"
 minimum_character_width = 20
 
+[node name="Label" parent="VBoxContainer/EntryNameField" index="0"]
+text = "Casting Entry"
+
+[node name="LineEdit" parent="VBoxContainer/EntryNameField" index="1"]
+theme_override_constants/minimum_character_width = 20
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 
@@ -201,6 +207,9 @@ text = "Constant"
 [node name="LineEdit" parent="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/ConstantSpellsField" index="1"]
 theme_override_constants/minimum_character_width = 24
 
+[connection signal="text_changed" from="VBoxContainer/EntryNameField/LineEdit" to="." method="_on_line_edit_text_changed"]
+
+[editable path="VBoxContainer/EntryNameField"]
 [editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/CantripsField"]
 [editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/1stRankField"]
 [editable path="VBoxContainer/SpellFieldsPanel/SpellFieldsContainer/2ndRankField"]

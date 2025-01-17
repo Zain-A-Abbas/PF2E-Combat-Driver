@@ -96,7 +96,12 @@ const DEFAULT: Dictionary = {
 			},
 			"publication": {
 				"title": "Custom Enemy"
-			}
+			},
+			"languages": {
+				"value": [
+					
+				]
+			},
 		},
 		"resources": {
 			"focus": {
@@ -119,11 +124,6 @@ const DEFAULT: Dictionary = {
 			}
 		},
 		"traits": {
-			"languages": {
-				"value": [
-					
-				]
-			},
 			"rarity": "common",
 			"size": {
 				"value": "medium"
