@@ -88,8 +88,9 @@ func interpret_roll(roll: String, roll_name: String) -> RolledDice:
 			for roll_count in int(number_split[0]):
 				if roll_count > 0:
 					rolled.roll_results += ", "
-				result += randi_range(1, int(number_split[1]))
-				rolled.roll_results += str(result)
+				var individual_roll_result: int = randi_range(1, int(number_split[1]))
+				result += individual_roll_result
+				rolled.roll_results += str(individual_roll_result)
 			rolled.roll_results += ")"
 		else:
 			result = int(number)
