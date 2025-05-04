@@ -24,4 +24,5 @@ text = "90"
 alignment = 2
 caret_blink = true
 
-[connection signal="text_changed" from="InitField" to="." method="_on_init_field_text_changed"]
+[connection signal="focus_exited" from="InitField" to="." method="_on_init_field_focus_exited"]
+[connection signal="text_submitted" from="InitField" to="." method="_on_init_field_text_submitted"]

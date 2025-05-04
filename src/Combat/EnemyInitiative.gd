@@ -1,4 +1,5 @@
 extends HBoxContainer
+class_name EnemyInitiative
 
 signal initiative_changed
 
@@ -32,8 +33,12 @@ func setup_initiative(enemy: EnemyInfoTemplate):
 func rename_enemy(new_name: String):
 	enemy_name.text = new_name
 
-func _on_init_field_text_changed(new_text: String) -> void:
+func _on_init_field_text_submitted(new_text: String) -> void:
 	var new_initiative: int = int(new_text)
 	initiative = new_initiative
 	init_field.text = str(initiative)
 	initiative_changed.emit()
+
+
+func _on_init_field_focus_exited() -> void:
+	_on_init_field_text_submitted(init_field.text)

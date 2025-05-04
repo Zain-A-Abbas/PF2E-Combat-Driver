@@ -219,7 +219,8 @@ func _on_reroll_initiative_button_pressed():
 	if initiative_container.get_child_count() == 0:
 		return
 	for child in initiative_container.get_children():
-		child.setup_initiative()
+		if child is EnemyInitiative:
+			child.setup_initiative(null)
 	sort_initiative()
 
 
