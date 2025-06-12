@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://kg3x603pe2ss"]
 
 [ext_resource type="Theme" uid="uid://dx77a5ogmmnut" path="res://Themes/MainHeader.tres" id="1_7o8fp"]
-[ext_resource type="Script" path="res://EnemySheet/EnemySheet.gd" id="1_omui5"]
+[ext_resource type="Script" uid="uid://dxxf7u0iw0sc" path="res://EnemySheet/EnemySheet.gd" id="1_omui5"]
 [ext_resource type="Theme" uid="uid://byxv6hajwxsqf" path="res://Themes/EnemySheetContext.tres" id="4_hamg6"]
 [ext_resource type="PackedScene" uid="uid://pchkfvbqq5ur" path="res://EnemySheet/SheetContent.tscn" id="5_0yafw"]
-[ext_resource type="Script" path="res://EnemySheet/SheetContentsText.gd" id="5_3nxba"]
+[ext_resource type="Script" uid="uid://1qpb48mp7dja" path="res://EnemySheet/SheetContentsText.gd" id="5_3nxba"]
 
 [node name="EnemySheet" type="Control"]
 layout_mode = 3
@@ -92,8 +92,7 @@ fit_content = true
 
 [node name="Senses" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data" instance=ExtResource("5_0yafw")]
 layout_mode = 2
-theme = null
-text = "[b]Perception[/b]"
+text = "[b]Perception[/b] ohi';io;hj"
 
 [node name="Languages" type="RichTextLabel" parent="SheetData/SheetScroller/SheetInfo/SheetMargin/Data"]
 layout_mode = 2

@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://en7jicp5pl3p"]
 
 [ext_resource type="StyleBox" uid="uid://bosrhrbh1i6rb" path="res://Themes/TraitStyleboxes/SizeTrait.tres" id="1_up6v3"]
-[ext_resource type="Script" path="res://Database/TraitFilterButton.gd" id="2_hnyrs"]
-[ext_resource type="FontFile" uid="uid://deqhew2apixpi" path="res://Fonts/GOTHICB.TTF" id="3_ulws2"]
+[ext_resource type="Script" uid="uid://cjrdqk60g8erm" path="res://Database/TraitFilterButton.gd" id="2_hnyrs"]
+[ext_resource type="FontFile" uid="uid://n1rwu1ujetdr" path="res://Fonts/Montserrat-Bold.ttf" id="3_uqx2q"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qv5ad"]
 load_path = "res://.godot/imported/FilterIcons.png-2290632db7663188baa3d7507a5ac123.ctex"
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4lnje"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqx2q"]
 atlas = SubResource("CompressedTexture2D_qv5ad")
 region = Rect2(0, 0, 64, 64)
 margin = Rect2(0, 8, 0, 15)
@@ -33,7 +33,7 @@ layout_mode = 2
 [node name="TraitText" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_ulws2")
+theme_override_fonts/font = ExtResource("3_uqx2q")
 theme_override_font_sizes/font_size = 24
 text = "GARGANTUAN"
 horizontal_alignment = 1
@@ -41,7 +41,7 @@ vertical_alignment = 1
 
 [node name="ToggleTexture" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-texture = SubResource("AtlasTexture_4lnje")
+texture = SubResource("AtlasTexture_uqx2q")
 expand_mode = 3
 
 [node name="Button" type="Button" parent="."]

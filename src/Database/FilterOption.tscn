@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://t8owj6vh5x6r"]
 
 [ext_resource type="Theme" uid="uid://usptm04bxef0" path="res://Themes/FilteringSorting.tres" id="1_e7wfy"]
-[ext_resource type="Script" path="res://Database/FilterOption.gd" id="2_m1chr"]
+[ext_resource type="Script" uid="uid://duqhkb3k4t8b1" path="res://Database/FilterOption.gd" id="2_m1chr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1qyee"]
 
@@ -19,10 +19,10 @@ text = "A"
 
 [node name="FilterOptionButton" type="Button" parent="."]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1qyee")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1qyee")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1qyee")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_1qyee")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_1qyee")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_1qyee")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_1qyee")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1qyee")
 
 [connection signal="pressed" from="FilterOptionButton" to="." method="_on_filter_option_button_pressed"]

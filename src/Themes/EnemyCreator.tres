@@ -1,11 +1,10 @@
-[gd_resource type="Theme" load_steps=49 format=3 uid="uid://cipxsfp7eqshp"]
+[gd_resource type="Theme" load_steps=44 format=3 uid="uid://cipxsfp7eqshp"]
 
+[ext_resource type="FontVariation" uid="uid://xbldfemp7naj" path="res://Themes/arimo_font.tres" id="1_8lmew"]
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="1_g84is"]
 [ext_resource type="Texture2D" uid="uid://bbiyt4467sjt8" path="res://Icons/SpinboxArrows.png" id="2_qfgkh"]
-
-[sub_resource type="SystemFont" id="SystemFont_riuwr"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
+[ext_resource type="FontFile" uid="uid://b0sp1f74dja6t" path="res://Fonts/Arimo-VariableFont_wght.ttf" id="3_0dh3t"]
+[ext_resource type="FontFile" uid="uid://btt0ot6cpt6vc" path="res://Fonts/Arimo-Italic-VariableFont_wght.ttf" id="4_vi5wt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xc8pu"]
 content_margin_left = 8.0
@@ -118,10 +117,6 @@ expand_margin_bottom = 2.0
 color = Color(0, 0, 0, 0.419608)
 thickness = 2
 
-[sub_resource type="SystemFont" id="SystemFont_d7ho6"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wg7qv"]
 bg_color = Color(0.929715, 0.929715, 0.929714, 1)
 border_width_left = 1
@@ -148,14 +143,6 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.159787, 0.411742, 0.655394, 1)
-
-[sub_resource type="SystemFont" id="SystemFont_mt863"]
-font_names = PackedStringArray("Arial")
-multichannel_signed_distance_field = true
-
-[sub_resource type="SystemFont" id="SystemFont_7bren"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvqdk"]
 content_margin_left = 5.0
@@ -187,10 +174,6 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.74558, 0.74558, 0.74558, 1)
 
-[sub_resource type="SystemFont" id="SystemFont_rxv5l"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsevq"]
 content_margin_left = 4.0
 content_margin_top = 4.0
@@ -203,29 +186,18 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.234, 0.2556, 0.45, 1)
 
-[sub_resource type="SystemFont" id="SystemFont_v7ldh"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g360g"]
 bg_color = Color(0.138226, 0.260069, 1, 1)
 corner_detail = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4y0ma"]
 
-[sub_resource type="SystemFont" id="SystemFont_wg2ln"]
-font_names = PackedStringArray("Arial")
-font_weight = 600
-multichannel_signed_distance_field = true
+[sub_resource type="FontVariation" id="FontVariation_vi5wt"]
+base_font = ExtResource("3_0dh3t")
+variation_embolden = 1.0
 
-[sub_resource type="SystemFont" id="SystemFont_163e5"]
-font_names = PackedStringArray("Arial")
-multichannel_signed_distance_field = true
-
-[sub_resource type="SystemFont" id="SystemFont_olp63"]
-font_names = PackedStringArray("Arial")
-font_weight = 600
-multichannel_signed_distance_field = true
+[sub_resource type="FontVariation" id="FontVariation_aliu6"]
+base_font = ExtResource("4_vi5wt")
 
 [sub_resource type="SystemFont" id="SystemFont_g11s3"]
 font_names = PackedStringArray("MS UI Gothic")
@@ -275,10 +247,6 @@ border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_color = Color(0.572988, 0.572989, 0.572988, 1)
-
-[sub_resource type="SystemFont" id="SystemFont_nntt1"]
-font_names = PackedStringArray("MS UI Gothic")
-multichannel_signed_distance_field = true
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyr18"]
 content_margin_left = 5.0
@@ -365,7 +333,7 @@ Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(0, 0, 0, 1)
-Button/fonts/font = SubResource("SystemFont_riuwr")
+Button/fonts/font = ExtResource("1_8lmew")
 Button/styles/disabled = SubResource("StyleBoxFlat_xc8pu")
 Button/styles/focus = SubResource("StyleBoxFlat_ewaa7")
 Button/styles/hover = SubResource("StyleBoxFlat_l0fqv")
@@ -380,32 +348,32 @@ HSeparator/styles/separator = SubResource("StyleBoxLine_lurag")
 ItemList/colors/font_color = Color(0, 0, 0, 1)
 ItemList/colors/font_hovered_color = Color(0, 0, 0, 1)
 ItemList/colors/font_selected_color = Color(0, 0, 0, 1)
-ItemList/fonts/font = SubResource("SystemFont_d7ho6")
+ItemList/fonts/font = ExtResource("1_8lmew")
 ItemList/styles/hovered = SubResource("StyleBoxFlat_wg7qv")
 ItemList/styles/panel = SubResource("StyleBoxFlat_w4y25")
 ItemList/styles/selected = SubResource("StyleBoxFlat_0v510")
 ItemList/styles/selected_focus = SubResource("StyleBoxFlat_guspq")
 Label/colors/font_color = Color(0, 0, 0, 1)
-Label/fonts/font = SubResource("SystemFont_mt863")
+Label/fonts/font = ExtResource("1_8lmew")
 LineEdit/colors/caret_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_placeholder_color = Color(0.351562, 0.351563, 0.351563, 0.94902)
 LineEdit/colors/font_uneditable_color = Color(0.160784, 0.160784, 0.160784, 1)
 LineEdit/colors/selection_color = Color(0.2291, 0.50955, 0.79, 1)
 LineEdit/constants/minimum_character_width = 2
-LineEdit/fonts/font = SubResource("SystemFont_7bren")
+LineEdit/fonts/font = ExtResource("1_8lmew")
 LineEdit/styles/focus = SubResource("StyleBoxFlat_vvqdk")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_gwipa")
 LineEdit/styles/read_only = SubResource("StyleBoxFlat_1rsm2")
 OptionButton/colors/font_color = Color(0, 0, 0, 1)
-OptionButton/fonts/font = SubResource("SystemFont_rxv5l")
+OptionButton/fonts/font = ExtResource("1_8lmew")
 OptionButton/styles/hover = SubResource("StyleBoxFlat_wsevq")
 OptionButton/styles/hover_pressed = SubResource("StyleBoxFlat_wsevq")
 OptionButton/styles/normal = ExtResource("1_g84is")
 OptionButton/styles/pressed = SubResource("StyleBoxFlat_wsevq")
 PopupMenu/colors/font_color = Color(0, 0, 0, 1)
 PopupMenu/colors/font_hover_color = Color(1, 1, 1, 1)
-PopupMenu/fonts/font = SubResource("SystemFont_v7ldh")
+PopupMenu/fonts/font = ExtResource("1_8lmew")
 PopupMenu/styles/hover = SubResource("StyleBoxFlat_g360g")
 PopupMenu/styles/panel = ExtResource("1_g84is")
 PopupMenu/styles/separator = SubResource("StyleBoxEmpty_4y0ma")
@@ -413,14 +381,15 @@ RadioButton/base_type = &"CheckBox"
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 RichTextLabel/font_sizes/bold_font_size = 16
 RichTextLabel/font_sizes/normal_font_size = 14
-RichTextLabel/fonts/bold_font = SubResource("SystemFont_wg2ln")
-RichTextLabel/fonts/normal_font = SubResource("SystemFont_163e5")
+RichTextLabel/fonts/bold_font = SubResource("FontVariation_vi5wt")
+RichTextLabel/fonts/italics_font = SubResource("FontVariation_aliu6")
+RichTextLabel/fonts/normal_font = ExtResource("1_8lmew")
 SpinBox/icons/updown = ExtResource("2_qfgkh")
 StrikeData/base_type = &"Label"
 StrikeData/font_sizes/font_size = 16
 StrikeName/base_type = &"Label"
 StrikeName/font_sizes/font_size = 16
-StrikeName/fonts/font = SubResource("SystemFont_olp63")
+StrikeName/fonts/font = ExtResource("1_8lmew")
 TabContainer/colors/font_hovered_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_selected_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_unselected_color = Color(0, 0, 0, 1)
@@ -436,7 +405,7 @@ TextEdit/colors/font_color = Color(0, 0, 0, 1)
 TextEdit/colors/font_placeholder_color = Color(0.728822, 0.728822, 0.728822, 0.843137)
 TextEdit/colors/font_selected_color = Color(1, 1, 1, 1)
 TextEdit/colors/selection_color = Color(0.227451, 0.509804, 0.788235, 1)
-TextEdit/fonts/font = SubResource("SystemFont_nntt1")
+TextEdit/fonts/font = ExtResource("1_8lmew")
 TextEdit/styles/focus = SubResource("StyleBoxFlat_gyr18")
 TextEdit/styles/normal = SubResource("StyleBoxFlat_av5is")
 VScrollBar/styles/grabber = SubResource("StyleBoxFlat_kcq34")

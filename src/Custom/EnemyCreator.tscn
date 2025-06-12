@@ -1,23 +1,23 @@
 [gd_scene load_steps=21 format=3 uid="uid://c4mule60b5ehu"]
 
 [ext_resource type="Theme" uid="uid://cipxsfp7eqshp" path="res://Themes/EnemyCreator.tres" id="1_d7k5c"]
-[ext_resource type="Script" path="res://Database/EnemyCreator.gd" id="1_q8537"]
+[ext_resource type="Script" uid="uid://cv6kqpotnrae2" path="res://Database/EnemyCreator.gd" id="1_q8537"]
 [ext_resource type="StyleBox" uid="uid://b75lnqjxrxb1b" path="res://Themes/EnemyCreatorSectionBorder.tres" id="3_l83o3"]
 [ext_resource type="PackedScene" uid="uid://y0np3uaapuld" path="res://Custom/LabelDataField.tscn" id="4_vbygb"]
 [ext_resource type="PackedScene" uid="uid://queo7xmb50cs" path="res://Custom/SpeedField.tscn" id="5_a4nr1"]
-[ext_resource type="Script" path="res://Custom/EnemyCreatorGeneral.gd" id="5_f73rx"]
+[ext_resource type="Script" uid="uid://2fxdrtqqy7wj" path="res://Custom/EnemyCreatorGeneral.gd" id="5_f73rx"]
 [ext_resource type="PackedScene" uid="uid://c8u4avblutkgu" path="res://Table/Table.tscn" id="5_m8os8"]
-[ext_resource type="Script" path="res://Custom/EnemyCreatorDefensive.gd" id="6_3xsao"]
+[ext_resource type="Script" uid="uid://dn60qjjfgan8j" path="res://Custom/EnemyCreatorDefensive.gd" id="6_3xsao"]
 [ext_resource type="PackedScene" uid="uid://dl1hgfsvcpcfn" path="res://Custom/EnemyAbility.tscn" id="7_oppdb"]
 [ext_resource type="StyleBox" uid="uid://sxm5kta617hi" path="res://Themes/EnemyCreatorTab.tres" id="9_a5gth"]
 [ext_resource type="StyleBox" uid="uid://yxqr2ewvhjsy" path="res://Themes/EnemyCreatorSubSectionBorder.tres" id="9_uhgxp"]
-[ext_resource type="Script" path="res://Custom/EnemyCreatorAttacks.gd" id="10_snsf6"]
+[ext_resource type="Script" uid="uid://c8ao2nupu7388" path="res://Custom/EnemyCreatorAttacks.gd" id="10_snsf6"]
 [ext_resource type="PackedScene" uid="uid://bx5iy1mfvgx2o" path="res://Custom/WeaknessResistanceField.tscn" id="11_e6dyq"]
-[ext_resource type="Script" path="res://Custom/EnemyDataFormatter.gd" id="12_o30mp"]
-[ext_resource type="Script" path="res://Custom/EnemyCreatorSpells.gd" id="14_07ghh"]
-[ext_resource type="Script" path="res://Custom/EnemyRoadMapFiller.gd" id="15_bt72b"]
+[ext_resource type="Script" uid="uid://iv05h66qog3k" path="res://Custom/EnemyDataFormatter.gd" id="12_o30mp"]
+[ext_resource type="Script" uid="uid://bfwpiygdivxso" path="res://Custom/EnemyCreatorSpells.gd" id="14_07ghh"]
+[ext_resource type="Script" uid="uid://b1vvhc6yeflfc" path="res://Custom/EnemyRoadMapFiller.gd" id="15_bt72b"]
 [ext_resource type="PackedScene" uid="uid://dyso54l1koj0t" path="res://Custom/CastingEntry.tscn" id="15_bxid3"]
-[ext_resource type="Script" path="res://Database/EnemyCustomizerSetup.gd" id="17_rxw0s"]
+[ext_resource type="Script" uid="uid://cubc25p5qsfpp" path="res://Database/EnemyCustomizerSetup.gd" id="17_rxw0s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt2bf"]
 content_margin_left = 4.0
@@ -83,6 +83,7 @@ layout_mode = 2
 selected = 2
 item_count = 6
 popup/item_0/text = "Tiny"
+popup/item_0/id = 0
 popup/item_1/text = "Small"
 popup/item_1/id = 1
 popup/item_2/text = "Medium"
@@ -107,6 +108,7 @@ layout_mode = 2
 selected = 0
 item_count = 7
 popup/item_0/text = "Brute"
+popup/item_0/id = 0
 popup/item_1/text = "Magical Striker"
 popup/item_1/id = 1
 popup/item_2/text = "Skill Paragon"
@@ -240,6 +242,7 @@ layout_mode = 2
 selected = 0
 item_count = 4
 popup/item_0/text = "Common"
+popup/item_0/id = 0
 popup/item_1/text = "Uncommon"
 popup/item_1/id = 1
 popup/item_2/text = "Rare"
@@ -314,6 +317,7 @@ layout_mode = 2
 
 [node name="OptionButton" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="0"]
 selected = 0
+popup/item_0/id = 0
 
 [node name="SpeedAmount" parent="VBoxContainer/TabContainer/General/PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer/VBoxContainer/ScrollContainer/SpeedFieldVBox/SpeedField" index="2"]
 text = "25"
@@ -926,6 +930,7 @@ layout_mode = 2
 selected = 0
 item_count = 2
 popup/item_0/text = "Melee"
+popup/item_0/id = 0
 popup/item_1/text = "Ranged"
 popup/item_1/id = 1
 

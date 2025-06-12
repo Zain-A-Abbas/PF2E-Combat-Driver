@@ -1,19 +1,20 @@
 [gd_scene load_steps=7 format=3 uid="uid://drtvu2mxjtb75"]
 
 [ext_resource type="StyleBox" uid="uid://bwk4agsvcealp" path="res://Themes/TraitStyleboxes/SizeTrait2.tres" id="1_5g1eg"]
-[ext_resource type="FontFile" uid="uid://deqhew2apixpi" path="res://Fonts/GOTHICB.TTF" id="2_824lg"]
-[ext_resource type="Script" path="res://Database/FilterButton.gd" id="2_euwow"]
-[ext_resource type="Texture2D" uid="uid://j3xc7e3c6bd5" path="res://Database/FilterIcons.png" id="3_6gqbw"]
+[ext_resource type="Script" uid="uid://doof12lhprt7i" path="res://Database/FilterButton.gd" id="2_euwow"]
+[ext_resource type="FontFile" uid="uid://n1rwu1ujetdr" path="res://Fonts/Montserrat-Bold.ttf" id="3_rhebu"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uj8hx"]
-atlas = ExtResource("3_6gqbw")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qv5ad"]
+load_path = "res://.godot/imported/FilterIcons.png-2290632db7663188baa3d7507a5ac123.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7org"]
+atlas = SubResource("CompressedTexture2D_qv5ad")
 region = Rect2(0, 0, 64, 64)
 margin = Rect2(0, 8, 0, 15)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_48a8l"]
 
 [node name="SizeFilterButton" type="PanelContainer"]
-offset_right = 199.0
 offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -32,7 +33,7 @@ layout_mode = 2
 [node name="TraitText" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_824lg")
+theme_override_fonts/font = ExtResource("3_rhebu")
 theme_override_font_sizes/font_size = 24
 text = "UNCOMiMON"
 horizontal_alignment = 1
@@ -40,15 +41,15 @@ vertical_alignment = 1
 
 [node name="ToggleTexture" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-texture = SubResource("AtlasTexture_uj8hx")
+texture = SubResource("AtlasTexture_g7org")
 expand_mode = 3
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_48a8l")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_48a8l")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_48a8l")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_48a8l")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_48a8l")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_48a8l")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

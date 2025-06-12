@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnfcg04lwpg2w"]
 
-[ext_resource type="Script" path="res://TooltipPanel.gd" id="1_tl34h"]
+[ext_resource type="Script" uid="uid://bbpc1ywi4t24y" path="res://TooltipPanel.gd" id="1_tl34h"]
 [ext_resource type="Theme" uid="uid://dx77a5ogmmnut" path="res://Themes/MainHeader.tres" id="2_4ihk0"]
 [ext_resource type="Theme" uid="uid://byxv6hajwxsqf" path="res://Themes/EnemySheetContext.tres" id="3_g8ox4"]
-[ext_resource type="FontFile" uid="uid://deqhew2apixpi" path="res://Fonts/GOTHICB.TTF" id="4_31qdr"]
+[ext_resource type="FontFile" uid="uid://n1rwu1ujetdr" path="res://Fonts/Montserrat-Bold.ttf" id="4_qqedh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4nf7"]
 bg_color = Color(0.956863, 0.933333, 0.878431, 1)
@@ -61,6 +61,6 @@ layout_mode = 2
 [node name="TooltipText" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_g8ox4")
-theme_override_fonts/font = ExtResource("4_31qdr")
+theme_override_fonts/font = ExtResource("4_qqedh")
 text = "A monster with darkvision can see perfectly well in areas of darkness and dim light, though such vision is in black and white only. Some forms of magical darkness, such as a 4th-level darkness spell, block normal darkvision. A monster with greater darkvision, however, can see through even these forms of magical darkness."
 autowrap_mode = 2
